@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.3.0"
+* version = "0.4.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -187,3 +187,77 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[2].item[6].type = #choice
 * item[2].item[6].repeats = true
 * item[2].item[6].answerValueSet = Canonical(AgroSUSFonteAguaVS)
+
+// Seção 4 — Assistência técnica e responsabilidade técnica
+
+* item[3].linkId = "assistencia-responsabilidade-tecnica"
+* item[3].text = "4. Assistência técnica e responsabilidade técnica"
+* item[3].type = #group
+
+* item[3].item[0].linkId = "recebe-assistencia-tecnica"
+* item[3].item[0].text = "Você recebe assistência técnica para a produção agrícola?"
+* item[3].item[0].type = #boolean
+* item[3].item[0].required = true
+
+* item[3].item[1].linkId = "instituicao-assistencia"
+* item[3].item[1].text = "Qual instituição presta assistência técnica?"
+* item[3].item[1].type = #choice
+* item[3].item[1].repeats = true
+* item[3].item[1].required = true
+* item[3].item[1].answerValueSet = Canonical(AgroSUSInstituicaoAssistenciaVS)
+* item[3].item[1].enableWhen[0].question = "recebe-assistencia-tecnica"
+* item[3].item[1].enableWhen[0].operator = #=
+* item[3].item[1].enableWhen[0].answerBoolean = true
+
+* item[3].item[2].linkId = "instituicao-assistencia-outra"
+* item[3].item[2].text = "Especifique a outra instituição"
+* item[3].item[2].type = #string
+* item[3].item[2].required = true
+* item[3].item[2].enableWhen[0].question = "instituicao-assistencia"
+* item[3].item[2].enableWhen[0].operator = #=
+* item[3].item[2].enableWhen[0].answerCoding = AgroSUSAssistenciaTecnicaCS#instituicao-outra
+
+* item[3].item[3].linkId = "possui-responsavel-tecnico"
+* item[3].item[3].text = "Existe um responsável técnico habilitado que acompanha sua produção?"
+* item[3].item[3].type = #boolean
+* item[3].item[3].required = true
+
+* item[3].item[4].linkId = "formacao-responsavel-tecnico"
+* item[3].item[4].text = "Formação do responsável técnico"
+* item[3].item[4].type = #choice
+* item[3].item[4].required = true
+* item[3].item[4].answerValueSet = Canonical(AgroSUSFormacaoResponsavelTecnicoVS)
+* item[3].item[4].enableWhen[0].question = "possui-responsavel-tecnico"
+* item[3].item[4].enableWhen[0].operator = #=
+* item[3].item[4].enableWhen[0].answerBoolean = true
+
+* item[3].item[5].linkId = "formacao-responsavel-outra"
+* item[3].item[5].text = "Especifique a formação do outro profissional habilitado"
+* item[3].item[5].type = #string
+* item[3].item[5].required = true
+* item[3].item[5].enableWhen[0].question = "formacao-responsavel-tecnico"
+* item[3].item[5].enableWhen[0].operator = #=
+* item[3].item[5].enableWhen[0].answerCoding = AgroSUSAssistenciaTecnicaCS#formacao-outro-habilitado
+
+* item[3].item[6].linkId = "nome-responsavel-tecnico"
+* item[3].item[6].text = "Nome do responsável técnico"
+* item[3].item[6].type = #string
+* item[3].item[6].required = true
+* item[3].item[6].enableWhen[0].question = "possui-responsavel-tecnico"
+* item[3].item[6].enableWhen[0].operator = #=
+* item[3].item[6].enableWhen[0].answerBoolean = true
+
+* item[3].item[7].linkId = "registro-profissional-responsavel"
+* item[3].item[7].text = "Número de registro profissional (CREA, CRBio ou outro)"
+* item[3].item[7].type = #string
+* item[3].item[7].required = true
+* item[3].item[7].enableWhen[0].question = "possui-responsavel-tecnico"
+* item[3].item[7].enableWhen[0].operator = #=
+* item[3].item[7].enableWhen[0].answerBoolean = true
+
+* item[3].item[8].linkId = "contato-responsavel-tecnico"
+* item[3].item[8].text = "Telefone ou contato do responsável técnico"
+* item[3].item[8].type = #string
+* item[3].item[8].enableWhen[0].question = "possui-responsavel-tecnico"
+* item[3].item[8].enableWhen[0].operator = #=
+* item[3].item[8].enableWhen[0].answerBoolean = true
