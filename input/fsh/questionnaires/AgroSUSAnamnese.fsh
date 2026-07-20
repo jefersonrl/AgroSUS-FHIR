@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.7.0"
+* version = "0.8.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -422,3 +422,80 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[6].item[7].text = "Os registros estão disponíveis para consulta pela equipe de saúde?"
 * item[6].item[7].type = #boolean
 * item[6].item[7].required = true
+
+// Seção 8 — Frequência e forma de exposição
+
+* item[7].linkId = "frequencia-forma-exposicao"
+* item[7].text = "8. Frequência e forma de exposição"
+* item[7].type = #group
+
+* item[7].item[0].linkId = "dias-aplicacao-mes"
+* item[7].item[0].text = "Quantos dias por mês realiza aplicação de defensivos agrícolas?"
+* item[7].item[0].type = #choice
+* item[7].item[0].required = true
+* item[7].item[0].answerValueSet = Canonical(AgroSUSDiasAplicacaoMesVS)
+
+* item[7].item[1].linkId = "horas-aplicacao-dia"
+* item[7].item[1].text = "Durante quantas horas por dia realiza a aplicação?"
+* item[7].item[1].type = #choice
+* item[7].item[1].required = true
+* item[7].item[1].answerValueSet = Canonical(AgroSUSHorasAplicacaoDiaVS)
+
+* item[7].item[2].linkId = "meses-maior-intensidade"
+* item[7].item[2].text = "Em quais meses do ano ocorre maior intensidade de uso?"
+* item[7].item[2].type = #choice
+* item[7].item[2].repeats = true
+* item[7].item[2].required = true
+* item[7].item[2].answerValueSet = Canonical(AgroSUSMesMaiorIntensidadeVS)
+
+* item[7].item[3].linkId = "data-ultima-aplicacao"
+* item[7].item[3].text = "Data da última aplicação"
+* item[7].item[3].type = #date
+
+* item[7].item[4].linkId = "equipamento-aplicacao"
+* item[7].item[4].text = "Qual tipo de equipamento é utilizado na aplicação?"
+* item[7].item[4].type = #choice
+* item[7].item[4].repeats = true
+* item[7].item[4].required = true
+* item[7].item[4].answerValueSet = Canonical(AgroSUSEquipamentoAplicacaoVS)
+
+* item[7].item[5].linkId = "via-exposicao-mais-comum"
+* item[7].item[5].text = "Qual é a via de exposição mais comum?"
+* item[7].item[5].type = #choice
+* item[7].item[5].required = true
+* item[7].item[5].answerValueSet = Canonical(AgroSUSViaExposicaoVS)
+
+* item[7].item[6].linkId = "responsavel-aplicacao"
+* item[7].item[6].text = "Quem realiza a aplicação dos defensivos agrícolas?"
+* item[7].item[6].type = #choice
+* item[7].item[6].repeats = true
+* item[7].item[6].required = true
+* item[7].item[6].answerValueSet = Canonical(AgroSUSResponsavelAplicacaoVS)
+
+* item[7].item[7].linkId = "outro-responsavel-aplicacao"
+* item[7].item[7].text = "Informe quem é o outro responsável pela aplicação"
+* item[7].item[7].type = #string
+* item[7].item[7].required = true
+* item[7].item[7].enableWhen[0].question = "responsavel-aplicacao"
+* item[7].item[7].enableWhen[0].operator = #=
+* item[7].item[7].enableWhen[0].answerCoding = AgroSUSExposicaoCS#outro
+
+* item[7].item[8].linkId = "outras-pessoas-durante-aplicacao"
+* item[7].item[8].text = "Há presença de outras pessoas durante a aplicação dos defensivos?"
+* item[7].item[8].type = #boolean
+* item[7].item[8].required = true
+
+* item[7].item[9].linkId = "criancas-idosos-proximos-aplicacao"
+* item[7].item[9].text = "Há crianças ou idosos próximos à área durante a aplicação?"
+* item[7].item[9].type = #boolean
+* item[7].item[9].required = true
+
+* item[7].item[10].linkId = "respeita-intervalo-reentrada"
+* item[7].item[10].text = "O intervalo de reentrada na lavoura após a aplicação é habitualmente respeitado?"
+* item[7].item[10].type = #boolean
+* item[7].item[10].required = true
+
+* item[7].item[11].linkId = "observa-condicoes-climaticas"
+* item[7].item[11].text = "As condições climáticas, como vento, chuva e temperatura, são observadas antes de iniciar a pulverização?"
+* item[7].item[11].type = #boolean
+* item[7].item[11].required = true
