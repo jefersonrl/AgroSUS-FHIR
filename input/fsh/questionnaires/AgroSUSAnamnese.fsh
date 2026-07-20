@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.5.0"
+* version = "0.6.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -311,3 +311,67 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[4].item[5].enableWhen[0].question = "temas-capacitacao"
 * item[4].item[5].enableWhen[0].operator = #=
 * item[4].item[5].enableWhen[0].answerCoding = AgroSUSCapacitacaoCS#outros
+
+// Seção 6 — Defensivos agrícolas utilizados e conformidade legal
+
+* item[5].linkId = "defensivos-conformidade"
+* item[5].text = "6. Defensivos agrícolas utilizados e conformidade legal"
+* item[5].type = #group
+
+* item[5].item[0].linkId = "possui-receituario-agronomico"
+* item[5].item[0].text = "Possui receituário agronômico para aquisição e utilização dos defensivos agrícolas?"
+* item[5].item[0].type = #boolean
+* item[5].item[0].required = true
+
+* item[5].item[1].linkId = "orientacao-verificacao-receituario"
+* item[5].item[1].text = "Se houver receituário, verifique sua vigência e correspondência com os produtos efetivamente utilizados."
+* item[5].item[1].type = #display
+
+* item[5].item[2].linkId = "receituario-vigente"
+* item[5].item[2].text = "O receituário agronômico está vigente?"
+* item[5].item[2].type = #boolean
+* item[5].item[2].required = true
+* item[5].item[2].enableWhen[0].question = "possui-receituario-agronomico"
+* item[5].item[2].enableWhen[0].operator = #=
+* item[5].item[2].enableWhen[0].answerBoolean = true
+
+* item[5].item[3].linkId = "receituario-corresponde-produtos"
+* item[5].item[3].text = "O receituário corresponde aos produtos efetivamente utilizados na propriedade?"
+* item[5].item[3].type = #boolean
+* item[5].item[3].required = true
+* item[5].item[3].enableWhen[0].question = "possui-receituario-agronomico"
+* item[5].item[3].enableWhen[0].operator = #=
+* item[5].item[3].enableWhen[0].answerBoolean = true
+
+* item[5].item[4].linkId = "utiliza-produto-irregular"
+* item[5].item[4].text = "Utiliza produto sem registro, vencido ou de origem desconhecida?"
+* item[5].item[4].type = #boolean
+* item[5].item[4].required = true
+
+* item[5].item[5].linkId = "defensivo-utilizado"
+* item[5].item[5].text = "Defensivo agrícola utilizado"
+* item[5].item[5].type = #group
+* item[5].item[5].repeats = true
+
+* item[5].item[5].item[0].linkId = "defensivo-nome-comercial"
+* item[5].item[5].item[0].text = "Nome comercial"
+* item[5].item[5].item[0].type = #string
+* item[5].item[5].item[0].required = true
+
+* item[5].item[5].item[1].linkId = "defensivo-principio-ativo"
+* item[5].item[5].item[1].text = "Princípio ativo"
+* item[5].item[5].item[1].type = #string
+* item[5].item[5].item[1].required = true
+
+* item[5].item[5].item[2].linkId = "defensivo-classe-uso"
+* item[5].item[5].item[2].text = "Classe de uso"
+* item[5].item[5].item[2].type = #string
+
+* item[5].item[5].item[3].linkId = "defensivo-classificacao-toxicologica"
+* item[5].item[5].item[3].text = "Classe toxicológica ou de perigo"
+* item[5].item[5].item[3].type = #choice
+* item[5].item[5].item[3].answerValueSet = Canonical(AgroSUSClassificacaoToxicologicaVS)
+
+* item[5].item[5].item[4].linkId = "defensivo-numero-registro"
+* item[5].item[5].item[4].text = "Número de registro Anvisa/MAPA"
+* item[5].item[5].item[4].type = #string
