@@ -1,17 +1,17 @@
-id: smart.who.int.ig-empty
-canonical: http://smart.who.int/ig-empty
-name: IGEmpty
-title: Módulo AgroSUS - Projeto mareIA
-description: This is a minimal Implementation Guide that can be used as a template for creating new IGs.
+id: io.github.jefersonrl.agrosus
+canonical: https://jefersonrl.github.io/AgroSUS-FHIR
+name: AgroSUSFHIR
+title: Módulo AgroSUS — Projeto mareIA
+description: Guia de Implementação HL7 FHIR do módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas.
 status: draft # draft | active | retired | unknown
-experimental: false
+experimental: true
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 #fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2023+
+copyrightYear: 2026+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-license: CC-BY-SA-3.0-IGO # https://www.hl7.org/fhir/valueset-spdx-license.html
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: urn:iso:std:iso:3166#BR "Brazil" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Fatec Ferraz de Vasconcelos
   url: https://www.fatecferraz.edu.br
