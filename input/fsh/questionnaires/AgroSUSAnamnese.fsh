@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.10.0"
+* version = "0.11.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -675,3 +675,52 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[9].item[11].text = "Nenhum defensivo agrícola é armazenado dentro da residência?"
 * item[9].item[11].type = #boolean
 * item[9].item[11].required = true
+
+// Seção 11 — Destinação das embalagens vazias
+
+* item[10].linkId = "destinacao-embalagens-vazias"
+* item[10].text = "11. Destinação das embalagens vazias"
+* item[10].type = #group
+
+* item[10].item[0].linkId = "realiza-triplice-lavagem"
+* item[10].item[0].text = "Realiza a tríplice lavagem ou lavagem sob pressão das embalagens, quando aplicável?"
+* item[10].item[0].type = #boolean
+* item[10].item[0].required = true
+
+* item[10].item[1].linkId = "devolve-embalagens-local-autorizado"
+* item[10].item[1].text = "Realiza a devolução das embalagens vazias em locais autorizados?"
+* item[10].item[1].type = #boolean
+* item[10].item[1].required = true
+
+* item[10].item[2].linkId = "local-devolucao-embalagens"
+* item[10].item[2].text = "Qual é o local de devolução das embalagens?"
+* item[10].item[2].type = #string
+* item[10].item[2].required = true
+* item[10].item[2].enableWhen[0].question = "devolve-embalagens-local-autorizado"
+* item[10].item[2].enableWhen[0].operator = #=
+* item[10].item[2].enableWhen[0].answerBoolean = true
+
+* item[10].item[3].linkId = "tempo-medio-para-devolucao"
+* item[10].item[3].text = "Qual é o tempo médio entre o término do produto e a devolução da embalagem?"
+* item[10].item[3].type = #string
+* item[10].item[3].enableWhen[0].question = "devolve-embalagens-local-autorizado"
+* item[10].item[3].enableWhen[0].operator = #=
+* item[10].item[3].enableWhen[0].answerBoolean = true
+
+* item[10].item[4].linkId = "destino-embalagens-nao-devolvidas"
+* item[10].item[4].text = "Caso não realize a devolução, qual é o destino das embalagens?"
+* item[10].item[4].type = #choice
+* item[10].item[4].repeats = true
+* item[10].item[4].required = true
+* item[10].item[4].answerValueSet = Canonical(AgroSUSDestinacaoEmbalagensNaoDevolvidasVS)
+* item[10].item[4].enableWhen[0].question = "devolve-embalagens-local-autorizado"
+* item[10].item[4].enableWhen[0].operator = #=
+* item[10].item[4].enableWhen[0].answerBoolean = false
+
+* item[10].item[5].linkId = "outro-destino-embalagens"
+* item[10].item[5].text = "Informe o outro destino dado às embalagens"
+* item[10].item[5].type = #string
+* item[10].item[5].required = true
+* item[10].item[5].enableWhen[0].question = "destino-embalagens-nao-devolvidas"
+* item[10].item[5].enableWhen[0].operator = #=
+* item[10].item[5].enableWhen[0].answerCoding = AgroSUSDestinacaoEmbalagensCS#outro
