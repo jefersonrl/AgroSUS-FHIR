@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.12.0"
+* version = "0.13.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -781,3 +781,43 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[11].item[7].enableWhen[0].question = "fonte-agua-proxima-aplicacao"
 * item[11].item[7].enableWhen[0].operator = #=
 * item[11].item[7].enableWhen[0].answerBoolean = true
+
+// Seção 13 — Condições de saúde e sintomas
+// Parte A — Condições gerais de saúde
+
+* item[12].linkId = "condicoes-saude-sintomas"
+* item[12].text = "13. Condições de saúde e sintomas"
+* item[12].type = #group
+
+* item[12].item[0].linkId = "condicoes-saude-referidas"
+* item[12].item[0].text = "Quais condições de saúde preexistentes foram referidas pelo trabalhador?"
+* item[12].item[0].type = #choice
+* item[12].item[0].repeats = true
+* item[12].item[0].required = true
+* item[12].item[0].answerValueSet = Canonical(AgroSUSCondicaoSaudeReferidaVS)
+
+* item[12].item[1].linkId = "tipo-cancer-referido"
+* item[12].item[1].text = "Informe qual tipo de câncer foi referido"
+* item[12].item[1].type = #string
+* item[12].item[1].required = true
+* item[12].item[1].enableWhen[0].question = "condicoes-saude-referidas"
+* item[12].item[1].enableWhen[0].operator = #=
+* item[12].item[1].enableWhen[0].answerCoding = AgroSUSCondicoesSintomasCS#condicao-cancer
+
+* item[12].item[2].linkId = "medicamentos-uso-continuo"
+* item[12].item[2].text = "Medicamentos em uso contínuo"
+* item[12].item[2].type = #text
+
+* item[12].item[3].linkId = "tabagismo"
+* item[12].item[3].text = "O trabalhador faz uso de produtos derivados do tabaco?"
+* item[12].item[3].type = #boolean
+* item[12].item[3].required = true
+
+* item[12].item[4].linkId = "uso-regular-alcool"
+* item[12].item[4].text = "O trabalhador faz uso regular de bebidas alcoólicas?"
+* item[12].item[4].type = #boolean
+* item[12].item[4].required = true
+
+* item[12].item[5].linkId = "orientacao-sintomas"
+* item[12].item[5].text = "Informe, para cada sinal ou sintoma, se ocorreu nos últimos 30 dias e se surgiu ou piorou após a aplicação de defensivo agrícola."
+* item[12].item[5].type = #display
