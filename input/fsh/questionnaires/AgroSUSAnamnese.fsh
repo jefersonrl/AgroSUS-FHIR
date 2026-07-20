@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.6.0"
+* version = "0.7.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -375,3 +375,50 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[5].item[5].item[4].linkId = "defensivo-numero-registro"
 * item[5].item[5].item[4].text = "Número de registro Anvisa/MAPA"
 * item[5].item[5].item[4].type = #string
+
+// Seção 7 — Rastreabilidade das aplicações
+
+* item[6].linkId = "rastreabilidade-aplicacoes"
+* item[6].text = "7. Rastreabilidade das aplicações"
+* item[6].type = #group
+
+* item[6].item[0].linkId = "registra-datas-aplicacao"
+* item[6].item[0].text = "Registra as datas das aplicações de defensivos agrícolas?"
+* item[6].item[0].type = #boolean
+* item[6].item[0].required = true
+
+* item[6].item[1].linkId = "registra-produtos-aplicados"
+* item[6].item[1].text = "Mantém registro dos produtos comerciais utilizados em cada aplicação?"
+* item[6].item[1].type = #boolean
+* item[6].item[1].required = true
+
+* item[6].item[2].linkId = "registra-quantidade-aplicada"
+* item[6].item[2].text = "Registra a quantidade aplicada, como dose ou volume?"
+* item[6].item[2].type = #boolean
+* item[6].item[2].required = true
+
+* item[6].item[3].linkId = "registra-responsavel-aplicacao"
+* item[6].item[3].text = "Registra quem realizou cada aplicação?"
+* item[6].item[3].type = #boolean
+* item[6].item[3].required = true
+
+* item[6].item[4].linkId = "registra-cultura-tratada"
+* item[6].item[4].text = "Registra qual cultura foi tratada em cada aplicação?"
+* item[6].item[4].type = #boolean
+* item[6].item[4].required = true
+
+* item[6].item[5].linkId = "armazenamento-registros-aplicacao"
+* item[6].item[5].text = "Onde os registros das aplicações são armazenados?"
+* item[6].item[5].type = #choice
+* item[6].item[5].repeats = true
+* item[6].item[5].required = true
+* item[6].item[5].answerValueSet = Canonical(AgroSUSArmazenamentoRegistrosVS)
+
+* item[6].item[6].linkId = "tempo-guarda-registros"
+* item[6].item[6].text = "Por quanto tempo os registros são guardados?"
+* item[6].item[6].type = #string
+
+* item[6].item[7].linkId = "registros-disponiveis-consulta"
+* item[6].item[7].text = "Os registros estão disponíveis para consulta pela equipe de saúde?"
+* item[6].item[7].type = #boolean
+* item[6].item[7].required = true
