@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.2.0"
+* version = "0.3.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -147,3 +147,43 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[1].item[10].linkId = "tempo-trabalho-defensivos"
 * item[1].item[10].text = "Tempo de trabalho com defensivos agrícolas, em anos"
 * item[1].item[10].type = #integer
+
+// Seção 3 — Caracterização da propriedade rural
+
+* item[2].linkId = "caracterizacao-propriedade"
+* item[2].text = "3. Caracterização da propriedade rural"
+* item[2].type = #group
+
+* item[2].item[0].linkId = "situacao-posse"
+* item[2].item[0].text = "Situação de posse da terra"
+* item[2].item[0].type = #choice
+* item[2].item[0].answerValueSet = Canonical(AgroSUSSituacaoPosseVS)
+
+* item[2].item[1].linkId = "area-total-hectares"
+* item[2].item[1].text = "Área total da propriedade, em hectares"
+* item[2].item[1].type = #decimal
+
+* item[2].item[2].linkId = "area-producao-hectares"
+* item[2].item[2].text = "Área destinada à produção agrícola, em hectares"
+* item[2].item[2].type = #decimal
+
+* item[2].item[3].linkId = "principal-atividade-agricola"
+* item[2].item[3].text = "Principal atividade agrícola"
+* item[2].item[3].type = #choice
+* item[2].item[3].answerValueSet = Canonical(AgroSUSAtividadeAgricolaVS)
+
+* item[2].item[4].linkId = "tipo-producao"
+* item[2].item[4].text = "Tipo de produção"
+* item[2].item[4].type = #choice
+* item[2].item[4].answerValueSet = Canonical(AgroSUSTipoProducaoVS)
+
+* item[2].item[5].linkId = "culturas-produzidas"
+* item[2].item[5].text = "Culturas produzidas"
+* item[2].item[5].type = #string
+* item[2].item[5].repeats = true
+
+* item[2].item[6].linkId = "fontes-agua"
+* item[2].item[6].text = "Fontes de água utilizadas na propriedade"
+* item[2].item[6].type = #choice
+* item[2].item[6].repeats = true
+* item[2].item[6].answerValueSet = Canonical(AgroSUSFonteAguaVS)
