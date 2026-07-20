@@ -1,0 +1,7 @@
+[{
+  "id" : "io.github.jefersonrl.agrosus",
+  "type" : "ImplementationGuide",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus",
+  "version" : "0.1.0",
+  "name" : "AgroSUSFHIR"
+}]

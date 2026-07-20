@@ -1,0 +1,29 @@
+AgroSUSFHIR : Validation Results
+=========================================
+
+err = 2, warn = 8, info = 2
+IG Publisher Version: 2.2.11
+Generated Mon Jul 20 19:35:26 UTC 2026. FHIR version 4.0.1 for io.github.jefersonrl.agrosus#0.1.0 (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
+ Build Errors : 6 / 2 / 0
+ /work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus : 2 / 6 / 4
+</table>
+== n/a ==
+WARNING: /work/output/business-processes.html: Illegal HTML: illegal html element: nark (insert content here</mark>.)
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 302, column 8: The link 'definitions.xml.zip' for "XML" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 303, column 8: The link 'definitions.json.zip' for "JSON" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 305, column 9: The link 'definitions.ttl.zip' for "TTL" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 319, column 8: The link 'examples.xml.zip' for "XML" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 320, column 8: The link 'examples.json.zip' for "JSON" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 321, column 8: The link 'examples.ttl.zip' for "TTL" cannot be resolved
+WARNING: /work/output/testing.html: Illegal HTML: illegal html element: static_server_port ( e.g. http://localhost:8087)
+== fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json ==
+INFORMATION: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#BR for language(s) 'pt-BR'. The display is 'Brazil' which is a valid display for the default language
+ERROR: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+WARNING: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.dependsOn[0]: O Guia de Implementação utiliza o pacote hl7.terminology#5.5.0 lançado em 2024-03-09, mas a versão apropriada mais recente é 7.2.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.dependsOn[1]: O Guia de Implementação utiliza o pacote hl7.fhir.uv.extensions.r4#5.1.0 lançado em 2024-04-27, mas a versão apropriada mais recente é 5.3.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.dependsOn[2]: O Guia de Implementação utiliza o pacote hl7.fhir.uv.cql#1.0.0 lançado em 2024-05-31, mas a versão apropriada mais recente é 2.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.dependsOn[3]: O Guia de Implementação utiliza o pacote hl7.fhir.uv.crmi#1.0.0 lançado em 2024-05-31, mas a versão apropriada mais recente é 2.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.dependsOn[4]: O Guia de Implementação utiliza o pacote hl7.fhir.uv.sdc#3.0.0 lançado em 2022-03-08, mas a versão apropriada mais recente é 4.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+WARNING: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.dependsOn[7]: O Guia de Implementação utiliza o pacote smart.who.int.base#0.1.0 lançado em 2024-09-20, mas a versão apropriada mais recente é 0.2.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada
+ERROR: ImplementationGuide/io.github.jefersonrl.agrosus: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0)
+INFORMATION: Resource: The resource ImplementationGuide/io.github.jefersonrl.agrosus could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

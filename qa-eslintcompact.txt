@@ -1,0 +1,24 @@
+AgroSUSFHIR
+=========================================
+
+Generic: line 0, col 0, Warning - Illegal HTML: illegal html element: nark (insert content here</mark>.) (INVALID)
+Generic: line 0, col 0, Error - The link 'definitions.xml.zip' for "XML" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'definitions.json.zip' for "JSON" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'definitions.ttl.zip' for "TTL" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'examples.xml.zip' for "XML" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'examples.json.zip' for "JSON" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'examples.ttl.zip' for "TTL" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Warning - Illegal HTML: illegal html element: static_server_port ( e.g. http://localhost:8087) (INVALID)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 1849, Info - There are no valid display names found for the code urn:iso:std:iso:3166#BR for language(s) 'pt-BR'. The display is 'Brazil' which is a valid display for the default language (INVALID)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 19617, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 2103, Warning - O Guia de Implementação utiliza o pacote hl7.terminology#5.5.0 lançado em 2024-03-09, mas a versão apropriada mais recente é 7.2.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 2278, Warning - O Guia de Implementação utiliza o pacote hl7.fhir.uv.extensions.r4#5.1.0 lançado em 2024-04-27, mas a versão apropriada mais recente é 5.3.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 2422, Warning - O Guia de Implementação utiliza o pacote hl7.fhir.uv.cql#1.0.0 lançado em 2024-05-31, mas a versão apropriada mais recente é 2.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 2570, Warning - O Guia de Implementação utiliza o pacote hl7.fhir.uv.crmi#1.0.0 lançado em 2024-05-31, mas a versão apropriada mais recente é 2.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 2714, Warning - O Guia de Implementação utiliza o pacote hl7.fhir.uv.sdc#3.0.0 lançado em 2022-03-08, mas a versão apropriada mais recente é 4.0.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 3361, Warning - O Guia de Implementação utiliza o pacote smart.who.int.base#0.1.0 lançado em 2024-09-20, mas a versão apropriada mais recente é 0.2.0. Esta referência está a ficar velha e a versão mais recente deve ser considerada (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 1, col 19617, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://smart.who.int/base/StructureDefinition/SGImplementationGuide|0.1.0) (STRUCTURE)
+/work/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus.json: line 0, col 0, Info - The resource ImplementationGuide/io.github.jefersonrl.agrosus could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
+
+err = 2, warn = 8, info = 2
+IG Publisher Version: 2.2.11

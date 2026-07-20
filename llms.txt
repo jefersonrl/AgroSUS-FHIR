@@ -1,0 +1,43 @@
+# io.github.jefersonrl.agrosus#0.1.0: Módulo AgroSUS — Projeto mareIA
+
+## Pages
+
+* [Home](index.md)
+* [DAK API Documentation Hub](dak-api.md)
+* [Codings](codings.md)
+* [Mappings](maps.md)
+* [Indicators and Measures](indicators-measures.md)
+* [Business Requirements](business-requirements.md)
+* [Sequence Diagrams](sequence-diagrams.md)
+* [Deployment](deployment.md)
+* [Test Data](test-data.md)
+* [Downloads](downloads.md)
+* [Security and Privacy Considerations](security-privacy.md)
+* [Generic Personas](personas.md)
+* [Transactions](transactions.md)
+* [System Actors](system-actors.md)
+* [Trust Domains](trust_domain.md)
+* [Concepts](concepts.md)
+* [Functional Requirements](functional-requirements.md)
+* [License](license.md)
+* [Dependencies](dependencies.md)
+* [Adapting Guidelines for Country use](adapting.md)
+* [Non-functional Requirements](non-functional-requirements.md)
+* [Changes](changes.md)
+* [Reference Implementations](reference-implementations.md)
+* [Decision-support logic](decision-logic.md)
+* [References](references.md)
+* [Indicator and Performance Metrics](indicators.md)
+* [Indices](indices.md)
+* [Testing](testing.md)
+* [Business Processes](business-processes.md)
+* [Data Models and Exchange](data-models-and-exchange.md)
+* [Artifact Index](artifacts.md)
+* [User Scenarios](scenarios.md)
+* [Data Dictionary](dictionary.md)
+
+## Resources
+
+### ImplementationGuides
+
+* [Módulo AgroSUS — Projeto mareIA](index.md)
