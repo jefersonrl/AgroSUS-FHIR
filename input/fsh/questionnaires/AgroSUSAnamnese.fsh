@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.9.0"
+* version = "0.10.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -604,3 +604,74 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[8].item[14].enableWhen[0].question = "motivo-nao-utilizar-epi"
 * item[8].item[14].enableWhen[0].operator = #=
 * item[8].item[14].enableWhen[0].answerCoding = AgroSUSEPICS#outro
+
+// Seção 10 — Armazenamento dos defensivos agrícolas
+
+* item[9].linkId = "armazenamento-defensivos"
+* item[9].text = "10. Armazenamento dos defensivos agrícolas"
+* item[9].type = #group
+
+* item[9].item[0].linkId = "local-armazenamento-defensivos"
+* item[9].item[0].text = "Onde os defensivos agrícolas são armazenados?"
+* item[9].item[0].type = #choice
+* item[9].item[0].repeats = true
+* item[9].item[0].required = true
+* item[9].item[0].answerValueSet = Canonical(AgroSUSLocalArmazenamentoDefensivosVS)
+
+* item[9].item[1].linkId = "outro-local-armazenamento-defensivos"
+* item[9].item[1].text = "Informe o outro local de armazenamento"
+* item[9].item[1].type = #string
+* item[9].item[1].required = true
+* item[9].item[1].enableWhen[0].question = "local-armazenamento-defensivos"
+* item[9].item[1].enableWhen[0].operator = #=
+* item[9].item[1].enableWhen[0].answerCoding = AgroSUSArmazenamentoDefensivosCS#outro
+
+* item[9].item[2].linkId = "deposito-ventilacao-adequada"
+* item[9].item[2].text = "O depósito possui ventilação adequada?"
+* item[9].item[2].type = #boolean
+* item[9].item[2].required = true
+
+* item[9].item[3].linkId = "deposito-piso-impermeavel"
+* item[9].item[3].text = "O depósito possui piso impermeável?"
+* item[9].item[3].type = #boolean
+* item[9].item[3].required = true
+
+* item[9].item[4].linkId = "deposito-prateleiras-apropriadas"
+* item[9].item[4].text = "O depósito possui prateleiras apropriadas?"
+* item[9].item[4].type = #boolean
+* item[9].item[4].required = true
+
+* item[9].item[5].linkId = "deposito-fechadura-seguranca"
+* item[9].item[5].text = "O depósito possui fechadura ou tranca de segurança?"
+* item[9].item[5].type = #boolean
+* item[9].item[5].required = true
+
+* item[9].item[6].linkId = "deposito-sinalizacao-risco"
+* item[9].item[6].text = "O depósito possui sinalização de risco e perigo?"
+* item[9].item[6].type = #boolean
+* item[9].item[6].required = true
+
+* item[9].item[7].linkId = "deposito-extintor-incendio"
+* item[9].item[7].text = "Há extintor de incêndio disponível no depósito?"
+* item[9].item[7].type = #boolean
+* item[9].item[7].required = true
+
+* item[9].item[8].linkId = "defensivos-separados-alimentos"
+* item[9].item[8].text = "Os defensivos são armazenados separadamente de alimentos?"
+* item[9].item[8].type = #boolean
+* item[9].item[8].required = true
+
+* item[9].item[9].linkId = "defensivos-separados-fontes-agua"
+* item[9].item[9].text = "Os defensivos são armazenados separadamente de fontes de água?"
+* item[9].item[9].type = #boolean
+* item[9].item[9].required = true
+
+* item[9].item[10].linkId = "defensivos-separados-roupas-epis"
+* item[9].item[10].text = "Os defensivos são armazenados separadamente de roupas e EPIs?"
+* item[9].item[10].type = #boolean
+* item[9].item[10].required = true
+
+* item[9].item[11].linkId = "nenhum-defensivo-na-residencia"
+* item[9].item[11].text = "Nenhum defensivo agrícola é armazenado dentro da residência?"
+* item[9].item[11].type = #boolean
+* item[9].item[11].required = true
