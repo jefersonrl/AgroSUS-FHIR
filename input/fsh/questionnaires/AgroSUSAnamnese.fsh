@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.11.0"
+* version = "0.12.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -724,3 +724,60 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[10].item[5].enableWhen[0].question = "destino-embalagens-nao-devolvidas"
 * item[10].item[5].enableWhen[0].operator = #=
 * item[10].item[5].enableWhen[0].answerCoding = AgroSUSDestinacaoEmbalagensCS#outro
+
+// Seção 12 — Exposição familiar e ambiental
+
+* item[11].linkId = "exposicao-familiar-ambiental"
+* item[11].text = "12. Exposição familiar e ambiental"
+* item[11].type = #group
+
+* item[11].item[0].linkId = "familiares-auxiliam-aplicacao"
+* item[11].item[0].text = "Familiares auxiliam na aplicação de defensivos agrícolas?"
+* item[11].item[0].type = #boolean
+* item[11].item[0].required = true
+
+* item[11].item[1].linkId = "familiares-que-auxiliam"
+* item[11].item[1].text = "Quais familiares auxiliam na aplicação?"
+* item[11].item[1].type = #choice
+* item[11].item[1].repeats = true
+* item[11].item[1].required = true
+* item[11].item[1].answerValueSet = Canonical(AgroSUSFamiliaresAuxiliamAplicacaoVS)
+* item[11].item[1].enableWhen[0].question = "familiares-auxiliam-aplicacao"
+* item[11].item[1].enableWhen[0].operator = #=
+* item[11].item[1].enableWhen[0].answerBoolean = true
+
+* item[11].item[2].linkId = "outros-familiares-que-auxiliam"
+* item[11].item[2].text = "Informe quais são os outros familiares"
+* item[11].item[2].type = #string
+* item[11].item[2].required = true
+* item[11].item[2].enableWhen[0].question = "familiares-que-auxiliam"
+* item[11].item[2].enableWhen[0].operator = #=
+* item[11].item[2].enableWhen[0].answerCoding = AgroSUSExposicaoFamiliarCS#outros
+
+* item[11].item[3].linkId = "criancas-acesso-area-ou-deposito"
+* item[11].item[3].text = "Crianças ou adolescentes têm acesso às áreas de aplicação ou ao depósito de armazenamento?"
+* item[11].item[3].type = #boolean
+* item[11].item[3].required = true
+
+* item[11].item[4].linkId = "fonte-agua-proxima-aplicacao"
+* item[11].item[4].text = "Há nascente, rio, córrego, açude ou poço próximo à área onde os defensivos são aplicados?"
+* item[11].item[4].type = #boolean
+* item[11].item[4].required = true
+
+* item[11].item[5].linkId = "moradias-proximas-aplicacao"
+* item[11].item[5].text = "Há moradias próximas da área de aplicação, como casas de vizinhos, agregados ou trabalhadores?"
+* item[11].item[5].type = #boolean
+* item[11].item[5].required = true
+
+* item[11].item[6].linkId = "risco-deriva-propriedades-vizinhas"
+* item[11].item[6].text = "Há risco de deriva da calda defensiva para áreas ou propriedades vizinhas?"
+* item[11].item[6].type = #boolean
+* item[11].item[6].required = true
+
+* item[11].item[7].linkId = "agua-proxima-usada-consumo"
+* item[11].item[7].text = "A água da fonte próxima à área de aplicação é utilizada para consumo humano ou animal?"
+* item[11].item[7].type = #boolean
+* item[11].item[7].required = true
+* item[11].item[7].enableWhen[0].question = "fonte-agua-proxima-aplicacao"
+* item[11].item[7].enableWhen[0].operator = #=
+* item[11].item[7].enableWhen[0].answerBoolean = true
