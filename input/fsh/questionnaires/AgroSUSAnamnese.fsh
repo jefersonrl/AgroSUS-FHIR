@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.8.0"
+* version = "0.9.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -499,3 +499,108 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[7].item[11].text = "As condições climáticas, como vento, chuva e temperatura, são observadas antes de iniciar a pulverização?"
 * item[7].item[11].type = #boolean
 * item[7].item[11].required = true
+
+// Seção 9 — Equipamentos de Proteção Individual
+
+* item[8].linkId = "equipamentos-protecao-individual"
+* item[8].text = "9. Equipamentos de Proteção Individual"
+* item[8].type = #group
+
+* item[8].item[0].linkId = "uso-mascara-respiratoria"
+* item[8].item[0].text = "Máscara respiratória PFF2/PFF3 ou com filtro químico"
+* item[8].item[0].type = #choice
+* item[8].item[0].required = true
+* item[8].item[0].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[1].linkId = "uso-touca-arabe"
+* item[8].item[1].text = "Touca árabe"
+* item[8].item[1].type = #choice
+* item[8].item[1].required = true
+* item[8].item[1].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[2].linkId = "uso-luvas"
+* item[8].item[2].text = "Luvas de nitrila, neoprene ou borracha"
+* item[8].item[2].type = #choice
+* item[8].item[2].required = true
+* item[8].item[2].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[3].linkId = "uso-avental-impermeavel"
+* item[8].item[3].text = "Avental impermeável"
+* item[8].item[3].type = #choice
+* item[8].item[3].required = true
+* item[8].item[3].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[4].linkId = "uso-botas-borracha"
+* item[8].item[4].text = "Botas de borracha"
+* item[8].item[4].type = #choice
+* item[8].item[4].required = true
+* item[8].item[4].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[5].linkId = "uso-oculos-protecao"
+* item[8].item[5].text = "Óculos de proteção"
+* item[8].item[5].type = #choice
+* item[8].item[5].required = true
+* item[8].item[5].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[6].linkId = "uso-macacao-impermeavel"
+* item[8].item[6].text = "Macacão ou roupa impermeável"
+* item[8].item[6].type = #choice
+* item[8].item[6].required = true
+* item[8].item[6].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+
+* item[8].item[7].linkId = "uso-protetor-auricular"
+* item[8].item[7].text = "Protetor auricular"
+* item[8].item[7].type = #choice
+* item[8].item[7].required = true
+* item[8].item[7].answerValueSet = Canonical(AgroSUSFrequenciaUsoEPIVS)
+* item[8].item[7].enableWhen[0].question = "equipamento-aplicacao"
+* item[8].item[7].enableWhen[0].operator = #=
+* item[8].item[7].enableWhen[0].answerCoding = AgroSUSExposicaoCS#pulverizador-costal-motorizado
+* item[8].item[7].enableWhen[1].question = "equipamento-aplicacao"
+* item[8].item[7].enableWhen[1].operator = #=
+* item[8].item[7].enableWhen[1].answerCoding = AgroSUSExposicaoCS#trator-com-barra
+* item[8].item[7].enableBehavior = #any
+
+* item[8].item[8].linkId = "epis-boas-condicoes"
+* item[8].item[8].text = "Os EPIs estão em boas condições de uso e conservação?"
+* item[8].item[8].type = #boolean
+
+* item[8].item[9].linkId = "substitui-filtros-mascara"
+* item[8].item[9].text = "Os filtros da máscara respiratória são substituídos periodicamente conforme recomendação do fabricante?"
+* item[8].item[9].type = #boolean
+* item[8].item[9].required = true
+* item[8].item[9].enableWhen[0].question = "uso-mascara-respiratoria"
+* item[8].item[9].enableWhen[0].operator = #!=
+* item[8].item[9].enableWhen[0].answerCoding = AgroSUSEPICS#nao-possui
+
+* item[8].item[10].linkId = "higieniza-epis-apos-uso"
+* item[8].item[10].text = "Realiza a lavagem e a higienização dos EPIs após cada uso?"
+* item[8].item[10].type = #boolean
+
+* item[8].item[11].linkId = "armazenamento-epis"
+* item[8].item[11].text = "Onde os EPIs são armazenados?"
+* item[8].item[11].type = #choice
+* item[8].item[11].repeats = true
+* item[8].item[11].answerValueSet = Canonical(AgroSUSArmazenamentoEPIVS)
+
+* item[8].item[12].linkId = "outro-armazenamento-epis"
+* item[8].item[12].text = "Informe o outro local de armazenamento dos EPIs"
+* item[8].item[12].type = #string
+* item[8].item[12].required = true
+* item[8].item[12].enableWhen[0].question = "armazenamento-epis"
+* item[8].item[12].enableWhen[0].operator = #=
+* item[8].item[12].enableWhen[0].answerCoding = AgroSUSEPICS#outro
+
+* item[8].item[13].linkId = "motivo-nao-utilizar-epi"
+* item[8].item[13].text = "Qual o motivo de não utilizar os EPIs, quando aplicável?"
+* item[8].item[13].type = #choice
+* item[8].item[13].repeats = true
+* item[8].item[13].answerValueSet = Canonical(AgroSUSMotivoNaoUsoEPIVS)
+
+* item[8].item[14].linkId = "outro-motivo-nao-utilizar-epi"
+* item[8].item[14].text = "Informe o outro motivo de não utilizar os EPIs"
+* item[8].item[14].type = #string
+* item[8].item[14].required = true
+* item[8].item[14].enableWhen[0].question = "motivo-nao-utilizar-epi"
+* item[8].item[14].enableWhen[0].operator = #=
+* item[8].item[14].enableWhen[0].answerCoding = AgroSUSEPICS#outro
