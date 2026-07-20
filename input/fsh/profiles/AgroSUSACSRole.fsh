@@ -11,7 +11,8 @@ Description: "Perfil do vínculo do Agente Comunitário de Saúde ou Técnico em
 * period ^short = "Período de validade do vínculo do ACS com a organização"
 
 * practitioner 1..1 MS
-* practitioner ^short = "Profissional que exerce a função de ACS"
+* practitioner only Reference(AgroSUSACS)
+* practitioner ^short = "ACS ou Técnico em ACS que exerce esta função"
 
 * organization 1..1 MS
 * organization only Reference(AgroSUSUBS)
