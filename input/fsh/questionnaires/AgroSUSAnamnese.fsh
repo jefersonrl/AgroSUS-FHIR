@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.14.0"
+* version = "0.15.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -1190,3 +1190,99 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[13].item[7].type = #choice
 * item[13].item[7].required = true
 * item[13].item[7].answerValueSet = Canonical(AgroSUSNumeroIntoxicacoesAgudasVS)
+
+// Seção 15 — Indicadores de boas práticas agrícolas
+
+* item[14].linkId = "indicadores-boas-praticas"
+* item[14].text = "15. Indicadores de boas práticas agrícolas"
+* item[14].type = #group
+
+* item[14].item[0].linkId = "boa-pratica-assistencia-tecnica"
+* item[14].item[0].text = "Recebe assistência técnica para a produção"
+* item[14].item[0].type = #choice
+* item[14].item[0].required = true
+* item[14].item[0].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[1].linkId = "boa-pratica-responsavel-tecnico"
+* item[14].item[1].text = "Possui responsável técnico habilitado pela produção"
+* item[14].item[1].type = #choice
+* item[14].item[1].required = true
+* item[14].item[1].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[2].linkId = "boa-pratica-receituario-vigente"
+* item[14].item[2].text = "Possui receituário agronômico vigente"
+* item[14].item[2].type = #choice
+* item[14].item[2].required = true
+* item[14].item[2].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[3].linkId = "boa-pratica-capacitacao-uso-seguro"
+* item[14].item[3].text = "Participou de capacitação em uso seguro de defensivos"
+* item[14].item[3].type = #choice
+* item[14].item[3].required = true
+* item[14].item[3].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[4].linkId = "boa-pratica-uso-adequado-epis"
+* item[14].item[4].text = "Utiliza EPIs de forma adequada durante a aplicação"
+* item[14].item[4].type = #choice
+* item[14].item[4].required = true
+* item[14].item[4].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[5].linkId = "boa-pratica-higienizacao-epis"
+* item[14].item[5].text = "Realiza higienização correta dos EPIs após o uso"
+* item[14].item[5].type = #choice
+* item[14].item[5].required = true
+* item[14].item[5].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[6].linkId = "boa-pratica-armazenamento-defensivos"
+* item[14].item[6].text = "Armazena os defensivos em local adequado e seguro"
+* item[14].item[6].type = #choice
+* item[14].item[6].required = true
+* item[14].item[6].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[7].linkId = "boa-pratica-triplice-lavagem"
+* item[14].item[7].text = "Realiza tríplice lavagem das embalagens vazias"
+* item[14].item[7].type = #choice
+* item[14].item[7].required = true
+* item[14].item[7].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[8].linkId = "boa-pratica-devolucao-embalagens"
+* item[14].item[8].text = "Devolve embalagens vazias nos pontos de coleta autorizados"
+* item[14].item[8].type = #choice
+* item[14].item[8].required = true
+* item[14].item[8].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[9].linkId = "boa-pratica-registro-datas"
+* item[14].item[9].text = "Mantém registro das datas de aplicação"
+* item[14].item[9].type = #choice
+* item[14].item[9].required = true
+* item[14].item[9].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[10].linkId = "boa-pratica-registro-produtos"
+* item[14].item[10].text = "Mantém registro dos produtos utilizados em cada aplicação"
+* item[14].item[10].type = #choice
+* item[14].item[10].required = true
+* item[14].item[10].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[11].linkId = "boa-pratica-intervalo-reentrada"
+* item[14].item[11].text = "Respeita o intervalo de reentrada na lavoura"
+* item[14].item[11].type = #choice
+* item[14].item[11].required = true
+* item[14].item[11].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[12].linkId = "boa-pratica-condicoes-climaticas"
+* item[14].item[12].text = "Observa as condições climáticas antes de pulverizar"
+* item[14].item[12].type = #choice
+* item[14].item[12].required = true
+* item[14].item[12].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[13].linkId = "boa-pratica-manutencao-pulverizador"
+* item[14].item[13].text = "Realiza manutenção periódica do pulverizador"
+* item[14].item[13].type = #choice
+* item[14].item[13].required = true
+* item[14].item[13].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+* item[14].item[14].linkId = "boa-pratica-acompanhamento-aps"
+* item[14].item[14].text = "Recebe acompanhamento periódico pela equipe de APS/ESF"
+* item[14].item[14].type = #choice
+* item[14].item[14].required = true
+* item[14].item[14].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
