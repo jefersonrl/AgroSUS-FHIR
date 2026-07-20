@@ -41,6 +41,10 @@ dependencies:
   #   id: sbc
   #   version: current
   #   reason: This IG uses SMART base clinical capabilities
+  br.gov.saude.br-core.fhir: 1.0.0
+
+  hl7.terminology: 5.5.0
+  hl7.fhir.uv.extensions.r4: 5.1.0
 
 meta:
   profile:
