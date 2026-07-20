@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.4.0"
+* version = "0.5.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -261,3 +261,53 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[3].item[8].enableWhen[0].question = "possui-responsavel-tecnico"
 * item[3].item[8].enableWhen[0].operator = #=
 * item[3].item[8].enableWhen[0].answerBoolean = true
+
+// Seção 5 — Capacitação do trabalhador
+
+* item[4].linkId = "capacitacao-trabalhador"
+* item[4].text = "5. Capacitação do trabalhador"
+* item[4].type = #group
+
+* item[4].item[0].linkId = "participou-capacitacao"
+* item[4].item[0].text = "Você já participou de treinamento ou capacitação sobre o uso correto e seguro de defensivos agrícolas?"
+* item[4].item[0].type = #boolean
+* item[4].item[0].required = true
+
+* item[4].item[1].linkId = "data-ultima-capacitacao"
+* item[4].item[1].text = "Quando ocorreu a última capacitação? Informe o mês e o ano"
+* item[4].item[1].type = #date
+* item[4].item[1].required = true
+* item[4].item[1].enableWhen[0].question = "participou-capacitacao"
+* item[4].item[1].enableWhen[0].operator = #=
+* item[4].item[1].enableWhen[0].answerBoolean = true
+
+* item[4].item[2].linkId = "responsavel-capacitacao"
+* item[4].item[2].text = "Quem realizou a capacitação?"
+* item[4].item[2].type = #string
+* item[4].item[2].required = true
+* item[4].item[2].enableWhen[0].question = "participou-capacitacao"
+* item[4].item[2].enableWhen[0].operator = #=
+* item[4].item[2].enableWhen[0].answerBoolean = true
+
+* item[4].item[3].linkId = "recebe-orientacoes-periodicas"
+* item[4].item[3].text = "Você recebe orientações periódicas sobre segurança no trabalho rural?"
+* item[4].item[3].type = #boolean
+* item[4].item[3].required = true
+
+* item[4].item[4].linkId = "temas-capacitacao"
+* item[4].item[4].text = "Temas abordados nas capacitações"
+* item[4].item[4].type = #choice
+* item[4].item[4].repeats = true
+* item[4].item[4].required = true
+* item[4].item[4].answerValueSet = Canonical(AgroSUSTemasCapacitacaoVS)
+* item[4].item[4].enableWhen[0].question = "participou-capacitacao"
+* item[4].item[4].enableWhen[0].operator = #=
+* item[4].item[4].enableWhen[0].answerBoolean = true
+
+* item[4].item[5].linkId = "outros-temas-capacitacao"
+* item[4].item[5].text = "Especifique os outros temas abordados"
+* item[4].item[5].type = #string
+* item[4].item[5].required = true
+* item[4].item[5].enableWhen[0].question = "temas-capacitacao"
+* item[4].item[5].enableWhen[0].operator = #=
+* item[4].item[5].enableWhen[0].answerCoding = AgroSUSCapacitacaoCS#outros
