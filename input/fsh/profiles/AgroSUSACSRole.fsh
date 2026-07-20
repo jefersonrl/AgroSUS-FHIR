@@ -14,7 +14,8 @@ Description: "Perfil do vínculo do Agente Comunitário de Saúde ou Técnico em
 * practitioner ^short = "Profissional que exerce a função de ACS"
 
 * organization 1..1 MS
-* organization ^short = "UBS ou organização de saúde à qual o ACS está vinculado"
+* organization only Reference(AgroSUSUBS)
+* organization ^short = "UBS à qual o ACS está vinculado"
 
 * code 1..1 MS
 * code ^short = "Ocupação do ACS segundo a CBO"
