@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.15.0"
+* version = "0.17.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -1286,3 +1286,15 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[14].item[14].type = #choice
 * item[14].item[14].required = true
 * item[14].item[14].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
+
+// Seção 16 do instrumento adiada até validação do algoritmo clínico.
+
+// Seção 17 — Observações do Agente Comunitário de Saúde
+
+* item[15].linkId = "observacoes-acs"
+* item[15].text = "17. Observações do Agente Comunitário de Saúde"
+* item[15].type = #group
+
+* item[15].item[0].linkId = "observacoes-adicionais-acs"
+* item[15].item[0].text = "Registre condições do domicílio, contexto ambiental observado em campo, comportamento durante a entrevista, dificuldades na aplicação do instrumento ou outras informações relevantes para o acompanhamento."
+* item[15].item[0].type = #text
