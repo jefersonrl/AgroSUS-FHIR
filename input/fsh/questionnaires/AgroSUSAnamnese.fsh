@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.13.1"
+* version = "0.14.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -1143,3 +1143,50 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[12].item[25].item[1].enableWhen[0].question = "irritabilidade-humor-presente"
 * item[12].item[25].item[1].enableWhen[0].operator = #=
 * item[12].item[25].item[1].enableWhen[0].answerBoolean = true
+
+// Seção 14 — Histórico de intoxicação e vigilância em saúde
+
+* item[13].linkId = "historico-intoxicacao-vigilancia"
+* item[13].text = "14. Histórico de intoxicação e vigilância em saúde"
+* item[13].type = #group
+
+* item[13].item[0].linkId = "procurou-atendimento-sintomas-defensivos"
+* item[13].item[0].text = "Já procurou atendimento de saúde por sintomas que acreditava estarem relacionados ao uso de defensivos agrícolas?"
+* item[13].item[0].type = #boolean
+* item[13].item[0].required = true
+
+* item[13].item[1].linkId = "intoxicacao-confirmada-medico"
+* item[13].item[1].text = "Já teve intoxicação por defensivo agrícola confirmada por médico?"
+* item[13].item[1].type = #boolean
+* item[13].item[1].required = true
+
+* item[13].item[2].linkId = "hospitalizacao-por-intoxicacao"
+* item[13].item[2].text = "Já foi hospitalizado em decorrência de intoxicação por defensivo agrícola?"
+* item[13].item[2].type = #boolean
+* item[13].item[2].required = true
+
+* item[13].item[3].linkId = "caso-notificado-sinan"
+* item[13].item[3].text = "O caso foi notificado no Sistema de Informação de Agravos de Notificação (SINAN)?"
+* item[13].item[3].type = #boolean
+* item[13].item[3].required = true
+
+* item[13].item[4].linkId = "cat-emitida"
+* item[13].item[4].text = "Foi emitida Comunicação de Acidente de Trabalho (CAT) em decorrência do evento?"
+* item[13].item[4].type = #boolean
+* item[13].item[4].required = true
+
+* item[13].item[5].linkId = "acompanhamento-cerest"
+* item[13].item[5].text = "Já recebeu visita ou acompanhamento do Centro de Referência em Saúde do Trabalhador (CEREST)?"
+* item[13].item[5].type = #boolean
+* item[13].item[5].required = true
+
+* item[13].item[6].linkId = "encaminhamento-apos-evento"
+* item[13].item[6].text = "Houve encaminhamento para UBS, CEREST ou outro serviço de saúde especializado após o evento?"
+* item[13].item[6].type = #boolean
+* item[13].item[6].required = true
+
+* item[13].item[7].linkId = "numero-intoxicacoes-agudas-autorreferidas"
+* item[13].item[7].text = "Número de intoxicações agudas anteriores autorreferidas"
+* item[13].item[7].type = #choice
+* item[13].item[7].required = true
+* item[13].item[7].answerValueSet = Canonical(AgroSUSNumeroIntoxicacoesAgudasVS)
