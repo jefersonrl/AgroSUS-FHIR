@@ -5,7 +5,7 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.13.0"
+* version = "0.13.1"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
@@ -821,3 +821,325 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[12].item[5].linkId = "orientacao-sintomas"
 * item[12].item[5].text = "Informe, para cada sinal ou sintoma, se ocorreu nos últimos 30 dias e se surgiu ou piorou após a aplicação de defensivo agrícola."
 * item[12].item[5].type = #display
+
+// Seção 13 — Parte B: sinais e sintomas dos últimos 30 dias
+
+* item[12].item[6].linkId = "avaliacao-cefaleia-frequente"
+* item[12].item[6].text = "Dor de cabeça (cefaleia) frequente"
+* item[12].item[6].type = #group
+* item[12].item[6].code[0] = AgroSUSCondicoesSintomasCS#sintoma-cefaleia-frequente
+* item[12].item[6].item[0].linkId = "cefaleia-frequente-presente"
+* item[12].item[6].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[6].item[0].type = #boolean
+* item[12].item[6].item[0].required = true
+* item[12].item[6].item[1].linkId = "cefaleia-frequente-apos-aplicacao"
+* item[12].item[6].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[6].item[1].type = #boolean
+* item[12].item[6].item[1].required = true
+* item[12].item[6].item[1].enableWhen[0].question = "cefaleia-frequente-presente"
+* item[12].item[6].item[1].enableWhen[0].operator = #=
+* item[12].item[6].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[7].linkId = "avaliacao-tontura-vertigem"
+* item[12].item[7].text = "Tontura ou vertigem"
+* item[12].item[7].type = #group
+* item[12].item[7].code[0] = AgroSUSCondicoesSintomasCS#sintoma-tontura-vertigem
+* item[12].item[7].item[0].linkId = "tontura-vertigem-presente"
+* item[12].item[7].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[7].item[0].type = #boolean
+* item[12].item[7].item[0].required = true
+* item[12].item[7].item[1].linkId = "tontura-vertigem-apos-aplicacao"
+* item[12].item[7].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[7].item[1].type = #boolean
+* item[12].item[7].item[1].required = true
+* item[12].item[7].item[1].enableWhen[0].question = "tontura-vertigem-presente"
+* item[12].item[7].item[1].enableWhen[0].operator = #=
+* item[12].item[7].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[8].linkId = "avaliacao-nauseas"
+* item[12].item[8].text = "Náuseas"
+* item[12].item[8].type = #group
+* item[12].item[8].code[0] = AgroSUSCondicoesSintomasCS#sintoma-nauseas
+* item[12].item[8].item[0].linkId = "nauseas-presente"
+* item[12].item[8].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[8].item[0].type = #boolean
+* item[12].item[8].item[0].required = true
+* item[12].item[8].item[1].linkId = "nauseas-apos-aplicacao"
+* item[12].item[8].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[8].item[1].type = #boolean
+* item[12].item[8].item[1].required = true
+* item[12].item[8].item[1].enableWhen[0].question = "nauseas-presente"
+* item[12].item[8].item[1].enableWhen[0].operator = #=
+* item[12].item[8].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[9].linkId = "avaliacao-vomitos"
+* item[12].item[9].text = "Vômitos"
+* item[12].item[9].type = #group
+* item[12].item[9].code[0] = AgroSUSCondicoesSintomasCS#sintoma-vomitos
+* item[12].item[9].item[0].linkId = "vomitos-presente"
+* item[12].item[9].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[9].item[0].type = #boolean
+* item[12].item[9].item[0].required = true
+* item[12].item[9].item[1].linkId = "vomitos-apos-aplicacao"
+* item[12].item[9].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[9].item[1].type = #boolean
+* item[12].item[9].item[1].required = true
+* item[12].item[9].item[1].enableWhen[0].question = "vomitos-presente"
+* item[12].item[9].item[1].enableWhen[0].operator = #=
+* item[12].item[9].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[10].linkId = "avaliacao-diarreia-colicas"
+* item[12].item[10].text = "Diarreia ou cólicas abdominais"
+* item[12].item[10].type = #group
+* item[12].item[10].code[0] = AgroSUSCondicoesSintomasCS#sintoma-diarreia-colicas-abdominais
+* item[12].item[10].item[0].linkId = "diarreia-colicas-presente"
+* item[12].item[10].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[10].item[0].type = #boolean
+* item[12].item[10].item[0].required = true
+* item[12].item[10].item[1].linkId = "diarreia-colicas-apos-aplicacao"
+* item[12].item[10].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[10].item[1].type = #boolean
+* item[12].item[10].item[1].required = true
+* item[12].item[10].item[1].enableWhen[0].question = "diarreia-colicas-presente"
+* item[12].item[10].item[1].enableWhen[0].operator = #=
+* item[12].item[10].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[11].linkId = "avaliacao-tremores-contracoes"
+* item[12].item[11].text = "Tremores ou contrações musculares involuntárias"
+* item[12].item[11].type = #group
+* item[12].item[11].code[0] = AgroSUSCondicoesSintomasCS#sintoma-tremores-contracoes-involuntarias
+* item[12].item[11].item[0].linkId = "tremores-contracoes-presente"
+* item[12].item[11].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[11].item[0].type = #boolean
+* item[12].item[11].item[0].required = true
+* item[12].item[11].item[1].linkId = "tremores-contracoes-apos-aplicacao"
+* item[12].item[11].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[11].item[1].type = #boolean
+* item[12].item[11].item[1].required = true
+* item[12].item[11].item[1].enableWhen[0].question = "tremores-contracoes-presente"
+* item[12].item[11].item[1].enableWhen[0].operator = #=
+* item[12].item[11].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[12].linkId = "avaliacao-fraqueza-cansaco"
+* item[12].item[12].text = "Fraqueza ou cansaço extremo"
+* item[12].item[12].type = #group
+* item[12].item[12].code[0] = AgroSUSCondicoesSintomasCS#sintoma-fraqueza-cansaco-extremo
+* item[12].item[12].item[0].linkId = "fraqueza-cansaco-presente"
+* item[12].item[12].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[12].item[0].type = #boolean
+* item[12].item[12].item[0].required = true
+* item[12].item[12].item[1].linkId = "fraqueza-cansaco-apos-aplicacao"
+* item[12].item[12].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[12].item[1].type = #boolean
+* item[12].item[12].item[1].required = true
+* item[12].item[12].item[1].enableWhen[0].question = "fraqueza-cansaco-presente"
+* item[12].item[12].item[1].enableWhen[0].operator = #=
+* item[12].item[12].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[13].linkId = "avaliacao-diaforese"
+* item[12].item[13].text = "Suor excessivo (diaforese)"
+* item[12].item[13].type = #group
+* item[12].item[13].code[0] = AgroSUSCondicoesSintomasCS#sintoma-diaforese
+* item[12].item[13].item[0].linkId = "diaforese-presente"
+* item[12].item[13].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[13].item[0].type = #boolean
+* item[12].item[13].item[0].required = true
+* item[12].item[13].item[1].linkId = "diaforese-apos-aplicacao"
+* item[12].item[13].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[13].item[1].type = #boolean
+* item[12].item[13].item[1].required = true
+* item[12].item[13].item[1].enableWhen[0].question = "diaforese-presente"
+* item[12].item[13].item[1].enableWhen[0].operator = #=
+* item[12].item[13].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[14].linkId = "avaliacao-hipersalivacao"
+* item[12].item[14].text = "Salivação excessiva (hipersalivação)"
+* item[12].item[14].type = #group
+* item[12].item[14].code[0] = AgroSUSCondicoesSintomasCS#sintoma-hipersalivacao
+* item[12].item[14].item[0].linkId = "hipersalivacao-presente"
+* item[12].item[14].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[14].item[0].type = #boolean
+* item[12].item[14].item[0].required = true
+* item[12].item[14].item[1].linkId = "hipersalivacao-apos-aplicacao"
+* item[12].item[14].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[14].item[1].type = #boolean
+* item[12].item[14].item[1].required = true
+* item[12].item[14].item[1].enableWhen[0].question = "hipersalivacao-presente"
+* item[12].item[14].item[1].enableWhen[0].operator = #=
+* item[12].item[14].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[15].linkId = "avaliacao-irritacao-ocular"
+* item[12].item[15].text = "Irritação nos olhos, lacrimejamento ou hiperemia"
+* item[12].item[15].type = #group
+* item[12].item[15].code[0] = AgroSUSCondicoesSintomasCS#sintoma-irritacao-ocular
+* item[12].item[15].item[0].linkId = "irritacao-ocular-presente"
+* item[12].item[15].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[15].item[0].type = #boolean
+* item[12].item[15].item[0].required = true
+* item[12].item[15].item[1].linkId = "irritacao-ocular-apos-aplicacao"
+* item[12].item[15].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[15].item[1].type = #boolean
+* item[12].item[15].item[1].required = true
+* item[12].item[15].item[1].enableWhen[0].question = "irritacao-ocular-presente"
+* item[12].item[15].item[1].enableWhen[0].operator = #=
+* item[12].item[15].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[16].linkId = "avaliacao-irritacao-pele"
+* item[12].item[16].text = "Irritação ou dermatite na pele"
+* item[12].item[16].type = #group
+* item[12].item[16].code[0] = AgroSUSCondicoesSintomasCS#sintoma-irritacao-dermatite-pele
+* item[12].item[16].item[0].linkId = "irritacao-pele-presente"
+* item[12].item[16].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[16].item[0].type = #boolean
+* item[12].item[16].item[0].required = true
+* item[12].item[16].item[1].linkId = "irritacao-pele-apos-aplicacao"
+* item[12].item[16].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[16].item[1].type = #boolean
+* item[12].item[16].item[1].required = true
+* item[12].item[16].item[1].enableWhen[0].question = "irritacao-pele-presente"
+* item[12].item[16].item[1].enableWhen[0].operator = #=
+* item[12].item[16].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[17].linkId = "avaliacao-dispneia"
+* item[12].item[17].text = "Falta de ar ou dispneia"
+* item[12].item[17].type = #group
+* item[12].item[17].code[0] = AgroSUSCondicoesSintomasCS#sintoma-dispneia
+* item[12].item[17].item[0].linkId = "dispneia-presente"
+* item[12].item[17].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[17].item[0].type = #boolean
+* item[12].item[17].item[0].required = true
+* item[12].item[17].item[1].linkId = "dispneia-apos-aplicacao"
+* item[12].item[17].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[17].item[1].type = #boolean
+* item[12].item[17].item[1].required = true
+* item[12].item[17].item[1].enableWhen[0].question = "dispneia-presente"
+* item[12].item[17].item[1].enableWhen[0].operator = #=
+* item[12].item[17].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[18].linkId = "avaliacao-tosse-frequente"
+* item[12].item[18].text = "Tosse seca ou produtiva frequente"
+* item[12].item[18].type = #group
+* item[12].item[18].code[0] = AgroSUSCondicoesSintomasCS#sintoma-tosse-frequente
+* item[12].item[18].item[0].linkId = "tosse-frequente-presente"
+* item[12].item[18].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[18].item[0].type = #boolean
+* item[12].item[18].item[0].required = true
+* item[12].item[18].item[1].linkId = "tosse-frequente-apos-aplicacao"
+* item[12].item[18].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[18].item[1].type = #boolean
+* item[12].item[18].item[1].required = true
+* item[12].item[18].item[1].enableWhen[0].question = "tosse-frequente-presente"
+* item[12].item[18].item[1].enableWhen[0].operator = #=
+* item[12].item[18].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[19].linkId = "avaliacao-palpitacoes"
+* item[12].item[19].text = "Palpitações ou batimentos irregulares"
+* item[12].item[19].type = #group
+* item[12].item[19].code[0] = AgroSUSCondicoesSintomasCS#sintoma-palpitacoes
+* item[12].item[19].item[0].linkId = "palpitacoes-presente"
+* item[12].item[19].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[19].item[0].type = #boolean
+* item[12].item[19].item[0].required = true
+* item[12].item[19].item[1].linkId = "palpitacoes-apos-aplicacao"
+* item[12].item[19].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[19].item[1].type = #boolean
+* item[12].item[19].item[1].required = true
+* item[12].item[19].item[1].enableWhen[0].question = "palpitacoes-presente"
+* item[12].item[19].item[1].enableWhen[0].operator = #=
+* item[12].item[19].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[20].linkId = "avaliacao-alteracao-visual"
+* item[12].item[20].text = "Alteração visual ou visão turva"
+* item[12].item[20].type = #group
+* item[12].item[20].code[0] = AgroSUSCondicoesSintomasCS#sintoma-alteracao-visual
+* item[12].item[20].item[0].linkId = "alteracao-visual-presente"
+* item[12].item[20].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[20].item[0].type = #boolean
+* item[12].item[20].item[0].required = true
+* item[12].item[20].item[1].linkId = "alteracao-visual-apos-aplicacao"
+* item[12].item[20].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[20].item[1].type = #boolean
+* item[12].item[20].item[1].required = true
+* item[12].item[20].item[1].enableWhen[0].question = "alteracao-visual-presente"
+* item[12].item[20].item[1].enableWhen[0].operator = #=
+* item[12].item[20].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[21].linkId = "avaliacao-confusao-desorientacao"
+* item[12].item[21].text = "Confusão mental ou desorientação"
+* item[12].item[21].type = #group
+* item[12].item[21].code[0] = AgroSUSCondicoesSintomasCS#sintoma-confusao-desorientacao
+* item[12].item[21].item[0].linkId = "confusao-desorientacao-presente"
+* item[12].item[21].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[21].item[0].type = #boolean
+* item[12].item[21].item[0].required = true
+* item[12].item[21].item[1].linkId = "confusao-desorientacao-apos-aplicacao"
+* item[12].item[21].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[21].item[1].type = #boolean
+* item[12].item[21].item[1].required = true
+* item[12].item[21].item[1].enableWhen[0].question = "confusao-desorientacao-presente"
+* item[12].item[21].item[1].enableWhen[0].operator = #=
+* item[12].item[21].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[22].linkId = "avaliacao-memoria-concentracao"
+* item[12].item[22].text = "Dificuldade de memória ou concentração"
+* item[12].item[22].type = #group
+* item[12].item[22].code[0] = AgroSUSCondicoesSintomasCS#sintoma-dificuldade-memoria-concentracao
+* item[12].item[22].item[0].linkId = "memoria-concentracao-presente"
+* item[12].item[22].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[22].item[0].type = #boolean
+* item[12].item[22].item[0].required = true
+* item[12].item[22].item[1].linkId = "memoria-concentracao-apos-aplicacao"
+* item[12].item[22].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[22].item[1].type = #boolean
+* item[12].item[22].item[1].required = true
+* item[12].item[22].item[1].enableWhen[0].question = "memoria-concentracao-presente"
+* item[12].item[22].item[1].enableWhen[0].operator = #=
+* item[12].item[22].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[23].linkId = "avaliacao-disturbios-sono"
+* item[12].item[23].text = "Distúrbios do sono, insônia ou hipersonia"
+* item[12].item[23].type = #group
+* item[12].item[23].code[0] = AgroSUSCondicoesSintomasCS#sintoma-disturbios-sono
+* item[12].item[23].item[0].linkId = "disturbios-sono-presente"
+* item[12].item[23].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[23].item[0].type = #boolean
+* item[12].item[23].item[0].required = true
+* item[12].item[23].item[1].linkId = "disturbios-sono-apos-aplicacao"
+* item[12].item[23].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[23].item[1].type = #boolean
+* item[12].item[23].item[1].required = true
+* item[12].item[23].item[1].enableWhen[0].question = "disturbios-sono-presente"
+* item[12].item[23].item[1].enableWhen[0].operator = #=
+* item[12].item[23].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[24].linkId = "avaliacao-formigamento-membros"
+* item[12].item[24].text = "Formigamento nos membros, como mãos, pés ou pernas"
+* item[12].item[24].type = #group
+* item[12].item[24].code[0] = AgroSUSCondicoesSintomasCS#sintoma-formigamento-membros
+* item[12].item[24].item[0].linkId = "formigamento-membros-presente"
+* item[12].item[24].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[24].item[0].type = #boolean
+* item[12].item[24].item[0].required = true
+* item[12].item[24].item[1].linkId = "formigamento-membros-apos-aplicacao"
+* item[12].item[24].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[24].item[1].type = #boolean
+* item[12].item[24].item[1].required = true
+* item[12].item[24].item[1].enableWhen[0].question = "formigamento-membros-presente"
+* item[12].item[24].item[1].enableWhen[0].operator = #=
+* item[12].item[24].item[1].enableWhen[0].answerBoolean = true
+
+* item[12].item[25].linkId = "avaliacao-irritabilidade-humor"
+* item[12].item[25].text = "Irritabilidade ou alterações de humor"
+* item[12].item[25].type = #group
+* item[12].item[25].code[0] = AgroSUSCondicoesSintomasCS#sintoma-irritabilidade-alteracoes-humor
+* item[12].item[25].item[0].linkId = "irritabilidade-humor-presente"
+* item[12].item[25].item[0].text = "Apresentou este sintoma nos últimos 30 dias?"
+* item[12].item[25].item[0].type = #boolean
+* item[12].item[25].item[0].required = true
+* item[12].item[25].item[1].linkId = "irritabilidade-humor-apos-aplicacao"
+* item[12].item[25].item[1].text = "O sintoma surgiu ou piorou após aplicação de defensivo agrícola?"
+* item[12].item[25].item[1].type = #boolean
+* item[12].item[25].item[1].required = true
+* item[12].item[25].item[1].enableWhen[0].question = "irritabilidade-humor-presente"
+* item[12].item[25].item[1].enableWhen[0].operator = #=
+* item[12].item[25].item[1].enableWhen[0].answerBoolean = true
