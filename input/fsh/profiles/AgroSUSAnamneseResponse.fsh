@@ -26,8 +26,8 @@ Description: "Perfil da resposta ao formulário de anamnese ocupacional e ambien
 * authored ^short = "Data e hora do registro das respostas"
 
 * author 1..1 MS
-* author only Reference(Practitioner or PractitionerRole)
-* author ^short = "ACS ou profissional responsável pelo registro"
+* author only Reference(AgroSUSACSRole)
+* author ^short = "Vínculo profissional do ACS responsável pelo registro"
 
 * source 1..1 MS
 * source only Reference(AgroSUSPatient or RelatedPerson)
