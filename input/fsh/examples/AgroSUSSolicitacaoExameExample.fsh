@@ -22,7 +22,7 @@ Description: "Solicitação fictícia de hemograma completo realizada pelo médi
 * category.text = "Exame laboratorial"
 
 * code = http://loinc.org#58410-2
-    "CBC panel - Blood by Automated count"
+    "CBC (hemogram) Sg Auto"
 
 * code.text = "Hemograma completo"
 
