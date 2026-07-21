@@ -13,6 +13,9 @@ Description: "Resposta parcial fictícia da anamnese AgroSUS registrada durante 
 * subject = Reference(agrosus-patient-example)
 * subject.display = "Maria Aparecida de Souza"
 
+* encounter = Reference(agrosus-visita-acs-exemplo)
+* encounter.display = "Visita em campo para aplicação inicial da anamnese AgroSUS"
+
 * authored = "2026-07-20T09:30:00-03:00"
 
 * author = Reference(agrosus-acs-role-exemplo)
