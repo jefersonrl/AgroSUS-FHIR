@@ -331,7 +331,7 @@
         
         &lt;tr&gt;
             &lt;th scope="row"&gt;&lt;b&gt;Date: &lt;/b&gt;&lt;/th&gt;
-            &lt;td style="padding-left: 4px;"&gt;2026-07-21 13:39:22+0000&lt;/td&gt;
+            &lt;td style="padding-left: 4px;"&gt;2026-07-21 13:58:44+0000&lt;/td&gt;
         &lt;/tr&gt;
         
 
@@ -347,9 +347,8 @@
             &lt;th scope="row"&gt;&lt;b&gt;Description: &lt;/b&gt;&lt;/th&gt;
             &lt;td style="padding-left: 4px;"&gt;&lt;div&gt;&lt;p&gt;Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).
 Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas
-fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.
-A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos
-e independentes.&lt;/p&gt;
+fontes, um escore composto de risco — ver ADR-0002. A lógica combina um indicador biológico
+objetivo (colinesterase) com gatilhos de alerta discretos e independentes.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de
@@ -415,8 +414,8 @@ Fonte: NR-7 item 7.4.5.1.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco
-ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os
-gatilhos acima sem validação clínica.&lt;/p&gt;
+ocupacional. Ver ADR-0002 — não inferir pesos ou combinação entre os gatilhos acima sem validação
+clínica.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;
         &lt;/tr&gt;
         
@@ -471,7 +470,7 @@ gatilhos acima sem validação clínica.&lt;/p&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="logic-library"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2026-07-21T13:39:22+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2026-07-21T13:58:44+00:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Fatec Ferraz de Vasconcelos"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Fatec Ferraz de Vasconcelos"/&gt;
@@ -483,9 +482,8 @@ gatilhos acima sem validação clínica.&lt;/p&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.description">description</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).
 Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas
-fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.
-A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos
-e independentes.
+fontes, um escore composto de risco — ver ADR-0002. A lógica combina um indicador biológico
+objetivo (colinesterase) com gatilhos de alerta discretos e independentes.
 
 1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de
    organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame
@@ -538,8 +536,8 @@ e independentes.
    Fonte: NR-7 item 7.4.5.1.
 
 ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco
-ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os
-gatilhos acima sem validação clínica."/&gt;
+ocupacional. Ver ADR-0002 — não inferir pesos ou combinação entre os gatilhos acima sem validação
+clínica."/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="urn:iso:std:iso:3166"/&gt;
@@ -571,7 +569,7 @@ gatilhos acima sem validação clínica."/&gt;
 
 <div class="inner-wrapper">
   <p>
-    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 13:39+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 13:58+0000">2026-07-21</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)"><a name="l605">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

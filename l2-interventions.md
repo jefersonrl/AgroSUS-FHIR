@@ -22,5 +22,5 @@ Qualquer um destes gatilhos (ver [componente 6](l2-decision-logic.md)) prioriza 
 
 ### Limite conhecido
 
-Não há, nas fontes adotadas, uma intervenção de escore de risco composto (diferente do IVCF-20 do pathway ATENTO 60+) — ver `docs/adr/0002-escore-risco-nao-definido.md`.
+Não há, nas fontes adotadas, uma intervenção de escore de risco composto — ver `docs/adr/0002-escore-risco-nao-definido.md`.
 

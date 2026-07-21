@@ -7,7 +7,7 @@
 
 Componente 6 do DAK — **Lógica de suporte à decisão**, fundamentada na **NR-7** (Programa de Controle Médico de Saúde Ocupacional), na **NR-31** (Segurança e Saúde no Trabalho na Agricultura) e na **Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS** do Ministério da Saúde (ver `docs/adr/0001-fonte-clinica-nr7-nr31.md` no repositório). Fonte estruturada: `l2/6-decision-logic.csv`. Implementada no L3 como `Library` (`AgroSUSIntoxicacaoLogic`) e `PlanDefinition` (`AgroSUSEstratificacaoRisco`).
 
-**Importante:** ao contrário de outros pathways da Plataforma mareIA (ex.: ATENTO 60+, que deriva uma faixa de risco única do escore IVCF-20), não existe em NR-7/NR-31 um escore composto de risco ocupacional validado para intoxicação por defensivos agrícolas. A lógica abaixo combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos e independentes — nenhum deles ponderado ou somado. Ver `docs/adr/0002-escore-risco-nao-definido.md`.
+**Importante:** não existe em NR-7/NR-31 um escore composto de risco ocupacional validado para intoxicação por defensivos agrícolas. A lógica abaixo combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos e independentes — nenhum deles ponderado ou somado. Ver `docs/adr/0002-escore-risco-nao-definido.md`.
 
 ### DT-1 · Valor basal da colinesterase
 

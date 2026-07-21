@@ -50,5 +50,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-familiares-auxiliam-aplicacao",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T13:42:17.354217"
+  "fhir:expansionTimestamp": "2026-07-21T14:02:34.751932"
 }

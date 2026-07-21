@@ -3,7 +3,7 @@ AgroSUSFHIR : Validation Results
 
 err = 0, warn = 121, info = 216
 IG Publisher Version: 2.2.11
-Generated Tue Jul 21 13:43:07 UTC 2026. FHIR version 4.0.1 for io.github.jefersonrl.agrosus#0.1.0 (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
+Generated Tue Jul 21 14:03:30 UTC 2026. FHIR version 4.0.1 for io.github.jefersonrl.agrosus#0.1.0 (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
  Build Errors : 671 / 4 / 0
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo : 0 / 0 / 5
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Bundle-agrosus-transacao-visita-exemplo : 0 / 4 / 24
@@ -267,10 +267,10 @@ ERROR: Encounter-agrosus-visita-acs-exemplo.ttl.html#/html/body/div/div/div/p/sp
 ERROR: Encounter-agrosus-visita-acs-exemplo.xml.html#/html/body/div/div/div/p/span/a at Line 332, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Library-AgroSUSIntoxicacaoLogic-testing.html#/html/body/div/div/div/p/span/a at Line 293, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Library-AgroSUSIntoxicacaoLogic.change.history.html#/html/body/div/div/div/p/span/a at Line 262, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: Library-AgroSUSIntoxicacaoLogic.html#/html/body/div/div/div/p/span/a at Line 580, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: Library-AgroSUSIntoxicacaoLogic.html#/html/body/div/div/div/p/span/a at Line 578, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Library-AgroSUSIntoxicacaoLogic.json.html#/html/body/div/div/div/p/span/a at Line 332, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Library-AgroSUSIntoxicacaoLogic.ttl.html#/html/body/div/div/div/p/span/a at Line 343, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: Library-AgroSUSIntoxicacaoLogic.xml.html#/html/body/div/div/div/p/span/a at Line 583, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: Library-AgroSUSIntoxicacaoLogic.xml.html#/html/body/div/div/div/p/span/a at Line 581, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Measure-AgroSUSMeasureAdesaoPeriodicidade-testing.html#/html/body/div/div/div/p/span/a at Line 293, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Measure-AgroSUSMeasureAdesaoPeriodicidade.change.history.html#/html/body/div/div/div/p/span/a at Line 262, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: Measure-AgroSUSMeasureAdesaoPeriodicidade.html#/html/body/div/div/div/p/span/a at Line 539, column 131: The link 'license.html' for "License" cannot be resolved
@@ -775,12 +775,12 @@ ERROR: ValueSet-agrosus-via-exposicao.html#/html/body/div/div/div/p/span/a at Li
 ERROR: ValueSet-agrosus-via-exposicao.json.html#/html/body/div/div/div/p/span/a at Line 348, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: ValueSet-agrosus-via-exposicao.ttl.html#/html/body/div/div/div/p/span/a at Line 358, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: ValueSet-agrosus-via-exposicao.xml.html#/html/body/div/div/div/p/span/a at Line 339, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/p/span/a at Line 1336, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/span/a at Line 1335, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/p/span/a at Line 274, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/p/span/a at Line 476, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: l2-business-process.html#/html/body/div/div/div/p/span/a at Line 325, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/p/span/a at Line 477, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: l2-business-process.html#/html/body/div/div/div/p/span/a at Line 324, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-data-dictionary.html#/html/body/div/div/div/p/span/a at Line 411, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: l2-decision-logic.html#/html/body/div/div/div/p/span/a at Line 368, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: l2-decision-logic.html#/html/body/div/div/div/p/span/a at Line 367, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-indicators.html#/html/body/div/div/div/p/span/a at Line 319, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-interventions.html#/html/body/div/div/div/p/span/a at Line 277, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-personas.html#/html/body/div/div/div/p/span/a at Line 283, column 131: The link 'license.html' for "License" cannot be resolved
