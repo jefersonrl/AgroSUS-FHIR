@@ -61,3 +61,28 @@ limitação de rede do item acima) para confirmar que a extensão de template co
 sintaxe segue exatamente a documentação oficial e o diagnóstico foi feito inspecionando o HTML/CSS
 real do site já publicado (não é uma suposição às cegas), mas o primeiro build após essa mudança
 deve ser observado no GitHub Actions.
+
+## 2026-07-21 — Regressão da correção acima: bandeira do cabeçalho virou um bloco enorme cobrindo o menu
+
+**Sintoma:** depois do fix acima, a bandeira de jurisdição no cabeçalho (`assets/images/bra.svg`,
+gerada automaticamente a partir de `jurisdiction: BR` no `sushi-config.yaml`) passou a ocupar quase
+toda a largura da tela no celular, cobrindo o menu — reportado pelo usuário e confirmado
+inspecionando `l2-user-scenarios.html` em modo responsivo (400px) via DevTools.
+
+**Causa:** a própria regra `img, svg { max-width: 100%; height: auto; }` adicionada no item
+anterior. Essa bandeira só tem `height="16"` no HTML (sem `width`, ícone pequeno ao lado do texto
+"0.1.0 - ci-build"); `height: auto` sobrescreve esse atributo, e sem nenhuma largura definida o
+navegador expande a imagem para caber 100% do container — de ~16px para centenas de pixels.
+**Não era o diagrama de caso de uso** (`agrosus-use-case.svg`), que já define seu próprio
+`max-width/height` inline e ficava bem mais abaixo na página, fora da área do menu.
+
+**Correção:** remover `height: auto` da regra genérica em
+`templates/agrosus-template/package/content/assets/css/agrosus-responsive.css`, mantendo apenas
+`max-width: 100%` — suficiente para impedir estouro horizontal de imagens grandes, sem afetar
+ícones pequenos com `height` fixo no HTML.
+
+**Como evitar de novo:** regras CSS genéricas por *tag* (`img`, `svg`, etc.) num template
+compartilhado por toda a IG podem afetar elementos gerados automaticamente pelo publisher (bandeira
+de jurisdição, ícones do template) que não são visíveis ao editar apenas o conteúdo/pagecontent.
+Ao adicionar uma regra desse tipo, inspecionar o HTML/CSS real do site (DevTools, não só o código
+fonte) antes de assumir que ela afeta somente o conteúdo pretendido.
