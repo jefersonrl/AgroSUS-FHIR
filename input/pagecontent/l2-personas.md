@@ -3,11 +3,10 @@ requisitos do projeto (`sources/requisitos-caso-de-uso/`), reconciliados com os 
 modelados em `input/fsh/profiles/` (ver <a href="artifacts.html">Artifact Index</a>). Cada persona
 corresponde a um ou mais perfis FHIR.
 
-<div>
-<img src="agrosus-use-case.svg" alt="Diagrama de caso de uso do AgroSUS: atores Produtor Rural, Agente Comunitário (ACF), API Externa, Unidade Básica de Saúde e Médico" style="max-width:100%;"/>
-<p><em>Diagrama de caso de uso do projeto (equipe FATEC Ferraz de Vasconcelos/CPS) — fonte:
-<code>sources/requisitos-caso-de-uso/agrosus_use_case.svg</code>. O ator "API Externa" (classificação
-de risco por IA) está fora de escopo desta fase do IG — ver
+<div style="text-align:center;">
+<img src="agrosus-use-case.svg" alt="Diagrama de caso de uso do AgroSUS: atores Produtor Rural, Agente Comunitário (ACF), API Externa, Unidade Básica de Saúde e Médico" style="max-width:480px; width:100%; height:auto;"/>
+<p><em>Diagrama de caso de uso do projeto (equipe FATEC Ferraz de Vasconcelos/CPS). O ator "API
+Externa" (classificação de risco por IA) está fora de escopo desta fase do IG — ver
 <code>docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</em></p>
 </div>
 

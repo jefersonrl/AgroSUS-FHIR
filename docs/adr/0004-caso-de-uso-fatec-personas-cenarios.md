@@ -3,8 +3,9 @@
 ## Contexto
 
 A equipe do projeto produziu um documento de requisitos e um diagrama de caso de uso
-(`sources/requisitos-caso-de-uso/Documento-Requisitos-Diagrama-Caso-de-Uso.pdf` e
-`agrosus_use_case.svg`) com atores nomeados (Produtor Rural, Agente Comunitário Familiar — ACF,
+(`sources/requisitos-caso-de-uso/Documento-Requisitos-Diagrama-Caso-de-Uso.pdf`, com o diagrama
+redesenhado em `input/images/agrosus-use-case.svg`) com atores nomeados (Produtor Rural, Agente
+Comunitário Familiar — ACF,
 Médico, Unidade Básica de Saúde, API Externa) e casos de uso (Gerenciar Processo Produtivo,
 Manter/Visualizar Produtor Rural, Realizar Triagem, Classificar Risco, Gerenciar Biomarcadores,
 Solicitar Exames, Monitorar Acompanhamento), além de tabelas de requisitos funcionais,
