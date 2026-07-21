@@ -9,6 +9,7 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
+* language = #pt-BR
 * experimental = true
 * date = "2026-07-20"
 * publisher = "Fatec Ferraz de Vasconcelos"
@@ -114,9 +115,26 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[1].item[4].type = #choice
 * item[1].item[4].required = true
 * item[1].item[4].readOnly = true
-* item[1].item[4].answerOption[0].valueCoding = http://hl7.org/fhir/administrative-gender#male "Masculino"
-* item[1].item[4].answerOption[1].valueCoding = http://hl7.org/fhir/administrative-gender#female "Feminino"
-* item[1].item[4].answerOption[2].valueCoding = http://hl7.org/fhir/administrative-gender#unknown "Não declarado"
+* item[1].item[4].answerOption[0].valueCoding = http://hl7.org/fhir/administrative-gender#male "Male"
+* item[1].item[4].answerOption[0].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[1].item[4].answerOption[0].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[1].item[4].answerOption[0].valueCoding.display.extension[0].extension[0].valueCode = #pt-BR
+* item[1].item[4].answerOption[0].valueCoding.display.extension[0].extension[1].url = "content"
+* item[1].item[4].answerOption[0].valueCoding.display.extension[0].extension[1].valueString = "Masculino"
+
+* item[1].item[4].answerOption[1].valueCoding = http://hl7.org/fhir/administrative-gender#female "Female"
+* item[1].item[4].answerOption[1].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[1].item[4].answerOption[1].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[1].item[4].answerOption[1].valueCoding.display.extension[0].extension[0].valueCode = #pt-BR
+* item[1].item[4].answerOption[1].valueCoding.display.extension[0].extension[1].url = "content"
+* item[1].item[4].answerOption[1].valueCoding.display.extension[0].extension[1].valueString = "Feminino"
+
+* item[1].item[4].answerOption[2].valueCoding = http://hl7.org/fhir/administrative-gender#unknown "Unknown"
+* item[1].item[4].answerOption[2].valueCoding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* item[1].item[4].answerOption[2].valueCoding.display.extension[0].extension[0].url = "lang"
+* item[1].item[4].answerOption[2].valueCoding.display.extension[0].extension[0].valueCode = #pt-BR
+* item[1].item[4].answerOption[2].valueCoding.display.extension[0].extension[1].url = "content"
+* item[1].item[4].answerOption[2].valueCoding.display.extension[0].extension[1].valueString = "Não declarado"
 
 * item[1].item[5].linkId = "raca-cor"
 * item[1].item[5].text = "Raça/cor autodeclarada"
