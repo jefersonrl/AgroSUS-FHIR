@@ -41,9 +41,13 @@ do AgroSUS.
 
 ### Tarefas × dados × decisões
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Tarefa | Dados (componente 5) | Decisão (componente 6) |
 | --- | --- | --- |
 | Anamnese ocupacional | Seções 1–15 do questionário | Gatilhos de alerta (Seção 16) |
 | Monitoramento biológico | Colinesterase plasmática/sangue total (LOINC) | Classificação por percentual de inibição; periodicidade |
 | Avaliação clínica | Condição, exames, laudo | Conduta frente a resultado alterado |
 | Acompanhamento | Plano de acompanhamento, proveniência | Periodicidade das reavaliações |
+
+</div>

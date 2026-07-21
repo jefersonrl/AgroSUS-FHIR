@@ -4,6 +4,8 @@ Index</a>.
 
 ### Requisitos Funcionais
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Id | Requisito | Fonte |
 | --- | --- | --- |
 | RF-01 | Cadastro do trabalhador rural e da propriedade rural pelo ACS | Seções 2–3 da anamnese |
@@ -16,7 +18,11 @@ Index</a>.
 | RF-08 | Registro de gatilhos de alerta independentes (sintoma agudo, produto sem EPI, histórico de intoxicação) | Seção 16 da anamnese |
 | RF-09 | Trilha de auditoria e proveniência de todas as operações | `AgroSUSAuditEvent`, `AgroSUSProvenance` |
 
+</div>
+
 ### Requisitos Não-Funcionais
+
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
 
 | Id | Requisito | Fonte |
 | --- | --- | --- |
@@ -26,6 +32,8 @@ Index</a>.
 | RNF-04 | Retenção de registros de exames/afastamentos por, no mínimo, 20 anos após o desligamento do trabalhador | NR-7 item 7.4.5.1 |
 | RNF-05 | Rastreabilidade de toda regra de decisão a uma fonte L1 citada (`// Fonte L1`) | `CLAUDE.md`; `docs/adr/0001` |
 | RNF-06 | Nenhum limiar ou peso clínico inferido sem fonte validada | `docs/adr/0002-escore-risco-nao-definido.md` |
+
+</div>
 
 *Fonte primária: NR-7, NR-31 e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Ver
 <a href="l2-decision-logic.html">componente 6</a>.*

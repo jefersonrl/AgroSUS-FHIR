@@ -5,6 +5,8 @@ fundamentados nas exigências de vigilância da saúde do trabalhador rural (NR-
 
 ### Indicadores
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Id | Nome | Tipo | Numerador | Denominador | Fonte |
 | --- | --- | --- | --- | --- | --- |
 | ind-cobertura-basal-colinesterase | Cobertura do exame basal de colinesterase | processo | Trabalhadores com valor basal registrado na admissão | Trabalhadores que manuseiam organofosforados/carbamatos | NR-7 7.4.1 |
@@ -14,6 +16,8 @@ fundamentados nas exigências de vigilância da saúde do trabalhador rural (NR-
 | ind-cobertura-epi-adequado | Cobertura de uso adequado de EPI | processo | Trabalhadores com EPI adequado registrado | Trabalhadores que manuseiam defensivos categoria 1 ou 2 | NR-31 item 31.8 |
 | ind-alertas-sintoma-respondidos | Taxa de alertas de sintoma agudo com encaminhamento assistencial | resultado | Alertas com Encounter/atendimento em até 7 dias | Alertas de sintoma agudo gerados | ADR-0001; NR-31 |
 | ind-cobertura-anamnese | Cobertura da anamnese ocupacional | processo | Trabalhadores com anamnese AgroSUS registrada | Trabalhadores cadastrados no AgroSUS | Escopo do próprio AgroSUS-FHIR |
+
+</div>
 
 Estes indicadores são representados como recursos FHIR `Measure` (`AgroSUSMeasureCoberturaBasal`,
 `AgroSUSMeasureAdesaoPeriodicidade`, `AgroSUSMeasureAlteradosComConduta`,

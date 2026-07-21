@@ -8,13 +8,19 @@ para exames/observações, CID-10 para diagnósticos, CBO para ocupações). Ver
 
 ### Colinesterase e exames laboratoriais (LOINC)
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Dado | Sistema | Código (LOINC) | Perfil |
 | --- | --- | --- | --- |
 | Colinesterase plasmática | LOINC | 2099-0 | `AgroSUSResultadoLaboratorial` |
 | Colinesterase eritrocitária | LOINC | 2098-2 | `AgroSUSResultadoLaboratorial` |
 | Colinesterases eritrocitária e plasmática (painel) | LOINC | 35558-6 | `AgroSUSSolicitacaoExame` / `AgroSUSLaudoLaboratorial` |
 
+</div>
+
 ### Terminologia local (CodeSystem) por área
+
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
 
 | Área | CodeSystem |
 | --- | --- |
@@ -36,7 +42,11 @@ para exames/observações, CID-10 para diagnósticos, CBO para ocupações). Ver
 | Tipo de coleta | `AgroSUSTipoColetaCS` |
 | Prioridade de alerta (decisão-suporte) | `AgroSUSPrioridadeAlertaCS` |
 
+</div>
+
 ### Seção 16 — Gatilhos de vigilância (dado novo desta versão)
+
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
 
 | Item | linkId | Tipo | Fonte |
 | --- | --- | --- | --- |
@@ -45,6 +55,8 @@ para exames/observações, CID-10 para diagnósticos, CBO para ocupações). Ver
 | Histórico de intoxicação prévia | `vigilancia-historico-intoxicacao-previa` | boolean | Seção 14 da anamnese |
 | Colinesterase alterada/precaução | `vigilancia-colinesterase-alterada-precaucao` | boolean | NR-7 Quadro I; Nota Informativa 16/2019 |
 | Encaminhamento recomendado | `vigilancia-encaminhamento-recomendado` | boolean | Julgamento do ACS |
+
+</div>
 
 Ver <a href="l2-decision-logic.html">componente 6</a> para a lógica de decisão completa e
 `docs/adr/0002-escore-risco-nao-definido.md` sobre os limites desta fonte.

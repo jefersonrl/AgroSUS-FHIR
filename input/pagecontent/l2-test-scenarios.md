@@ -2,6 +2,8 @@ Componente 9 do DAK — *Cenários de teste*. Casos de teste (TC) derivados da l
 (<a href="l2-decision-logic.html">componente 6</a>), para validação manual ou automatizada dos
 artefatos L3. Não são normativos nem substituem testes de conformidade formais.
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Caso | Cenário | Entrada | Resultado esperado |
 | --- | --- | --- | --- |
 | TC-01 | Colinesterase plasmática normal | Basal 8000 U/L; obtida 4500 U/L (inibição 43,75%) | Normal — manter rotina semestral |
@@ -14,6 +16,8 @@ artefatos L3. Não são normativos nem substituem testes de conformidade formais
 | TC-08 | Sincronização offline da visita | `AgroSUSTransacaoVisita` com 4 entradas (paciente, visita, anamnese, proveniência) e `PUT` condicional | Transação aceita de forma atômica; idempotente em reenvio |
 | TC-09 | Retorno ao trabalho após afastamento | Trabalhador retorna após afastamento > 30 dias | Exame de colinesterase obrigatório (gatilho fora da rotina) |
 | TC-10 | Contraindicação ao manuseio | Trabalhadora gestante que manuseia organofosforados | Alerta de contraindicação — providências administrativas (Nota Informativa 16/2019, Anexo III item 2.2) |
+
+</div>
 
 *Fonte: NR-7, NR-31 e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Ver
 `sources/_normas_extract.txt` para os valores de referência usados nos cálculos acima.*

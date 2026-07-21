@@ -10,6 +10,8 @@ Externa" (classificação de risco por IA) está fora de escopo desta fase do IG
 <code>docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</em></p>
 </div>
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Persona | Descrição | Perfil(is) FHIR |
 | --- | --- | --- |
 | Produtor Rural (Trabalhador rural) | Pequeno produtor rural acompanhado pelo AgroSUS; sujeito da anamnese, dos exames e do plano de acompanhamento. Mantém e visualiza seu próprio cadastro. | `AgroSUSPatient` |
@@ -19,6 +21,8 @@ Externa" (classificação de risco por IA) está fora de escopo desta fase do IG
 | Unidade Básica de Saúde (UBS) | Organização responsável pelo acompanhamento longitudinal do trabalhador rural, pela gestão do catálogo de exames/biomarcadores disponíveis e serviço a que ACS e profissionais assistenciais estão vinculados. | `AgroSUSUBS` |
 | Auditor / gestor de segurança | Consulta trilhas de auditoria e proveniência dos registros, sem participar do cuidado direto. | `AgroSUSAuditEvent`, `AgroSUSProvenance` |
 | *(fora de escopo)* Agente de classificação de risco — API externa | Ator descrito no documento de requisitos do projeto: recebe os dados da triagem e classifica automaticamente o nível de risco por Inteligência Artificial. **Decisão da equipe: fora de escopo desta fase do IG** — mantida a lógica rule-based (`Library/AgroSUSIntoxicacaoLogic`), sem artefato FHIR para essa integração. Ver `docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md`. | — |
+
+</div>
 
 Estas personas interagem nos <a href="l2-user-scenarios.html">cenários de uso</a> e nos
 <a href="l2-business-process.html">processos de negócio</a> descritos a seguir.

@@ -30,6 +30,8 @@ ausente, afasta-se o trabalhador por 30 dias e realiza-se o exame (idealmente 2 
 
 ### DT-3 · Classificação do resultado
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | Tipo de amostra | Inibição | Classificação |
 | --- | --- | --- |
 | Colinesterase plasmática | até 50% | **Normal** — dentro do limite aceitável |
@@ -37,6 +39,8 @@ ausente, afasta-se o trabalhador por 30 dias e realiza-se o exame (idealmente 2 
 | Colinesterase de sangue total / eritrocitária | até 25% | **Normal** — dentro do limite aceitável |
 | Colinesterase de sangue total / eritrocitária | acima de 25% | **Alterado** — excede o IBMP |
 | Qualquer amostra | redução de 20% a 50%/25% | **Precaução** — reforçar práticas de proteção, sem afastamento automático |
+
+</div>
 
 *Fonte: NR-7 Quadro I; Nota Informativa nº 16/2019, Anexo I item 4 e Quadro 1.*
 

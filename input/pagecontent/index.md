@@ -29,6 +29,8 @@ agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigi
 
 #### Componentes do DAK (L2)
 
+<div class="table-responsive" style="overflow-x:auto;" markdown="1">
+
 | # | Componente | Página |
 | --- | --- | --- |
 | 1 | Intervenções e recomendações | <a href="l2-interventions.html">l2-interventions</a> |
@@ -40,6 +42,8 @@ agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigi
 | 7 | Indicadores de programa | <a href="l2-indicators.html">l2-indicators</a> |
 | 8 | Requisitos | <a href="l2-requirements.html">l2-requirements</a> |
 | 9 | Cenários de teste | <a href="l2-test-scenarios.html">l2-test-scenarios</a> |
+
+</div>
 
 #### Itens pendentes de confirmação clínica
 
