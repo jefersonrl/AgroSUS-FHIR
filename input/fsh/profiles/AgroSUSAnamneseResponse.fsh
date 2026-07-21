@@ -20,7 +20,8 @@ Description: "Perfil da resposta ao formulário de anamnese ocupacional e ambien
 * subject ^short = "Trabalhador rural ao qual a anamnese se refere"
 
 * encounter 0..1 MS
-* encounter ^short = "Atendimento ou visita em que a anamnese foi aplicada"
+* encounter only Reference(AgroSUSVisitaACS)
+* encounter ^short = "Visita do ACS em que a anamnese foi aplicada"
 
 * authored 1..1 MS
 * authored ^short = "Data e hora do registro das respostas"
