@@ -52,7 +52,7 @@ Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos
   "title" : "Exames Laboratoriais AgroSUS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-21T15:31:26+00:00",
+  "date" : "2026-07-21T16:19:05+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

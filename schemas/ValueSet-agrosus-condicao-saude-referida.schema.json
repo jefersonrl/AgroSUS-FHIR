@@ -46,5 +46,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-condicao-saude-referida.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-condicao-saude-referida",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T15:35:16.817621"
+  "fhir:expansionTimestamp": "2026-07-21T16:21:47.726363"
 }

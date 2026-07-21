@@ -18,7 +18,7 @@
   fhir:Measure.title [ fhir:value "Cobertura do exame basal de colinesterase (AgroSUS)"] ;
   fhir:Measure.status [ fhir:value "active"] ;
   fhir:Measure.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:Measure.date [ fhir:value "2026-07-21T15:31:26+00:00"^^xsd:dateTime] ;
+  fhir:Measure.date [ fhir:value "2026-07-21T16:19:05+00:00"^^xsd:dateTime] ;
   fhir:Measure.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
   fhir:Measure.contact [
      fhir:index 0 ;

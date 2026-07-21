@@ -35,7 +35,7 @@ Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS
   "title" : "Terminologia da Propriedade Rural AgroSUS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T15:31:26+00:00",
+  "date" : "2026-07-21T16:19:05+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

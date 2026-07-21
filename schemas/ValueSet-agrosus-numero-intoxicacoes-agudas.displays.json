@@ -50,5 +50,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-numero-intoxicacoes-agudas",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T15:35:16.816167"
+  "fhir:expansionTimestamp": "2026-07-21T16:21:47.724540"
 }

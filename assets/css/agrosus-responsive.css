@@ -1,0 +1,47 @@
+/*
+ * AgroSUS-FHIR — ajustes de responsividade (mobile/tablet).
+ * Extensao de template (nao altera o template base who.template.root).
+ *
+ * Diagnostico: inspecionando o site publicado (jefersonrl.github.io/AgroSUS-FHIR), a caixa de
+ * navegacao "nesta pagina" gerada automaticamente pelo kramdown (`.markdown-toc`, definida em
+ * assets/css/bootstrap-fhir.css do template base) usa `float: right; width: 30%;` sem nenhum
+ * breakpoint que a recolha em telas estreitas — por isso ela aperta/sobrepoe o conteudo em
+ * smartphones. Tabelas largas (inclusive a caixa de metadados do cabecalho, `table.colsdp`, e
+ * quaisquer tabelas de recursos FHIR gerados) tambem nao tem rolagem horizontal por padrao.
+ */
+
+@media (max-width: 767px) {
+  .markdown-toc,
+  div.markdown-toc,
+  ul.markdown-toc {
+    float: none !important;
+    width: auto !important;
+    max-width: 100%;
+    display: block;
+    margin: 1em 0;
+    box-sizing: border-box;
+  }
+
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  img, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  pre, code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
