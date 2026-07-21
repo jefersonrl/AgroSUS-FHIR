@@ -6,11 +6,10 @@ Saúde (ver `docs/adr/0001-fonte-clinica-nr7-nr31.md` no repositório). Fonte es
 `PlanDefinition` (`AgroSUSEstratificacaoRisco`).
 
 <div>
-<p><strong>Importante:</strong> ao contrário de outros pathways da Plataforma mareIA (ex.: ATENTO
-60+, que deriva uma faixa de risco única do escore IVCF-20), não existe em NR-7/NR-31 um escore
-composto de risco ocupacional validado para intoxicação por defensivos agrícolas. A lógica abaixo
-combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos e
-independentes — nenhum deles ponderado ou somado. Ver <code>docs/adr/0002-escore-risco-nao-definido.md</code>.</p>
+<p><strong>Importante:</strong> não existe em NR-7/NR-31 um escore composto de risco ocupacional
+validado para intoxicação por defensivos agrícolas. A lógica abaixo combina um indicador biológico
+objetivo (colinesterase) com gatilhos de alerta discretos e independentes — nenhum deles ponderado
+ou somado. Ver <code>docs/adr/0002-escore-risco-nao-definido.md</code>.</p>
 </div>{:.stu-note}
 
 ### DT-1 · Valor basal da colinesterase

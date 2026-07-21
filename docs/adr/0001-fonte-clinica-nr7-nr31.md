@@ -5,11 +5,10 @@
 
 ## Contexto
 
-O AgroSUS-FHIR é um dos pathways da Plataforma mareIA (ver `docs/adr/0003` sobre a relação com o
-template `mareIA-ig`/ATENTO 60+). Diferente do ATENTO 60+, que adapta digitalmente o *Protocolo
-Clínico Geral mareIA (WP1)*, o AgroSUS ainda não possui um protocolo clínico geral próprio e
-validado (por isso a Seção 16 da anamnese — lógica de decisão — foi deliberadamente adiada, ver
-commit `1333` de `AgroSUSAnamnese.fsh`).
+O AgroSUS-FHIR é um dos pathways da Plataforma mareIA (ver `docs/adr/0003` sobre a disciplina de
+documentação adotada). O AgroSUS ainda não possui um protocolo clínico geral próprio e validado
+(por isso a Seção 16 da anamnese — lógica de decisão — foi deliberadamente adiada, ver o histórico
+de `AgroSUSAnamnese.fsh`).
 
 Na ausência desse protocolo, o Product Owner definiu como fonte-verdade (L1) para a lógica de
 decisão as normas regulamentadoras do Ministério do Trabalho e Emprego:
@@ -32,16 +31,16 @@ peso ou fórmula será extrapolado ou inventado além do que essas normas define
 
 Consequência direta: a NR-7/NR-31 definem com precisão a **vigilância biológica objetiva**
 (colinesterase, periodicidade, condutas de afastamento) mas **não definem um escore composto de
-risco** análogo ao IVCF-20 do ATENTO 60+. Ver `docs/adr/0002-escore-risco-nao-definido.md`.
+risco** ocupacional. Ver `docs/adr/0002-escore-risco-nao-definido.md`.
 
 ## Consequências
 
 - (+) Toda regra de decisão é rastreável a um item específico de NR-7, NR-31 ou da Nota
   Informativa 16/2019, citado em comentário `// Fonte L1` nos artefatos FSH.
-- (+) Evita fabricar critérios clínicos sem validação — alinhado à CLAUDE.md do template
-  mareIA-ig ("nunca inventar conteúdo clínico que não esteja em L1").
+- (+) Evita fabricar critérios clínicos sem validação — alinhado à regra de ouro deste repositório
+  ("nunca inventar conteúdo clínico que não esteja em L1", ver `CLAUDE.md`).
 - (−) A cobertura é mais estreita que um protocolo clínico dedicado: cobre vigilância biológica
   (colinesterase) e requisitos gerais de segurança do trabalho, não uma triagem clínica de
   sintomas de intoxicação aguda (isso permanece na Seção 13 da anamnese, sem pontuação).
-- Mitigação futura: se/quando existir um protocolo clínico geral do AgroSUS (equivalente ao WP1),
-  este ADR deve ser revisado e a lógica de decisão expandida.
+- Mitigação futura: se/quando existir um protocolo clínico geral do AgroSUS, este ADR deve ser
+  revisado e a lógica de decisão expandida.

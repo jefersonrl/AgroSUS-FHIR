@@ -2,9 +2,9 @@
 
 Este repositório é o pathway **AgroSUS** da Plataforma mareIA — telemonitoramento e apoio à
 identificação precoce de intoxicação por defensivos agrícolas em trabalhadores rurais, na Atenção
-Primária à Saúde. Segue a disciplina do template `mareIA-ig` (pathway ATENTO 60+), adaptada para
-preservar o trabalho de modelagem já existente neste repositório (ver ADR-0003). Leia este
-arquivo e `docs/adr/` antes de editar qualquer coisa.
+Primária à Saúde. Segue a disciplina de documentação e camadas L1/L2/L3 descrita em ADR-0003,
+preservando o trabalho de modelagem já existente neste repositório. Leia este arquivo e
+`docs/adr/` antes de editar qualquer coisa.
 
 ## 1. Camadas (L1 → L3)
 
@@ -58,5 +58,5 @@ sushi .                 # FSH → fsh-generated/resources/*.json (deve dar 0 err
 
 Ambiguidades clínicas (limiares, periodicidade, escore de risco) **não** são resolvidas por
 suposição: registre como item aberto em ADR (`status: proposto`) e pergunte. Item aberto atual:
-`docs/adr/0002-escore-risco-nao-definido.md` (não há escore de risco ocupacional validado, ao
-contrário do IVCF-20 do ATENTO 60+).
+`docs/adr/0002-escore-risco-nao-definido.md` (não há, em NR-7/NR-31, um escore composto de risco
+ocupacional validado).

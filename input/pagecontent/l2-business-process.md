@@ -1,6 +1,5 @@
-Componente 4 do DAK — *Processos de negócio e workflows*. Quatro macrofases, análogas em estrutura
-às dos demais pathways da Plataforma mareIA (ver `mareIA-ig`), adaptadas ao fluxo assistencial do
-AgroSUS.
+Componente 4 do DAK — *Processos de negócio e workflows*. Quatro macrofases do fluxo assistencial
+do AgroSUS.
 
 `Cadastro → Triagem ocupacional (anamnese) → Resposta clínica e vigilância biológica → Acompanhamento longitudinal`
 

@@ -31,5 +31,5 @@ aguda prévia; colinesterase alterada ou em faixa de precaução.
 
 ### Limite conhecido
 
-Não há, nas fontes adotadas, uma intervenção de escore de risco composto (diferente do IVCF-20 do
-pathway ATENTO 60+) — ver `docs/adr/0002-escore-risco-nao-definido.md`.
+Não há, nas fontes adotadas, uma intervenção de escore de risco composto — ver
+`docs/adr/0002-escore-risco-nao-definido.md`.

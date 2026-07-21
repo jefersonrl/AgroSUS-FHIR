@@ -11,7 +11,8 @@ agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigi
 **colinesterase sanguínea** (NR-7) e boas práticas de segurança no trabalho rural (NR-31).
 
 > Este IG cobre **apenas o pathway AgroSUS**. No SMART Guidelines, cada linha de cuidado da
-> Plataforma mareIA é um IG independente — ver `docs/adr/0003-relacao-template-mareia-ig.md`.
+> Plataforma mareIA é um IG independente — ver ADR-0003 (`docs/adr/`) sobre a disciplina de
+> documentação adotada.
 
 #### Fluxo de cuidado (4 macrofases)
 
@@ -42,8 +43,8 @@ agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigi
 
 #### Itens pendentes de confirmação clínica
 
-- **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento validado equivalente ao
-  IVCF-20 do pathway ATENTO 60+ (`docs/adr/0002-escore-risco-nao-definido.md`).
+- **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento composto de risco
+  validado (`docs/adr/0002-escore-risco-nao-definido.md`).
 
 *Fonte (L1): NR-7 (PCMSO), NR-31 (Segurança e Saúde no Trabalho Rural) e Nota Informativa nº
 16/2019-CGLAB/DAEVS/SVS/MS — Ministério da Saúde. Ver `sources/_normas_extract.txt`.*

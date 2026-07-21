@@ -1,14 +1,10 @@
-# ADR-0002 — Não existe escore composto de risco (diferente do IVCF-20)
+# ADR-0002 — Não existe escore composto de risco ocupacional validado
 
 - **Status:** PROPOSTO — aguarda confirmação da equipe clínica/toxicológica
 - **Bloqueia:** eventual reativação de uma Seção 16 "pontuada" na anamnese; qualquer indicador que
   dependa de uma faixa de risco única para o trabalhador.
 
 ## Contexto
-
-O IG de referência (mareIA-ig, pathway ATENTO 60+) deriva uma faixa de risco única (Robusto /
-Risco de fragilização / Frágil) a partir da soma ponderada de 20 itens do instrumento IVCF-20 —
-um instrumento validado e publicado (Moraes et al.).
 
 Não existe, em NR-7 ou NR-31 (ver ADR-0001), um instrumento equivalente para intoxicação por
 agrotóxicos: nenhuma das duas normas define pesos, soma ou faixas combinando exposição, uso de
@@ -23,10 +19,10 @@ EPI, sintomas e histórico em um único escore. O que as normas efetivamente def
 ## Questão aberta (não decidir sozinho)
 
 Definir se o AgroSUS deve, no futuro, adotar ou construir um instrumento de escore de risco
-ocupacional validado (equivalente ao IVCF-20) para consolidar os gatilhos em uma faixa única, e
-qual seria a fonte desse instrumento (ex.: um protocolo clínico geral do projeto mareIA/AgroSUS
-ainda não publicado, uma escala validada na literatura de saúde do trabalhador rural, ou critério
-de consenso da equipe clínica do projeto).
+ocupacional validado para consolidar os gatilhos em uma faixa única, e qual seria a fonte desse
+instrumento (ex.: um protocolo clínico geral do projeto AgroSUS ainda não publicado, uma escala
+validada na literatura de saúde do trabalhador rural, ou critério de consenso da equipe clínica do
+projeto).
 
 ## Decisão provisória (para destravar L2/L3)
 

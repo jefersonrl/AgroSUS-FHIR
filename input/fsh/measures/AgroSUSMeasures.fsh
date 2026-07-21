@@ -1,6 +1,6 @@
 // Fonte L1: NR-7 (itens 7.4.1, 7.4.2.1); NR-31 item 31.8. L2: 7-indicators.csv.
 // Indicadores de processo/resultado como Measure (proporção). Expressões em text/fhirpath são
-// descritivas nesta fase (CQL previsto para L4), como no padrão do template mareIA-ig.
+// descritivas nesta fase (CQL previsto para L4).
 
 Instance: AgroSUSMeasureCoberturaBasal
 InstanceOf: Measure

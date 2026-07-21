@@ -21,7 +21,7 @@ tudo sincronizável de forma atômica e offline-first via `Bundle` transacional
 ## Escopo desta fase (v0.2)
 
 1. Corrigir o build do IG (bug de YAML no `sushi-config.yaml` — resolvido).
-2. Adotar a disciplina L1/L2/L3 e de ADRs do template `mareIA-ig` (ver ADR-0003).
+2. Adotar a disciplina de camadas L1/L2/L3 e de ADRs (ver ADR-0003).
 3. Implementar a lógica de decisão da Seção 16 (antes adiada), fundamentada em NR-7/NR-31 e na
    Nota Informativa nº 16/2019-CGLAB/MS: classificação da colinesterase, periodicidade do exame
    biológico e gatilhos de alerta independentes — como `Library` + `PlanDefinition` (ver ADR-0001
@@ -34,9 +34,7 @@ tudo sincronizável de forma atômica e offline-first via `Bundle` transacional
 ## Fora de escopo (por enquanto)
 
 - Um escore composto de risco ocupacional (não existe fonte validada — ver ADR-0002).
-- Implementação da lógica em CQL executável (fase L4; por ora, `Library` é humano-legível, como no
-  `mareIA-ig`).
-- Reestruturação completa das páginas do IG para o padrão numerado `l2-1..9` (ver ADR-0003).
+- Implementação da lógica em CQL executável (fase L4; por ora, `Library` é humano-legível).
 
 ## Critérios de aceite
 

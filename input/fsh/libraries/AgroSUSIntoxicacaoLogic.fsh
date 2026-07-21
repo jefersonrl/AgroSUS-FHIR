@@ -11,9 +11,8 @@ Usage: #definition
 * description = """
 Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).
 Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas
-fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.
-A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos
-e independentes.
+fontes, um escore composto de risco — ver ADR-0002. A lógica combina um indicador biológico
+objetivo (colinesterase) com gatilhos de alerta discretos e independentes.
 
 1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de
    organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame
@@ -66,6 +65,6 @@ e independentes.
    Fonte: NR-7 item 7.4.5.1.
 
 ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco
-ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os
-gatilhos acima sem validação clínica.
+ocupacional. Ver ADR-0002 — não inferir pesos ou combinação entre os gatilhos acima sem validação
+clínica.
 """

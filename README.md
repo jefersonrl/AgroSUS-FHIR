@@ -8,10 +8,9 @@ CI Build:
 * http://build.fhir.org/ig/jefersonrl/AgroSUS-FHIR
 * https://jefersonrl.github.io/AgroSUS-FHIR
 
-> Cada linha de cuidado (pathway) da Plataforma mareIA é publicada como um IG independente. Este
-> repositório segue a disciplina do template
-> [`mareIA-ig`](https://github.com/italomacedo/mareIA-ig) (pathway ATENTO 60+), adaptada para
-> preservar a modelagem já existente do AgroSUS — ver `docs/adr/0003-relacao-template-mareia-ig.md`.
+> Cada linha de cuidado (pathway) da Plataforma mareIA é publicada como um IG independente,
+> seguindo a metodologia WHO SMART Guidelines (camadas L1/L2/L3) — ver ADR-0003 (`docs/adr/`)
+> sobre a disciplina de documentação adotada.
 
 ## Camadas SMART Guidelines
 
