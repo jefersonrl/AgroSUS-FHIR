@@ -35,6 +35,9 @@ tudo sincronizável de forma atômica e offline-first via `Bundle` transacional
 
 - Um escore composto de risco ocupacional (não existe fonte validada — ver ADR-0002).
 - Implementação da lógica em CQL executável (fase L4; por ora, `Library` é humano-legível).
+- Integração com API externa de Inteligência Artificial para classificação automática de risco,
+  descrita no caso de uso do projeto (FATEC-SP/CPS) — decisão da equipe de manter a lógica
+  rule-based atual nesta fase (ver ADR-0004).
 
 ## Critérios de aceite
 
