@@ -47,5 +47,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-categoria-plano-cuidado",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T12:23:52.838267"
+  "fhir:expansionTimestamp": "2026-07-21T12:33:46.018591"
 }

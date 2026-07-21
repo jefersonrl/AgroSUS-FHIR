@@ -11,7 +11,7 @@
   },
   "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-21T12:23:52.993246Z",
+  "generatedAt": "2026-07-21T12:33:46.138987Z",
   "@graph": [
     {
       "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.jsonld#515105",

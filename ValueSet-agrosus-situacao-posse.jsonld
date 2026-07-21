@@ -11,7 +11,7 @@
   },
   "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-21T12:23:52.987844Z",
+  "generatedAt": "2026-07-21T12:33:46.134550Z",
   "@graph": [
     {
       "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-proprietario",

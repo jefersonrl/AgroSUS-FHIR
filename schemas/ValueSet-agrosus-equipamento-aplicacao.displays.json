@@ -137,5 +137,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-equipamento-aplicacao",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T12:23:52.835952"
+  "fhir:expansionTimestamp": "2026-07-21T12:33:46.016804"
 }

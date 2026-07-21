@@ -52,7 +52,7 @@ Temas que podem ser selecionados no registro de capacitação do trabalhador rur
   "title" : "Temas de Capacitação AgroSUS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T12:21:04+00:00",
+  "date" : "2026-07-21T12:31:15+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

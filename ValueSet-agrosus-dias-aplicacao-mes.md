@@ -52,7 +52,7 @@ Faixas de frequência mensal de aplicação de defensivos agrícolas.
   "title" : "Dias de aplicação por mês",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T12:21:04+00:00",
+  "date" : "2026-07-21T12:31:15+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

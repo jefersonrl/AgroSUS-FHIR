@@ -3,7 +3,7 @@ AgroSUSFHIR : Validation Results
 
 err = 0, warn = 120, info = 199
 IG Publisher Version: 2.2.11
-Generated Tue Jul 21 12:24:39 UTC 2026. FHIR version 4.0.1 for io.github.jefersonrl.agrosus#0.1.0 (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
+Generated Tue Jul 21 12:34:28 UTC 2026. FHIR version 4.0.1 for io.github.jefersonrl.agrosus#0.1.0 (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
  Build Errors : 0 / 6 / 0
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo : 0 / 0 / 5
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Bundle-agrosus-transacao-visita-exemplo : 0 / 4 / 24
