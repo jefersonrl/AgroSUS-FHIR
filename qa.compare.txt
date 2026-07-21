@@ -1,7 +1,7 @@
 AgroSUSFHIR : Validation Results
 =========================================
 
-err = 21, warn = 120, info = 210
+err = 16, warn = 120, info = 210
 $--
 Generated $--. FHIR version $-- for io.github.jefersonrl.agrosus#$-- (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
  Build Errors : 0 / 6 / 0
@@ -26,15 +26,15 @@ Generated $--. FHIR version $-- for io.github.jefersonrl.agrosus#$-- (canonical 
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/CodeSystem-agrosus-rastreabilidade : 0 / 1 / 2
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/CodeSystem-agrosus-tipo-coleta : 0 / 1 / 2
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo : 0 / 2 / 4
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/DiagnosticReport-agrosus-laudo-hemograma-exemplo : 1 / 1 / 2
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/DiagnosticReport-agrosus-laudo-hemograma-exemplo : 0 / 1 / 2
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Encounter-agrosus-atendimento-ubs-avaliacao-exemplo : 0 / 1 / 6
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo : 0 / 1 / 7
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Encounter-agrosus-visita-acs-exemplo : 0 / 1 / 6
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/ImplementationGuide-io.github.jefersonrl.agrosus : 0 / 7 / 50
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-hematocrito-exemplo : 1 / 1 / 3
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-hemoglobina-exemplo : 1 / 1 / 3
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-leucocitos-exemplo : 1 / 1 / 3
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-plaquetas-exemplo : 1 / 1 / 3
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-hematocrito-exemplo : 0 / 1 / 3
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-hemoglobina-exemplo : 0 / 1 / 3
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-leucocitos-exemplo : 0 / 1 / 3
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Observation-agrosus-resultado-plaquetas-exemplo : 0 / 1 / 3
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Organization-agrosus-laboratorio-exemplo : 0 / 0 / 1
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Organization-agrosus-ubs-exemplo : 0 / 0 / 1
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Patient-agrosus-patient-example : 1 / 1 / 4
@@ -210,7 +210,6 @@ WARNING: Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo: Condition.cod
 == fsh-generated/resources/DiagnosticReport-agrosus-laudo-hemograma-exemplo.json ==
 WARNING: DiagnosticReport/agrosus-laudo-hemograma-exemplo: DiagnosticReport.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/laudo-laboratorial'
 INFORMATION: DiagnosticReport/agrosus-laudo-hemograma-exemplo: DiagnosticReport.category[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v2-0074#HM para a(s) língua(s) 'pt-BR'. O ecrã é 'Hematology', o ecrã da língua predefinida
-ERROR: DiagnosticReport/agrosus-laudo-hemograma-exemplo: DiagnosticReport.code.coding[0].display: Wrong Display Name 'CBC panel - Blood by Automated count' for http://loinc.org#58410-2. Valid display is 'CBC (hemogram) Sg Auto' (pt-BR) (for the language(s) 'pt-BR')
 == fsh-generated/resources/Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.json ==
 WARNING: Encounter/agrosus-atendimento-ubs-avaliacao-exemplo: Encounter.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/atendimento-ubs'
 INFORMATION: Encounter/agrosus-atendimento-ubs-avaliacao-exemplo: Encounter.class.display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB para a(s) língua(s) 'pt-BR'. O ecrã é 'ambulatory', o ecrã da língua predefinida
@@ -292,22 +291,18 @@ INFORMATION: Resource: The resource ImplementationGuide/io.github.jefersonrl.agr
 == fsh-generated/resources/Observation-agrosus-resultado-hematocrito-exemplo.json ==
 WARNING: Observation/agrosus-resultado-hematocrito-exemplo: Observation.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial'
 INFORMATION: Observation/agrosus-resultado-hematocrito-exemplo: Observation.category[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/observation-category#laboratory para a(s) língua(s) 'pt-BR'. O ecrã é 'Laboratory', o ecrã da língua predefinida
-ERROR: Observation/agrosus-resultado-hematocrito-exemplo: Observation.code.coding[0].display: Wrong Display Name 'Hematocrit [Volume Fraction] of Blood by Automated count' for http://loinc.org#4544-3. Valid display is 'Hct Fr Sg Auto' (pt-BR) (for the language(s) 'pt-BR')
 INFORMATION: Observation/agrosus-resultado-hematocrito-exemplo: Observation.interpretation[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N para a(s) língua(s) 'pt-BR'. O ecrã é 'Normal', o ecrã da língua predefinida
 == fsh-generated/resources/Observation-agrosus-resultado-hemoglobina-exemplo.json ==
 WARNING: Observation/agrosus-resultado-hemoglobina-exemplo: Observation.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial'
 INFORMATION: Observation/agrosus-resultado-hemoglobina-exemplo: Observation.category[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/observation-category#laboratory para a(s) língua(s) 'pt-BR'. O ecrã é 'Laboratory', o ecrã da língua predefinida
-ERROR: Observation/agrosus-resultado-hemoglobina-exemplo: Observation.code.coding[0].display: Wrong Display Name 'Hemoglobin [Mass/volume] in Blood' for http://loinc.org#718-7. Valid display is 'Hgb Sg-mCnc' (pt-BR) (for the language(s) 'pt-BR')
 INFORMATION: Observation/agrosus-resultado-hemoglobina-exemplo: Observation.interpretation[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N para a(s) língua(s) 'pt-BR'. O ecrã é 'Normal', o ecrã da língua predefinida
 == fsh-generated/resources/Observation-agrosus-resultado-leucocitos-exemplo.json ==
 WARNING: Observation/agrosus-resultado-leucocitos-exemplo: Observation.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial'
 INFORMATION: Observation/agrosus-resultado-leucocitos-exemplo: Observation.category[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/observation-category#laboratory para a(s) língua(s) 'pt-BR'. O ecrã é 'Laboratory', o ecrã da língua predefinida
-ERROR: Observation/agrosus-resultado-leucocitos-exemplo: Observation.code.coding[0].display: Wrong Display Name 'Leukocytes [#/volume] in Blood by Automated count' for http://loinc.org#6690-2. Valid display is 'WBC # Sg Auto' (pt-BR) (for the language(s) 'pt-BR')
 INFORMATION: Observation/agrosus-resultado-leucocitos-exemplo: Observation.interpretation[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N para a(s) língua(s) 'pt-BR'. O ecrã é 'Normal', o ecrã da língua predefinida
 == fsh-generated/resources/Observation-agrosus-resultado-plaquetas-exemplo.json ==
 WARNING: Observation/agrosus-resultado-plaquetas-exemplo: Observation.identifier[0].system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial'
 INFORMATION: Observation/agrosus-resultado-plaquetas-exemplo: Observation.category[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/observation-category#laboratory para a(s) língua(s) 'pt-BR'. O ecrã é 'Laboratory', o ecrã da língua predefinida
-ERROR: Observation/agrosus-resultado-plaquetas-exemplo: Observation.code.coding[0].display: Wrong Display Name 'Platelets [#/volume] in Blood by Automated count' for http://loinc.org#777-3. Valid display is 'plaqueta # Sg Auto' (pt-BR) (for the language(s) 'pt-BR')
 INFORMATION: Observation/agrosus-resultado-plaquetas-exemplo: Observation.interpretation[0].coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N para a(s) língua(s) 'pt-BR'. O ecrã é 'Normal', o ecrã da língua predefinida
 == fsh-generated/resources/Organization-agrosus-laboratorio-exemplo.json ==
 == fsh-generated/resources/Organization-agrosus-ubs-exemplo.json ==

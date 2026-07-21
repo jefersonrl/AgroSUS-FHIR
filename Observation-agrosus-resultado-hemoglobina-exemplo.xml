@@ -29,7 +29,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="718-7"/>
-      <display value="Hemoglobin [Mass/volume] in Blood"/>
+      <display value="Hgb Sg-mCnc"/>
     </coding>
     <text value="Hemoglobina"/>
   </code>

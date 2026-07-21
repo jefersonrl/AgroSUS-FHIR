@@ -11,7 +11,7 @@
   },
   "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-exames-laboratoriais.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-21T03:07:16.524087Z",
+  "generatedAt": "2026-07-21T03:28:19.574505Z",
   "@graph": [
     {
       "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-exames-laboratoriais.jsonld#58410-2",

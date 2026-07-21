@@ -71,7 +71,7 @@ Faixa de referência informada pelo laboratório: 150 a 450 × 10³/µL.
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "777-3",
-      "display" : "Platelets [#/volume] in Blood by Automated count"
+      "display" : "plaqueta # Sg Auto"
     }],
     "text" : "Plaquetas"
   },

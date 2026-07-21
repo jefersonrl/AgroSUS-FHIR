@@ -28,7 +28,7 @@
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "718-7",
-      "display" : "Hemoglobin [Mass/volume] in Blood"
+      "display" : "Hgb Sg-mCnc"
     }],
     "text" : "Hemoglobina"
   },

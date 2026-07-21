@@ -71,7 +71,7 @@ Faixa de referência informada pelo laboratório: 12,0 a 16,0 g/dL.
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "718-7",
-      "display" : "Hemoglobin [Mass/volume] in Blood"
+      "display" : "Hgb Sg-mCnc"
     }],
     "text" : "Hemoglobina"
   },

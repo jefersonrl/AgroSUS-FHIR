@@ -29,7 +29,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="777-3"/>
-      <display value="Platelets [#/volume] in Blood by Automated count"/>
+      <display value="plaqueta # Sg Auto"/>
     </coding>
     <text value="Plaquetas"/>
   </code>

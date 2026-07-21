@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-acs-role.csv
   "name" : "AgroSUSACSRole",
   "title" : "Função do ACS no AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T03:04:10+00:00",
+  "date" : "2026-07-21T03:24:49+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

@@ -77,7 +77,7 @@ Resultados apresentados dentro das faixas de referência informadas pelo laborat
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "58410-2",
-      "display" : "CBC panel - Blood by Automated count"
+      "display" : "CBC (hemogram) Sg Auto"
     }],
     "text" : "Hemograma completo"
   },

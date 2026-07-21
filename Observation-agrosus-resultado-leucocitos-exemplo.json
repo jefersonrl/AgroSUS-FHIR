@@ -28,7 +28,7 @@
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "6690-2",
-      "display" : "Leukocytes [#/volume] in Blood by Automated count"
+      "display" : "WBC # Sg Auto"
     }],
     "text" : "Leucócitos"
   },

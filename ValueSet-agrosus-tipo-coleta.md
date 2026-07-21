@@ -52,7 +52,7 @@ Modalidades permitidas para aplicação do formulário AgroSUS.
   "title" : "Tipos de Coleta AgroSUS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T03:04:10+00:00",
+  "date" : "2026-07-21T03:24:49+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

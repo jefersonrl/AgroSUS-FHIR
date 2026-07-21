@@ -71,7 +71,7 @@ Faixa de referência informada pelo laboratório: 36,0% a 46,0%.
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "4544-3",
-      "display" : "Hematocrit [Volume Fraction] of Blood by Automated count"
+      "display" : "Hct Fr Sg Auto"
     }],
     "text" : "Hematócrito"
   },

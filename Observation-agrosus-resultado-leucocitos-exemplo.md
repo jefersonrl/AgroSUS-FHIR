@@ -71,7 +71,7 @@ Faixa de referência informada pelo laboratório: 4,0 a 10,0 × 10³/µL.
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "6690-2",
-      "display" : "Leukocytes [#/volume] in Blood by Automated count"
+      "display" : "WBC # Sg Auto"
     }],
     "text" : "Leucócitos"
   },

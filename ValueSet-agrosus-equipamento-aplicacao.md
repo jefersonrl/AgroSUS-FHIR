@@ -52,7 +52,7 @@ Tipos de equipamento utilizados na aplicação de defensivos agrícolas.
   "title" : "Equipamentos utilizados na aplicação",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T03:04:10+00:00",
+  "date" : "2026-07-21T03:24:49+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
