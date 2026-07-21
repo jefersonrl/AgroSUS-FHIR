@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/PlanDefinition/AgroSUSEstratificacaoRisco> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AgroSUSEstratificacaoRisco"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">AgroSUSEstratificacaoRisco</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"PlanDefinition-AgroSUSEstratificacaoRisco.html\">AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.1.0</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Experimental: </b></th>\n            <td style=\"padding-left: 4px;\">true</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-plan-definition-type.html\">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>workflow-definition</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2026-07-21 13:39:22+0000</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">Fatec Ferraz de Vasconcelos</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS.</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Jurisdiction: </b></th>\n            <td style=\"padding-left: 4px;\">BR</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Libraries: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td><a href=\"Library-AgroSUSIntoxicacaoLogic.html\">Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)</a></td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Actions: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Obter valor basal e resultado da colinesterase:</b> Determinar a atividade basal (pré-ocupacional) na admissão; calcular o percentual de inibição do resultado atual em relação ao basal. Registrado via ServiceRequest/AgroSUSSolicitacaoExame e Observation/AgroSUSResultadoLaboratorial.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Classificar o resultado da colinesterase:</b> Classifica o percentual de inibição conforme o tipo de amostra. REVISAR fonte: NR-7 Quadro I; Nota Informativa 16/2019.\n                            \n                            <br/>\n                            \n                            \n                            \n                            <b>Then:</b>\n                            <table class=\"grid-dict\">\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Normal — colinesterase plasmática (inibição &lt;= 50%) ou sangue total (inibição &lt;= 25%):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        <b>If:</b>\n                                        \n                                        <i>Applicability:</i>\n                                        \n                                        <i>(%inibicaoPlasmatica &lt;= 50 or %inibicaoSangueTotal &lt;= 25)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Precaução — redução de 20% a 50%/25% (não atinge o IBMP):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        <b>If:</b>\n                                        \n                                        <i>Applicability:</i>\n                                        \n                                        <i>(%inibicaoPlasmatica &gt;= 20 and %inibicaoPlasmatica &lt;= 50)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Alterado — excede o Índice Biológico Máximo Permitido (IBMP):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        <b>If:</b>\n                                        \n                                        <i>Applicability:</i>\n                                        \n                                        <i>(%inibicaoPlasmatica &gt; 50 or %inibicaoSangueTotal &gt; 25)</i>\n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                            </table>\n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Definir periodicidade do monitoramento biológico:</b> Periodicidade mínima semestral (NR-7 7.4.2.1), com gatilhos adicionais independentes da rotina.\n                            \n                            <br/>\n                            \n                            \n                            \n                            <b>Then:</b>\n                            <table class=\"grid-dict\">\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Rotina — no mínimo a cada 6 meses:</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Gatilho adicional — admissional, retorno de afastamento &gt; 30 dias, mudança de função, sintomático, após surto/bloqueio de aplicação, ou retestagem pós-resultado alterado:</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                            </table>\n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Conduta frente a resultado alterado:</b> Afastar do contato com o agrotóxico por 30 dias; encaminhar para avaliação clínica e laboratorial; repetir exame em 30 dias; investigar outras causas antes de concluir pela exposição ocupacional. Registrado via CarePlan/AgroSUSPlanoAcompanhamento.\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            <i>(%inibicaoPlasmatica &gt; 50 or %inibicaoSangueTotal &gt; 25)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Avaliar gatilhos de alerta independentes:</b> Gatilhos discretos que não compõem escore (ver ADR-0002). Qualquer gatilho presente prioriza avaliação clínica na UBS.\n                            \n                            <br/>\n                            \n                            \n                            \n                            <b>Then:</b>\n                            <table class=\"grid-dict\">\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Sintoma agudo compatível com intoxicação (Seção 13 da anamnese):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Manuseio de defensivo categoria toxicológica 1 ou 2 sem EPI adequado registrado (Seções 6 e 9):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Histórico de intoxicação aguda prévia (Seção 14):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                                <tr>\n                                    <td>\n                                        \n                                        <b> Colinesterase alterada ou em precaução (Ação 2):</b>\n                                        \n                                        \n                                        <br/>\n                                        \n                                        \n                                        \n                                        \n                                        \n                                    </td>\n                                </tr>\n                                \n                            </table>\n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Registrar e manter o histórico:</b> Manter registro de exames, afastamentos e condutas por, no mínimo, 20 anos após o desligamento do trabalhador (NR-7 7.4.5.1). Registrado via Provenance/AgroSUSProvenance.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:PlanDefinition.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/PlanDefinition/AgroSUSEstratificacaoRisco"] ;
+  fhir:PlanDefinition.version [ fhir:value "0.1.0"] ;
+  fhir:PlanDefinition.name [ fhir:value "AgroSUSEstratificacaoRisco"] ;
+  fhir:PlanDefinition.title [ fhir:value "AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos"] ;
+  fhir:PlanDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/plan-definition-type" ] ;
+       fhir:Coding.code [ fhir:value "workflow-definition" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.status [ fhir:value "active"] ;
+  fhir:PlanDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PlanDefinition.date [ fhir:value "2026-07-21T13:39:22+00:00"^^xsd:dateTime] ;
+  fhir:PlanDefinition.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:PlanDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.description [ fhir:value "Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS."] ;
+  fhir:PlanDefinition.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.library [
+     fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/Library/AgroSUSIntoxicacaoLogic" ;
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Library/AgroSUSIntoxicacaoLogic>
+  ] ;
+  fhir:PlanDefinition.action [
+     fhir:index 0 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Obter valor basal e resultado da colinesterase" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Determinar a atividade basal (pré-ocupacional) na admissão; calcular o percentual de inibição do resultado atual em relação ao basal. Registrado via ServiceRequest/AgroSUSSolicitacaoExame e Observation/AgroSUSResultadoLaboratorial." ]
+  ], [
+     fhir:index 1 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Classificar o resultado da colinesterase" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Classifica o percentual de inibição conforme o tipo de amostra. REVISAR fonte: NR-7 Quadro I; Nota Informativa 16/2019." ] ;
+     fhir:PlanDefinition.action.action [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Normal — colinesterase plasmática (inibição <= 50%) ou sangue total (inibição <= 25%)" ] ;
+       fhir:PlanDefinition.action.condition [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+         fhir:PlanDefinition.action.condition.expression [
+           fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+           fhir:Expression.expression [ fhir:value "%inibicaoPlasmatica <= 50 or %inibicaoSangueTotal <= 25" ]
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Precaução — redução de 20% a 50%/25% (não atinge o IBMP)" ] ;
+       fhir:PlanDefinition.action.condition [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+         fhir:PlanDefinition.action.condition.expression [
+           fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+           fhir:Expression.expression [ fhir:value "%inibicaoPlasmatica >= 20 and %inibicaoPlasmatica <= 50" ]
+         ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Alterado — excede o Índice Biológico Máximo Permitido (IBMP)" ] ;
+       fhir:PlanDefinition.action.condition [
+         fhir:index 0 ;
+         fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+         fhir:PlanDefinition.action.condition.expression [
+           fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+           fhir:Expression.expression [ fhir:value "%inibicaoPlasmatica > 50 or %inibicaoSangueTotal > 25" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Definir periodicidade do monitoramento biológico" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Periodicidade mínima semestral (NR-7 7.4.2.1), com gatilhos adicionais independentes da rotina." ] ;
+     fhir:PlanDefinition.action.action [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Rotina — no mínimo a cada 6 meses" ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Gatilho adicional — admissional, retorno de afastamento > 30 dias, mudança de função, sintomático, após surto/bloqueio de aplicação, ou retestagem pós-resultado alterado" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Conduta frente a resultado alterado" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Afastar do contato com o agrotóxico por 30 dias; encaminhar para avaliação clínica e laboratorial; repetir exame em 30 dias; investigar outras causas antes de concluir pela exposição ocupacional. Registrado via CarePlan/AgroSUSPlanoAcompanhamento." ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%inibicaoPlasmatica > 50 or %inibicaoSangueTotal > 25" ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Avaliar gatilhos de alerta independentes" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Gatilhos discretos que não compõem escore (ver ADR-0002). Qualquer gatilho presente prioriza avaliação clínica na UBS." ] ;
+     fhir:PlanDefinition.action.action [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Sintoma agudo compatível com intoxicação (Seção 13 da anamnese)" ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Manuseio de defensivo categoria toxicológica 1 ou 2 sem EPI adequado registrado (Seções 6 e 9)" ]
+     ], [
+       fhir:index 2 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Histórico de intoxicação aguda prévia (Seção 14)" ]
+     ], [
+       fhir:index 3 ;
+       fhir:PlanDefinition.action.title [ fhir:value "Colinesterase alterada ou em precaução (Ação 2)" ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:PlanDefinition.action.title [ fhir:value "Registrar e manter o histórico" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Manter registro de exames, afastamentos e condutas por, no mínimo, 20 anos após o desligamento do trabalhador (NR-7 7.4.5.1). Registrado via Provenance/AgroSUSProvenance." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/PlanDefinition/AgroSUSEstratificacaoRisco.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

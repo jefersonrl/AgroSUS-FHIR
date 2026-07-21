@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="AgroSUSMeasureAlteradosComConduta"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Knowledge Artifact Metadata</th>
+
+</tr>
+
+<tr>
+
+<th scope="row" class="row-header">Name (machine-readable)</th>
+
+<td class="content-container">AgroSUSMeasureAlteradosComConduta</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Title (human-readable)</th>
+
+<td class="content-container">Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)</td>
+</tr>
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Status</th>
+
+<td class="content-container">Active</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Experimental</th>
+
+<td class="content-container">true</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Description</th>
+
+<td class="content-container"><div><p>Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3.</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Steward</th>
+
+<td class="content-container">Fatec Ferraz de Vasconcelos</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Steward Contact Details</th>
+
+<td class="content-container">Fatec Ferraz de Vasconcelos: <a href="https://www.fatecferraz.edu.br">https://www.fatecferraz.edu.br</a></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Metadata</th>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Version Number</th>
+
+<td class="content-container">0.1.0</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Scoring</th>
+
+<td class="content-container"><span title="Códigos:{http://terminology.hl7.org/CodeSystem/measure-scoring proportion}">Proportion</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Population Criteria</th>
+
+</tr>
+  
+  
+  
+  
+    <tr>
+      
+        
+          
+          
+          
+          
+            
+<th scope="row" class="row-header">Denominator</th>
+
+          
+          
+          
+          
+          
+          
+        
+      
+      <td class="content-container">
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one">Resultados de colinesterase classificados como Alterado</p>
+        
+        
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+          
+          
+            
+<th scope="row" class="row-header">Numerator</th>
+
+          
+          
+          
+          
+          
+          
+          
+          
+        
+      
+      <td class="content-container">
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one">Resultados alterados com conduta registrada (CarePlan ou Provenance)</p>
+        
+        
+          
+        
+      </td>
+    </tr>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>
+</tr>
+    </tbody>
+  </table>
+</div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureAlteradosComConduta"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSMeasureAlteradosComConduta"/>
+  <title value="Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T13:39:22+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <scoring>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <code value="proportion"/>
+    </coding>
+  </scoring>
+  <group>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+        </coding>
+      </code>
+      <description value="Resultados de colinesterase classificados como Alterado"/>
+      <criteria>
+        <language value="text/fhirpath"/>
+        <expression value="resultados-colinesterase-alterados"/>
+      </criteria>
+    </population>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="numerator"/>
+        </coding>
+      </code>
+      <description value="Resultados alterados com conduta registrada (CarePlan ou Provenance)"/>
+      <criteria>
+        <language value="text/fhirpath"/>
+        <expression value="resultados-alterados-com-conduta-registrada"/>
+      </criteria>
+    </population>
+  </group>
+</Measure>

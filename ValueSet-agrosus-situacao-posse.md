@@ -1,8 +1,7 @@
 # Situação de Posse da Terra - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Situação de Posse da Terra**
 
 ## ValueSet: Situação de Posse da Terra (Experimental) 
@@ -52,7 +51,7 @@ Situações de posse da propriedade rural.
   "title" : "Situação de Posse da Terra",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T13:03:45+00:00",
+  "date" : "2026-07-21T13:39:22+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

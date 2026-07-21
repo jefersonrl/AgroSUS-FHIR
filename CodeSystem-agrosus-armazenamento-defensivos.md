@@ -1,8 +1,7 @@
 # Armazenamento de defensivos agrícolas AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Armazenamento de defensivos agrícolas AgroSUS**
 
 ## CodeSystem: Armazenamento de defensivos agrícolas AgroSUS 
@@ -33,7 +32,7 @@ Terminologia dos locais utilizados para armazenamento de defensivos agrícolas.
   "title" : "Armazenamento de defensivos agrícolas AgroSUS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T13:03:45+00:00",
+  "date" : "2026-07-21T13:39:22+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

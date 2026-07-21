@@ -1,8 +1,7 @@
 # Formulário de Anamnese AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Formulário de Anamnese AgroSUS**
 
 ## Questionnaire: Formulário de Anamnese AgroSUS
@@ -24,7 +23,7 @@ Branch:
   "status" : "draft",
   "experimental" : true,
   "subjectType" : ["Patient"],
-  "date" : "2026-07-20",
+  "date" : "2026-07-21",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
@@ -1791,6 +1790,50 @@ Branch:
       "type" : "choice",
       "required" : true,
       "answerValueSet" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-avaliacao-boas-praticas"
+    }]
+  },
+  {
+    "linkId" : "vigilancia-sinais-alerta",
+    "text" : "16. Vigilância de sinais de alerta",
+    "type" : "group",
+    "item" : [{
+      "linkId" : "vigilancia-nota-metodologica",
+      "text" : "Os itens abaixo são gatilhos independentes de atenção clínica, com base em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/MS. Não representam um escore ou pontuação combinada — qualquer gatilho presente deve motivar avaliação prioritária pela equipe da UBS.",
+      "type" : "display"
+    },
+    {
+      "linkId" : "vigilancia-sintoma-agudo-observado",
+      "text" : "O trabalhador apresenta, no momento da visita, algum sinal ou sintoma agudo compatível com intoxicação por defensivos (ver Seção 13)?",
+      "type" : "boolean",
+      "required" : true
+    },
+    {
+      "linkId" : "vigilancia-produto-categoria-1-2-sem-epi",
+      "text" : "O trabalhador manuseia defensivo de categoria toxicológica 1 ou 2 sem uso adequado de EPI (ver Seções 6 e 9)?",
+      "type" : "boolean",
+      "required" : true
+    },
+    {
+      "linkId" : "vigilancia-historico-intoxicacao-previa",
+      "text" : "Há histórico de intoxicação aguda prévia autorreferido (ver Seção 14)?",
+      "type" : "boolean",
+      "required" : true
+    },
+    {
+      "linkId" : "vigilancia-colinesterase-alterada-precaucao",
+      "text" : "Há resultado de colinesterase alterado ou em faixa de precaução no acompanhamento laboratorial mais recente, quando disponível (ver Library AgroSUSIntoxicacaoLogic)?",
+      "type" : "boolean"
+    },
+    {
+      "linkId" : "vigilancia-encaminhamento-recomendado",
+      "text" : "Diante dos gatilhos acima, o ACS recomenda encaminhamento prioritário para avaliação na UBS?",
+      "type" : "boolean",
+      "required" : true
+    },
+    {
+      "linkId" : "vigilancia-observacoes",
+      "text" : "Observações adicionais sobre os gatilhos identificados",
+      "type" : "text"
     }]
   },
   {

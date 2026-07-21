@@ -1,10 +1,9 @@
-# Artifact Index - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
+# Artifacts Summary - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* **Artifact Index**
+* **Artifacts Summary**
 
-## Artifact Index
+## Artifacts Summary
 
 This page provides a list of the FHIR artifacts defined as part of this implementation guide.
 
@@ -15,6 +14,41 @@ The following artifacts define the specific capabilities that different types of
 | | |
 | :--- | :--- |
 | [Requisitos de capacidade do servidor AgroSUS](CapabilityStatement-agrosus-server-capabilities.md) | Contrato mínimo da API FHIR R4 do AgroSUS para o aplicativo do ACS, o dashboard da UBS e os sistemas laboratoriais. |
+
+### Knowledge Artifacts: Plan Definitions 
+
+These define workflows, rules, strategies, or protocols as part of content in this implementation guide.
+
+| | |
+| :--- | :--- |
+| [AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos](PlanDefinition-AgroSUSEstratificacaoRisco.md) | Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS. |
+
+### Knowledge Artifacts: Measure 
+
+These define measures as part of content in this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)](Measure-AgroSUSMeasureAdesaoPeriodicidade.md) | Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1. |
+| [Cobertura da anamnese ocupacional AgroSUS](Measure-AgroSUSMeasureCoberturaAnamnese.md) | Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS. |
+| [Cobertura de uso adequado de EPI (AgroSUS)](Measure-AgroSUSMeasureCoberturaEPI.md) | Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8. |
+| [Cobertura do exame basal de colinesterase (AgroSUS)](Measure-AgroSUSMeasureCoberturaBasal.md) | Proporção de trabalhadores que manuseiam organofosforados/carbamatos com valor basal de colinesterase registrado na admissão, conforme exigido pela NR-7 item 7.4.1. |
+| [Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)](Measure-AgroSUSMeasureAlteradosComConduta.md) | Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3. |
+
+### Knowledge Artifacts: Libraries 
+
+These define logic, asset collections and other libraries as part of content in this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)](Library-AgroSUSIntoxicacaoLogic.md) | Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4). Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002. A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos e independentes.1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame (idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos. Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.2) PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100. Fonte: Nota Informativa 16/2019, Anexo I item 4.3) CLASSIFICAÇÃO DO RESULTADO:* Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o Índice Biológico Máximo Permitido — IBMP).
+* Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% = Alterado (excede o IBMP).
+* PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção, reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático. Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.
+4) PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais, independentes da rotina: exame admissional; retorno ao trabalho após afastamento > 30 dias; mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações em surto/bloqueio; retestagem após resultado alterado. Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.5) CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30 dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador; repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de concluir pela exposição ocupacional. Fonte: Nota Informativa 16/2019, Anexo III item 3.6) CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia, desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento colinesterase-inibidor não devem manusear organofosforados/carbamatos. Fonte: Nota Informativa 16/2019, Anexo III item 2.2.7) GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):* Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.
+* Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS) sem EPI adequado registrado (Seção 9) → ALERTA crítico.
+* Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.
+* Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de atenção. Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do plano de acompanhamento (`AgroSUSPlanoAcompanhamento`). Suporte à decisão — não substitui o julgamento clínico do profissional assistencial.
+8) REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro individual por, no mínimo, 20 anos após o desligamento do trabalhador. Fonte: NR-7 item 7.4.5.1.ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os gatilhos acima sem validação clínica. |
 
 ### Structures: Questionnaires 
 
@@ -79,6 +113,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Ocupações dos profissionais assistenciais da UBS](ValueSet-agrosus-ocupacao-profissional-ubs.md) | Ocupações CBO permitidas para profissionais assistenciais que utilizam o dashboard AgroSUS na Unidade Básica de Saúde. |
 | [Ocupações permitidas para o ACS no AgroSUS](ValueSet-agrosus-ocupacao-acs.md) | Ocupações da Classificação Brasileira de Ocupações permitidas para o profissional que aplica a anamnese AgroSUS. |
 | [Principal Atividade Agrícola](ValueSet-agrosus-atividade-agricola.md) | Principais atividades desenvolvidas na propriedade rural. |
+| [Prioridade de Alerta AgroSUS](ValueSet-agrosus-prioridade-alerta.md) | Níveis de prioridade permitidos para os alertas da lógica de decisão do AgroSUS. |
 | [Responsável pela aplicação](ValueSet-agrosus-responsavel-aplicacao.md) | Pessoas ou organizações que realizam a aplicação dos defensivos agrícolas. |
 | [Respostas dos indicadores de boas práticas](ValueSet-agrosus-avaliacao-boas-praticas.md) | Respostas permitidas para cada indicador de boa prática agrícola. |
 | [Resultados Laboratoriais AgroSUS](ValueSet-agrosus-resultados-laboratoriais.md) | Biomarcadores laboratoriais utilizados no acompanhamento assistencial dos trabalhadores rurais no AgroSUS. |
@@ -105,6 +140,7 @@ These define new code systems used by systems conforming to this implementation 
 | [Escolaridade AgroSUS](CodeSystem-agrosus-escolaridade.md) | Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS. |
 | [Exposição familiar AgroSUS](CodeSystem-agrosus-exposicao-familiar.md) | Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas. |
 | [Histórico de intoxicação AgroSUS](CodeSystem-agrosus-historico-intoxicacao.md) | Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas. |
+| [Prioridade de Alerta AgroSUS](CodeSystem-agrosus-prioridade-alerta.md) | Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação). |
 | [Rastreabilidade das aplicações AgroSUS](CodeSystem-agrosus-rastreabilidade.md) | Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas. |
 | [Temas de Capacitação AgroSUS](CodeSystem-agrosus-capacitacao.md) | Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas. |
 | [Terminologia da Propriedade Rural AgroSUS](CodeSystem-agrosus-propriedade.md) | Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS. |

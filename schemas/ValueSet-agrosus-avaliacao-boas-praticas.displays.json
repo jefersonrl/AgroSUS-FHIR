@@ -47,5 +47,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-avaliacao-boas-praticas",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T13:07:11.964194"
+  "fhir:expansionTimestamp": "2026-07-21T13:42:17.359159"
 }

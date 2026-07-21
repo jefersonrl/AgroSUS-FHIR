@@ -1,119 +1,56 @@
-# Home - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
+# Início - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* **Home**
+* **Início**
 
-## Home
+## Início
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus | *Version*:0.1.0 |
 | Draft as of 2026-07-21 | *Computable Name*:AgroSUSFHIR |
 
- This DAK and set of implementation tools are still undergoing development. 
+ Este Implementation Guide e seus artefatos estão em desenvolvimento (`draft`). 
 
- Content is for demonstration purposes only. 
+ Conteúdo para fins de demonstração e implementação piloto. 
 
-### Summary
+### Projeto mareIA — AgroSUS
 
-This WHO **[insert health domain here]** DAK **add content here**
+Adaptação digital (WHO SMART Guidelines **L2/L3**) para o pathway **AgroSUS** da Plataforma mareIA — telemonitoramento e apoio à identificação precoce de **intoxicação por defensivos agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigilância biológica pela **colinesterase sanguínea** (NR-7) e boas práticas de segurança no trabalho rural (NR-31).
 
-### L1 Narrative guidelines
+> Este IG cobre **apenas o pathway AgroSUS**. No SMART Guidelines, cada linha de cuidado da Plataforma mareIA é um IG independente — ver `docs/adr/0003-relacao-template-mareia-ig.md`.
 
-**[insert content here]**
+#### Fluxo de cuidado (4 macrofases)
 
-### L2 Operational guidelines
+`Cadastro → Triagem ocupacional (anamnese) → Resposta clínica e vigilância biológica → Acompanhamento longitudinal`
 
-The L2 **[insert health domain here]** Digital adaptation kit publications and implementations tools can be found here:
+1. **Cadastro**— identificação do trabalhador rural pelo ACS, cadastro do trabalhador e da propriedade rural.
+1. **Triagem ocupacional**— aplicação da anamnese ocupacional/ambiental (18 seções) em visita domiciliar, sincronizada de forma atômica e offline-first.
+1. **Resposta clínica e vigilância biológica**— avaliação na UBS, monitoramento da colinesterase (periodicidade semestral mínima, NR-7), registro da condição clínica quando aplicável.
+1. **Acompanhamento longitudinal**— plano de acompanhamento com periodicidade de reavaliação, proveniência e auditoria de todos os registros.
 
-* [Published DAK Document]()
-* [Link to core data dictionary]()
-* [Link to decision support logic]()
-* [Link to scheduling logic]()
-* [Link to indicators table]()
-* [Link to functional and non functional requirements]()
+#### Componentes do DAK (L2)
 
-### L3 Machine readable guidelines
+| | | |
+| :--- | :--- | :--- |
+| 1 | Intervenções e recomendações | [l2-interventions](l2-interventions.md) |
+| 2 | Personas genéricas | [l2-personas](l2-personas.md) |
+| 3 | Cenários de uso | [l2-user-scenarios](l2-user-scenarios.md) |
+| 4 | Processos de negócio e workflows | [l2-business-process](l2-business-process.md) |
+| 5 | Elementos de dados (dicionário) | [l2-data-dictionary](l2-data-dictionary.md) |
+| 6 | Lógica de suporte à decisão | [l2-decision-logic](l2-decision-logic.md) |
+| 7 | Indicadores de programa | [l2-indicators](l2-indicators.md) |
+| 8 | Requisitos | [l2-requirements](l2-requirements.md) |
+| 9 | Cenários de teste | [l2-test-scenarios](l2-test-scenarios.md) |
 
-The L3 FHIR Implementation Guide for the **[insert health domain here]** SMART Guidelines is yet to be published. Links will be published here as soon as they're available.
+#### Itens pendentes de confirmação clínica
 
-### L4 Executable guidelines
+* **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento validado equivalente ao IVCF-20 do pathway ATENTO 60+ (`docs/adr/0002-escore-risco-nao-definido.md`).
 
-Reference implementations representing the L4 layer for the **[insert health domain here]** SMART Guidelines are not yet available. Links will be published here as soon as they're available.
+**Fonte (L1): NR-7 (PCMSO), NR-31 (Segurança e Saúde no Trabalho Rural) e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS — Ministério da Saúde. Ver `sources/_normas_extract.txt`.**
 
-### L5 Dynamic guidelines
-
-Content representing the L5 layer for the **[insert health domain here]** SMART Guidelines are not yet available. Links will be published here as soon as they're available.
-
-### News
-
-### Contact Us
-
-Please let us know about your experience in using the DAK and questions you may have by contacting us at [SMART@who.int](mailto:SMART@who.int?subject = DAK Feedback)
-
-### License
-
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License](http://creativecommons.org/licenses/by-nc-sa/3.0/igo/).
-
-![](https://i.creativecommons.org/l/by-nc-sa/3.0/igo/88x31.png)
-
-### Providing Feedback
-
- Feedback specific to this specification can provided through: 
-
-* Clicking on one of the Feedbacks link to the right of any section header
-* Sending an email to [SMART@who.int](mailto:SMART@who.int?subject = DAK Feedback)
-* Creating an issue on GitHub [agrosus repository](https://github.com/WorldHealthOrganization/agrosus)
-
-### Disclaimer
-
-The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
-
- This implementation guide and set of artifacts are still undergoing development. 
-
- Content is for demonstration purposes only. 
-
-### Summary
-
-This implementation guide includes a machine-readable representation of WHO guidelines for **[insert health domain here]**, as documented in the WHO Digital Adaptation Kit for **[insert health domain here]** (link forthcoming) and explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of **[insert health domain here]** use cases by WHO Member States.
-
-The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology based on the WHO **[insert health domain here]** Digital Adaptation Kit (link forthcoming).
-
-Supporting guidance, recommendations, resources, and standards are included in the [References](references.md) and [Dependencies](dependencies.md).
-
-### About this implementation guide
-
-This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
-
-* [Home](index.md) - contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.
-* [Business Requirements](business-requirements.md) - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.
-* [Data Models and Exchange](data-models-and-exchange.md) - contains the data models and data exchange protocols with actors and transactions defined.
-* [Deployment Guidance ](deployment.md) - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.
-
-This guide is prepared to facilitate digital implementation of WHO **[insert health domain here]** guidelines by providing FHIR-based computable representations of and implementation guidance for using the key components of the WHO **[insert health domain here]** digital adaptation kit (DAK):
-
-* Health Interventions & Recommendations
-* Generic Personas
-* User Scenarios
-* Business Processes & Workflows
-* Core Data Elements
-* Decision Support Logic
-* Indicators & Monitoring
-* Functional & Non-functional Requirements
-
-This guide is a companion to the Digital Adaptation Kit (DAK) and should be used side-by-side with it. Implementers are strongly encouraged to make use of the Digital Adaptation Kit. The focus of this guide is on the explanation and use of the computable artifacts.
-
-This guide assumes use of the following resources:
-
-* [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
-* [CPG ActivityDefinitions](https://hl7.org/fhir/uv/cpg/artifacts.html#activitydefinition-index)
-* For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.md).
-* A complete offline copy of this implementation guide can be found on the [Downloads](downloads.md) page.
-* This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Speciciation, and other helpful resources can be found in the Support dropdown.
-
-### Disclaimer
-
-The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
+* Para a lista completa de artefatos definidos neste IG, ver o [Artifact Index](artifacts.md).
+* Uma cópia offline completa deste IG está disponível na página de [Downloads](downloads.md).
 
 ### Dependencies
 
@@ -146,7 +83,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.1.0/CodeSystem-ISO3166Part1.html): [AgroSUSACS](StructureDefinition-agrosus-acs.md), [AgroSUSACSRole](StructureDefinition-agrosus-acs-role.md)... Show 68 more, [AgroSUSAnamnese](Questionnaire-agrosus-anamnese.md), [AgroSUSAnamneseResponse](StructureDefinition-agrosus-anamnese-response.md), [AgroSUSArmazenamentoDefensivosCS](CodeSystem-agrosus-armazenamento-defensivos.md), [AgroSUSArmazenamentoEPIVS](ValueSet-agrosus-armazenamento-epi.md), [AgroSUSArmazenamentoRegistrosVS](ValueSet-agrosus-armazenamento-registros.md), [AgroSUSAssistenciaTecnicaCS](CodeSystem-agrosus-assistencia-tecnica.md), [AgroSUSAtendimentoUBS](StructureDefinition-agrosus-atendimento-ubs.md), [AgroSUSAtividadeAgricolaVS](ValueSet-agrosus-atividade-agricola.md), [AgroSUSAuditEvent](StructureDefinition-agrosus-audit-event.md), [AgroSUSAvaliacaoBoasPraticasCS](CodeSystem-agrosus-avaliacao-boas-praticas.md), [AgroSUSAvaliacaoBoasPraticasVS](ValueSet-agrosus-avaliacao-boas-praticas.md), [AgroSUSCapacitacaoCS](CodeSystem-agrosus-capacitacao.md), [AgroSUSCategoriaPlanoCuidadoCS](CodeSystem-agrosus-categoria-plano-cuidado.md), [AgroSUSCategoriaPlanoCuidadoVS](ValueSet-agrosus-categoria-plano-cuidado.md), [AgroSUSClassificacaoToxicologicaCS](CodeSystem-agrosus-classificacao-toxicologica.md), [AgroSUSClassificacaoToxicologicaVS](ValueSet-agrosus-classificacao-toxicologica.md), [AgroSUSCondicaoSaudeReferidaVS](ValueSet-agrosus-condicao-saude-referida.md), [AgroSUSCondicoesSintomasCS](CodeSystem-agrosus-condicoes-sintomas.md), [AgroSUSDestinacaoEmbalagensCS](CodeSystem-agrosus-destinacao-embalagens.md), [AgroSUSDestinacaoEmbalagensNaoDevolvidasVS](ValueSet-agrosus-destinacao-embalagens-nao-devolvidas.md), [AgroSUSDiasAplicacaoMesVS](ValueSet-agrosus-dias-aplicacao-mes.md), [AgroSUSEPICS](CodeSystem-agrosus-epi.md), [AgroSUSEquipamentoAplicacaoVS](ValueSet-agrosus-equipamento-aplicacao.md), [AgroSUSEscolaridadeCS](CodeSystem-agrosus-escolaridade.md), [AgroSUSEscolaridadeVS](ValueSet-agrosus-escolaridade.md), [AgroSUSExamesLaboratoriaisVS](ValueSet-agrosus-exames-laboratoriais.md), [AgroSUSExposicaoCS](CodeSystem-agrosus-exposicao.md), [AgroSUSExposicaoFamiliarCS](CodeSystem-agrosus-exposicao-familiar.md), [AgroSUSFHIR](index.md), [AgroSUSFamiliaresAuxiliamAplicacaoVS](ValueSet-agrosus-familiares-auxiliam-aplicacao.md), [AgroSUSFonteAguaVS](ValueSet-agrosus-fonte-agua.md), [AgroSUSFormacaoResponsavelTecnicoVS](ValueSet-agrosus-formacao-responsavel-tecnico.md), [AgroSUSFrequenciaUsoEPIVS](ValueSet-agrosus-frequencia-uso-epi.md), [AgroSUSHistoricoIntoxicacaoCS](CodeSystem-agrosus-historico-intoxicacao.md), [AgroSUSHorasAplicacaoDiaVS](ValueSet-agrosus-horas-aplicacao-dia.md), [AgroSUSInstituicaoAssistenciaVS](ValueSet-agrosus-instituicao-assistencia.md), [AgroSUSIntoxicacaoPesticida](StructureDefinition-agrosus-intoxicacao-pesticida.md), [AgroSUSIntoxicacaoPesticidaVS](ValueSet-agrosus-intoxicacao-pesticida.md), [AgroSUSLaboratorio](StructureDefinition-agrosus-laboratorio.md), [AgroSUSLaudoLaboratorial](StructureDefinition-agrosus-laudo-laboratorial.md), [AgroSUSLocalArmazenamentoDefensivosVS](ValueSet-agrosus-local-armazenamento-defensivos.md), [AgroSUSMesMaiorIntensidadeVS](ValueSet-agrosus-mes-maior-intensidade.md), [AgroSUSMotivoNaoUsoEPIVS](ValueSet-agrosus-motivo-nao-uso-epi.md), [AgroSUSNumeroIntoxicacoesAgudasVS](ValueSet-agrosus-numero-intoxicacoes-agudas.md), [AgroSUSOcupacaoACSVS](ValueSet-agrosus-ocupacao-acs.md), [AgroSUSOcupacaoProfissionalUBSVS](ValueSet-agrosus-ocupacao-profissional-ubs.md), [AgroSUSPatient](StructureDefinition-agrosus-patient.md), [AgroSUSPlanoAcompanhamento](StructureDefinition-agrosus-plano-acompanhamento.md), [AgroSUSProfissionalUBS](StructureDefinition-agrosus-profissional-ubs.md), [AgroSUSProfissionalUBSRole](StructureDefinition-agrosus-profissional-ubs-role.md), [AgroSUSPropriedadeCS](CodeSystem-agrosus-propriedade.md), [AgroSUSProvenance](StructureDefinition-agrosus-provenance.md), [AgroSUSRastreabilidadeCS](CodeSystem-agrosus-rastreabilidade.md), [AgroSUSResponsavelAplicacaoVS](ValueSet-agrosus-responsavel-aplicacao.md), [AgroSUSResultadoLaboratorial](StructureDefinition-agrosus-resultado-laboratorial.md), [AgroSUSResultadosLaboratoriaisVS](ValueSet-agrosus-resultados-laboratoriais.md), [AgroSUSServerCapabilities](CapabilityStatement-agrosus-server-capabilities.md), [AgroSUSSintomaUltimos30DiasVS](ValueSet-agrosus-sintoma-ultimos-30-dias.md), [AgroSUSSituacaoPosseVS](ValueSet-agrosus-situacao-posse.md), [AgroSUSSolicitacaoExame](StructureDefinition-agrosus-solicitacao-exame.md), [AgroSUSTemasCapacitacaoVS](ValueSet-agrosus-temas-capacitacao.md), [AgroSUSTipoColetaCS](CodeSystem-agrosus-tipo-coleta.md), [AgroSUSTipoColetaVS](ValueSet-agrosus-tipo-coleta.md), [AgroSUSTipoProducaoVS](ValueSet-agrosus-tipo-producao.md), [AgroSUSTransacaoVisita](StructureDefinition-agrosus-transacao-visita.md), [AgroSUSUBS](StructureDefinition-agrosus-ubs.md), [AgroSUSViaExposicaoVS](ValueSet-agrosus-via-exposicao.md) and [AgroSUSVisitaACS](StructureDefinition-agrosus-visita-acs.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.1.0/CodeSystem-ISO3166Part1.html): [AgroSUSACS](StructureDefinition-agrosus-acs.md), [AgroSUSACSRole](StructureDefinition-agrosus-acs-role.md)... Show 77 more, [AgroSUSAnamnese](Questionnaire-agrosus-anamnese.md), [AgroSUSAnamneseResponse](StructureDefinition-agrosus-anamnese-response.md), [AgroSUSArmazenamentoDefensivosCS](CodeSystem-agrosus-armazenamento-defensivos.md), [AgroSUSArmazenamentoEPIVS](ValueSet-agrosus-armazenamento-epi.md), [AgroSUSArmazenamentoRegistrosVS](ValueSet-agrosus-armazenamento-registros.md), [AgroSUSAssistenciaTecnicaCS](CodeSystem-agrosus-assistencia-tecnica.md), [AgroSUSAtendimentoUBS](StructureDefinition-agrosus-atendimento-ubs.md), [AgroSUSAtividadeAgricolaVS](ValueSet-agrosus-atividade-agricola.md), [AgroSUSAuditEvent](StructureDefinition-agrosus-audit-event.md), [AgroSUSAvaliacaoBoasPraticasCS](CodeSystem-agrosus-avaliacao-boas-praticas.md), [AgroSUSAvaliacaoBoasPraticasVS](ValueSet-agrosus-avaliacao-boas-praticas.md), [AgroSUSCapacitacaoCS](CodeSystem-agrosus-capacitacao.md), [AgroSUSCategoriaPlanoCuidadoCS](CodeSystem-agrosus-categoria-plano-cuidado.md), [AgroSUSCategoriaPlanoCuidadoVS](ValueSet-agrosus-categoria-plano-cuidado.md), [AgroSUSClassificacaoToxicologicaCS](CodeSystem-agrosus-classificacao-toxicologica.md), [AgroSUSClassificacaoToxicologicaVS](ValueSet-agrosus-classificacao-toxicologica.md), [AgroSUSCondicaoSaudeReferidaVS](ValueSet-agrosus-condicao-saude-referida.md), [AgroSUSCondicoesSintomasCS](CodeSystem-agrosus-condicoes-sintomas.md), [AgroSUSDestinacaoEmbalagensCS](CodeSystem-agrosus-destinacao-embalagens.md), [AgroSUSDestinacaoEmbalagensNaoDevolvidasVS](ValueSet-agrosus-destinacao-embalagens-nao-devolvidas.md), [AgroSUSDiasAplicacaoMesVS](ValueSet-agrosus-dias-aplicacao-mes.md), [AgroSUSEPICS](CodeSystem-agrosus-epi.md), [AgroSUSEquipamentoAplicacaoVS](ValueSet-agrosus-equipamento-aplicacao.md), [AgroSUSEscolaridadeCS](CodeSystem-agrosus-escolaridade.md), [AgroSUSEscolaridadeVS](ValueSet-agrosus-escolaridade.md), [AgroSUSEstratificacaoRisco](PlanDefinition-AgroSUSEstratificacaoRisco.md), [AgroSUSExamesLaboratoriaisVS](ValueSet-agrosus-exames-laboratoriais.md), [AgroSUSExposicaoCS](CodeSystem-agrosus-exposicao.md), [AgroSUSExposicaoFamiliarCS](CodeSystem-agrosus-exposicao-familiar.md), [AgroSUSFHIR](index.md), [AgroSUSFamiliaresAuxiliamAplicacaoVS](ValueSet-agrosus-familiares-auxiliam-aplicacao.md), [AgroSUSFonteAguaVS](ValueSet-agrosus-fonte-agua.md), [AgroSUSFormacaoResponsavelTecnicoVS](ValueSet-agrosus-formacao-responsavel-tecnico.md), [AgroSUSFrequenciaUsoEPIVS](ValueSet-agrosus-frequencia-uso-epi.md), [AgroSUSHistoricoIntoxicacaoCS](CodeSystem-agrosus-historico-intoxicacao.md), [AgroSUSHorasAplicacaoDiaVS](ValueSet-agrosus-horas-aplicacao-dia.md), [AgroSUSInstituicaoAssistenciaVS](ValueSet-agrosus-instituicao-assistencia.md), [AgroSUSIntoxicacaoLogic](Library-AgroSUSIntoxicacaoLogic.md), [AgroSUSIntoxicacaoPesticida](StructureDefinition-agrosus-intoxicacao-pesticida.md), [AgroSUSIntoxicacaoPesticidaVS](ValueSet-agrosus-intoxicacao-pesticida.md), [AgroSUSLaboratorio](StructureDefinition-agrosus-laboratorio.md), [AgroSUSLaudoLaboratorial](StructureDefinition-agrosus-laudo-laboratorial.md), [AgroSUSLocalArmazenamentoDefensivosVS](ValueSet-agrosus-local-armazenamento-defensivos.md), [AgroSUSMeasureAdesaoPeriodicidade](Measure-AgroSUSMeasureAdesaoPeriodicidade.md), [AgroSUSMeasureAlteradosComConduta](Measure-AgroSUSMeasureAlteradosComConduta.md), [AgroSUSMeasureCoberturaAnamnese](Measure-AgroSUSMeasureCoberturaAnamnese.md), [AgroSUSMeasureCoberturaBasal](Measure-AgroSUSMeasureCoberturaBasal.md), [AgroSUSMeasureCoberturaEPI](Measure-AgroSUSMeasureCoberturaEPI.md), [AgroSUSMesMaiorIntensidadeVS](ValueSet-agrosus-mes-maior-intensidade.md), [AgroSUSMotivoNaoUsoEPIVS](ValueSet-agrosus-motivo-nao-uso-epi.md), [AgroSUSNumeroIntoxicacoesAgudasVS](ValueSet-agrosus-numero-intoxicacoes-agudas.md), [AgroSUSOcupacaoACSVS](ValueSet-agrosus-ocupacao-acs.md), [AgroSUSOcupacaoProfissionalUBSVS](ValueSet-agrosus-ocupacao-profissional-ubs.md), [AgroSUSPatient](StructureDefinition-agrosus-patient.md), [AgroSUSPlanoAcompanhamento](StructureDefinition-agrosus-plano-acompanhamento.md), [AgroSUSPrioridadeAlertaCS](CodeSystem-agrosus-prioridade-alerta.md), [AgroSUSPrioridadeAlertaVS](ValueSet-agrosus-prioridade-alerta.md), [AgroSUSProfissionalUBS](StructureDefinition-agrosus-profissional-ubs.md), [AgroSUSProfissionalUBSRole](StructureDefinition-agrosus-profissional-ubs-role.md), [AgroSUSPropriedadeCS](CodeSystem-agrosus-propriedade.md), [AgroSUSProvenance](StructureDefinition-agrosus-provenance.md), [AgroSUSRastreabilidadeCS](CodeSystem-agrosus-rastreabilidade.md), [AgroSUSResponsavelAplicacaoVS](ValueSet-agrosus-responsavel-aplicacao.md), [AgroSUSResultadoLaboratorial](StructureDefinition-agrosus-resultado-laboratorial.md), [AgroSUSResultadosLaboratoriaisVS](ValueSet-agrosus-resultados-laboratoriais.md), [AgroSUSServerCapabilities](CapabilityStatement-agrosus-server-capabilities.md), [AgroSUSSintomaUltimos30DiasVS](ValueSet-agrosus-sintoma-ultimos-30-dias.md), [AgroSUSSituacaoPosseVS](ValueSet-agrosus-situacao-posse.md), [AgroSUSSolicitacaoExame](StructureDefinition-agrosus-solicitacao-exame.md), [AgroSUSTemasCapacitacaoVS](ValueSet-agrosus-temas-capacitacao.md), [AgroSUSTipoColetaCS](CodeSystem-agrosus-tipo-coleta.md), [AgroSUSTipoColetaVS](ValueSet-agrosus-tipo-coleta.md), [AgroSUSTipoProducaoVS](ValueSet-agrosus-tipo-producao.md), [AgroSUSTransacaoVisita](StructureDefinition-agrosus-transacao-visita.md), [AgroSUSUBS](StructureDefinition-agrosus-ubs.md), [AgroSUSViaExposicaoVS](ValueSet-agrosus-via-exposicao.md) and [AgroSUSVisitaACS](StructureDefinition-agrosus-visita-acs.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -165,7 +102,11 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
 * [Condition Clinical Status Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html): [Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo](Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.md)
 * [ConditionVerificationStatus](http://terminology.hl7.org/7.1.0/CodeSystem-condition-ver-status.html): [Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo](Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.md)
 * [Diagnosis Role](http://terminology.hl7.org/7.1.0/CodeSystem-diagnosis-role.html): [Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo](Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.md)
+* [LibraryType](http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html): [AgroSUSIntoxicacaoLogic](Library-AgroSUSIntoxicacaoLogic.md)
+* [Measure Population Type](http://terminology.hl7.org/7.1.0/CodeSystem-measure-population.html): [AgroSUSMeasureAdesaoPeriodicidade](Measure-AgroSUSMeasureAdesaoPeriodicidade.md), [AgroSUSMeasureAlteradosComConduta](Measure-AgroSUSMeasureAlteradosComConduta.md), [AgroSUSMeasureCoberturaAnamnese](Measure-AgroSUSMeasureCoberturaAnamnese.md), [AgroSUSMeasureCoberturaBasal](Measure-AgroSUSMeasureCoberturaBasal.md) and [AgroSUSMeasureCoberturaEPI](Measure-AgroSUSMeasureCoberturaEPI.md)
+* [Measure Scoring](http://terminology.hl7.org/7.1.0/CodeSystem-measure-scoring.html): [AgroSUSMeasureAdesaoPeriodicidade](Measure-AgroSUSMeasureAdesaoPeriodicidade.md), [AgroSUSMeasureAlteradosComConduta](Measure-AgroSUSMeasureAlteradosComConduta.md), [AgroSUSMeasureCoberturaAnamnese](Measure-AgroSUSMeasureCoberturaAnamnese.md), [AgroSUSMeasureCoberturaBasal](Measure-AgroSUSMeasureCoberturaBasal.md) and [AgroSUSMeasureCoberturaEPI](Measure-AgroSUSMeasureCoberturaEPI.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
+* [PlanDefinitionType](http://terminology.hl7.org/7.1.0/CodeSystem-plan-definition-type.html): [AgroSUSEstratificacaoRisco](PlanDefinition-AgroSUSEstratificacaoRisco.md)
 * [Provenance participant type](http://terminology.hl7.org/7.1.0/CodeSystem-provenance-participant-type.html): [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Provenance/agrosus-provenance-anamnese-exemplo](Provenance-agrosus-provenance-anamnese-exemplo.md) and [Provenance/agrosus-provenance-plano-acompanhamento-exemplo](Provenance-agrosus-provenance-plano-acompanhamento-exemplo.md)
 * [diagnosticServiceSectionId](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html): [DiagnosticReport/agrosus-laudo-hemograma-exemplo](DiagnosticReport-agrosus-laudo-hemograma-exemplo.md)
 * [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Laboratório Municipal de Referência — Exemplo AgroSUS](Organization-agrosus-laboratorio-exemplo.md)... Show 6 more, [Patient/agrosus-patient-example](Patient-agrosus-patient-example.md), [Practitioner/agrosus-acs-exemplo](Practitioner-agrosus-acs-exemplo.md), [Practitioner/agrosus-profissional-enfermeiro-exemplo](Practitioner-agrosus-profissional-enfermeiro-exemplo.md), [Practitioner/agrosus-profissional-medico-exemplo](Practitioner-agrosus-profissional-medico-exemplo.md), [Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo](Practitioner-agrosus-profissional-tecnico-enfermagem-exemplo.md) and [UBS Jardim Esperança — Exemplo AgroSUS](Organization-agrosus-ubs-exemplo.md)
@@ -194,7 +135,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
   "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T13:03:45+00:00",
+  "date" : "2026-07-21T13:39:22+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
@@ -870,6 +811,22 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-AgroSUSMeasureAdesaoPeriodicidade.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureAdesaoPeriodicidade"
+      },
+      "name" : "Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)",
+      "description" : "Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -881,6 +838,22 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
       },
       "name" : "Agente Comunitário de Saúde AgroSUS",
       "description" : "Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PlanDefinition-AgroSUSEstratificacaoRisco.html"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/AgroSUSEstratificacaoRisco"
+      },
+      "name" : "AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos",
+      "description" : "Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS.",
       "exampleBoolean" : false
     },
     {
@@ -1009,6 +982,54 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
       },
       "name" : "Classificação Toxicológica de Defensivos Agrícolas",
       "description" : "Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-AgroSUSMeasureCoberturaAnamnese.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureCoberturaAnamnese"
+      },
+      "name" : "Cobertura da anamnese ocupacional AgroSUS",
+      "description" : "Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-AgroSUSMeasureCoberturaEPI.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureCoberturaEPI"
+      },
+      "name" : "Cobertura de uso adequado de EPI (AgroSUS)",
+      "description" : "Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-AgroSUSMeasureCoberturaBasal.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureCoberturaBasal"
+      },
+      "name" : "Cobertura do exame basal de colinesterase (AgroSUS)",
+      "description" : "Proporção de trabalhadores que manuseiam organofosforados/carbamatos com valor basal de colinesterase registrado na admissão, conforme exigido pela NR-7 item 7.4.1.",
       "exampleBoolean" : false
     },
     {
@@ -1826,6 +1847,22 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Library"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Library-AgroSUSIntoxicacaoLogic.html"
+      }],
+      "reference" : {
+        "reference" : "Library/AgroSUSIntoxicacaoLogic"
+      },
+      "name" : "Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)",
+      "description" : "Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).\nFundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas\nfontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.\nA lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos\ne independentes.\n\n1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de\n   organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame\n   (idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos.\n   Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.\n\n2) PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100.\n   Fonte: Nota Informativa 16/2019, Anexo I item 4.\n\n3) CLASSIFICAÇÃO DO RESULTADO:\n   - Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o\n     Índice Biológico Máximo Permitido — IBMP).\n   - Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% =\n     Alterado (excede o IBMP).\n   - PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção,\n     reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático.\n   Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.\n\n4) PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida\n   por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais,\n   independentes da rotina: exame admissional; retorno ao trabalho após afastamento > 30 dias;\n   mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações\n   em surto/bloqueio; retestagem após resultado alterado.\n   Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.\n\n5) CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30\n   dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador;\n   repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de\n   concluir pela exposição ocupacional.\n   Fonte: Nota Informativa 16/2019, Anexo III item 3.\n\n6) CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia,\n   desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento\n   colinesterase-inibidor não devem manusear organofosforados/carbamatos.\n   Fonte: Nota Informativa 16/2019, Anexo III item 2.2.\n\n7) GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):\n   - Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.\n   - Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS)\n     sem EPI adequado registrado (Seção 9) → ALERTA crítico.\n   - Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.\n   - Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de\n     atenção.\n   Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do\n   plano de acompanhamento (`AgroSUSPlanoAcompanhamento`). Suporte à decisão — não substitui o\n   julgamento clínico do profissional assistencial.\n\n8) REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro\n   individual por, no mínimo, 20 anos após o desligamento do trabalhador.\n   Fonte: NR-7 item 7.4.5.1.\n\nITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco\nocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os\ngatilhos acima sem validação clínica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       },
       {
@@ -1954,6 +1991,38 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-agrosus-prioridade-alerta.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/agrosus-prioridade-alerta"
+      },
+      "name" : "Prioridade de Alerta AgroSUS",
+      "description" : "Níveis de prioridade permitidos para os alertas da lógica de decisão do AgroSUS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-agrosus-prioridade-alerta.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/agrosus-prioridade-alerta"
+      },
+      "name" : "Prioridade de Alerta AgroSUS",
+      "description" : "Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1965,6 +2034,22 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
       },
       "name" : "Profissional Assistencial da UBS AgroSUS",
       "description" : "Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Measure-AgroSUSMeasureAlteradosComConduta.html"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureAlteradosComConduta"
+      },
+      "name" : "Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)",
+      "description" : "Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3.",
       "exampleBoolean" : false
     },
     {
@@ -2397,287 +2482,98 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
           "valueUrl" : "index.html"
         }],
         "nameUrl" : "index.html",
-        "title" : "Home",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "changes.html"
-          }],
-          "nameUrl" : "changes.html",
-          "title" : "Changes",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "dependencies.html"
-          }],
-          "nameUrl" : "dependencies.html",
-          "title" : "Dependencies",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "references.html"
-          }],
-          "nameUrl" : "references.html",
-          "title" : "References",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "adapting.html"
-          }],
-          "nameUrl" : "adapting.html",
-          "title" : "Adapting Guidelines for Country use",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "license.html"
-          }],
-          "nameUrl" : "license.html",
-          "title" : "License",
-          "generation" : "markdown"
-        }]
+        "title" : "Início",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "business-requirements.html"
+          "valueUrl" : "l2-interventions.html"
         }],
-        "nameUrl" : "business-requirements.html",
-        "title" : "Business Requirements",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "concepts.html"
-          }],
-          "nameUrl" : "concepts.html",
-          "title" : "Concepts",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "personas.html"
-          }],
-          "nameUrl" : "personas.html",
-          "title" : "Generic Personas",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "scenarios.html"
-          }],
-          "nameUrl" : "scenarios.html",
-          "title" : "User Scenarios",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "business-processes.html"
-          }],
-          "nameUrl" : "business-processes.html",
-          "title" : "Business Processes",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "dictionary.html"
-          }],
-          "nameUrl" : "dictionary.html",
-          "title" : "Data Dictionary",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "decision-logic.html"
-          }],
-          "nameUrl" : "decision-logic.html",
-          "title" : "Decision-support logic",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "indicators.html"
-          }],
-          "nameUrl" : "indicators.html",
-          "title" : "Indicator and Performance Metrics",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "functional-requirements.html"
-          }],
-          "nameUrl" : "functional-requirements.html",
-          "title" : "Functional Requirements",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "non-functional-requirements.html"
-          }],
-          "nameUrl" : "non-functional-requirements.html",
-          "title" : "Non-functional Requirements",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-interventions.html",
+        "title" : "1. Intervenções e Recomendações",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "data-models-and-exchange.html"
+          "valueUrl" : "l2-personas.html"
         }],
-        "nameUrl" : "data-models-and-exchange.html",
-        "title" : "Data Models and Exchange",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "system-actors.html"
-          }],
-          "nameUrl" : "system-actors.html",
-          "title" : "System Actors",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "sequence-diagrams.html"
-          }],
-          "nameUrl" : "sequence-diagrams.html",
-          "title" : "Sequence Diagrams",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "transactions.html"
-          }],
-          "nameUrl" : "transactions.html",
-          "title" : "Transactions",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "indicators-measures.html"
-          }],
-          "nameUrl" : "indicators-measures.html",
-          "title" : "Indicators and Measures",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "codings.html"
-          }],
-          "nameUrl" : "codings.html",
-          "title" : "Codings",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-personas.html",
+        "title" : "2. Personas Genéricas",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "deployment.html"
+          "valueUrl" : "l2-user-scenarios.html"
         }],
-        "nameUrl" : "deployment.html",
-        "title" : "Deployment",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "security-privacy.html"
-          }],
-          "nameUrl" : "security-privacy.html",
-          "title" : "Security and Privacy Considerations",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "testing.html"
-          }],
-          "nameUrl" : "testing.html",
-          "title" : "Testing",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-data.html"
-          }],
-          "nameUrl" : "test-data.html",
-          "title" : "Test Data",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "reference-implementations.html"
-          }],
-          "nameUrl" : "reference-implementations.html",
-          "title" : "Reference Implementations",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "trust_domain.html"
-          }],
-          "nameUrl" : "trust_domain.html",
-          "title" : "Trust Domains",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "downloads.html"
-          }],
-          "nameUrl" : "downloads.html",
-          "title" : "Downloads",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-user-scenarios.html",
+        "title" : "3. Cenários de Uso",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "indices.html"
+          "valueUrl" : "l2-business-process.html"
         }],
-        "nameUrl" : "indices.html",
-        "title" : "Indices",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "artifacts.html"
-          }],
-          "nameUrl" : "artifacts.html",
-          "title" : "Artifact Index",
-          "generation" : "html"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "maps.html"
-          }],
-          "nameUrl" : "maps.html",
-          "title" : "Mappings",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-business-process.html",
+        "title" : "4. Processos de Negócio e Workflows",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-data-dictionary.html"
+        }],
+        "nameUrl" : "l2-data-dictionary.html",
+        "title" : "5. Elementos de Dados (Dicionário)",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-decision-logic.html"
+        }],
+        "nameUrl" : "l2-decision-logic.html",
+        "title" : "6. Lógica de Suporte à Decisão",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-indicators.html"
+        }],
+        "nameUrl" : "l2-indicators.html",
+        "title" : "7. Indicadores de Programa",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-requirements.html"
+        }],
+        "nameUrl" : "l2-requirements.html",
+        "title" : "8. Requisitos Funcionais e Não-Funcionais",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-test-scenarios.html"
+        }],
+        "nameUrl" : "l2-test-scenarios.html",
+        "title" : "9. Cenários de Teste",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{

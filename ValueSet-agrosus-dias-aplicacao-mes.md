@@ -1,8 +1,7 @@
 # Dias de aplicação por mês - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Dias de aplicação por mês**
 
 ## ValueSet: Dias de aplicação por mês 
@@ -52,7 +51,7 @@ Faixas de frequência mensal de aplicação de defensivos agrícolas.
   "title" : "Dias de aplicação por mês",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T13:03:45+00:00",
+  "date" : "2026-07-21T13:39:22+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

@@ -141,8 +141,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "StructureDefinition-agrosus-solicitacao-exame.html" : "Solicitação de Exame AgroSUS",
-    "StructureDefinition-agrosus-laudo-laboratorial.html" : "Laudo Laboratorial AgroSUS"
+    "StructureDefinition-agrosus-laudo-laboratorial.html" : "Laudo Laboratorial AgroSUS",
+    "StructureDefinition-agrosus-solicitacao-exame.html" : "Solicitação de Exame AgroSUS"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-familiares-auxiliam-aplicacao",
@@ -299,6 +299,15 @@
     "uses" : {
     },
     "StructureDefinition-agrosus-profissional-ubs-role.html" : "Função do Profissional Assistencial da UBS AgroSUS"
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-prioridade-alerta",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSPrioridadeAlertaVS",
+    "title" : "Prioridade de Alerta AgroSUS",
+    "description" : "Níveis de prioridade permitidos para os alertas da lógica de decisão do AgroSUS.",
+    "systems" : ["https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta"]
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-responsavel-aplicacao",

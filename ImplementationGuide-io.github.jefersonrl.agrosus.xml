@@ -15,7 +15,7 @@
   <title value="Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-07-21T13:03:45+00:00"/>
+  <date value="2026-07-21T13:39:22+00:00"/>
   <publisher value="Fatec Ferraz de Vasconcelos"/>
   <contact>
     <name value="Fatec Ferraz de Vasconcelos"/>
@@ -520,6 +520,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/AgroSUSMeasureAdesaoPeriodicidade"/>
+      </reference>
+      <name value="Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)"/>
+      <description value="Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -527,6 +538,17 @@
       </reference>
       <name value="Agente Comunitário de Saúde AgroSUS"/>
       <description value="Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/AgroSUSEstratificacaoRisco"/>
+      </reference>
+      <name value="AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos"/>
+      <description value="Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -615,6 +637,39 @@
       </reference>
       <name value="Classificação Toxicológica de Defensivos Agrícolas"/>
       <description value="Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/AgroSUSMeasureCoberturaAnamnese"/>
+      </reference>
+      <name value="Cobertura da anamnese ocupacional AgroSUS"/>
+      <description value="Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/AgroSUSMeasureCoberturaEPI"/>
+      </reference>
+      <name value="Cobertura de uso adequado de EPI (AgroSUS)"/>
+      <description value="Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/AgroSUSMeasureCoberturaBasal"/>
+      </reference>
+      <name value="Cobertura do exame basal de colinesterase (AgroSUS)"/>
+      <description value="Proporção de trabalhadores que manuseiam organofosforados/carbamatos com valor basal de colinesterase registrado na admissão, conforme exigido pela NR-7 item 7.4.1."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1176,6 +1231,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/AgroSUSIntoxicacaoLogic"/>
+      </reference>
+      <name value="Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)"/>
+      <description value="Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).&#xA;Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas&#xA;fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.&#xA;A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos&#xA;e independentes.&#xA;&#xA;1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de&#xA;   organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame&#xA;   (idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos.&#xA;   Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.&#xA;&#xA;2) PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100.&#xA;   Fonte: Nota Informativa 16/2019, Anexo I item 4.&#xA;&#xA;3) CLASSIFICAÇÃO DO RESULTADO:&#xA;   - Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o&#xA;     Índice Biológico Máximo Permitido — IBMP).&#xA;   - Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% =&#xA;     Alterado (excede o IBMP).&#xA;   - PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção,&#xA;     reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático.&#xA;   Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.&#xA;&#xA;4) PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida&#xA;   por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais,&#xA;   independentes da rotina: exame admissional; retorno ao trabalho após afastamento &gt; 30 dias;&#xA;   mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações&#xA;   em surto/bloqueio; retestagem após resultado alterado.&#xA;   Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.&#xA;&#xA;5) CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30&#xA;   dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador;&#xA;   repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de&#xA;   concluir pela exposição ocupacional.&#xA;   Fonte: Nota Informativa 16/2019, Anexo III item 3.&#xA;&#xA;6) CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia,&#xA;   desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento&#xA;   colinesterase-inibidor não devem manusear organofosforados/carbamatos.&#xA;   Fonte: Nota Informativa 16/2019, Anexo III item 2.2.&#xA;&#xA;7) GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):&#xA;   - Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.&#xA;   - Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS)&#xA;     sem EPI adequado registrado (Seção 9) → ALERTA crítico.&#xA;   - Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.&#xA;   - Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de&#xA;     atenção.&#xA;   Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do&#xA;   plano de acompanhamento (`AgroSUSPlanoAcompanhamento`). Suporte à decisão — não substitui o&#xA;   julgamento clínico do profissional assistencial.&#xA;&#xA;8) REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro&#xA;   individual por, no mínimo, 20 anos após o desligamento do trabalhador.&#xA;   Fonte: NR-7 item 7.4.5.1.&#xA;&#xA;ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco&#xA;ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os&#xA;gatilhos acima sem validação clínica."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1264,6 +1330,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-prioridade-alerta"/>
+      </reference>
+      <name value="Prioridade de Alerta AgroSUS"/>
+      <description value="Níveis de prioridade permitidos para os alertas da lógica de decisão do AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-prioridade-alerta"/>
+      </reference>
+      <name value="Prioridade de Alerta AgroSUS"/>
+      <description value="Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1271,6 +1359,17 @@
       </reference>
       <name value="Profissional Assistencial da UBS AgroSUS"/>
       <description value="Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <reference>
+        <reference value="Measure/AgroSUSMeasureAlteradosComConduta"/>
+      </reference>
+      <name value="Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)"/>
+      <description value="Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1571,256 +1670,88 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
+        <title value="Início"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="changes.html"/>
-          </extension>
-          <nameUrl value="changes.html"/>
-          <title value="Changes"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="dependencies.html"/>
-          </extension>
-          <nameUrl value="dependencies.html"/>
-          <title value="Dependencies"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="references.html"/>
-          </extension>
-          <nameUrl value="references.html"/>
-          <title value="References"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="adapting.html"/>
-          </extension>
-          <nameUrl value="adapting.html"/>
-          <title value="Adapting Guidelines for Country use"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="license.html"/>
-          </extension>
-          <nameUrl value="license.html"/>
-          <title value="License"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="business-requirements.html"/>
+          <valueUrl value="l2-interventions.html"/>
         </extension>
-        <nameUrl value="business-requirements.html"/>
-        <title value="Business Requirements"/>
+        <nameUrl value="l2-interventions.html"/>
+        <title value="1. Intervenções e Recomendações"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="concepts.html"/>
-          </extension>
-          <nameUrl value="concepts.html"/>
-          <title value="Concepts"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="personas.html"/>
-          </extension>
-          <nameUrl value="personas.html"/>
-          <title value="Generic Personas"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="scenarios.html"/>
-          </extension>
-          <nameUrl value="scenarios.html"/>
-          <title value="User Scenarios"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="business-processes.html"/>
-          </extension>
-          <nameUrl value="business-processes.html"/>
-          <title value="Business Processes"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="dictionary.html"/>
-          </extension>
-          <nameUrl value="dictionary.html"/>
-          <title value="Data Dictionary"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="decision-logic.html"/>
-          </extension>
-          <nameUrl value="decision-logic.html"/>
-          <title value="Decision-support logic"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="indicators.html"/>
-          </extension>
-          <nameUrl value="indicators.html"/>
-          <title value="Indicator and Performance Metrics"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="functional-requirements.html"/>
-          </extension>
-          <nameUrl value="functional-requirements.html"/>
-          <title value="Functional Requirements"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="non-functional-requirements.html"/>
-          </extension>
-          <nameUrl value="non-functional-requirements.html"/>
-          <title value="Non-functional Requirements"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="data-models-and-exchange.html"/>
+          <valueUrl value="l2-personas.html"/>
         </extension>
-        <nameUrl value="data-models-and-exchange.html"/>
-        <title value="Data Models and Exchange"/>
+        <nameUrl value="l2-personas.html"/>
+        <title value="2. Personas Genéricas"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="system-actors.html"/>
-          </extension>
-          <nameUrl value="system-actors.html"/>
-          <title value="System Actors"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="sequence-diagrams.html"/>
-          </extension>
-          <nameUrl value="sequence-diagrams.html"/>
-          <title value="Sequence Diagrams"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="transactions.html"/>
-          </extension>
-          <nameUrl value="transactions.html"/>
-          <title value="Transactions"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="indicators-measures.html"/>
-          </extension>
-          <nameUrl value="indicators-measures.html"/>
-          <title value="Indicators and Measures"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="codings.html"/>
-          </extension>
-          <nameUrl value="codings.html"/>
-          <title value="Codings"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="deployment.html"/>
+          <valueUrl value="l2-user-scenarios.html"/>
         </extension>
-        <nameUrl value="deployment.html"/>
-        <title value="Deployment"/>
+        <nameUrl value="l2-user-scenarios.html"/>
+        <title value="3. Cenários de Uso"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="security-privacy.html"/>
-          </extension>
-          <nameUrl value="security-privacy.html"/>
-          <title value="Security and Privacy Considerations"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="testing.html"/>
-          </extension>
-          <nameUrl value="testing.html"/>
-          <title value="Testing"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-data.html"/>
-          </extension>
-          <nameUrl value="test-data.html"/>
-          <title value="Test Data"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="reference-implementations.html"/>
-          </extension>
-          <nameUrl value="reference-implementations.html"/>
-          <title value="Reference Implementations"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="trust_domain.html"/>
-          </extension>
-          <nameUrl value="trust_domain.html"/>
-          <title value="Trust Domains"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="downloads.html"/>
-          </extension>
-          <nameUrl value="downloads.html"/>
-          <title value="Downloads"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="indices.html"/>
+          <valueUrl value="l2-business-process.html"/>
         </extension>
-        <nameUrl value="indices.html"/>
-        <title value="Indices"/>
+        <nameUrl value="l2-business-process.html"/>
+        <title value="4. Processos de Negócio e Workflows"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="artifacts.html"/>
-          </extension>
-          <nameUrl value="artifacts.html"/>
-          <title value="Artifact Index"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="maps.html"/>
-          </extension>
-          <nameUrl value="maps.html"/>
-          <title value="Mappings"/>
-          <generation value="markdown"/>
-        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="l2-data-dictionary.html"/>
+        </extension>
+        <nameUrl value="l2-data-dictionary.html"/>
+        <title value="5. Elementos de Dados (Dicionário)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="l2-decision-logic.html"/>
+        </extension>
+        <nameUrl value="l2-decision-logic.html"/>
+        <title value="6. Lógica de Suporte à Decisão"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="l2-indicators.html"/>
+        </extension>
+        <nameUrl value="l2-indicators.html"/>
+        <title value="7. Indicadores de Programa"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="l2-requirements.html"/>
+        </extension>
+        <nameUrl value="l2-requirements.html"/>
+        <title value="8. Requisitos Funcionais e Não-Funcionais"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="l2-test-scenarios.html"/>
+        </extension>
+        <nameUrl value="l2-test-scenarios.html"/>
+        <title value="9. Cenários de Teste"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>

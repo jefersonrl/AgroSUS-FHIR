@@ -14,7 +14,7 @@
   "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T13:03:45+00:00",
+  "date" : "2026-07-21T13:39:22+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
@@ -686,6 +686,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureAdesaoPeriodicidade"
+      },
+      "name" : "Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)",
+      "description" : "Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -693,6 +705,18 @@
       },
       "name" : "Agente Comunitário de Saúde AgroSUS",
       "description" : "Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/AgroSUSEstratificacaoRisco"
+      },
+      "name" : "AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos",
+      "description" : "Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS.",
       "exampleBoolean" : false
     },
     {
@@ -789,6 +813,42 @@
       },
       "name" : "Classificação Toxicológica de Defensivos Agrícolas",
       "description" : "Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureCoberturaAnamnese"
+      },
+      "name" : "Cobertura da anamnese ocupacional AgroSUS",
+      "description" : "Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureCoberturaEPI"
+      },
+      "name" : "Cobertura de uso adequado de EPI (AgroSUS)",
+      "description" : "Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureCoberturaBasal"
+      },
+      "name" : "Cobertura do exame basal de colinesterase (AgroSUS)",
+      "description" : "Proporção de trabalhadores que manuseiam organofosforados/carbamatos com valor basal de colinesterase registrado na admissão, conforme exigido pela NR-7 item 7.4.1.",
       "exampleBoolean" : false
     },
     {
@@ -1402,6 +1462,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Library"
+      }],
+      "reference" : {
+        "reference" : "Library/AgroSUSIntoxicacaoLogic"
+      },
+      "name" : "Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)",
+      "description" : "Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).\nFundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas\nfontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.\nA lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos\ne independentes.\n\n1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de\n   organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame\n   (idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos.\n   Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.\n\n2) PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100.\n   Fonte: Nota Informativa 16/2019, Anexo I item 4.\n\n3) CLASSIFICAÇÃO DO RESULTADO:\n   - Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o\n     Índice Biológico Máximo Permitido — IBMP).\n   - Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% =\n     Alterado (excede o IBMP).\n   - PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção,\n     reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático.\n   Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.\n\n4) PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida\n   por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais,\n   independentes da rotina: exame admissional; retorno ao trabalho após afastamento > 30 dias;\n   mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações\n   em surto/bloqueio; retestagem após resultado alterado.\n   Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.\n\n5) CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30\n   dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador;\n   repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de\n   concluir pela exposição ocupacional.\n   Fonte: Nota Informativa 16/2019, Anexo III item 3.\n\n6) CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia,\n   desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento\n   colinesterase-inibidor não devem manusear organofosforados/carbamatos.\n   Fonte: Nota Informativa 16/2019, Anexo III item 2.2.\n\n7) GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):\n   - Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.\n   - Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS)\n     sem EPI adequado registrado (Seção 9) → ALERTA crítico.\n   - Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.\n   - Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de\n     atenção.\n   Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do\n   plano de acompanhamento (`AgroSUSPlanoAcompanhamento`). Suporte à decisão — não substitui o\n   julgamento clínico do profissional assistencial.\n\n8) REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro\n   individual por, no mínimo, 20 anos após o desligamento do trabalhador.\n   Fonte: NR-7 item 7.4.5.1.\n\nITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco\nocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os\ngatilhos acima sem validação clínica.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1498,6 +1570,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/agrosus-prioridade-alerta"
+      },
+      "name" : "Prioridade de Alerta AgroSUS",
+      "description" : "Níveis de prioridade permitidos para os alertas da lógica de decisão do AgroSUS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/agrosus-prioridade-alerta"
+      },
+      "name" : "Prioridade de Alerta AgroSUS",
+      "description" : "Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1505,6 +1601,18 @@
       },
       "name" : "Profissional Assistencial da UBS AgroSUS",
       "description" : "Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/AgroSUSMeasureAlteradosComConduta"
+      },
+      "name" : "Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)",
+      "description" : "Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3.",
       "exampleBoolean" : false
     },
     {
@@ -1833,287 +1941,98 @@
           "valueUrl" : "index.html"
         }],
         "nameUrl" : "index.html",
-        "title" : "Home",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "changes.html"
-          }],
-          "nameUrl" : "changes.html",
-          "title" : "Changes",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "dependencies.html"
-          }],
-          "nameUrl" : "dependencies.html",
-          "title" : "Dependencies",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "references.html"
-          }],
-          "nameUrl" : "references.html",
-          "title" : "References",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "adapting.html"
-          }],
-          "nameUrl" : "adapting.html",
-          "title" : "Adapting Guidelines for Country use",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "license.html"
-          }],
-          "nameUrl" : "license.html",
-          "title" : "License",
-          "generation" : "markdown"
-        }]
+        "title" : "Início",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "business-requirements.html"
+          "valueUrl" : "l2-interventions.html"
         }],
-        "nameUrl" : "business-requirements.html",
-        "title" : "Business Requirements",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "concepts.html"
-          }],
-          "nameUrl" : "concepts.html",
-          "title" : "Concepts",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "personas.html"
-          }],
-          "nameUrl" : "personas.html",
-          "title" : "Generic Personas",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "scenarios.html"
-          }],
-          "nameUrl" : "scenarios.html",
-          "title" : "User Scenarios",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "business-processes.html"
-          }],
-          "nameUrl" : "business-processes.html",
-          "title" : "Business Processes",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "dictionary.html"
-          }],
-          "nameUrl" : "dictionary.html",
-          "title" : "Data Dictionary",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "decision-logic.html"
-          }],
-          "nameUrl" : "decision-logic.html",
-          "title" : "Decision-support logic",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "indicators.html"
-          }],
-          "nameUrl" : "indicators.html",
-          "title" : "Indicator and Performance Metrics",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "functional-requirements.html"
-          }],
-          "nameUrl" : "functional-requirements.html",
-          "title" : "Functional Requirements",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "non-functional-requirements.html"
-          }],
-          "nameUrl" : "non-functional-requirements.html",
-          "title" : "Non-functional Requirements",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-interventions.html",
+        "title" : "1. Intervenções e Recomendações",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "data-models-and-exchange.html"
+          "valueUrl" : "l2-personas.html"
         }],
-        "nameUrl" : "data-models-and-exchange.html",
-        "title" : "Data Models and Exchange",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "system-actors.html"
-          }],
-          "nameUrl" : "system-actors.html",
-          "title" : "System Actors",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "sequence-diagrams.html"
-          }],
-          "nameUrl" : "sequence-diagrams.html",
-          "title" : "Sequence Diagrams",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "transactions.html"
-          }],
-          "nameUrl" : "transactions.html",
-          "title" : "Transactions",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "indicators-measures.html"
-          }],
-          "nameUrl" : "indicators-measures.html",
-          "title" : "Indicators and Measures",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "codings.html"
-          }],
-          "nameUrl" : "codings.html",
-          "title" : "Codings",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-personas.html",
+        "title" : "2. Personas Genéricas",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "deployment.html"
+          "valueUrl" : "l2-user-scenarios.html"
         }],
-        "nameUrl" : "deployment.html",
-        "title" : "Deployment",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "security-privacy.html"
-          }],
-          "nameUrl" : "security-privacy.html",
-          "title" : "Security and Privacy Considerations",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "testing.html"
-          }],
-          "nameUrl" : "testing.html",
-          "title" : "Testing",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-data.html"
-          }],
-          "nameUrl" : "test-data.html",
-          "title" : "Test Data",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "reference-implementations.html"
-          }],
-          "nameUrl" : "reference-implementations.html",
-          "title" : "Reference Implementations",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "trust_domain.html"
-          }],
-          "nameUrl" : "trust_domain.html",
-          "title" : "Trust Domains",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "downloads.html"
-          }],
-          "nameUrl" : "downloads.html",
-          "title" : "Downloads",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-user-scenarios.html",
+        "title" : "3. Cenários de Uso",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "indices.html"
+          "valueUrl" : "l2-business-process.html"
         }],
-        "nameUrl" : "indices.html",
-        "title" : "Indices",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "artifacts.html"
-          }],
-          "nameUrl" : "artifacts.html",
-          "title" : "Artifact Index",
-          "generation" : "html"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "maps.html"
-          }],
-          "nameUrl" : "maps.html",
-          "title" : "Mappings",
-          "generation" : "markdown"
-        }]
+        "nameUrl" : "l2-business-process.html",
+        "title" : "4. Processos de Negócio e Workflows",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-data-dictionary.html"
+        }],
+        "nameUrl" : "l2-data-dictionary.html",
+        "title" : "5. Elementos de Dados (Dicionário)",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-decision-logic.html"
+        }],
+        "nameUrl" : "l2-decision-logic.html",
+        "title" : "6. Lógica de Suporte à Decisão",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-indicators.html"
+        }],
+        "nameUrl" : "l2-indicators.html",
+        "title" : "7. Indicadores de Programa",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-requirements.html"
+        }],
+        "nameUrl" : "l2-requirements.html",
+        "title" : "8. Requisitos Funcionais e Não-Funcionais",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "l2-test-scenarios.html"
+        }],
+        "nameUrl" : "l2-test-scenarios.html",
+        "title" : "9. Cenários de Teste",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
       }]
     },
     "parameter" : [{

@@ -1,42 +1,40 @@
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Exemplo de Transação da Visita do ACS - XML Representation - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
-    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
+    <link rel="stylesheet" href="assets/css/fa-all.css" type="text/css"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-    <link href="assets/css/who.css" rel="stylesheet"/>
-    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
 
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -44,178 +42,105 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1.89"}
-    h3,h4,h5,h6{--heading-prefix:"5.1.89"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
+    <style type="text/css">h2{--heading-prefix:"12.98"}
+    h3,h4,h5,h6{--heading-prefix:"12.98"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
 
-      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
         <div id="stripe"> </div>
-        <div class="container">  <!-- container -->
-          <!-- HEADER CONTENT -->
+        <div class="container">    <!-- container -->
+            <!-- HEADER CONTENT -->
   
           <nav class="navbar navbar-inverse">
-            <!--status-bar-->
+              <!-- status-bar -->
             <div class="container">
-              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
                 <span class="icon-bar"> </span>
               </button>
-              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
               <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml  -->
+                  <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Início</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Componentes DAK (L2)
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="index.html">Summary</a>
+        <a href="l2-interventions.html">1. Intervenções</a>
       </li>
       <li>
-        <a href="changes.html">Changes</a>
+        <a href="l2-personas.html">2. Personas</a>
       </li>
       <li>
-        <a href="dependencies.html">Dependencies</a>
+        <a href="l2-user-scenarios.html">3. Cenários de Uso</a>
       </li>
       <li>
-        <a href="references.html">References</a>
+        <a href="l2-business-process.html">4. Processos</a>
       </li>
       <li>
-        <a href="adapting.html">Adapting Guidelines for Country use</a>
+        <a href="l2-data-dictionary.html">5. Dados</a>
+      </li>
+      <li>
+        <a href="l2-decision-logic.html">6. Decisão</a>
+      </li>
+      <li>
+        <a href="l2-indicators.html">7. Indicadores</a>
+      </li>
+      <li>
+        <a href="l2-requirements.html">8. Requisitos</a>
+      </li>
+      <li>
+        <a href="l2-test-scenarios.html">9. Testes</a>
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="concepts.html">Concepts</a>
-      </li>
-      <li>
-        <a href="personas.html">Generic Personas</a>
-      </li>
-      <li>
-        <a href="scenarios.html">User Scenarios</a>
-      </li>
-      <li>
-        <a href="business-processes.html">Business Processes</a>
-      </li>
-      <li>
-        <a href="dictionary.html">Data Dictionary</a>
-      </li>
-      <li>
-        <a href="decision-logic.html">Decision-support Logic</a>
-      </li>
-      <li>
-        <a href="indicators.html">Indicator and Performance Metrics</a>
-      </li>
-      <li>
-        <a href="functional-requirements.html">Functional Requirements</a>
-      </li>
-      <li>
-        <a href="non-functional-requirements.html">Non-functional Requirements</a>
-      </li>
-    </ul>
+  <li>
+    <a href="artifacts.html">Artefatos (L3)</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="system-actors.html">System Actors</a>
-      </li>
-      <li>
-        <a href="sequence-diagrams.html">Sequence Diagrams</a>
-      </li>
-      <li>
-        <a href="transactions.html">Transactions</a>
-      </li>
-      <li>
-        <a href="indicators-measures.html">Indicators and Measures</a>
-      </li>
-      <li>
-        <a href="codings.html">Codings</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="security-privacy.html">Security and Privacy Considerations</a>
-      </li>
-      <li>
-        <a href="testing.html">Testing</a>
-      </li>
-      <li>
-        <a href="test-data.html">Test Data</a>
-      </li>
-      <li>
-        <a href="reference-implementations.html">Reference Implementations</a>
-      </li>
-      <li>
-        <a href="trust_domain.html">Trust Domains</a>
-      </li>
-      <li>
-        <a href="downloads.html">Downloads</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="artifacts.html">Artifact Index</a>
-      </li>
-      <li>
-        <a href="maps.html">Mappings</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
 </ul>
-              </div>  <!-- /.nav-collapse -->
+              </div>    <!-- /.nav-collapse -->
 
-              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
-                <!-- This div will be pushed to the right -->
-                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+              <div data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;" class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch">
+                  <!-- This div will be pushed to the right -->
+                <div style="margin-left: auto; background-color: #00477d; color: white;" class="language-selector">
                   <i class="fa fa-language fa-lg"></i>
                   <label for="language-selector"> </label>
-                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
-                    <option disabled selected>Select language</option>
+                  <select onChange="openLink(value)" name="language-selector" id="language-selector">
+                    <option disabled="null" selected="null">Select language</option>
                     <option value="en" class="selected">English</option>
                   </select>
                   <i class="fas fa-angle-down"></i>
                 </div>
-                <!-- Search Content -->
+                  <!-- Search Content -->
               </div>
-            </div>  <!-- /.container -->
-          </nav>  <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-        </div>  <!-- /container -->
-      </div>  <!-- /segment-navbar -->
+            </div>    <!-- /.container -->
+          </nav>    <!-- /.navbar -->
+          <!-- /HEADER CONTENT -->
+        </div>    <!-- /container -->
+      </div>    <!-- /segment-navbar -->
       
 
-      <div class="container" style=" justify-content: space-between; align-items: left;">
+      <div style=" justify-content: space-between; align-items: left;" class="container">
 
-        <!-- Placeholder for child template header declarations -->
+          <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
-    <a id="who-logo" no-external="true" href="index.html">
+    <a no-external="true" id="who-logo" href="index.html">
         
     </a>
 </div>
 
  <div id="family-nav">
-  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir">  </a>
 </div> 
 
 
@@ -226,35 +151,35 @@
 
 
 
-  <img alt="Brazil flag" src="assets/images/bra.svg" height="16" title="Brazil"/>
+  <img src="assets/images/bra.svg" alt="Brazil flag" title="Brazil" height="16"/>
 
 
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
 
-    <!--status-bar-->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>Exemplo de Transação da Visita do ACS</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Exemplo de Transação da Visita do ACS</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/jefersonrl/AgroSUS-FHIR/tree/main'>https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href='https://jefersonrl.github.io/AgroSUS-FHIR/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  <!-- ReleaseHeader --><p id="publish-box">Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href="https://github.com/jefersonrl/AgroSUS-FHIR/tree/main">https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html">Diretório de versões publicadas</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -303,427 +228,428 @@
 <h2 id="root">: Exemplo de Transação da Visita do ACS - XML Representation</h2>
 
 
-<p><a href="Bundle-agrosus-transacao-visita-exemplo.xml" no-download="true">Raw xml</a> | <a href="Bundle-agrosus-transacao-visita-exemplo.xml" download>Download</a></p>
+<p><a href="Bundle-agrosus-transacao-visita-exemplo.xml" no-download="true">Raw xml</a> | <a download="null" href="Bundle-agrosus-transacao-visita-exemplo.xml">Download</a></p>
 
-  <!-- insert intro if present -->
+    <!-- insert intro if present -->
   
 
 
 
-  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;agrosus-transacao-visita-exemplo&quot;/&gt;
+  <pre style="white-space: pre; text-wrap: nowrap; width: auto;" class="xml" data-fhir="generated"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="agrosus-transacao-visita-exemplo"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita"/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Bundle.meta">meta</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
-            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/sid/transacao-visita&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TRANSACAO-VISITA-2026-000001&quot;/&gt;
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/sid/transacao-visita"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="TRANSACAO-VISITA-2026-000001"/&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;transaction&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2026-07-20T09:32:00-03:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="transaction"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>="2026-07-20T09:32:00-03:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir.agrosus.example/Patient/agrosus-patient-example&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://fhir.agrosus.example/Patient/agrosus-patient-example"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;agrosus-patient-example&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="agrosus-patient-example"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pt-BR&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="pt-BR"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;pt-BR&quot; lang=&quot;pt-BR&quot;&gt;&lt;a name=&quot;Patient_agrosus-patient-example&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: Patient agrosus-patient-example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;agrosus-patient-example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcagrosus-patient-example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Língua: pt-BR&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;StructureDefinition-agrosus-patient.html&quot;&gt;Paciente AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number: NamingSystemCNS#987654321098765 (use: official, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;O registo está ativo&quot;&gt;Ativo:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Other Id (see the one above)&quot;&gt;Other Id:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;Tax ID number/12345678901 (utilização: official, )&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Formas de contactar o doente&quot;&gt;Detalhes do contacto&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;tel:+551190000-0000&quot;&gt;+55 11 90000-0000&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP(home)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Elemento que define a raça do indivíduo&quot;&gt;&lt;a href=&quot;https://ips.saude.gov.br/fhir/StructureDefinition-raca-br-ips.html&quot;&gt;Raça BR IPS&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;span title=&quot;Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor 01}&quot;&gt;Branca&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"&gt;&lt;a name="Patient_agrosus-patient-example"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Narrativa gerada: Patient agrosus-patient-example&lt;/b&gt;&lt;/p&gt;&lt;a name="agrosus-patient-example"&gt; &lt;/a&gt;&lt;a name="hcagrosus-patient-example"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Língua: pt-BR&lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Perfil: &lt;a href="StructureDefinition-agrosus-patient.html"&gt;Paciente AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"&gt;Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number: NamingSystemCNS#987654321098765&nbsp;(use:&nbsp;official,&nbsp;))&lt;/p&gt;&lt;hr/&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="background-color: #f3f5da" title="O registo está ativo"&gt;Ativo:&lt;/td&gt;&lt;td colspan="3"&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="background-color: #f3f5da" title="Other Id (see the one above)"&gt;Other Id:&lt;/td&gt;&lt;td colspan="3"&gt;Tax ID number/12345678901&nbsp;(utilização:&nbsp;official,&nbsp;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="background-color: #f3f5da" title="Formas de contactar o doente"&gt;Detalhes do contacto&lt;/td&gt;&lt;td colspan="3"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="tel:+551190000-0000"&gt;+55 11 90000-0000&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP(home)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="background-color: #f3f5da" title="Elemento que define a raça do indivíduo"&gt;&lt;a href="https://ips.saude.gov.br/fhir/StructureDefinition-raca-br-ips.html"&gt;Raça BR IPS&lt;/a&gt;&lt;/td&gt;&lt;td colspan="3"&gt;&lt;span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor 01}"&gt;Branca&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips"&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;01&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Branca&quot;/&gt;
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="01"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Branca"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.extension">extension</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="official"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TAX&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tax ID number&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v2-0203"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="TAX"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Tax ID number"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://saude.gov.br/fhir/sid/cpf&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;12345678901&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://saude.gov.br/fhir/sid/cpf"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="12345678901"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="official"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;HC&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Health Card Number&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v2-0203"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="HC"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Health Card Number"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://saude.gov.br/fhir/sid/cns&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;987654321098765&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://saude.gov.br/fhir/sid/cns"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="987654321098765"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="true"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Aparecida de Souza&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Souza&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Aparecida&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="official"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Aparecida de Souza"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Souza"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Aparecida"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;+55 11 90000-0000&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mobile&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="phone"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="+55 11 90000-0000"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="mobile"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;female&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1978-05-14&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="female"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>="1978-05-14"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;physical&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="home"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="physical"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Propriedade Rural Exemplo, s/n&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mogi das Cruzes&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Jundiapeba&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SP&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Brasil&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Propriedade Rural Exemplo, s/n"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Mogi das Cruzes"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Jundiapeba"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="SP"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Brasil"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PUT&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Patient/agrosus-patient-example&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="PUT"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="Patient/agrosus-patient-example"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir.agrosus.example/Encounter/agrosus-visita-acs-exemplo&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://fhir.agrosus.example/Encounter/agrosus-visita-acs-exemplo"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;agrosus-visita-acs-exemplo&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="agrosus-visita-acs-exemplo"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Encounter.meta">meta</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pt-BR&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Encounter.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="pt-BR"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;pt-BR&quot; lang=&quot;pt-BR&quot;&gt;&lt;a name=&quot;Encounter_agrosus-visita-acs-exemplo&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: Encounter agrosus-visita-acs-exemplo&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;agrosus-visita-acs-exemplo&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcagrosus-visita-acs-exemplo&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Língua: pt-BR&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;StructureDefinition-agrosus-visita-acs.html&quot;&gt;Visita do ACS AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita&lt;/code&gt;/VISITA-2026-000001&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=&quot;http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD&quot;&gt;ActCode: FLD&lt;/a&gt; (field)&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: &lt;span title=&quot;Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}&quot;&gt;Rotina&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-agrosus-patient-example.html&quot;&gt;Maria Aparecida de Souza&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}&quot;&gt;Executor principal&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;PractitionerRole-agrosus-acs-role-exemplo.html&quot;&gt;Maria Clara Oliveira — ACS da UBS Jardim Esperança&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2026-07-20 09:00:00-0300 --&amp;gt; 2026-07-20 10:00:00-0300&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: &lt;span title=&quot;Códigos:&quot;&gt;Aplicação inicial da anamnese ocupacional e ambiental AgroSUS&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=&quot;Organization-agrosus-ubs-exemplo.html&quot;&gt;UBS Jardim Esperança — Exemplo AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"&gt;&lt;a name="Encounter_agrosus-visita-acs-exemplo"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Narrativa gerada: Encounter agrosus-visita-acs-exemplo&lt;/b&gt;&lt;/p&gt;&lt;a name="agrosus-visita-acs-exemplo"&gt; &lt;/a&gt;&lt;a name="hcagrosus-visita-acs-exemplo"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Língua: pt-BR&lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Perfil: &lt;a href="StructureDefinition-agrosus-visita-acs.html"&gt;Visita do ACS AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita&lt;/code&gt;/VISITA-2026-000001&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD"&gt;ActCode: FLD&lt;/a&gt; (field)&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: &lt;span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}"&gt;Rotina&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href="Patient-agrosus-patient-example.html"&gt;Maria Aparecida de Souza&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td style="display: none"&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="display: none"&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}"&gt;Executor principal&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="PractitionerRole-agrosus-acs-role-exemplo.html"&gt;Maria Clara Oliveira — ACS da UBS Jardim Esperança&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2026-07-20 09:00:00-0300 --&amp;gt; 2026-07-20 10:00:00-0300&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: &lt;span title="Códigos:"&gt;Aplicação inicial da anamnese ocupacional e ambiental AgroSUS&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href="Organization-agrosus-ubs-exemplo.html"&gt;UBS Jardim Esperança — Exemplo AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Encounter.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;VISITA-2026-000001&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="VISITA-2026-000001"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;finished&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="finished"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;FLD&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;field&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-ActCode"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="FLD"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="field"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.priority">priority</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActPriority&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;R&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;routine&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="R"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="routine"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rotina&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Rotina"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.priority">priority</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;<a href="Patient-agrosus-patient-example.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/agrosus-patient-example&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Aparecida de Souza&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;<a style="color: Maroon" href="Patient-agrosus-patient-example.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Patient/agrosus-patient-example"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Aparecida de Souza"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PPRF&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;primary performer&quot;/&gt;
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="PPRF"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="primary performer"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Executor principal&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Executor principal"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>&gt;<a href="PractitionerRole-agrosus-acs-role-exemplo.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PractitionerRole/agrosus-acs-role-exemplo&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>&gt;<a style="color: Maroon" href="PractitionerRole-agrosus-acs-role-exemplo.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="PractitionerRole/agrosus-acs-role-exemplo"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Clara Oliveira — ACS da UBS Jardim Esperança&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Clara Oliveira — ACS da UBS Jardim Esperança"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-20T09:00:00-03:00&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-20T10:00:00-03:00&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2026-07-20T09:00:00-03:00"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2026-07-20T10:00:00-03:00"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonCode">reasonCode</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Aplicação inicial da anamnese ocupacional e ambiental AgroSUS&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Aplicação inicial da anamnese ocupacional e ambiental AgroSUS"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonCode">reasonCode</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;<a href="Organization-agrosus-ubs-exemplo.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/agrosus-ubs-exemplo&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;UBS Jardim Esperança — Exemplo AgroSUS&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;<a style="color: Maroon" href="Organization-agrosus-ubs-exemplo.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Organization/agrosus-ubs-exemplo"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="UBS Jardim Esperança — Exemplo AgroSUS"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.serviceProvider">serviceProvider</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PUT&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Encounter/agrosus-visita-acs-exemplo&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="PUT"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="Encounter/agrosus-visita-acs-exemplo"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir.agrosus.example/QuestionnaireResponse/agrosus-anamnese-response-example&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://fhir.agrosus.example/QuestionnaireResponse/agrosus-anamnese-response-example"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">QuestionnaireResponse</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;agrosus-anamnese-response-example&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="agrosus-anamnese-response-example"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.meta">meta</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#QuestionnaireResponse.text">text</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;QuestionnaireResponse_agrosus-anamnese-response-example&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: QuestionnaireResponse agrosus-anamnese-response-example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;agrosus-anamnese-response-example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcagrosus-anamnese-response-example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;StructureDefinition-agrosus-anamnese-response.html&quot;&gt;Resposta da Anamnese AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;O linkID do item&quot;&gt;ID da ligação&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Texto para o item&quot;&gt;Texto&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Número mínimo e máximo de vezes que o item pode aparecer na instância&quot;&gt;Definição&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;O tipo do item&quot;&gt;Resposta&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_q_root.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;QuestionnaireResponseRoot&quot; class=&quot;hierarchy&quot;/&gt; agrosus-anamnese-response-example&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Questionário:&lt;a href=&quot;Questionnaire-agrosus-anamnese.html&quot;&gt;Formulário de Anamnese Ocupacional e Ambiental AgroSUS&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-group.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Grupo&quot; class=&quot;hierarchy&quot;/&gt; identificacao-instrumento&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;1. Identificação do instrumento&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; id-agrosus&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;AGROSUS-000001&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; numero-formulario&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;FORM-2026-000001&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; data-entrevista&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;2026-07-20&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; tipo-coleta&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;a href=&quot;CodeSystem-agrosus-tipo-coleta.html#agrosus-tipo-coleta-cadastro-inicial&quot;&gt;Tipos de Coleta AgroSUS: cadastro-inicial&lt;/a&gt; (Cadastro inicial)&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; ubs-referencia&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;UBS Jardim Esperança — Exemplo AgroSUS&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; acs-responsavel&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Maria Clara Oliveira&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; cnes-ubs&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;7654321&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; municipio&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Ferraz de Vasconcelos&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;Item&quot; class=&quot;hierarchy&quot;/&gt; bairro-localidade&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Jardim Esperança&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td colspan=&quot;4&quot; class=&quot;hierarchy&quot;&gt;&lt;br/&gt;&lt;a href=&quot;https://hl7.org/fhir/R4/formats.html#table&quot; title=&quot;Legenda para este formato&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt; Documentação para este formato&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;a name="QuestionnaireResponse_agrosus-anamnese-response-example"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Narrativa gerada: QuestionnaireResponse agrosus-anamnese-response-example&lt;/b&gt;&lt;/p&gt;&lt;a name="agrosus-anamnese-response-example"&gt; &lt;/a&gt;&lt;a name="hcagrosus-anamnese-response-example"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"/&gt;&lt;p style="margin-bottom: 0px"&gt;Perfil: &lt;a href="StructureDefinition-agrosus-anamnese-response.html"&gt;Resposta da Anamnese AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"&gt;&lt;tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="O linkID do item"&gt;ID da ligação&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Texto para o item"&gt;Texto&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Número mínimo e máximo de vezes que o item pode aparecer na instância"&gt;Definição&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="O tipo do item"&gt;Resposta&lt;/a&gt;&lt;span style="float: right"&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireResponseRoot" class="hierarchy"/&gt; agrosus-anamnese-response-example&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Questionário:&lt;a href="Questionnaire-agrosus-anamnese.html"&gt;Formulário de Anamnese Ocupacional e Ambiental AgroSUS&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Grupo" class="hierarchy"/&gt; identificacao-instrumento&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;1. Identificação do instrumento&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/&gt; id-agrosus&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;AGROSUS-000001&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/&gt; numero-formulario&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;FORM-2026-000001&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/&gt; data-entrevista&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;2026-07-20&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/&gt; tipo-coleta&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span&gt;&lt;span&gt;&lt;a href="CodeSystem-agrosus-tipo-coleta.html#agrosus-tipo-coleta-cadastro-inicial"&gt;Tipos de Coleta AgroSUS: cadastro-inicial&lt;/a&gt; (Cadastro inicial)&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/&gt; ubs-referencia&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;UBS Jardim Esperança — Exemplo AgroSUS&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/&gt; acs-responsavel&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Maria Clara Oliveira&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/&gt; cnes-ubs&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;7654321&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/&gt; municipio&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Ferraz de Vasconcelos&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="Item" class="hierarchy"/&gt; bairro-localidade&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;Jardim Esperança&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="4" class="hierarchy"&gt;&lt;br/&gt;&lt;a href="https://hl7.org/fhir/R4/formats.html#table" title="Legenda para este formato"&gt;&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/&gt; Documentação para este formato&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#QuestionnaireResponse.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.identifier">identifier</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/sid/anamnese&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANAMNESE-2026-000001&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/sid/anamnese"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ANAMNESE-2026-000001"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.questionnaire">questionnaire</a>
-                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in-progress&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>&gt;<a href="Patient-agrosus-patient-example.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/agrosus-patient-example&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Aparecida de Souza&quot;/&gt;
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="in-progress"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>&gt;<a style="color: Maroon" href="Patient-agrosus-patient-example.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Patient/agrosus-patient-example"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Aparecida de Souza"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.subject">subject</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.encounter">encounter</a>&gt;<a href="Encounter-agrosus-visita-acs-exemplo.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Encounter/agrosus-visita-acs-exemplo&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.encounter">encounter</a>&gt;<a style="color: Maroon" href="Encounter-agrosus-visita-acs-exemplo.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Encounter/agrosus-visita-acs-exemplo"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Visita em campo para aplicação inicial da anamnese AgroSUS&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Visita em campo para aplicação inicial da anamnese AgroSUS"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.encounter">encounter</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-20T09:30:00-03:00&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.author">author</a>&gt;<a href="PractitionerRole-agrosus-acs-role-exemplo.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PractitionerRole/agrosus-acs-role-exemplo&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.authored">authored</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2026-07-20T09:30:00-03:00"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.author">author</a>&gt;<a style="color: Maroon" href="PractitionerRole-agrosus-acs-role-exemplo.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="PractitionerRole/agrosus-acs-role-exemplo"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Clara Oliveira — ACS da UBS Jardim Esperança&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Clara Oliveira — ACS da UBS Jardim Esperança"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.author">author</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.source">source</a>&gt;<a href="Patient-agrosus-patient-example.html" style="color: Maroon">&#x1F517;</a> 
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/agrosus-patient-example&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Aparecida de Souza&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.source">source</a>&gt;<a style="color: Maroon" href="Patient-agrosus-patient-example.html">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Patient/agrosus-patient-example"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Aparecida de Souza"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.source">source</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;identificacao-instrumento&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1. Identificação do instrumento&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="identificacao-instrumento"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1. Identificação do instrumento"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;id-agrosus&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="id-agrosus"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;AGROSUS-000001&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="AGROSUS-000001"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;numero-formulario&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="numero-formulario"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FORM-2026-000001&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="FORM-2026-000001"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;data-entrevista&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="data-entrevista"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;2026-07-20&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>="2026-07-20"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;tipo-coleta&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="tipo-coleta"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
                 &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta&quot;/&gt;
-                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cadastro-inicial&quot;/&gt;
-                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cadastro inicial&quot;/&gt;
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="cadastro-inicial"/&gt;
+                &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Cadastro inicial"/&gt;
               &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ubs-referencia&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ubs-referencia"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;UBS Jardim Esperança — Exemplo AgroSUS&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="UBS Jardim Esperança — Exemplo AgroSUS"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;acs-responsavel&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="acs-responsavel"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Clara Oliveira&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Clara Oliveira"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cnes-ubs&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="cnes-ubs"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;7654321&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="7654321"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;municipio&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="municipio"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ferraz de Vasconcelos&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Ferraz de Vasconcelos"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;bairro-localidade&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="bairro-localidade"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Jardim Esperança&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Jardim Esperança"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.item">item</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">QuestionnaireResponse</a>&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PUT&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;QuestionnaireResponse/agrosus-anamnese-response-example&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="PUT"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="QuestionnaireResponse/agrosus-anamnese-response-example"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir.agrosus.example/Provenance/agrosus-provenance-anamnese-exemplo&quot;/&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="https://fhir.agrosus.example/Provenance/agrosus-provenance-anamnese-exemplo"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">resource</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">Provenance</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Provenance.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;agrosus-provenance-anamnese-exemplo&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Provenance.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="agrosus-provenance-anamnese-exemplo"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/resource.html#Provenance.meta">meta</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance&quot;/&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Provenance.meta">meta</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Provenance.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pt-BR&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Provenance.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="pt-BR"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Provenance.text">text</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;pt-BR&quot; lang=&quot;pt-BR&quot;&gt;&lt;a name=&quot;Provenance_agrosus-provenance-anamnese-exemplo&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narrativa gerada: Provenance agrosus-provenance-anamnese-exemplo&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;agrosus-provenance-anamnese-exemplo&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcagrosus-provenance-anamnese-exemplo&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Língua: pt-BR&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Perfil: &lt;a href=&quot;StructureDefinition-agrosus-provenance.html&quot;&gt;Proveniência dos Registros AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Proveniência para &lt;a href=&quot;QuestionnaireResponse-agrosus-anamnese-response-example.html&quot;&gt;Resposta da anamnese AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Resumo&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;Ocorrência&lt;/td&gt;&lt;td&gt;2026-07-20 09:30:00-0300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Gravado&lt;/td&gt;&lt;td&gt;2026-07-20 09:31:00-0300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Atividade&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}&quot;&gt;create&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Agentes&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;que&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Em nome de&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span title=&quot;Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}&quot;&gt;Author&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;PractitionerRole-agrosus-acs-role-exemplo.html&quot;&gt;Maria Clara Oliveira — ACS da UBS Jardim Esperança&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Organization-agrosus-ubs-exemplo.html&quot;&gt;UBS Jardim Esperança — Exemplo AgroSUS&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"&gt;&lt;a name="Provenance_agrosus-provenance-anamnese-exemplo"&gt; &lt;/a&gt;&lt;p class="res-header-id"&gt;&lt;b&gt;Narrativa gerada: Provenance agrosus-provenance-anamnese-exemplo&lt;/b&gt;&lt;/p&gt;&lt;a name="agrosus-provenance-anamnese-exemplo"&gt; &lt;/a&gt;&lt;a name="hcagrosus-provenance-anamnese-exemplo"&gt; &lt;/a&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Língua: pt-BR&lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Perfil: &lt;a href="StructureDefinition-agrosus-provenance.html"&gt;Proveniência dos Registros AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Proveniência para &lt;a href="QuestionnaireResponse-agrosus-anamnese-response-example.html"&gt;Resposta da anamnese AgroSUS&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Resumo&lt;/p&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;Ocorrência&lt;/td&gt;&lt;td&gt;2026-07-20 09:30:00-0300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Gravado&lt;/td&gt;&lt;td&gt;2026-07-20 09:31:00-0300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Atividade&lt;/td&gt;&lt;td&gt;&lt;span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}"&gt;create&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Agentes&lt;/b&gt;&lt;/p&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Tipo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;que&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Em nome de&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span title="Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}"&gt;Author&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="PractitionerRole-agrosus-acs-role-exemplo.html"&gt;Maria Clara Oliveira — ACS da UBS Jardim Esperança&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href="Organization-agrosus-ubs-exemplo.html"&gt;UBS Jardim Esperança — Exemplo AgroSUS&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Provenance.text">text</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>&gt;<a href="QuestionnaireResponse-agrosus-anamnese-response-example.html" style="color: Maroon">&#x1F517;</a> 
+        &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>&gt;<a style="color: Maroon" href="QuestionnaireResponse-agrosus-anamnese-response-example.html">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;QuestionnaireResponse/agrosus-anamnese-response-example&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Resposta da anamnese AgroSUS&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="QuestionnaireResponse/agrosus-anamnese-response-example"/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Resposta da anamnese AgroSUS"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.occurred_x_">occurredDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-07-20T09:30:00-03:00&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">recorded</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2026-07-20T09:31:00-03:00&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.occurred_x_">occurredDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2026-07-20T09:30:00-03:00"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">recorded</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>="2026-07-20T09:31:00-03:00"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.reason">reason</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActReason&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;TREAT&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;treatment&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-ActReason"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="TREAT"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="treatment"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Registro assistencial durante visita do ACS&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Registro assistencial durante visita do ACS"/&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.reason">reason</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">activity</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-DataOperation&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CREATE&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;create&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="CREATE"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="create"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">activity</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">agent</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.type">type</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/provenance-participant-type&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;author&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Author&quot;/&gt;
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="author"/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Author"/&gt;
             &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>&gt;<a href="PractitionerRole-agrosus-acs-role-exemplo.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PractitionerRole/agrosus-acs-role-exemplo&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>&gt;<a style="color: Maroon" href="PractitionerRole-agrosus-acs-role-exemplo.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="PractitionerRole/agrosus-acs-role-exemplo"/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Maria Clara Oliveira — ACS da UBS Jardim Esperança&quot;/&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Maria Clara Oliveira — ACS da UBS Jardim Esperança"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.onBehalfOf">onBehalfOf</a>&gt;<a href="Organization-agrosus-ubs-exemplo.html" style="color: Maroon">&#x1F517;</a> 
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/agrosus-ubs-exemplo&quot;/&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;UBS Jardim Esperança — Exemplo AgroSUS&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.onBehalfOf">onBehalfOf</a>&gt;<a style="color: Maroon" href="Organization-agrosus-ubs-exemplo.html">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Organization/agrosus-ubs-exemplo"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="UBS Jardim Esperança — Exemplo AgroSUS"/&gt;
           &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.onBehalfOf">onBehalfOf</a>&gt;
         &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">agent</a>&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">Provenance</a>&gt;
     &lt;/resource&gt;
     &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PUT&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Provenance/agrosus-provenance-anamnese-exemplo&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="PUT"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="Provenance/agrosus-provenance-anamnese-exemplo"/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
 &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a>&gt;</code></pre>
 
 
-  <!-- insert notes if present -->
+    <!-- insert notes if present -->
   
 
 
 
 </div>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-content -->
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /row -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-content -->
 
-<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+<script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
 <a name="bottom"> </a>
-<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-<div class="container">  <!-- container -->
+<div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+<div class="container">    <!-- container -->
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 13:03+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 13:39+0000">2026-07-21</span>
     <br/>
-    <span style="color: var(--footer-highlight-text-color)">
+    <span style="color: var(--footer-highlight-text-color)"><a name="l1829">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-| <a style="color: #81BEF7" target="_blank" href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+| <a style="color: #81BEF7" href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
     </span>
   </p>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-footer -->
+</div>    <!-- /inner-wrapper -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-footer -->
 
-<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-<div class="container">  <!-- container -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-post-footer -->
+<div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+<div class="container">    <!-- container -->
+</div>    <!-- /container -->
+</div>    <!-- /segment-post-footer -->
 
-<!-- JS and analytics only. -->
-<!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="assets/js/respond.min.js"> </script>
-<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-<!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+<script src="assets/js/respond.min.js" type="text/javascript"> </script>
+<script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+<script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+<script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+<script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  <!-- Analytics Below
 ================================================== -->
 
 
 
 
+</body></html>

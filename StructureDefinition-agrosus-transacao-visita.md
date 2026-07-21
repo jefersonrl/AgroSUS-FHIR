@@ -1,8 +1,7 @@
 # Transação da Visita do ACS AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Transação da Visita do ACS AgroSUS**
 
 ## Resource Profile: Transação da Visita do ACS AgroSUS 
@@ -42,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-transacao-vi
   "name" : "AgroSUSTransacaoVisita",
   "title" : "Transação da Visita do ACS AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T13:03:45+00:00",
+  "date" : "2026-07-21T13:39:22+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

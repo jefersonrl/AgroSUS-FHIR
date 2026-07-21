@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-prioridade-alerta"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-prioridade-alerta</b></p><a name="agrosus-prioridade-alerta"> </a><a name="hcagrosus-prioridade-alerta"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">critica<a name="agrosus-prioridade-alerta-critica"> </a></td><td>Crítica</td><td>Achado com indicação de afastamento imediato do contato com o defensivo e avaliação assistencial prioritária (ex.: colinesterase alterada; sintoma agudo compatível com intoxicação).</td></tr><tr><td style="white-space:nowrap">atencao<a name="agrosus-prioridade-alerta-atencao"> </a></td><td>Atenção</td><td>Achado que exige verificação ou reforço de medidas de proteção, sem indicação de afastamento imediato (ex.: precaução de colinesterase entre 20% e 50%/25%).</td></tr><tr><td style="white-space:nowrap">informativa<a name="agrosus-prioridade-alerta-informativa"> </a></td><td>Informativa</td><td>Achado registrado para acompanhamento longitudinal, sem conduta imediata associada.</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSPrioridadeAlertaCS"/>
+  <title value="Prioridade de Alerta AgroSUS"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T13:39:22+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="critica"/>
+    <display value="Crítica"/>
+    <definition value="Achado com indicação de afastamento imediato do contato com o defensivo e avaliação assistencial prioritária (ex.: colinesterase alterada; sintoma agudo compatível com intoxicação)."/>
+  </concept>
+  <concept>
+    <code value="atencao"/>
+    <display value="Atenção"/>
+    <definition value="Achado que exige verificação ou reforço de medidas de proteção, sem indicação de afastamento imediato (ex.: precaução de colinesterase entre 20% e 50%/25%)."/>
+  </concept>
+  <concept>
+    <code value="informativa"/>
+    <display value="Informativa"/>
+    <definition value="Achado registrado para acompanhamento longitudinal, sem conduta imediata associada."/>
+  </concept>
+</CodeSystem>

@@ -12,5 +12,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-acs",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T13:07:11.963808"
+  "fhir:expansionTimestamp": "2026-07-21T13:42:17.358773"
 }

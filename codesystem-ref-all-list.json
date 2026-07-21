@@ -9,11 +9,11 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
     "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
     "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
   },
   {
     "url" : "http://hl7.org/fhir/address-type",
@@ -277,8 +277,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.114"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
-    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent"
+    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent",
+    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
   },
   {
     "url" : "http://hl7.org/fhir/request-priority",
@@ -313,9 +313,9 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
     "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type",
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind"
   },
   {
     "url" : "http://hl7.org/fhir/restful-interaction",
@@ -351,8 +351,8 @@
     "uses" : {
     },
     "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS",
-    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -364,21 +364,21 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
     "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
     "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
     "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
     "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/audit-entity-type",
@@ -462,8 +462,8 @@
     "oids" : ["2.16.840.1.113883.4.642.1.1201"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -533,8 +533,8 @@
     "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
@@ -545,8 +545,8 @@
     "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-    "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents"
+    "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents",
+    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -765,8 +765,8 @@
     "oids" : ["2.16.840.1.113883.5.88"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -778,8 +778,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
     "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
     "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
   },
   {
@@ -792,8 +792,8 @@
     "oids" : ["2.16.840.1.113883.5.110"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -805,9 +805,9 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
     "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://terminology.hl7.org/7.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
@@ -829,8 +829,8 @@
     "description" : "Códigos relacionados à assistência e à responsabilidade técnica na produção rural.",
     "uses" : {
     },
-    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico",
-    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica"
+    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica",
+    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas",
@@ -885,8 +885,8 @@
     "description" : "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados.",
     "uses" : {
     },
-    "ValueSet-agrosus-sintoma-ultimos-30-dias.html" : "Sinais e sintomas dos últimos 30 dias",
-    "ValueSet-agrosus-condicao-saude-referida.html" : "Condições de saúde referidas"
+    "ValueSet-agrosus-condicao-saude-referida.html" : "Condições de saúde referidas",
+    "ValueSet-agrosus-sintoma-ultimos-30-dias.html" : "Sinais e sintomas dos últimos 30 dias"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens",
@@ -909,8 +909,8 @@
     "uses" : {
     },
     "ValueSet-agrosus-frequencia-uso-epi.html" : "Frequência de utilização de EPI",
-    "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI",
-    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs"
+    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs",
+    "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade",
@@ -932,12 +932,12 @@
     "description" : "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas.",
     "uses" : {
     },
-    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês",
-    "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
-    "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição",
     "ValueSet-agrosus-responsavel-aplicacao.html" : "Responsável pela aplicação",
     "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação",
-    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia"
+    "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
+    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês",
+    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia",
+    "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
@@ -962,6 +962,17 @@
     "ValueSet-agrosus-numero-intoxicacoes-agudas.html" : "Número de intoxicações agudas anteriores"
   },
   {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSPrioridadeAlertaCS",
+    "title" : "Prioridade de Alerta AgroSUS",
+    "description" : "Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação).",
+    "uses" : {
+    },
+    "ValueSet-agrosus-prioridade-alerta.html" : "Prioridade de Alerta AgroSUS"
+  },
+  {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
     "version" : "0.1.0",
     "status" : "draft",
@@ -970,8 +981,8 @@
     "description" : "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS.",
     "uses" : {
     },
-    "ValueSet-agrosus-fonte-agua.html" : "Fonte de Água da Propriedade",
     "ValueSet-agrosus-situacao-posse.html" : "Situação de Posse da Terra",
+    "ValueSet-agrosus-fonte-agua.html" : "Fonte de Água da Propriedade",
     "ValueSet-agrosus-tipo-producao.html" : "Tipo de Produção Agrícola",
     "ValueSet-agrosus-atividade-agricola.html" : "Principal Atividade Agrícola"
   },
@@ -1018,8 +1029,8 @@
     "uses" : {
     },
     "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS",
-    "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao",
+    "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCIAP2",
@@ -1064,11 +1075,11 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
     "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial",
@@ -1145,8 +1156,8 @@
     "description" : "",
     "uses" : {
     },
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRSubgrupoTabelaSUS.html" : "BR Subgrupo Tabela SUS",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCategoriaProcedimento.html" : "BR Categoria Procedimento"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCategoriaProcedimento.html" : "BR Categoria Procedimento",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRSubgrupoTabelaSUS.html" : "BR Subgrupo Tabela SUS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude",

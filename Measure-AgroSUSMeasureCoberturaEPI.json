@@ -1,0 +1,65 @@
+{
+  "resourceType" : "Measure",
+  "id" : "AgroSUSMeasureCoberturaEPI",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Knowledge Artifact Metadata</th>\n\n</tr>\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Name (machine-readable)</th>\n\n<td class=\"content-container\">AgroSUSMeasureCoberturaEPI</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Title (human-readable)</th>\n\n<td class=\"content-container\">Cobertura de uso adequado de EPI (AgroSUS)</td>\n</tr>\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Status</th>\n\n<td class=\"content-container\">Active</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Experimental</th>\n\n<td class=\"content-container\">true</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n<td class=\"content-container\"><div><p>Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8.</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Steward</th>\n\n<td class=\"content-container\">Fatec Ferraz de Vasconcelos</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Steward Contact Details</th>\n\n<td class=\"content-container\">Fatec Ferraz de Vasconcelos: <a href=\"https://www.fatecferraz.edu.br\">https://www.fatecferraz.edu.br</a></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Metadata</th>\n\n</tr>\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Version Number</th>\n\n<td class=\"content-container\">0.1.0</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Scoring</th>\n\n<td class=\"content-container\"><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/measure-scoring proportion}\">Proportion</span></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n  \n  \n    <tr>\n      \n        \n          \n          \n          \n          \n            \n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n          \n          \n          \n          \n          \n          \n        \n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Trabalhadores que manuseiam defensivos categoria toxicológica 1 ou 2</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n          \n          \n            \n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n          \n          \n          \n          \n          \n          \n          \n          \n        \n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Trabalhadores com uso de EPI adequado registrado</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>\n</tr>\n    </tbody>\n  </table>\n</div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaEPI",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMeasureCoberturaEPI",
+  "title" : "Cobertura de uso adequado de EPI (AgroSUS)",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-07-21T13:39:22+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "scoring" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/measure-scoring",
+      "code" : "proportion"
+    }]
+  },
+  "group" : [{
+    "population" : [{
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "denominator"
+        }]
+      },
+      "description" : "Trabalhadores que manuseiam defensivos categoria toxicológica 1 ou 2",
+      "criteria" : {
+        "language" : "text/fhirpath",
+        "expression" : "trabalhadores-categoria-1-2"
+      }
+    },
+    {
+      "code" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code" : "numerator"
+        }]
+      },
+      "description" : "Trabalhadores com uso de EPI adequado registrado",
+      "criteria" : {
+        "language" : "text/fhirpath",
+        "expression" : "trabalhadores-epi-adequado"
+      }
+    }]
+  }]
+}

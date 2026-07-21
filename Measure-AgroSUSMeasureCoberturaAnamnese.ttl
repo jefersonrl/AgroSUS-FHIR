@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaAnamnese> a fhir:Measure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AgroSUSMeasureCoberturaAnamnese"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Knowledge Artifact Metadata</th>\n\n</tr>\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Name (machine-readable)</th>\n\n<td class=\"content-container\">AgroSUSMeasureCoberturaAnamnese</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Title (human-readable)</th>\n\n<td class=\"content-container\">Cobertura da anamnese ocupacional AgroSUS</td>\n</tr>\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Status</th>\n\n<td class=\"content-container\">Active</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Experimental</th>\n\n<td class=\"content-container\">true</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n<td class=\"content-container\"><div><p>Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS.</p>\n</div></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Steward</th>\n\n<td class=\"content-container\">Fatec Ferraz de Vasconcelos</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Steward Contact Details</th>\n\n<td class=\"content-container\">Fatec Ferraz de Vasconcelos: <a href=\"https://www.fatecferraz.edu.br\">https://www.fatecferraz.edu.br</a></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Metadata</th>\n\n</tr>\n\n\n\n\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Version Number</th>\n\n<td class=\"content-container\">0.1.0</td>\n</tr>\n\n\n<tr>\n\n<th scope=\"row\" class=\"row-header\">Measure Scoring</th>\n\n<td class=\"content-container\"><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/measure-scoring proportion}\">Proportion</span></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    <tr>\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Population Criteria</th>\n\n</tr>\n  \n  \n  \n  \n    <tr>\n      \n        \n          \n          \n          \n          \n            \n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n          \n          \n          \n          \n          \n          \n        \n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Trabalhadores cadastrados no AgroSUS</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n          \n          \n            \n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n          \n          \n          \n          \n          \n          \n          \n          \n        \n      \n      <td class=\"content-container\">\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\">Trabalhadores com anamnese AgroSUS registrada</p>\n        \n        \n          \n        \n      </td>\n    </tr>\n  \n\n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>\n</tr>\n    </tbody>\n  </table>\n</div>"
+  ] ;
+  fhir:Measure.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaAnamnese"] ;
+  fhir:Measure.version [ fhir:value "0.1.0"] ;
+  fhir:Measure.name [ fhir:value "AgroSUSMeasureCoberturaAnamnese"] ;
+  fhir:Measure.title [ fhir:value "Cobertura da anamnese ocupacional AgroSUS"] ;
+  fhir:Measure.status [ fhir:value "active"] ;
+  fhir:Measure.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Measure.date [ fhir:value "2026-07-21T13:39:22+00:00"^^xsd:dateTime] ;
+  fhir:Measure.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:Measure.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:Measure.description [ fhir:value "Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS."] ;
+  fhir:Measure.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:Measure.scoring [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-scoring" ] ;
+       fhir:Coding.code [ fhir:value "proportion" ]
+     ]
+  ] ;
+  fhir:Measure.group [
+     fhir:index 0 ;
+     fhir:Measure.group.population [
+       fhir:index 0 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "denominator" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Trabalhadores cadastrados no AgroSUS" ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "trabalhadores-cadastrados" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ] ;
+           fhir:Coding.code [ fhir:value "numerator" ]
+         ]
+       ] ;
+       fhir:Measure.group.population.description [ fhir:value "Trabalhadores com anamnese AgroSUS registrada" ] ;
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "trabalhadores-com-anamnese-registrada" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaAnamnese.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

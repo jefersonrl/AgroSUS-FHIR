@@ -2,38 +2,18 @@
 
 ## Pages
 
-* [Home](index.md)
-* [Codings](codings.md)
-* [Mappings](maps.md)
-* [Indicators and Measures](indicators-measures.md)
-* [Business Requirements](business-requirements.md)
-* [Sequence Diagrams](sequence-diagrams.md)
-* [Deployment](deployment.md)
-* [Test Data](test-data.md)
+* [Início](index.md)
+* [7. Indicadores de Programa](l2-indicators.md)
+* [1. Intervenções e Recomendações](l2-interventions.md)
+* [3. Cenários de Uso](l2-user-scenarios.md)
 * [Downloads](downloads.md)
-* [Security and Privacy Considerations](security-privacy.md)
-* [Generic Personas](personas.md)
-* [Transactions](transactions.md)
-* [System Actors](system-actors.md)
-* [Trust Domains](trust_domain.md)
-* [Concepts](concepts.md)
-* [Functional Requirements](functional-requirements.md)
-* [License](license.md)
-* [Dependencies](dependencies.md)
-* [Adapting Guidelines for Country use](adapting.md)
-* [Non-functional Requirements](non-functional-requirements.md)
-* [Changes](changes.md)
-* [Reference Implementations](reference-implementations.md)
-* [Decision-support logic](decision-logic.md)
-* [References](references.md)
-* [Indicator and Performance Metrics](indicators.md)
-* [Indices](indices.md)
-* [Testing](testing.md)
-* [Business Processes](business-processes.md)
-* [Data Models and Exchange](data-models-and-exchange.md)
-* [Artifact Index](artifacts.md)
-* [User Scenarios](scenarios.md)
-* [Data Dictionary](dictionary.md)
+* [8. Requisitos Funcionais e Não-Funcionais](l2-requirements.md)
+* [6. Lógica de Suporte à Decisão](l2-decision-logic.md)
+* [4. Processos de Negócio e Workflows](l2-business-process.md)
+* [5. Elementos de Dados (Dicionário)](l2-data-dictionary.md)
+* [2. Personas Genéricas](l2-personas.md)
+* [9. Cenários de Teste](l2-test-scenarios.md)
+* [Artifacts Summary](artifacts.md)
 
 ## Resources
 
@@ -52,6 +32,7 @@
 * [Exposição familiar AgroSUS](CodeSystem-agrosus-exposicao-familiar.md)
 * [Terminologia de exposição ocupacional AgroSUS](CodeSystem-agrosus-exposicao.md)
 * [Histórico de intoxicação AgroSUS](CodeSystem-agrosus-historico-intoxicacao.md)
+* [Prioridade de Alerta AgroSUS](CodeSystem-agrosus-prioridade-alerta.md)
 * [Terminologia da Propriedade Rural AgroSUS](CodeSystem-agrosus-propriedade.md)
 * [Rastreabilidade das aplicações AgroSUS](CodeSystem-agrosus-rastreabilidade.md)
 * [Tipos de Coleta AgroSUS](CodeSystem-agrosus-tipo-coleta.md)
@@ -83,6 +64,7 @@
 * [Número de intoxicações agudas anteriores](ValueSet-agrosus-numero-intoxicacoes-agudas.md)
 * [Ocupações permitidas para o ACS no AgroSUS](ValueSet-agrosus-ocupacao-acs.md)
 * [Ocupações dos profissionais assistenciais da UBS](ValueSet-agrosus-ocupacao-profissional-ubs.md)
+* [Prioridade de Alerta AgroSUS](ValueSet-agrosus-prioridade-alerta.md)
 * [Responsável pela aplicação](ValueSet-agrosus-responsavel-aplicacao.md)
 * [Resultados Laboratoriais AgroSUS](ValueSet-agrosus-resultados-laboratoriais.md)
 * [Sinais e sintomas dos últimos 30 dias](ValueSet-agrosus-sintoma-ultimos-30-dias.md)
@@ -120,6 +102,22 @@
 ### ImplementationGuides
 
 * [Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas](index.md)
+
+### Libraries
+
+* [Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)](Library-AgroSUSIntoxicacaoLogic.md)
+
+### Measures
+
+* [Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)](Measure-AgroSUSMeasureAdesaoPeriodicidade.md)
+* [Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)](Measure-AgroSUSMeasureAlteradosComConduta.md)
+* [Cobertura da anamnese ocupacional AgroSUS](Measure-AgroSUSMeasureCoberturaAnamnese.md)
+* [Cobertura do exame basal de colinesterase (AgroSUS)](Measure-AgroSUSMeasureCoberturaBasal.md)
+* [Cobertura de uso adequado de EPI (AgroSUS)](Measure-AgroSUSMeasureCoberturaEPI.md)
+
+### PlanDefinitions
+
+* [AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos](PlanDefinition-AgroSUSEstratificacaoRisco.md)
 
 ### Questionnaires
 

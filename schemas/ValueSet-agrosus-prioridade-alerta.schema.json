@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-prioridade-alerta.schema.json",
+  "title": "Prioridade de Alerta AgroSUS Schema",
+  "description": "JSON Schema for Prioridade de Alerta AgroSUS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta#critica",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta#atencao",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta#informativa"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Prioridade de Alerta AgroSUS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-prioridade-alerta.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-prioridade-alerta.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-prioridade-alerta",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T13:42:17.356887"
+}

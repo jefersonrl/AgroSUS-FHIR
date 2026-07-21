@@ -15,5 +15,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-local-armazenamento-defensivos",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T13:07:11.961917"
+  "fhir:expansionTimestamp": "2026-07-21T13:42:17.356703"
 }

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="AgroSUSMeasureAdesaoPeriodicidade"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Knowledge Artifact Metadata</th>
+
+</tr>
+
+<tr>
+
+<th scope="row" class="row-header">Name (machine-readable)</th>
+
+<td class="content-container">AgroSUSMeasureAdesaoPeriodicidade</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Title (human-readable)</th>
+
+<td class="content-container">Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)</td>
+</tr>
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Status</th>
+
+<td class="content-container">Active</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Experimental</th>
+
+<td class="content-container">true</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Description</th>
+
+<td class="content-container"><div><p>Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1.</p>
+</div></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Steward</th>
+
+<td class="content-container">Fatec Ferraz de Vasconcelos</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Steward Contact Details</th>
+
+<td class="content-container">Fatec Ferraz de Vasconcelos: <a href="https://www.fatecferraz.edu.br">https://www.fatecferraz.edu.br</a></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Metadata</th>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<th scope="row" class="row-header">Version Number</th>
+
+<td class="content-container">0.1.0</td>
+</tr>
+
+
+<tr>
+
+<th scope="row" class="row-header">Measure Scoring</th>
+
+<td class="content-container"><span title="Códigos:{http://terminology.hl7.org/CodeSystem/measure-scoring proportion}">Proportion</span></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <tr>
+
+<th colspan="2" scope="row" class="row-header">Measure Population Criteria</th>
+
+</tr>
+  
+  
+  
+  
+    <tr>
+      
+        
+          
+          
+          
+          
+            
+<th scope="row" class="row-header">Denominator</th>
+
+          
+          
+          
+          
+          
+          
+        
+      
+      <td class="content-container">
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one">Trabalhadores elegíveis ao monitoramento biológico</p>
+        
+        
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+          
+          
+            
+<th scope="row" class="row-header">Numerator</th>
+
+          
+          
+          
+          
+          
+          
+          
+          
+        
+      
+      <td class="content-container">
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one">Trabalhadores com exame de colinesterase nos últimos 6 meses</p>
+        
+        
+          
+        
+      </td>
+    </tr>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.6 of the sample-content-ig Liquid templates</th>
+</tr>
+    </tbody>
+  </table>
+</div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureAdesaoPeriodicidade"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSMeasureAdesaoPeriodicidade"/>
+  <title value="Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T13:39:22+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <scoring>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <code value="proportion"/>
+    </coding>
+  </scoring>
+  <group>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+        </coding>
+      </code>
+      <description value="Trabalhadores elegíveis ao monitoramento biológico"/>
+      <criteria>
+        <language value="text/fhirpath"/>
+        <expression value="trabalhadores-elegiveis-monitoramento"/>
+      </criteria>
+    </population>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="numerator"/>
+        </coding>
+      </code>
+      <description value="Trabalhadores com exame de colinesterase nos últimos 6 meses"/>
+      <criteria>
+        <language value="text/fhirpath"/>
+        <expression value="trabalhadores-exame-ultimos-6-meses"/>
+      </criteria>
+    </population>
+  </group>
+</Measure>

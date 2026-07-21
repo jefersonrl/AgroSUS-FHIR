@@ -1,8 +1,7 @@
 # Exemplo de Laudo de Hemograma AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Exemplo de Laudo de Hemograma AgroSUS**
 
 ## Example DiagnosticReport: Exemplo de Laudo de Hemograma AgroSUS

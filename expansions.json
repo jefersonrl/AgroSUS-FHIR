@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0aeb03d2-50a8-4c7a-94ff-b26b880732f5",
+  "id" : "ac34a5d5-2017-41c9-b3ae-43da3c1e15a2",
   "meta" : {
-    "lastUpdated" : "2026-07-21T13:03:45.588+00:00"
+    "lastUpdated" : "2026-07-21T13:39:22.197+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "Local de armazenamento dos EPIs",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:251137ee-d8f6-476b-af12-655438aa192f",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:8b5a3869-8074-46ae-8db2-4288b6714bd0",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -85,7 +85,7 @@
       "title" : "Formas de armazenamento dos registros",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6c5f2728-8685-4655-8f09-83aa43ef05d0",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:687d6a28-3f81-4aa6-8c72-ee77bd9984de",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -155,7 +155,7 @@
       "title" : "Principal Atividade Agrícola",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -164,8 +164,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9981d17b-98d5-4dc6-a189-8d4ff249ed6a",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:85033572-1574-4685-b373-a754135a5880",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -229,7 +229,7 @@
       "title" : "Respostas dos indicadores de boas práticas",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -238,8 +238,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:978d0129-1a98-45eb-a587-cd786a9fac8a",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:881b2be1-228a-49ed-9f9a-338da4accd97",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -291,7 +291,7 @@
       "title" : "Categorias de Plano de Cuidado AgroSUS",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -300,8 +300,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9c3a1192-de5f-4c5a-b727-fdc07e411109",
-        "timestamp" : "2026-07-21T13:06:46+00:00",
+        "identifier" : "urn:uuid:db1d2425-076d-4a19-bb30-da9fbeef1fa1",
+        "timestamp" : "2026-07-21T13:41:51+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -353,7 +353,7 @@
       "title" : "Classificação Toxicológica de Defensivos Agrícolas",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -362,8 +362,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:68acfd68-5c29-4613-aa23-57479ba41f2f",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:e6330ea6-2a29-4b1b-bdd2-6c6ba6af9ce1",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -427,7 +427,7 @@
       "title" : "Condições de saúde referidas",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -436,8 +436,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c7170319-29e4-4a35-a6c0-b06d3ece5f66",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:b85cb60c-ee13-4a8c-8233-e23095171b09",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -509,7 +509,7 @@
       "title" : "Destinação de embalagens não devolvidas",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -518,8 +518,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6dcf4b69-0e0b-4f63-bc3e-3d14db49ee60",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:048b97a2-c3cf-4455-a496-c8e99f945ce4",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -583,7 +583,7 @@
       "title" : "Dias de aplicação por mês",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -592,8 +592,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aa6f1894-977e-4d9b-b8dc-c94f4b08452a",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:1484f88d-7e03-470a-9387-57437f0ca345",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -649,7 +649,7 @@
       "title" : "Equipamentos utilizados na aplicação",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -658,8 +658,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:588cc3a1-25fc-4ffc-996a-f534ec026130",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:16279ca9-16b5-42fc-8a92-3f43fd27810c",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -711,7 +711,7 @@
       "title" : "Escolaridade AgroSUS",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -720,8 +720,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:44e34a5b-bdd0-43fc-ba3a-6ecde9195641",
-        "timestamp" : "2026-07-21T13:06:38+00:00",
+        "identifier" : "urn:uuid:ad5c5872-be8e-4390-b641-743e4f827152",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -781,7 +781,7 @@
       "title" : "Exames Laboratoriais AgroSUS",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -790,8 +790,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c46b8284-9a66-4b41-9c2d-fbd77fdcb088",
-        "timestamp" : "2026-07-21T13:06:46+00:00",
+        "identifier" : "urn:uuid:d6aa6979-f66b-4cfa-a60f-9442f2df7b1c",
+        "timestamp" : "2026-07-21T13:41:51+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -900,7 +900,7 @@
       "title" : "Familiares que auxiliam na aplicação",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -909,8 +909,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:613f4056-b8ae-4ed3-a1d6-9725f33d08ec",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:ef9b83f1-35d7-4423-9e67-8b02495a67d6",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -966,7 +966,7 @@
       "title" : "Fonte de Água da Propriedade",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -975,8 +975,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:77b60ffe-3246-4908-ac45-7b6f5b102488",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:9c4d51e1-3466-4a1d-a7eb-4207dcb2ec9d",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -1044,7 +1044,7 @@
       "title" : "Formação do Responsável Técnico",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1053,8 +1053,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b4c869eb-7132-4794-8c78-ad11f669b19a",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:20557426-798c-4482-9938-a1e5098d3755",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1106,7 +1106,7 @@
       "title" : "Frequência de utilização de EPI",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1115,8 +1115,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:98703ed9-cfd4-425e-9bb8-a3ce557a41c1",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:0667c889-a1e5-4c4b-8f7b-4a9f07f1a213",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1172,7 +1172,7 @@
       "title" : "Horas de aplicação por dia",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1181,8 +1181,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:16066ac6-7c53-4acd-a1c4-94b34d11a5b9",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:b007e3b1-1223-4df7-923c-c67a0999a756",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1238,7 +1238,7 @@
       "title" : "Instituição de Assistência Técnica",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1247,8 +1247,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:215cc6d5-01ba-4603-8245-d68631fc70b2",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:a1760eb0-1441-486a-a4ab-8b86c5d902e1",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -1316,7 +1316,7 @@
       "title" : "Local de armazenamento dos defensivos agrícolas",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1325,8 +1325,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c97a0ae1-762a-41ea-aa33-cbe9679c9525",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:ffbf00d9-040e-48c2-84ad-305507356c4e",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1386,7 +1386,7 @@
       "title" : "Meses de maior intensidade de uso",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1395,8 +1395,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d7350bdb-2572-4457-9a2a-1d18120fb092",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:afcc2b13-db03-4836-8845-746de61423e0",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 12,
         "offset" : 0,
         "parameter" : [{
@@ -1484,7 +1484,7 @@
       "title" : "Motivos de não utilização de EPI",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1493,8 +1493,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:60e77062-39f4-4777-94a8-4c87a70fe269",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:167c278c-e3c9-485b-a7e5-bf5a9eeaedbc",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -1558,7 +1558,7 @@
       "title" : "Número de intoxicações agudas anteriores",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1567,8 +1567,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7c373382-a526-4e7b-80a7-372544e74a93",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:9cc64a07-9267-40bd-b3e8-d2dc16eadd99",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1611,6 +1611,68 @@
     }
   },
   {
+    "fullUrl" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-prioridade-alerta",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansão efectuada internamente com base em <a href=\"CodeSystem-agrosus-prioridade-alerta.html\">codesystem Prioridade de Alerta AgroSUS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta|0.1.0\" title=\"Clique para copiar o URL\" class=\"btn-copy\"> </button></span></p><p>Este conjunto de valores contém 3 conceitos</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Sistema</b></td><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã (pt)</b></td><td><b>Definição</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta-critica\"> </a><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-agrosus-prioridade-alerta.html#agrosus-prioridade-alerta-critica\">critica</a></td><td/><td>Achado com indicação de afastamento imediato do contato com o defensivo e avaliação assistencial prioritária (ex.: colinesterase alterada; sintoma agudo compatível com intoxicação).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;critica&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;critica&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta-atencao\"> </a><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-agrosus-prioridade-alerta.html#agrosus-prioridade-alerta-atencao\">atencao</a></td><td/><td>Achado que exige verificação ou reforço de medidas de proteção, sem indicação de afastamento imediato (ex.: precaução de colinesterase entre 20% e 50%/25%).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;atencao&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;atencao&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta-informativa\"> </a><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-agrosus-prioridade-alerta.html#agrosus-prioridade-alerta-informativa\">informativa</a></td><td/><td>Achado registrado para acompanhamento longitudinal, sem conduta imediata associada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;informativa&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;informativa&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-prioridade-alerta",
+      "version" : "0.1.0",
+      "name" : "AgroSUSPrioridadeAlertaVS",
+      "title" : "Prioridade de Alerta AgroSUS",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-07-21T13:39:22+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BR",
+          "display" : "Brazil"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e6f2c751-032b-4d1c-b8b4-00a3b936ee3a",
+        "timestamp" : "2026-07-21T13:41:52+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "pt"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta",
+          "code" : "critica"
+        },
+        {
+          "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta",
+          "code" : "atencao"
+        },
+        {
+          "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta",
+          "code" : "informativa"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-responsavel-aplicacao",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1624,7 +1686,7 @@
       "title" : "Responsável pela aplicação",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1633,8 +1695,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a7d668b1-430d-4d5d-b602-a8ac3be3da37",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:3eaa4ce1-7e1c-4a98-a631-a3564926a3dd",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1694,7 +1756,7 @@
       "title" : "Resultados Laboratoriais AgroSUS",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1703,8 +1765,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9b178b49-9950-4802-931c-c050740b6a07",
-        "timestamp" : "2026-07-21T13:06:44+00:00",
+        "identifier" : "urn:uuid:8a3aa144-6d6c-4db4-81ad-29e180b1412a",
+        "timestamp" : "2026-07-21T13:41:49+00:00",
         "total" : 16,
         "offset" : 0,
         "parameter" : [{
@@ -1816,7 +1878,7 @@
       "title" : "Sinais e sintomas dos últimos 30 dias",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1825,8 +1887,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:12753846-d900-445d-af28-4e702e39f252",
-        "timestamp" : "2026-07-21T13:06:48+00:00",
+        "identifier" : "urn:uuid:77ecce08-b119-4bdd-b539-17fdd5be4d41",
+        "timestamp" : "2026-07-21T13:41:52+00:00",
         "total" : 20,
         "offset" : 0,
         "parameter" : [{
@@ -1946,7 +2008,7 @@
       "title" : "Situação de Posse da Terra",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1955,8 +2017,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8fc67158-7ff3-4866-95ce-addb310c545e",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:c7f851ae-08a1-4e03-a8d3-55b859a5f35f",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -2020,7 +2082,7 @@
       "title" : "Temas de Capacitação AgroSUS",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -2029,8 +2091,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5eab79f2-bffe-499d-b562-4fffd087c904",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:a34b735f-0dd0-4105-9c7d-62e923888da0",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -2094,7 +2156,7 @@
       "title" : "Tipos de Coleta AgroSUS",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -2103,8 +2165,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9ad0170f-08f3-4e4d-829b-d2dde8687244",
-        "timestamp" : "2026-07-21T13:06:38+00:00",
+        "identifier" : "urn:uuid:a8d0666d-f7c0-424d-8642-39a4f3c382f6",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -2156,7 +2218,7 @@
       "title" : "Tipo de Produção Agrícola",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -2165,8 +2227,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c6213d7c-9c5a-4719-a3d8-cc37da9f25d8",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:610c7917-98f3-4027-92e9-251841240ff9",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -2226,7 +2288,7 @@
       "title" : "Vias de exposição",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-07-21T13:03:45+00:00",
+      "date" : "2026-07-21T13:39:22+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -2235,8 +2297,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:95b60436-0290-4716-83f0-7698987537e6",
-        "timestamp" : "2026-07-21T13:06:39+00:00",
+        "identifier" : "urn:uuid:8f370773-6c5d-4885-8468-788a3b88de68",
+        "timestamp" : "2026-07-21T13:41:45+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{

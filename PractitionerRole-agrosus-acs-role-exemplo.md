@@ -1,8 +1,7 @@
 # Vínculo profissional do ACS AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
-* [**Indices**](indices.md)
-* [**Artifact Index**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Vínculo profissional do ACS AgroSUS**
 
 ## Example PractitionerRole: Vínculo profissional do ACS AgroSUS

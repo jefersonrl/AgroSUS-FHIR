@@ -104,6 +104,14 @@
     "description" : "Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas."
   },
   {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSPrioridadeAlertaCS",
+    "title" : "Prioridade de Alerta AgroSUS",
+    "description" : "Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação)."
+  },
+  {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
     "version" : "0.1.0",
     "status" : "draft",

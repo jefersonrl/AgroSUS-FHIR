@@ -25,7 +25,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T13:03:45+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T13:39:22+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -803,6 +803,20 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureAdesaoPeriodicidade> ;
+         fhir:Reference.reference [ fhir:value "Measure/AgroSUSMeasureAdesaoPeriodicidade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Adesão à periodicidade semestral do monitoramento biológico (AgroSUS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proporção de trabalhadores elegíveis com exame de colinesterase realizado dentro dos últimos 6 meses, conforme a periodicidade mínima da NR-7 item 7.4.2.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -813,7 +827,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2 ;
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PlanDefinition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PlanDefinition/AgroSUSEstratificacaoRisco> ;
+         fhir:Reference.reference [ fhir:value "PlanDefinition/AgroSUSEstratificacaoRisco" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AgroSUS — Vigilância biológica, periodicidade e alertas de intoxicação por defensivos" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Workflow de suporte à decisão: classifica o resultado da colinesterase, define a periodicidade do monitoramento biológico e avalia gatilhos de alerta independentes (sintomas, produto sem EPI adequado, histórico de intoxicação). Apoia — não substitui — o julgamento clínico do profissional assistencial da UBS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -827,7 +855,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia dos locais utilizados para armazenamento de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3 ;
+       fhir:index 5 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -841,7 +869,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos relacionados à assistência e à responsabilidade técnica na produção rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4 ;
+       fhir:index 6 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -855,7 +883,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Atendimento realizado na UBS para avaliação, investigação e acompanhamento assistencial do trabalhador rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5 ;
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -869,7 +897,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia utilizada para avaliar o atendimento aos indicadores de boas práticas agrícolas no formulário AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6 ;
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -883,7 +911,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias permitidas para os planos de acompanhamento AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -897,7 +925,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias utilizadas para classificar os planos longitudinais de acompanhamento do trabalhador rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -911,7 +939,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias toxicológicas permitidas no formulário AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9 ;
+       fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -925,7 +953,49 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10 ;
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaAnamnese> ;
+         fhir:Reference.reference [ fhir:value "Measure/AgroSUSMeasureCoberturaAnamnese" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cobertura da anamnese ocupacional AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese AgroSUS registrada, medindo a implantação do instrumento de triagem ocupacional pelo ACS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaEPI> ;
+         fhir:Reference.reference [ fhir:value "Measure/AgroSUSMeasureCoberturaEPI" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cobertura de uso adequado de EPI (AgroSUS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica 1 ou 2 com uso adequado de Equipamento de Proteção Individual registrado na anamnese, conforme a NR-31 item 31.8." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaBasal> ;
+         fhir:Reference.reference [ fhir:value "Measure/AgroSUSMeasureCoberturaBasal" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cobertura do exame basal de colinesterase (AgroSUS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proporção de trabalhadores que manuseiam organofosforados/carbamatos com valor basal de colinesterase registrado na admissão, conforme exigido pela NR-7 item 7.4.1." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -939,7 +1009,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -953,7 +1023,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condições de saúde preexistentes declaradas pelo trabalhador durante a anamnese." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -967,7 +1037,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formas de destinação das embalagens vazias quando não ocorre devolução em local autorizado." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -981,7 +1051,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia das formas de destinação de embalagens vazias de defensivos agrícolas quando não são devolvidas em local autorizado." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -995,7 +1065,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Faixas de frequência mensal de aplicação de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1009,7 +1079,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos de equipamento utilizados na aplicação de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1023,7 +1093,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias permitidas para escolaridade no formulário AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1037,7 +1107,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1051,7 +1121,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro de segurança para rastrear consultas, alterações e outras operações realizadas sobre os dados do AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1065,7 +1135,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos trabalhadores rurais no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1082,7 +1152,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs>
        ]
      ], [
-       fhir:index 21 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1099,7 +1169,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs>
        ]
      ], [
-       fhir:index 22 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1116,7 +1186,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event>
        ]
      ], [
-       fhir:index 23 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1133,7 +1203,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs>
        ]
      ], [
-       fhir:index 24 ;
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1150,7 +1220,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio>
        ]
      ], [
-       fhir:index 25 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1167,7 +1237,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial>
        ]
      ], [
-       fhir:index 26 ;
+       fhir:index 31 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1184,7 +1254,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs>
        ]
      ], [
-       fhir:index 27 ;
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1201,7 +1271,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient>
        ]
      ], [
-       fhir:index 28 ;
+       fhir:index 33 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1218,7 +1288,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento>
        ]
      ], [
-       fhir:index 29 ;
+       fhir:index 34 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1235,7 +1305,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
        ]
      ], [
-       fhir:index 30 ;
+       fhir:index 35 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1252,7 +1322,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
        ]
      ], [
-       fhir:index 31 ;
+       fhir:index 36 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1269,7 +1339,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response>
        ]
      ], [
-       fhir:index 32 ;
+       fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1285,7 +1355,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
        ]
      ], [
-       fhir:index 33 ;
+       fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1301,7 +1371,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
        ]
      ], [
-       fhir:index 34 ;
+       fhir:index 39 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1317,7 +1387,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
        ]
      ], [
-       fhir:index 35 ;
+       fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1333,7 +1403,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
        ]
      ], [
-       fhir:index 36 ;
+       fhir:index 41 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1350,7 +1420,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame>
        ]
      ], [
-       fhir:index 37 ;
+       fhir:index 42 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1367,7 +1437,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida>
        ]
      ], [
-       fhir:index 38 ;
+       fhir:index 43 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1384,7 +1454,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita>
        ]
      ], [
-       fhir:index 39 ;
+       fhir:index 44 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1401,7 +1471,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs>
        ]
      ], [
-       fhir:index 40 ;
+       fhir:index 45 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1418,7 +1488,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs>
        ]
      ], [
-       fhir:index 41 ;
+       fhir:index 46 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1435,7 +1505,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role>
        ]
      ], [
-       fhir:index 42 ;
+       fhir:index 47 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1452,7 +1522,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role>
        ]
      ], [
-       fhir:index 43 ;
+       fhir:index 48 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1469,7 +1539,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role>
        ]
      ], [
-       fhir:index 44 ;
+       fhir:index 49 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1483,7 +1553,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45 ;
+       fhir:index 50 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1497,7 +1567,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Familiares que auxiliam o trabalhador rural na aplicação de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46 ;
+       fhir:index 51 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1511,7 +1581,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fontes de água utilizadas na propriedade rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 47 ;
+       fhir:index 52 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1525,7 +1595,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formas utilizadas para armazenar os registros das aplicações de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 48 ;
+       fhir:index 53 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1539,7 +1609,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formações profissionais previstas para o responsável técnico da produção." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 49 ;
+       fhir:index 54 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1553,7 +1623,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 50 ;
+       fhir:index 55 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1567,7 +1637,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Frequência declarada de utilização de cada equipamento de proteção individual." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 51 ;
+       fhir:index 56 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1581,7 +1651,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil do vínculo do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde com a organização responsável pelo atendimento no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 52 ;
+       fhir:index 57 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1595,7 +1665,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vínculo funcional do profissional assistencial com a UBS responsável pelo acompanhamento do trabalhador rural no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 53 ;
+       fhir:index 58 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1609,7 +1679,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54 ;
+       fhir:index 59 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1623,7 +1693,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Faixas de duração diária da aplicação de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 55 ;
+       fhir:index 60 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1637,7 +1707,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instituições que podem prestar assistência técnica ao produtor rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56 ;
+       fhir:index 61 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1651,7 +1721,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos CID-10 utilizados para representar suspeita ou confirmação clínica de efeito tóxico de pesticidas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 57 ;
+       fhir:index 62 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1665,7 +1735,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organização responsável pela realização e emissão de resultados de exames laboratoriais utilizados no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 58 ;
+       fhir:index 63 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1679,7 +1749,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laudo que agrupa resultados laboratoriais emitidos para o acompanhamento do trabalhador rural no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 59 ;
+       fhir:index 64 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1693,7 +1763,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locais onde os defensivos agrícolas são armazenados na propriedade." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60 ;
+       fhir:index 65 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1707,7 +1777,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locais utilizados para o armazenamento dos equipamentos de proteção individual." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 61 ;
+       fhir:index 66 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Library" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Library/AgroSUSIntoxicacaoLogic> ;
+         fhir:Reference.reference [ fhir:value "Library/AgroSUSIntoxicacaoLogic" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).\nFundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas\nfontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.\nA lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos\ne independentes.\n\n1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de\n   organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame\n   (idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos.\n   Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.\n\n2) PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100.\n   Fonte: Nota Informativa 16/2019, Anexo I item 4.\n\n3) CLASSIFICAÇÃO DO RESULTADO:\n   - Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o\n     Índice Biológico Máximo Permitido — IBMP).\n   - Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% =\n     Alterado (excede o IBMP).\n   - PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção,\n     reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático.\n   Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.\n\n4) PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida\n   por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais,\n   independentes da rotina: exame admissional; retorno ao trabalho após afastamento > 30 dias;\n   mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações\n   em surto/bloqueio; retestagem após resultado alterado.\n   Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.\n\n5) CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30\n   dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador;\n   repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de\n   concluir pela exposição ocupacional.\n   Fonte: Nota Informativa 16/2019, Anexo III item 3.\n\n6) CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia,\n   desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento\n   colinesterase-inibidor não devem manusear organofosforados/carbamatos.\n   Fonte: Nota Informativa 16/2019, Anexo III item 2.2.\n\n7) GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):\n   - Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.\n   - Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS)\n     sem EPI adequado registrado (Seção 9) → ALERTA crítico.\n   - Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.\n   - Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de\n     atenção.\n   Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do\n   plano de acompanhamento (`AgroSUSPlanoAcompanhamento`). Suporte à decisão — não substitui o\n   julgamento clínico do profissional assistencial.\n\n8) REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro\n   individual por, no mínimo, 20 anos após o desligamento do trabalhador.\n   Fonte: NR-7 item 7.4.5.1.\n\nITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco\nocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os\ngatilhos acima sem validação clínica." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1721,7 +1805,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Meses do ano com maior intensidade de utilização de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 62 ;
+       fhir:index 68 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1735,7 +1819,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Motivos declarados para a não utilização dos equipamentos de proteção individual." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 63 ;
+       fhir:index 69 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1749,7 +1833,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Faixas para registro do número autorreferido de episódios anteriores de intoxicação aguda." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 64 ;
+       fhir:index 70 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1763,7 +1847,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ocupações CBO permitidas para profissionais assistenciais que utilizam o dashboard AgroSUS na Unidade Básica de Saúde." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 65 ;
+       fhir:index 71 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1777,7 +1861,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ocupações da Classificação Brasileira de Ocupações permitidas para o profissional que aplica a anamnese AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 66 ;
+       fhir:index 72 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1791,7 +1875,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil do pequeno produtor rural acompanhado pelo módulo AgroSUS no âmbito da Atenção Primária à Saúde." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67 ;
+       fhir:index 73 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1805,7 +1889,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Plano longitudinal definido pela equipe assistencial da UBS para acompanhamento clínico e ocupacional do trabalhador rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68 ;
+       fhir:index 74 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1819,7 +1903,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Principais atividades desenvolvidas na propriedade rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69 ;
+       fhir:index 75 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-prioridade-alerta> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-prioridade-alerta" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prioridade de Alerta AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Níveis de prioridade permitidos para os alertas da lógica de decisão do AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-prioridade-alerta" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prioridade de Alerta AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Níveis de prioridade clínica para os alertas gerados pela lógica de decisão do AgroSUS (colinesterase alterada, sintoma agudo, produto categoria 1/2 sem EPI, histórico de intoxicação)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1833,7 +1945,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70 ;
+       fhir:index 78 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Measure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureAlteradosComConduta> ;
+         fhir:Reference.reference [ fhir:value "Measure/AgroSUSMeasureAlteradosComConduta" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Proporção de resultados alterados de colinesterase com conduta registrada (AgroSUS)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Proporção de resultados de colinesterase acima do Índice Biológico Máximo Permitido (IBMP) com afastamento ou conduta clínica registrada, conforme a Nota Informativa nº 16/2019, Anexo III item 3." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1847,7 +1973,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro de autoria, criação, atualização e origem dos recursos clínicos e assistenciais do AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 71 ;
+       fhir:index 80 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1861,7 +1987,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72 ;
+       fhir:index 81 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1875,7 +2001,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contrato mínimo da API FHIR R4 do AgroSUS para o aplicativo do ACS, o dashboard da UBS e os sistemas laboratoriais." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73 ;
+       fhir:index 82 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1889,7 +2015,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pessoas ou organizações que realizam a aplicação dos defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74 ;
+       fhir:index 83 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1903,7 +2029,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil da resposta ao formulário de anamnese ocupacional e ambiental AgroSUS aplicado pelo Agente Comunitário de Saúde." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75 ;
+       fhir:index 84 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1917,7 +2043,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Respostas permitidas para cada indicador de boa prática agrícola." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 76 ;
+       fhir:index 85 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1931,7 +2057,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resultado individual de exame ou biomarcador laboratorial utilizado no acompanhamento do trabalhador rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77 ;
+       fhir:index 86 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1945,7 +2071,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Biomarcadores laboratoriais utilizados no acompanhamento assistencial dos trabalhadores rurais no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 78 ;
+       fhir:index 87 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1959,7 +2085,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sinais e sintomas investigados pelo formulário AgroSUS, sem significado diagnóstico isolado." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79 ;
+       fhir:index 88 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1973,7 +2099,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Situações de posse da propriedade rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80 ;
+       fhir:index 89 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1987,7 +2113,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Solicitação de exame laboratorial realizada por profissional assistencial da UBS para acompanhamento do trabalhador rural no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81 ;
+       fhir:index 90 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2001,7 +2127,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condição clínica registrada por profissional assistencial para representar suspeita, confirmação ou descarte de intoxicação por pesticidas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 82 ;
+       fhir:index 91 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2015,7 +2141,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temas que podem ser selecionados no registro de capacitação do trabalhador rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 83 ;
+       fhir:index 92 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2029,7 +2155,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 84 ;
+       fhir:index 93 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2043,7 +2169,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 85 ;
+       fhir:index 94 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2057,7 +2183,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 86 ;
+       fhir:index 95 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2071,7 +2197,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87 ;
+       fhir:index 96 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2085,7 +2211,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos de produção utilizados na propriedade rural." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88 ;
+       fhir:index 97 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2099,7 +2225,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modalidades permitidas para aplicação do formulário AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 89 ;
+       fhir:index 98 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2113,7 +2239,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modalidades de aplicação do formulário de anamnese ocupacional e ambiental do AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 90 ;
+       fhir:index 99 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2127,7 +2253,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle transacional e idempotente utilizado pelo aplicativo do ACS para sincronizar o paciente, a visita, a resposta da anamnese e sua proveniência em uma única operação atômica." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 91 ;
+       fhir:index 100 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2144,7 +2270,7 @@
          fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs>
        ]
      ], [
-       fhir:index 92 ;
+       fhir:index 101 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2158,7 +2284,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil da Unidade Básica de Saúde responsável pelo acompanhamento do trabalhador rural no AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 93 ;
+       fhir:index 102 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2172,7 +2298,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vias mais comuns de exposição aos defensivos agrícolas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 94 ;
+       fhir:index 103 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2186,7 +2312,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Visita ou atendimento em campo no qual o Agente Comunitário de Saúde aplica ou atualiza a anamnese AgroSUS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95 ;
+       fhir:index 104 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -2220,323 +2346,108 @@
            fhir:Extension.valueUrl [ fhir:value "index.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "changes.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 1 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "dependencies.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dependencies.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dependencies" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 2 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "references.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "references.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "References" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 3 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "adapting.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "adapting.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Adapting Guidelines for Country use" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 4 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "license.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "license.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "License" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ]
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Início" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "business-requirements.html" ]
+           fhir:Extension.valueUrl [ fhir:value "l2-interventions.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "business-requirements.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Requirements" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "concepts.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "concepts.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Concepts" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 1 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "personas.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "personas.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Generic Personas" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 2 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "scenarios.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "scenarios.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "User Scenarios" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 3 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "business-processes.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "business-processes.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Processes" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 4 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "dictionary.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dictionary.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Dictionary" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 5 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "decision-logic.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "decision-logic.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Decision-support logic" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 6 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "indicators.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "indicators.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Indicator and Performance Metrics" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 7 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "functional-requirements.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional-requirements.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Requirements" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 8 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "non-functional-requirements.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "non-functional-requirements.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Non-functional Requirements" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ]
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-interventions.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "1. Intervenções e Recomendações" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "data-models-and-exchange.html" ]
+           fhir:Extension.valueUrl [ fhir:value "l2-personas.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "data-models-and-exchange.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Models and Exchange" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "system-actors.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "system-actors.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "System Actors" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 1 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "sequence-diagrams.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "sequence-diagrams.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Sequence Diagrams" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 2 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "transactions.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "transactions.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Transactions" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 3 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "indicators-measures.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "indicators-measures.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Indicators and Measures" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 4 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "codings.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "codings.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Codings" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ]
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-personas.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "2. Personas Genéricas" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 3 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "deployment.html" ]
+           fhir:Extension.valueUrl [ fhir:value "l2-user-scenarios.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "deployment.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Deployment" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
-         fhir:ImplementationGuide.definition.page.page [
-           fhir:index 0 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "security-privacy.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security-privacy.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Privacy Considerations" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 1 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "testing.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testing.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Testing" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 2 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "test-data.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "test-data.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Test Data" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 3 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "reference-implementations.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "reference-implementations.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Reference Implementations" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 4 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "trust_domain.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "trust_domain.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Trust Domains" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ], [
-           fhir:index 5 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ]
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-user-scenarios.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "3. Cenários de Uso" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 4 ;
          fhir:Element.extension [
            fhir:index 0 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "indices.html" ]
+           fhir:Extension.valueUrl [ fhir:value "l2-business-process.html" ]
          ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "indices.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Indices" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
-         fhir:ImplementationGuide.definition.page.page [
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-business-process.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "4. Processos de Negócio e Workflows" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5 ;
+         fhir:Element.extension [
            fhir:index 0 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "artifacts.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "artifacts.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Artifact Index" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
-         ], [
-           fhir:index 1 ;
-           fhir:Element.extension [
-             fhir:index 0 ;
-             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "maps.html" ]
-           ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "maps.html" ] ;
-           fhir:ImplementationGuide.definition.page.title [ fhir:value "Mappings" ] ;
-           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-         ]
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "l2-data-dictionary.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-data-dictionary.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "5. Elementos de Dados (Dicionário)" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "l2-decision-logic.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-decision-logic.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "6. Lógica de Suporte à Decisão" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "l2-indicators.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-indicators.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "7. Indicadores de Programa" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "l2-requirements.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-requirements.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "8. Requisitos Funcionais e Não-Funcionais" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "l2-test-scenarios.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "l2-test-scenarios.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "9. Cenários de Teste" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 10 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ] ;
      fhir:ImplementationGuide.definition.parameter [

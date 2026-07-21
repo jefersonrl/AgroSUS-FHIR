@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library xmlns="http://hl7.org/fhir">
+  <id value="AgroSUSIntoxicacaoLogic"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        
+        <tr>
+            <th scope="row"><b>Title: </b></th>
+            <td style="padding-left: 4px;">Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)</td>
+        </tr>
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">AgroSUSIntoxicacaoLogic</td>
+        </tr>
+        
+
+        
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">0.1.0</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="Library-AgroSUSIntoxicacaoLogic.html">Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)</a></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Experimental: </b></th>
+            <td style="padding-left: 4px;">true</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html">http://terminology.hl7.org/CodeSystem/library-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>logic-library</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2026-07-21 13:39:22+0000</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher: </b></th>
+            <td style="padding-left: 4px;">Fatec Ferraz de Vasconcelos</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Description: </b></th>
+            <td style="padding-left: 4px;"><div><p>Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).
+Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas
+fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.
+A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos
+e independentes.</p>
+<ol>
+<li>
+<p>VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de
+organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame
+(idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos.
+Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.</p>
+</li>
+<li>
+<p>PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100.
+Fonte: Nota Informativa 16/2019, Anexo I item 4.</p>
+</li>
+<li>
+<p>CLASSIFICAÇÃO DO RESULTADO:</p>
+<ul>
+<li>Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o
+Índice Biológico Máximo Permitido — IBMP).</li>
+<li>Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% =
+Alterado (excede o IBMP).</li>
+<li>PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção,
+reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático.
+Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.</li>
+</ul>
+</li>
+<li>
+<p>PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida
+por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais,
+independentes da rotina: exame admissional; retorno ao trabalho após afastamento &gt; 30 dias;
+mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações
+em surto/bloqueio; retestagem após resultado alterado.
+Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.</p>
+</li>
+<li>
+<p>CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30
+dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador;
+repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de
+concluir pela exposição ocupacional.
+Fonte: Nota Informativa 16/2019, Anexo III item 3.</p>
+</li>
+<li>
+<p>CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia,
+desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento
+colinesterase-inibidor não devem manusear organofosforados/carbamatos.
+Fonte: Nota Informativa 16/2019, Anexo III item 2.2.</p>
+</li>
+<li>
+<p>GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):</p>
+<ul>
+<li>Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.</li>
+<li>Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS)
+sem EPI adequado registrado (Seção 9) → ALERTA crítico.</li>
+<li>Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.</li>
+<li>Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de
+atenção.
+Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do
+plano de acompanhamento (<code>AgroSUSPlanoAcompanhamento</code>). Suporte à decisão — não substitui o
+julgamento clínico do profissional assistencial.</li>
+</ul>
+</li>
+<li>
+<p>REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro
+individual por, no mínimo, 20 anos após o desligamento do trabalhador.
+Fonte: NR-7 item 7.4.5.1.</p>
+</li>
+</ol>
+<p>ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco
+ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os
+gatilhos acima sem validação clínica.</p>
+</div></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Jurisdiction: </b></th>
+            <td style="padding-left: 4px;">BR</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+    </table>
+</div>
+</div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/Library/AgroSUSIntoxicacaoLogic"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSIntoxicacaoLogic"/>
+  <title value="Lógica de decisão da vigilância de intoxicação por defensivos agrícolas (AgroSUS)"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+      <code value="logic-library"/>
+    </coding>
+  </type>
+  <date value="2026-07-21T13:39:22+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Regras de decisão do pathway AgroSUS (humano-legíveis; implementação em CQL prevista para fase L4).&#xA;Fundamentadas em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Não há, nessas&#xA;fontes, um escore composto de risco (diferente do IVCF-20 do pathway ATENTO 60+) — ver ADR-0002.&#xA;A lógica combina um indicador biológico objetivo (colinesterase) com gatilhos de alerta discretos&#xA;e independentes.&#xA;&#xA;1) VALOR BASAL DA COLINESTERASE: obtido no exame admissional, antes do início do manuseio de&#xA;   organofosforados/carbamatos. Se ausente, afastar o trabalhador por 30 dias e realizar o exame&#xA;   (idealmente 2 análises com 7–15 dias de intervalo). Repetir a obtenção a cada 2 anos.&#xA;   Fonte: NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I item 1 e 3.&#xA;&#xA;2) PERCENTUAL DE INIBIÇÃO: % inibição = (atividade basal − atividade obtida) / atividade basal × 100.&#xA;   Fonte: Nota Informativa 16/2019, Anexo I item 4.&#xA;&#xA;3) CLASSIFICAÇÃO DO RESULTADO:&#xA;   - Colinesterase PLASMÁTICA: até 50% de inibição = Normal; acima de 50% = Alterado (excede o&#xA;     Índice Biológico Máximo Permitido — IBMP).&#xA;   - Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: até 25% de inibição = Normal; acima de 25% =&#xA;     Alterado (excede o IBMP).&#xA;   - PRECAUÇÃO: redução de 20% ou no mínimo 30% (mesmo sem atingir o IBMP) → alerta de atenção,&#xA;     reforçar práticas de proteção (EPI/técnica de aplicação), sem afastamento automático.&#xA;   Fonte: NR-7 Quadro I; Nota Informativa 16/2019, Anexo I item 4 e Quadro 1.&#xA;&#xA;4) PERIODICIDADE DO MONITORAMENTO BIOLÓGICO: no mínimo SEMESTRAL em rotina (podendo ser reduzida&#xA;   por critério do médico coordenador do PCMSO ou negociação coletiva). Gatilhos adicionais,&#xA;   independentes da rotina: exame admissional; retorno ao trabalho após afastamento &gt; 30 dias;&#xA;   mudança de função; sintomático (a qualquer tempo, mediante solicitação médica); após aplicações&#xA;   em surto/bloqueio; retestagem após resultado alterado.&#xA;   Fonte: NR-7 itens 7.4.2.1 e 7.4.3.3; Nota Informativa 16/2019, Anexo III item 1.1.&#xA;&#xA;5) CONDUTA FRENTE A RESULTADO ALTERADO: afastar o trabalhador do contato com o agrotóxico por 30&#xA;   dias; encaminhar para avaliação clínica e laboratorial no serviço de saúde do trabalhador;&#xA;   repetir o exame após 30 dias; investigar outras causas de depressão enzimática antes de&#xA;   concluir pela exposição ocupacional.&#xA;   Fonte: Nota Informativa 16/2019, Anexo III item 3.&#xA;&#xA;6) CONTRAINDICAÇÃO AO MANUSEIO: trabalhadores com hepatopatia, cardiopatia, pneumopatia,&#xA;   desnutrição, gestação, lactação, câncer, imunossupressão, neuropatia, ou uso de medicamento&#xA;   colinesterase-inibidor não devem manusear organofosforados/carbamatos.&#xA;   Fonte: Nota Informativa 16/2019, Anexo III item 2.2.&#xA;&#xA;7) GATILHOS DE ALERTA INDEPENDENTES (não pontuados, não compõem escore):&#xA;   - Sintoma agudo compatível com intoxicação (Seção 13 da anamnese) → ALERTA crítico.&#xA;   - Manuseio de defensivo de categoria toxicológica 1 ou 2 (AgroSUSClassificacaoToxicologicaVS)&#xA;     sem EPI adequado registrado (Seção 9) → ALERTA crítico.&#xA;   - Histórico de intoxicação aguda prévia (Seção 14) → ALERTA de acompanhamento prioritário.&#xA;   - Colinesterase alterada (regra 3) → ALERTA crítico; colinesterase em precaução → ALERTA de&#xA;     atenção.&#xA;   Conduta comum a qualquer ALERTA: priorizar avaliação clínica na UBS e considerar antecipação do&#xA;   plano de acompanhamento (`AgroSUSPlanoAcompanhamento`). Suporte à decisão — não substitui o&#xA;   julgamento clínico do profissional assistencial.&#xA;&#xA;8) REGISTRO: eventos de exame, afastamento e conduta devem ser mantidos no prontuário/registro&#xA;   individual por, no mínimo, 20 anos após o desligamento do trabalhador.&#xA;   Fonte: NR-7 item 7.4.5.1.&#xA;&#xA;ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore composto de risco&#xA;ocupacional (diferente do IVCF-20). Ver ADR-0002 — não inferir pesos ou combinação entre os&#xA;gatilhos acima sem validação clínica."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+</Library>

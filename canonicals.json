@@ -97,6 +97,13 @@
   "name" : "AgroSUSHistoricoIntoxicacaoCS"
 },
 {
+  "id" : "agrosus-prioridade-alerta",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-prioridade-alerta",
+  "version" : "0.1.0",
+  "name" : "AgroSUSPrioridadeAlertaCS"
+},
+{
   "id" : "agrosus-propriedade",
   "type" : "CodeSystem",
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
@@ -123,6 +130,55 @@
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus",
   "version" : "0.1.0",
   "name" : "AgroSUSFHIR"
+},
+{
+  "id" : "AgroSUSIntoxicacaoLogic",
+  "type" : "Library",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Library/AgroSUSIntoxicacaoLogic",
+  "version" : "0.1.0",
+  "name" : "AgroSUSIntoxicacaoLogic"
+},
+{
+  "id" : "AgroSUSMeasureAdesaoPeriodicidade",
+  "type" : "Measure",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureAdesaoPeriodicidade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMeasureAdesaoPeriodicidade"
+},
+{
+  "id" : "AgroSUSMeasureAlteradosComConduta",
+  "type" : "Measure",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureAlteradosComConduta",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMeasureAlteradosComConduta"
+},
+{
+  "id" : "AgroSUSMeasureCoberturaAnamnese",
+  "type" : "Measure",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaAnamnese",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMeasureCoberturaAnamnese"
+},
+{
+  "id" : "AgroSUSMeasureCoberturaBasal",
+  "type" : "Measure",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaBasal",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMeasureCoberturaBasal"
+},
+{
+  "id" : "AgroSUSMeasureCoberturaEPI",
+  "type" : "Measure",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Measure/AgroSUSMeasureCoberturaEPI",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMeasureCoberturaEPI"
+},
+{
+  "id" : "AgroSUSEstratificacaoRisco",
+  "type" : "PlanDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/PlanDefinition/AgroSUSEstratificacaoRisco",
+  "version" : "0.1.0",
+  "name" : "AgroSUSEstratificacaoRisco"
 },
 {
   "id" : "agrosus-anamnese",
@@ -431,6 +487,13 @@
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-profissional-ubs",
   "version" : "0.1.0",
   "name" : "AgroSUSOcupacaoProfissionalUBSVS"
+},
+{
+  "id" : "agrosus-prioridade-alerta",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-prioridade-alerta",
+  "version" : "0.1.0",
+  "name" : "AgroSUSPrioridadeAlertaVS"
 },
 {
   "id" : "agrosus-responsavel-aplicacao",

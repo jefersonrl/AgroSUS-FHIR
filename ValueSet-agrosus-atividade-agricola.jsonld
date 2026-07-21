@@ -11,7 +11,7 @@
   },
   "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-atividade-agricola.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-21T13:07:12.116276Z",
+  "generatedAt": "2026-07-21T13:42:17.514776Z",
   "@graph": [
     {
       "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-atividade-agricola.jsonld#posse-proprietario",
