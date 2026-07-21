@@ -98,7 +98,5 @@ Description: "Plano longitudinal definido pela equipe assistencial da UBS para a
 * activity.detail.description MS
 * activity.detail.description ^short = "Descrição da avaliação que deverá ser realizada"
 
-* activity.detail.note MS
-
 * note MS
 * note ^short = "Justificativa da periodicidade e orientações adicionais"

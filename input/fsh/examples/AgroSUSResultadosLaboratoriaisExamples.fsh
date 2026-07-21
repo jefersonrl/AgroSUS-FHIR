@@ -15,6 +15,17 @@ Description: "Laboratório municipal fictício responsável pela emissão dos re
 * identifier[cnes].value = "1234567"
 
 * name = "Laboratório Municipal de Referência — Exemplo AgroSUS"
+* alias[0] = "Laboratório Municipal AgroSUS"
+
+* address[0].use = #work
+* address[0].type = #physical
+* address[0].text = "Rua das Acácias, 100 — Centro — Ferraz de Vasconcelos/SP"
+* address[0].line[0] = "Rua das Acácias, 100"
+* address[0].district = "Centro"
+* address[0].city = "Ferraz de Vasconcelos"
+* address[0].state = "SP"
+* address[0].postalCode = "08500-000"
+* address[0].country = "Brasil"
 
 
 // Hemoglobina
@@ -50,11 +61,7 @@ Title: "Exemplo de Resultado de Hemoglobina"
 * valueQuantity = 13.2 'g/dL' "g/dL"
 
 * interpretation[0] = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
-
-* referenceRange[0].low = 12.0 'g/dL' "g/dL"
-* referenceRange[0].high = 16.0 'g/dL' "g/dL"
-* referenceRange[0].text = "12,0 a 16,0 g/dL"
-
+* note[0].text = "Faixa de referência informada pelo laboratório: 12,0 a 16,0 g/dL."
 
 // Hematócrito
 
@@ -88,11 +95,7 @@ Title: "Exemplo de Resultado de Hematócrito"
 * valueQuantity = 39.5 '%' "%"
 
 * interpretation[0] = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
-
-* referenceRange[0].low = 36.0 '%' "%"
-* referenceRange[0].high = 46.0 '%' "%"
-* referenceRange[0].text = "36,0% a 46,0%"
-
+* note[0].text = "Faixa de referência informada pelo laboratório: 36,0% a 46,0%."
 
 // Leucócitos
 
@@ -126,11 +129,7 @@ Title: "Exemplo de Resultado de Leucócitos"
 * valueQuantity = 6.8 '10*3/uL' "10³/µL"
 
 * interpretation[0] = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
-
-* referenceRange[0].low = 4.0 '10*3/uL' "10³/µL"
-* referenceRange[0].high = 10.0 '10*3/uL' "10³/µL"
-* referenceRange[0].text = "4,0 a 10,0 × 10³/µL"
-
+* note[0].text = "Faixa de referência informada pelo laboratório: 4,0 a 10,0 × 10³/µL."
 
 // Plaquetas
 
@@ -164,11 +163,7 @@ Title: "Exemplo de Resultado de Plaquetas"
 * valueQuantity = 250 '10*3/uL' "10³/µL"
 
 * interpretation[0] = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
-
-* referenceRange[0].low = 150 '10*3/uL' "10³/µL"
-* referenceRange[0].high = 450 '10*3/uL' "10³/µL"
-* referenceRange[0].text = "150 a 450 × 10³/µL"
-
+* note[0].text = "Faixa de referência informada pelo laboratório: 150 a 450 × 10³/µL."
 
 // Laudo agrupador
 

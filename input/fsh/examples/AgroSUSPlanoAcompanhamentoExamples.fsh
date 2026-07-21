@@ -41,6 +41,7 @@ Description: "Atendimento fictício para avaliação dos resultados laboratoriai
 
 * diagnosis[0].condition = Reference(agrosus-intoxicacao-pesticida-suspeita-exemplo)
 * diagnosis[0].condition.display = "Suspeita de intoxicação por pesticida em investigação"
+* diagnosis[0].use = http://terminology.hl7.org/CodeSystem/diagnosis-role#AD "Admission diagnosis"
 
 * serviceProvider = Reference(agrosus-ubs-exemplo)
 * serviceProvider.display = "UBS Jardim Esperança — Exemplo AgroSUS"
@@ -121,7 +122,7 @@ Description: "Plano fictício para acompanhamento longitudinal de trabalhadora r
 
 * activity.detail.description = "Realizar reavaliação clínica e ocupacional em até doze meses, repetir a anamnese AgroSUS e avaliar individualmente a necessidade de novos exames."
 
-* activity.detail.note[0].text = "Antecipar o atendimento se houver surgimento ou agravamento de sintomas, nova exposição relevante ou alteração laboratorial."
+* activity.progress[0].text = "Antecipar o atendimento se houver surgimento ou agravamento de sintomas, nova exposição relevante ou alteração laboratorial."
 
 * note[0].text = "O intervalo anual deste exemplo foi definido pelo médico responsável com base na exposição ocupacional e na NR-7. A aplicação utiliza a NR-7 como referência assistencial; a periodicidade deve ser individualizada e não calculada automaticamente."
 

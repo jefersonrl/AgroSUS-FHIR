@@ -18,33 +18,26 @@ publisher:
   # email: test@example.org
 
 dependencies:
-#  hl7.fhir.core:
-#    id: r4b
-#    version: 4.6.0
-#    reason: |
-#      This IG leverages subscription constructs pre-adopted from R4B.  Importing this IG makes the relevant terminologies available.
-  # NOTE: These dependencies are required because SUSHI doesn't load transitive dependencies
-  # See the zulip thread here: https://chat.fhir.org/#narrow/stream/215610-shorthand/search/transitive
+  # Dependências HL7/SMART
   hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions.r4: 5.1.0
+  hl7.terminology.r4: 7.1.0
+  hl7.fhir.uv.extensions.r4: 5.3.0
+  hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.uv.cql: 1.0.0
   hl7.fhir.uv.crmi: 1.0.0
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.cpg: 2.0.0
   hl7.fhir.us.cqfmeasures: 5.0.0
-  # Actual dependencies
+
   smart.who.int.base:
     id: sb
     version: 0.1.0
     reason: This IG uses SMART base computable guideline capabilities
-  # smart.who.int.base-clinical:
-  #   id: sbc
-  #   version: current
-  #   reason: This IG uses SMART base clinical capabilities
-  br.gov.saude.br-core.fhir: 1.0.0
 
-  hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions.r4: 5.1.0
+  # Dependências brasileiras
+  br.gov.saude.br-core.fhir: 1.0.0
+  br.gov.saude.terminologia.fhir: 1.0.0
+  br.gov.saude.ips.fhir: 1.0.0
 
 meta:
   profile:
