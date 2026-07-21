@@ -1,7 +1,7 @@
 id: io.github.jefersonrl.agrosus
 canonical: https://jefersonrl.github.io/AgroSUS-FHIR
 name: AgroSUSFHIR
-title: Módulo AgroSUS — Projeto mareIA
+title: Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas
 description: Guia de Implementação HL7 FHIR do módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas.
 status: draft # draft | active | retired | unknown
 experimental: true
