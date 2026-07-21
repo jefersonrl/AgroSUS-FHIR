@@ -1,0 +1,102 @@
+FONTE L1 — AgroSUS-FHIR
+Extrato normalizado das normas usadas como fonte-verdade clínica da lógica de decisão
+(ver docs/adr/0001-fonte-clinica-nr7-nr31.md). Trechos citados literalmente ou resumidos das
+fontes oficiais; não substituem a consulta aos textos originais linkados abaixo.
+
+============================================================
+1. NR-7 — Programa de Controle Médico de Saúde Ocupacional (PCMSO)
+Ministério do Trabalho e Emprego, Portaria SSST/MTb nº 24/1994, atualizações posteriores.
+Fonte oficial: https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf
+============================================================
+
+Item 7.4 — Monitoramento biológico da exposição ocupacional (Quadro I da NR-7).
+
+Item 7.4.1 — Exame admissional deve incluir a determinação do valor basal (pré-ocupacional) da
+colinesterase para trabalhadores que venham a manusear organofosforados e/ou carbamatos.
+
+Item 7.4.2.1 — A periodicidade de realização dos exames de colinesterase (plasmática e/ou de
+sangue total/eritrocitária) deve ser, no mínimo, SEMESTRAL, podendo ser reduzida a critério do
+médico coordenador do PCMSO, por notificação do médico-inspetor do trabalho, ou por negociação
+coletiva.
+
+Item 7.4.3.3 — Exame de retorno ao trabalho obrigatório quando o afastamento (por doença, acidente
+ou parto, ocupacional ou não) for superior a 30 dias.
+
+Item 7.4.5.1 — Os registros dos exames no prontuário clínico individual do PCMSO devem ser
+mantidos por, no mínimo, 20 anos após o desligamento do trabalhador.
+
+Quadro I da NR-7 — Parâmetros para controle biológico da exposição a organofosforados/carbamatos
+(conforme interpretado pela Nota Informativa nº 16/2019, ver seção 3 abaixo):
+- Indicador biológico: colinesterase plasmática e/ou colinesterase de sangue total (eritrocitária).
+- Valor de referência: atividade pré-ocupacional (valor basal individual).
+- Índice Biológico Máximo Permitido (IBMP): 50% de depressão da atividade inicial para
+  colinesterase plasmática; 25% de depressão da atividade inicial para colinesterase de sangue
+  total.
+
+============================================================
+2. NR-31 — Segurança e Saúde no Trabalho na Agricultura, Pecuária, Silvicultura, Exploração
+   Florestal e Aquicultura
+Ministério do Trabalho e Emprego.
+Fonte oficial: https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-31-atualizada-2024-1.pdf
+============================================================
+
+- Exige Programa de Controle Médico de Saúde Ocupacional (PCMSO) aplicado aos trabalhadores
+  rurais, com exames médicos periódicos — anuais, salvo se acordo/convenção coletiva ou critério
+  médico estabelecerem periodicidade menor (o que ocorre no caso da colinesterase, regida pela
+  periodicidade semestral da NR-7 item 7.4.2.1).
+- Item 31.8 (Dos Agrotóxicos, Adjuvantes e Produtos Afins): exige capacitação do trabalhador,
+  fornecimento e uso de Equipamento de Proteção Individual (EPI) adequado ao produto manuseado,
+  armazenamento seguro dos produtos e destinação correta de embalagens vazias — todos esses
+  elementos já são capturados nas Seções 4, 6, 9, 10 e 11 do questionário `agrosus-anamnese`.
+- Determina que o empregador monitore regularmente a saúde dos trabalhadores expostos a agentes
+  químicos, garantindo os exames necessários à preservação da saúde.
+
+============================================================
+3. Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS — Ministério da Saúde
+"Parâmetros para monitoramento da colinesterase nos agentes de saúde que utilizam inseticidas
+organofosforados e carbamatos nas atividades de controle vetorial."
+Fonte oficial: https://www.funed.mg.gov.br/wp-content/uploads/2020/10/NOTA-INFORMATIVA-16-2019-PARAMETROS-MONITORAMENTO-COLINESTERASE.pdf
+============================================================
+
+Esta nota interpreta e operacionaliza o Quadro I da NR-7 (item 2 do documento: "A obrigatoriedade
+da elaboração e implementação do PCMSO, que inclui a realização dos exames de colinesterase... é
+estabelecida pela NR-7"). Embora escrita para Agentes de Controle de Endemias, os parâmetros
+numéricos são a interpretação oficial mais precisa e publicamente citável do Quadro I da NR-7 e
+são adotados aqui, por analogia direta, para trabalhadores rurais expostos a organofosforados e
+carbamatos (mesma classe de agente químico, mesmo indicador biológico, mesma norma-fonte).
+
+Valor basal (Anexo I item 1): valor do exame de colinesterase obtido na admissão, antes do início
+das atividades com organofosforados/carbamatos; é o valor de referência individual ("pré-
+exposição"). Se não obtido na admissão: afastar o trabalhador da atividade por 30 dias antes do
+exame; idealmente realizar 2 análises com intervalo de 7–15 dias (se diferença > 15%, realizar
+uma terceira); repetir a obtenção do valor basal a cada 2 anos.
+
+Fórmula do percentual de inibição (Anexo I item 4):
+  % de inibição = [(atividade basal − atividade obtida) / atividade basal] × 100
+
+Classificação (Anexo I item 4, Quadro 1, e Anexo III item 3):
+- Colinesterase PLASMÁTICA: inibição ATÉ 50% = dentro do limite aceitável ("valores normais");
+  inibição MAIOR QUE 50% = alterado (excede o Índice Biológico Máximo Permitido).
+- Colinesterase de SANGUE TOTAL/ERITROCITÁRIA: inibição ATÉ 25% = dentro do limite aceitável;
+  inibição MAIOR QUE 25% = alterado.
+- Recomendação adicional de precaução (Anexo I, observação final): mesmo sem atingir os critérios
+  formais da NR-7, uma redução de 20% ou no mínimo 30% já justifica checar/reforçar as práticas de
+  proteção recomendadas para risco químico (EPI, técnica de aplicação).
+
+Condutas frente ao resultado (Anexo III item 3):
+- Resultado dentro do limite aceitável: manter rotina de trabalho; repetir o exame conforme a
+  periodicidade semestral (NR-7 item 7.4.2.1).
+- Resultado alterado (exposição excessiva): redirecionar/afastar o trabalhador do contato com o
+  agrotóxico por 30 dias; encaminhar para avaliação clínica e laboratorial pelo serviço de saúde
+  do trabalhador; repetir o exame após 30 dias; investigar outras causas de depressão enzimática
+  (hepatopatia, uso de medicamentos, etc.) antes de concluir pela exposição ocupacional.
+
+Contraindicação ao manuseio (Anexo III item 2.2): trabalhadores com problemas hepáticos,
+cardiológicos ou respiratórios, desnutridos, gestantes, lactantes, portadores de câncer,
+imunodeprimidos, neuropatas, ou em uso de medicamentos que possam inibir significativamente a
+colinesterase não devem realizar atividades com organofosforados/carbamatos.
+
+Gatilhos adicionais de reteste (Anexo III item 1.1, independem da rotina semestral): exame
+admissional; após episódios de maior exposição (aplicações em surto/bloqueio); sempre que houver
+sintomatologia (mediante solicitação médica, a qualquer tempo); exame de retorno ao trabalho após
+afastamento > 30 dias; exame de mudança de função; retestagem após resultado alterado.

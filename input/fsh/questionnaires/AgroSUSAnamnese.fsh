@@ -5,13 +5,13 @@ Title: "Formulário de Anamnese AgroSUS"
 Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."
 
 * url = "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese"
-* version = "0.18.0"
+* version = "0.19.0"
 * name = "AgroSUSAnamnese"
 * title = "Formulário de Anamnese Ocupacional e Ambiental AgroSUS"
 * status = #draft
 * language = #pt-BR
 * experimental = true
-* date = "2026-07-20"
+* date = "2026-07-21"
 * publisher = "Fatec Ferraz de Vasconcelos"
 * subjectType[0] = #Patient
 * purpose = "Apoiar o registro e o acompanhamento de trabalhadores rurais expostos a defensivos agrícolas na Atenção Primária à Saúde."
@@ -1305,29 +1305,69 @@ Description: "Formulário de anamnese ocupacional e ambiental aplicado pelo Agen
 * item[14].item[14].required = true
 * item[14].item[14].answerValueSet = Canonical(AgroSUSAvaliacaoBoasPraticasVS)
 
-// Seção 16 do instrumento adiada até validação do algoritmo clínico.
+// Seção 16 — Vigilância de sinais de alerta (reativada; ver Library/AgroSUSIntoxicacaoLogic,
+// PlanDefinition/AgroSUSEstratificacaoRisco, ADR-0001 e ADR-0002). Gatilhos discretos e
+// independentes, fundamentados em NR-7/NR-31 e na Nota Informativa nº 16/2019-CGLAB/MS — NÃO há
+// escore composto de risco validado (ADR-0002); o ACS registra o que observa em campo, e a
+// avaliação clínica é feita pela equipe da UBS.
+
+* item[15].linkId = "vigilancia-sinais-alerta"
+* item[15].text = "16. Vigilância de sinais de alerta"
+* item[15].type = #group
+
+* item[15].item[0].linkId = "vigilancia-nota-metodologica"
+* item[15].item[0].text = "Os itens abaixo são gatilhos independentes de atenção clínica, com base em NR-7, NR-31 e na Nota Informativa nº 16/2019-CGLAB/MS. Não representam um escore ou pontuação combinada — qualquer gatilho presente deve motivar avaliação prioritária pela equipe da UBS."
+* item[15].item[0].type = #display
+
+* item[15].item[1].linkId = "vigilancia-sintoma-agudo-observado"
+* item[15].item[1].text = "O trabalhador apresenta, no momento da visita, algum sinal ou sintoma agudo compatível com intoxicação por defensivos (ver Seção 13)?"
+* item[15].item[1].type = #boolean
+* item[15].item[1].required = true
+
+* item[15].item[2].linkId = "vigilancia-produto-categoria-1-2-sem-epi"
+* item[15].item[2].text = "O trabalhador manuseia defensivo de categoria toxicológica 1 ou 2 sem uso adequado de EPI (ver Seções 6 e 9)?"
+* item[15].item[2].type = #boolean
+* item[15].item[2].required = true
+
+* item[15].item[3].linkId = "vigilancia-historico-intoxicacao-previa"
+* item[15].item[3].text = "Há histórico de intoxicação aguda prévia autorreferido (ver Seção 14)?"
+* item[15].item[3].type = #boolean
+* item[15].item[3].required = true
+
+* item[15].item[4].linkId = "vigilancia-colinesterase-alterada-precaucao"
+* item[15].item[4].text = "Há resultado de colinesterase alterado ou em faixa de precaução no acompanhamento laboratorial mais recente, quando disponível (ver Library AgroSUSIntoxicacaoLogic)?"
+* item[15].item[4].type = #boolean
+
+* item[15].item[5].linkId = "vigilancia-encaminhamento-recomendado"
+* item[15].item[5].text = "Diante dos gatilhos acima, o ACS recomenda encaminhamento prioritário para avaliação na UBS?"
+* item[15].item[5].type = #boolean
+* item[15].item[5].required = true
+
+* item[15].item[6].linkId = "vigilancia-observacoes"
+* item[15].item[6].text = "Observações adicionais sobre os gatilhos identificados"
+* item[15].item[6].type = #text
 
 // Seção 17 — Observações do Agente Comunitário de Saúde
 
-* item[15].linkId = "observacoes-acs"
-* item[15].text = "17. Observações do Agente Comunitário de Saúde"
-* item[15].type = #group
+* item[16].linkId = "observacoes-acs"
+* item[16].text = "17. Observações do Agente Comunitário de Saúde"
+* item[16].type = #group
 
-* item[15].item[0].linkId = "observacoes-adicionais-acs"
-* item[15].item[0].text = "Registre condições do domicílio, contexto ambiental observado em campo, comportamento durante a entrevista, dificuldades na aplicação do instrumento ou outras informações relevantes para o acompanhamento."
-* item[15].item[0].type = #text
+* item[16].item[0].linkId = "observacoes-adicionais-acs"
+* item[16].item[0].text = "Registre condições do domicílio, contexto ambiental observado em campo, comportamento durante a entrevista, dificuldades na aplicação do instrumento ou outras informações relevantes para o acompanhamento."
+* item[16].item[0].type = #text
 
 // Seção 18 — Encerramento assistencial
 
-* item[16].linkId = "encerramento-assistencial"
-* item[16].text = "18. Encerramento"
-* item[16].type = #group
+* item[17].linkId = "encerramento-assistencial"
+* item[17].text = "18. Encerramento"
+* item[17].type = #group
 
-* item[16].item[0].linkId = "orientacao-encerramento"
-* item[16].item[0].text = "Antes de concluir, confira as respostas registradas com o trabalhador ou responsável."
-* item[16].item[0].type = #display
+* item[17].item[0].linkId = "orientacao-encerramento"
+* item[17].item[0].text = "Antes de concluir, confira as respostas registradas com o trabalhador ou responsável."
+* item[17].item[0].type = #display
 
-* item[16].item[1].linkId = "respostas-conferidas-participante"
-* item[16].item[1].text = "As informações registradas foram conferidas com o trabalhador ou responsável?"
-* item[16].item[1].type = #boolean
-* item[16].item[1].required = true
+* item[17].item[1].linkId = "respostas-conferidas-participante"
+* item[17].item[1].text = "As informações registradas foram conferidas com o trabalhador ou responsável?"
+* item[17].item[1].type = #boolean
+* item[17].item[1].required = true

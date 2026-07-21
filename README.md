@@ -1,26 +1,65 @@
-<!--badges-->
-[![License: CC BY-IGO 3.0](https://licensebuttons.net/l/by-nc/3.0/igo/80x15.png)](https://creativecommons.org/licenses/by/3.0/igo)
-![CI Build](https://img.shields.io/github/actions/workflow/status/WorldHealthOrganization/smart-ig-empty/ghbuild.yml)  
-   
-![QA errors](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.errs&logoColor=red&label=QA%20errors&color=yellow)
-![QA warnings](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.warnings&logoColor=orange&label=QA%20warnings&color=yellow)
-![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
-<!--/badges-->
+# AgroSUS · Plataforma mareIA — Implementation Guide (FHIR R4)
 
-# WHO SMART GUIDELINES - EMPTY IG
+Implementation Guide (FHIR R4) do pathway **AgroSUS** da Plataforma mareIA — telemonitoramento e
+apoio à identificação precoce de intoxicação por defensivos agrícolas em trabalhadores rurais, na
+Atenção Primária à Saúde (SUS).
 
-This is an empty framework, to be used to create SMART Implementation Guides.
+CI Build:
+* http://build.fhir.org/ig/jefersonrl/AgroSUS-FHIR
+* https://jefersonrl.github.io/AgroSUS-FHIR
 
-CI Build: 
-* http://build.fhir.org/ig/{owner}/{repo}
-* http://{owner}.github.io/{repo}
+> Cada linha de cuidado (pathway) da Plataforma mareIA é publicada como um IG independente. Este
+> repositório segue a disciplina do template
+> [`mareIA-ig`](https://github.com/italomacedo/mareIA-ig) (pathway ATENTO 60+), adaptada para
+> preservar a modelagem já existente do AgroSUS — ver `docs/adr/0003-relacao-template-mareia-ig.md`.
 
+## Camadas SMART Guidelines
 
-Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.html#github-setup)
+| Camada | O que é | Onde está |
+| --- | --- | --- |
+| **L1** | Fonte-verdade clínica: NR-7 (PCMSO), NR-31 (segurança e saúde no trabalho rural) e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS | `sources/` |
+| **L2** | DAK estruturado (tabelas de decisão e indicadores) | `l2/` (fonte) + `input/pagecontent/*.md` (narrativa do IG) |
+| **L3** | Artefatos FHIR (FSH): 19 perfis, 17 CodeSystems, 9 ValueSets, questionário de anamnese, CapabilityStatement, Library, PlanDefinition, Measures | `input/fsh/**` → compilado para `fsh-generated/` |
 
+## Estrutura
 
-## Changes and feedback
+```
+sources/           → L1: normas regulamentadoras (fonte-verdade clínica)
+l2/                → L2: DAK estruturado (CSV de lógica de decisão e indicadores)
+input/fsh/         → L3: FHIR Shorthand (profiles, valuesets, questionnaires, libraries,
+                     plandefinitions, measures, capabilities, examples)
+input/pagecontent/ → narrativa do IG publicado
+docs/              → disciplina de desenvolvimento: PRD, ADRs, cookbooks, Hard-Earned Lessons
+```
 
-Feedback and issues about this empty framework can be submitted via the [issues](issues) page, and will be incorporated into subsequent releases.
+## Documentação de decisões
 
- 
+Decisões não triviais (fonte clínica, limiares, relação com o template) viram **ADR**
+(`docs/adr/`); armadilhas de build viram **Hard-Earned Lessons** (`docs/hard-earned-lessons.md`).
+Ver `CLAUDE.md` para as convenções completas do repositório.
+
+## Build
+
+```bash
+# 1. Validar sintaxe do sushi-config.yaml (rápido, sem rede)
+python3 -c "import yaml; yaml.safe_load(open('sushi-config.yaml')); print('OK')"
+
+# 2. Compilar FSH → recursos FHIR JSON
+sushi .
+
+# 3. Gerar o site do IG (requer Java 11+; baixa o IG Publisher na 1ª vez)
+./_genonce.sh      # Linux/macOS
+_genonce.bat       # Windows
+```
+
+Ver `docs/cookbooks/build-ig.md` para o passo a passo completo.
+
+## Status
+
+`draft` v0.1.0 — em desenvolvimento. Itens pendentes de validação clínica em `docs/adr/`
+(destaque: `0002-escore-risco-nao-definido.md` — não há, em NR-7/NR-31, um escore composto de
+risco ocupacional validado).
+
+## Licença
+
+CC-BY-SA-3.0-IGO. Ver `LICENSE.md`.
