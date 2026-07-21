@@ -54,7 +54,7 @@ Proporção de trabalhadores que manuseiam defensivos de categoria toxicológica
   "title" : "Cobertura de uso adequado de EPI (AgroSUS)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-21T16:19:05+00:00",
+  "date" : "2026-07-21T16:38:11+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

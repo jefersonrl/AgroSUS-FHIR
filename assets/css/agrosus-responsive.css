@@ -29,9 +29,12 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  /* Apenas limita a largura maxima; NAO forcar height:auto aqui — isso sobrescreveria o
+     atributo HTML height="16" da bandeira de jurisdicao (assets/images/bra.svg) no cabecalho,
+     que nao tem largura propria, inflando-a para 100% da tela e cobrindo o menu. Imagens de
+     conteudo (como o diagrama de caso de uso) ja definem seu proprio max-width/height inline. */
   img, svg {
     max-width: 100%;
-    height: auto;
   }
 
   .container,
