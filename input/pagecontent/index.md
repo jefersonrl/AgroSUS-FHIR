@@ -1,51 +1,56 @@
-<!-- please keep only this for L2 DAK -->
-{% include index-dak.md %}
-
 <div>
-<p> This implementation guide and set of artifacts are still undergoing development. </p>
-<p> Content is for demonstration purposes only. </p>
+<p> Este Implementation Guide e seus artefatos estão em desenvolvimento (<code>draft</code>). </p>
+<p> Conteúdo para fins de demonstração e implementação piloto. </p>
 </div>{:.stu-note}
 
+### Projeto mareIA — AgroSUS
 
-### Summary 
-This implementation guide includes a machine-readable representation of WHO guidelines for <mark>[insert health domain here]</mark>, as documented in the WHO Digital Adaptation Kit for <mark>[insert health domain here]</mark> (link forthcoming) and explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of <mark>[insert health domain here]</mark> use cases by WHO Member States.
+Adaptação digital (WHO SMART Guidelines **L2/L3**) para o pathway **AgroSUS** da Plataforma
+mareIA — telemonitoramento e apoio à identificação precoce de **intoxicação por defensivos
+agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigilância biológica pela
+**colinesterase sanguínea** (NR-7) e boas práticas de segurança no trabalho rural (NR-31).
 
-The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology based on the WHO <mark>[insert health domain here]</mark> Digital Adaptation Kit (link forthcoming). 
+> Este IG cobre **apenas o pathway AgroSUS**. No SMART Guidelines, cada linha de cuidado da
+> Plataforma mareIA é um IG independente — ver `docs/adr/0003-relacao-template-mareia-ig.md`.
 
-Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
+#### Fluxo de cuidado (4 macrofases)
 
-### About this implementation guide
+`Cadastro → Triagem ocupacional (anamnese) → Resposta clínica e vigilância biológica → Acompanhamento longitudinal`
 
-This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
-- <a href="index.html">Home</a> - contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.
-- <a href="business-requirements.html">Business Requirements</a> - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.      
-- <a href="data-models-and-exchange.html">Data Models and Exchange</a> - contains the data models and data exchange protocols with actors and transactions defined.
-- <a href="deployment.html">Deployment Guidance </a> - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.
+1. **Cadastro** — identificação do trabalhador rural pelo ACS, cadastro do trabalhador e da
+   propriedade rural.
+2. **Triagem ocupacional** — aplicação da anamnese ocupacional/ambiental (18 seções) em visita
+   domiciliar, sincronizada de forma atômica e offline-first.
+3. **Resposta clínica e vigilância biológica** — avaliação na UBS, monitoramento da colinesterase
+   (periodicidade semestral mínima, NR-7), registro da condição clínica quando aplicável.
+4. **Acompanhamento longitudinal** — plano de acompanhamento com periodicidade de reavaliação,
+   proveniência e auditoria de todos os registros.
 
-This guide is prepared to facilitate digital implementation of WHO <mark>[insert health domain here]</mark> guidelines by providing FHIR-based computable representations of and implementation guidance for using the key components of the WHO <mark>[insert health domain here]</mark> digital adaptation kit (DAK):
+#### Componentes do DAK (L2)
 
-* Health Interventions & Recommendations
-* Generic Personas
-* User Scenarios
-* Business Processes & Workflows
-* Core Data Elements
-* Decision Support Logic
-* Indicators & Monitoring
-* Functional & Non-functional Requirements
+| # | Componente | Página |
+| --- | --- | --- |
+| 1 | Intervenções e recomendações | <a href="l2-interventions.html">l2-interventions</a> |
+| 2 | Personas genéricas | <a href="l2-personas.html">l2-personas</a> |
+| 3 | Cenários de uso | <a href="l2-user-scenarios.html">l2-user-scenarios</a> |
+| 4 | Processos de negócio e workflows | <a href="l2-business-process.html">l2-business-process</a> |
+| 5 | Elementos de dados (dicionário) | <a href="l2-data-dictionary.html">l2-data-dictionary</a> |
+| 6 | Lógica de suporte à decisão | <a href="l2-decision-logic.html">l2-decision-logic</a> |
+| 7 | Indicadores de programa | <a href="l2-indicators.html">l2-indicators</a> |
+| 8 | Requisitos | <a href="l2-requirements.html">l2-requirements</a> |
+| 9 | Cenários de teste | <a href="l2-test-scenarios.html">l2-test-scenarios</a> |
 
-This guide is a companion to the Digital Adaptation Kit (DAK) and should be used side-by-side with it. Implementers are strongly encouraged to make use of the Digital Adaptation Kit. The focus of this guide is on the explanation and use of the computable artifacts.
+#### Itens pendentes de confirmação clínica
 
-This guide assumes use of the following resources: 
-* [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
-* [CPG ActivityDefinitions](https://hl7.org/fhir/uv/cpg/artifacts.html#activitydefinition-index)
+- **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento validado equivalente ao
+  IVCF-20 do pathway ATENTO 60+ (`docs/adr/0002-escore-risco-nao-definido.md`).
 
-- For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.html).
-- A complete offline copy of this implementation guide can be found on the [Downloads](downloads.html) page.
+*Fonte (L1): NR-7 (PCMSO), NR-31 (Segurança e Saúde no Trabalho Rural) e Nota Informativa nº
+16/2019-CGLAB/DAEVS/SVS/MS — Ministério da Saúde. Ver `sources/_normas_extract.txt`.*
 
-- This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Speciciation, and other helpful resources can be found in the Support dropdown.
-
-### Disclaimer
-The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
+- Para a lista completa de artefatos definidos neste IG, ver o <a href="artifacts.html">Artifact
+  Index</a>.
+- Uma cópia offline completa deste IG está disponível na página de <a href="downloads.html">Downloads</a>.
 
 ### Dependencies
 
