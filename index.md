@@ -139,7 +139,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
   "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T14:46:27+00:00",
+  "date" : "2026-07-21T15:31:26+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

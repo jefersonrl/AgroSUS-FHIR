@@ -217,52 +217,56 @@ Externa" (classificação de risco por IA) está fora de escopo desta fase do IG
 <code>docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</em></p>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Persona</th>
-      <th>Descrição</th>
-      <th>Perfil(is) FHIR</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Produtor Rural (Trabalhador rural)</td>
-      <td>Pequeno produtor rural acompanhado pelo AgroSUS; sujeito da anamnese, dos exames e do plano de acompanhamento. Mantém e visualiza seu próprio cadastro.</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSPatient</code></td>
-    </tr>
-    <tr>
-      <td>Agente Comunitário (ACS/ACF)</td>
-      <td>Aplica e atualiza a anamnese em visita domiciliar; realiza a triagem ocupacional; primeiro ponto de contato e de identificação de gatilhos de alerta em campo. Também referido como "Agente Comunitário Familiar (ACF)" no documento de requisitos do projeto — mesmo papel de <code class="language-plaintext highlighter-rouge">AgroSUSACS</code>.</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSACS</code>, <code class="language-plaintext highlighter-rouge">AgroSUSACSRole</code>, <code class="language-plaintext highlighter-rouge">AgroSUSVisitaACS</code></td>
-    </tr>
-    <tr>
-      <td>Médico / Profissional assistencial da UBS</td>
-      <td>Médico, enfermeiro ou técnico de enfermagem responsável pela avaliação clínica, solicitação de exames, registro da condição clínica e definição do plano de acompanhamento.</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSProfissionalUBS</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProfissionalUBSRole</code>, <code class="language-plaintext highlighter-rouge">AgroSUSAtendimentoUBS</code></td>
-    </tr>
-    <tr>
-      <td>Laboratório</td>
-      <td>Organização responsável pela realização e emissão de resultados de exames laboratoriais, incluindo a colinesterase.</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSLaboratorio</code>, <code class="language-plaintext highlighter-rouge">AgroSUSResultadoLaboratorial</code>, <code class="language-plaintext highlighter-rouge">AgroSUSLaudoLaboratorial</code></td>
-    </tr>
-    <tr>
-      <td>Unidade Básica de Saúde (UBS)</td>
-      <td>Organização responsável pelo acompanhamento longitudinal do trabalhador rural, pela gestão do catálogo de exames/biomarcadores disponíveis e serviço a que ACS e profissionais assistenciais estão vinculados.</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSUBS</code></td>
-    </tr>
-    <tr>
-      <td>Auditor / gestor de segurança</td>
-      <td>Consulta trilhas de auditoria e proveniência dos registros, sem participar do cuidado direto.</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProvenance</code></td>
-    </tr>
-    <tr>
-      <td><em>(fora de escopo)</em> Agente de classificação de risco — API externa</td>
-      <td>Ator descrito no documento de requisitos do projeto: recebe os dados da triagem e classifica automaticamente o nível de risco por Inteligência Artificial. <strong>Decisão da equipe: fora de escopo desta fase do IG</strong> — mantida a lógica rule-based (<code class="language-plaintext highlighter-rouge">Library/AgroSUSIntoxicacaoLogic</code>), sem artefato FHIR para essa integração. Ver <code class="language-plaintext highlighter-rouge">docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</td>
-      <td>—</td>
-    </tr>
-  </tbody>
-</table>
+<div style="overflow-x:auto;" class="table-responsive">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Persona</th>
+        <th>Descrição</th>
+        <th>Perfil(is) FHIR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Produtor Rural (Trabalhador rural)</td>
+        <td>Pequeno produtor rural acompanhado pelo AgroSUS; sujeito da anamnese, dos exames e do plano de acompanhamento. Mantém e visualiza seu próprio cadastro.</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSPatient</code></td>
+      </tr>
+      <tr>
+        <td>Agente Comunitário (ACS/ACF)</td>
+        <td>Aplica e atualiza a anamnese em visita domiciliar; realiza a triagem ocupacional; primeiro ponto de contato e de identificação de gatilhos de alerta em campo. Também referido como "Agente Comunitário Familiar (ACF)" no documento de requisitos do projeto — mesmo papel de <code class="language-plaintext highlighter-rouge">AgroSUSACS</code>.</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSACS</code>, <code class="language-plaintext highlighter-rouge">AgroSUSACSRole</code>, <code class="language-plaintext highlighter-rouge">AgroSUSVisitaACS</code></td>
+      </tr>
+      <tr>
+        <td>Médico / Profissional assistencial da UBS</td>
+        <td>Médico, enfermeiro ou técnico de enfermagem responsável pela avaliação clínica, solicitação de exames, registro da condição clínica e definição do plano de acompanhamento.</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSProfissionalUBS</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProfissionalUBSRole</code>, <code class="language-plaintext highlighter-rouge">AgroSUSAtendimentoUBS</code></td>
+      </tr>
+      <tr>
+        <td>Laboratório</td>
+        <td>Organização responsável pela realização e emissão de resultados de exames laboratoriais, incluindo a colinesterase.</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSLaboratorio</code>, <code class="language-plaintext highlighter-rouge">AgroSUSResultadoLaboratorial</code>, <code class="language-plaintext highlighter-rouge">AgroSUSLaudoLaboratorial</code></td>
+      </tr>
+      <tr>
+        <td>Unidade Básica de Saúde (UBS)</td>
+        <td>Organização responsável pelo acompanhamento longitudinal do trabalhador rural, pela gestão do catálogo de exames/biomarcadores disponíveis e serviço a que ACS e profissionais assistenciais estão vinculados.</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSUBS</code></td>
+      </tr>
+      <tr>
+        <td>Auditor / gestor de segurança</td>
+        <td>Consulta trilhas de auditoria e proveniência dos registros, sem participar do cuidado direto.</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProvenance</code></td>
+      </tr>
+      <tr>
+        <td><em>(fora de escopo)</em> Agente de classificação de risco — API externa</td>
+        <td>Ator descrito no documento de requisitos do projeto: recebe os dados da triagem e classifica automaticamente o nível de risco por Inteligência Artificial. <strong>Decisão da equipe: fora de escopo desta fase do IG</strong> — mantida a lógica rule-based (<code class="language-plaintext highlighter-rouge">Library/AgroSUSIntoxicacaoLogic</code>), sem artefato FHIR para essa integração. Ver <code class="language-plaintext highlighter-rouge">docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <p>Estas personas interagem nos <a href="l2-user-scenarios.html">cenários de uso</a> e nos
 <a href="l2-business-process.html">processos de negócio</a> descritos a seguir.</p>
@@ -286,9 +290,9 @@ Externa" (classificação de risco por IA) está fora de escopo desta fase do IG
 
 <div class="inner-wrapper">
   <p>
-    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 14:46+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 15:31+0000">2026-07-21</span>
     <br/>
-    <span style="color: var(--footer-highlight-text-color)"><a name="l576">​</a>
+    <span style="color: var(--footer-highlight-text-color)"><a name="l579">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

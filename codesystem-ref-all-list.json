@@ -9,11 +9,11 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-    "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
     "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
     "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code"
   },
   {
     "url" : "http://hl7.org/fhir/address-type",
@@ -350,9 +350,9 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS",
     "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -364,21 +364,21 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
     "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
     "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
-    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
     "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/audit-entity-type",
@@ -654,8 +654,8 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRTipoDocumentoIndividuo.html" : "BR Tipo Documento Individuo"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRTipoDocumentoIndividuo.html" : "BR Tipo Documento Individuo",
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -740,8 +740,8 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
-    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -805,9 +805,9 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
     "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://terminology.hl7.org/7.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
@@ -829,8 +829,8 @@
     "description" : "Códigos relacionados à assistência e à responsabilidade técnica na produção rural.",
     "uses" : {
     },
-    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico",
-    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica"
+    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica",
+    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas",
@@ -908,9 +908,9 @@
     "description" : "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual.",
     "uses" : {
     },
+    "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI",
     "ValueSet-agrosus-frequencia-uso-epi.html" : "Frequência de utilização de EPI",
-    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs",
-    "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI"
+    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade",
@@ -932,12 +932,12 @@
     "description" : "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas.",
     "uses" : {
     },
+    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia",
     "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
-    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês",
     "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação",
     "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição",
     "ValueSet-agrosus-responsavel-aplicacao.html" : "Responsável pela aplicação",
-    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia"
+    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
@@ -1029,8 +1029,8 @@
     "uses" : {
     },
     "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao",
-    "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS"
+    "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCIAP2",
@@ -1075,11 +1075,11 @@
     "description" : "Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.",
     "uses" : {
     },
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil",
     "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRM.html" : "Conselhos regionais de Medicina do Brasil",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROutrosProfissionais.html" : "Conselhos regionais de outros profissionais da saúde do Brasil",
     "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRF.html" : "Conselhos regionais de Farmácia do Brasil",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCOREN.html" : "Conselhos regionais de Enfermagem do Brasil"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCRO.html" : "Conselhos regionais de Odontologia do Brasil"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial",
@@ -1156,8 +1156,8 @@
     "description" : "",
     "uses" : {
     },
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCategoriaProcedimento.html" : "BR Categoria Procedimento",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRSubgrupoTabelaSUS.html" : "BR Subgrupo Tabela SUS"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRSubgrupoTabelaSUS.html" : "BR Subgrupo Tabela SUS",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BRCategoriaProcedimento.html" : "BR Categoria Procedimento"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRTipoEstabelecimentoSaude",

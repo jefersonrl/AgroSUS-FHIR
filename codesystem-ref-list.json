@@ -9,8 +9,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS",
-    "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS"
+    "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS",
+    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
@@ -32,8 +32,8 @@
     "description" : "Códigos relacionados à assistência e à responsabilidade técnica na produção rural.",
     "uses" : {
     },
-    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico",
-    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica"
+    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica",
+    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas",
@@ -111,9 +111,9 @@
     "description" : "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual.",
     "uses" : {
     },
+    "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI",
     "ValueSet-agrosus-frequencia-uso-epi.html" : "Frequência de utilização de EPI",
-    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs",
-    "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI"
+    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade",
@@ -135,12 +135,12 @@
     "description" : "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas.",
     "uses" : {
     },
+    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia",
     "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
-    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês",
     "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação",
     "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição",
     "ValueSet-agrosus-responsavel-aplicacao.html" : "Responsável pela aplicação",
-    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia"
+    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
@@ -221,8 +221,8 @@
     "uses" : {
     },
     "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS",
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao",
-    "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS"
+    "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS",
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10",

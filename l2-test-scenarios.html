@@ -209,78 +209,82 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 (<a href="l2-decision-logic.html">componente 6</a>), para validação manual ou automatizada dos
 artefatos L3. Não são normativos nem substituem testes de conformidade formais.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Caso</th>
-      <th>Cenário</th>
-      <th>Entrada</th>
-      <th>Resultado esperado</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>TC-01</td>
-      <td>Colinesterase plasmática normal</td>
-      <td>Basal 8000 U/L; obtida 4500 U/L (inibição 43,75%)</td>
-      <td>Normal — manter rotina semestral</td>
-    </tr>
-    <tr>
-      <td>TC-02</td>
-      <td>Colinesterase plasmática alterada</td>
-      <td>Basal 8500 U/L; obtida 3500 U/L (inibição 58,8%)</td>
-      <td>Alterado — afastar 30 dias; reavaliar</td>
-    </tr>
-    <tr>
-      <td>TC-03</td>
-      <td>Colinesterase sangue total alterada</td>
-      <td>Inibição de sangue total = 30%</td>
-      <td>Alterado (limite de 25% para sangue total) — afastar 30 dias</td>
-    </tr>
-    <tr>
-      <td>TC-04</td>
-      <td>Precaução sem atingir o IBMP</td>
-      <td>Inibição plasmática = 28%</td>
-      <td>Alerta de precaução — reforçar EPI/técnica, sem afastamento automático</td>
-    </tr>
-    <tr>
-      <td>TC-05</td>
-      <td>Sintoma agudo em campo</td>
-      <td>ACS marca sintoma agudo compatível na Seção 16</td>
-      <td>Alerta crítico — encaminhamento prioritário à UBS</td>
-    </tr>
-    <tr>
-      <td>TC-06</td>
-      <td>Produto categoria 1 sem EPI</td>
-      <td>Defensivo categoria toxicológica 1 (Seção 6) e uso de EPI "nunca" (Seção 9)</td>
-      <td>Alerta crítico — verificar EPI e capacitação</td>
-    </tr>
-    <tr>
-      <td>TC-07</td>
-      <td>Histórico de intoxicação prévia</td>
-      <td>Uma ou mais intoxicações agudas anteriores (Seção 14)</td>
-      <td>Alerta de acompanhamento prioritário</td>
-    </tr>
-    <tr>
-      <td>TC-08</td>
-      <td>Sincronização offline da visita</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSTransacaoVisita</code> com 4 entradas (paciente, visita, anamnese, proveniência) e <code class="language-plaintext highlighter-rouge">PUT</code> condicional</td>
-      <td>Transação aceita de forma atômica; idempotente em reenvio</td>
-    </tr>
-    <tr>
-      <td>TC-09</td>
-      <td>Retorno ao trabalho após afastamento</td>
-      <td>Trabalhador retorna após afastamento &gt; 30 dias</td>
-      <td>Exame de colinesterase obrigatório (gatilho fora da rotina)</td>
-    </tr>
-    <tr>
-      <td>TC-10</td>
-      <td>Contraindicação ao manuseio</td>
-      <td>Trabalhadora gestante que manuseia organofosforados</td>
-      <td>Alerta de contraindicação — providências administrativas (Nota Informativa 16/2019, Anexo III item 2.2)</td>
-    </tr>
-  </tbody>
-</table>
+<div style="overflow-x:auto;" class="table-responsive">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Caso</th>
+        <th>Cenário</th>
+        <th>Entrada</th>
+        <th>Resultado esperado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TC-01</td>
+        <td>Colinesterase plasmática normal</td>
+        <td>Basal 8000 U/L; obtida 4500 U/L (inibição 43,75%)</td>
+        <td>Normal — manter rotina semestral</td>
+      </tr>
+      <tr>
+        <td>TC-02</td>
+        <td>Colinesterase plasmática alterada</td>
+        <td>Basal 8500 U/L; obtida 3500 U/L (inibição 58,8%)</td>
+        <td>Alterado — afastar 30 dias; reavaliar</td>
+      </tr>
+      <tr>
+        <td>TC-03</td>
+        <td>Colinesterase sangue total alterada</td>
+        <td>Inibição de sangue total = 30%</td>
+        <td>Alterado (limite de 25% para sangue total) — afastar 30 dias</td>
+      </tr>
+      <tr>
+        <td>TC-04</td>
+        <td>Precaução sem atingir o IBMP</td>
+        <td>Inibição plasmática = 28%</td>
+        <td>Alerta de precaução — reforçar EPI/técnica, sem afastamento automático</td>
+      </tr>
+      <tr>
+        <td>TC-05</td>
+        <td>Sintoma agudo em campo</td>
+        <td>ACS marca sintoma agudo compatível na Seção 16</td>
+        <td>Alerta crítico — encaminhamento prioritário à UBS</td>
+      </tr>
+      <tr>
+        <td>TC-06</td>
+        <td>Produto categoria 1 sem EPI</td>
+        <td>Defensivo categoria toxicológica 1 (Seção 6) e uso de EPI "nunca" (Seção 9)</td>
+        <td>Alerta crítico — verificar EPI e capacitação</td>
+      </tr>
+      <tr>
+        <td>TC-07</td>
+        <td>Histórico de intoxicação prévia</td>
+        <td>Uma ou mais intoxicações agudas anteriores (Seção 14)</td>
+        <td>Alerta de acompanhamento prioritário</td>
+      </tr>
+      <tr>
+        <td>TC-08</td>
+        <td>Sincronização offline da visita</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSTransacaoVisita</code> com 4 entradas (paciente, visita, anamnese, proveniência) e <code class="language-plaintext highlighter-rouge">PUT</code> condicional</td>
+        <td>Transação aceita de forma atômica; idempotente em reenvio</td>
+      </tr>
+      <tr>
+        <td>TC-09</td>
+        <td>Retorno ao trabalho após afastamento</td>
+        <td>Trabalhador retorna após afastamento &gt; 30 dias</td>
+        <td>Exame de colinesterase obrigatório (gatilho fora da rotina)</td>
+      </tr>
+      <tr>
+        <td>TC-10</td>
+        <td>Contraindicação ao manuseio</td>
+        <td>Trabalhadora gestante que manuseia organofosforados</td>
+        <td>Alerta de contraindicação — providências administrativas (Nota Informativa 16/2019, Anexo III item 2.2)</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <p><em>Fonte: NR-7, NR-31 e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Ver
 <code class="language-plaintext highlighter-rouge">sources/_normas_extract.txt</code> para os valores de referência usados nos cálculos acima.</em></p>
@@ -304,9 +308,9 @@ artefatos L3. Não são normativos nem substituem testes de conformidade formais
 
 <div class="inner-wrapper">
   <p>
-    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 14:46+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 15:31+0000">2026-07-21</span>
     <br/>
-    <span style="color: var(--footer-highlight-text-color)"><a name="l589">​</a>
+    <span style="color: var(--footer-highlight-text-color)"><a name="l592">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

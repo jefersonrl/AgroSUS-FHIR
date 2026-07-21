@@ -41,7 +41,7 @@ ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore comp
 * **Type: **: **Experimental: **
   * **system: ** [http://terminology.hl7.org/CodeSystem/library-type](http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html)  **code: ** logic-library: true
 * **Type: **: **Date: **
-  * **system: ** [http://terminology.hl7.org/CodeSystem/library-type](http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html)  **code: ** logic-library: 2026-07-21 14:46:27+0000
+  * **system: ** [http://terminology.hl7.org/CodeSystem/library-type](http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html)  **code: ** logic-library: 2026-07-21 15:31:26+0000
 * **Type: **: **Publisher: **
   * **system: ** [http://terminology.hl7.org/CodeSystem/library-type](http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html)  **code: ** logic-library: Fatec Ferraz de Vasconcelos
 * **Type: **: **Description: **
@@ -86,7 +86,7 @@ ITEM EM ABERTO: não existe, nas fontes L1 adotadas, uma fórmula de escore comp
       "code" : "logic-library"
     }]
   },
-  "date" : "2026-07-21T14:46:27+00:00",
+  "date" : "2026-07-21T15:31:26+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

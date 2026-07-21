@@ -215,106 +215,114 @@ Index</a>.</p>
 
 <h3 id="requisitos-funcionais">Requisitos Funcionais</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Requisito</th>
-      <th>Fonte</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>RF-01</td>
-      <td>Cadastro do trabalhador rural e da propriedade rural pelo ACS</td>
-      <td>Seções 2–3 da anamnese</td>
-    </tr>
-    <tr>
-      <td>RF-02</td>
-      <td>Aplicação da anamnese ocupacional/ambiental estruturada em visita domiciliar</td>
-      <td><code class="language-plaintext highlighter-rouge">Questionnaire/agrosus-anamnese</code></td>
-    </tr>
-    <tr>
-      <td>RF-03</td>
-      <td>Sincronização atômica e <strong>offline-first</strong> da visita (paciente + visita + anamnese + proveniência)</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSTransacaoVisita</code></td>
-    </tr>
-    <tr>
-      <td>RF-04</td>
-      <td>Registro da condição clínica de suspeita/confirmação de intoxicação</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSIntoxicacaoPesticida</code></td>
-    </tr>
-    <tr>
-      <td>RF-05</td>
-      <td>Solicitação e resultado de exames laboratoriais, incluindo colinesterase</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSSolicitacaoExame</code>, <code class="language-plaintext highlighter-rouge">AgroSUSResultadoLaboratorial</code>, <code class="language-plaintext highlighter-rouge">AgroSUSLaudoLaboratorial</code></td>
-    </tr>
-    <tr>
-      <td>RF-06</td>
-      <td>Classificação automática do percentual de inibição da colinesterase e alerta quando excede o IBMP</td>
-      <td><code class="language-plaintext highlighter-rouge">Library/AgroSUSIntoxicacaoLogic</code>, <code class="language-plaintext highlighter-rouge">PlanDefinition/AgroSUSEstratificacaoRisco</code></td>
-    </tr>
-    <tr>
-      <td>RF-07</td>
-      <td>Definição e revisão de plano de acompanhamento longitudinal com periodicidade</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSPlanoAcompanhamento</code></td>
-    </tr>
-    <tr>
-      <td>RF-08</td>
-      <td>Registro de gatilhos de alerta independentes (sintoma agudo, produto sem EPI, histórico de intoxicação)</td>
-      <td>Seção 16 da anamnese</td>
-    </tr>
-    <tr>
-      <td>RF-09</td>
-      <td>Trilha de auditoria e proveniência de todas as operações</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProvenance</code></td>
-    </tr>
-  </tbody>
-</table>
+<div style="overflow-x:auto;" class="table-responsive">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Requisito</th>
+        <th>Fonte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>RF-01</td>
+        <td>Cadastro do trabalhador rural e da propriedade rural pelo ACS</td>
+        <td>Seções 2–3 da anamnese</td>
+      </tr>
+      <tr>
+        <td>RF-02</td>
+        <td>Aplicação da anamnese ocupacional/ambiental estruturada em visita domiciliar</td>
+        <td><code class="language-plaintext highlighter-rouge">Questionnaire/agrosus-anamnese</code></td>
+      </tr>
+      <tr>
+        <td>RF-03</td>
+        <td>Sincronização atômica e <strong>offline-first</strong> da visita (paciente + visita + anamnese + proveniência)</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSTransacaoVisita</code></td>
+      </tr>
+      <tr>
+        <td>RF-04</td>
+        <td>Registro da condição clínica de suspeita/confirmação de intoxicação</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSIntoxicacaoPesticida</code></td>
+      </tr>
+      <tr>
+        <td>RF-05</td>
+        <td>Solicitação e resultado de exames laboratoriais, incluindo colinesterase</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSSolicitacaoExame</code>, <code class="language-plaintext highlighter-rouge">AgroSUSResultadoLaboratorial</code>, <code class="language-plaintext highlighter-rouge">AgroSUSLaudoLaboratorial</code></td>
+      </tr>
+      <tr>
+        <td>RF-06</td>
+        <td>Classificação automática do percentual de inibição da colinesterase e alerta quando excede o IBMP</td>
+        <td><code class="language-plaintext highlighter-rouge">Library/AgroSUSIntoxicacaoLogic</code>, <code class="language-plaintext highlighter-rouge">PlanDefinition/AgroSUSEstratificacaoRisco</code></td>
+      </tr>
+      <tr>
+        <td>RF-07</td>
+        <td>Definição e revisão de plano de acompanhamento longitudinal com periodicidade</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSPlanoAcompanhamento</code></td>
+      </tr>
+      <tr>
+        <td>RF-08</td>
+        <td>Registro de gatilhos de alerta independentes (sintoma agudo, produto sem EPI, histórico de intoxicação)</td>
+        <td>Seção 16 da anamnese</td>
+      </tr>
+      <tr>
+        <td>RF-09</td>
+        <td>Trilha de auditoria e proveniência de todas as operações</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProvenance</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <h3 id="requisitos-não-funcionais">Requisitos Não-Funcionais</h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Requisito</th>
-      <th>Fonte</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>RNF-01</td>
-      <td>Interoperabilidade <strong>HL7 FHIR R4</strong> sobre o BR Core; vocabulários <strong>LOINC</strong>, <strong>CID-10</strong> e <strong>CBO</strong></td>
-      <td><code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> (dependências)</td>
-    </tr>
-    <tr>
-      <td>RNF-02</td>
-      <td>Operação <strong>offline</strong> com sincronização automática ao reconectar (visita do ACS)</td>
-      <td><code class="language-plaintext highlighter-rouge">AgroSUSTransacaoVisita</code></td>
-    </tr>
-    <tr>
-      <td>RNF-03</td>
-      <td>Segurança e privacidade: autenticação, autorização por função, TLS e registro de auditoria</td>
-      <td><code class="language-plaintext highlighter-rouge">CapabilityStatement/agrosus-server-capabilities</code>, <code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code></td>
-    </tr>
-    <tr>
-      <td>RNF-04</td>
-      <td>Retenção de registros de exames/afastamentos por, no mínimo, 20 anos após o desligamento do trabalhador</td>
-      <td>NR-7 item 7.4.5.1</td>
-    </tr>
-    <tr>
-      <td>RNF-05</td>
-      <td>Rastreabilidade de toda regra de decisão a uma fonte L1 citada (<code class="language-plaintext highlighter-rouge">// Fonte L1</code>)</td>
-      <td><code class="language-plaintext highlighter-rouge">CLAUDE.md</code>; <code class="language-plaintext highlighter-rouge">docs/adr/0001</code></td>
-    </tr>
-    <tr>
-      <td>RNF-06</td>
-      <td>Nenhum limiar ou peso clínico inferido sem fonte validada</td>
-      <td><code class="language-plaintext highlighter-rouge">docs/adr/0002-escore-risco-nao-definido.md</code></td>
-    </tr>
-  </tbody>
-</table>
+<div style="overflow-x:auto;" class="table-responsive">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Requisito</th>
+        <th>Fonte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>RNF-01</td>
+        <td>Interoperabilidade <strong>HL7 FHIR R4</strong> sobre o BR Core; vocabulários <strong>LOINC</strong>, <strong>CID-10</strong> e <strong>CBO</strong></td>
+        <td><code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> (dependências)</td>
+      </tr>
+      <tr>
+        <td>RNF-02</td>
+        <td>Operação <strong>offline</strong> com sincronização automática ao reconectar (visita do ACS)</td>
+        <td><code class="language-plaintext highlighter-rouge">AgroSUSTransacaoVisita</code></td>
+      </tr>
+      <tr>
+        <td>RNF-03</td>
+        <td>Segurança e privacidade: autenticação, autorização por função, TLS e registro de auditoria</td>
+        <td><code class="language-plaintext highlighter-rouge">CapabilityStatement/agrosus-server-capabilities</code>, <code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code></td>
+      </tr>
+      <tr>
+        <td>RNF-04</td>
+        <td>Retenção de registros de exames/afastamentos por, no mínimo, 20 anos após o desligamento do trabalhador</td>
+        <td>NR-7 item 7.4.5.1</td>
+      </tr>
+      <tr>
+        <td>RNF-05</td>
+        <td>Rastreabilidade de toda regra de decisão a uma fonte L1 citada (<code class="language-plaintext highlighter-rouge">// Fonte L1</code>)</td>
+        <td><code class="language-plaintext highlighter-rouge">CLAUDE.md</code>; <code class="language-plaintext highlighter-rouge">docs/adr/0001</code></td>
+      </tr>
+      <tr>
+        <td>RNF-06</td>
+        <td>Nenhum limiar ou peso clínico inferido sem fonte validada</td>
+        <td><code class="language-plaintext highlighter-rouge">docs/adr/0002-escore-risco-nao-definido.md</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
 
 <p><em>Fonte primária: NR-7, NR-31 e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Ver
 <a href="l2-decision-logic.html">componente 6</a>.</em></p>
@@ -338,9 +346,9 @@ Index</a>.</p>
 
 <div class="inner-wrapper">
   <p>
-    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 14:46+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 15:31+0000">2026-07-21</span>
     <br/>
-    <span style="color: var(--footer-highlight-text-color)"><a name="l704">​</a>
+    <span style="color: var(--footer-highlight-text-color)"><a name="l710">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
