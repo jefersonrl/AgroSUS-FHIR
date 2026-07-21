@@ -7,6 +7,8 @@
 
 Componente 3 do DAK — **Cenários de uso**. Narrativas ilustrativas de como as personas ([componente 2](l2-personas.md)) interagem nos processos de negócio ([componente 4](l2-business-process.md)). Cenários 7–10 derivados do diagrama de caso de uso e do documento de requisitos do projeto (`sources/requisitos-caso-de-uso/`).
 
+**Diagrama de caso de uso do projeto (equipe FATEC Ferraz de Vasconcelos/CPS), base para os cenários 7–10 abaixo. O caso de uso "Classificar Risco" (API Externa) está fora de escopo desta fase — ver `docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md`.**
+
 ### Cenário 1 — Visita domiciliar e aplicação da anamnese (offline-first)
 
 O ACS visita o trabalhador rural em sua propriedade. Sem conexão de rede, aplica a anamnese ocupacional/ambiental pelo aplicativo (`Questionnaire/agrosus-anamnese`). Ao final da visita, o aplicativo monta um `Bundle` transacional e idempotente (`AgroSUSTransacaoVisita`) com o paciente, a visita, a resposta da anamnese e a proveniência, sincronizando de forma atômica assim que a conexão for restabelecida.

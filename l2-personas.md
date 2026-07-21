@@ -7,6 +7,8 @@
 
 Componente 2 do DAK — **Personas genéricas**. Fonte: diagrama de caso de uso e documento de requisitos do projeto (`sources/requisitos-caso-de-uso/`), reconciliados com os perfis FHIR já modelados em `input/fsh/profiles/` (ver [Artifact Index](artifacts.md)). Cada persona corresponde a um ou mais perfis FHIR.
 
+**Diagrama de caso de uso do projeto (equipe FATEC Ferraz de Vasconcelos/CPS) — fonte: `sources/requisitos-caso-de-uso/agrosus_use_case.svg`. O ator "API Externa" (classificação de risco por IA) está fora de escopo desta fase do IG — ver `docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md`.**
+
 | | | |
 | :--- | :--- | :--- |
 | Produtor Rural (Trabalhador rural) | Pequeno produtor rural acompanhado pelo AgroSUS; sujeito da anamnese, dos exames e do plano de acompanhamento. Mantém e visualiza seu próprio cadastro. | `AgroSUSPatient` |

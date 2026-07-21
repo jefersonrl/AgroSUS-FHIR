@@ -16,5 +16,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-classificacao-toxicologica",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T14:27:41.198530"
+  "fhir:expansionTimestamp": "2026-07-21T14:36:36.956963"
 }

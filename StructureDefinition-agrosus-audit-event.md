@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-audit-event.
   "name" : "AgroSUSAuditEvent",
   "title" : "Evento de Auditoria AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T14:24:33+00:00",
+  "date" : "2026-07-21T14:33:42+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

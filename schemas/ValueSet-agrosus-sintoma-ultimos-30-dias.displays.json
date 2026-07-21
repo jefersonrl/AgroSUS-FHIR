@@ -122,5 +122,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-sintoma-ultimos-30-dias",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T14:27:41.195973"
+  "fhir:expansionTimestamp": "2026-07-21T14:36:36.952731"
 }

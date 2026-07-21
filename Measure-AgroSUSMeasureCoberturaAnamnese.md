@@ -54,7 +54,7 @@ Proporção de trabalhadores cadastrados com QuestionnaireResponse da anamnese A
   "title" : "Cobertura da anamnese ocupacional AgroSUS",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-21T14:24:33+00:00",
+  "date" : "2026-07-21T14:33:42+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
