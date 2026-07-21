@@ -205,9 +205,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<p>Componente 2 do DAK — <em>Personas genéricas</em>. Fonte estruturada: <code class="language-plaintext highlighter-rouge">l2/2-personas.csv</code>. Cada persona
-corresponde a um ou mais perfis FHIR em <code class="language-plaintext highlighter-rouge">input/fsh/profiles/</code> (ver <a href="artifacts.html">Artifact
-Index</a>).</p>
+<p>Componente 2 do DAK — <em>Personas genéricas</em>. Fonte: diagrama de caso de uso e documento de
+requisitos do projeto (<code class="language-plaintext highlighter-rouge">sources/requisitos-caso-de-uso/</code>), reconciliados com os perfis FHIR já
+modelados em <code class="language-plaintext highlighter-rouge">input/fsh/profiles/</code> (ver <a href="artifacts.html">Artifact Index</a>). Cada persona
+corresponde a um ou mais perfis FHIR.</p>
 
 <table>
   <thead>
@@ -219,17 +220,17 @@ Index</a>).</p>
   </thead>
   <tbody>
     <tr>
-      <td>Trabalhador rural</td>
-      <td>Pequeno produtor rural acompanhado pelo AgroSUS; sujeito da anamnese, dos exames e do plano de acompanhamento.</td>
+      <td>Produtor Rural (Trabalhador rural)</td>
+      <td>Pequeno produtor rural acompanhado pelo AgroSUS; sujeito da anamnese, dos exames e do plano de acompanhamento. Mantém e visualiza seu próprio cadastro.</td>
       <td><code class="language-plaintext highlighter-rouge">AgroSUSPatient</code></td>
     </tr>
     <tr>
-      <td>Agente Comunitário de Saúde (ACS)</td>
-      <td>Aplica e atualiza a anamnese em visita domiciliar; primeiro ponto de contato e de identificação de gatilhos de alerta em campo.</td>
+      <td>Agente Comunitário (ACS/ACF)</td>
+      <td>Aplica e atualiza a anamnese em visita domiciliar; realiza a triagem ocupacional; primeiro ponto de contato e de identificação de gatilhos de alerta em campo. Também referido como "Agente Comunitário Familiar (ACF)" no documento de requisitos do projeto — mesmo papel de <code class="language-plaintext highlighter-rouge">AgroSUSACS</code>.</td>
       <td><code class="language-plaintext highlighter-rouge">AgroSUSACS</code>, <code class="language-plaintext highlighter-rouge">AgroSUSACSRole</code>, <code class="language-plaintext highlighter-rouge">AgroSUSVisitaACS</code></td>
     </tr>
     <tr>
-      <td>Profissional assistencial da UBS</td>
+      <td>Médico / Profissional assistencial da UBS</td>
       <td>Médico, enfermeiro ou técnico de enfermagem responsável pela avaliação clínica, solicitação de exames, registro da condição clínica e definição do plano de acompanhamento.</td>
       <td><code class="language-plaintext highlighter-rouge">AgroSUSProfissionalUBS</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProfissionalUBSRole</code>, <code class="language-plaintext highlighter-rouge">AgroSUSAtendimentoUBS</code></td>
     </tr>
@@ -240,13 +241,18 @@ Index</a>).</p>
     </tr>
     <tr>
       <td>Unidade Básica de Saúde (UBS)</td>
-      <td>Organização responsável pelo acompanhamento longitudinal do trabalhador rural e serviço a que ACS e profissionais assistenciais estão vinculados.</td>
+      <td>Organização responsável pelo acompanhamento longitudinal do trabalhador rural, pela gestão do catálogo de exames/biomarcadores disponíveis e serviço a que ACS e profissionais assistenciais estão vinculados.</td>
       <td><code class="language-plaintext highlighter-rouge">AgroSUSUBS</code></td>
     </tr>
     <tr>
       <td>Auditor / gestor de segurança</td>
       <td>Consulta trilhas de auditoria e proveniência dos registros, sem participar do cuidado direto.</td>
       <td><code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProvenance</code></td>
+    </tr>
+    <tr>
+      <td><em>(fora de escopo)</em> Agente de classificação de risco — API externa</td>
+      <td>Ator descrito no documento de requisitos do projeto: recebe os dados da triagem e classifica automaticamente o nível de risco por Inteligência Artificial. <strong>Decisão da equipe: fora de escopo desta fase do IG</strong> — mantida a lógica rule-based (<code class="language-plaintext highlighter-rouge">Library/AgroSUSIntoxicacaoLogic</code>), sem artefato FHIR para essa integração. Ver <code class="language-plaintext highlighter-rouge">docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</td>
+      <td>—</td>
     </tr>
   </tbody>
 </table>
@@ -273,9 +279,9 @@ Index</a>).</p>
 
 <div class="inner-wrapper">
   <p>
-    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 13:58+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 14:24+0000">2026-07-21</span>
     <br/>
-    <span style="color: var(--footer-highlight-text-color)"><a name="l538">​</a>
+    <span style="color: var(--footer-highlight-text-color)"><a name="l564">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

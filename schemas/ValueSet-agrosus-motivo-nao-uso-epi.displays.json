@@ -74,5 +74,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-motivo-nao-uso-epi",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T14:02:34.753982"
+  "fhir:expansionTimestamp": "2026-07-21T14:27:41.197800"
 }

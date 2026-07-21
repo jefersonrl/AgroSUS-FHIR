@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-resultado-la
   "name" : "AgroSUSResultadoLaboratorial",
   "title" : "Resultado Laboratorial AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T13:58:44+00:00",
+  "date" : "2026-07-21T14:24:33+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

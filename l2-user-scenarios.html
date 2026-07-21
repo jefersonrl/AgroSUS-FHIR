@@ -210,12 +210,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#cenário-4--resultado-alterado-e-conduta" id="markdown-toc-cenário-4--resultado-alterado-e-conduta">Cenário 4 — Resultado alterado e conduta</a></li>
   <li><a href="#cenário-5--acompanhamento-longitudinal-e-boas-práticas" id="markdown-toc-cenário-5--acompanhamento-longitudinal-e-boas-práticas">Cenário 5 — Acompanhamento longitudinal e boas práticas</a></li>
   <li><a href="#cenário-6--auditoria-de-acesso" id="markdown-toc-cenário-6--auditoria-de-acesso">Cenário 6 — Auditoria de acesso</a></li>
+  <li><a href="#cenário-7--cadastro-e-gestão-do-produtor-rural" id="markdown-toc-cenário-7--cadastro-e-gestão-do-produtor-rural">Cenário 7 — Cadastro e gestão do produtor rural</a></li>
+  <li><a href="#cenário-8--triagem-com-lógica-de-decisão-rule-based-api-de-ia-fora-de-escopo" id="markdown-toc-cenário-8--triagem-com-lógica-de-decisão-rule-based-api-de-ia-fora-de-escopo">Cenário 8 — Triagem com lógica de decisão rule-based <em>(API de IA fora de escopo)</em></a></li>
+  <li><a href="#cenário-9--gestão-do-catálogo-de-biomarcadores-pela-ubs" id="markdown-toc-cenário-9--gestão-do-catálogo-de-biomarcadores-pela-ubs">Cenário 9 — Gestão do catálogo de biomarcadores pela UBS</a></li>
+  <li><a href="#cenário-10--reconexão-e-reprocessamento-após-operação-offline" id="markdown-toc-cenário-10--reconexão-e-reprocessamento-após-operação-offline">Cenário 10 — Reconexão e reprocessamento após operação offline</a></li>
 </ul>
 
 </div>
 <p>Componente 3 do DAK — <em>Cenários de uso</em>. Narrativas ilustrativas de como as personas
 (<a href="l2-personas.html">componente 2</a>) interagem nos processos de negócio
-(<a href="l2-business-process.html">componente 4</a>).</p>
+(<a href="l2-business-process.html">componente 4</a>). Cenários 7–10 derivados do diagrama de caso
+de uso e do documento de requisitos do projeto (<code class="language-plaintext highlighter-rouge">sources/requisitos-caso-de-uso/</code>).</p>
 
 <h3 id="cenário-1--visita-domiciliar-e-aplicação-da-anamnese-offline-first">Cenário 1 — Visita domiciliar e aplicação da anamnese (offline-first)</h3>
 
@@ -256,6 +261,35 @@ semestral mínima da NR-7, ou antecipa a reavaliação diante de novos gatilhos.
 <p>Um gestor de segurança consulta o histórico de acessos e alterações de um registro específico do
 trabalhador (<code class="language-plaintext highlighter-rouge">AgroSUSAuditEvent</code>, <code class="language-plaintext highlighter-rouge">AgroSUSProvenance</code>), sem participar do cuidado direto.</p>
 
+<h3 id="cenário-7--cadastro-e-gestão-do-produtor-rural">Cenário 7 — Cadastro e gestão do produtor rural</h3>
+
+<p>O ACS cadastra o produtor rural e sua propriedade (<code class="language-plaintext highlighter-rouge">AgroSUSPatient</code>); o próprio produtor pode
+visualizar seus dados cadastrais. Alterações e exclusões seguem as restrições de integridade do
+cadastro (ex.: CPF único, vínculo obrigatório a uma UBS de referência).</p>
+
+<h3 id="cenário-8--triagem-com-lógica-de-decisão-rule-based-api-de-ia-fora-de-escopo">Cenário 8 — Triagem com lógica de decisão rule-based <em>(API de IA fora de escopo)</em></h3>
+
+<p>O ACS preenche a ficha de triagem completa em campo. No documento de requisitos do projeto, essa
+ficha seria enviada a uma API externa de Inteligência Artificial que classificaria
+automaticamente o nível de risco do produtor. <strong>Decisão da equipe (<code class="language-plaintext highlighter-rouge">docs/adr/0004</code>): essa
+integração fica fora de escopo desta fase do IG.</strong> A lógica de suporte à decisão efetivamente
+implementada (<code class="language-plaintext highlighter-rouge">Library/AgroSUSIntoxicacaoLogic</code>, <code class="language-plaintext highlighter-rouge">PlanDefinition/AgroSUSEstratificacaoRisco</code>) usa
+gatilhos discretos e o indicador objetivo de colinesterase, fundamentados em NR-7/NR-31 — não um
+classificador de IA.</p>
+
+<h3 id="cenário-9--gestão-do-catálogo-de-biomarcadores-pela-ubs">Cenário 9 — Gestão do catálogo de biomarcadores pela UBS</h3>
+
+<p>A UBS mantém o catálogo de exames/biomarcadores disponíveis para solicitação (ex. colinesterase
+plasmática e de sangue total), usado pelo profissional assistencial ao solicitar exames
+(<code class="language-plaintext highlighter-rouge">AgroSUSSolicitacaoExame</code>) e refletido em <code class="language-plaintext highlighter-rouge">AgroSUSResultadosLaboratoriaisVS</code>.</p>
+
+<h3 id="cenário-10--reconexão-e-reprocessamento-após-operação-offline">Cenário 10 — Reconexão e reprocessamento após operação offline</h3>
+
+<p>O aplicativo do ACS opera offline durante a visita domiciliar. Ao reconectar, sincroniza o
+<code class="language-plaintext highlighter-rouge">Bundle</code> transacional (Cenário 1) com o registro completo da anamnese; a classificação por IA
+mencionada no documento de requisitos do projeto (Cenário 8) permanece fora de escopo desta fase
+(<code class="language-plaintext highlighter-rouge">docs/adr/0004</code>).</p>
+
 
 
 
@@ -275,9 +309,9 @@ trabalhador (<code class="language-plaintext highlighter-rouge">AgroSUSAuditEven
 
 <div class="inner-wrapper">
   <p>
-    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 13:58+0000">2026-07-21</span>
+    IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 14:24+0000">2026-07-21</span>
     <br/>
-    <span style="color: var(--footer-highlight-text-color)"><a name="l503">​</a>
+    <span style="color: var(--footer-highlight-text-color)"><a name="l577">​</a>
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

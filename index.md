@@ -47,6 +47,10 @@ Adaptação digital (WHO SMART Guidelines **L2/L3**) para o pathway **AgroSUS** 
 
 * **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento composto de risco validado (`docs/adr/0002-escore-risco-nao-definido.md`).
 
+#### Fora de escopo desta fase
+
+* **Classificação de risco por API externa de IA** — descrita no caso de uso do projeto; decisão da equipe de manter a lógica rule-based atual e tratar a integração com IA como capacidade futura (`docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md`).
+
 **Fonte (L1): NR-7 (PCMSO), NR-31 (Segurança e Saúde no Trabalho Rural) e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS — Ministério da Saúde. Ver `sources/_normas_extract.txt`.**
 
 * Para a lista completa de artefatos definidos neste IG, ver o [Artifact Index](artifacts.md).
@@ -135,7 +139,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
   "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T13:58:44+00:00",
+  "date" : "2026-07-21T14:24:33+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

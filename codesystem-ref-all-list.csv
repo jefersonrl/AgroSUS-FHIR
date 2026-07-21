@@ -1,5 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://dicom.nema.org/resources/ontology/DCM,01,active,"1.2.840.10008.2.16.4",DICOM Controlled Terminology Definitions,,"DICOM Code Definitions (Coding Scheme Designator ""DCM"" Coding Scheme Version ""01"")","ValueSet/participation-role-type,ValueSet/dicm-405-mediatype,ValueSet/audit-event-sub-type,ValueSet/security-role-type,ValueSet/audit-event-type"
+http://dicom.nema.org/resources/ontology/DCM,01,active,"1.2.840.10008.2.16.4",DICOM Controlled Terminology Definitions,,"DICOM Code Definitions (Coding Scheme Designator ""DCM"" Coding Scheme Version ""01"")","ValueSet/participation-role-type,ValueSet/dicm-405-mediatype,ValueSet/audit-event-sub-type,ValueSet/audit-event-type,ValueSet/security-role-type"
 http://hl7.org/fhir/address-type,4.0.1,active,"2.16.840.1.113883.4.642.4.70",AddressType,AddressType,"The type of an address (physical / postal).","ValueSet/address-type"
 http://hl7.org/fhir/address-use,4.0.1,active,"2.16.840.1.113883.4.642.4.68",AddressUse,AddressUse,"The use of an address.","ValueSet/address-use"
 http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
@@ -86,7 +86,7 @@ https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO,1.0.0,active,,BRCBO,BRCB
 https://terminologia.saude.gov.br/fhir/CodeSystem/BRCIAP2,1.0.0,active,,BRCIAP2,BRCIAP2,"","ValueSet/BRCIAP2"
 https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10,1.0.0,active,,BRCID10,BRCID10,"","ValueSet/BRReasonEncounter,ValueSet/agrosus-intoxicacao-pesticida"
 https://terminologia.saude.gov.br/fhir/CodeSystem/BRCaraterAtendimento,1.0.0,active,,BRCaraterAtendimento,BRCaraterAtendimento,"","ValueSet/BRCaraterAtendimento"
-https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional,1.0.0,draft,,BRConselhoProfissional,Conselhos profissionais de saúde do Brasil,"Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.","ValueSet/BRCRF,ValueSet/BRCOREN,ValueSet/BRCRM,ValueSet/BRCRO,ValueSet/BROutrosProfissionais"
+https://terminologia.saude.gov.br/fhir/CodeSystem/BRConselhoProfissional,1.0.0,draft,,BRConselhoProfissional,Conselhos profissionais de saúde do Brasil,"Esse CodeSystem inclui os conselhos profissionais de saúde do Brasil, conforme a Resolução CNS 251/1997.","ValueSet/BRCRF,ValueSet/BRCOREN,ValueSet/BRCRM,ValueSet/BROutrosProfissionais,ValueSet/BRCRO"
 https://terminologia.saude.gov.br/fhir/CodeSystem/BRModalidadeAssistencial,1.0.0,active,,BRModalidadeAssistencial,BRModalidadeAssistencial,"","ValueSet/BRModalidadeAssistencial"
 https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoDesfecho,1.0.0,active,,BRMotivoDesfecho,BRMotivoDesfecho,"","ValueSet/BRMotivoDesfecho"
 https://terminologia.saude.gov.br/fhir/CodeSystem/BRProcedencia,1.0.0,active,,BRProcedencia,BRProcedencia,"","ValueSet/BRProcedencia"
