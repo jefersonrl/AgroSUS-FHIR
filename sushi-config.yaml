@@ -12,6 +12,7 @@ copyrightYear: 2026+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC-BY-SA-3.0-IGO # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#BR "Brazil" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+language: pt-BR
 publisher:
   name: Fatec Ferraz de Vasconcelos
   url: https://www.fatecferraz.edu.br
@@ -81,6 +82,12 @@ menu:
     9. Testes: l2-test-scenarios.html
   Artefatos (L3): artifacts.html
   Downloads: downloads.html
+
+# Parâmetros do IG Publisher
+parameters:
+  show-inherited-invariants: false
+  usage-stats-opt-out: true
+  shownav: true
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
