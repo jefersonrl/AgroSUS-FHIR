@@ -16,6 +16,7 @@ Branch:
 {
   "resourceType" : "Questionnaire",
   "id" : "agrosus-anamnese",
+  "language" : "pt-BR",
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese",
   "version" : "0.1.0",
   "name" : "AgroSUSAnamnese",
@@ -157,21 +158,60 @@ Branch:
         "valueCoding" : {
           "system" : "http://hl7.org/fhir/administrative-gender",
           "code" : "male",
-          "display" : "Masculino"
+          "display" : "Male",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "pt-BR"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Masculino"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
         }
       },
       {
         "valueCoding" : {
           "system" : "http://hl7.org/fhir/administrative-gender",
           "code" : "female",
-          "display" : "Feminino"
+          "display" : "Female",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "pt-BR"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Feminino"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
         }
       },
       {
         "valueCoding" : {
           "system" : "http://hl7.org/fhir/administrative-gender",
           "code" : "unknown",
-          "display" : "Não declarado"
+          "display" : "Unknown",
+          "_display" : {
+            "extension" : [{
+              "extension" : [{
+                "url" : "lang",
+                "valueCode" : "pt-BR"
+              },
+              {
+                "url" : "content",
+                "valueString" : "Não declarado"
+              }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+            }]
+          }
         }
       }]
     },

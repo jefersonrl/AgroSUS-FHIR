@@ -124,6 +124,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "Questionnaire.item.item.answerOption.valueCoding.display"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
       "StructureDefinition.snapshot.element.binding"
     ],

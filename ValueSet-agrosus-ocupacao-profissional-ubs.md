@@ -54,7 +54,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "Ocupações dos profissionais assistenciais da UBS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T03:34:20+00:00",
+  "date" : "2026-07-21T12:10:06+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

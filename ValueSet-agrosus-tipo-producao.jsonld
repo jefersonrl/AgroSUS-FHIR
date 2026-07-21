@@ -11,7 +11,7 @@
   },
   "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-tipo-producao.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-21T03:37:48.552430Z",
+  "generatedAt": "2026-07-21T12:13:40.123862Z",
   "@graph": [
     {
       "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-tipo-producao.jsonld#posse-proprietario",

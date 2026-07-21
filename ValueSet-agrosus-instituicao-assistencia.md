@@ -52,7 +52,7 @@ Instituições que podem prestar assistência técnica ao produtor rural.
   "title" : "Instituição de Assistência Técnica",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T03:34:20+00:00",
+  "date" : "2026-07-21T12:10:06+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

@@ -53,5 +53,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-armazenamento-registros",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T03:37:48.393900"
+  "fhir:expansionTimestamp": "2026-07-21T12:13:39.958377"
 }

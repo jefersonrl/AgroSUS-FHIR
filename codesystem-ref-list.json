@@ -9,8 +9,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS",
-    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS"
+    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS",
+    "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
@@ -111,8 +111,8 @@
     "description" : "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual.",
     "uses" : {
     },
-    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs",
     "ValueSet-agrosus-frequencia-uso-epi.html" : "Frequência de utilização de EPI",
+    "ValueSet-agrosus-armazenamento-epi.html" : "Local de armazenamento dos EPIs",
     "ValueSet-agrosus-motivo-nao-uso-epi.html" : "Motivos de não utilização de EPI"
   },
   {
@@ -135,12 +135,12 @@
     "description" : "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas.",
     "uses" : {
     },
-    "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação",
-    "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição",
-    "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
     "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia",
+    "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
+    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês",
+    "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição",
     "ValueSet-agrosus-responsavel-aplicacao.html" : "Responsável pela aplicação",
-    "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês"
+    "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
@@ -173,10 +173,10 @@
     "description" : "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS.",
     "uses" : {
     },
-    "ValueSet-agrosus-fonte-agua.html" : "Fonte de Água da Propriedade",
-    "ValueSet-agrosus-tipo-producao.html" : "Tipo de Produção Agrícola",
     "ValueSet-agrosus-atividade-agricola.html" : "Principal Atividade Agrícola",
-    "ValueSet-agrosus-situacao-posse.html" : "Situação de Posse da Terra"
+    "ValueSet-agrosus-tipo-producao.html" : "Tipo de Produção Agrícola",
+    "ValueSet-agrosus-situacao-posse.html" : "Situação de Posse da Terra",
+    "ValueSet-agrosus-fonte-agua.html" : "Fonte de Água da Propriedade"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade",
@@ -209,9 +209,9 @@
     "description" : "",
     "uses" : {
     },
-    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao",
+    "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS",
     "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS",
-    "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS"
+    "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10",

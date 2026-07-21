@@ -17,5 +17,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-intoxicacao-pesticida",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T03:37:48.393724"
+  "fhir:expansionTimestamp": "2026-07-21T12:13:39.958196"
 }

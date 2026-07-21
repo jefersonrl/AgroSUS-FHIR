@@ -1,7 +1,7 @@
 AgroSUSFHIR : Validation Results
 =========================================
 
-err = 15, warn = 120, info = 210
+err = 12, warn = 120, info = 210
 $--
 Generated $--. FHIR version $-- for io.github.jefersonrl.agrosus#$-- (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
  Build Errors : 0 / 6 / 0
@@ -48,7 +48,7 @@ Generated $--. FHIR version $-- for io.github.jefersonrl.agrosus#$-- (canonical 
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/PractitionerRole-agrosus-profissional-tecnico-enfermagem-role-exemplo : 0 / 1 / 1
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Provenance-agrosus-provenance-anamnese-exemplo : 0 / 0 / 4
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Provenance-agrosus-provenance-plano-acompanhamento-exemplo : 0 / 0 / 4
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Questionnaire-agrosus-anamnese : 3 / 0 / 6
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Questionnaire-agrosus-anamnese : 0 / 0 / 6
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/QuestionnaireResponse-agrosus-anamnese-response-example : 0 / 1 / 1
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/ServiceRequest-agrosus-solicitacao-hemograma-exemplo : 0 / 2 / 3
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/StructureDefinition-agrosus-acs : 0 / 6 / 4
@@ -334,9 +334,6 @@ INFORMATION: Provenance/agrosus-provenance-plano-acompanhamento-exemplo: Provena
 INFORMATION: Provenance/agrosus-provenance-plano-acompanhamento-exemplo: Provenance.agent[0].type.coding[0].display: Não foram encontrados nomes de apresentação válidos para o código http://terminology.hl7.org/CodeSystem/provenance-participant-type#author para a(s) língua(s) 'pt-BR'. O ecrã é 'Author', o ecrã da língua predefinida
 == fsh-generated/resources/Questionnaire-agrosus-anamnese.json ==
 INFORMATION: Questionnaire/agrosus-anamnese: Questionnaire.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#BR for language(s) 'pt-BR'. The display is 'Brazil' which is a valid display for the default language
-ERROR: Questionnaire/agrosus-anamnese: Questionnaire.item[1].item[4].answerOption[0].value.ofType(Coding).display: Wrong Display Name 'Masculino' for http://hl7.org/fhir/administrative-gender#male. Valid display is 'Male' (for the language(s) 'pt-BR')
-ERROR: Questionnaire/agrosus-anamnese: Questionnaire.item[1].item[4].answerOption[1].value.ofType(Coding).display: Wrong Display Name 'Feminino' for http://hl7.org/fhir/administrative-gender#female. Valid display is 'Female' (for the language(s) 'pt-BR')
-ERROR: Questionnaire/agrosus-anamnese: Questionnaire.item[1].item[4].answerOption[2].value.ofType(Coding).display: Wrong Display Name 'Não declarado' for http://hl7.org/fhir/administrative-gender#unknown. Valid display is 'Unknown' (for the language(s) 'pt-BR')
 INFORMATION: Questionnaire/agrosus-anamnese: Questionnaire.item[3].item[2].enableWhen[0].answer.ofType(Coding): Referência ao experimental CodeSystem https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica|0.1.0
 INFORMATION: Questionnaire/agrosus-anamnese: Questionnaire.item[3].item[5].enableWhen[0].answer.ofType(Coding): Referência ao experimental CodeSystem https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica|0.1.0
 INFORMATION: Questionnaire/agrosus-anamnese: Questionnaire.item[4].item[5].enableWhen[0].answer.ofType(Coding): Referência ao experimental CodeSystem https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao|0.1.0
