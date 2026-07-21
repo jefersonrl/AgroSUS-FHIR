@@ -47,5 +47,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-tipo-coleta",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T16:41:09.359588"
+  "fhir:expansionTimestamp": "2026-07-21T16:55:18.640502"
 }

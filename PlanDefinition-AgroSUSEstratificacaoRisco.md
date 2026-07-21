@@ -23,7 +23,7 @@ Workflow de suporte à decisão: classifica o resultado da colinesterase, define
 * **Actions: **: **Experimental: **
   * : true
 * **Actions: **: **Date: **
-  * : 2026-07-21 16:38:11+0000
+  * : 2026-07-21 16:50:13+0000
 * **Actions: **: **Publisher: **
   * : Fatec Ferraz de Vasconcelos
 * **Actions: **: **Description: **
@@ -57,7 +57,7 @@ Workflow de suporte à decisão: classifica o resultado da colinesterase, define
   },
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-07-21T16:38:11+00:00",
+  "date" : "2026-07-21T16:50:13+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

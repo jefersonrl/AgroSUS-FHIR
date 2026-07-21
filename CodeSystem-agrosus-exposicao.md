@@ -37,7 +37,7 @@ Terminologia das características de frequência e forma de exposição aos defe
   "title" : "Terminologia de exposição ocupacional AgroSUS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T16:38:11+00:00",
+  "date" : "2026-07-21T16:50:13+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

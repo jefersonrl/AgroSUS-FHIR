@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-visita-acs.c
   "name" : "AgroSUSVisitaACS",
   "title" : "Visita do ACS AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T16:38:11+00:00",
+  "date" : "2026-07-21T16:50:13+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

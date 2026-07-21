@@ -4,9 +4,10 @@
   "meta" : {
     "profile" : ["http://smart.who.int/base/StructureDefinition/SGImplementationGuide"]
   },
+  "language" : "pt-BR",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide io.github.jefersonrl.agrosus</b></p><a name=\"io.github.jefersonrl.agrosus\"> </a><a name=\"hcio.github.jefersonrl.agrosus\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"http://smart.who.int/base/0.1.0/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>AgroSUSFHIR</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus</pre><div><p>Guia de Implementação HL7 FHIR do módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas.</p>\n</div></div>"
+    "div" : "<div xml:lang=\"pt-BR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ImplementationGuide io.github.jefersonrl.agrosus</b></p><a name=\"io.github.jefersonrl.agrosus\"> </a><a name=\"hcio.github.jefersonrl.agrosus\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"http://smart.who.int/base/0.1.0/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>AgroSUSFHIR</h2><p>O URL oficial para este guia de implementação é: </p><pre>https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus</pre><div><p>Guia de Implementação HL7 FHIR do módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas.</p>\n</div></div>"
   },
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus",
   "version" : "0.1.0",
@@ -14,7 +15,7 @@
   "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T16:38:11+00:00",
+  "date" : "2026-07-21T16:50:13+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
@@ -136,6 +137,39 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "usage-stats-opt-out"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -415,6 +449,39 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "usage-stats-opt-out"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
