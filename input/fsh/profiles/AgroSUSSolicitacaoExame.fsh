@@ -33,7 +33,8 @@ Description: "Solicitação de exame laboratorial realizada por profissional ass
 * subject ^short = "Trabalhador rural para o qual o exame foi solicitado"
 
 * encounter MS
-* encounter ^short = "Atendimento relacionado à solicitação, quando existente"
+* encounter only Reference(AgroSUSAtendimentoUBS)
+* encounter ^short = "Atendimento da UBS relacionado à solicitação"
 
 * occurrence[x] MS
 * occurrence[x] ^short = "Data ou período previsto para realização do exame"
@@ -41,21 +42,27 @@ Description: "Solicitação de exame laboratorial realizada por profissional ass
 * authoredOn 1..1 MS
 * authoredOn ^short = "Data e hora da solicitação"
 
+* requester 1..1 MS
 * requester only Reference(AgroSUSProfissionalUBSRole)
-* requester MS
 * requester ^short = "Vínculo do profissional da UBS responsável pela solicitação"
 
 * reasonCode MS
 * reasonCode ^short = "Justificativa clínica para o exame"
 
 * reasonReference MS
-* reasonReference ^short = "Condição, observação ou laudo que justifica a solicitação"
+* reasonReference only Reference(
+    AgroSUSIntoxicacaoPesticida or
+    AgroSUSResultadoLaboratorial or
+    AgroSUSLaudoLaboratorial
+)
+* reasonReference ^short = "Condição, resultado ou laudo que justifica a solicitação"
 
 * supportingInfo MS
 * supportingInfo ^short = "Anamnese e outras informações que apoiam a decisão clínica"
 
 * performer MS
-* performer ^short = "Laboratório ou serviço responsável pela realização, quando definido"
+* performer only Reference(AgroSUSLaboratorio)
+* performer ^short = "Laboratório responsável pela realização, quando definido"
 
 * patientInstruction MS
 * patientInstruction ^short = "Orientações fornecidas ao trabalhador"
