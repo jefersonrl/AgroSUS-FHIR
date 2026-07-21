@@ -1,0 +1,98 @@
+name: GitHub Pages build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agrosus-gh-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Instalar SUSHI
+        run: npm install --global fsh-sushi
+
+      - name: Instalar pacotes FHIR brasileiros
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          install_fhir_package() {
+            local package_id="$1"
+            local package_version="$2"
+            local package_url="$3"
+            local destination="$HOME/.fhir/packages/${package_id}#${package_version}"
+            local archive="/tmp/${package_id}-${package_version}.tgz"
+
+            mkdir -p "$destination"
+            curl --fail --location --retry 3 --retry-all-errors \
+              "$package_url" \
+              --output "$archive"
+            tar --extract --gzip --file "$archive" --directory "$destination"
+            test -f "$destination/package/package.json"
+          }
+
+          install_fhir_package \
+            "br.gov.saude.br-core.fhir" \
+            "1.0.0" \
+            "https://hl7.org.br/fhir/core/package.tgz"
+
+          install_fhir_package \
+            "br.gov.saude.terminologia.fhir" \
+            "1.0.0" \
+            "https://terminologia.saude.gov.br/fhir/package.tgz"
+
+          install_fhir_package \
+            "br.gov.saude.ips.fhir" \
+            "1.0.0" \
+            "https://hl7.org.br/fhir/ips/package.tgz"
+
+      - name: Validar FSH com SUSHI
+        run: sushi .
+
+      - name: Baixar o IG Publisher
+        run: |
+          mkdir -p input-cache
+          curl --fail --location --retry 3 --retry-all-errors \
+            "https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar" \
+            --output input-cache/publisher.jar
+
+      - name: Gerar o Implementation Guide
+        env:
+          REPOSITORY: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          java -Xmx6g -jar input-cache/publisher.jar publisher \
+            -ig . \
+            -auto-ig-build \
+            -repo "https://github.com/${REPOSITORY}/tree/${BRANCH}"
+
+      - name: Publicar no GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: output
+          clean: true
