@@ -33,7 +33,7 @@ Categorias utilizadas para classificar os planos longitudinais de acompanhamento
   "title" : "Categorias de Plano de Cuidado AgroSUS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T03:24:49+00:00",
+  "date" : "2026-07-21T03:34:20+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

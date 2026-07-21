@@ -52,7 +52,7 @@ Formações profissionais previstas para o responsável técnico da produção.
   "title" : "Formação do Responsável Técnico",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T03:24:49+00:00",
+  "date" : "2026-07-21T03:34:20+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

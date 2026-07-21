@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Rastreabilidade das aplicações AgroSUS"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:24:49+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:34:20+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;

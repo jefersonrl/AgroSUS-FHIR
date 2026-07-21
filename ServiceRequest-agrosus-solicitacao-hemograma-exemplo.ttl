@@ -51,7 +51,7 @@
        a loinc:58410-2 ;
        fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
        fhir:Coding.code [ fhir:value "58410-2" ] ;
-       fhir:Coding.display [ fhir:value "CBC panel - Blood by Automated count" ]
+       fhir:Coding.display [ fhir:value "CBC (hemogram) Sg Auto" ]
      ] ;
      fhir:CodeableConcept.text [ fhir:value "Hemograma completo" ]
   ] ;

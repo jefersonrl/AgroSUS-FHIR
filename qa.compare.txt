@@ -1,7 +1,7 @@
 AgroSUSFHIR : Validation Results
 =========================================
 
-err = 16, warn = 120, info = 210
+err = 15, warn = 120, info = 210
 $--
 Generated $--. FHIR version $-- for io.github.jefersonrl.agrosus#$-- (canonical = https://jefersonrl.github.io/AgroSUS-FHIR)
  Build Errors : 0 / 6 / 0
@@ -50,7 +50,7 @@ Generated $--. FHIR version $-- for io.github.jefersonrl.agrosus#$-- (canonical 
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Provenance-agrosus-provenance-plano-acompanhamento-exemplo : 0 / 0 / 4
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/Questionnaire-agrosus-anamnese : 3 / 0 / 6
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/QuestionnaireResponse-agrosus-anamnese-response-example : 0 / 1 / 1
- /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/ServiceRequest-agrosus-solicitacao-hemograma-exemplo : 1 / 2 / 3
+ /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/ServiceRequest-agrosus-solicitacao-hemograma-exemplo : 0 / 2 / 3
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/StructureDefinition-agrosus-acs : 0 / 6 / 4
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/StructureDefinition-agrosus-acs-role : 0 / 0 / 4
  /home/runner/work/AgroSUS-FHIR/AgroSUS-FHIR/fsh-generated/resources/StructureDefinition-agrosus-anamnese-response : 0 / 0 / 3
@@ -348,7 +348,6 @@ WARNING: ServiceRequest/agrosus-solicitacao-hemograma-exemplo: ServiceRequest.id
 WARNING: ServiceRequest/agrosus-solicitacao-hemograma-exemplo: ServiceRequest.requisition.system: Não foi possível encontrar uma definição para o valor URL 'https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial'
 INFORMATION: ServiceRequest/agrosus-solicitacao-hemograma-exemplo: ServiceRequest.category[0].coding[0].display: There are no valid display names found for the code http://snomed.info/sct#108252007 for language(s) 'pt-BR'. The display is 'Laboratory procedure' which is a valid display for the default language
 INFORMATION: ServiceRequest/agrosus-solicitacao-hemograma-exemplo: ServiceRequest.priority: Referência ao projeto CodeSystem http://hl7.org/fhir/request-priority|4.0.1
-ERROR: ServiceRequest/agrosus-solicitacao-hemograma-exemplo: ServiceRequest.code.coding[0].display: Wrong Display Name 'CBC panel - Blood by Automated count' for http://loinc.org#58410-2. Valid display is 'CBC (hemogram) Sg Auto' (pt-BR) (for the language(s) 'pt-BR')
 == fsh-generated/resources/StructureDefinition-agrosus-acs.json ==
 INFORMATION: StructureDefinition/agrosus-acs: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#BR for language(s) 'pt-BR'. The display is 'Brazil' which is a valid display for the default language
 WARNING: StructureDefinition/agrosus-acs: StructureDefinition.snapshot.element[210].short: o valor não deve começar ou terminar com espaço em branco ' Extensões adicionais que não podem ser ignoradas, mesmo que não reconhecidas'

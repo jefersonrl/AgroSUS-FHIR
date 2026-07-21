@@ -48,5 +48,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-via-exposicao.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-via-exposicao",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T03:28:19.422672"
+  "fhir:expansionTimestamp": "2026-07-21T03:37:48.397546"
 }

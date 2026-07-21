@@ -87,7 +87,7 @@ Solicitação realizada após avaliação clínica individual pela equipe da UBS
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "58410-2",
-      "display" : "CBC panel - Blood by Automated count"
+      "display" : "CBC (hemogram) Sg Auto"
     }],
     "text" : "Hemograma completo"
   },

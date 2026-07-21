@@ -13,7 +13,7 @@ Perfil: [Resultado Laboratorial AgroSUS](StructureDefinition-agrosus-resultado-l
 
 **identifier**: `https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial`/RES-LAB-2026-000001-HB
 
-**basedOn**: [ServiceRequest CBC panel - Blood by Automated count](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
+**basedOn**: [ServiceRequest CBC (hemogram) Sg Auto](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
 
 **status**: Final
 

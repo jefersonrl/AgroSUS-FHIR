@@ -11,7 +11,7 @@
   },
   "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-equipamento-aplicacao.jsonld",
   "@type": "http://www.w3.org/ns/prov#Entity",
-  "generatedAt": "2026-07-21T03:28:19.570306Z",
+  "generatedAt": "2026-07-21T03:37:48.544701Z",
   "@graph": [
     {
       "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-equipamento-aplicacao.jsonld#dias-mes-1-2",
