@@ -46,7 +46,7 @@ Title: "Exemplo de Resultado de Hemoglobina"
 
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 
-* code = http://loinc.org#718-7 "Hemoglobin [Mass/volume] in Blood"
+* code = http://loinc.org#718-7 "Hgb Sg-mCnc"
 * code.text = "Hemoglobina"
 
 * subject = Reference(agrosus-patient-example)
@@ -81,7 +81,7 @@ Title: "Exemplo de Resultado de Hematócrito"
 
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 
-* code = http://loinc.org#4544-3 "Hematocrit [Volume Fraction] of Blood by Automated count"
+* code = http://loinc.org#4544-3 "Hct Fr Sg Auto"
 * code.text = "Hematócrito"
 
 * subject = Reference(agrosus-patient-example)
@@ -115,7 +115,7 @@ Title: "Exemplo de Resultado de Leucócitos"
 
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 
-* code = http://loinc.org#6690-2 "Leukocytes [#/volume] in Blood by Automated count"
+* code = http://loinc.org#6690-2 "WBC # Sg Auto"
 * code.text = "Leucócitos"
 
 * subject = Reference(agrosus-patient-example)
@@ -149,7 +149,7 @@ Title: "Exemplo de Resultado de Plaquetas"
 
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 
-* code = http://loinc.org#777-3 "Platelets [#/volume] in Blood by Automated count"
+* code = http://loinc.org#777-3 "plaqueta # Sg Auto"
 * code.text = "Plaquetas"
 
 * subject = Reference(agrosus-patient-example)
@@ -184,7 +184,7 @@ Description: "Laudo fictício que agrupa os resultados individuais do hemograma.
 
 * category[0] = http://terminology.hl7.org/CodeSystem/v2-0074#HM "Hematology"
 
-* code = http://loinc.org#58410-2 "CBC panel - Blood by Automated count"
+* code = http://loinc.org#58410-2 "CBC (hemogram) Sg Auto"
 * code.text = "Hemograma completo"
 
 * subject = Reference(agrosus-patient-example)
