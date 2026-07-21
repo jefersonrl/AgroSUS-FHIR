@@ -12,7 +12,7 @@ Description: "Solicitação fictícia de hemograma completo realizada pelo médi
 * requisition.system = "https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial"
 * requisition.value = "REQ-LAB-2026-000001"
 
-* status = #active
+* status = #completed
 * intent = #order
 * priority = #routine
 
