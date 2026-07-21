@@ -32,6 +32,14 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      - name: Configurar Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Instalar Jekyll
+        run: gem install jekyll bundler --no-document
+
       - name: Instalar SUSHI
         run: npm install --global fsh-sushi
 
