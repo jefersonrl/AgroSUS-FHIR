@@ -1,4 +1,4 @@
-# Equipamentos utilizados na aplicação - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Equipamentos utilizados na aplicação - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -52,7 +52,7 @@ Tipos de equipamento utilizados na aplicação de defensivos agrícolas.
   "title" : "Equipamentos utilizados na aplicação",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

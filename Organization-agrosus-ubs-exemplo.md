@@ -1,4 +1,4 @@
-# UBS AgroSUS de exemplo - Módulo AgroSUS — Projeto mareIA v0.1.0
+# UBS AgroSUS de exemplo - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)

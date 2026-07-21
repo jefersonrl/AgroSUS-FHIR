@@ -1,4 +1,4 @@
-# Temas de Capacitação AgroSUS - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Temas de Capacitação AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -52,7 +52,7 @@ Temas que podem ser selecionados no registro de capacitação do trabalhador rur
   "title" : "Temas de Capacitação AgroSUS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

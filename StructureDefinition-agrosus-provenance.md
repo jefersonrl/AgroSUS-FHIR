@@ -1,4 +1,4 @@
-# Proveniência dos Registros AgroSUS - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Proveniência dos Registros AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-provenance.c
   "name" : "AgroSUSProvenance",
   "title" : "Proveniência dos Registros AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

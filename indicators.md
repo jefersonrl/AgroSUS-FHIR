@@ -1,4 +1,4 @@
-# Indicator and Performance Metrics - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Indicator and Performance Metrics - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Business Requirements**](business-requirements.md)

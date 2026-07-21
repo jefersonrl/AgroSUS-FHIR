@@ -12,10 +12,10 @@
   <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus"/>
   <version value="0.1.0"/>
   <name value="AgroSUSFHIR"/>
-  <title value="Módulo AgroSUS — Projeto mareIA"/>
+  <title value="Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-07-21T12:31:15+00:00"/>
+  <date value="2026-07-21T13:03:45+00:00"/>
   <publisher value="Fatec Ferraz de Vasconcelos"/>
   <contact>
     <name value="Fatec Ferraz de Vasconcelos"/>

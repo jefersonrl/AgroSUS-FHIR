@@ -40,5 +40,5 @@
   "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.displays.json",
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-situacao-posse",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T12:33:46.016945"
+  "fhir:expansionTimestamp": "2026-07-21T13:07:11.961733"
 }

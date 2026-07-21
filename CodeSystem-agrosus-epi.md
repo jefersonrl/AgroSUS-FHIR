@@ -1,4 +1,4 @@
-# Terminologia de equipamentos de proteção individual AgroSUS - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Terminologia de equipamentos de proteção individual AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -35,7 +35,7 @@ Terminologia para frequência de uso, armazenamento e motivos de não utilizaç�
   "title" : "Terminologia de equipamentos de proteção individual AgroSUS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

@@ -1,4 +1,4 @@
-# Condições de saúde e sintomas AgroSUS - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Condições de saúde e sintomas AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -34,7 +34,7 @@ Terminologia dos itens de condições de saúde e sintomas referidos no formulá
   "title" : "Condições de saúde e sintomas AgroSUS",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

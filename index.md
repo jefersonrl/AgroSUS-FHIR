@@ -1,4 +1,4 @@
-# Home - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Home - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -191,10 +191,10 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus",
   "version" : "0.1.0",
   "name" : "AgroSUSFHIR",
-  "title" : "Módulo AgroSUS — Projeto mareIA",
+  "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

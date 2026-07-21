@@ -22,10 +22,10 @@
   fhir:ImplementationGuide.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus"] ;
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "AgroSUSFHIR"] ;
-  fhir:ImplementationGuide.title [ fhir:value "Módulo AgroSUS — Projeto mareIA"] ;
+  fhir:ImplementationGuide.title [ fhir:value "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T12:31:15+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T13:03:45+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;

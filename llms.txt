@@ -1,4 +1,4 @@
-# io.github.jefersonrl.agrosus#0.1.0: Módulo AgroSUS — Projeto mareIA
+# io.github.jefersonrl.agrosus#0.1.0: Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas
 
 ## Pages
 
@@ -119,7 +119,7 @@
 
 ### ImplementationGuides
 
-* [Módulo AgroSUS — Projeto mareIA](index.md)
+* [Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas](index.md)
 
 ### Questionnaires
 

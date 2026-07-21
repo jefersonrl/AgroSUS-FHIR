@@ -1,4 +1,4 @@
-# Resultados Laboratoriais AgroSUS - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Resultados Laboratoriais AgroSUS - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
@@ -52,7 +52,7 @@ Biomarcadores laboratoriais utilizados no acompanhamento assistencial dos trabal
   "title" : "Resultados Laboratoriais AgroSUS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-21T12:31:15+00:00",
+  "date" : "2026-07-21T13:03:45+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

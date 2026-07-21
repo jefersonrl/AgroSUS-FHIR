@@ -1,4 +1,4 @@
-# Exemplo de Atendimento para Revisão dos Exames - Módulo AgroSUS — Projeto mareIA v0.1.0
+# Exemplo de Atendimento para Revisão dos Exames - Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Indices**](indices.md)
