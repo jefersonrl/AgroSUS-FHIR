@@ -3,6 +3,13 @@ Componente 3 do DAK — *Cenários de uso*. Narrativas ilustrativas de como as p
 (<a href="l2-business-process.html">componente 4</a>). Cenários 7–10 derivados do diagrama de caso
 de uso e do documento de requisitos do projeto (`sources/requisitos-caso-de-uso/`).
 
+<div>
+<img src="agrosus-use-case.svg" alt="Diagrama de caso de uso do AgroSUS" style="max-width:100%;"/>
+<p><em>Diagrama de caso de uso do projeto (equipe FATEC Ferraz de Vasconcelos/CPS), base para os
+cenários 7–10 abaixo. O caso de uso "Classificar Risco" (API Externa) está fora de escopo desta
+fase — ver <code>docs/adr/0004-caso-de-uso-fatec-personas-cenarios.md</code>.</em></p>
+</div>
+
 ### Cenário 1 — Visita domiciliar e aplicação da anamnese (offline-first)
 
 O ACS visita o trabalhador rural em sua propriedade. Sem conexão de rede, aplica a anamnese
