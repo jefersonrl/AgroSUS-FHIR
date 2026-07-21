@@ -110,5 +110,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-fonte-agua",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T12:13:39.957667"
+  "fhir:expansionTimestamp": "2026-07-21T12:23:52.834921"
 }

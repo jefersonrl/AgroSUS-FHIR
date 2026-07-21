@@ -68,5 +68,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-formacao-responsavel-tecnico",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T12:13:39.960870"
+  "fhir:expansionTimestamp": "2026-07-21T12:23:52.837419"
 }

@@ -22,7 +22,7 @@ Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number:
 | Detalhes do contacto | * [+55 11 90000-0000](tel:+551190000-0000)
 * Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP(home)
  |
-| [Raça BR IPS](file://C:\Portfolio-Digital-HSL\git\ips-brasil-ig\output/StructureDefinition-raca-br-ips.html) | Branca |
+| [Raça BR IPS](https://ips.saude.gov.br/fhir/StructureDefinition-raca-br-ips.html) | Branca |
 
 
 

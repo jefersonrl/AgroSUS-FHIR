@@ -33,7 +33,7 @@ Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS.
   "title" : "Escolaridade AgroSUS",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T12:10:06+00:00",
+  "date" : "2026-07-21T12:21:04+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

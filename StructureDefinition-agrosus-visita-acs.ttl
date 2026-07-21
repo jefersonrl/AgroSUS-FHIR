@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "AgroSUSVisitaACS"] ;
   fhir:StructureDefinition.title [ fhir:value "Visita do ACS AgroSUS"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-07-21T12:10:06+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-21T12:21:04+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
@@ -3405,8 +3405,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ] ;
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoDesfecho" ;
-           fhir:link <https://terminologia.saude.gov.br/fhir/CodeSystem/BRMotivoDesfecho>
+           fhir:value "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho" ;
+           fhir:link <https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho>
          ]
        ] ;
        fhir:ElementDefinition.mapping [
