@@ -17,7 +17,7 @@ Resultado individual de exame ou biomarcador laboratorial utilizado no acompanha
 **Usos:**
 
 * Refere a este Perfil: [Evento de Auditoria AgroSUS](StructureDefinition-agrosus-audit-event.md), [Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS](StructureDefinition-agrosus-intoxicacao-pesticida.md), [Laudo Laboratorial AgroSUS](StructureDefinition-agrosus-laudo-laboratorial.md), [Plano de Acompanhamento AgroSUS](StructureDefinition-agrosus-plano-acompanhamento.md)... Show 2 more, [Proveniência dos Registros AgroSUS](StructureDefinition-agrosus-provenance.md) and [Solicitação de Exame AgroSUS](StructureDefinition-agrosus-solicitacao-exame.md)
-* Exemplos para este Perfil: [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
+* Exemplos para este Perfil: [Observation/agrosus-resultado-colinesterase-alterada-exemplo](Observation-agrosus-resultado-colinesterase-alterada-exemplo.md), [Observation/agrosus-resultado-colinesterase-basal-exemplo](Observation-agrosus-resultado-colinesterase-basal-exemplo.md), [Observation/agrosus-resultado-colinesterase-normal-exemplo](Observation-agrosus-resultado-colinesterase-normal-exemplo.md), [Observation/agrosus-resultado-colinesterase-precaucao-exemplo](Observation-agrosus-resultado-colinesterase-precaucao-exemplo.md)... Show 4 more, [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
 * Declarações de capacidade usando este Perfil: [Requisitos de capacidade do servidor AgroSUS](CapabilityStatement-agrosus-server-capabilities.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/io.github.jefersonrl.agrosus|current/StructureDefinition/StructureDefinition-agrosus-resultado-laboratorial.json)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-resultado-la
   "name" : "AgroSUSResultadoLaboratorial",
   "title" : "Resultado Laboratorial AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T16:50:13+00:00",
+  "date" : "2026-07-21T18:25:10+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

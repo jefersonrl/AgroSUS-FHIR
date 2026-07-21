@@ -46,6 +46,7 @@ Adaptação digital (WHO SMART Guidelines **L2/L3**) para o pathway **AgroSUS** 
 #### Itens pendentes de confirmação clínica
 
 * **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento composto de risco validado (`docs/adr/0002-escore-risco-nao-definido.md`).
+* **`AgroSUSPlanoAcompanhamento.addresses` só aceita condição de intoxicação** — a categoria "monitoramento de exposição, sem suspeita de intoxicação" não pode hoje ser usada em nenhuma instância válida do perfil (`docs/adr/0005-plano-acompanhamento-addresses-so-intoxicacao.md`).
 
 #### Fora de escopo desta fase
 
@@ -77,12 +78,12 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
 
 * Este material contém conteúdo do [LOINC](http://loinc.org). LOINC é copyright © 1995-2020, Regenstrief Institute, Inc. e o Logical Observation Identifiers Names and Codes (LOINC) Committee e está disponível sem custo sob a [licença](http://loinc.org/license). LOINC® é uma marca registada dos Estados Unidos da América do Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.1.0/CodeSystem-v3-loinc.html): [AgroSUSExamesLaboratoriaisVS](ValueSet-agrosus-exames-laboratoriais.md), [AgroSUSLaudoLaboratorial](StructureDefinition-agrosus-laudo-laboratorial.md)... Show 9 more, [AgroSUSResultadoLaboratorial](StructureDefinition-agrosus-resultado-laboratorial.md), [AgroSUSResultadosLaboratoriaisVS](ValueSet-agrosus-resultados-laboratoriais.md), [AgroSUSSolicitacaoExame](StructureDefinition-agrosus-solicitacao-exame.md), [DiagnosticReport/agrosus-laudo-hemograma-exemplo](DiagnosticReport-agrosus-laudo-hemograma-exemplo.md), [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md), [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md) and [ServiceRequest/agrosus-solicitacao-hemograma-exemplo](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
+* [LOINC](http://terminology.hl7.org/6.1.0/CodeSystem-v3-loinc.html): [AgroSUSExamesLaboratoriaisVS](ValueSet-agrosus-exames-laboratoriais.md), [AgroSUSLaudoLaboratorial](StructureDefinition-agrosus-laudo-laboratorial.md)... Show 18 more, [AgroSUSResultadoLaboratorial](StructureDefinition-agrosus-resultado-laboratorial.md), [AgroSUSResultadosLaboratoriaisVS](ValueSet-agrosus-resultados-laboratoriais.md), [AgroSUSSolicitacaoExame](StructureDefinition-agrosus-solicitacao-exame.md), [DiagnosticReport/agrosus-laudo-hemograma-exemplo](DiagnosticReport-agrosus-laudo-hemograma-exemplo.md), [Observation/agrosus-resultado-colinesterase-alterada-exemplo](Observation-agrosus-resultado-colinesterase-alterada-exemplo.md), [Observation/agrosus-resultado-colinesterase-basal-exemplo](Observation-agrosus-resultado-colinesterase-basal-exemplo.md), [Observation/agrosus-resultado-colinesterase-normal-exemplo](Observation-agrosus-resultado-colinesterase-normal-exemplo.md), [Observation/agrosus-resultado-colinesterase-precaucao-exemplo](Observation-agrosus-resultado-colinesterase-precaucao-exemplo.md), [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md), [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-basal-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-basal-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-retestagem-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-retestagem-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2026-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo.md) and [ServiceRequest/agrosus-solicitacao-hemograma-exemplo](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
 
 
 * Este material contém conteúdo que é copyright da SNOMED International. Os implementadores destas especificações devem ter a licença apropriada de afiliado da SNOMED CT - para mais informações contacte [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) ou [info@snomed.org](mailto:info@snomed.org).
 
-* [Termos clínicos SNOMED&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [ServiceRequest/agrosus-solicitacao-hemograma-exemplo](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
+* [Termos clínicos SNOMED&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [ServiceRequest/agrosus-solicitacao-colinesterase-basal-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-basal-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-retestagem-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-retestagem-exemplo.md)... Show 4 more, [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2026-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo.md) and [ServiceRequest/agrosus-solicitacao-hemograma-exemplo](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
@@ -92,7 +93,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.1.0/CodeSystem-v3-ucum.html): [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.1.0/CodeSystem-v3-ucum.html): [Observation/agrosus-resultado-colinesterase-alterada-exemplo](Observation-agrosus-resultado-colinesterase-alterada-exemplo.md), [Observation/agrosus-resultado-colinesterase-basal-exemplo](Observation-agrosus-resultado-colinesterase-basal-exemplo.md)... Show 6 more, [Observation/agrosus-resultado-colinesterase-normal-exemplo](Observation-agrosus-resultado-colinesterase-normal-exemplo.md), [Observation/agrosus-resultado-colinesterase-precaucao-exemplo](Observation-agrosus-resultado-colinesterase-precaucao-exemplo.md), [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
 
 
 * These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright © 2011 by the National Electrical Manufacturers Association.
@@ -109,7 +110,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
 * [LibraryType](http://terminology.hl7.org/7.1.0/CodeSystem-library-type.html): [AgroSUSIntoxicacaoLogic](Library-AgroSUSIntoxicacaoLogic.md)
 * [Measure Population Type](http://terminology.hl7.org/7.1.0/CodeSystem-measure-population.html): [AgroSUSMeasureAdesaoPeriodicidade](Measure-AgroSUSMeasureAdesaoPeriodicidade.md), [AgroSUSMeasureAlteradosComConduta](Measure-AgroSUSMeasureAlteradosComConduta.md), [AgroSUSMeasureCoberturaAnamnese](Measure-AgroSUSMeasureCoberturaAnamnese.md), [AgroSUSMeasureCoberturaBasal](Measure-AgroSUSMeasureCoberturaBasal.md) and [AgroSUSMeasureCoberturaEPI](Measure-AgroSUSMeasureCoberturaEPI.md)
 * [Measure Scoring](http://terminology.hl7.org/7.1.0/CodeSystem-measure-scoring.html): [AgroSUSMeasureAdesaoPeriodicidade](Measure-AgroSUSMeasureAdesaoPeriodicidade.md), [AgroSUSMeasureAlteradosComConduta](Measure-AgroSUSMeasureAlteradosComConduta.md), [AgroSUSMeasureCoberturaAnamnese](Measure-AgroSUSMeasureCoberturaAnamnese.md), [AgroSUSMeasureCoberturaBasal](Measure-AgroSUSMeasureCoberturaBasal.md) and [AgroSUSMeasureCoberturaEPI](Measure-AgroSUSMeasureCoberturaEPI.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [Observation/agrosus-resultado-colinesterase-alterada-exemplo](Observation-agrosus-resultado-colinesterase-alterada-exemplo.md), [Observation/agrosus-resultado-colinesterase-basal-exemplo](Observation-agrosus-resultado-colinesterase-basal-exemplo.md)... Show 6 more, [Observation/agrosus-resultado-colinesterase-normal-exemplo](Observation-agrosus-resultado-colinesterase-normal-exemplo.md), [Observation/agrosus-resultado-colinesterase-precaucao-exemplo](Observation-agrosus-resultado-colinesterase-precaucao-exemplo.md), [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
 * [PlanDefinitionType](http://terminology.hl7.org/7.1.0/CodeSystem-plan-definition-type.html): [AgroSUSEstratificacaoRisco](PlanDefinition-AgroSUSEstratificacaoRisco.md)
 * [Provenance participant type](http://terminology.hl7.org/7.1.0/CodeSystem-provenance-participant-type.html): [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Provenance/agrosus-provenance-anamnese-exemplo](Provenance-agrosus-provenance-anamnese-exemplo.md) and [Provenance/agrosus-provenance-plano-acompanhamento-exemplo](Provenance-agrosus-provenance-plano-acompanhamento-exemplo.md)
 * [diagnosticServiceSectionId](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html): [DiagnosticReport/agrosus-laudo-hemograma-exemplo](DiagnosticReport-agrosus-laudo-hemograma-exemplo.md)
@@ -118,7 +119,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
 * [ActPriority](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActPriority.html): [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Encounter/agrosus-atendimento-ubs-avaliacao-exemplo](Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.md), [Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo](Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.md) and [Encounter/agrosus-visita-acs-exemplo](Encounter-agrosus-visita-acs-exemplo.md)
 * [ActReason](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActReason.html): [AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo](AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo.md), [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Provenance/agrosus-provenance-anamnese-exemplo](Provenance-agrosus-provenance-anamnese-exemplo.md) and [Provenance/agrosus-provenance-plano-acompanhamento-exemplo](Provenance-agrosus-provenance-plano-acompanhamento-exemplo.md)
 * [DataOperation](http://terminology.hl7.org/7.1.0/CodeSystem-v3-DataOperation.html): [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Provenance/agrosus-provenance-anamnese-exemplo](Provenance-agrosus-provenance-anamnese-exemplo.md) and [Provenance/agrosus-provenance-plano-acompanhamento-exemplo](Provenance-agrosus-provenance-plano-acompanhamento-exemplo.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html): [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html): [Observation/agrosus-resultado-colinesterase-alterada-exemplo](Observation-agrosus-resultado-colinesterase-alterada-exemplo.md), [Observation/agrosus-resultado-colinesterase-basal-exemplo](Observation-agrosus-resultado-colinesterase-basal-exemplo.md)... Show 6 more, [Observation/agrosus-resultado-colinesterase-normal-exemplo](Observation-agrosus-resultado-colinesterase-normal-exemplo.md), [Observation/agrosus-resultado-colinesterase-precaucao-exemplo](Observation-agrosus-resultado-colinesterase-precaucao-exemplo.md), [Observation/agrosus-resultado-hematocrito-exemplo](Observation-agrosus-resultado-hematocrito-exemplo.md), [Observation/agrosus-resultado-hemoglobina-exemplo](Observation-agrosus-resultado-hemoglobina-exemplo.md), [Observation/agrosus-resultado-leucocitos-exemplo](Observation-agrosus-resultado-leucocitos-exemplo.md) and [Observation/agrosus-resultado-plaquetas-exemplo](Observation-agrosus-resultado-plaquetas-exemplo.md)
 * [ParticipationType](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ParticipationType.html): [Bundle/agrosus-transacao-visita-exemplo](Bundle-agrosus-transacao-visita-exemplo.md), [Encounter/agrosus-atendimento-ubs-avaliacao-exemplo](Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.md), [Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo](Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.md) and [Encounter/agrosus-visita-acs-exemplo](Encounter-agrosus-visita-acs-exemplo.md)
 
 
@@ -140,7 +141,7 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
   "title" : "Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-21T16:50:13+00:00",
+  "date" : "2026-07-21T18:25:10+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",
@@ -1462,6 +1463,70 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-agrosus-resultado-colinesterase-alterada-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/agrosus-resultado-colinesterase-alterada-exemplo"
+      },
+      "name" : "Exemplo de Resultado de Colinesterase — Alterado",
+      "description" : "Resultado fictício de colinesterase plasmática acima do Índice Biológico Máximo Permitido (inibição de 58,54%), exigindo afastamento do contato com o defensivo por 30 dias (DT-5).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-agrosus-resultado-colinesterase-normal-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/agrosus-resultado-colinesterase-normal-exemplo"
+      },
+      "name" : "Exemplo de Resultado de Colinesterase — Normal",
+      "description" : "Resultado fictício de colinesterase plasmática dentro do limite aceitável (inibição de 14,63% em relação ao valor basal), na periodicidade semestral de rotina (NR-7 item 7.4.2.1).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-agrosus-resultado-colinesterase-precaucao-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/agrosus-resultado-colinesterase-precaucao-exemplo"
+      },
+      "name" : "Exemplo de Resultado de Colinesterase — Precaução",
+      "description" : "Resultado fictício de colinesterase plasmática dentro do limite aceitável, mas na faixa de precaução (inibição de 39,02%), sem exceder o Índice Biológico Máximo Permitido (IBMP).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-agrosus-resultado-colinesterase-basal-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/agrosus-resultado-colinesterase-basal-exemplo"
+      },
+      "name" : "Exemplo de Resultado de Colinesterase — Valor Basal",
+      "description" : "Valor basal fictício de colinesterase plasmática, obtido na admissão, antes do início do manuseio de organofosforados/carbamatos (NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I itens 1 e 3).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Observation-agrosus-resultado-hematocrito-exemplo.html"
       }],
       "reference" : {
@@ -1522,6 +1587,70 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2026-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo"
+      },
+      "name" : "Exemplo de Solicitação de Colinesterase — Rotina Semestral (2026-07)",
+      "description" : "Solicitação fictícia do exame de colinesterase na periodicidade semestral mínima de rotina (NR-7 item 7.4.2.1).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo"
+      },
+      "name" : "Exemplo de Solicitação de Colinesterase — Rotina Semestral (2027-01)",
+      "description" : "Solicitação fictícia do exame de colinesterase na periodicidade semestral mínima de rotina (NR-7 item 7.4.2.1).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo"
+      },
+      "name" : "Exemplo de Solicitação de Colinesterase — Rotina Semestral (2027-07)",
+      "description" : "Solicitação fictícia do exame de colinesterase na periodicidade semestral mínima de rotina (NR-7 item 7.4.2.1); resultado veio alterado (ver DT-5).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-agrosus-solicitacao-colinesterase-basal-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/agrosus-solicitacao-colinesterase-basal-exemplo"
+      },
+      "name" : "Exemplo de Solicitação de Colinesterase — Valor Basal Admissional",
+      "description" : "Solicitação fictícia do exame de colinesterase realizada na admissão do trabalhador, antes do início do manuseio de organofosforados/carbamatos (NR-7 item 7.4.1).",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html"
       }],
       "reference" : {
@@ -1529,6 +1658,22 @@ Este publication inclui o IP abrangido pelas seguintes declarações.
       },
       "name" : "Exemplo de Solicitação de Hemograma AgroSUS",
       "description" : "Solicitação fictícia de hemograma completo realizada pelo médico da UBS após avaliação clínica.",
+      "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-agrosus-solicitacao-colinesterase-retestagem-exemplo.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/agrosus-solicitacao-colinesterase-retestagem-exemplo"
+      },
+      "name" : "Exemplo de Solicitação de Retestagem de Colinesterase Pós-Resultado Alterado",
+      "description" : "Solicitação fictícia de retestagem da colinesterase 30 dias após o resultado alterado, conforme a conduta descrita em DT-5.",
       "exampleCanonical" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"
     },
     {

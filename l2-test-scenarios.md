@@ -22,3 +22,5 @@ Componente 9 do DAK — **Cenários de teste**. Casos de teste (TC) derivados da
 
 **Fonte: NR-7, NR-31 e Nota Informativa nº 16/2019-CGLAB/DAEVS/SVS/MS. Ver `sources/_normas_extract.txt` para os valores de referência usados nos cálculos acima.**
 
+Os estados Normal, Precaução e Alterado (TC-01, TC-02 e TC-04) também estão demonstrados como exemplos FHIR completos (`Observation` de colinesterase plasmática, com valor basal, percentual de inibição calculado em `note` e classificação em `interpretation`) em `input/fsh/examples/AgroSUSColinesteraseExamples.fsh` — instâncias `agrosus-resultado-colinesterase-normal-exemplo`, `agrosus-resultado-colinesterase-precaucao-exemplo` e `agrosus-resultado-colinesterase-alterada-exemplo`. Os valores numéricos usados nesses exemplos são ilustrativos e diferem dos desta tabela, mas seguem a mesma regra de classificação (DT-3).
+

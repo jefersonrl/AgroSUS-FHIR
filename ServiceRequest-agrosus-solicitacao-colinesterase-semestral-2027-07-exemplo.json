@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ServiceRequest agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo</b></p><a name=\"agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo\"> </a><a name=\"hcagrosus-solicitacao-colinesterase-semestral-2027-07-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-solicitacao-exame.html\">Solicitação de Exame AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame</code>/SOL-EXAME-2027-000003</p><p><b>requisition</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial</code>/REQ-LAB-2027-000003</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Códigos:{http://snomed.info/sct 108252007}\">Exame laboratorial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 2099-0}\">Colinesterase plasmática</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>occurrence</b>: 2027-07-22 08:10:00-0300</p><p><b>authoredOn</b>: 2027-07-18 09:00:00-0300</p><p><b>requester</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>reasonCode</b>: <span title=\"Códigos:\">Monitoramento biológico de rotina — periodicidade semestral mínima (NR-7 item 7.4.2.1)</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame",
+    "value" : "SOL-EXAME-2027-000003"
+  }],
+  "requisition" : {
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial",
+    "value" : "REQ-LAB-2027-000003"
+  },
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108252007",
+      "display" : "Laboratory procedure"
+    }],
+    "text" : "Exame laboratorial"
+  }],
+  "priority" : "routine",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2099-0",
+      "display" : "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma"
+    }],
+    "text" : "Colinesterase plasmática"
+  },
+  "subject" : {
+    "reference" : "Patient/agrosus-patient-example",
+    "display" : "Maria Aparecida de Souza"
+  },
+  "occurrenceDateTime" : "2027-07-22T08:10:00-03:00",
+  "authoredOn" : "2027-07-18T09:00:00-03:00",
+  "requester" : {
+    "reference" : "PractitionerRole/agrosus-profissional-medico-role-exemplo",
+    "display" : "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família"
+  },
+  "performer" : [{
+    "reference" : "Organization/agrosus-laboratorio-exemplo",
+    "display" : "Laboratório Municipal de Referência — Exemplo AgroSUS"
+  }],
+  "reasonCode" : [{
+    "text" : "Monitoramento biológico de rotina — periodicidade semestral mínima (NR-7 item 7.4.2.1)"
+  }]
+}

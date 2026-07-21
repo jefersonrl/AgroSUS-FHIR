@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-colinesterase-normal-exemplo> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-resultado-colinesterase-normal-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation agrosus-resultado-colinesterase-normal-exemplo</b></p><a name=\"agrosus-resultado-colinesterase-normal-exemplo\"> </a><a name=\"hcagrosus-resultado-colinesterase-normal-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-resultado-laboratorial.html\">Resultado Laboratorial AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial</code>/RES-LAB-2026-000002-COLIN</p><p><b>basedOn</b>: <a href=\"ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2026-exemplo.html\">ServiceRequest Cholinesterase [Enzymatic activity/volume] in Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 2099-0}\">Colinesterase plasmática</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>effective</b>: 2026-07-25 08:15:00-0300</p><p><b>issued</b>: 2026-07-25 12:00:00-0300</p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>value</b>: 7000 U/L<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigoU/L = 'U/L')</span></p><p><b>interpretation</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>note</b>: </p><blockquote><div><p>Percentual de inibição = (8200 − 7000) / 8200 × 100 = 14,63%. Até 50% de inibição plasmática = Normal (DT-3); abaixo da faixa de precaução (20%–50%), sem gatilho de alerta.</p>\n</div></blockquote><p><b>derivedFrom</b>: <a href=\"Observation-agrosus-resultado-colinesterase-basal-exemplo.html\">Observation Cholinesterase [Enzymatic activity/volume] in Serum or Plasma</a></p></div>"
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial" ] ;
+     fhir:Identifier.value [ fhir:value "RES-LAB-2026-000002-COLIN" ]
+  ] ;
+  fhir:Observation.basedOn [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "laboratory" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:2099-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "2099-0" ] ;
+       fhir:Coding.display [ fhir:value "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Colinesterase plasmática" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-07-25T08:15:00-03:00"^^xsd:dateTime] ;
+  fhir:Observation.issued [ fhir:value "2026-07-25T12:00:00-03:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-laboratorio-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Laboratório Municipal de Referência — Exemplo AgroSUS" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "7000"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "U/L" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "U/L" ]
+  ] ;
+  fhir:Observation.interpretation [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ] ;
+       fhir:Coding.code [ fhir:value "N" ] ;
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ] ;
+  fhir:Observation.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Percentual de inibição = (8200 − 7000) / 8200 × 100 = 14,63%. Até 50% de inibição plasmática = Normal (DT-3); abaixo da faixa de precaução (20%–50%), sem gatilho de alerta." ]
+  ] ;
+  fhir:Observation.derivedFrom [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-colinesterase-basal-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-colinesterase-basal-exemplo" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-colinesterase-normal-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

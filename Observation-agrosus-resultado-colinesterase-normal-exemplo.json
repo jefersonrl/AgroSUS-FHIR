@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Observation",
+  "id" : "agrosus-resultado-colinesterase-normal-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation agrosus-resultado-colinesterase-normal-exemplo</b></p><a name=\"agrosus-resultado-colinesterase-normal-exemplo\"> </a><a name=\"hcagrosus-resultado-colinesterase-normal-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-resultado-laboratorial.html\">Resultado Laboratorial AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial</code>/RES-LAB-2026-000002-COLIN</p><p><b>basedOn</b>: <a href=\"ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2026-exemplo.html\">ServiceRequest Cholinesterase [Enzymatic activity/volume] in Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 2099-0}\">Colinesterase plasmática</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>effective</b>: 2026-07-25 08:15:00-0300</p><p><b>issued</b>: 2026-07-25 12:00:00-0300</p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>value</b>: 7000 U/L<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigoU/L = 'U/L')</span></p><p><b>interpretation</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>note</b>: </p><blockquote><div><p>Percentual de inibição = (8200 − 7000) / 8200 × 100 = 14,63%. Até 50% de inibição plasmática = Normal (DT-3); abaixo da faixa de precaução (20%–50%), sem gatilho de alerta.</p>\n</div></blockquote><p><b>derivedFrom</b>: <a href=\"Observation-agrosus-resultado-colinesterase-basal-exemplo.html\">Observation Cholinesterase [Enzymatic activity/volume] in Serum or Plasma</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial",
+    "value" : "RES-LAB-2026-000002-COLIN"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2099-0",
+      "display" : "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma"
+    }],
+    "text" : "Colinesterase plasmática"
+  },
+  "subject" : {
+    "reference" : "Patient/agrosus-patient-example",
+    "display" : "Maria Aparecida de Souza"
+  },
+  "effectiveDateTime" : "2026-07-25T08:15:00-03:00",
+  "issued" : "2026-07-25T12:00:00-03:00",
+  "performer" : [{
+    "reference" : "Organization/agrosus-laboratorio-exemplo",
+    "display" : "Laboratório Municipal de Referência — Exemplo AgroSUS"
+  }],
+  "valueQuantity" : {
+    "value" : 7000,
+    "unit" : "U/L",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "U/L"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }],
+  "note" : [{
+    "text" : "Percentual de inibição = (8200 − 7000) / 8200 × 100 = 14,63%. Até 50% de inibição plasmática = Normal (DT-3); abaixo da faixa de precaução (20%–50%), sem gatilho de alerta."
+  }],
+  "derivedFrom" : [{
+    "reference" : "Observation/agrosus-resultado-colinesterase-basal-exemplo"
+  }]
+}

@@ -16,7 +16,7 @@
   <title value="Projeto mareIA: módulo AgroSUS para telemonitoramento e apoio à identificação precoce de intoxicações por uso de defensivos agrícolas"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-07-21T16:50:13+00:00"/>
+  <date value="2026-07-21T18:25:10+00:00"/>
   <publisher value="Fatec Ferraz de Vasconcelos"/>
   <contact>
     <name value="Fatec Ferraz de Vasconcelos"/>
@@ -968,6 +968,50 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/agrosus-resultado-colinesterase-alterada-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Colinesterase — Alterado"/>
+      <description value="Resultado fictício de colinesterase plasmática acima do Índice Biológico Máximo Permitido (inibição de 58,54%), exigindo afastamento do contato com o defensivo por 30 dias (DT-5)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-colinesterase-normal-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Colinesterase — Normal"/>
+      <description value="Resultado fictício de colinesterase plasmática dentro do limite aceitável (inibição de 14,63% em relação ao valor basal), na periodicidade semestral de rotina (NR-7 item 7.4.2.1)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-colinesterase-precaucao-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Colinesterase — Precaução"/>
+      <description value="Resultado fictício de colinesterase plasmática dentro do limite aceitável, mas na faixa de precaução (inibição de 39,02%), sem exceder o Índice Biológico Máximo Permitido (IBMP)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-colinesterase-basal-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Colinesterase — Valor Basal"/>
+      <description value="Valor basal fictício de colinesterase plasmática, obtido na admissão, antes do início do manuseio de organofosforados/carbamatos (NR-7 item 7.4.1; Nota Informativa 16/2019, Anexo I itens 1 e 3)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/agrosus-resultado-hematocrito-exemplo"/>
       </reference>
       <name value="Exemplo de Resultado de Hematócrito"/>
@@ -1008,10 +1052,65 @@
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
+        <reference value="ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo"/>
+      </reference>
+      <name value="Exemplo de Solicitação de Colinesterase — Rotina Semestral (2026-07)"/>
+      <description value="Solicitação fictícia do exame de colinesterase na periodicidade semestral mínima de rotina (NR-7 item 7.4.2.1)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo"/>
+      </reference>
+      <name value="Exemplo de Solicitação de Colinesterase — Rotina Semestral (2027-01)"/>
+      <description value="Solicitação fictícia do exame de colinesterase na periodicidade semestral mínima de rotina (NR-7 item 7.4.2.1)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo"/>
+      </reference>
+      <name value="Exemplo de Solicitação de Colinesterase — Rotina Semestral (2027-07)"/>
+      <description value="Solicitação fictícia do exame de colinesterase na periodicidade semestral mínima de rotina (NR-7 item 7.4.2.1); resultado veio alterado (ver DT-5)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/agrosus-solicitacao-colinesterase-basal-exemplo"/>
+      </reference>
+      <name value="Exemplo de Solicitação de Colinesterase — Valor Basal Admissional"/>
+      <description value="Solicitação fictícia do exame de colinesterase realizada na admissão do trabalhador, antes do início do manuseio de organofosforados/carbamatos (NR-7 item 7.4.1)."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
         <reference value="ServiceRequest/agrosus-solicitacao-hemograma-exemplo"/>
       </reference>
       <name value="Exemplo de Solicitação de Hemograma AgroSUS"/>
       <description value="Solicitação fictícia de hemograma completo realizada pelo médico da UBS após avaliação clínica."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/agrosus-solicitacao-colinesterase-retestagem-exemplo"/>
+      </reference>
+      <name value="Exemplo de Solicitação de Retestagem de Colinesterase Pós-Resultado Alterado"/>
+      <description value="Solicitação fictícia de retestagem da colinesterase 30 dias após o resultado alterado, conforme a conduta descrita em DT-5."/>
       <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
     </resource>
     <resource>

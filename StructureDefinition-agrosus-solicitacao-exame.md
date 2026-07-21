@@ -17,7 +17,7 @@ Solicitação de exame laboratorial realizada por profissional assistencial da U
 **Usos:**
 
 * Refere a este Perfil: [Evento de Auditoria AgroSUS](StructureDefinition-agrosus-audit-event.md), [Laudo Laboratorial AgroSUS](StructureDefinition-agrosus-laudo-laboratorial.md), [Plano de Acompanhamento AgroSUS](StructureDefinition-agrosus-plano-acompanhamento.md), [Proveniência dos Registros AgroSUS](StructureDefinition-agrosus-provenance.md) and [Resultado Laboratorial AgroSUS](StructureDefinition-agrosus-resultado-laboratorial.md)
-* Exemplos para este Perfil: [ServiceRequest/agrosus-solicitacao-hemograma-exemplo](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
+* Exemplos para este Perfil: [ServiceRequest/agrosus-solicitacao-colinesterase-basal-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-basal-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-retestagem-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-retestagem-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2026-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2026-exemplo.md), [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo.md)... Show 2 more, [ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo](ServiceRequest-agrosus-solicitacao-colinesterase-semestral-2027-07-exemplo.md) and [ServiceRequest/agrosus-solicitacao-hemograma-exemplo](ServiceRequest-agrosus-solicitacao-hemograma-exemplo.md)
 * Declarações de capacidade usando este Perfil: [Requisitos de capacidade do servidor AgroSUS](CapabilityStatement-agrosus-server-capabilities.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/io.github.jefersonrl.agrosus|current/StructureDefinition/StructureDefinition-agrosus-solicitacao-exame.json)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-agrosus-solicitacao-
   "name" : "AgroSUSSolicitacaoExame",
   "title" : "Solicitação de Exame AgroSUS",
   "status" : "draft",
-  "date" : "2026-07-21T16:50:13+00:00",
+  "date" : "2026-07-21T18:25:10+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

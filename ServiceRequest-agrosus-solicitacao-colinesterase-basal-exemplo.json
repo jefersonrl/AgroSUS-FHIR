@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "agrosus-solicitacao-colinesterase-basal-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ServiceRequest agrosus-solicitacao-colinesterase-basal-exemplo</b></p><a name=\"agrosus-solicitacao-colinesterase-basal-exemplo\"> </a><a name=\"hcagrosus-solicitacao-colinesterase-basal-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-solicitacao-exame.html\">Solicitação de Exame AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame</code>/SOL-EXAME-2024-000001</p><p><b>requisition</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial</code>/REQ-LAB-2024-000001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Códigos:{http://snomed.info/sct 108252007}\">Exame laboratorial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 35558-6}\">Colinesterases eritrocitária e plasmática (painel)</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>occurrence</b>: 2024-01-15 07:30:00-0300</p><p><b>authoredOn</b>: 2024-01-10 08:00:00-0300</p><p><b>requester</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>reasonCode</b>: <span title=\"Códigos:\">Exame admissional de colinesterase, antes do início do manuseio de organofosforados/carbamatos</span></p><p><b>note</b>: </p><blockquote><div><p>Valor basal — anterior ao cadastro da trabalhadora no AgroSUS em 2026; registrado retroativamente a partir do prontuário do PCMSO, conforme NR-7 item 7.4.1.</p>\n</div></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame",
+    "value" : "SOL-EXAME-2024-000001"
+  }],
+  "requisition" : {
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial",
+    "value" : "REQ-LAB-2024-000001"
+  },
+  "status" : "completed",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108252007",
+      "display" : "Laboratory procedure"
+    }],
+    "text" : "Exame laboratorial"
+  }],
+  "priority" : "routine",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "35558-6",
+      "display" : "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma and Erythrocytes"
+    }],
+    "text" : "Colinesterases eritrocitária e plasmática (painel)"
+  },
+  "subject" : {
+    "reference" : "Patient/agrosus-patient-example",
+    "display" : "Maria Aparecida de Souza"
+  },
+  "occurrenceDateTime" : "2024-01-15T07:30:00-03:00",
+  "authoredOn" : "2024-01-10T08:00:00-03:00",
+  "requester" : {
+    "reference" : "PractitionerRole/agrosus-profissional-medico-role-exemplo",
+    "display" : "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família"
+  },
+  "performer" : [{
+    "reference" : "Organization/agrosus-laboratorio-exemplo",
+    "display" : "Laboratório Municipal de Referência — Exemplo AgroSUS"
+  }],
+  "reasonCode" : [{
+    "text" : "Exame admissional de colinesterase, antes do início do manuseio de organofosforados/carbamatos"
+  }],
+  "note" : [{
+    "text" : "Valor basal — anterior ao cadastro da trabalhadora no AgroSUS em 2026; registrado retroativamente a partir do prontuário do PCMSO, conforme NR-7 item 7.4.1."
+  }]
+}

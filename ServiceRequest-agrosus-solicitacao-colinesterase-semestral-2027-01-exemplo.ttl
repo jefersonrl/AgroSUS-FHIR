@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ServiceRequest agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo</b></p><a name=\"agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo\"> </a><a name=\"hcagrosus-solicitacao-colinesterase-semestral-2027-01-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-solicitacao-exame.html\">Solicitação de Exame AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame</code>/SOL-EXAME-2027-000001</p><p><b>requisition</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial</code>/REQ-LAB-2027-000001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Códigos:{http://snomed.info/sct 108252007}\">Exame laboratorial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 2099-0}\">Colinesterase plasmática</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>occurrence</b>: 2027-01-20 08:00:00-0300</p><p><b>authoredOn</b>: 2027-01-15 09:00:00-0300</p><p><b>requester</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>reasonCode</b>: <span title=\"Códigos:\">Monitoramento biológico de rotina — periodicidade semestral mínima (NR-7 item 7.4.2.1)</span></p></div>"
+  ] ;
+  fhir:ServiceRequest.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame" ] ;
+     fhir:Identifier.value [ fhir:value "SOL-EXAME-2027-000001" ]
+  ] ;
+  fhir:ServiceRequest.requisition [
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial" ] ;
+     fhir:Identifier.value [ fhir:value "REQ-LAB-2027-000001" ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "completed"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:108252007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "108252007" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory procedure" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Exame laboratorial" ]
+  ] ;
+  fhir:ServiceRequest.priority [ fhir:value "routine"] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:2099-0 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "2099-0" ] ;
+       fhir:Coding.display [ fhir:value "Cholinesterase [Enzymatic activity/volume] in Serum or Plasma" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Colinesterase plasmática" ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2027-01-20T08:00:00-03:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.authoredOn [ fhir:value "2027-01-15T09:00:00-03:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.requester [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+  ] ;
+  fhir:ServiceRequest.performer [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-laboratorio-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Laboratório Municipal de Referência — Exemplo AgroSUS" ]
+  ] ;
+  fhir:ServiceRequest.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Monitoramento biológico de rotina — periodicidade semestral mínima (NR-7 item 7.4.2.1)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-colinesterase-semestral-2027-01-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
