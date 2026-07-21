@@ -13,8 +13,7 @@ Usage: #definition
 
 // Ação 1 — Obter valor basal e resultado da colinesterase
 * action[+].title = "Obter valor basal e resultado da colinesterase"
-* action[=].description = "Determinar a atividade basal (pré-ocupacional) na admissão; calcular o percentual de inibição do resultado atual em relação ao basal."
-* action[=].definitionCanonical = Canonical(AgroSUSSolicitacaoExame)
+* action[=].description = "Determinar a atividade basal (pré-ocupacional) na admissão; calcular o percentual de inibição do resultado atual em relação ao basal. Registrado via ServiceRequest/AgroSUSSolicitacaoExame e Observation/AgroSUSResultadoLaboratorial."
 
 // Ação 2 — Classificar o resultado da colinesterase
 * action[+].title = "Classificar o resultado da colinesterase"
@@ -40,11 +39,10 @@ Usage: #definition
 
 // Ação 4 — Conduta frente a resultado alterado
 * action[+].title = "Conduta frente a resultado alterado"
-* action[=].description = "Afastar do contato com o agrotóxico por 30 dias; encaminhar para avaliação clínica e laboratorial; repetir exame em 30 dias; investigar outras causas antes de concluir pela exposição ocupacional."
+* action[=].description = "Afastar do contato com o agrotóxico por 30 dias; encaminhar para avaliação clínica e laboratorial; repetir exame em 30 dias; investigar outras causas antes de concluir pela exposição ocupacional. Registrado via CarePlan/AgroSUSPlanoAcompanhamento."
 * action[=].condition[+].kind = #applicability
 * action[=].condition[=].expression.language = #text/fhirpath
 * action[=].condition[=].expression.expression = "%inibicaoPlasmatica > 50 or %inibicaoSangueTotal > 25"
-* action[=].definitionCanonical = Canonical(AgroSUSPlanoAcompanhamento)
 
 // Ação 5 — Avaliar gatilhos de alerta independentes (não pontuados)
 * action[+].title = "Avaliar gatilhos de alerta independentes"
@@ -56,5 +54,4 @@ Usage: #definition
 
 // Ação 6 — Registro e retenção
 * action[+].title = "Registrar e manter o histórico"
-* action[=].description = "Manter registro de exames, afastamentos e condutas por, no mínimo, 20 anos após o desligamento do trabalhador (NR-7 7.4.5.1)."
-* action[=].definitionCanonical = Canonical(AgroSUSProvenance)
+* action[=].description = "Manter registro de exames, afastamentos e condutas por, no mínimo, 20 anos após o desligamento do trabalhador (NR-7 7.4.5.1). Registrado via Provenance/AgroSUSProvenance."
