@@ -100,6 +100,28 @@ jobs:
             "1.0.0" \
             "https://hl7.org.br/fhir/ips/package.tgz"
 
+          # Corrige metadados inválidos presentes nos pacotes brasileiros 1.0.0.
+          # As correções são aplicadas somente à cópia efêmera do cache do build.
+          ips_package="$HOME/.fhir/packages/br.gov.saude.ips.fhir#1.0.0/package/package.json"
+          br_core_encounter="$HOME/.fhir/packages/br.gov.saude.br-core.fhir#1.0.0/package/StructureDefinition-br-core-encounter.json"
+          temporary_json="$(mktemp)"
+
+          jq '.url = "https://ips.saude.gov.br/fhir"' \
+            "$ips_package" > "$temporary_json"
+          mv "$temporary_json" "$ips_package"
+
+          temporary_json="$(mktemp)"
+          jq '
+            (.snapshot.element[]
+              | select(.path == "Encounter.hospitalization.dischargeDisposition")
+              | .binding.valueSet) = "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho"
+            |
+            (.differential.element[]
+              | select(.path == "Encounter.hospitalization.dischargeDisposition")
+              | .binding.valueSet) = "https://terminologia.saude.gov.br/fhir/ValueSet/BRMotivoDesfecho"
+          ' "$br_core_encounter" > "$temporary_json"
+          mv "$temporary_json" "$br_core_encounter"
+
           install_fhir_template \
             "fhir.base.template" \
             "1.0.0" \
