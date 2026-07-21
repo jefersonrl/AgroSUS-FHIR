@@ -9,8 +9,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS",
-    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS"
+    "ValueSet-agrosus-exames-laboratoriais.html" : "Exames Laboratoriais AgroSUS",
+    "ValueSet-agrosus-resultados-laboratoriais.html" : "Resultados Laboratoriais AgroSUS"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
@@ -32,8 +32,8 @@
     "description" : "Códigos relacionados à assistência e à responsabilidade técnica na produção rural.",
     "uses" : {
     },
-    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica",
-    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico"
+    "ValueSet-agrosus-formacao-responsavel-tecnico.html" : "Formação do Responsável Técnico",
+    "ValueSet-agrosus-instituicao-assistencia.html" : "Instituição de Assistência Técnica"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas",
@@ -88,8 +88,8 @@
     "description" : "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados.",
     "uses" : {
     },
-    "ValueSet-agrosus-condicao-saude-referida.html" : "Condições de saúde referidas",
-    "ValueSet-agrosus-sintoma-ultimos-30-dias.html" : "Sinais e sintomas dos últimos 30 dias"
+    "ValueSet-agrosus-sintoma-ultimos-30-dias.html" : "Sinais e sintomas dos últimos 30 dias",
+    "ValueSet-agrosus-condicao-saude-referida.html" : "Condições de saúde referidas"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens",
@@ -135,12 +135,12 @@
     "description" : "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas.",
     "uses" : {
     },
-    "ValueSet-agrosus-responsavel-aplicacao.html" : "Responsável pela aplicação",
-    "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação",
     "ValueSet-agrosus-mes-maior-intensidade.html" : "Meses de maior intensidade de uso",
     "ValueSet-agrosus-dias-aplicacao-mes.html" : "Dias de aplicação por mês",
-    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia",
-    "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição"
+    "ValueSet-agrosus-equipamento-aplicacao.html" : "Equipamentos utilizados na aplicação",
+    "ValueSet-agrosus-via-exposicao.html" : "Vias de exposição",
+    "ValueSet-agrosus-responsavel-aplicacao.html" : "Responsável pela aplicação",
+    "ValueSet-agrosus-horas-aplicacao-dia.html" : "Horas de aplicação por dia"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
@@ -185,9 +185,9 @@
     "uses" : {
     },
     "ValueSet-agrosus-situacao-posse.html" : "Situação de Posse da Terra",
-    "ValueSet-agrosus-fonte-agua.html" : "Fonte de Água da Propriedade",
+    "ValueSet-agrosus-atividade-agricola.html" : "Principal Atividade Agrícola",
     "ValueSet-agrosus-tipo-producao.html" : "Tipo de Produção Agrícola",
-    "ValueSet-agrosus-atividade-agricola.html" : "Principal Atividade Agrícola"
+    "ValueSet-agrosus-fonte-agua.html" : "Fonte de Água da Propriedade"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade",
@@ -220,9 +220,9 @@
     "description" : "",
     "uses" : {
     },
-    "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS",
+    "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS",
     "https://terminologia.saude.gov.br/fhir/v1.0.0/ValueSet-BROcupacao.html" : "BR Ocupacao",
-    "ValueSet-agrosus-ocupacao-acs.html" : "Ocupações permitidas para o ACS no AgroSUS"
+    "ValueSet-agrosus-ocupacao-profissional-ubs.html" : "Ocupações dos profissionais assistenciais da UBS"
   },
   {
     "url" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10",

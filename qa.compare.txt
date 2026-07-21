@@ -783,7 +783,7 @@ ERROR: l2-data-dictionary.html#/html/body/div/div/div/p/span/a at Line 411, colu
 ERROR: l2-decision-logic.html#/html/body/div/div/div/p/span/a at Line 367, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-indicators.html#/html/body/div/div/div/p/span/a at Line 319, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-interventions.html#/html/body/div/div/div/p/span/a at Line 277, column 131: The link 'license.html' for "License" cannot be resolved
-ERROR: l2-personas.html#/html/body/div/div/div/p/span/a at Line 297, column 131: The link 'license.html' for "License" cannot be resolved
+ERROR: l2-personas.html#/html/body/div/div/div/p/span/a at Line 296, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-requirements.html#/html/body/div/div/div/p/span/a at Line 348, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-test-scenarios.html#/html/body/div/div/div/p/span/a at Line 314, column 131: The link 'license.html' for "License" cannot be resolved
 ERROR: l2-user-scenarios.html#/html/body/div/div/div/p/span/a at Line 326, column 131: The link 'license.html' for "License" cannot be resolved

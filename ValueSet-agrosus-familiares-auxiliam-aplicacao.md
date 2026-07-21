@@ -51,7 +51,7 @@ Familiares que auxiliam o trabalhador rural na aplicação de defensivos agríco
   "title" : "Familiares que auxiliam na aplicação",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T14:33:42+00:00",
+  "date" : "2026-07-21T14:46:27+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

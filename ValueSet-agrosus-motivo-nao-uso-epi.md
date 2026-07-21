@@ -51,7 +51,7 @@ Motivos declarados para a não utilização dos equipamentos de proteção indiv
   "title" : "Motivos de não utilização de EPI",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-07-21T14:33:42+00:00",
+  "date" : "2026-07-21T14:46:27+00:00",
   "publisher" : "Fatec Ferraz de Vasconcelos",
   "contact" : [{
     "name" : "Fatec Ferraz de Vasconcelos",

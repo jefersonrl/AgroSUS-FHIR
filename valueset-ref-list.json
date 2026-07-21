@@ -141,8 +141,8 @@
     "systems" : ["http://loinc.org"],
     "uses" : {
     },
-    "StructureDefinition-agrosus-laudo-laboratorial.html" : "Laudo Laboratorial AgroSUS",
-    "StructureDefinition-agrosus-solicitacao-exame.html" : "Solicitação de Exame AgroSUS"
+    "StructureDefinition-agrosus-solicitacao-exame.html" : "Solicitação de Exame AgroSUS",
+    "StructureDefinition-agrosus-laudo-laboratorial.html" : "Laudo Laboratorial AgroSUS"
   },
   {
     "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-familiares-auxiliam-aplicacao",

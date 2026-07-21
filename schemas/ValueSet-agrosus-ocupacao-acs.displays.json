@@ -44,5 +44,5 @@
   },
   "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-acs",
   "fhir:version": "0.1.0",
-  "fhir:expansionTimestamp": "2026-07-21T14:36:36.957068"
+  "fhir:expansionTimestamp": "2026-07-21T14:49:52.392258"
 }
