@@ -1,0 +1,12 @@
+{
+  "name": "agrosus.template",
+  "type": "fhir.template",
+  "license": "CC-BY-SA-3.0-IGO",
+  "description": "Extensao de template do AgroSUS-FHIR: apenas ajustes de CSS para responsividade em tablet/smartphone (tabelas, imagens e caixas de navegacao). Nao altera conteudo clinico ou artefatos FHIR.",
+  "author": "Fatec Ferraz de Vasconcelos",
+  "base": "who.template.root",
+  "dependencies": {
+    "who.template.root": "current"
+  },
+  "version": "0.1.0"
+}
