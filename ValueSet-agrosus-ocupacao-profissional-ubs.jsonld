@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.525324Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.jsonld#225125",
+      "name": "Médico clínico",
+      "fhir:code": "225125",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.jsonld#225130",
+      "name": "Médico de família e comunidade",
+      "fhir:code": "225130",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.jsonld#225142",
+      "name": "Médico da estratégia de saúde da família",
+      "fhir:code": "225142",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.jsonld#223505",
+      "name": "Enfermeiro",
+      "fhir:code": "223505",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.jsonld#322205",
+      "name": "Técnico de enfermagem",
+      "fhir:code": "322205",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    }
+  ]
+}

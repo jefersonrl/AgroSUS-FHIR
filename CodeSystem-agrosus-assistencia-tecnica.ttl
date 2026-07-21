@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-assistencia-tecnica"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-assistencia-tecnica</b></p><a name=\"agrosus-assistencia-tecnica\"> </a><a name=\"hcagrosus-assistencia-tecnica\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">instituicao-cati<a name=\"agrosus-assistencia-tecnica-instituicao-cati\"> </a></td><td>CATI</td></tr><tr><td style=\"white-space:nowrap\">instituicao-senar<a name=\"agrosus-assistencia-tecnica-instituicao-senar\"> </a></td><td>SENAR</td></tr><tr><td style=\"white-space:nowrap\">instituicao-cooperativa<a name=\"agrosus-assistencia-tecnica-instituicao-cooperativa\"> </a></td><td>Cooperativa</td></tr><tr><td style=\"white-space:nowrap\">instituicao-empresa-privada<a name=\"agrosus-assistencia-tecnica-instituicao-empresa-privada\"> </a></td><td>Empresa privada</td></tr><tr><td style=\"white-space:nowrap\">instituicao-consultor-autonomo<a name=\"agrosus-assistencia-tecnica-instituicao-consultor-autonomo\"> </a></td><td>Consultor autônomo</td></tr><tr><td style=\"white-space:nowrap\">instituicao-prefeitura<a name=\"agrosus-assistencia-tecnica-instituicao-prefeitura\"> </a></td><td>Prefeitura</td></tr><tr><td style=\"white-space:nowrap\">instituicao-outra<a name=\"agrosus-assistencia-tecnica-instituicao-outra\"> </a></td><td>Outra instituição</td></tr><tr><td style=\"white-space:nowrap\">formacao-engenheiro-agronomo<a name=\"agrosus-assistencia-tecnica-formacao-engenheiro-agronomo\"> </a></td><td>Engenheiro agrônomo</td></tr><tr><td style=\"white-space:nowrap\">formacao-tecnico-agricola<a name=\"agrosus-assistencia-tecnica-formacao-tecnico-agricola\"> </a></td><td>Técnico agrícola</td></tr><tr><td style=\"white-space:nowrap\">formacao-outro-habilitado<a name=\"agrosus-assistencia-tecnica-formacao-outro-habilitado\"> </a></td><td>Outro profissional habilitado</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSAssistenciaTecnicaCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Assistência Técnica AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Códigos relacionados à assistência e à responsabilidade técnica na produção rural."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-cati" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "CATI" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-senar" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SENAR" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-cooperativa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cooperativa" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-empresa-privada" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Empresa privada" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-consultor-autonomo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Consultor autônomo" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-prefeitura" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Prefeitura" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "instituicao-outra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outra instituição" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "formacao-engenheiro-agronomo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Engenheiro agrônomo" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "formacao-tecnico-agricola" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Técnico agrícola" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "formacao-outro-habilitado" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outro profissional habilitado" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

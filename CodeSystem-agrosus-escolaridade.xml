@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-escolaridade"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-escolaridade</b></p><a name="agrosus-escolaridade"> </a><a name="hcagrosus-escolaridade"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">sem-escolaridade<a name="agrosus-escolaridade-sem-escolaridade"> </a></td><td>Sem escolaridade</td><td>Pessoa que declara não possuir escolaridade formal.</td></tr><tr><td style="white-space:nowrap">fundamental-incompleto<a name="agrosus-escolaridade-fundamental-incompleto"> </a></td><td>Ensino fundamental incompleto</td><td>Pessoa que iniciou, mas não concluiu o ensino fundamental.</td></tr><tr><td style="white-space:nowrap">fundamental-completo<a name="agrosus-escolaridade-fundamental-completo"> </a></td><td>Ensino fundamental completo</td><td>Pessoa que concluiu o ensino fundamental.</td></tr><tr><td style="white-space:nowrap">medio<a name="agrosus-escolaridade-medio"> </a></td><td>Ensino médio</td><td>Pessoa que declara escolaridade em nível de ensino médio.</td></tr><tr><td style="white-space:nowrap">superior<a name="agrosus-escolaridade-superior"> </a></td><td>Ensino superior</td><td>Pessoa que declara escolaridade em nível de ensino superior.</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSEscolaridadeCS"/>
+  <title value="Escolaridade AgroSUS"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="sem-escolaridade"/>
+    <display value="Sem escolaridade"/>
+    <definition value="Pessoa que declara não possuir escolaridade formal."/>
+  </concept>
+  <concept>
+    <code value="fundamental-incompleto"/>
+    <display value="Ensino fundamental incompleto"/>
+    <definition value="Pessoa que iniciou, mas não concluiu o ensino fundamental."/>
+  </concept>
+  <concept>
+    <code value="fundamental-completo"/>
+    <display value="Ensino fundamental completo"/>
+    <definition value="Pessoa que concluiu o ensino fundamental."/>
+  </concept>
+  <concept>
+    <code value="medio"/>
+    <display value="Ensino médio"/>
+    <definition value="Pessoa que declara escolaridade em nível de ensino médio."/>
+  </concept>
+  <concept>
+    <code value="superior"/>
+    <display value="Ensino superior"/>
+    <definition value="Pessoa que declara escolaridade em nível de ensino superior."/>
+  </concept>
+</CodeSystem>

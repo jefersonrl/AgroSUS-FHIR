@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-condicao-saude-referida.displays.json",
+  "title": "Condições de saúde referidas Display Values",
+  "description": "Display values for Condições de saúde referidas ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-hipertensao": {
+      "en": "condicao-hipertensao"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-diabetes": {
+      "en": "condicao-diabetes"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-doenca-hepatica": {
+      "en": "condicao-doenca-hepatica"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-doenca-renal": {
+      "en": "condicao-doenca-renal"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-doenca-neurologica": {
+      "en": "condicao-doenca-neurologica"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-cancer": {
+      "en": "condicao-cancer"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-gestante-lactante": {
+      "en": "condicao-gestante-lactante"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#condicao-nenhuma": {
+      "en": "condicao-nenhuma"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-cefaleia-frequente": {
+      "en": "Dor de cabeça (cefaleia) frequente"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-tontura-vertigem": {
+      "en": "Tontura ou vertigem"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-nauseas": {
+      "en": "Náuseas"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-vomitos": {
+      "en": "Vômitos"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-diarreia-colicas-abdominais": {
+      "en": "Diarreia ou cólicas abdominais"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-tremores-contracoes-involuntarias": {
+      "en": "Tremores ou contrações musculares involuntárias"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-fraqueza-cansaco-extremo": {
+      "en": "Fraqueza ou cansaço extremo"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-diaforese": {
+      "en": "Suor excessivo (diaforese)"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-hipersalivacao": {
+      "en": "Salivação excessiva (hipersalivação)"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-irritacao-ocular": {
+      "en": "Irritação nos olhos, lacrimejamento ou hiperemia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-irritacao-dermatite-pele": {
+      "en": "Irritação ou dermatite na pele"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-dispneia": {
+      "en": "Falta de ar ou dispneia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-tosse-frequente": {
+      "en": "Tosse seca ou produtiva frequente"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-palpitacoes": {
+      "en": "Palpitações ou batimentos irregulares"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-alteracao-visual": {
+      "en": "Alteração visual ou visão turva"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-confusao-desorientacao": {
+      "en": "Confusão mental ou desorientação"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-dificuldade-memoria-concentracao": {
+      "en": "Dificuldade de memória ou concentração"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-disturbios-sono": {
+      "en": "Distúrbios do sono, insônia ou hipersonia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-formigamento-membros": {
+      "en": "Formigamento nos membros"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas#sintoma-irritabilidade-alteracoes-humor": {
+      "en": "Irritabilidade ou alterações de humor"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-condicao-saude-referida",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.368893"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-formacao-responsavel-tecnico.schema.json",
+  "title": "Formação do Responsável Técnico Schema",
+  "description": "JSON Schema for Formação do Responsável Técnico ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-cati",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-senar",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-cooperativa",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-empresa-privada",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-consultor-autonomo",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-prefeitura",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-outra",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-engenheiro-agronomo",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-tecnico-agricola",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-outro-habilitado",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-engenheiro-agronomo",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-tecnico-agricola",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-outro-habilitado"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Formação do Responsável Técnico ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-formacao-responsavel-tecnico.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-formacao-responsavel-tecnico.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-formacao-responsavel-tecnico",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.369672"
+}

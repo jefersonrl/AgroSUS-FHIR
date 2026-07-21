@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.schema.json",
+  "title": "Ocupações permitidas para o ACS no AgroSUS Schema",
+  "description": "JSON Schema for Ocupações permitidas para o ACS no AgroSUS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#515105",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#322255"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Ocupações permitidas para o ACS no AgroSUS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-acs",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.370084"
+}

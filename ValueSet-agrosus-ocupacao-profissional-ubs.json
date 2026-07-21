@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-ocupacao-profissional-ubs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-ocupacao-profissional-ubs</b></p><a name=\"agrosus-ocupacao-profissional-ubs\"> </a><a name=\"hcagrosus-ocupacao-profissional-ubs\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"https://terminologia.saude.gov.br/fhir/v1.0.0/CodeSystem-BRCBO.html\"><code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>225125</td><td>Médico clínico</td></tr><tr><td>225130</td><td>Médico de família e comunidade</td></tr><tr><td>225142</td><td>Médico da estratégia de saúde da família</td></tr><tr><td>223505</td><td>Enfermeiro</td></tr><tr><td>322205</td><td>Técnico de enfermagem</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-profissional-ubs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSOcupacaoProfissionalUBSVS",
+  "title" : "Ocupações dos profissionais assistenciais da UBS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Ocupações CBO permitidas para profissionais assistenciais que utilizam o dashboard AgroSUS na Unidade Básica de Saúde.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO",
+      "concept" : [{
+        "code" : "225125",
+        "display" : "Médico clínico"
+      },
+      {
+        "code" : "225130",
+        "display" : "Médico de família e comunidade"
+      },
+      {
+        "code" : "225142",
+        "display" : "Médico da estratégia de saúde da família"
+      },
+      {
+        "code" : "223505",
+        "display" : "Enfermeiro"
+      },
+      {
+        "code" : "322205",
+        "display" : "Técnico de enfermagem"
+      }]
+    }]
+  }
+}

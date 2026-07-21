@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="agrosus-laudo-hemograma-exemplo"/>
+  <meta>
+    <profile value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: DiagnosticReport agrosus-laudo-hemograma-exemplo</b></p><a name="agrosus-laudo-hemograma-exemplo"> </a><a name="hcagrosus-laudo-hemograma-exemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-agrosus-laudo-laboratorial.html">Laudo Laboratorial AgroSUS</a></p></div><h2><span title="Códigos:{http://loinc.org 58410-2}">Hemograma completo</span> (<span title="Códigos:{http://terminology.hl7.org/CodeSystem/v2-0074 HM}">Hematology</span>) </h2><table class="grid"><tr><td>Assunto</td><td>Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number: NamingSystemCNS#987654321098765 (use: official, ))</td></tr><tr><td>Quando Para</td><td>2026-07-25 08:15:00-0300</td></tr><tr><td>Comunicado</td><td>2026-07-25 12:10:00-0300</td></tr><tr><td>Intérprete</td><td> <a href="Organization-agrosus-laboratorio-exemplo.html">Laboratório Municipal de Referência — Exemplo AgroSUS</a></td></tr><tr><td>Identificador</td><td> <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/laudo-laboratorial</code>/LAUDO-LAB-2026-000001</td></tr></table><p><b>Detalhes do relatório</b></p><table class="grid"><tr><td><b>Código</b></td><td><b>Valor</b></td><td><b>Bandeiras</b></td><td><b>Nota</b></td><td><b>Comunicado</b></td></tr><tr><td><a href="Observation-agrosus-resultado-hemoglobina-exemplo.html"><span title="Códigos:{http://loinc.org 718-7}">Hemoglobina</span></a></td><td>13.2 g/dL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM códigog/dL = 'g/dL')</span></td><td>Final, <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 12,0 a 16,0 g/dL.</p>
+</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr><tr><td><a href="Observation-agrosus-resultado-hematocrito-exemplo.html"><span title="Códigos:{http://loinc.org 4544-3}">Hematócrito</span></a></td><td>39.5 %<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM código% = '%')</span></td><td>Final, <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 36,0% a 46,0%.</p>
+</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr><tr><td><a href="Observation-agrosus-resultado-leucocitos-exemplo.html"><span title="Códigos:{http://loinc.org 6690-2}">Leucócitos</span></a></td><td>6.8 10³/µL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM código10*3/uL = '10*3/uL')</span></td><td>Final, <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 4,0 a 10,0 × 10³/µL.</p>
+</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr><tr><td><a href="Observation-agrosus-resultado-plaquetas-exemplo.html"><span title="Códigos:{http://loinc.org 777-3}">Plaquetas</span></a></td><td>250 10³/µL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM código10*3/uL = '10*3/uL')</span></td><td>Final, <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 150 a 450 × 10³/µL.</p>
+</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr></table><p>Resultados apresentados dentro das faixas de referência informadas pelo laboratório neste exemplo fictício.</p></div>
+  </text>
+  <identifier>
+    <system value="https://jefersonrl.github.io/AgroSUS-FHIR/sid/laudo-laboratorial"/>
+    <value value="LAUDO-LAB-2026-000001"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/agrosus-solicitacao-hemograma-exemplo"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="HM"/>
+      <display value="Hematology"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="58410-2"/>
+      <display value="CBC panel - Blood by Automated count"/>
+    </coding>
+    <text value="Hemograma completo"/>
+  </code>
+  <subject>
+    <reference value="Patient/agrosus-patient-example"/>
+    <display value="Maria Aparecida de Souza"/>
+  </subject>
+  <effectiveDateTime value="2026-07-25T08:15:00-03:00"/>
+  <issued value="2026-07-25T12:10:00-03:00"/>
+  <performer>
+    <reference value="Organization/agrosus-laboratorio-exemplo"/>
+    <display value="Laboratório Municipal de Referência — Exemplo AgroSUS"/>
+  </performer>
+  <result>
+    <reference value="Observation/agrosus-resultado-hemoglobina-exemplo"/>
+  </result>
+  <result>
+    <reference value="Observation/agrosus-resultado-hematocrito-exemplo"/>
+  </result>
+  <result>
+    <reference value="Observation/agrosus-resultado-leucocitos-exemplo"/>
+  </result>
+  <result>
+    <reference value="Observation/agrosus-resultado-plaquetas-exemplo"/>
+  </result>
+  <conclusion value="Resultados apresentados dentro das faixas de referência informadas pelo laboratório neste exemplo fictício."/>
+</DiagnosticReport>

@@ -178,9 +178,6 @@
       <li>
         <a href="maps.html">Mappings</a>
       </li>
-      <li>
-        <a href="dak-api.html">DAK API</a>
-      </li>
     </ul>
   </li>
 </ul>
@@ -262,7 +259,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/jefersonrl/AgroSUS-FHIR/tree/main'>https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href='history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/jefersonrl/AgroSUS-FHIR/commit/5af3724933665b9000997ac69a0e4ddd255a3456"><code>5af37249</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/jefersonrl/AgroSUS-FHIR/tree/main'>https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href='https://jefersonrl.github.io/AgroSUS-FHIR/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   <h2>Codings</h2>
   
 
@@ -290,8 +287,57 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The following terminology artifacts are included for this implementation guide:</p>
 
 <h3 id="codesystems">CodeSystems</h3>
+<li><a href="CodeSystem-agrosus-armazenamento-defensivos.html">Armazenamento de defensivos agrícolas AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-assistencia-tecnica.html">Assistência Técnica AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-avaliacao-boas-praticas.html">Avaliação de boas práticas agrícolas AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-capacitacao.html">Temas de Capacitação AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-categoria-plano-cuidado.html">Categorias de Plano de Cuidado AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-classificacao-toxicologica.html">Classificação Toxicológica de Defensivos Agrícolas</a></li>
+<li><a href="CodeSystem-agrosus-condicoes-sintomas.html">Condições de saúde e sintomas AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-destinacao-embalagens.html">Destinação de embalagens vazias AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-epi.html">Terminologia de equipamentos de proteção individual AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-escolaridade.html">Escolaridade AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-exposicao-familiar.html">Exposição familiar AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-exposicao.html">Terminologia de exposição ocupacional AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-historico-intoxicacao.html">Histórico de intoxicação AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-propriedade.html">Terminologia da Propriedade Rural AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-rastreabilidade.html">Rastreabilidade das aplicações AgroSUS</a></li>
+<li><a href="CodeSystem-agrosus-tipo-coleta.html">Tipos de Coleta AgroSUS</a></li>
 
 <h3 id="valuesets">ValueSets</h3>
+<li><a href="ValueSet-agrosus-armazenamento-epi.html">Local de armazenamento dos EPIs</a></li>
+<li><a href="ValueSet-agrosus-armazenamento-registros.html">Formas de armazenamento dos registros</a></li>
+<li><a href="ValueSet-agrosus-atividade-agricola.html">Principal Atividade Agrícola</a></li>
+<li><a href="ValueSet-agrosus-avaliacao-boas-praticas.html">Respostas dos indicadores de boas práticas</a></li>
+<li><a href="ValueSet-agrosus-categoria-plano-cuidado.html">Categorias de Plano de Cuidado AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-classificacao-toxicologica.html">Classificação Toxicológica de Defensivos Agrícolas</a></li>
+<li><a href="ValueSet-agrosus-condicao-saude-referida.html">Condições de saúde referidas</a></li>
+<li><a href="ValueSet-agrosus-destinacao-embalagens-nao-devolvidas.html">Destinação de embalagens não devolvidas</a></li>
+<li><a href="ValueSet-agrosus-dias-aplicacao-mes.html">Dias de aplicação por mês</a></li>
+<li><a href="ValueSet-agrosus-equipamento-aplicacao.html">Equipamentos utilizados na aplicação</a></li>
+<li><a href="ValueSet-agrosus-escolaridade.html">Escolaridade AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-exames-laboratoriais.html">Exames Laboratoriais AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-familiares-auxiliam-aplicacao.html">Familiares que auxiliam na aplicação</a></li>
+<li><a href="ValueSet-agrosus-fonte-agua.html">Fonte de Água da Propriedade</a></li>
+<li><a href="ValueSet-agrosus-formacao-responsavel-tecnico.html">Formação do Responsável Técnico</a></li>
+<li><a href="ValueSet-agrosus-frequencia-uso-epi.html">Frequência de utilização de EPI</a></li>
+<li><a href="ValueSet-agrosus-horas-aplicacao-dia.html">Horas de aplicação por dia</a></li>
+<li><a href="ValueSet-agrosus-instituicao-assistencia.html">Instituição de Assistência Técnica</a></li>
+<li><a href="ValueSet-agrosus-intoxicacao-pesticida.html">Intoxicação por pesticidas AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-local-armazenamento-defensivos.html">Local de armazenamento dos defensivos agrícolas</a></li>
+<li><a href="ValueSet-agrosus-mes-maior-intensidade.html">Meses de maior intensidade de uso</a></li>
+<li><a href="ValueSet-agrosus-motivo-nao-uso-epi.html">Motivos de não utilização de EPI</a></li>
+<li><a href="ValueSet-agrosus-numero-intoxicacoes-agudas.html">Número de intoxicações agudas anteriores</a></li>
+<li><a href="ValueSet-agrosus-ocupacao-acs.html">Ocupações permitidas para o ACS no AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-ocupacao-profissional-ubs.html">Ocupações dos profissionais assistenciais da UBS</a></li>
+<li><a href="ValueSet-agrosus-responsavel-aplicacao.html">Responsável pela aplicação</a></li>
+<li><a href="ValueSet-agrosus-resultados-laboratoriais.html">Resultados Laboratoriais AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-sintoma-ultimos-30-dias.html">Sinais e sintomas dos últimos 30 dias</a></li>
+<li><a href="ValueSet-agrosus-situacao-posse.html">Situação de Posse da Terra</a></li>
+<li><a href="ValueSet-agrosus-temas-capacitacao.html">Temas de Capacitação AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-tipo-coleta.html">Tipos de Coleta AgroSUS</a></li>
+<li><a href="ValueSet-agrosus-tipo-producao.html">Tipo de Produção Agrícola</a></li>
+<li><a href="ValueSet-agrosus-via-exposicao.html">Vias de exposição</a></li>
 
 
 
@@ -312,14 +358,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2026 19:33+0000">2026-07-20</span>
+    IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 03:04+0000">2026-07-21</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-| <a style="color: #81BEF7" target="_blank" href="history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+| <a style="color: #81BEF7" target="_blank" href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
     </span>
   </p>
 </div>  <!-- /inner-wrapper -->

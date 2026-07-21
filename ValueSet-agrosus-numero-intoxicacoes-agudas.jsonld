@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-numero-intoxicacoes-agudas.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.517973Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-numero-intoxicacoes-agudas.jsonld#nenhuma",
+      "name": "Nenhuma",
+      "fhir:code": "nenhuma",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-historico-intoxicacao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-numero-intoxicacoes-agudas.jsonld#uma-vez",
+      "name": "1 vez",
+      "fhir:code": "uma-vez",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-historico-intoxicacao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-numero-intoxicacoes-agudas.jsonld#duas-tres-vezes",
+      "name": "2–3 vezes",
+      "fhir:code": "duas-tres-vezes",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-historico-intoxicacao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-numero-intoxicacoes-agudas.jsonld#quatro-ou-mais",
+      "name": "4 ou mais vezes",
+      "fhir:code": "quatro-ou-mais",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-historico-intoxicacao"
+    }
+  ]
+}

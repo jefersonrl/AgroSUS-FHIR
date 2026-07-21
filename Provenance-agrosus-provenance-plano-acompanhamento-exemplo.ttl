@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Provenance/agrosus-provenance-plano-acompanhamento-exemplo> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-provenance-plano-acompanhamento-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Provenance agrosus-provenance-plano-acompanhamento-exemplo</b></p><a name=\"agrosus-provenance-plano-acompanhamento-exemplo\"> </a><a name=\"hcagrosus-provenance-plano-acompanhamento-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-provenance.html\">Proveniência dos Registros AgroSUS</a></p></div><p>Proveniência para <a href=\"CarePlan-agrosus-plano-acompanhamento-exemplo.html\">Plano de acompanhamento clínico e ocupacional AgroSUS</a></p><p>Resumo</p><table class=\"grid\"><tr><td>Ocorrência</td><td>2026-07-26 10:35:00-0300</td></tr><tr><td>Gravado</td><td>2026-07-26 10:36:00-0300</td></tr><tr><td>Atividade</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agentes</b></p><table class=\"grid\"><tr><td><b>Tipo</b></td><td><b>que</b></td><td><b>Em nome de</b></td></tr><tr><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table></div>"
+  ] ;
+  fhir:Provenance.target [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CarePlan/agrosus-plano-acompanhamento-exemplo> ;
+     fhir:Reference.reference [ fhir:value "CarePlan/agrosus-plano-acompanhamento-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Plano de acompanhamento clínico e ocupacional AgroSUS" ]
+  ] ;
+  fhir:Provenance.occurredDateTime [ fhir:value "2026-07-26T10:35:00-03:00"^^xsd:dateTime] ;
+  fhir:Provenance.recorded [ fhir:value "2026-07-26T10:36:00-03:00"^^xsd:dateTime] ;
+  fhir:Provenance.reason [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+       fhir:Coding.code [ fhir:value "TREAT" ] ;
+       fhir:Coding.display [ fhir:value "treatment" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Planejamento do acompanhamento assistencial" ]
+  ] ;
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ] ;
+       fhir:Coding.code [ fhir:value "CREATE" ] ;
+       fhir:Coding.display [ fhir:value "create" ]
+     ]
+  ] ;
+  fhir:Provenance.agent [
+     fhir:index 0 ;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ] ;
+         fhir:Coding.code [ fhir:value "author" ] ;
+         fhir:Coding.display [ fhir:value "Author" ]
+       ]
+     ] ;
+     fhir:Provenance.agent.who [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+     ] ;
+     fhir:Provenance.agent.onBehalfOf [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+       fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+     ]
+  ] ;
+  fhir:Provenance.entity [
+     fhir:index 0 ;
+     fhir:Provenance.entity.role [ fhir:value "source" ] ;
+     fhir:Provenance.entity.what [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo> ;
+       fhir:Reference.reference [ fhir:value "Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Suspeita de intoxicação por pesticida em investigação" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Provenance.entity.role [ fhir:value "source" ] ;
+     fhir:Provenance.entity.what [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/DiagnosticReport/agrosus-laudo-hemograma-exemplo> ;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/agrosus-laudo-hemograma-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Laudo de hemograma completo" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Provenance/agrosus-provenance-plano-acompanhamento-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

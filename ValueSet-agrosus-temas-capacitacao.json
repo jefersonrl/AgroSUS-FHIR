@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-temas-capacitacao",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-temas-capacitacao</b></p><a name=\"agrosus-temas-capacitacao\"> </a><a name=\"hcagrosus-temas-capacitacao\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-agrosus-capacitacao.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-temas-capacitacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTemasCapacitacaoVS",
+  "title" : "Temas de Capacitação AgroSUS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Temas que podem ser selecionados no registro de capacitação do trabalhador rural.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao"
+    }]
+  }
+}

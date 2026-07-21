@@ -1,0 +1,404 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Bundle/agrosus-transacao-visita-exemplo> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-transacao-visita-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita>
+     ]
+  ] ;
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/transacao-visita" ] ;
+     fhir:Identifier.value [ fhir:value "TRANSACAO-VISITA-2026-000001" ]
+  ] ;
+  fhir:Bundle.type [ fhir:value "transaction"] ;
+  fhir:Bundle.timestamp [ fhir:value "2026-07-20T09:32:00-03:00"^^xsd:dateTime] ;
+  fhir:Bundle.entry [
+     fhir:index 0 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://fhir.agrosus.example/Patient/agrosus-patient-example" ] ;
+     fhir:Bundle.entry.resource <https://fhir.agrosus.example/Patient/agrosus-patient-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "Patient/agrosus-patient-example" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://fhir.agrosus.example/Encounter/agrosus-visita-acs-exemplo" ] ;
+     fhir:Bundle.entry.resource <https://fhir.agrosus.example/Encounter/agrosus-visita-acs-exemplo> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "Encounter/agrosus-visita-acs-exemplo" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://fhir.agrosus.example/QuestionnaireResponse/agrosus-anamnese-response-example" ] ;
+     fhir:Bundle.entry.resource <https://fhir.agrosus.example/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "https://fhir.agrosus.example/Provenance/agrosus-provenance-anamnese-exemplo" ] ;
+     fhir:Bundle.entry.resource <https://fhir.agrosus.example/Provenance/agrosus-provenance-anamnese-exemplo> ;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ] ;
+       fhir:Bundle.entry.request.url [ fhir:value "Provenance/agrosus-provenance-anamnese-exemplo" ]
+     ]
+  ] .
+
+<https://fhir.agrosus.example/Patient/agrosus-patient-example> a fhir:Patient ;
+  fhir:Resource.id [ fhir:value "agrosus-patient-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><a name=\"Patient_agrosus-patient-example\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Patient agrosus-patient-example</b></p><a name=\"agrosus-patient-example\"> </a><a name=\"hcagrosus-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-patient.html\">Paciente AgroSUS</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number: NamingSystemCNS#987654321098765 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"O registo está ativo\">Ativo:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Tax ID number/12345678901 (utilização: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Formas de contactar o doente\">Detalhes do contacto</td><td colspan=\"3\"><ul><li><a href=\"tel:+551190000-0000\">+55 11 90000-0000</a></li><li>Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Elemento que define a raça do indivíduo\"><a href=\"file://C:\\Portfolio-Digital-HSL\\git\\ips-brasil-ig\\output/StructureDefinition-raca-br-ips.html\">Raça BR IPS</a></td><td colspan=\"3\"><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor 01}\">Branca</span></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor" ] ;
+         fhir:Coding.code [ fhir:value "01" ] ;
+         fhir:Coding.display [ fhir:value "Branca" ]
+       ]
+     ]
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "TAX" ] ;
+         fhir:Coding.display [ fhir:value "Tax ID number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cpf" ] ;
+     fhir:Identifier.value [ fhir:value "12345678901" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "HC" ] ;
+         fhir:Coding.display [ fhir:value "Health Card Number" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cns" ] ;
+     fhir:Identifier.value [ fhir:value "987654321098765" ]
+  ] ;
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.text [ fhir:value "Maria Aparecida de Souza" ] ;
+     fhir:HumanName.family [ fhir:value "Souza" ] ;
+     fhir:HumanName.given [
+       fhir:value "Maria" ;
+       fhir:index 0
+     ], [
+       fhir:value "Aparecida" ;
+       fhir:index 1
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+55 11 90000-0000" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1978-05-14"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.text [ fhir:value "Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP" ] ;
+     fhir:Address.line [
+       fhir:value "Propriedade Rural Exemplo, s/n" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Mogi das Cruzes" ] ;
+     fhir:Address.district [ fhir:value "Jundiapeba" ] ;
+     fhir:Address.state [ fhir:value "SP" ] ;
+     fhir:Address.country [ fhir:value "Brasil" ]
+  ] .
+
+<https://fhir.agrosus.example/Encounter/agrosus-visita-acs-exemplo> a fhir:Encounter ;
+  fhir:Resource.id [ fhir:value "agrosus-visita-acs-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><a name=\"Encounter_agrosus-visita-acs-exemplo\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Encounter agrosus-visita-acs-exemplo</b></p><a name=\"agrosus-visita-acs-exemplo\"> </a><a name=\"hcagrosus-visita-acs-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-visita-acs.html\">Visita do ACS AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita</code>/VISITA-2026-000001</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD\">ActCode: FLD</a> (field)</p><p><b>priority</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">Rotina</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">Executor principal</span></td><td><a href=\"PractitionerRole-agrosus-acs-role-exemplo.html\">Maria Clara Oliveira — ACS da UBS Jardim Esperança</a></td></tr></table><p><b>period</b>: 2026-07-20 09:00:00-0300 --&gt; 2026-07-20 10:00:00-0300</p><p><b>reasonCode</b>: <span title=\"Códigos:\">Aplicação inicial da anamnese ocupacional e ambiental AgroSUS</span></p><p><b>serviceProvider</b>: <a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></p></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita" ] ;
+     fhir:Identifier.value [ fhir:value "VISITA-2026-000001" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "FLD" ] ;
+     fhir:Coding.display [ fhir:value "field" ]
+  ] ;
+  fhir:Encounter.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActPriority" ] ;
+       fhir:Coding.code [ fhir:value "R" ] ;
+       fhir:Coding.display [ fhir:value "routine" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Rotina" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index 0 ;
+     fhir:Encounter.participant.type [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+         fhir:Coding.code [ fhir:value "PPRF" ] ;
+         fhir:Coding.display [ fhir:value "primary performer" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Executor principal" ]
+     ] ;
+     fhir:Encounter.participant.individual [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-acs-role-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara Oliveira — ACS da UBS Jardim Esperança" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-07-20T09:00:00-03:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-07-20T10:00:00-03:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Aplicação inicial da anamnese ocupacional e ambiental AgroSUS" ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+  ] .
+
+<https://fhir.agrosus.example/QuestionnaireResponse/agrosus-anamnese-response-example> a fhir:QuestionnaireResponse ;
+  fhir:Resource.id [ fhir:value "agrosus-anamnese-response-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"QuestionnaireResponse_agrosus-anamnese-response-example\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: QuestionnaireResponse agrosus-anamnese-response-example</b></p><a name=\"agrosus-anamnese-response-example\"> </a><a name=\"hcagrosus-anamnese-response-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-anamnese-response.html\">Resposta da Anamnese AgroSUS</a></p></div><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"O linkID do item\">ID da ligação</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Texto para o item\">Texto</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Número mínimo e máximo de vezes que o item pode aparecer na instância\">Definição</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"O tipo do item\">Resposta</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> agrosus-anamnese-response-example</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionário:<a href=\"Questionnaire-agrosus-anamnese.html\">Formulário de Anamnese Ocupacional e Ambiental AgroSUS</a></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Grupo\" class=\"hierarchy\"/> identificacao-instrumento</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1. Identificação do instrumento</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> id-agrosus</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">AGROSUS-000001</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> numero-formulario</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">FORM-2026-000001</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> data-entrevista</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2026-07-20</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> tipo-coleta</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"CodeSystem-agrosus-tipo-coleta.html#agrosus-tipo-coleta-cadastro-inicial\">Tipos de Coleta AgroSUS: cadastro-inicial</a> (Cadastro inicial)</span></span></td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> ubs-referencia</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">UBS Jardim Esperança — Exemplo AgroSUS</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> acs-responsavel</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Maria Clara Oliveira</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> cnes-ubs</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">7654321</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> municipio</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ferraz de Vasconcelos</td></tr>#xD;\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> bairro-localidade</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Jardim Esperança</td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legenda para este formato\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentação para este formato</a></td></tr></table></div>"
+  ] ;
+  fhir:QuestionnaireResponse.identifier [
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/anamnese" ] ;
+     fhir:Identifier.value [ fhir:value "ANAMNESE-2026-000001" ]
+  ] ;
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese" ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese>
+  ] ;
+  fhir:QuestionnaireResponse.status [ fhir:value "in-progress"] ;
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:QuestionnaireResponse.encounter [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-visita-acs-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agrosus-visita-acs-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Visita em campo para aplicação inicial da anamnese AgroSUS" ]
+  ] ;
+  fhir:QuestionnaireResponse.authored [ fhir:value "2026-07-20T09:30:00-03:00"^^xsd:dateTime] ;
+  fhir:QuestionnaireResponse.author [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-acs-role-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara Oliveira — ACS da UBS Jardim Esperança" ]
+  ] ;
+  fhir:QuestionnaireResponse.source [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0 ;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "identificacao-instrumento" ] ;
+     fhir:QuestionnaireResponse.item.text [ fhir:value "1. Identificação do instrumento" ] ;
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "id-agrosus" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "AGROSUS-000001" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "numero-formulario" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "FORM-2026-000001" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "data-entrevista" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2026-07-20"^^xsd:date ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "tipo-coleta" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueCoding [
+           fhir:Coding.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta" ] ;
+           fhir:Coding.code [ fhir:value "cadastro-inicial" ] ;
+           fhir:Coding.display [ fhir:value "Cadastro inicial" ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "ubs-referencia" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "acs-responsavel" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Maria Clara Oliveira" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "cnes-ubs" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "7654321" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "municipio" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Ferraz de Vasconcelos" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "bairro-localidade" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0 ;
+         fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Jardim Esperança" ]
+       ]
+     ]
+  ] .
+
+<https://fhir.agrosus.example/Provenance/agrosus-provenance-anamnese-exemplo> a fhir:Provenance ;
+  fhir:Resource.id [ fhir:value "agrosus-provenance-anamnese-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><a name=\"Provenance_agrosus-provenance-anamnese-exemplo\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Provenance agrosus-provenance-anamnese-exemplo</b></p><a name=\"agrosus-provenance-anamnese-exemplo\"> </a><a name=\"hcagrosus-provenance-anamnese-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-provenance.html\">Proveniência dos Registros AgroSUS</a></p></div><p>Proveniência para <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p>Resumo</p><table class=\"grid\"><tr><td>Ocorrência</td><td>2026-07-20 09:30:00-0300</td></tr><tr><td>Gravado</td><td>2026-07-20 09:31:00-0300</td></tr><tr><td>Atividade</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agentes</b></p><table class=\"grid\"><tr><td><b>Tipo</b></td><td><b>que</b></td><td><b>Em nome de</b></td></tr><tr><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"PractitionerRole-agrosus-acs-role-exemplo.html\">Maria Clara Oliveira — ACS da UBS Jardim Esperança</a></td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table></div>"
+  ] ;
+  fhir:Provenance.target [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ] ;
+     fhir:Reference.display [ fhir:value "Resposta da anamnese AgroSUS" ]
+  ] ;
+  fhir:Provenance.occurredDateTime [ fhir:value "2026-07-20T09:30:00-03:00"^^xsd:dateTime] ;
+  fhir:Provenance.recorded [ fhir:value "2026-07-20T09:31:00-03:00"^^xsd:dateTime] ;
+  fhir:Provenance.reason [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+       fhir:Coding.code [ fhir:value "TREAT" ] ;
+       fhir:Coding.display [ fhir:value "treatment" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Registro assistencial durante visita do ACS" ]
+  ] ;
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ] ;
+       fhir:Coding.code [ fhir:value "CREATE" ] ;
+       fhir:Coding.display [ fhir:value "create" ]
+     ]
+  ] ;
+  fhir:Provenance.agent [
+     fhir:index 0 ;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ] ;
+         fhir:Coding.code [ fhir:value "author" ] ;
+         fhir:Coding.display [ fhir:value "Author" ]
+       ]
+     ] ;
+     fhir:Provenance.agent.who [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-acs-role-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara Oliveira — ACS da UBS Jardim Esperança" ]
+     ] ;
+     fhir:Provenance.agent.onBehalfOf [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+       fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Bundle/agrosus-transacao-visita-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

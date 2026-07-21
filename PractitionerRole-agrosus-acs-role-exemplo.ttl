@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-acs-role-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: PractitionerRole agrosus-acs-role-exemplo</b></p><a name=\"agrosus-acs-role-exemplo\"> </a><a name=\"hcagrosus-acs-role-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-acs-role.html\">Função do ACS no AgroSUS</a></p></div><p><b>active</b>: true</p><p><b>period</b>: 2025-01-01 --&gt; (em curso)</p><p><b>practitioner</b>: <a href=\"Practitioner-agrosus-acs-exemplo.html\">Maria Clara Oliveira</a></p><p><b>organization</b>: <a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 515105}\">Agente comunitário de saúde</span></p></div>"
+  ] ;
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "2025-01-01"^^xsd:date ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Practitioner/agrosus-acs-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/agrosus-acs-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Maria Clara Oliveira" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO" ] ;
+       fhir:Coding.code [ fhir:value "515105" ] ;
+       fhir:Coding.display [ fhir:value "Agente comunitário de saúde" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

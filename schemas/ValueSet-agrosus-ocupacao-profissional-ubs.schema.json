@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.schema.json",
+  "title": "Ocupações dos profissionais assistenciais da UBS Schema",
+  "description": "JSON Schema for Ocupações dos profissionais assistenciais da UBS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#225125",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#225130",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#225142",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#223505",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO#322205"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Ocupações dos profissionais assistenciais da UBS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-profissional-ubs.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-profissional-ubs",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.369464"
+}

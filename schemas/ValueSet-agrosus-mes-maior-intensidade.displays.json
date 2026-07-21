@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-mes-maior-intensidade.displays.json",
+  "title": "Meses de maior intensidade de uso Display Values",
+  "description": "Display values for Meses de maior intensidade de uso ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#dias-mes-1-2": {
+      "en": "1–2 dias por mês"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#dias-mes-3-5": {
+      "en": "3–5 dias por mês"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#dias-mes-6-10": {
+      "en": "6–10 dias por mês"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#dias-mes-mais-10": {
+      "en": "Mais de 10 dias por mês"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#horas-dia-menos-2": {
+      "en": "Menos de 2 horas por dia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#horas-dia-2-4": {
+      "en": "2–4 horas por dia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#horas-dia-4-6": {
+      "en": "4–6 horas por dia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#horas-dia-mais-6": {
+      "en": "Mais de 6 horas por dia"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#janeiro": {
+      "en": "janeiro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#fevereiro": {
+      "en": "fevereiro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#marco": {
+      "en": "marco"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#abril": {
+      "en": "abril"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#maio": {
+      "en": "maio"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#junho": {
+      "en": "junho"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#julho": {
+      "en": "julho"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#agosto": {
+      "en": "agosto"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#setembro": {
+      "en": "setembro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#outubro": {
+      "en": "outubro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#novembro": {
+      "en": "novembro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#dezembro": {
+      "en": "dezembro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#pulverizador-costal-manual": {
+      "en": "Pulverizador costal manual"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#pulverizador-costal-motorizado": {
+      "en": "Pulverizador costal motorizado"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#trator-com-barra": {
+      "en": "Trator com barra"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#cutanea": {
+      "en": "Cutânea (pele)"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#respiratoria": {
+      "en": "Respiratória (inalação)"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#ocular": {
+      "en": "Ocular"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#digestiva-oral": {
+      "en": "Digestiva ou oral"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#multiplas-vias": {
+      "en": "Múltiplas vias"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#proprio-produtor": {
+      "en": "O próprio produtor"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#familiar": {
+      "en": "Familiar"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#trabalhador-contratado": {
+      "en": "Trabalhador contratado"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#empresa-terceirizada": {
+      "en": "Empresa terceirizada"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao#outro": {
+      "en": "Outro"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-mes-maior-intensidade",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.367912"
+}

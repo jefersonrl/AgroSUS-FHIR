@@ -1,3 +1,130 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSArmazenamentoDefensivosCS",
+    "title" : "Armazenamento de defensivos agrícolas AgroSUS",
+    "description" : "Terminologia dos locais utilizados para armazenamento de defensivos agrícolas."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSAssistenciaTecnicaCS",
+    "title" : "Assistência Técnica AgroSUS",
+    "description" : "Códigos relacionados à assistência e à responsabilidade técnica na produção rural."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSAvaliacaoBoasPraticasCS",
+    "title" : "Avaliação de boas práticas agrícolas AgroSUS",
+    "description" : "Terminologia utilizada para avaliar o atendimento aos indicadores de boas práticas agrícolas no formulário AgroSUS."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSCapacitacaoCS",
+    "title" : "Temas de Capacitação AgroSUS",
+    "description" : "Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSCategoriaPlanoCuidadoCS",
+    "title" : "Categorias de Plano de Cuidado AgroSUS",
+    "description" : "Categorias utilizadas para classificar os planos longitudinais de acompanhamento do trabalhador rural."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-classificacao-toxicologica",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSClassificacaoToxicologicaCS",
+    "title" : "Classificação Toxicológica de Defensivos Agrícolas",
+    "description" : "Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSCondicoesSintomasCS",
+    "title" : "Condições de saúde e sintomas AgroSUS",
+    "description" : "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSDestinacaoEmbalagensCS",
+    "title" : "Destinação de embalagens vazias AgroSUS",
+    "description" : "Terminologia das formas de destinação de embalagens vazias de defensivos agrícolas quando não são devolvidas em local autorizado."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSEPICS",
+    "title" : "Terminologia de equipamentos de proteção individual AgroSUS",
+    "description" : "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSEscolaridadeCS",
+    "title" : "Escolaridade AgroSUS",
+    "description" : "Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSExposicaoCS",
+    "title" : "Terminologia de exposição ocupacional AgroSUS",
+    "description" : "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSExposicaoFamiliarCS",
+    "title" : "Exposição familiar AgroSUS",
+    "description" : "Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-historico-intoxicacao",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSHistoricoIntoxicacaoCS",
+    "title" : "Histórico de intoxicação AgroSUS",
+    "description" : "Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSPropriedadeCS",
+    "title" : "Terminologia da Propriedade Rural AgroSUS",
+    "description" : "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "AgroSUSRastreabilidadeCS",
+    "title" : "Rastreabilidade das aplicações AgroSUS",
+    "description" : "Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas."
+  },
+  {
+    "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "AgroSUSTipoColetaCS",
+    "title" : "Tipos de Coleta AgroSUS",
+    "description" : "Modalidades de aplicação do formulário de anamnese ocupacional e ambiental do AgroSUS."
+  }]
 }

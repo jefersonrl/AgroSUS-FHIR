@@ -4,10 +4,128 @@
   "fhirVersion": "4.0.1",
   "jurisdiction": "BR",
   "extensions": [],
-  "profiles": {},
+  "profiles": {
+    "Practitioner": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs",
+        "title": "Profissional Assistencial da UBS AgroSUS"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role",
+        "title": "Função do Profissional Assistencial da UBS AgroSUS"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response",
+        "title": "Resposta da Anamnese AgroSUS"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs",
+        "title": "Visita do ACS AgroSUS"
+      }
+    ],
+    "AuditEvent": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event",
+        "title": "Evento de Auditoria AgroSUS"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida",
+        "title": "Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs",
+        "title": "Unidade Básica de Saúde AgroSUS"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial",
+        "title": "Laudo Laboratorial AgroSUS"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient",
+        "title": "Paciente AgroSUS"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento",
+        "title": "Plano de Acompanhamento AgroSUS"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance",
+        "title": "Proveniência dos Registros AgroSUS"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial",
+        "title": "Resultado Laboratorial AgroSUS"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame",
+        "title": "Solicitação de Exame AgroSUS"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita",
+        "title": "Transação da Visita do ACS AgroSUS"
+      }
+    ]
+  },
   "usage": {
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason": [
       "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -19,6 +137,34 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-diagnosticreport-conduta": [
+      "DiagnosticReport"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-populacaotradicional": [
+      "Patient"
+    ],
+    "https://br-core.saude.gov.br/fhir/StructureDefinition/br-core-povoitinerante": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/identidade-genero-br-ips": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/povo-indigena-br-ips": [
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "https://ips.saude.gov.br/fhir/StructureDefinition/sexo-nascimento-br-ips": [
+      "Patient"
     ]
   }
 }

@@ -1,0 +1,94 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-epi",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-epi</b></p><a name=\"agrosus-epi\"> </a><a name=\"hcagrosus-epi\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">uso-sempre<a name=\"agrosus-epi-uso-sempre\"> </a></td><td>Sempre</td><td>O equipamento de proteção individual é utilizado sempre.</td></tr><tr><td style=\"white-space:nowrap\">uso-as-vezes<a name=\"agrosus-epi-uso-as-vezes\"> </a></td><td>Às vezes</td><td>O equipamento de proteção individual é utilizado ocasionalmente.</td></tr><tr><td style=\"white-space:nowrap\">uso-nunca<a name=\"agrosus-epi-uso-nunca\"> </a></td><td>Nunca</td><td>O trabalhador possui o equipamento, mas nunca o utiliza.</td></tr><tr><td style=\"white-space:nowrap\">nao-possui<a name=\"agrosus-epi-nao-possui\"> </a></td><td>Não possui</td><td>O trabalhador não possui o equipamento de proteção individual.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento-local-especific-separado<a name=\"agrosus-epi-armazenamento-local-especific-separado\"> </a></td><td>Local específico e separado</td><td>Os equipamentos são armazenados em local específico e separado.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento-junto-roupas-pessoais<a name=\"agrosus-epi-armazenamento-junto-roupas-pessoais\"> </a></td><td>Junto de roupas pessoais</td><td>Os equipamentos são armazenados junto de roupas pessoais.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento-deposito-defensivos<a name=\"agrosus-epi-armazenamento-deposito-defensivos\"> </a></td><td>Depósito de defensivos</td><td>Os equipamentos são armazenados no depósito de defensivos agrícolas.</td></tr><tr><td style=\"white-space:nowrap\">motivo-desconforto<a name=\"agrosus-epi-motivo-desconforto\"> </a></td><td>Desconforto</td><td>O equipamento não é utilizado devido ao desconforto.</td></tr><tr><td style=\"white-space:nowrap\">motivo-descuido<a name=\"agrosus-epi-motivo-descuido\"> </a></td><td>Descuido</td><td>O equipamento não é utilizado por descuido.</td></tr><tr><td style=\"white-space:nowrap\">motivo-considera-desnecessario<a name=\"agrosus-epi-motivo-considera-desnecessario\"> </a></td><td>Considera desnecessário</td><td>O trabalhador considera desnecessária a utilização do equipamento.</td></tr><tr><td style=\"white-space:nowrap\">motivo-custo-elevado<a name=\"agrosus-epi-motivo-custo-elevado\"> </a></td><td>Custo elevado</td><td>O equipamento não é utilizado devido ao custo elevado.</td></tr><tr><td style=\"white-space:nowrap\">outro<a name=\"agrosus-epi-outro\"> </a></td><td>Outro</td><td>Outra forma de armazenamento ou outro motivo não especificado.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi",
+  "version" : "0.1.0",
+  "name" : "AgroSUSEPICS",
+  "title" : "Terminologia de equipamentos de proteção individual AgroSUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "uso-sempre",
+    "display" : "Sempre",
+    "definition" : "O equipamento de proteção individual é utilizado sempre."
+  },
+  {
+    "code" : "uso-as-vezes",
+    "display" : "Às vezes",
+    "definition" : "O equipamento de proteção individual é utilizado ocasionalmente."
+  },
+  {
+    "code" : "uso-nunca",
+    "display" : "Nunca",
+    "definition" : "O trabalhador possui o equipamento, mas nunca o utiliza."
+  },
+  {
+    "code" : "nao-possui",
+    "display" : "Não possui",
+    "definition" : "O trabalhador não possui o equipamento de proteção individual."
+  },
+  {
+    "code" : "armazenamento-local-especific-separado",
+    "display" : "Local específico e separado",
+    "definition" : "Os equipamentos são armazenados em local específico e separado."
+  },
+  {
+    "code" : "armazenamento-junto-roupas-pessoais",
+    "display" : "Junto de roupas pessoais",
+    "definition" : "Os equipamentos são armazenados junto de roupas pessoais."
+  },
+  {
+    "code" : "armazenamento-deposito-defensivos",
+    "display" : "Depósito de defensivos",
+    "definition" : "Os equipamentos são armazenados no depósito de defensivos agrícolas."
+  },
+  {
+    "code" : "motivo-desconforto",
+    "display" : "Desconforto",
+    "definition" : "O equipamento não é utilizado devido ao desconforto."
+  },
+  {
+    "code" : "motivo-descuido",
+    "display" : "Descuido",
+    "definition" : "O equipamento não é utilizado por descuido."
+  },
+  {
+    "code" : "motivo-considera-desnecessario",
+    "display" : "Considera desnecessário",
+    "definition" : "O trabalhador considera desnecessária a utilização do equipamento."
+  },
+  {
+    "code" : "motivo-custo-elevado",
+    "display" : "Custo elevado",
+    "definition" : "O equipamento não é utilizado devido ao custo elevado."
+  },
+  {
+    "code" : "outro",
+    "display" : "Outro",
+    "definition" : "Outra forma de armazenamento ou outro motivo não especificado."
+  }]
+}

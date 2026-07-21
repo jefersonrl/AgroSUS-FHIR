@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-exames-laboratoriais> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-exames-laboratoriais"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-exames-laboratoriais</b></p><a name=\"agrosus-exames-laboratoriais\"> </a><a name=\"hcagrosus-exames-laboratoriais\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> versão Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"https://loinc.org/58410-2/\">58410-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/1920-8/\">1920-8</a></td><td/></tr><tr><td><a href=\"https://loinc.org/1742-6/\">1742-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2324-2/\">2324-2</a></td><td/></tr><tr><td><a href=\"https://loinc.org/6768-6/\">6768-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/1751-7/\">1751-7</a></td><td/></tr><tr><td><a href=\"https://loinc.org/2160-0/\">2160-0</a></td><td/></tr><tr><td><a href=\"https://loinc.org/3091-6/\">3091-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/34535-5/\">34535-5</a></td><td style=\"color: #cccccc\">Microalbumin/Creatinine panel in random Urine</td></tr><tr><td><a href=\"https://loinc.org/1558-6/\">1558-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/35558-6/\">35558-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/6301-6/\">6301-6</a></td><td/></tr><tr><td><a href=\"https://loinc.org/35501-6/\">35501-6</a></td><td/></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-exames-laboratoriais"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
+  fhir:ValueSet.name [ fhir:value "AgroSUSExamesLaboratoriaisVS"] ;
+  fhir:ValueSet.title [ fhir:value "Exames Laboratoriais AgroSUS"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos trabalhadores rurais no AgroSUS."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58410-2" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1920-8" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1742-6" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2324-2" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6768-6" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1751-7" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2160-0" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3091-6" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34535-5" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1558-6" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35558-6" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6301-6" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35501-6" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-exames-laboratoriais.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

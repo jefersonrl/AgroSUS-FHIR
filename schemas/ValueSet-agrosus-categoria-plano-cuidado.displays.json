@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-categoria-plano-cuidado.displays.json",
+  "title": "Categorias de Plano de Cuidado AgroSUS Display Values",
+  "description": "Display values for Categorias de Plano de Cuidado AgroSUS ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado#monitoramento-exposicao": {
+      "en": "Monitoramento de exposição ocupacional"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado#investigacao-intoxicacao": {
+      "en": "Investigação de possível intoxicação"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado#seguimento-pos-intoxicacao": {
+      "en": "Seguimento após intoxicação"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-categoria-plano-cuidado",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.370745"
+}

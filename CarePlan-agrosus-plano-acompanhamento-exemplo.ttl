@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CarePlan/agrosus-plano-acompanhamento-exemplo> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-plano-acompanhamento-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: CarePlan agrosus-plano-acompanhamento-exemplo</b></p><a name=\"agrosus-plano-acompanhamento-exemplo\"> </a><a name=\"hcagrosus-plano-acompanhamento-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-plano-acompanhamento.html\">Plano de Acompanhamento AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/plano-acompanhamento</code>/PLANO-2026-000001</p><p><b>instantiatesUri</b>: <a href=\"https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf\">https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Códigos:{https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado investigacao-intoxicacao}\">Investigação de possível intoxicação</span></p><p><b>title</b>: Acompanhamento clínico e ocupacional AgroSUS</p><p><b>description</b>: Plano individual definido pelo médico da UBS para acompanhamento da exposição ocupacional, revisão clínica e reavaliação da necessidade de exames complementares.</p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>encounter</b>: <a href=\"Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.html\">Atendimento para revisão clínica e laboratorial</a></p><p><b>period</b>: 2026-07-26 --&gt; 2027-07-20</p><p><b>created</b>: 2026-07-26 10:35:00-0300</p><p><b>author</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>contributor</b>: <a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></p><p><b>addresses</b>: <a href=\"Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html\">Suspeita de intoxicação por pesticida em investigação</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></li><li><a href=\"ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html\">Solicitação de hemograma completo</a></li><li><a href=\"DiagnosticReport-agrosus-laudo-hemograma-exemplo.html\">Laudo de hemograma completo</a></li></ul><blockquote><p><b>activity</b></p><p><b>progress</b>: </p><blockquote><div><p>Antecipar o atendimento se houver surgimento ou agravamento de sintomas, nova exposição relevante ou alteração laboratorial.</p>\n</div></blockquote><blockquote><p><b>detail</b></p><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubgrupoTabelaSUS 0301}\">Consultas / Atendimentos / Acompanhamentos</span></p><p><b>reasonReference</b>: <a href=\"Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html\">Suspeita de intoxicação por pesticida em investigação</a></p><p><b>status</b>: Scheduled</p><p><b>scheduled</b>: 2027-07-01 --&gt; 2027-07-20</p><p><b>performer</b>: </p><ul><li><a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></li><li><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></li></ul><p><b>description</b>: Realizar reavaliação clínica e ocupacional em até doze meses, repetir a anamnese AgroSUS e avaliar individualmente a necessidade de novos exames.</p></blockquote></blockquote><p><b>note</b>: , </p><blockquote><div><p>O intervalo anual deste exemplo foi definido pelo médico responsável com base na exposição ocupacional e na NR-7. A aplicação utiliza a NR-7 como referência assistencial; a periodicidade deve ser individualizada e não calculada automaticamente.</p>\n</div></blockquote><blockquote><div><p>Quando houver exposição a inseticidas inibidores da colinesterase, o profissional deverá avaliar a aplicação da periodicidade específica dos indicadores biológicos prevista no Anexo I da NR-7.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:CarePlan.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/plano-acompanhamento" ] ;
+     fhir:Identifier.value [ fhir:value "PLANO-2026-000001" ]
+  ] ;
+  fhir:CarePlan.instantiatesUri [
+     fhir:value "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf" ;
+     fhir:index 0
+  ] ;
+  fhir:CarePlan.status [ fhir:value "active"] ;
+  fhir:CarePlan.intent [ fhir:value "plan"] ;
+  fhir:CarePlan.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado" ] ;
+       fhir:Coding.code [ fhir:value "investigacao-intoxicacao" ] ;
+       fhir:Coding.display [ fhir:value "Investigação de possível intoxicação" ]
+     ]
+  ] ;
+  fhir:CarePlan.title [ fhir:value "Acompanhamento clínico e ocupacional AgroSUS"] ;
+  fhir:CarePlan.description [ fhir:value "Plano individual definido pelo médico da UBS para acompanhamento da exposição ocupacional, revisão clínica e reavaliação da necessidade de exames complementares."] ;
+  fhir:CarePlan.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:CarePlan.encounter [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Atendimento para revisão clínica e laboratorial" ]
+  ] ;
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2026-07-26"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2027-07-20"^^xsd:date ]
+  ] ;
+  fhir:CarePlan.created [ fhir:value "2026-07-26T10:35:00-03:00"^^xsd:dateTime] ;
+  fhir:CarePlan.author [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+  ] ;
+  fhir:CarePlan.contributor [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+  ] ;
+  fhir:CarePlan.addresses [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Suspeita de intoxicação por pesticida em investigação" ]
+  ] ;
+  fhir:CarePlan.supportingInfo [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ] ;
+     fhir:Reference.display [ fhir:value "Resposta da anamnese AgroSUS" ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-hemograma-exemplo> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/agrosus-solicitacao-hemograma-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Solicitação de hemograma completo" ]
+  ], [
+     fhir:index 2 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/DiagnosticReport/agrosus-laudo-hemograma-exemplo> ;
+     fhir:Reference.reference [ fhir:value "DiagnosticReport/agrosus-laudo-hemograma-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Laudo de hemograma completo" ]
+  ] ;
+  fhir:CarePlan.activity [
+     fhir:index 0 ;
+     fhir:CarePlan.activity.progress [
+       fhir:index 0 ;
+       fhir:Annotation.text [ fhir:value "Antecipar o atendimento se houver surgimento ou agravamento de sintomas, nova exposição relevante ou alteração laboratorial." ]
+     ] ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "ServiceRequest" ] ;
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubgrupoTabelaSUS" ] ;
+           fhir:Coding.code [ fhir:value "0301" ] ;
+           fhir:Coding.display [ fhir:value "Consultas / Atendimentos / Acompanhamentos" ]
+         ]
+       ] ;
+       fhir:CarePlan.activity.detail.reasonReference [
+         fhir:index 0 ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo" ] ;
+         fhir:Reference.display [ fhir:value "Suspeita de intoxicação por pesticida em investigação" ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "scheduled" ] ;
+       fhir:CarePlan.activity.detail.scheduledPeriod [
+         fhir:Period.start [ fhir:value "2027-07-01"^^xsd:date ] ;
+         fhir:Period.end [ fhir:value "2027-07-20"^^xsd:date ]
+       ] ;
+       fhir:CarePlan.activity.detail.performer [
+         fhir:index 0 ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+         fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+       ], [
+         fhir:index 1 ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+         fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+       ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Realizar reavaliação clínica e ocupacional em até doze meses, repetir a anamnese AgroSUS e avaliar individualmente a necessidade de novos exames." ]
+     ]
+  ] ;
+  fhir:CarePlan.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "O intervalo anual deste exemplo foi definido pelo médico responsável com base na exposição ocupacional e na NR-7. A aplicação utiliza a NR-7 como referência assistencial; a periodicidade deve ser individualizada e não calculada automaticamente." ]
+  ], [
+     fhir:index 1 ;
+     fhir:Annotation.text [ fhir:value "Quando houver exposição a inseticidas inibidores da colinesterase, o profissional deverá avaliar a aplicação da periodicidade específica dos indicadores biológicos prevista no Anexo I da NR-7." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CarePlan/agrosus-plano-acompanhamento-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -43,7 +43,7 @@
 	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"5.1"}
-    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
+    h3,h4,h5,h6{--heading-prefix:"5.1.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -178,9 +178,6 @@
       <li>
         <a href="maps.html">Mappings</a>
       </li>
-      <li>
-        <a href="dak-api.html">DAK API</a>
-      </li>
     </ul>
   </li>
 </ul>
@@ -262,7 +259,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/jefersonrl/AgroSUS-FHIR/tree/main'>https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href='history.html'>Diretório de versões publicadas</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/jefersonrl/AgroSUS-FHIR/commit/5af3724933665b9000997ac69a0e4ddd255a3456"><code>5af37249</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/jefersonrl/AgroSUS-FHIR/tree/main'>https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href='https://jefersonrl.github.io/AgroSUS-FHIR/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
   <h2>Artifact Index</h2>
   
   
@@ -272,14 +269,942 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml"
      class="markdown-toc">
    <p>Contents:</p>
-   <ul/>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Questionnaires</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir"
      xmlns:html="http://www.w3.org/1999/xhtml">
-   <p>
-      <b>This content is not yet available. The page will be updated as soon as the content is ready to be shared.</b>
-   </p>
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-agrosus-server-capabilities.html"
+                  title="CapabilityStatement/agrosus-server-capabilities">Requisitos de capacidade do servidor AgroSUS</a>
+            </td>
+            <td>
+<p>Contrato mínimo da API FHIR R4 do AgroSUS para o aplicativo do ACS, o dashboard da UBS e os sistemas laboratoriais.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-agrosus-anamnese.html"
+                  title="Questionnaire/agrosus-anamnese">Formulário de Anamnese AgroSUS</a>
+            </td>
+            <td>
+<p>Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-acs.html"
+                  title="StructureDefinition/agrosus-acs">Agente Comunitário de Saúde AgroSUS</a>
+            </td>
+            <td>
+<p>Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-atendimento-ubs.html"
+                  title="StructureDefinition/agrosus-atendimento-ubs">Atendimento Clínico da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Atendimento realizado na UBS para avaliação, investigação e acompanhamento assistencial do trabalhador rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-audit-event.html"
+                  title="StructureDefinition/agrosus-audit-event">Evento de Auditoria AgroSUS</a>
+            </td>
+            <td>
+<p>Registro de segurança para rastrear consultas, alterações e outras operações realizadas sobre os dados do AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-acs-role.html"
+                  title="StructureDefinition/agrosus-acs-role">Função do ACS no AgroSUS</a>
+            </td>
+            <td>
+<p>Perfil do vínculo do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde com a organização responsável pelo atendimento no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-profissional-ubs-role.html"
+                  title="StructureDefinition/agrosus-profissional-ubs-role">Função do Profissional Assistencial da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Vínculo funcional do profissional assistencial com a UBS responsável pelo acompanhamento do trabalhador rural no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-laboratorio.html"
+                  title="StructureDefinition/agrosus-laboratorio">Laboratório AgroSUS</a>
+            </td>
+            <td>
+<p>Organização responsável pela realização e emissão de resultados de exames laboratoriais utilizados no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-laudo-laboratorial.html"
+                  title="StructureDefinition/agrosus-laudo-laboratorial">Laudo Laboratorial AgroSUS</a>
+            </td>
+            <td>
+<p>Laudo que agrupa resultados laboratoriais emitidos para o acompanhamento do trabalhador rural no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-patient.html"
+                  title="StructureDefinition/agrosus-patient">Paciente AgroSUS</a>
+            </td>
+            <td>
+<p>Perfil do pequeno produtor rural acompanhado pelo módulo AgroSUS no âmbito da Atenção Primária à Saúde.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-plano-acompanhamento.html"
+                  title="StructureDefinition/agrosus-plano-acompanhamento">Plano de Acompanhamento AgroSUS</a>
+            </td>
+            <td>
+<p>Plano longitudinal definido pela equipe assistencial da UBS para acompanhamento clínico e ocupacional do trabalhador rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-profissional-ubs.html"
+                  title="StructureDefinition/agrosus-profissional-ubs">Profissional Assistencial da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-provenance.html"
+                  title="StructureDefinition/agrosus-provenance">Proveniência dos Registros AgroSUS</a>
+            </td>
+            <td>
+<p>Registro de autoria, criação, atualização e origem dos recursos clínicos e assistenciais do AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-anamnese-response.html"
+                  title="StructureDefinition/agrosus-anamnese-response">Resposta da Anamnese AgroSUS</a>
+            </td>
+            <td>
+<p>Perfil da resposta ao formulário de anamnese ocupacional e ambiental AgroSUS aplicado pelo Agente Comunitário de Saúde.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-resultado-laboratorial.html"
+                  title="StructureDefinition/agrosus-resultado-laboratorial">Resultado Laboratorial AgroSUS</a>
+            </td>
+            <td>
+<p>Resultado individual de exame ou biomarcador laboratorial utilizado no acompanhamento do trabalhador rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-solicitacao-exame.html"
+                  title="StructureDefinition/agrosus-solicitacao-exame">Solicitação de Exame AgroSUS</a>
+            </td>
+            <td>
+<p>Solicitação de exame laboratorial realizada por profissional assistencial da UBS para acompanhamento do trabalhador rural no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-intoxicacao-pesticida.html"
+                  title="StructureDefinition/agrosus-intoxicacao-pesticida">Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS</a>
+            </td>
+            <td>
+<p>Condição clínica registrada por profissional assistencial para representar suspeita, confirmação ou descarte de intoxicação por pesticidas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-transacao-visita.html"
+                  title="StructureDefinition/agrosus-transacao-visita">Transação da Visita do ACS AgroSUS</a>
+            </td>
+            <td>
+<p>Bundle transacional e idempotente utilizado pelo aplicativo do ACS para sincronizar o paciente, a visita, a resposta da anamnese e sua proveniência em uma única operação atômica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-ubs.html"
+                  title="StructureDefinition/agrosus-ubs">Unidade Básica de Saúde AgroSUS</a>
+            </td>
+            <td>
+<p>Perfil da Unidade Básica de Saúde responsável pelo acompanhamento do trabalhador rural no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-agrosus-visita-acs.html"
+                  title="StructureDefinition/agrosus-visita-acs">Visita do ACS AgroSUS</a>
+            </td>
+            <td>
+<p>Visita ou atendimento em campo no qual o Agente Comunitário de Saúde aplica ou atualiza a anamnese AgroSUS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-categoria-plano-cuidado.html"
+                  title="ValueSet/agrosus-categoria-plano-cuidado">Categorias de Plano de Cuidado AgroSUS</a>
+            </td>
+            <td>
+<p>Categorias permitidas para os planos de acompanhamento AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-classificacao-toxicologica.html"
+                  title="ValueSet/agrosus-classificacao-toxicologica">Classificação Toxicológica de Defensivos Agrícolas</a>
+            </td>
+            <td>
+<p>Categorias toxicológicas permitidas no formulário AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-condicao-saude-referida.html"
+                  title="ValueSet/agrosus-condicao-saude-referida">Condições de saúde referidas</a>
+            </td>
+            <td>
+<p>Condições de saúde preexistentes declaradas pelo trabalhador durante a anamnese.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-destinacao-embalagens-nao-devolvidas.html"
+                  title="ValueSet/agrosus-destinacao-embalagens-nao-devolvidas">Destinação de embalagens não devolvidas</a>
+            </td>
+            <td>
+<p>Formas de destinação das embalagens vazias quando não ocorre devolução em local autorizado.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-dias-aplicacao-mes.html"
+                  title="ValueSet/agrosus-dias-aplicacao-mes">Dias de aplicação por mês</a>
+            </td>
+            <td>
+<p>Faixas de frequência mensal de aplicação de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-equipamento-aplicacao.html"
+                  title="ValueSet/agrosus-equipamento-aplicacao">Equipamentos utilizados na aplicação</a>
+            </td>
+            <td>
+<p>Tipos de equipamento utilizados na aplicação de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-escolaridade.html"
+                  title="ValueSet/agrosus-escolaridade">Escolaridade AgroSUS</a>
+            </td>
+            <td>
+<p>Categorias permitidas para escolaridade no formulário AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-exames-laboratoriais.html"
+                  title="ValueSet/agrosus-exames-laboratoriais">Exames Laboratoriais AgroSUS</a>
+            </td>
+            <td>
+<p>Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos trabalhadores rurais no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-familiares-auxiliam-aplicacao.html"
+                  title="ValueSet/agrosus-familiares-auxiliam-aplicacao">Familiares que auxiliam na aplicação</a>
+            </td>
+            <td>
+<p>Familiares que auxiliam o trabalhador rural na aplicação de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-fonte-agua.html"
+                  title="ValueSet/agrosus-fonte-agua">Fonte de Água da Propriedade</a>
+            </td>
+            <td>
+<p>Fontes de água utilizadas na propriedade rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-armazenamento-registros.html"
+                  title="ValueSet/agrosus-armazenamento-registros">Formas de armazenamento dos registros</a>
+            </td>
+            <td>
+<p>Formas utilizadas para armazenar os registros das aplicações de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-formacao-responsavel-tecnico.html"
+                  title="ValueSet/agrosus-formacao-responsavel-tecnico">Formação do Responsável Técnico</a>
+            </td>
+            <td>
+<p>Formações profissionais previstas para o responsável técnico da produção.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-frequencia-uso-epi.html"
+                  title="ValueSet/agrosus-frequencia-uso-epi">Frequência de utilização de EPI</a>
+            </td>
+            <td>
+<p>Frequência declarada de utilização de cada equipamento de proteção individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-horas-aplicacao-dia.html"
+                  title="ValueSet/agrosus-horas-aplicacao-dia">Horas de aplicação por dia</a>
+            </td>
+            <td>
+<p>Faixas de duração diária da aplicação de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-instituicao-assistencia.html"
+                  title="ValueSet/agrosus-instituicao-assistencia">Instituição de Assistência Técnica</a>
+            </td>
+            <td>
+<p>Instituições que podem prestar assistência técnica ao produtor rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-intoxicacao-pesticida.html"
+                  title="ValueSet/agrosus-intoxicacao-pesticida">Intoxicação por pesticidas AgroSUS</a>
+            </td>
+            <td>
+<p>Códigos CID-10 utilizados para representar suspeita ou confirmação clínica de efeito tóxico de pesticidas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-armazenamento-epi.html"
+                  title="ValueSet/agrosus-armazenamento-epi">Local de armazenamento dos EPIs</a>
+            </td>
+            <td>
+<p>Locais utilizados para o armazenamento dos equipamentos de proteção individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-local-armazenamento-defensivos.html"
+                  title="ValueSet/agrosus-local-armazenamento-defensivos">Local de armazenamento dos defensivos agrícolas</a>
+            </td>
+            <td>
+<p>Locais onde os defensivos agrícolas são armazenados na propriedade.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-mes-maior-intensidade.html"
+                  title="ValueSet/agrosus-mes-maior-intensidade">Meses de maior intensidade de uso</a>
+            </td>
+            <td>
+<p>Meses do ano com maior intensidade de utilização de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-motivo-nao-uso-epi.html"
+                  title="ValueSet/agrosus-motivo-nao-uso-epi">Motivos de não utilização de EPI</a>
+            </td>
+            <td>
+<p>Motivos declarados para a não utilização dos equipamentos de proteção individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-numero-intoxicacoes-agudas.html"
+                  title="ValueSet/agrosus-numero-intoxicacoes-agudas">Número de intoxicações agudas anteriores</a>
+            </td>
+            <td>
+<p>Faixas para registro do número autorreferido de episódios anteriores de intoxicação aguda.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-ocupacao-profissional-ubs.html"
+                  title="ValueSet/agrosus-ocupacao-profissional-ubs">Ocupações dos profissionais assistenciais da UBS</a>
+            </td>
+            <td>
+<p>Ocupações CBO permitidas para profissionais assistenciais que utilizam o dashboard AgroSUS na Unidade Básica de Saúde.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-ocupacao-acs.html"
+                  title="ValueSet/agrosus-ocupacao-acs">Ocupações permitidas para o ACS no AgroSUS</a>
+            </td>
+            <td>
+<p>Ocupações da Classificação Brasileira de Ocupações permitidas para o profissional que aplica a anamnese AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-atividade-agricola.html"
+                  title="ValueSet/agrosus-atividade-agricola">Principal Atividade Agrícola</a>
+            </td>
+            <td>
+<p>Principais atividades desenvolvidas na propriedade rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-responsavel-aplicacao.html"
+                  title="ValueSet/agrosus-responsavel-aplicacao">Responsável pela aplicação</a>
+            </td>
+            <td>
+<p>Pessoas ou organizações que realizam a aplicação dos defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-avaliacao-boas-praticas.html"
+                  title="ValueSet/agrosus-avaliacao-boas-praticas">Respostas dos indicadores de boas práticas</a>
+            </td>
+            <td>
+<p>Respostas permitidas para cada indicador de boa prática agrícola.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-resultados-laboratoriais.html"
+                  title="ValueSet/agrosus-resultados-laboratoriais">Resultados Laboratoriais AgroSUS</a>
+            </td>
+            <td>
+<p>Biomarcadores laboratoriais utilizados no acompanhamento assistencial dos trabalhadores rurais no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-sintoma-ultimos-30-dias.html"
+                  title="ValueSet/agrosus-sintoma-ultimos-30-dias">Sinais e sintomas dos últimos 30 dias</a>
+            </td>
+            <td>
+<p>Sinais e sintomas investigados pelo formulário AgroSUS, sem significado diagnóstico isolado.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-situacao-posse.html"
+                  title="ValueSet/agrosus-situacao-posse">Situação de Posse da Terra</a>
+            </td>
+            <td>
+<p>Situações de posse da propriedade rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-temas-capacitacao.html"
+                  title="ValueSet/agrosus-temas-capacitacao">Temas de Capacitação AgroSUS</a>
+            </td>
+            <td>
+<p>Temas que podem ser selecionados no registro de capacitação do trabalhador rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-tipo-producao.html"
+                  title="ValueSet/agrosus-tipo-producao">Tipo de Produção Agrícola</a>
+            </td>
+            <td>
+<p>Tipos de produção utilizados na propriedade rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-tipo-coleta.html"
+                  title="ValueSet/agrosus-tipo-coleta">Tipos de Coleta AgroSUS</a>
+            </td>
+            <td>
+<p>Modalidades permitidas para aplicação do formulário AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-agrosus-via-exposicao.html"
+                  title="ValueSet/agrosus-via-exposicao">Vias de exposição</a>
+            </td>
+            <td>
+<p>Vias mais comuns de exposição aos defensivos agrícolas.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-armazenamento-defensivos.html"
+                  title="CodeSystem/agrosus-armazenamento-defensivos">Armazenamento de defensivos agrícolas AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia dos locais utilizados para armazenamento de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-assistencia-tecnica.html"
+                  title="CodeSystem/agrosus-assistencia-tecnica">Assistência Técnica AgroSUS</a>
+            </td>
+            <td>
+<p>Códigos relacionados à assistência e à responsabilidade técnica na produção rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-avaliacao-boas-praticas.html"
+                  title="CodeSystem/agrosus-avaliacao-boas-praticas">Avaliação de boas práticas agrícolas AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia utilizada para avaliar o atendimento aos indicadores de boas práticas agrícolas no formulário AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-categoria-plano-cuidado.html"
+                  title="CodeSystem/agrosus-categoria-plano-cuidado">Categorias de Plano de Cuidado AgroSUS</a>
+            </td>
+            <td>
+<p>Categorias utilizadas para classificar os planos longitudinais de acompanhamento do trabalhador rural.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-classificacao-toxicologica.html"
+                  title="CodeSystem/agrosus-classificacao-toxicologica">Classificação Toxicológica de Defensivos Agrícolas</a>
+            </td>
+            <td>
+<p>Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-condicoes-sintomas.html"
+                  title="CodeSystem/agrosus-condicoes-sintomas">Condições de saúde e sintomas AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-destinacao-embalagens.html"
+                  title="CodeSystem/agrosus-destinacao-embalagens">Destinação de embalagens vazias AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia das formas de destinação de embalagens vazias de defensivos agrícolas quando não são devolvidas em local autorizado.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-escolaridade.html"
+                  title="CodeSystem/agrosus-escolaridade">Escolaridade AgroSUS</a>
+            </td>
+            <td>
+<p>Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-exposicao-familiar.html"
+                  title="CodeSystem/agrosus-exposicao-familiar">Exposição familiar AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-historico-intoxicacao.html"
+                  title="CodeSystem/agrosus-historico-intoxicacao">Histórico de intoxicação AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-rastreabilidade.html"
+                  title="CodeSystem/agrosus-rastreabilidade">Rastreabilidade das aplicações AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-capacitacao.html"
+                  title="CodeSystem/agrosus-capacitacao">Temas de Capacitação AgroSUS</a>
+            </td>
+            <td>
+<p>Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-propriedade.html"
+                  title="CodeSystem/agrosus-propriedade">Terminologia da Propriedade Rural AgroSUS</a>
+            </td>
+            <td>
+<p>Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-epi.html" title="CodeSystem/agrosus-epi">Terminologia de equipamentos de proteção individual AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-exposicao.html"
+                  title="CodeSystem/agrosus-exposicao">Terminologia de exposição ocupacional AgroSUS</a>
+            </td>
+            <td>
+<p>Terminologia das características de frequência e forma de exposição aos defensivos agrícolas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-agrosus-tipo-coleta.html"
+                  title="CodeSystem/agrosus-tipo-coleta">Tipos de Coleta AgroSUS</a>
+            </td>
+            <td>
+<p>Modalidades de aplicação do formulário de anamnese ocupacional e ambiental do AgroSUS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-agrosus-acs-exemplo.html"
+                  title="Practitioner/agrosus-acs-exemplo">ACS AgroSUS de exemplo</a>
+            </td>
+            <td>
+<p>Exemplo sintético de Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.html"
+                  title="Encounter/agrosus-atendimento-ubs-avaliacao-exemplo">Exemplo de Atendimento Clínico da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Avaliação clínica fictícia realizada após a visita e anamnese do ACS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.html"
+                  title="Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo">Exemplo de Atendimento para Revisão dos Exames</a>
+            </td>
+            <td>
+<p>Atendimento fictício para avaliação dos resultados laboratoriais e definição do acompanhamento longitudinal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo.html"
+                  title="AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo">Exemplo de Auditoria de Consulta ao Dashboard</a>
+            </td>
+            <td>
+<p>Evento fictício de acesso aos dados do trabalhador por profissional da UBS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-agrosus-profissional-enfermeiro-exemplo.html"
+                  title="Practitioner/agrosus-profissional-enfermeiro-exemplo">Exemplo de Enfermeira da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Enfermeira fictícia responsável pelo acompanhamento dos trabalhadores rurais.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-agrosus-laboratorio-exemplo.html"
+                  title="Organization/agrosus-laboratorio-exemplo">Exemplo de Laboratório AgroSUS</a>
+            </td>
+            <td>
+<p>Laboratório municipal fictício responsável pela emissão dos resultados.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-agrosus-laudo-hemograma-exemplo.html"
+                  title="DiagnosticReport/agrosus-laudo-hemograma-exemplo">Exemplo de Laudo de Hemograma AgroSUS</a>
+            </td>
+            <td>
+<p>Laudo fictício que agrupa os resultados individuais do hemograma.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-agrosus-profissional-medico-exemplo.html"
+                  title="Practitioner/agrosus-profissional-medico-exemplo">Exemplo de Médico da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Médico fictício da Estratégia de Saúde da Família.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-agrosus-patient-example.html"
+                  title="Patient/agrosus-patient-example">Exemplo de Paciente AgroSUS</a>
+            </td>
+            <td>
+<p>Trabalhadora rural fictícia utilizada para validar o perfil Paciente AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-agrosus-plano-acompanhamento-exemplo.html"
+                  title="CarePlan/agrosus-plano-acompanhamento-exemplo">Exemplo de Plano de Acompanhamento AgroSUS</a>
+            </td>
+            <td>
+<p>Plano fictício para acompanhamento longitudinal de trabalhadora rural com suspeita de intoxicação por pesticida.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-agrosus-provenance-anamnese-exemplo.html"
+                  title="Provenance/agrosus-provenance-anamnese-exemplo">Exemplo de Proveniência da Anamnese AgroSUS</a>
+            </td>
+            <td>
+<p>Registro fictício da autoria da resposta da anamnese pelo ACS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-agrosus-provenance-plano-acompanhamento-exemplo.html"
+                  title="Provenance/agrosus-provenance-plano-acompanhamento-exemplo">Exemplo de Proveniência do Plano de Acompanhamento</a>
+            </td>
+            <td>
+<p>Registro fictício da autoria médica do plano longitudinal AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="QuestionnaireResponse-agrosus-anamnese-response-example.html"
+                  title="QuestionnaireResponse/agrosus-anamnese-response-example">Exemplo de Resposta da Anamnese AgroSUS</a>
+            </td>
+            <td>
+<p>Resposta parcial fictícia da anamnese AgroSUS registrada durante uma visita do ACS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-agrosus-resultado-hematocrito-exemplo.html"
+                  title="Observation/agrosus-resultado-hematocrito-exemplo">Exemplo de Resultado de Hematócrito</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-agrosus-resultado-hemoglobina-exemplo.html"
+                  title="Observation/agrosus-resultado-hemoglobina-exemplo">Exemplo de Resultado de Hemoglobina</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-agrosus-resultado-leucocitos-exemplo.html"
+                  title="Observation/agrosus-resultado-leucocitos-exemplo">Exemplo de Resultado de Leucócitos</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-agrosus-resultado-plaquetas-exemplo.html"
+                  title="Observation/agrosus-resultado-plaquetas-exemplo">Exemplo de Resultado de Plaquetas</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html"
+                  title="ServiceRequest/agrosus-solicitacao-hemograma-exemplo">Exemplo de Solicitação de Hemograma AgroSUS</a>
+            </td>
+            <td>
+<p>Solicitação fictícia de hemograma completo realizada pelo médico da UBS após avaliação clínica.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html"
+                  title="Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo">Exemplo de Suspeita de Intoxicação por Pesticida</a>
+            </td>
+            <td>
+<p>Suspeita clínica fictícia registrada pelo médico da UBS e mantida em investigação.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-agrosus-transacao-visita-exemplo.html"
+                  title="Bundle/agrosus-transacao-visita-exemplo">Exemplo de Transação da Visita do ACS</a>
+            </td>
+            <td>
+<p>Sincronização atômica e idempotente do paciente, visita, anamnese e proveniência registrados pelo aplicativo do ACS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-agrosus-profissional-tecnico-enfermagem-exemplo.html"
+                  title="Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo">Exemplo de Técnico de Enfermagem da UBS AgroSUS</a>
+            </td>
+            <td>
+<p>Técnico de enfermagem fictício da equipe assistencial da UBS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-agrosus-visita-acs-exemplo.html"
+                  title="Encounter/agrosus-visita-acs-exemplo">Exemplo de Visita do ACS AgroSUS</a>
+            </td>
+            <td>
+<p>Visita fictícia em campo para aplicação inicial da anamnese AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agrosus-profissional-enfermeiro-role-exemplo.html"
+                  title="PractitionerRole/agrosus-profissional-enfermeiro-role-exemplo">Exemplo de Vínculo da Enfermeira com a UBS</a>
+            </td>
+            <td>
+<p>Vínculo fictício da enfermeira com a UBS responsável pelo acompanhamento AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agrosus-profissional-medico-role-exemplo.html"
+                  title="PractitionerRole/agrosus-profissional-medico-role-exemplo">Exemplo de Vínculo do Médico com a UBS</a>
+            </td>
+            <td>
+<p>Vínculo fictício do médico da Estratégia de Saúde da Família com a UBS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agrosus-profissional-tecnico-enfermagem-role-exemplo.html"
+                  title="PractitionerRole/agrosus-profissional-tecnico-enfermagem-role-exemplo">Exemplo de Vínculo do Técnico de Enfermagem</a>
+            </td>
+            <td>
+<p>Vínculo fictício do técnico de enfermagem com a UBS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-agrosus-ubs-exemplo.html"
+                  title="Organization/agrosus-ubs-exemplo">UBS AgroSUS de exemplo</a>
+            </td>
+            <td>
+<p>Exemplo sintético de Unidade Básica de Saúde responsável pelo acompanhamento no AgroSUS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-agrosus-acs-role-exemplo.html"
+                  title="PractitionerRole/agrosus-acs-role-exemplo">Vínculo profissional do ACS AgroSUS</a>
+            </td>
+            <td>
+<p>Exemplo sintético do vínculo de um Agente Comunitário de Saúde com uma Unidade Básica de Saúde.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -298,14 +1223,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div class="inner-wrapper">
   <p>
-    IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 20, 2026 19:33+0000">2026-07-20</span>
+    IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 03:04+0000">2026-07-21</span>
     <br/>
     <span style="color: var(--footer-highlight-text-color)">
                 Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-| <a style="color: #81BEF7" target="_blank" href="history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+| <a style="color: #81BEF7" target="_blank" href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
     </span>
   </p>
 </div>  <!-- /inner-wrapper -->

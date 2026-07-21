@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-tipo-coleta",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-tipo-coleta</b></p><a name=\"agrosus-tipo-coleta\"> </a><a name=\"hcagrosus-tipo-coleta\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">cadastro-inicial<a name=\"agrosus-tipo-coleta-cadastro-inicial\"> </a></td><td>Cadastro inicial</td><td>Primeira aplicação do formulário ao trabalhador rural.</td></tr><tr><td style=\"white-space:nowrap\">acompanhamento-semestral<a name=\"agrosus-tipo-coleta-acompanhamento-semestral\"> </a></td><td>Acompanhamento semestral</td><td>Aplicação periódica semestral para acompanhamento do trabalhador rural.</td></tr><tr><td style=\"white-space:nowrap\">visita-alerta<a name=\"agrosus-tipo-coleta-visita-alerta\"> </a></td><td>Visita de alerta</td><td>Aplicação motivada por alerta, alteração clínica ou necessidade de reavaliação.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTipoColetaCS",
+  "title" : "Tipos de Coleta AgroSUS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Modalidades de aplicação do formulário de anamnese ocupacional e ambiental do AgroSUS.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "cadastro-inicial",
+    "display" : "Cadastro inicial",
+    "definition" : "Primeira aplicação do formulário ao trabalhador rural."
+  },
+  {
+    "code" : "acompanhamento-semestral",
+    "display" : "Acompanhamento semestral",
+    "definition" : "Aplicação periódica semestral para acompanhamento do trabalhador rural."
+  },
+  {
+    "code" : "visita-alerta",
+    "display" : "Visita de alerta",
+    "definition" : "Aplicação motivada por alerta, alteração clínica ou necessidade de reavaliação."
+  }]
+}

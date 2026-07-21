@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-hemograma-exemplo> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-solicitacao-hemograma-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: ServiceRequest agrosus-solicitacao-hemograma-exemplo</b></p><a name=\"agrosus-solicitacao-hemograma-exemplo\"> </a><a name=\"hcagrosus-solicitacao-hemograma-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-solicitacao-exame.html\">Solicitação de Exame AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame</code>/SOL-EXAME-2026-000001</p><p><b>requisition</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial</code>/REQ-LAB-2026-000001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Códigos:{http://snomed.info/sct 108252007}\">Exame laboratorial</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 58410-2}\">Hemograma completo</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>encounter</b>: <a href=\"Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.html\">Avaliação clínica na UBS após visita do ACS</a></p><p><b>occurrence</b>: 2026-07-25 08:00:00-0300</p><p><b>authoredOn</b>: 2026-07-20 11:00:00-0300</p><p><b>requester</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>reasonCode</b>: <span title=\"Códigos:\">Investigação clínica e laboratorial de possível intoxicação relacionada à exposição ocupacional a defensivos agrícolas</span></p><p><b>reasonReference</b>: <a href=\"Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html\">Suspeita de intoxicação por pesticida em investigação</a></p><p><b>supportingInfo</b>: <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p><b>note</b>: </p><blockquote><div><p>Solicitação realizada após avaliação clínica individual pela equipe da UBS.</p>\n</div></blockquote><p><b>patientInstruction</b>: Comparecer ao serviço indicado com documento de identificação e a requisição do exame.</p></div>"
+  ] ;
+  fhir:ServiceRequest.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/solicitacao-exame" ] ;
+     fhir:Identifier.value [ fhir:value "SOL-EXAME-2026-000001" ]
+  ] ;
+  fhir:ServiceRequest.requisition [
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/requisicao-laboratorial" ] ;
+     fhir:Identifier.value [ fhir:value "REQ-LAB-2026-000001" ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "completed"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:108252007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "108252007" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory procedure" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Exame laboratorial" ]
+  ] ;
+  fhir:ServiceRequest.priority [ fhir:value "routine"] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:58410-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "58410-2" ] ;
+       fhir:Coding.display [ fhir:value "CBC panel - Blood by Automated count" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Hemograma completo" ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:ServiceRequest.encounter [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-atendimento-ubs-avaliacao-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Encounter/agrosus-atendimento-ubs-avaliacao-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Avaliação clínica na UBS após visita do ACS" ]
+  ] ;
+  fhir:ServiceRequest.occurrenceDateTime [ fhir:value "2026-07-25T08:00:00-03:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.authoredOn [ fhir:value "2026-07-20T11:00:00-03:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.requester [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+  ] ;
+  fhir:ServiceRequest.performer [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-laboratorio-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Laboratório Municipal de Referência — Exemplo AgroSUS" ]
+  ] ;
+  fhir:ServiceRequest.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Investigação clínica e laboratorial de possível intoxicação relacionada à exposição ocupacional a defensivos agrícolas" ]
+  ] ;
+  fhir:ServiceRequest.reasonReference [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Suspeita de intoxicação por pesticida em investigação" ]
+  ] ;
+  fhir:ServiceRequest.supportingInfo [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ] ;
+     fhir:Reference.display [ fhir:value "Resposta da anamnese AgroSUS" ]
+  ] ;
+  fhir:ServiceRequest.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "Solicitação realizada após avaliação clínica individual pela equipe da UBS." ]
+  ] ;
+  fhir:ServiceRequest.patientInstruction [ fhir:value "Comparecer ao serviço indicado com documento de identificação e a requisição do exame."] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-hemograma-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,197 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.521060Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-proprietario",
+      "name": "Proprietário",
+      "fhir:code": "posse-proprietario",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-arrendatario",
+      "name": "Arrendatário",
+      "fhir:code": "posse-arrendatario",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-meeiro",
+      "name": "Meeiro",
+      "fhir:code": "posse-meeiro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-assentado",
+      "name": "Assentado",
+      "fhir:code": "posse-assentado",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-cedida",
+      "name": "Terra cedida",
+      "fhir:code": "posse-cedida",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-outra",
+      "name": "Outra situação de posse",
+      "fhir:code": "posse-outra",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#atividade-lavoura-temporaria",
+      "name": "Lavoura temporária",
+      "fhir:code": "atividade-lavoura-temporaria",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#atividade-lavoura-permanente",
+      "name": "Lavoura permanente",
+      "fhir:code": "atividade-lavoura-permanente",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#atividade-horticultura",
+      "name": "Horticultura",
+      "fhir:code": "atividade-horticultura",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#atividade-fruticultura",
+      "name": "Fruticultura",
+      "fhir:code": "atividade-fruticultura",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#atividade-pecuaria",
+      "name": "Pecuária",
+      "fhir:code": "atividade-pecuaria",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#atividade-outra",
+      "name": "Outra atividade agrícola",
+      "fhir:code": "atividade-outra",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#producao-convencional",
+      "name": "Convencional",
+      "fhir:code": "producao-convencional",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#producao-organica",
+      "name": "Orgânica",
+      "fhir:code": "producao-organica",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#producao-agroecologica",
+      "name": "Agroecológica",
+      "fhir:code": "producao-agroecologica",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#producao-integrada",
+      "name": "Integrada",
+      "fhir:code": "producao-integrada",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#producao-outra",
+      "name": "Outro tipo de produção",
+      "fhir:code": "producao-outra",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-rede-publica",
+      "name": "Rede pública",
+      "fhir:code": "agua-rede-publica",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-poco-artesiano",
+      "name": "Poço artesiano",
+      "fhir:code": "agua-poco-artesiano",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-poco-comum",
+      "name": "Poço comum",
+      "fhir:code": "agua-poco-comum",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-rio-corrego",
+      "name": "Rio ou córrego",
+      "fhir:code": "agua-rio-corrego",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-acude-represa",
+      "name": "Açude ou represa",
+      "fhir:code": "agua-acude-represa",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-cisterna",
+      "name": "Cisterna",
+      "fhir:code": "agua-cisterna",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#agua-outra",
+      "name": "Outra fonte de água",
+      "fhir:code": "agua-outra",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-proprietario",
+      "name": "posse-proprietario",
+      "fhir:code": "posse-proprietario",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-arrendatario",
+      "name": "posse-arrendatario",
+      "fhir:code": "posse-arrendatario",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-meeiro",
+      "name": "posse-meeiro",
+      "fhir:code": "posse-meeiro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-assentado",
+      "name": "posse-assentado",
+      "fhir:code": "posse-assentado",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-cedida",
+      "name": "posse-cedida",
+      "fhir:code": "posse-cedida",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-situacao-posse.jsonld#posse-outra",
+      "name": "posse-outra",
+      "fhir:code": "posse-outra",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-propriedade"
+    }
+  ]
+}

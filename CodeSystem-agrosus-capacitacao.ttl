@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-capacitacao"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-capacitacao</b></p><a name=\"agrosus-capacitacao\"> </a><a name=\"hcagrosus-capacitacao\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">uso-manuseio-seguro<a name=\"agrosus-capacitacao-uso-manuseio-seguro\"> </a></td><td>Uso e manuseio seguro</td><td>Orientações para uso e manuseio seguro de defensivos agrícolas.</td></tr><tr><td style=\"white-space:nowrap\">epis<a name=\"agrosus-capacitacao-epis\"> </a></td><td>Equipamentos de proteção individual</td><td>Orientações sobre seleção, utilização e conservação de EPIs.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento<a name=\"agrosus-capacitacao-armazenamento\"> </a></td><td>Armazenamento</td><td>Orientações sobre armazenamento seguro de defensivos agrícolas.</td></tr><tr><td style=\"white-space:nowrap\">descarte-embalagens<a name=\"agrosus-capacitacao-descarte-embalagens\"> </a></td><td>Descarte de embalagens</td><td>Orientações sobre lavagem, devolução e destinação de embalagens vazias.</td></tr><tr><td style=\"white-space:nowrap\">primeiros-socorros<a name=\"agrosus-capacitacao-primeiros-socorros\"> </a></td><td>Primeiros socorros</td><td>Orientações sobre primeiros socorros relacionados à exposição.</td></tr><tr><td style=\"white-space:nowrap\">outros<a name=\"agrosus-capacitacao-outros\"> </a></td><td>Outros temas</td><td>Outros temas abordados durante a capacitação.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSCapacitacaoCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Temas de Capacitação AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uso-manuseio-seguro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Uso e manuseio seguro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Orientações para uso e manuseio seguro de defensivos agrícolas." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "epis" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Equipamentos de proteção individual" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Orientações sobre seleção, utilização e conservação de EPIs." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "armazenamento" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Armazenamento" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Orientações sobre armazenamento seguro de defensivos agrícolas." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "descarte-embalagens" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Descarte de embalagens" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Orientações sobre lavagem, devolução e destinação de embalagens vazias." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "primeiros-socorros" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Primeiros socorros" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Orientações sobre primeiros socorros relacionados à exposição." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "outros" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outros temas" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Outros temas abordados durante a capacitação." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

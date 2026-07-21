@@ -1,0 +1,65 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-classificacao-toxicologica",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-classificacao-toxicologica</b></p><a name=\"agrosus-classificacao-toxicologica\"> </a><a name=\"hcagrosus-classificacao-toxicologica\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-classificacao-toxicologica</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">categoria-1<a name=\"agrosus-classificacao-toxicologica-categoria-1\"> </a></td><td>Categoria 1 — Produto extremamente tóxico</td><td>Produto extremamente tóxico, identificado por faixa vermelha.</td></tr><tr><td style=\"white-space:nowrap\">categoria-2<a name=\"agrosus-classificacao-toxicologica-categoria-2\"> </a></td><td>Categoria 2 — Produto altamente tóxico</td><td>Produto altamente tóxico, identificado por faixa vermelha.</td></tr><tr><td style=\"white-space:nowrap\">categoria-3<a name=\"agrosus-classificacao-toxicologica-categoria-3\"> </a></td><td>Categoria 3 — Produto moderadamente tóxico</td><td>Produto moderadamente tóxico, identificado por faixa amarela.</td></tr><tr><td style=\"white-space:nowrap\">categoria-4<a name=\"agrosus-classificacao-toxicologica-categoria-4\"> </a></td><td>Categoria 4 — Produto pouco tóxico</td><td>Produto pouco tóxico, identificado por faixa azul.</td></tr><tr><td style=\"white-space:nowrap\">categoria-5<a name=\"agrosus-classificacao-toxicologica-categoria-5\"> </a></td><td>Categoria 5 — Produto improvável de causar dano agudo</td><td>Produto improvável de causar dano agudo, identificado por faixa azul.</td></tr><tr><td style=\"white-space:nowrap\">nao-classificado<a name=\"agrosus-classificacao-toxicologica-nao-classificado\"> </a></td><td>Produto não classificado</td><td>Produto não classificado, identificado por faixa verde.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-classificacao-toxicologica",
+  "version" : "0.1.0",
+  "name" : "AgroSUSClassificacaoToxicologicaCS",
+  "title" : "Classificação Toxicológica de Defensivos Agrícolas",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "copyright" : "Classificação conforme a RDC Anvisa nº 294/2019.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "categoria-1",
+    "display" : "Categoria 1 — Produto extremamente tóxico",
+    "definition" : "Produto extremamente tóxico, identificado por faixa vermelha."
+  },
+  {
+    "code" : "categoria-2",
+    "display" : "Categoria 2 — Produto altamente tóxico",
+    "definition" : "Produto altamente tóxico, identificado por faixa vermelha."
+  },
+  {
+    "code" : "categoria-3",
+    "display" : "Categoria 3 — Produto moderadamente tóxico",
+    "definition" : "Produto moderadamente tóxico, identificado por faixa amarela."
+  },
+  {
+    "code" : "categoria-4",
+    "display" : "Categoria 4 — Produto pouco tóxico",
+    "definition" : "Produto pouco tóxico, identificado por faixa azul."
+  },
+  {
+    "code" : "categoria-5",
+    "display" : "Categoria 5 — Produto improvável de causar dano agudo",
+    "definition" : "Produto improvável de causar dano agudo, identificado por faixa azul."
+  },
+  {
+    "code" : "nao-classificado",
+    "display" : "Produto não classificado",
+    "definition" : "Produto não classificado, identificado por faixa verde."
+  }]
+}

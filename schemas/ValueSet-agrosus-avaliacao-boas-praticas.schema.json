@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-avaliacao-boas-praticas.schema.json",
+  "title": "Respostas dos indicadores de boas práticas Schema",
+  "description": "JSON Schema for Respostas dos indicadores de boas práticas ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas#sim",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas#nao",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas#nao-se-aplica"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Respostas dos indicadores de boas práticas ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-avaliacao-boas-praticas.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-avaliacao-boas-praticas.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-avaliacao-boas-praticas",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.370431"
+}

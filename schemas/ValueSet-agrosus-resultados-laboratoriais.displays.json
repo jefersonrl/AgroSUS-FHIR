@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.displays.json",
+  "title": "Resultados Laboratoriais AgroSUS Display Values",
+  "description": "Display values for Resultados Laboratoriais AgroSUS ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "http://loinc.org#718-7": {
+      "en": "718-7"
+    },
+    "http://loinc.org#4544-3": {
+      "en": "4544-3"
+    },
+    "http://loinc.org#6690-2": {
+      "en": "6690-2"
+    },
+    "http://loinc.org#777-3": {
+      "en": "777-3"
+    },
+    "http://loinc.org#1920-8": {
+      "en": "1920-8"
+    },
+    "http://loinc.org#1742-6": {
+      "en": "1742-6"
+    },
+    "http://loinc.org#2324-2": {
+      "en": "2324-2"
+    },
+    "http://loinc.org#6768-6": {
+      "en": "6768-6"
+    },
+    "http://loinc.org#1751-7": {
+      "en": "1751-7"
+    },
+    "http://loinc.org#2160-0": {
+      "en": "2160-0"
+    },
+    "http://loinc.org#3091-6": {
+      "en": "3091-6"
+    },
+    "http://loinc.org#14959-1": {
+      "en": "14959-1"
+    },
+    "http://loinc.org#1558-6": {
+      "en": "1558-6"
+    },
+    "http://loinc.org#2099-0": {
+      "en": "2099-0"
+    },
+    "http://loinc.org#2098-2": {
+      "en": "2098-2"
+    },
+    "http://loinc.org#6301-6": {
+      "en": "6301-6"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-resultados-laboratoriais",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.368318"
+}

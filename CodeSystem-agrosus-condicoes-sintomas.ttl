@@ -1,0 +1,165 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-condicoes-sintomas"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-condicoes-sintomas</b></p><a name=\"agrosus-condicoes-sintomas\"> </a><a name=\"hcagrosus-condicoes-sintomas\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">condicao-hipertensao<a name=\"agrosus-condicoes-sintomas-condicao-hipertensao\"> </a></td><td>Hipertensão</td></tr><tr><td style=\"white-space:nowrap\">condicao-diabetes<a name=\"agrosus-condicoes-sintomas-condicao-diabetes\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">condicao-doenca-hepatica<a name=\"agrosus-condicoes-sintomas-condicao-doenca-hepatica\"> </a></td><td>Doença hepática</td></tr><tr><td style=\"white-space:nowrap\">condicao-doenca-renal<a name=\"agrosus-condicoes-sintomas-condicao-doenca-renal\"> </a></td><td>Doença renal</td></tr><tr><td style=\"white-space:nowrap\">condicao-doenca-neurologica<a name=\"agrosus-condicoes-sintomas-condicao-doenca-neurologica\"> </a></td><td>Doença neurológica</td></tr><tr><td style=\"white-space:nowrap\">condicao-cancer<a name=\"agrosus-condicoes-sintomas-condicao-cancer\"> </a></td><td>Câncer</td></tr><tr><td style=\"white-space:nowrap\">condicao-gestante-lactante<a name=\"agrosus-condicoes-sintomas-condicao-gestante-lactante\"> </a></td><td>Gestante ou lactante</td></tr><tr><td style=\"white-space:nowrap\">condicao-nenhuma<a name=\"agrosus-condicoes-sintomas-condicao-nenhuma\"> </a></td><td>Nenhuma condição referida</td></tr><tr><td style=\"white-space:nowrap\">sintoma-cefaleia-frequente<a name=\"agrosus-condicoes-sintomas-sintoma-cefaleia-frequente\"> </a></td><td>Dor de cabeça (cefaleia) frequente</td></tr><tr><td style=\"white-space:nowrap\">sintoma-tontura-vertigem<a name=\"agrosus-condicoes-sintomas-sintoma-tontura-vertigem\"> </a></td><td>Tontura ou vertigem</td></tr><tr><td style=\"white-space:nowrap\">sintoma-nauseas<a name=\"agrosus-condicoes-sintomas-sintoma-nauseas\"> </a></td><td>Náuseas</td></tr><tr><td style=\"white-space:nowrap\">sintoma-vomitos<a name=\"agrosus-condicoes-sintomas-sintoma-vomitos\"> </a></td><td>Vômitos</td></tr><tr><td style=\"white-space:nowrap\">sintoma-diarreia-colicas-abdominais<a name=\"agrosus-condicoes-sintomas-sintoma-diarreia-colicas-abdominais\"> </a></td><td>Diarreia ou cólicas abdominais</td></tr><tr><td style=\"white-space:nowrap\">sintoma-tremores-contracoes-involuntarias<a name=\"agrosus-condicoes-sintomas-sintoma-tremores-contracoes-involuntarias\"> </a></td><td>Tremores ou contrações musculares involuntárias</td></tr><tr><td style=\"white-space:nowrap\">sintoma-fraqueza-cansaco-extremo<a name=\"agrosus-condicoes-sintomas-sintoma-fraqueza-cansaco-extremo\"> </a></td><td>Fraqueza ou cansaço extremo</td></tr><tr><td style=\"white-space:nowrap\">sintoma-diaforese<a name=\"agrosus-condicoes-sintomas-sintoma-diaforese\"> </a></td><td>Suor excessivo (diaforese)</td></tr><tr><td style=\"white-space:nowrap\">sintoma-hipersalivacao<a name=\"agrosus-condicoes-sintomas-sintoma-hipersalivacao\"> </a></td><td>Salivação excessiva (hipersalivação)</td></tr><tr><td style=\"white-space:nowrap\">sintoma-irritacao-ocular<a name=\"agrosus-condicoes-sintomas-sintoma-irritacao-ocular\"> </a></td><td>Irritação nos olhos, lacrimejamento ou hiperemia</td></tr><tr><td style=\"white-space:nowrap\">sintoma-irritacao-dermatite-pele<a name=\"agrosus-condicoes-sintomas-sintoma-irritacao-dermatite-pele\"> </a></td><td>Irritação ou dermatite na pele</td></tr><tr><td style=\"white-space:nowrap\">sintoma-dispneia<a name=\"agrosus-condicoes-sintomas-sintoma-dispneia\"> </a></td><td>Falta de ar ou dispneia</td></tr><tr><td style=\"white-space:nowrap\">sintoma-tosse-frequente<a name=\"agrosus-condicoes-sintomas-sintoma-tosse-frequente\"> </a></td><td>Tosse seca ou produtiva frequente</td></tr><tr><td style=\"white-space:nowrap\">sintoma-palpitacoes<a name=\"agrosus-condicoes-sintomas-sintoma-palpitacoes\"> </a></td><td>Palpitações ou batimentos irregulares</td></tr><tr><td style=\"white-space:nowrap\">sintoma-alteracao-visual<a name=\"agrosus-condicoes-sintomas-sintoma-alteracao-visual\"> </a></td><td>Alteração visual ou visão turva</td></tr><tr><td style=\"white-space:nowrap\">sintoma-confusao-desorientacao<a name=\"agrosus-condicoes-sintomas-sintoma-confusao-desorientacao\"> </a></td><td>Confusão mental ou desorientação</td></tr><tr><td style=\"white-space:nowrap\">sintoma-dificuldade-memoria-concentracao<a name=\"agrosus-condicoes-sintomas-sintoma-dificuldade-memoria-concentracao\"> </a></td><td>Dificuldade de memória ou concentração</td></tr><tr><td style=\"white-space:nowrap\">sintoma-disturbios-sono<a name=\"agrosus-condicoes-sintomas-sintoma-disturbios-sono\"> </a></td><td>Distúrbios do sono, insônia ou hipersonia</td></tr><tr><td style=\"white-space:nowrap\">sintoma-formigamento-membros<a name=\"agrosus-condicoes-sintomas-sintoma-formigamento-membros\"> </a></td><td>Formigamento nos membros</td></tr><tr><td style=\"white-space:nowrap\">sintoma-irritabilidade-alteracoes-humor<a name=\"agrosus-condicoes-sintomas-sintoma-irritabilidade-alteracoes-humor\"> </a></td><td>Irritabilidade ou alterações de humor</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSCondicoesSintomasCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Condições de saúde e sintomas AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "28"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-hipertensao" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hipertensão" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-diabetes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetes" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-doenca-hepatica" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doença hepática" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-doenca-renal" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doença renal" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-doenca-neurologica" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Doença neurológica" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-cancer" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Câncer" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-gestante-lactante" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gestante ou lactante" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "condicao-nenhuma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nenhuma condição referida" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-cefaleia-frequente" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dor de cabeça (cefaleia) frequente" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-tontura-vertigem" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tontura ou vertigem" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-nauseas" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Náuseas" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-vomitos" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vômitos" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-diarreia-colicas-abdominais" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Diarreia ou cólicas abdominais" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-tremores-contracoes-involuntarias" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tremores ou contrações musculares involuntárias" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-fraqueza-cansaco-extremo" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fraqueza ou cansaço extremo" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-diaforese" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Suor excessivo (diaforese)" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-hipersalivacao" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Salivação excessiva (hipersalivação)" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-irritacao-ocular" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Irritação nos olhos, lacrimejamento ou hiperemia" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-irritacao-dermatite-pele" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Irritação ou dermatite na pele" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-dispneia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Falta de ar ou dispneia" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-tosse-frequente" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tosse seca ou produtiva frequente" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-palpitacoes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Palpitações ou batimentos irregulares" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-alteracao-visual" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Alteração visual ou visão turva" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-confusao-desorientacao" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Confusão mental ou desorientação" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-dificuldade-memoria-concentracao" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dificuldade de memória ou concentração" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-disturbios-sono" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Distúrbios do sono, insônia ou hipersonia" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-formigamento-membros" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Formigamento nos membros" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sintoma-irritabilidade-alteracoes-humor" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Irritabilidade ou alterações de humor" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

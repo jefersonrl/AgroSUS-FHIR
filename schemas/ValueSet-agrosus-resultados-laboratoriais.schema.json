@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.schema.json",
+  "title": "Resultados Laboratoriais AgroSUS Schema",
+  "description": "JSON Schema for Resultados Laboratoriais AgroSUS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "http://loinc.org#718-7",
+    "http://loinc.org#4544-3",
+    "http://loinc.org#6690-2",
+    "http://loinc.org#777-3",
+    "http://loinc.org#1920-8",
+    "http://loinc.org#1742-6",
+    "http://loinc.org#2324-2",
+    "http://loinc.org#6768-6",
+    "http://loinc.org#1751-7",
+    "http://loinc.org#2160-0",
+    "http://loinc.org#3091-6",
+    "http://loinc.org#14959-1",
+    "http://loinc.org#1558-6",
+    "http://loinc.org#2099-0",
+    "http://loinc.org#2098-2",
+    "http://loinc.org#6301-6"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Resultados Laboratoriais AgroSUS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-resultados-laboratoriais",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.368318"
+}

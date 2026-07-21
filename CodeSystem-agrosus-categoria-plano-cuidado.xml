@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-categoria-plano-cuidado"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-categoria-plano-cuidado</b></p><a name="agrosus-categoria-plano-cuidado"> </a><a name="hcagrosus-categoria-plano-cuidado"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">monitoramento-exposicao<a name="agrosus-categoria-plano-cuidado-monitoramento-exposicao"> </a></td><td>Monitoramento de exposição ocupacional</td><td>Acompanhamento longitudinal de trabalhador exposto a defensivos agrícolas, sem suspeita clínica atual de intoxicação.</td></tr><tr><td style="white-space:nowrap">investigacao-intoxicacao<a name="agrosus-categoria-plano-cuidado-investigacao-intoxicacao"> </a></td><td>Investigação de possível intoxicação</td><td>Plano destinado à investigação e ao acompanhamento de uma suspeita clínica de intoxicação por pesticida.</td></tr><tr><td style="white-space:nowrap">seguimento-pos-intoxicacao<a name="agrosus-categoria-plano-cuidado-seguimento-pos-intoxicacao"> </a></td><td>Seguimento após intoxicação</td><td>Acompanhamento longitudinal após confirmação ou tratamento de intoxicação por pesticida.</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSCategoriaPlanoCuidadoCS"/>
+  <title value="Categorias de Plano de Cuidado AgroSUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Categorias utilizadas para classificar os planos longitudinais de acompanhamento do trabalhador rural."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="monitoramento-exposicao"/>
+    <display value="Monitoramento de exposição ocupacional"/>
+    <definition value="Acompanhamento longitudinal de trabalhador exposto a defensivos agrícolas, sem suspeita clínica atual de intoxicação."/>
+  </concept>
+  <concept>
+    <code value="investigacao-intoxicacao"/>
+    <display value="Investigação de possível intoxicação"/>
+    <definition value="Plano destinado à investigação e ao acompanhamento de uma suspeita clínica de intoxicação por pesticida."/>
+  </concept>
+  <concept>
+    <code value="seguimento-pos-intoxicacao"/>
+    <display value="Seguimento após intoxicação"/>
+    <definition value="Acompanhamento longitudinal após confirmação ou tratamento de intoxicação por pesticida."/>
+  </concept>
+</CodeSystem>

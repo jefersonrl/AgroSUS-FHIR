@@ -1,0 +1,146 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-condicoes-sintomas",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-condicoes-sintomas</b></p><a name=\"agrosus-condicoes-sintomas\"> </a><a name=\"hcagrosus-condicoes-sintomas\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">condicao-hipertensao<a name=\"agrosus-condicoes-sintomas-condicao-hipertensao\"> </a></td><td>Hipertensão</td></tr><tr><td style=\"white-space:nowrap\">condicao-diabetes<a name=\"agrosus-condicoes-sintomas-condicao-diabetes\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">condicao-doenca-hepatica<a name=\"agrosus-condicoes-sintomas-condicao-doenca-hepatica\"> </a></td><td>Doença hepática</td></tr><tr><td style=\"white-space:nowrap\">condicao-doenca-renal<a name=\"agrosus-condicoes-sintomas-condicao-doenca-renal\"> </a></td><td>Doença renal</td></tr><tr><td style=\"white-space:nowrap\">condicao-doenca-neurologica<a name=\"agrosus-condicoes-sintomas-condicao-doenca-neurologica\"> </a></td><td>Doença neurológica</td></tr><tr><td style=\"white-space:nowrap\">condicao-cancer<a name=\"agrosus-condicoes-sintomas-condicao-cancer\"> </a></td><td>Câncer</td></tr><tr><td style=\"white-space:nowrap\">condicao-gestante-lactante<a name=\"agrosus-condicoes-sintomas-condicao-gestante-lactante\"> </a></td><td>Gestante ou lactante</td></tr><tr><td style=\"white-space:nowrap\">condicao-nenhuma<a name=\"agrosus-condicoes-sintomas-condicao-nenhuma\"> </a></td><td>Nenhuma condição referida</td></tr><tr><td style=\"white-space:nowrap\">sintoma-cefaleia-frequente<a name=\"agrosus-condicoes-sintomas-sintoma-cefaleia-frequente\"> </a></td><td>Dor de cabeça (cefaleia) frequente</td></tr><tr><td style=\"white-space:nowrap\">sintoma-tontura-vertigem<a name=\"agrosus-condicoes-sintomas-sintoma-tontura-vertigem\"> </a></td><td>Tontura ou vertigem</td></tr><tr><td style=\"white-space:nowrap\">sintoma-nauseas<a name=\"agrosus-condicoes-sintomas-sintoma-nauseas\"> </a></td><td>Náuseas</td></tr><tr><td style=\"white-space:nowrap\">sintoma-vomitos<a name=\"agrosus-condicoes-sintomas-sintoma-vomitos\"> </a></td><td>Vômitos</td></tr><tr><td style=\"white-space:nowrap\">sintoma-diarreia-colicas-abdominais<a name=\"agrosus-condicoes-sintomas-sintoma-diarreia-colicas-abdominais\"> </a></td><td>Diarreia ou cólicas abdominais</td></tr><tr><td style=\"white-space:nowrap\">sintoma-tremores-contracoes-involuntarias<a name=\"agrosus-condicoes-sintomas-sintoma-tremores-contracoes-involuntarias\"> </a></td><td>Tremores ou contrações musculares involuntárias</td></tr><tr><td style=\"white-space:nowrap\">sintoma-fraqueza-cansaco-extremo<a name=\"agrosus-condicoes-sintomas-sintoma-fraqueza-cansaco-extremo\"> </a></td><td>Fraqueza ou cansaço extremo</td></tr><tr><td style=\"white-space:nowrap\">sintoma-diaforese<a name=\"agrosus-condicoes-sintomas-sintoma-diaforese\"> </a></td><td>Suor excessivo (diaforese)</td></tr><tr><td style=\"white-space:nowrap\">sintoma-hipersalivacao<a name=\"agrosus-condicoes-sintomas-sintoma-hipersalivacao\"> </a></td><td>Salivação excessiva (hipersalivação)</td></tr><tr><td style=\"white-space:nowrap\">sintoma-irritacao-ocular<a name=\"agrosus-condicoes-sintomas-sintoma-irritacao-ocular\"> </a></td><td>Irritação nos olhos, lacrimejamento ou hiperemia</td></tr><tr><td style=\"white-space:nowrap\">sintoma-irritacao-dermatite-pele<a name=\"agrosus-condicoes-sintomas-sintoma-irritacao-dermatite-pele\"> </a></td><td>Irritação ou dermatite na pele</td></tr><tr><td style=\"white-space:nowrap\">sintoma-dispneia<a name=\"agrosus-condicoes-sintomas-sintoma-dispneia\"> </a></td><td>Falta de ar ou dispneia</td></tr><tr><td style=\"white-space:nowrap\">sintoma-tosse-frequente<a name=\"agrosus-condicoes-sintomas-sintoma-tosse-frequente\"> </a></td><td>Tosse seca ou produtiva frequente</td></tr><tr><td style=\"white-space:nowrap\">sintoma-palpitacoes<a name=\"agrosus-condicoes-sintomas-sintoma-palpitacoes\"> </a></td><td>Palpitações ou batimentos irregulares</td></tr><tr><td style=\"white-space:nowrap\">sintoma-alteracao-visual<a name=\"agrosus-condicoes-sintomas-sintoma-alteracao-visual\"> </a></td><td>Alteração visual ou visão turva</td></tr><tr><td style=\"white-space:nowrap\">sintoma-confusao-desorientacao<a name=\"agrosus-condicoes-sintomas-sintoma-confusao-desorientacao\"> </a></td><td>Confusão mental ou desorientação</td></tr><tr><td style=\"white-space:nowrap\">sintoma-dificuldade-memoria-concentracao<a name=\"agrosus-condicoes-sintomas-sintoma-dificuldade-memoria-concentracao\"> </a></td><td>Dificuldade de memória ou concentração</td></tr><tr><td style=\"white-space:nowrap\">sintoma-disturbios-sono<a name=\"agrosus-condicoes-sintomas-sintoma-disturbios-sono\"> </a></td><td>Distúrbios do sono, insônia ou hipersonia</td></tr><tr><td style=\"white-space:nowrap\">sintoma-formigamento-membros<a name=\"agrosus-condicoes-sintomas-sintoma-formigamento-membros\"> </a></td><td>Formigamento nos membros</td></tr><tr><td style=\"white-space:nowrap\">sintoma-irritabilidade-alteracoes-humor<a name=\"agrosus-condicoes-sintomas-sintoma-irritabilidade-alteracoes-humor\"> </a></td><td>Irritabilidade ou alterações de humor</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCondicoesSintomasCS",
+  "title" : "Condições de saúde e sintomas AgroSUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 28,
+  "concept" : [{
+    "code" : "condicao-hipertensao",
+    "display" : "Hipertensão"
+  },
+  {
+    "code" : "condicao-diabetes",
+    "display" : "Diabetes"
+  },
+  {
+    "code" : "condicao-doenca-hepatica",
+    "display" : "Doença hepática"
+  },
+  {
+    "code" : "condicao-doenca-renal",
+    "display" : "Doença renal"
+  },
+  {
+    "code" : "condicao-doenca-neurologica",
+    "display" : "Doença neurológica"
+  },
+  {
+    "code" : "condicao-cancer",
+    "display" : "Câncer"
+  },
+  {
+    "code" : "condicao-gestante-lactante",
+    "display" : "Gestante ou lactante"
+  },
+  {
+    "code" : "condicao-nenhuma",
+    "display" : "Nenhuma condição referida"
+  },
+  {
+    "code" : "sintoma-cefaleia-frequente",
+    "display" : "Dor de cabeça (cefaleia) frequente"
+  },
+  {
+    "code" : "sintoma-tontura-vertigem",
+    "display" : "Tontura ou vertigem"
+  },
+  {
+    "code" : "sintoma-nauseas",
+    "display" : "Náuseas"
+  },
+  {
+    "code" : "sintoma-vomitos",
+    "display" : "Vômitos"
+  },
+  {
+    "code" : "sintoma-diarreia-colicas-abdominais",
+    "display" : "Diarreia ou cólicas abdominais"
+  },
+  {
+    "code" : "sintoma-tremores-contracoes-involuntarias",
+    "display" : "Tremores ou contrações musculares involuntárias"
+  },
+  {
+    "code" : "sintoma-fraqueza-cansaco-extremo",
+    "display" : "Fraqueza ou cansaço extremo"
+  },
+  {
+    "code" : "sintoma-diaforese",
+    "display" : "Suor excessivo (diaforese)"
+  },
+  {
+    "code" : "sintoma-hipersalivacao",
+    "display" : "Salivação excessiva (hipersalivação)"
+  },
+  {
+    "code" : "sintoma-irritacao-ocular",
+    "display" : "Irritação nos olhos, lacrimejamento ou hiperemia"
+  },
+  {
+    "code" : "sintoma-irritacao-dermatite-pele",
+    "display" : "Irritação ou dermatite na pele"
+  },
+  {
+    "code" : "sintoma-dispneia",
+    "display" : "Falta de ar ou dispneia"
+  },
+  {
+    "code" : "sintoma-tosse-frequente",
+    "display" : "Tosse seca ou produtiva frequente"
+  },
+  {
+    "code" : "sintoma-palpitacoes",
+    "display" : "Palpitações ou batimentos irregulares"
+  },
+  {
+    "code" : "sintoma-alteracao-visual",
+    "display" : "Alteração visual ou visão turva"
+  },
+  {
+    "code" : "sintoma-confusao-desorientacao",
+    "display" : "Confusão mental ou desorientação"
+  },
+  {
+    "code" : "sintoma-dificuldade-memoria-concentracao",
+    "display" : "Dificuldade de memória ou concentração"
+  },
+  {
+    "code" : "sintoma-disturbios-sono",
+    "display" : "Distúrbios do sono, insônia ou hipersonia"
+  },
+  {
+    "code" : "sintoma-formigamento-membros",
+    "display" : "Formigamento nos membros"
+  },
+  {
+    "code" : "sintoma-irritabilidade-alteracoes-humor",
+    "display" : "Irritabilidade ou alterações de humor"
+  }]
+}

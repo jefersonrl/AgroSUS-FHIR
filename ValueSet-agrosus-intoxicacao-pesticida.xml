@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-intoxicacao-pesticida"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-intoxicacao-pesticida</b></p><a name="agrosus-intoxicacao-pesticida"> </a><a name="hcagrosus-intoxicacao-pesticida"> </a><ul><li>Include estes códigos, tal como definidos em <a href="https://terminologia.saude.gov.br/fhir/v1.0.0/CodeSystem-BRCID10.html"><code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>T60.0</td><td>Efeito tóxico de inseticidas organofosforados e carbamatos</td></tr><tr><td>T60.1</td><td>Efeito tóxico de inseticidas halogenados</td></tr><tr><td>T60.2</td><td>Efeito tóxico de outros inseticidas</td></tr><tr><td>T60.3</td><td>Efeito tóxico de herbicidas e fungicidas</td></tr><tr><td>T60.4</td><td>Efeito tóxico de rodenticidas</td></tr><tr><td>T60.8</td><td>Efeito tóxico de outros pesticidas</td></tr><tr><td>T60.9</td><td>Efeito tóxico de pesticida não especificado</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-intoxicacao-pesticida"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSIntoxicacaoPesticidaVS"/>
+  <title value="Intoxicação por pesticidas AgroSUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Códigos CID-10 utilizados para representar suspeita ou confirmação clínica de efeito tóxico de pesticidas."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"/>
+      <concept>
+        <code value="T60.0"/>
+        <display value="Efeito tóxico de inseticidas organofosforados e carbamatos"/>
+      </concept>
+      <concept>
+        <code value="T60.1"/>
+        <display value="Efeito tóxico de inseticidas halogenados"/>
+      </concept>
+      <concept>
+        <code value="T60.2"/>
+        <display value="Efeito tóxico de outros inseticidas"/>
+      </concept>
+      <concept>
+        <code value="T60.3"/>
+        <display value="Efeito tóxico de herbicidas e fungicidas"/>
+      </concept>
+      <concept>
+        <code value="T60.4"/>
+        <display value="Efeito tóxico de rodenticidas"/>
+      </concept>
+      <concept>
+        <code value="T60.8"/>
+        <display value="Efeito tóxico de outros pesticidas"/>
+      </concept>
+      <concept>
+        <code value="T60.9"/>
+        <display value="Efeito tóxico de pesticida não especificado"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

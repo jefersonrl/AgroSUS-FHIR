@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-epi"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-epi</b></p><a name=\"agrosus-epi\"> </a><a name=\"hcagrosus-epi\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">uso-sempre<a name=\"agrosus-epi-uso-sempre\"> </a></td><td>Sempre</td><td>O equipamento de proteção individual é utilizado sempre.</td></tr><tr><td style=\"white-space:nowrap\">uso-as-vezes<a name=\"agrosus-epi-uso-as-vezes\"> </a></td><td>Às vezes</td><td>O equipamento de proteção individual é utilizado ocasionalmente.</td></tr><tr><td style=\"white-space:nowrap\">uso-nunca<a name=\"agrosus-epi-uso-nunca\"> </a></td><td>Nunca</td><td>O trabalhador possui o equipamento, mas nunca o utiliza.</td></tr><tr><td style=\"white-space:nowrap\">nao-possui<a name=\"agrosus-epi-nao-possui\"> </a></td><td>Não possui</td><td>O trabalhador não possui o equipamento de proteção individual.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento-local-especific-separado<a name=\"agrosus-epi-armazenamento-local-especific-separado\"> </a></td><td>Local específico e separado</td><td>Os equipamentos são armazenados em local específico e separado.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento-junto-roupas-pessoais<a name=\"agrosus-epi-armazenamento-junto-roupas-pessoais\"> </a></td><td>Junto de roupas pessoais</td><td>Os equipamentos são armazenados junto de roupas pessoais.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento-deposito-defensivos<a name=\"agrosus-epi-armazenamento-deposito-defensivos\"> </a></td><td>Depósito de defensivos</td><td>Os equipamentos são armazenados no depósito de defensivos agrícolas.</td></tr><tr><td style=\"white-space:nowrap\">motivo-desconforto<a name=\"agrosus-epi-motivo-desconforto\"> </a></td><td>Desconforto</td><td>O equipamento não é utilizado devido ao desconforto.</td></tr><tr><td style=\"white-space:nowrap\">motivo-descuido<a name=\"agrosus-epi-motivo-descuido\"> </a></td><td>Descuido</td><td>O equipamento não é utilizado por descuido.</td></tr><tr><td style=\"white-space:nowrap\">motivo-considera-desnecessario<a name=\"agrosus-epi-motivo-considera-desnecessario\"> </a></td><td>Considera desnecessário</td><td>O trabalhador considera desnecessária a utilização do equipamento.</td></tr><tr><td style=\"white-space:nowrap\">motivo-custo-elevado<a name=\"agrosus-epi-motivo-custo-elevado\"> </a></td><td>Custo elevado</td><td>O equipamento não é utilizado devido ao custo elevado.</td></tr><tr><td style=\"white-space:nowrap\">outro<a name=\"agrosus-epi-outro\"> </a></td><td>Outro</td><td>Outra forma de armazenamento ou outro motivo não especificado.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSEPICS"] ;
+  fhir:CodeSystem.title [ fhir:value "Terminologia de equipamentos de proteção individual AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "12"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uso-sempre" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sempre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O equipamento de proteção individual é utilizado sempre." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uso-as-vezes" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Às vezes" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O equipamento de proteção individual é utilizado ocasionalmente." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "uso-nunca" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nunca" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O trabalhador possui o equipamento, mas nunca o utiliza." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nao-possui" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Não possui" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O trabalhador não possui o equipamento de proteção individual." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "armazenamento-local-especific-separado" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Local específico e separado" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os equipamentos são armazenados em local específico e separado." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "armazenamento-junto-roupas-pessoais" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Junto de roupas pessoais" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os equipamentos são armazenados junto de roupas pessoais." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "armazenamento-deposito-defensivos" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depósito de defensivos" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os equipamentos são armazenados no depósito de defensivos agrícolas." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "motivo-desconforto" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Desconforto" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O equipamento não é utilizado devido ao desconforto." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "motivo-descuido" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Descuido" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O equipamento não é utilizado por descuido." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "motivo-considera-desnecessario" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Considera desnecessário" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O trabalhador considera desnecessária a utilização do equipamento." ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "motivo-custo-elevado" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Custo elevado" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "O equipamento não é utilizado devido ao custo elevado." ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "outro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Outra forma de armazenamento ou outro motivo não especificado." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

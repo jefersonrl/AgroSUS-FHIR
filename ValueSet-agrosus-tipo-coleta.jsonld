@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-tipo-coleta.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.522119Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-tipo-coleta.jsonld#cadastro-inicial",
+      "name": "Cadastro inicial",
+      "fhir:code": "cadastro-inicial",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-tipo-coleta"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-tipo-coleta.jsonld#acompanhamento-semestral",
+      "name": "Acompanhamento semestral",
+      "fhir:code": "acompanhamento-semestral",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-tipo-coleta"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-tipo-coleta.jsonld#visita-alerta",
+      "name": "Visita de alerta",
+      "fhir:code": "visita-alerta",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-tipo-coleta"
+    }
+  ]
+}

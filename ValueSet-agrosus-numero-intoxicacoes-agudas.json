@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-numero-intoxicacoes-agudas",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-numero-intoxicacoes-agudas</b></p><a name=\"agrosus-numero-intoxicacoes-agudas\"> </a><a name=\"hcagrosus-numero-intoxicacoes-agudas\"> </a><ul><li>Include todos os códigos definidos em <a href=\"CodeSystem-agrosus-historico-intoxicacao.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-historico-intoxicacao</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-numero-intoxicacoes-agudas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSNumeroIntoxicacoesAgudasVS",
+  "title" : "Número de intoxicações agudas anteriores",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Faixas para registro do número autorreferido de episódios anteriores de intoxicação aguda.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-historico-intoxicacao"
+    }]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Provenance",
+  "id" : "agrosus-provenance-anamnese-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Provenance agrosus-provenance-anamnese-exemplo</b></p><a name=\"agrosus-provenance-anamnese-exemplo\"> </a><a name=\"hcagrosus-provenance-anamnese-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-provenance.html\">Proveniência dos Registros AgroSUS</a></p></div><p>Proveniência para <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p>Resumo</p><table class=\"grid\"><tr><td>Ocorrência</td><td>2026-07-20 09:30:00-0300</td></tr><tr><td>Gravado</td><td>2026-07-20 09:31:00-0300</td></tr><tr><td>Atividade</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agentes</b></p><table class=\"grid\"><tr><td><b>Tipo</b></td><td><b>que</b></td><td><b>Em nome de</b></td></tr><tr><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"PractitionerRole-agrosus-acs-role-exemplo.html\">Maria Clara Oliveira — ACS da UBS Jardim Esperança</a></td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table></div>"
+  },
+  "target" : [{
+    "reference" : "QuestionnaireResponse/agrosus-anamnese-response-example",
+    "display" : "Resposta da anamnese AgroSUS"
+  }],
+  "occurredDateTime" : "2026-07-20T09:30:00-03:00",
+  "recorded" : "2026-07-20T09:31:00-03:00",
+  "reason" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "TREAT",
+      "display" : "treatment"
+    }],
+    "text" : "Registro assistencial durante visita do ACS"
+  }],
+  "activity" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+      "code" : "CREATE",
+      "display" : "create"
+    }]
+  },
+  "agent" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "code" : "author",
+        "display" : "Author"
+      }]
+    },
+    "who" : {
+      "reference" : "PractitionerRole/agrosus-acs-role-exemplo",
+      "display" : "Maria Clara Oliveira — ACS da UBS Jardim Esperança"
+    },
+    "onBehalfOf" : {
+      "reference" : "Organization/agrosus-ubs-exemplo",
+      "display" : "UBS Jardim Esperança — Exemplo AgroSUS"
+    }
+  }]
+}

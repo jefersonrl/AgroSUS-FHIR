@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="agrosus-intoxicacao-pesticida-suspeita-exemplo"/>
+  <meta>
+    <profile value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Condition agrosus-intoxicacao-pesticida-suspeita-exemplo</b></p><a name="agrosus-intoxicacao-pesticida-suspeita-exemplo"> </a><a name="hcagrosus-intoxicacao-pesticida-suspeita-exemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-agrosus-intoxicacao-pesticida.html">Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/condicao-clinica</code>/COND-2026-000001</p><p><b>clinicalStatus</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/condition-ver-status provisional}">Provisional</span></p><p><b>category</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10 T60.9}">Suspeita de intoxicação por pesticida em investigação</span></p><p><b>subject</b>: <a href="Patient-agrosus-patient-example.html">Maria Aparecida de Souza</a></p><p><b>encounter</b>: <a href="Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.html">Avaliação clínica na UBS após visita do ACS</a></p><p><b>onset</b>: 2026-07-20 09:30:00-0300</p><p><b>recordedDate</b>: 2026-07-20 10:50:00-0300</p><p><b>recorder</b>: <a href="PractitionerRole-agrosus-profissional-medico-role-exemplo.html">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>asserter</b>: <a href="PractitionerRole-agrosus-profissional-medico-role-exemplo.html">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><h3>Evidences</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Detail</b></td></tr><tr><td style="display: none">*</td><td><a href="QuestionnaireResponse-agrosus-anamnese-response-example.html">Resposta da anamnese ocupacional aplicada pelo ACS</a></td></tr></table><p><b>note</b>: </p><blockquote><div><p>História de exposição ocupacional avaliada pelo médico. Condição provisória, pendente de investigação clínica e laboratorial; não gerada automaticamente pelo sistema.</p>
+</div></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://jefersonrl.github.io/AgroSUS-FHIR/sid/condicao-clinica"/>
+    <value value="COND-2026-000001"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="provisional"/>
+      <display value="Provisional"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List Item"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10"/>
+      <code value="T60.9"/>
+      <display value="Efeito tóxico de pesticida não especificado"/>
+    </coding>
+    <text value="Suspeita de intoxicação por pesticida em investigação"/>
+  </code>
+  <subject>
+    <reference value="Patient/agrosus-patient-example"/>
+    <display value="Maria Aparecida de Souza"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/agrosus-atendimento-ubs-avaliacao-exemplo"/>
+    <display value="Avaliação clínica na UBS após visita do ACS"/>
+  </encounter>
+  <onsetDateTime value="2026-07-20T09:30:00-03:00"/>
+  <recordedDate value="2026-07-20T10:50:00-03:00"/>
+  <recorder>
+    <reference value="PractitionerRole/agrosus-profissional-medico-role-exemplo"/>
+    <display value="Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família"/>
+  </recorder>
+  <asserter>
+    <reference value="PractitionerRole/agrosus-profissional-medico-role-exemplo"/>
+    <display value="Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família"/>
+  </asserter>
+  <evidence>
+    <detail>
+      <reference value="QuestionnaireResponse/agrosus-anamnese-response-example"/>
+      <display value="Resposta da anamnese ocupacional aplicada pelo ACS"/>
+    </detail>
+  </evidence>
+  <note>
+    <text value="História de exposição ocupacional avaliada pelo médico. Condição provisória, pendente de investigação clínica e laboratorial; não gerada automaticamente pelo sistema."/>
+  </note>
+</Condition>

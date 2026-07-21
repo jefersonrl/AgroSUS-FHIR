@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.527190Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.jsonld#515105",
+      "name": "Agente comunitário de saúde",
+      "fhir:code": "515105",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-ocupacao-acs.jsonld#322255",
+      "name": "Técnico em agente comunitário de saúde",
+      "fhir:code": "322255",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCBO"
+    }
+  ]
+}

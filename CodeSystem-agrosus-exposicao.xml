@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-exposicao"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-exposicao</b></p><a name="agrosus-exposicao"> </a><a name="hcagrosus-exposicao"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style="white-space:nowrap">dias-mes-1-2<a name="agrosus-exposicao-dias-mes-1-2"> </a></td><td>1–2 dias por mês</td></tr><tr><td style="white-space:nowrap">dias-mes-3-5<a name="agrosus-exposicao-dias-mes-3-5"> </a></td><td>3–5 dias por mês</td></tr><tr><td style="white-space:nowrap">dias-mes-6-10<a name="agrosus-exposicao-dias-mes-6-10"> </a></td><td>6–10 dias por mês</td></tr><tr><td style="white-space:nowrap">dias-mes-mais-10<a name="agrosus-exposicao-dias-mes-mais-10"> </a></td><td>Mais de 10 dias por mês</td></tr><tr><td style="white-space:nowrap">horas-dia-menos-2<a name="agrosus-exposicao-horas-dia-menos-2"> </a></td><td>Menos de 2 horas por dia</td></tr><tr><td style="white-space:nowrap">horas-dia-2-4<a name="agrosus-exposicao-horas-dia-2-4"> </a></td><td>2–4 horas por dia</td></tr><tr><td style="white-space:nowrap">horas-dia-4-6<a name="agrosus-exposicao-horas-dia-4-6"> </a></td><td>4–6 horas por dia</td></tr><tr><td style="white-space:nowrap">horas-dia-mais-6<a name="agrosus-exposicao-horas-dia-mais-6"> </a></td><td>Mais de 6 horas por dia</td></tr><tr><td style="white-space:nowrap">janeiro<a name="agrosus-exposicao-janeiro"> </a></td><td>Janeiro</td></tr><tr><td style="white-space:nowrap">fevereiro<a name="agrosus-exposicao-fevereiro"> </a></td><td>Fevereiro</td></tr><tr><td style="white-space:nowrap">marco<a name="agrosus-exposicao-marco"> </a></td><td>Março</td></tr><tr><td style="white-space:nowrap">abril<a name="agrosus-exposicao-abril"> </a></td><td>Abril</td></tr><tr><td style="white-space:nowrap">maio<a name="agrosus-exposicao-maio"> </a></td><td>Maio</td></tr><tr><td style="white-space:nowrap">junho<a name="agrosus-exposicao-junho"> </a></td><td>Junho</td></tr><tr><td style="white-space:nowrap">julho<a name="agrosus-exposicao-julho"> </a></td><td>Julho</td></tr><tr><td style="white-space:nowrap">agosto<a name="agrosus-exposicao-agosto"> </a></td><td>Agosto</td></tr><tr><td style="white-space:nowrap">setembro<a name="agrosus-exposicao-setembro"> </a></td><td>Setembro</td></tr><tr><td style="white-space:nowrap">outubro<a name="agrosus-exposicao-outubro"> </a></td><td>Outubro</td></tr><tr><td style="white-space:nowrap">novembro<a name="agrosus-exposicao-novembro"> </a></td><td>Novembro</td></tr><tr><td style="white-space:nowrap">dezembro<a name="agrosus-exposicao-dezembro"> </a></td><td>Dezembro</td></tr><tr><td style="white-space:nowrap">pulverizador-costal-manual<a name="agrosus-exposicao-pulverizador-costal-manual"> </a></td><td>Pulverizador costal manual</td></tr><tr><td style="white-space:nowrap">pulverizador-costal-motorizado<a name="agrosus-exposicao-pulverizador-costal-motorizado"> </a></td><td>Pulverizador costal motorizado</td></tr><tr><td style="white-space:nowrap">trator-com-barra<a name="agrosus-exposicao-trator-com-barra"> </a></td><td>Trator com barra</td></tr><tr><td style="white-space:nowrap">cutanea<a name="agrosus-exposicao-cutanea"> </a></td><td>Cutânea (pele)</td></tr><tr><td style="white-space:nowrap">respiratoria<a name="agrosus-exposicao-respiratoria"> </a></td><td>Respiratória (inalação)</td></tr><tr><td style="white-space:nowrap">ocular<a name="agrosus-exposicao-ocular"> </a></td><td>Ocular</td></tr><tr><td style="white-space:nowrap">digestiva-oral<a name="agrosus-exposicao-digestiva-oral"> </a></td><td>Digestiva ou oral</td></tr><tr><td style="white-space:nowrap">multiplas-vias<a name="agrosus-exposicao-multiplas-vias"> </a></td><td>Múltiplas vias</td></tr><tr><td style="white-space:nowrap">proprio-produtor<a name="agrosus-exposicao-proprio-produtor"> </a></td><td>O próprio produtor</td></tr><tr><td style="white-space:nowrap">familiar<a name="agrosus-exposicao-familiar"> </a></td><td>Familiar</td></tr><tr><td style="white-space:nowrap">trabalhador-contratado<a name="agrosus-exposicao-trabalhador-contratado"> </a></td><td>Trabalhador contratado</td></tr><tr><td style="white-space:nowrap">empresa-terceirizada<a name="agrosus-exposicao-empresa-terceirizada"> </a></td><td>Empresa terceirizada</td></tr><tr><td style="white-space:nowrap">outro<a name="agrosus-exposicao-outro"> </a></td><td>Outro</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSExposicaoCS"/>
+  <title value="Terminologia de exposição ocupacional AgroSUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Terminologia das características de frequência e forma de exposição aos defensivos agrícolas."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="33"/>
+  <concept>
+    <code value="dias-mes-1-2"/>
+    <display value="1–2 dias por mês"/>
+  </concept>
+  <concept>
+    <code value="dias-mes-3-5"/>
+    <display value="3–5 dias por mês"/>
+  </concept>
+  <concept>
+    <code value="dias-mes-6-10"/>
+    <display value="6–10 dias por mês"/>
+  </concept>
+  <concept>
+    <code value="dias-mes-mais-10"/>
+    <display value="Mais de 10 dias por mês"/>
+  </concept>
+  <concept>
+    <code value="horas-dia-menos-2"/>
+    <display value="Menos de 2 horas por dia"/>
+  </concept>
+  <concept>
+    <code value="horas-dia-2-4"/>
+    <display value="2–4 horas por dia"/>
+  </concept>
+  <concept>
+    <code value="horas-dia-4-6"/>
+    <display value="4–6 horas por dia"/>
+  </concept>
+  <concept>
+    <code value="horas-dia-mais-6"/>
+    <display value="Mais de 6 horas por dia"/>
+  </concept>
+  <concept>
+    <code value="janeiro"/>
+    <display value="Janeiro"/>
+  </concept>
+  <concept>
+    <code value="fevereiro"/>
+    <display value="Fevereiro"/>
+  </concept>
+  <concept>
+    <code value="marco"/>
+    <display value="Março"/>
+  </concept>
+  <concept>
+    <code value="abril"/>
+    <display value="Abril"/>
+  </concept>
+  <concept>
+    <code value="maio"/>
+    <display value="Maio"/>
+  </concept>
+  <concept>
+    <code value="junho"/>
+    <display value="Junho"/>
+  </concept>
+  <concept>
+    <code value="julho"/>
+    <display value="Julho"/>
+  </concept>
+  <concept>
+    <code value="agosto"/>
+    <display value="Agosto"/>
+  </concept>
+  <concept>
+    <code value="setembro"/>
+    <display value="Setembro"/>
+  </concept>
+  <concept>
+    <code value="outubro"/>
+    <display value="Outubro"/>
+  </concept>
+  <concept>
+    <code value="novembro"/>
+    <display value="Novembro"/>
+  </concept>
+  <concept>
+    <code value="dezembro"/>
+    <display value="Dezembro"/>
+  </concept>
+  <concept>
+    <code value="pulverizador-costal-manual"/>
+    <display value="Pulverizador costal manual"/>
+  </concept>
+  <concept>
+    <code value="pulverizador-costal-motorizado"/>
+    <display value="Pulverizador costal motorizado"/>
+  </concept>
+  <concept>
+    <code value="trator-com-barra"/>
+    <display value="Trator com barra"/>
+  </concept>
+  <concept>
+    <code value="cutanea"/>
+    <display value="Cutânea (pele)"/>
+  </concept>
+  <concept>
+    <code value="respiratoria"/>
+    <display value="Respiratória (inalação)"/>
+  </concept>
+  <concept>
+    <code value="ocular"/>
+    <display value="Ocular"/>
+  </concept>
+  <concept>
+    <code value="digestiva-oral"/>
+    <display value="Digestiva ou oral"/>
+  </concept>
+  <concept>
+    <code value="multiplas-vias"/>
+    <display value="Múltiplas vias"/>
+  </concept>
+  <concept>
+    <code value="proprio-produtor"/>
+    <display value="O próprio produtor"/>
+  </concept>
+  <concept>
+    <code value="familiar"/>
+    <display value="Familiar"/>
+  </concept>
+  <concept>
+    <code value="trabalhador-contratado"/>
+    <display value="Trabalhador contratado"/>
+  </concept>
+  <concept>
+    <code value="empresa-terceirizada"/>
+    <display value="Empresa terceirizada"/>
+  </concept>
+  <concept>
+    <code value="outro"/>
+    <display value="Outro"/>
+  </concept>
+</CodeSystem>

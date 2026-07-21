@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Organization",
+  "id" : "agrosus-laboratorio-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization agrosus-laboratorio-exemplo</b></p><a name=\"agrosus-laboratorio-exemplo\"> </a><a name=\"hcagrosus-laboratorio-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-laboratorio.html\">Laboratório AgroSUS</a></p></div><p><b>identifier</b>: Provider number/1234567\u00a0(utilização:\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>name</b>: Laboratório Municipal de Referência — Exemplo AgroSUS</p><p><b>alias</b>: Laboratório Municipal AgroSUS</p><p><b>address</b>: Rua das Acácias, 100 — Centro — Ferraz de Vasconcelos/SP(work)</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PRN"
+      }]
+    },
+    "system" : "https://saude.gov.br/fhir/sid/cnes",
+    "value" : "1234567"
+  }],
+  "active" : true,
+  "name" : "Laboratório Municipal de Referência — Exemplo AgroSUS",
+  "alias" : ["Laboratório Municipal AgroSUS"],
+  "address" : [{
+    "use" : "work",
+    "type" : "physical",
+    "text" : "Rua das Acácias, 100 — Centro — Ferraz de Vasconcelos/SP",
+    "line" : ["Rua das Acácias, 100"],
+    "city" : "Ferraz de Vasconcelos",
+    "district" : "Centro",
+    "state" : "SP",
+    "postalCode" : "08500-000",
+    "country" : "Brasil"
+  }]
+}

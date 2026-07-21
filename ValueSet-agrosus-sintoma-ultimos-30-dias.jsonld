@@ -1,0 +1,305 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.516524Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-hipertensao",
+      "name": "Hipertensão",
+      "fhir:code": "condicao-hipertensao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-diabetes",
+      "name": "Diabetes",
+      "fhir:code": "condicao-diabetes",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-doenca-hepatica",
+      "name": "Doença hepática",
+      "fhir:code": "condicao-doenca-hepatica",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-doenca-renal",
+      "name": "Doença renal",
+      "fhir:code": "condicao-doenca-renal",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-doenca-neurologica",
+      "name": "Doença neurológica",
+      "fhir:code": "condicao-doenca-neurologica",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-cancer",
+      "name": "Câncer",
+      "fhir:code": "condicao-cancer",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-gestante-lactante",
+      "name": "Gestante ou lactante",
+      "fhir:code": "condicao-gestante-lactante",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#condicao-nenhuma",
+      "name": "Nenhuma condição referida",
+      "fhir:code": "condicao-nenhuma",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-cefaleia-frequente",
+      "name": "Dor de cabeça (cefaleia) frequente",
+      "fhir:code": "sintoma-cefaleia-frequente",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-tontura-vertigem",
+      "name": "Tontura ou vertigem",
+      "fhir:code": "sintoma-tontura-vertigem",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-nauseas",
+      "name": "Náuseas",
+      "fhir:code": "sintoma-nauseas",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-vomitos",
+      "name": "Vômitos",
+      "fhir:code": "sintoma-vomitos",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-diarreia-colicas-abdominais",
+      "name": "Diarreia ou cólicas abdominais",
+      "fhir:code": "sintoma-diarreia-colicas-abdominais",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-tremores-contracoes-involuntarias",
+      "name": "Tremores ou contrações musculares involuntárias",
+      "fhir:code": "sintoma-tremores-contracoes-involuntarias",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-fraqueza-cansaco-extremo",
+      "name": "Fraqueza ou cansaço extremo",
+      "fhir:code": "sintoma-fraqueza-cansaco-extremo",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-diaforese",
+      "name": "Suor excessivo (diaforese)",
+      "fhir:code": "sintoma-diaforese",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-hipersalivacao",
+      "name": "Salivação excessiva (hipersalivação)",
+      "fhir:code": "sintoma-hipersalivacao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-irritacao-ocular",
+      "name": "Irritação nos olhos, lacrimejamento ou hiperemia",
+      "fhir:code": "sintoma-irritacao-ocular",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-irritacao-dermatite-pele",
+      "name": "Irritação ou dermatite na pele",
+      "fhir:code": "sintoma-irritacao-dermatite-pele",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-dispneia",
+      "name": "Falta de ar ou dispneia",
+      "fhir:code": "sintoma-dispneia",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-tosse-frequente",
+      "name": "Tosse seca ou produtiva frequente",
+      "fhir:code": "sintoma-tosse-frequente",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-palpitacoes",
+      "name": "Palpitações ou batimentos irregulares",
+      "fhir:code": "sintoma-palpitacoes",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-alteracao-visual",
+      "name": "Alteração visual ou visão turva",
+      "fhir:code": "sintoma-alteracao-visual",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-confusao-desorientacao",
+      "name": "Confusão mental ou desorientação",
+      "fhir:code": "sintoma-confusao-desorientacao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-dificuldade-memoria-concentracao",
+      "name": "Dificuldade de memória ou concentração",
+      "fhir:code": "sintoma-dificuldade-memoria-concentracao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-disturbios-sono",
+      "name": "Distúrbios do sono, insônia ou hipersonia",
+      "fhir:code": "sintoma-disturbios-sono",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-formigamento-membros",
+      "name": "Formigamento nos membros",
+      "fhir:code": "sintoma-formigamento-membros",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-irritabilidade-alteracoes-humor",
+      "name": "Irritabilidade ou alterações de humor",
+      "fhir:code": "sintoma-irritabilidade-alteracoes-humor",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-cefaleia-frequente",
+      "name": "sintoma-cefaleia-frequente",
+      "fhir:code": "sintoma-cefaleia-frequente",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-tontura-vertigem",
+      "name": "sintoma-tontura-vertigem",
+      "fhir:code": "sintoma-tontura-vertigem",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-nauseas",
+      "name": "sintoma-nauseas",
+      "fhir:code": "sintoma-nauseas",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-vomitos",
+      "name": "sintoma-vomitos",
+      "fhir:code": "sintoma-vomitos",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-diarreia-colicas-abdominais",
+      "name": "sintoma-diarreia-colicas-abdominais",
+      "fhir:code": "sintoma-diarreia-colicas-abdominais",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-tremores-contracoes-involuntarias",
+      "name": "sintoma-tremores-contracoes-involuntarias",
+      "fhir:code": "sintoma-tremores-contracoes-involuntarias",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-fraqueza-cansaco-extremo",
+      "name": "sintoma-fraqueza-cansaco-extremo",
+      "fhir:code": "sintoma-fraqueza-cansaco-extremo",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-diaforese",
+      "name": "sintoma-diaforese",
+      "fhir:code": "sintoma-diaforese",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-hipersalivacao",
+      "name": "sintoma-hipersalivacao",
+      "fhir:code": "sintoma-hipersalivacao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-irritacao-ocular",
+      "name": "sintoma-irritacao-ocular",
+      "fhir:code": "sintoma-irritacao-ocular",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-irritacao-dermatite-pele",
+      "name": "sintoma-irritacao-dermatite-pele",
+      "fhir:code": "sintoma-irritacao-dermatite-pele",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-dispneia",
+      "name": "sintoma-dispneia",
+      "fhir:code": "sintoma-dispneia",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-tosse-frequente",
+      "name": "sintoma-tosse-frequente",
+      "fhir:code": "sintoma-tosse-frequente",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-palpitacoes",
+      "name": "sintoma-palpitacoes",
+      "fhir:code": "sintoma-palpitacoes",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-alteracao-visual",
+      "name": "sintoma-alteracao-visual",
+      "fhir:code": "sintoma-alteracao-visual",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-confusao-desorientacao",
+      "name": "sintoma-confusao-desorientacao",
+      "fhir:code": "sintoma-confusao-desorientacao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-dificuldade-memoria-concentracao",
+      "name": "sintoma-dificuldade-memoria-concentracao",
+      "fhir:code": "sintoma-dificuldade-memoria-concentracao",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-disturbios-sono",
+      "name": "sintoma-disturbios-sono",
+      "fhir:code": "sintoma-disturbios-sono",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-formigamento-membros",
+      "name": "sintoma-formigamento-membros",
+      "fhir:code": "sintoma-formigamento-membros",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-sintoma-ultimos-30-dias.jsonld#sintoma-irritabilidade-alteracoes-humor",
+      "name": "sintoma-irritabilidade-alteracoes-humor",
+      "fhir:code": "sintoma-irritabilidade-alteracoes-humor",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-condicoes-sintomas"
+    }
+  ]
+}

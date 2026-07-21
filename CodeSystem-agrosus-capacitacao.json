@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-capacitacao",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-capacitacao</b></p><a name=\"agrosus-capacitacao\"> </a><a name=\"hcagrosus-capacitacao\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">uso-manuseio-seguro<a name=\"agrosus-capacitacao-uso-manuseio-seguro\"> </a></td><td>Uso e manuseio seguro</td><td>Orientações para uso e manuseio seguro de defensivos agrícolas.</td></tr><tr><td style=\"white-space:nowrap\">epis<a name=\"agrosus-capacitacao-epis\"> </a></td><td>Equipamentos de proteção individual</td><td>Orientações sobre seleção, utilização e conservação de EPIs.</td></tr><tr><td style=\"white-space:nowrap\">armazenamento<a name=\"agrosus-capacitacao-armazenamento\"> </a></td><td>Armazenamento</td><td>Orientações sobre armazenamento seguro de defensivos agrícolas.</td></tr><tr><td style=\"white-space:nowrap\">descarte-embalagens<a name=\"agrosus-capacitacao-descarte-embalagens\"> </a></td><td>Descarte de embalagens</td><td>Orientações sobre lavagem, devolução e destinação de embalagens vazias.</td></tr><tr><td style=\"white-space:nowrap\">primeiros-socorros<a name=\"agrosus-capacitacao-primeiros-socorros\"> </a></td><td>Primeiros socorros</td><td>Orientações sobre primeiros socorros relacionados à exposição.</td></tr><tr><td style=\"white-space:nowrap\">outros<a name=\"agrosus-capacitacao-outros\"> </a></td><td>Outros temas</td><td>Outros temas abordados durante a capacitação.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCapacitacaoCS",
+  "title" : "Temas de Capacitação AgroSUS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "uso-manuseio-seguro",
+    "display" : "Uso e manuseio seguro",
+    "definition" : "Orientações para uso e manuseio seguro de defensivos agrícolas."
+  },
+  {
+    "code" : "epis",
+    "display" : "Equipamentos de proteção individual",
+    "definition" : "Orientações sobre seleção, utilização e conservação de EPIs."
+  },
+  {
+    "code" : "armazenamento",
+    "display" : "Armazenamento",
+    "definition" : "Orientações sobre armazenamento seguro de defensivos agrícolas."
+  },
+  {
+    "code" : "descarte-embalagens",
+    "display" : "Descarte de embalagens",
+    "definition" : "Orientações sobre lavagem, devolução e destinação de embalagens vazias."
+  },
+  {
+    "code" : "primeiros-socorros",
+    "display" : "Primeiros socorros",
+    "definition" : "Orientações sobre primeiros socorros relacionados à exposição."
+  },
+  {
+    "code" : "outros",
+    "display" : "Outros temas",
+    "definition" : "Outros temas abordados durante a capacitação."
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-temas-capacitacao.schema.json",
+  "title": "Temas de Capacitação AgroSUS Schema",
+  "description": "JSON Schema for Temas de Capacitação AgroSUS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao#uso-manuseio-seguro",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao#epis",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao#armazenamento",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao#descarte-embalagens",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao#primeiros-socorros",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao#outros"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Temas de Capacitação AgroSUS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-temas-capacitacao.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-temas-capacitacao.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-temas-capacitacao",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.370265"
+}

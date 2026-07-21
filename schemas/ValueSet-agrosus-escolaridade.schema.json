@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-escolaridade.schema.json",
+  "title": "Escolaridade AgroSUS Schema",
+  "description": "JSON Schema for Escolaridade AgroSUS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade#sem-escolaridade",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade#fundamental-incompleto",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade#fundamental-completo",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade#medio",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade#superior"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Escolaridade AgroSUS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-escolaridade.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-escolaridade.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-escolaridade",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.366884"
+}

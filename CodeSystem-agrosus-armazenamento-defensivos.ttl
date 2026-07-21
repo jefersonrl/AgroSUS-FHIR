@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-armazenamento-defensivos"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-armazenamento-defensivos</b></p><a name=\"agrosus-armazenamento-defensivos\"> </a><a name=\"hcagrosus-armazenamento-defensivos\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">deposito-isolado-especifico<a name=\"agrosus-armazenamento-defensivos-deposito-isolado-especifico\"> </a></td><td>Depósito isolado e específico</td><td>Os defensivos agrícolas são armazenados em depósito isolado e destinado especificamente a essa finalidade.</td></tr><tr><td style=\"white-space:nowrap\">galpao-geral<a name=\"agrosus-armazenamento-defensivos-galpao-geral\"> </a></td><td>Galpão geral</td><td>Os defensivos agrícolas são armazenados em galpão utilizado também para outras finalidades.</td></tr><tr><td style=\"white-space:nowrap\">dentro-residencia<a name=\"agrosus-armazenamento-defensivos-dentro-residencia\"> </a></td><td>Dentro da residência</td><td>Os defensivos agrícolas são armazenados no interior da residência.</td></tr><tr><td style=\"white-space:nowrap\">ao-ar-livre<a name=\"agrosus-armazenamento-defensivos-ao-ar-livre\"> </a></td><td>Ao ar livre</td><td>Os defensivos agrícolas são armazenados em área externa sem depósito fechado.</td></tr><tr><td style=\"white-space:nowrap\">outro<a name=\"agrosus-armazenamento-defensivos-outro\"> </a></td><td>Outro</td><td>Outro local de armazenamento não especificado.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSArmazenamentoDefensivosCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Armazenamento de defensivos agrícolas AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Terminologia dos locais utilizados para armazenamento de defensivos agrícolas."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "deposito-isolado-especifico" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Depósito isolado e específico" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os defensivos agrícolas são armazenados em depósito isolado e destinado especificamente a essa finalidade." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "galpao-geral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Galpão geral" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os defensivos agrícolas são armazenados em galpão utilizado também para outras finalidades." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dentro-residencia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dentro da residência" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os defensivos agrícolas são armazenados no interior da residência." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ao-ar-livre" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ao ar livre" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Os defensivos agrícolas são armazenados em área externa sem depósito fechado." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "outro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outro" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Outro local de armazenamento não especificado." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

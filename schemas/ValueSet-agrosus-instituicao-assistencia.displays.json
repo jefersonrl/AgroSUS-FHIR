@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-instituicao-assistencia.displays.json",
+  "title": "Instituição de Assistência Técnica Display Values",
+  "description": "Display values for Instituição de Assistência Técnica ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-cati": {
+      "en": "instituicao-cati"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-senar": {
+      "en": "instituicao-senar"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-cooperativa": {
+      "en": "instituicao-cooperativa"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-empresa-privada": {
+      "en": "instituicao-empresa-privada"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-consultor-autonomo": {
+      "en": "instituicao-consultor-autonomo"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-prefeitura": {
+      "en": "instituicao-prefeitura"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#instituicao-outra": {
+      "en": "instituicao-outra"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-engenheiro-agronomo": {
+      "en": "Engenheiro agrônomo"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-tecnico-agricola": {
+      "en": "Técnico agrícola"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica#formacao-outro-habilitado": {
+      "en": "Outro profissional habilitado"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-instituicao-assistencia",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.369788"
+}

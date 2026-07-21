@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.521513Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.jsonld#deposito-isolado-especifico",
+      "name": "Depósito isolado e específico",
+      "fhir:code": "deposito-isolado-especifico",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-armazenamento-defensivos"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.jsonld#galpao-geral",
+      "name": "Galpão geral",
+      "fhir:code": "galpao-geral",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-armazenamento-defensivos"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.jsonld#dentro-residencia",
+      "name": "Dentro da residência",
+      "fhir:code": "dentro-residencia",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-armazenamento-defensivos"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.jsonld#ao-ar-livre",
+      "name": "Ao ar livre",
+      "fhir:code": "ao-ar-livre",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-armazenamento-defensivos"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-local-armazenamento-defensivos.jsonld#outro",
+      "name": "Outro",
+      "fhir:code": "outro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-armazenamento-defensivos"
+    }
+  ]
+}

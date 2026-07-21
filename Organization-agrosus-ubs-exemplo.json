@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Organization",
+  "id" : "agrosus-ubs-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization agrosus-ubs-exemplo</b></p><a name=\"agrosus-ubs-exemplo\"> </a><a name=\"hcagrosus-ubs-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-ubs.html\">Unidade Básica de Saúde AgroSUS</a></p></div><p><b>identifier</b>: Provider number/7654321\u00a0(utilização:\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>name</b>: UBS Jardim Esperança — Exemplo AgroSUS</p><p><b>alias</b>: UBS Jardim Esperança</p><p><b>address</b>: Rua da Esperança, 250 — Jardim Esperança — Ferraz de Vasconcelos/SP(work)</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PRN"
+      }]
+    },
+    "system" : "https://saude.gov.br/fhir/sid/cnes",
+    "value" : "7654321"
+  }],
+  "active" : true,
+  "name" : "UBS Jardim Esperança — Exemplo AgroSUS",
+  "alias" : ["UBS Jardim Esperança"],
+  "address" : [{
+    "use" : "work",
+    "type" : "physical",
+    "text" : "Rua da Esperança, 250 — Jardim Esperança — Ferraz de Vasconcelos/SP",
+    "line" : ["Rua da Esperança, 250"],
+    "city" : "Ferraz de Vasconcelos",
+    "district" : "Jardim Esperança",
+    "state" : "SP",
+    "postalCode" : "08500-000",
+    "country" : "Brasil"
+  }]
+}

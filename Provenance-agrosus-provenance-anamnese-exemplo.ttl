@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Provenance/agrosus-provenance-anamnese-exemplo> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-provenance-anamnese-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Provenance agrosus-provenance-anamnese-exemplo</b></p><a name=\"agrosus-provenance-anamnese-exemplo\"> </a><a name=\"hcagrosus-provenance-anamnese-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-provenance.html\">Proveniência dos Registros AgroSUS</a></p></div><p>Proveniência para <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p>Resumo</p><table class=\"grid\"><tr><td>Ocorrência</td><td>2026-07-20 09:30:00-0300</td></tr><tr><td>Gravado</td><td>2026-07-20 09:31:00-0300</td></tr><tr><td>Atividade</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agentes</b></p><table class=\"grid\"><tr><td><b>Tipo</b></td><td><b>que</b></td><td><b>Em nome de</b></td></tr><tr><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"PractitionerRole-agrosus-acs-role-exemplo.html\">Maria Clara Oliveira — ACS da UBS Jardim Esperança</a></td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table></div>"
+  ] ;
+  fhir:Provenance.target [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+     fhir:Reference.reference [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ] ;
+     fhir:Reference.display [ fhir:value "Resposta da anamnese AgroSUS" ]
+  ] ;
+  fhir:Provenance.occurredDateTime [ fhir:value "2026-07-20T09:30:00-03:00"^^xsd:dateTime] ;
+  fhir:Provenance.recorded [ fhir:value "2026-07-20T09:31:00-03:00"^^xsd:dateTime] ;
+  fhir:Provenance.reason [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+       fhir:Coding.code [ fhir:value "TREAT" ] ;
+       fhir:Coding.display [ fhir:value "treatment" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Registro assistencial durante visita do ACS" ]
+  ] ;
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ] ;
+       fhir:Coding.code [ fhir:value "CREATE" ] ;
+       fhir:Coding.display [ fhir:value "create" ]
+     ]
+  ] ;
+  fhir:Provenance.agent [
+     fhir:index 0 ;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ] ;
+         fhir:Coding.code [ fhir:value "author" ] ;
+         fhir:Coding.display [ fhir:value "Author" ]
+       ]
+     ] ;
+     fhir:Provenance.agent.who [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-acs-role-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Maria Clara Oliveira — ACS da UBS Jardim Esperança" ]
+     ] ;
+     fhir:Provenance.agent.onBehalfOf [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+       fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Provenance/agrosus-provenance-anamnese-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

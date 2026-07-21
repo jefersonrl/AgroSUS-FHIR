@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.schema.json",
+  "title": "Intoxicação por pesticidas AgroSUS Schema",
+  "description": "JSON Schema for Intoxicação por pesticidas AgroSUS ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.0",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.1",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.2",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.3",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.4",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.8",
+    "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10#T60.9"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Intoxicação por pesticidas AgroSUS ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-intoxicacao-pesticida",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.367023"
+}

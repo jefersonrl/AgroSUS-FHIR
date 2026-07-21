@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-rastreabilidade",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-rastreabilidade</b></p><a name=\"agrosus-rastreabilidade\"> </a><a name=\"hcagrosus-rastreabilidade\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">caderno-diario<a name=\"agrosus-rastreabilidade-caderno-diario\"> </a></td><td>Caderno ou diário</td><td>Os registros das aplicações são mantidos em caderno ou diário.</td></tr><tr><td style=\"white-space:nowrap\">planilha-papel<a name=\"agrosus-rastreabilidade-planilha-papel\"> </a></td><td>Planilha em papel</td><td>Os registros das aplicações são mantidos em formulário ou planilha impressa.</td></tr><tr><td style=\"white-space:nowrap\">aplicativo<a name=\"agrosus-rastreabilidade-aplicativo\"> </a></td><td>Aplicativo</td><td>Os registros das aplicações são mantidos em aplicativo móvel.</td></tr><tr><td style=\"white-space:nowrap\">software-agricola<a name=\"agrosus-rastreabilidade-software-agricola\"> </a></td><td>Software agrícola</td><td>Os registros das aplicações são mantidos em sistema informatizado de gestão agrícola.</td></tr><tr><td style=\"white-space:nowrap\">nao-registra<a name=\"agrosus-rastreabilidade-nao-registra\"> </a></td><td>Não registra</td><td>Não mantém registro das aplicações de defensivos agrícolas.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSRastreabilidadeCS",
+  "title" : "Rastreabilidade das aplicações AgroSUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "caderno-diario",
+    "display" : "Caderno ou diário",
+    "definition" : "Os registros das aplicações são mantidos em caderno ou diário."
+  },
+  {
+    "code" : "planilha-papel",
+    "display" : "Planilha em papel",
+    "definition" : "Os registros das aplicações são mantidos em formulário ou planilha impressa."
+  },
+  {
+    "code" : "aplicativo",
+    "display" : "Aplicativo",
+    "definition" : "Os registros das aplicações são mantidos em aplicativo móvel."
+  },
+  {
+    "code" : "software-agricola",
+    "display" : "Software agrícola",
+    "definition" : "Os registros das aplicações são mantidos em sistema informatizado de gestão agrícola."
+  },
+  {
+    "code" : "nao-registra",
+    "display" : "Não registra",
+    "definition" : "Não mantém registro das aplicações de defensivos agrícolas."
+  }]
+}

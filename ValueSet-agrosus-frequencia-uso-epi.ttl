@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-frequencia-uso-epi> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-frequencia-uso-epi"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-frequencia-uso-epi</b></p><a name=\"agrosus-frequencia-uso-epi\"> </a><a name=\"hcagrosus-frequencia-uso-epi\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-agrosus-epi.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão ?0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-uso-sempre\">uso-sempre</a></td><td style=\"color: #cccccc\">Sempre</td><td>O equipamento de proteção individual é utilizado sempre.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-uso-as-vezes\">uso-as-vezes</a></td><td style=\"color: #cccccc\">Às vezes</td><td>O equipamento de proteção individual é utilizado ocasionalmente.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-uso-nunca\">uso-nunca</a></td><td style=\"color: #cccccc\">Nunca</td><td>O trabalhador possui o equipamento, mas nunca o utiliza.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-nao-possui\">nao-possui</a></td><td style=\"color: #cccccc\">Não possui</td><td>O trabalhador não possui o equipamento de proteção individual.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-frequencia-uso-epi"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.0"] ;
+  fhir:ValueSet.name [ fhir:value "AgroSUSFrequenciaUsoEPIVS"] ;
+  fhir:ValueSet.title [ fhir:value "Frequência de utilização de EPI"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Frequência declarada de utilização de cada equipamento de proteção individual."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uso-sempre" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uso-as-vezes" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "uso-nunca" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "nao-possui" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-frequencia-uso-epi.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

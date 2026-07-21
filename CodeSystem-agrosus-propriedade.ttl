@@ -1,0 +1,149 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-propriedade"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-propriedade</b></p><a name=\"agrosus-propriedade\"> </a><a name=\"hcagrosus-propriedade\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">posse-proprietario<a name=\"agrosus-propriedade-posse-proprietario\"> </a></td><td>Proprietário</td></tr><tr><td style=\"white-space:nowrap\">posse-arrendatario<a name=\"agrosus-propriedade-posse-arrendatario\"> </a></td><td>Arrendatário</td></tr><tr><td style=\"white-space:nowrap\">posse-meeiro<a name=\"agrosus-propriedade-posse-meeiro\"> </a></td><td>Meeiro</td></tr><tr><td style=\"white-space:nowrap\">posse-assentado<a name=\"agrosus-propriedade-posse-assentado\"> </a></td><td>Assentado</td></tr><tr><td style=\"white-space:nowrap\">posse-cedida<a name=\"agrosus-propriedade-posse-cedida\"> </a></td><td>Terra cedida</td></tr><tr><td style=\"white-space:nowrap\">posse-outra<a name=\"agrosus-propriedade-posse-outra\"> </a></td><td>Outra situação de posse</td></tr><tr><td style=\"white-space:nowrap\">atividade-lavoura-temporaria<a name=\"agrosus-propriedade-atividade-lavoura-temporaria\"> </a></td><td>Lavoura temporária</td></tr><tr><td style=\"white-space:nowrap\">atividade-lavoura-permanente<a name=\"agrosus-propriedade-atividade-lavoura-permanente\"> </a></td><td>Lavoura permanente</td></tr><tr><td style=\"white-space:nowrap\">atividade-horticultura<a name=\"agrosus-propriedade-atividade-horticultura\"> </a></td><td>Horticultura</td></tr><tr><td style=\"white-space:nowrap\">atividade-fruticultura<a name=\"agrosus-propriedade-atividade-fruticultura\"> </a></td><td>Fruticultura</td></tr><tr><td style=\"white-space:nowrap\">atividade-pecuaria<a name=\"agrosus-propriedade-atividade-pecuaria\"> </a></td><td>Pecuária</td></tr><tr><td style=\"white-space:nowrap\">atividade-outra<a name=\"agrosus-propriedade-atividade-outra\"> </a></td><td>Outra atividade agrícola</td></tr><tr><td style=\"white-space:nowrap\">producao-convencional<a name=\"agrosus-propriedade-producao-convencional\"> </a></td><td>Convencional</td></tr><tr><td style=\"white-space:nowrap\">producao-organica<a name=\"agrosus-propriedade-producao-organica\"> </a></td><td>Orgânica</td></tr><tr><td style=\"white-space:nowrap\">producao-agroecologica<a name=\"agrosus-propriedade-producao-agroecologica\"> </a></td><td>Agroecológica</td></tr><tr><td style=\"white-space:nowrap\">producao-integrada<a name=\"agrosus-propriedade-producao-integrada\"> </a></td><td>Integrada</td></tr><tr><td style=\"white-space:nowrap\">producao-outra<a name=\"agrosus-propriedade-producao-outra\"> </a></td><td>Outro tipo de produção</td></tr><tr><td style=\"white-space:nowrap\">agua-rede-publica<a name=\"agrosus-propriedade-agua-rede-publica\"> </a></td><td>Rede pública</td></tr><tr><td style=\"white-space:nowrap\">agua-poco-artesiano<a name=\"agrosus-propriedade-agua-poco-artesiano\"> </a></td><td>Poço artesiano</td></tr><tr><td style=\"white-space:nowrap\">agua-poco-comum<a name=\"agrosus-propriedade-agua-poco-comum\"> </a></td><td>Poço comum</td></tr><tr><td style=\"white-space:nowrap\">agua-rio-corrego<a name=\"agrosus-propriedade-agua-rio-corrego\"> </a></td><td>Rio ou córrego</td></tr><tr><td style=\"white-space:nowrap\">agua-acude-represa<a name=\"agrosus-propriedade-agua-acude-represa\"> </a></td><td>Açude ou represa</td></tr><tr><td style=\"white-space:nowrap\">agua-cisterna<a name=\"agrosus-propriedade-agua-cisterna\"> </a></td><td>Cisterna</td></tr><tr><td style=\"white-space:nowrap\">agua-outra<a name=\"agrosus-propriedade-agua-outra\"> </a></td><td>Outra fonte de água</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSPropriedadeCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Terminologia da Propriedade Rural AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "24"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "posse-proprietario" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Proprietário" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "posse-arrendatario" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Arrendatário" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "posse-meeiro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Meeiro" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "posse-assentado" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Assentado" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "posse-cedida" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Terra cedida" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "posse-outra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outra situação de posse" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atividade-lavoura-temporaria" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lavoura temporária" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atividade-lavoura-permanente" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lavoura permanente" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atividade-horticultura" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Horticultura" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atividade-fruticultura" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fruticultura" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atividade-pecuaria" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pecuária" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "atividade-outra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outra atividade agrícola" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "producao-convencional" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Convencional" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "producao-organica" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Orgânica" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "producao-agroecologica" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Agroecológica" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "producao-integrada" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Integrada" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "producao-outra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outro tipo de produção" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-rede-publica" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rede pública" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-poco-artesiano" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Poço artesiano" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-poco-comum" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Poço comum" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-rio-corrego" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rio ou córrego" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-acude-represa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Açude ou represa" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-cisterna" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cisterna" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agua-outra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outra fonte de água" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

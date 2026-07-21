@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo> a fhir:AuditEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-auditoria-consulta-dashboard-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: AuditEvent agrosus-auditoria-consulta-dashboard-exemplo</b></p><a name=\"agrosus-auditoria-consulta-dashboard-exemplo\"> </a><a name=\"hcagrosus-auditoria-consulta-dashboard-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-audit-event.html\">Evento de Auditoria AgroSUS</a></p></div><p><b>type</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-audit-event-type.html#audit-event-type-rest\">Audit Event ID: rest</a> (RESTful Operation)</p><p><b>subtype</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-restful-interaction.html#restful-interaction-read\">FHIR Restful Interactions: read</a> (read)</p><p><b>action</b>: Read/View/Print</p><p><b>period</b>: 2026-07-26 09:59:58-0300 --&gt; 2026-07-26 10:00:02-0300</p><p><b>recorded</b>: 2026-07-26 10:00:03-0300</p><p><b>outcome</b>: Success</p><p><b>outcomeDesc</b>: Consulta realizada com sucesso</p><p><b>purposeOfEvent</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActReason TREAT}\">Avaliação e acompanhamento assistencial</span></p><blockquote><p><b>agent</b></p><p><b>who</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>name</b>: Eduardo Henrique Almeida</p><p><b>requestor</b>: true</p><h3>Networks</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Address</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>192.0.2.10</td><td>IP Address</td></tr></table><p><b>purposeOfUse</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActReason TREAT}\">Continuidade do cuidado na UBS</span></p></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td></tr><tr><td style=\"display: none\">*</td><td>Dashboard AgroSUS — UBS Jardim Esperança</td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>description</b>: Cadastro do trabalhador consultado</p></blockquote><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p><b>description</b>: Anamnese consultada durante a avaliação</p></blockquote><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"DiagnosticReport-agrosus-laudo-hemograma-exemplo.html\">Laudo de hemograma completo</a></p><p><b>description</b>: Laudo laboratorial consultado durante a avaliação</p></blockquote><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"CarePlan-agrosus-plano-acompanhamento-exemplo.html\">Plano de acompanhamento AgroSUS</a></p><p><b>description</b>: Plano assistencial consultado no dashboard</p></blockquote></div>"
+  ] ;
+  fhir:AuditEvent.type [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/audit-event-type" ] ;
+     fhir:Coding.code [ fhir:value "rest" ] ;
+     fhir:Coding.display [ fhir:value "RESTful Operation" ]
+  ] ;
+  fhir:AuditEvent.subtype [
+     fhir:index 0 ;
+     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/restful-interaction" ] ;
+     fhir:Coding.code [ fhir:value "read" ] ;
+     fhir:Coding.display [ fhir:value "read" ]
+  ] ;
+  fhir:AuditEvent.action [ fhir:value "R"] ;
+  fhir:AuditEvent.period [
+     fhir:Period.start [ fhir:value "2026-07-26T09:59:58-03:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-07-26T10:00:02-03:00"^^xsd:dateTime ]
+  ] ;
+  fhir:AuditEvent.recorded [ fhir:value "2026-07-26T10:00:03-03:00"^^xsd:dateTime] ;
+  fhir:AuditEvent.outcome [ fhir:value "0"] ;
+  fhir:AuditEvent.outcomeDesc [ fhir:value "Consulta realizada com sucesso"] ;
+  fhir:AuditEvent.purposeOfEvent [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+       fhir:Coding.code [ fhir:value "TREAT" ] ;
+       fhir:Coding.display [ fhir:value "treatment" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Avaliação e acompanhamento assistencial" ]
+  ] ;
+  fhir:AuditEvent.agent [
+     fhir:index 0 ;
+     fhir:AuditEvent.agent.who [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+     ] ;
+     fhir:AuditEvent.agent.name [ fhir:value "Eduardo Henrique Almeida" ] ;
+     fhir:AuditEvent.agent.requestor [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:AuditEvent.agent.network [
+       fhir:AuditEvent.agent.network.address [ fhir:value "192.0.2.10" ] ;
+       fhir:AuditEvent.agent.network.type [ fhir:value "2" ]
+     ] ;
+     fhir:AuditEvent.agent.purposeOfUse [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+         fhir:Coding.code [ fhir:value "TREAT" ] ;
+         fhir:Coding.display [ fhir:value "treatment" ]
+       ] ;
+       fhir:CodeableConcept.text [ fhir:value "Continuidade do cuidado na UBS" ]
+     ]
+  ] ;
+  fhir:AuditEvent.source [
+     fhir:AuditEvent.source.site [ fhir:value "Dashboard AgroSUS — UBS Jardim Esperança" ] ;
+     fhir:AuditEvent.source.observer [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+       fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+     ]
+  ] ;
+  fhir:AuditEvent.entity [
+     fhir:index 0 ;
+     fhir:AuditEvent.entity.what [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+       fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+       fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+     ] ;
+     fhir:AuditEvent.entity.description [ fhir:value "Cadastro do trabalhador consultado" ]
+  ], [
+     fhir:index 1 ;
+     fhir:AuditEvent.entity.what [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+       fhir:Reference.reference [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ] ;
+       fhir:Reference.display [ fhir:value "Resposta da anamnese AgroSUS" ]
+     ] ;
+     fhir:AuditEvent.entity.description [ fhir:value "Anamnese consultada durante a avaliação" ]
+  ], [
+     fhir:index 2 ;
+     fhir:AuditEvent.entity.what [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/DiagnosticReport/agrosus-laudo-hemograma-exemplo> ;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/agrosus-laudo-hemograma-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Laudo de hemograma completo" ]
+     ] ;
+     fhir:AuditEvent.entity.description [ fhir:value "Laudo laboratorial consultado durante a avaliação" ]
+  ], [
+     fhir:index 3 ;
+     fhir:AuditEvent.entity.what [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CarePlan/agrosus-plano-acompanhamento-exemplo> ;
+       fhir:Reference.reference [ fhir:value "CarePlan/agrosus-plano-acompanhamento-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Plano de acompanhamento AgroSUS" ]
+     ] ;
+     fhir:AuditEvent.entity.description [ fhir:value "Plano assistencial consultado no dashboard" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

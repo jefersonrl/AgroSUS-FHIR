@@ -15,7 +15,7 @@
   <title value="Módulo AgroSUS — Projeto mareIA"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-07-20T19:33:39+00:00"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
   <publisher value="Fatec Ferraz de Vasconcelos"/>
   <contact>
     <name value="Fatec Ferraz de Vasconcelos"/>
@@ -40,10 +40,20 @@
     <packageId value="hl7.terminology"/>
     <version value="5.5.0"/>
   </dependsOn>
+  <dependsOn id="hl7_terminology_r4">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.1.0"/>
+  </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions_r4">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_cql">
     <uri value="http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql"/>
@@ -77,6 +87,21 @@
     <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
     <packageId value="smart.who.int.base"/>
     <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="br_gov_saude_br_core_fhir">
+    <uri value="https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir"/>
+    <packageId value="br.gov.saude.br-core.fhir"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="br_gov_saude_terminologia_fhir">
+    <uri value="https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir"/>
+    <packageId value="br.gov.saude.terminologia.fhir"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="br_gov_saude_ips_fhir">
+    <uri value="https://ips.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.ips.fhir"/>
+    <packageId value="br.gov.saude.ips.fhir"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -482,6 +507,1058 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/agrosus-acs-exemplo"/>
+      </reference>
+      <name value="ACS AgroSUS de exemplo"/>
+      <description value="Exemplo sintético de Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-acs"/>
+      </reference>
+      <name value="Agente Comunitário de Saúde AgroSUS"/>
+      <description value="Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-armazenamento-defensivos"/>
+      </reference>
+      <name value="Armazenamento de defensivos agrícolas AgroSUS"/>
+      <description value="Terminologia dos locais utilizados para armazenamento de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-assistencia-tecnica"/>
+      </reference>
+      <name value="Assistência Técnica AgroSUS"/>
+      <description value="Códigos relacionados à assistência e à responsabilidade técnica na produção rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-atendimento-ubs"/>
+      </reference>
+      <name value="Atendimento Clínico da UBS AgroSUS"/>
+      <description value="Atendimento realizado na UBS para avaliação, investigação e acompanhamento assistencial do trabalhador rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-avaliacao-boas-praticas"/>
+      </reference>
+      <name value="Avaliação de boas práticas agrícolas AgroSUS"/>
+      <description value="Terminologia utilizada para avaliar o atendimento aos indicadores de boas práticas agrícolas no formulário AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-categoria-plano-cuidado"/>
+      </reference>
+      <name value="Categorias de Plano de Cuidado AgroSUS"/>
+      <description value="Categorias permitidas para os planos de acompanhamento AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-categoria-plano-cuidado"/>
+      </reference>
+      <name value="Categorias de Plano de Cuidado AgroSUS"/>
+      <description value="Categorias utilizadas para classificar os planos longitudinais de acompanhamento do trabalhador rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-classificacao-toxicologica"/>
+      </reference>
+      <name value="Classificação Toxicológica de Defensivos Agrícolas"/>
+      <description value="Categorias toxicológicas permitidas no formulário AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-classificacao-toxicologica"/>
+      </reference>
+      <name value="Classificação Toxicológica de Defensivos Agrícolas"/>
+      <description value="Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-condicoes-sintomas"/>
+      </reference>
+      <name value="Condições de saúde e sintomas AgroSUS"/>
+      <description value="Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-condicao-saude-referida"/>
+      </reference>
+      <name value="Condições de saúde referidas"/>
+      <description value="Condições de saúde preexistentes declaradas pelo trabalhador durante a anamnese."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-destinacao-embalagens-nao-devolvidas"/>
+      </reference>
+      <name value="Destinação de embalagens não devolvidas"/>
+      <description value="Formas de destinação das embalagens vazias quando não ocorre devolução em local autorizado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-destinacao-embalagens"/>
+      </reference>
+      <name value="Destinação de embalagens vazias AgroSUS"/>
+      <description value="Terminologia das formas de destinação de embalagens vazias de defensivos agrícolas quando não são devolvidas em local autorizado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-dias-aplicacao-mes"/>
+      </reference>
+      <name value="Dias de aplicação por mês"/>
+      <description value="Faixas de frequência mensal de aplicação de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-equipamento-aplicacao"/>
+      </reference>
+      <name value="Equipamentos utilizados na aplicação"/>
+      <description value="Tipos de equipamento utilizados na aplicação de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-escolaridade"/>
+      </reference>
+      <name value="Escolaridade AgroSUS"/>
+      <description value="Categorias permitidas para escolaridade no formulário AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-escolaridade"/>
+      </reference>
+      <name value="Escolaridade AgroSUS"/>
+      <description value="Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-audit-event"/>
+      </reference>
+      <name value="Evento de Auditoria AgroSUS"/>
+      <description value="Registro de segurança para rastrear consultas, alterações e outras operações realizadas sobre os dados do AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-exames-laboratoriais"/>
+      </reference>
+      <name value="Exames Laboratoriais AgroSUS"/>
+      <description value="Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos trabalhadores rurais no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/agrosus-atendimento-ubs-avaliacao-exemplo"/>
+      </reference>
+      <name value="Exemplo de Atendimento Clínico da UBS AgroSUS"/>
+      <description value="Avaliação clínica fictícia realizada após a visita e anamnese do ACS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo"/>
+      </reference>
+      <name value="Exemplo de Atendimento para Revisão dos Exames"/>
+      <description value="Atendimento fictício para avaliação dos resultados laboratoriais e definição do acompanhamento longitudinal."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AuditEvent"/>
+      </extension>
+      <reference>
+        <reference value="AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo"/>
+      </reference>
+      <name value="Exemplo de Auditoria de Consulta ao Dashboard"/>
+      <description value="Evento fictício de acesso aos dados do trabalhador por profissional da UBS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/agrosus-profissional-enfermeiro-exemplo"/>
+      </reference>
+      <name value="Exemplo de Enfermeira da UBS AgroSUS"/>
+      <description value="Enfermeira fictícia responsável pelo acompanhamento dos trabalhadores rurais."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/agrosus-laboratorio-exemplo"/>
+      </reference>
+      <name value="Exemplo de Laboratório AgroSUS"/>
+      <description value="Laboratório municipal fictício responsável pela emissão dos resultados."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/agrosus-laudo-hemograma-exemplo"/>
+      </reference>
+      <name value="Exemplo de Laudo de Hemograma AgroSUS"/>
+      <description value="Laudo fictício que agrupa os resultados individuais do hemograma."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/agrosus-profissional-medico-exemplo"/>
+      </reference>
+      <name value="Exemplo de Médico da UBS AgroSUS"/>
+      <description value="Médico fictício da Estratégia de Saúde da Família."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/agrosus-patient-example"/>
+      </reference>
+      <name value="Exemplo de Paciente AgroSUS"/>
+      <description value="Trabalhadora rural fictícia utilizada para validar o perfil Paciente AgroSUS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/agrosus-plano-acompanhamento-exemplo"/>
+      </reference>
+      <name value="Exemplo de Plano de Acompanhamento AgroSUS"/>
+      <description value="Plano fictício para acompanhamento longitudinal de trabalhadora rural com suspeita de intoxicação por pesticida."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/agrosus-provenance-anamnese-exemplo"/>
+      </reference>
+      <name value="Exemplo de Proveniência da Anamnese AgroSUS"/>
+      <description value="Registro fictício da autoria da resposta da anamnese pelo ACS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/agrosus-provenance-plano-acompanhamento-exemplo"/>
+      </reference>
+      <name value="Exemplo de Proveniência do Plano de Acompanhamento"/>
+      <description value="Registro fictício da autoria médica do plano longitudinal AgroSUS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/agrosus-anamnese-response-example"/>
+      </reference>
+      <name value="Exemplo de Resposta da Anamnese AgroSUS"/>
+      <description value="Resposta parcial fictícia da anamnese AgroSUS registrada durante uma visita do ACS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-hematocrito-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Hematócrito"/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-hemoglobina-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Hemoglobina"/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-leucocitos-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Leucócitos"/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/agrosus-resultado-plaquetas-exemplo"/>
+      </reference>
+      <name value="Exemplo de Resultado de Plaquetas"/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/agrosus-solicitacao-hemograma-exemplo"/>
+      </reference>
+      <name value="Exemplo de Solicitação de Hemograma AgroSUS"/>
+      <description value="Solicitação fictícia de hemograma completo realizada pelo médico da UBS após avaliação clínica."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo"/>
+      </reference>
+      <name value="Exemplo de Suspeita de Intoxicação por Pesticida"/>
+      <description value="Suspeita clínica fictícia registrada pelo médico da UBS e mantida em investigação."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/agrosus-transacao-visita-exemplo"/>
+      </reference>
+      <name value="Exemplo de Transação da Visita do ACS"/>
+      <description value="Sincronização atômica e idempotente do paciente, visita, anamnese e proveniência registrados pelo aplicativo do ACS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo"/>
+      </reference>
+      <name value="Exemplo de Técnico de Enfermagem da UBS AgroSUS"/>
+      <description value="Técnico de enfermagem fictício da equipe assistencial da UBS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/agrosus-visita-acs-exemplo"/>
+      </reference>
+      <name value="Exemplo de Visita do ACS AgroSUS"/>
+      <description value="Visita fictícia em campo para aplicação inicial da anamnese AgroSUS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agrosus-profissional-enfermeiro-role-exemplo"/>
+      </reference>
+      <name value="Exemplo de Vínculo da Enfermeira com a UBS"/>
+      <description value="Vínculo fictício da enfermeira com a UBS responsável pelo acompanhamento AgroSUS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agrosus-profissional-medico-role-exemplo"/>
+      </reference>
+      <name value="Exemplo de Vínculo do Médico com a UBS"/>
+      <description value="Vínculo fictício do médico da Estratégia de Saúde da Família com a UBS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agrosus-profissional-tecnico-enfermagem-role-exemplo"/>
+      </reference>
+      <name value="Exemplo de Vínculo do Técnico de Enfermagem"/>
+      <description value="Vínculo fictício do técnico de enfermagem com a UBS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-exposicao-familiar"/>
+      </reference>
+      <name value="Exposição familiar AgroSUS"/>
+      <description value="Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-familiares-auxiliam-aplicacao"/>
+      </reference>
+      <name value="Familiares que auxiliam na aplicação"/>
+      <description value="Familiares que auxiliam o trabalhador rural na aplicação de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-fonte-agua"/>
+      </reference>
+      <name value="Fonte de Água da Propriedade"/>
+      <description value="Fontes de água utilizadas na propriedade rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-armazenamento-registros"/>
+      </reference>
+      <name value="Formas de armazenamento dos registros"/>
+      <description value="Formas utilizadas para armazenar os registros das aplicações de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-formacao-responsavel-tecnico"/>
+      </reference>
+      <name value="Formação do Responsável Técnico"/>
+      <description value="Formações profissionais previstas para o responsável técnico da produção."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/agrosus-anamnese"/>
+      </reference>
+      <name value="Formulário de Anamnese AgroSUS"/>
+      <description value="Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-frequencia-uso-epi"/>
+      </reference>
+      <name value="Frequência de utilização de EPI"/>
+      <description value="Frequência declarada de utilização de cada equipamento de proteção individual."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-acs-role"/>
+      </reference>
+      <name value="Função do ACS no AgroSUS"/>
+      <description value="Perfil do vínculo do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde com a organização responsável pelo atendimento no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-profissional-ubs-role"/>
+      </reference>
+      <name value="Função do Profissional Assistencial da UBS AgroSUS"/>
+      <description value="Vínculo funcional do profissional assistencial com a UBS responsável pelo acompanhamento do trabalhador rural no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-historico-intoxicacao"/>
+      </reference>
+      <name value="Histórico de intoxicação AgroSUS"/>
+      <description value="Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-horas-aplicacao-dia"/>
+      </reference>
+      <name value="Horas de aplicação por dia"/>
+      <description value="Faixas de duração diária da aplicação de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-instituicao-assistencia"/>
+      </reference>
+      <name value="Instituição de Assistência Técnica"/>
+      <description value="Instituições que podem prestar assistência técnica ao produtor rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-intoxicacao-pesticida"/>
+      </reference>
+      <name value="Intoxicação por pesticidas AgroSUS"/>
+      <description value="Códigos CID-10 utilizados para representar suspeita ou confirmação clínica de efeito tóxico de pesticidas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-laboratorio"/>
+      </reference>
+      <name value="Laboratório AgroSUS"/>
+      <description value="Organização responsável pela realização e emissão de resultados de exames laboratoriais utilizados no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-laudo-laboratorial"/>
+      </reference>
+      <name value="Laudo Laboratorial AgroSUS"/>
+      <description value="Laudo que agrupa resultados laboratoriais emitidos para o acompanhamento do trabalhador rural no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-local-armazenamento-defensivos"/>
+      </reference>
+      <name value="Local de armazenamento dos defensivos agrícolas"/>
+      <description value="Locais onde os defensivos agrícolas são armazenados na propriedade."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-armazenamento-epi"/>
+      </reference>
+      <name value="Local de armazenamento dos EPIs"/>
+      <description value="Locais utilizados para o armazenamento dos equipamentos de proteção individual."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-mes-maior-intensidade"/>
+      </reference>
+      <name value="Meses de maior intensidade de uso"/>
+      <description value="Meses do ano com maior intensidade de utilização de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-motivo-nao-uso-epi"/>
+      </reference>
+      <name value="Motivos de não utilização de EPI"/>
+      <description value="Motivos declarados para a não utilização dos equipamentos de proteção individual."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-numero-intoxicacoes-agudas"/>
+      </reference>
+      <name value="Número de intoxicações agudas anteriores"/>
+      <description value="Faixas para registro do número autorreferido de episódios anteriores de intoxicação aguda."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-ocupacao-profissional-ubs"/>
+      </reference>
+      <name value="Ocupações dos profissionais assistenciais da UBS"/>
+      <description value="Ocupações CBO permitidas para profissionais assistenciais que utilizam o dashboard AgroSUS na Unidade Básica de Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-ocupacao-acs"/>
+      </reference>
+      <name value="Ocupações permitidas para o ACS no AgroSUS"/>
+      <description value="Ocupações da Classificação Brasileira de Ocupações permitidas para o profissional que aplica a anamnese AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-patient"/>
+      </reference>
+      <name value="Paciente AgroSUS"/>
+      <description value="Perfil do pequeno produtor rural acompanhado pelo módulo AgroSUS no âmbito da Atenção Primária à Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-plano-acompanhamento"/>
+      </reference>
+      <name value="Plano de Acompanhamento AgroSUS"/>
+      <description value="Plano longitudinal definido pela equipe assistencial da UBS para acompanhamento clínico e ocupacional do trabalhador rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-atividade-agricola"/>
+      </reference>
+      <name value="Principal Atividade Agrícola"/>
+      <description value="Principais atividades desenvolvidas na propriedade rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-profissional-ubs"/>
+      </reference>
+      <name value="Profissional Assistencial da UBS AgroSUS"/>
+      <description value="Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-provenance"/>
+      </reference>
+      <name value="Proveniência dos Registros AgroSUS"/>
+      <description value="Registro de autoria, criação, atualização e origem dos recursos clínicos e assistenciais do AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-rastreabilidade"/>
+      </reference>
+      <name value="Rastreabilidade das aplicações AgroSUS"/>
+      <description value="Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/agrosus-server-capabilities"/>
+      </reference>
+      <name value="Requisitos de capacidade do servidor AgroSUS"/>
+      <description value="Contrato mínimo da API FHIR R4 do AgroSUS para o aplicativo do ACS, o dashboard da UBS e os sistemas laboratoriais."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-responsavel-aplicacao"/>
+      </reference>
+      <name value="Responsável pela aplicação"/>
+      <description value="Pessoas ou organizações que realizam a aplicação dos defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-anamnese-response"/>
+      </reference>
+      <name value="Resposta da Anamnese AgroSUS"/>
+      <description value="Perfil da resposta ao formulário de anamnese ocupacional e ambiental AgroSUS aplicado pelo Agente Comunitário de Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-avaliacao-boas-praticas"/>
+      </reference>
+      <name value="Respostas dos indicadores de boas práticas"/>
+      <description value="Respostas permitidas para cada indicador de boa prática agrícola."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-resultado-laboratorial"/>
+      </reference>
+      <name value="Resultado Laboratorial AgroSUS"/>
+      <description value="Resultado individual de exame ou biomarcador laboratorial utilizado no acompanhamento do trabalhador rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-resultados-laboratoriais"/>
+      </reference>
+      <name value="Resultados Laboratoriais AgroSUS"/>
+      <description value="Biomarcadores laboratoriais utilizados no acompanhamento assistencial dos trabalhadores rurais no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-sintoma-ultimos-30-dias"/>
+      </reference>
+      <name value="Sinais e sintomas dos últimos 30 dias"/>
+      <description value="Sinais e sintomas investigados pelo formulário AgroSUS, sem significado diagnóstico isolado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-situacao-posse"/>
+      </reference>
+      <name value="Situação de Posse da Terra"/>
+      <description value="Situações de posse da propriedade rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-solicitacao-exame"/>
+      </reference>
+      <name value="Solicitação de Exame AgroSUS"/>
+      <description value="Solicitação de exame laboratorial realizada por profissional assistencial da UBS para acompanhamento do trabalhador rural no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-intoxicacao-pesticida"/>
+      </reference>
+      <name value="Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS"/>
+      <description value="Condição clínica registrada por profissional assistencial para representar suspeita, confirmação ou descarte de intoxicação por pesticidas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-temas-capacitacao"/>
+      </reference>
+      <name value="Temas de Capacitação AgroSUS"/>
+      <description value="Temas que podem ser selecionados no registro de capacitação do trabalhador rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-capacitacao"/>
+      </reference>
+      <name value="Temas de Capacitação AgroSUS"/>
+      <description value="Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-propriedade"/>
+      </reference>
+      <name value="Terminologia da Propriedade Rural AgroSUS"/>
+      <description value="Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-epi"/>
+      </reference>
+      <name value="Terminologia de equipamentos de proteção individual AgroSUS"/>
+      <description value="Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-exposicao"/>
+      </reference>
+      <name value="Terminologia de exposição ocupacional AgroSUS"/>
+      <description value="Terminologia das características de frequência e forma de exposição aos defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-tipo-producao"/>
+      </reference>
+      <name value="Tipo de Produção Agrícola"/>
+      <description value="Tipos de produção utilizados na propriedade rural."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-tipo-coleta"/>
+      </reference>
+      <name value="Tipos de Coleta AgroSUS"/>
+      <description value="Modalidades permitidas para aplicação do formulário AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/agrosus-tipo-coleta"/>
+      </reference>
+      <name value="Tipos de Coleta AgroSUS"/>
+      <description value="Modalidades de aplicação do formulário de anamnese ocupacional e ambiental do AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-transacao-visita"/>
+      </reference>
+      <name value="Transação da Visita do ACS AgroSUS"/>
+      <description value="Bundle transacional e idempotente utilizado pelo aplicativo do ACS para sincronizar o paciente, a visita, a resposta da anamnese e sua proveniência em uma única operação atômica."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/agrosus-ubs-exemplo"/>
+      </reference>
+      <name value="UBS AgroSUS de exemplo"/>
+      <description value="Exemplo sintético de Unidade Básica de Saúde responsável pelo acompanhamento no AgroSUS."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-ubs"/>
+      </reference>
+      <name value="Unidade Básica de Saúde AgroSUS"/>
+      <description value="Perfil da Unidade Básica de Saúde responsável pelo acompanhamento do trabalhador rural no AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/agrosus-via-exposicao"/>
+      </reference>
+      <name value="Vias de exposição"/>
+      <description value="Vias mais comuns de exposição aos defensivos agrícolas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/agrosus-visita-acs"/>
+      </reference>
+      <name value="Visita do ACS AgroSUS"/>
+      <description value="Visita ou atendimento em campo no qual o Agente Comunitário de Saúde aplica ou atualiza a anamnese AgroSUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/agrosus-acs-role-exemplo"/>
+      </reference>
+      <name value="Vínculo profissional do ACS AgroSUS"/>
+      <description value="Exemplo sintético do vínculo de um Agente Comunitário de Saúde com uma Unidade Básica de Saúde."/>
+      <exampleCanonical value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -744,14 +1821,6 @@
           <title value="Mappings"/>
           <generation value="markdown"/>
         </page>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="dak-api.html"/>
-        </extension>
-        <nameUrl value="dak-api.html"/>
-        <title value="DAK API Documentation Hub"/>
-        <generation value="markdown"/>
       </page>
     </page>
     <parameter>

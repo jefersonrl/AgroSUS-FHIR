@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-assistencia-tecnica"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-assistencia-tecnica</b></p><a name="agrosus-assistencia-tecnica"> </a><a name="hcagrosus-assistencia-tecnica"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style="white-space:nowrap">instituicao-cati<a name="agrosus-assistencia-tecnica-instituicao-cati"> </a></td><td>CATI</td></tr><tr><td style="white-space:nowrap">instituicao-senar<a name="agrosus-assistencia-tecnica-instituicao-senar"> </a></td><td>SENAR</td></tr><tr><td style="white-space:nowrap">instituicao-cooperativa<a name="agrosus-assistencia-tecnica-instituicao-cooperativa"> </a></td><td>Cooperativa</td></tr><tr><td style="white-space:nowrap">instituicao-empresa-privada<a name="agrosus-assistencia-tecnica-instituicao-empresa-privada"> </a></td><td>Empresa privada</td></tr><tr><td style="white-space:nowrap">instituicao-consultor-autonomo<a name="agrosus-assistencia-tecnica-instituicao-consultor-autonomo"> </a></td><td>Consultor autônomo</td></tr><tr><td style="white-space:nowrap">instituicao-prefeitura<a name="agrosus-assistencia-tecnica-instituicao-prefeitura"> </a></td><td>Prefeitura</td></tr><tr><td style="white-space:nowrap">instituicao-outra<a name="agrosus-assistencia-tecnica-instituicao-outra"> </a></td><td>Outra instituição</td></tr><tr><td style="white-space:nowrap">formacao-engenheiro-agronomo<a name="agrosus-assistencia-tecnica-formacao-engenheiro-agronomo"> </a></td><td>Engenheiro agrônomo</td></tr><tr><td style="white-space:nowrap">formacao-tecnico-agricola<a name="agrosus-assistencia-tecnica-formacao-tecnico-agricola"> </a></td><td>Técnico agrícola</td></tr><tr><td style="white-space:nowrap">formacao-outro-habilitado<a name="agrosus-assistencia-tecnica-formacao-outro-habilitado"> </a></td><td>Outro profissional habilitado</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSAssistenciaTecnicaCS"/>
+  <title value="Assistência Técnica AgroSUS"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Códigos relacionados à assistência e à responsabilidade técnica na produção rural."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="instituicao-cati"/>
+    <display value="CATI"/>
+  </concept>
+  <concept>
+    <code value="instituicao-senar"/>
+    <display value="SENAR"/>
+  </concept>
+  <concept>
+    <code value="instituicao-cooperativa"/>
+    <display value="Cooperativa"/>
+  </concept>
+  <concept>
+    <code value="instituicao-empresa-privada"/>
+    <display value="Empresa privada"/>
+  </concept>
+  <concept>
+    <code value="instituicao-consultor-autonomo"/>
+    <display value="Consultor autônomo"/>
+  </concept>
+  <concept>
+    <code value="instituicao-prefeitura"/>
+    <display value="Prefeitura"/>
+  </concept>
+  <concept>
+    <code value="instituicao-outra"/>
+    <display value="Outra instituição"/>
+  </concept>
+  <concept>
+    <code value="formacao-engenheiro-agronomo"/>
+    <display value="Engenheiro agrônomo"/>
+  </concept>
+  <concept>
+    <code value="formacao-tecnico-agricola"/>
+    <display value="Técnico agrícola"/>
+  </concept>
+  <concept>
+    <code value="formacao-outro-habilitado"/>
+    <display value="Outro profissional habilitado"/>
+  </concept>
+</CodeSystem>

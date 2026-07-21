@@ -1,0 +1,239 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.522401Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-1-2",
+      "name": "1–2 dias por mês",
+      "fhir:code": "dias-mes-1-2",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-3-5",
+      "name": "3–5 dias por mês",
+      "fhir:code": "dias-mes-3-5",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-6-10",
+      "name": "6–10 dias por mês",
+      "fhir:code": "dias-mes-6-10",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-mais-10",
+      "name": "Mais de 10 dias por mês",
+      "fhir:code": "dias-mes-mais-10",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#horas-dia-menos-2",
+      "name": "Menos de 2 horas por dia",
+      "fhir:code": "horas-dia-menos-2",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#horas-dia-2-4",
+      "name": "2–4 horas por dia",
+      "fhir:code": "horas-dia-2-4",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#horas-dia-4-6",
+      "name": "4–6 horas por dia",
+      "fhir:code": "horas-dia-4-6",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#horas-dia-mais-6",
+      "name": "Mais de 6 horas por dia",
+      "fhir:code": "horas-dia-mais-6",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#janeiro",
+      "name": "Janeiro",
+      "fhir:code": "janeiro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#fevereiro",
+      "name": "Fevereiro",
+      "fhir:code": "fevereiro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#marco",
+      "name": "Março",
+      "fhir:code": "marco",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#abril",
+      "name": "Abril",
+      "fhir:code": "abril",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#maio",
+      "name": "Maio",
+      "fhir:code": "maio",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#junho",
+      "name": "Junho",
+      "fhir:code": "junho",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#julho",
+      "name": "Julho",
+      "fhir:code": "julho",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#agosto",
+      "name": "Agosto",
+      "fhir:code": "agosto",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#setembro",
+      "name": "Setembro",
+      "fhir:code": "setembro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#outubro",
+      "name": "Outubro",
+      "fhir:code": "outubro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#novembro",
+      "name": "Novembro",
+      "fhir:code": "novembro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dezembro",
+      "name": "Dezembro",
+      "fhir:code": "dezembro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#pulverizador-costal-manual",
+      "name": "Pulverizador costal manual",
+      "fhir:code": "pulverizador-costal-manual",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#pulverizador-costal-motorizado",
+      "name": "Pulverizador costal motorizado",
+      "fhir:code": "pulverizador-costal-motorizado",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#trator-com-barra",
+      "name": "Trator com barra",
+      "fhir:code": "trator-com-barra",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#cutanea",
+      "name": "Cutânea (pele)",
+      "fhir:code": "cutanea",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#respiratoria",
+      "name": "Respiratória (inalação)",
+      "fhir:code": "respiratoria",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#ocular",
+      "name": "Ocular",
+      "fhir:code": "ocular",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#digestiva-oral",
+      "name": "Digestiva ou oral",
+      "fhir:code": "digestiva-oral",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#multiplas-vias",
+      "name": "Múltiplas vias",
+      "fhir:code": "multiplas-vias",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#proprio-produtor",
+      "name": "O próprio produtor",
+      "fhir:code": "proprio-produtor",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#familiar",
+      "name": "Familiar",
+      "fhir:code": "familiar",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#trabalhador-contratado",
+      "name": "Trabalhador contratado",
+      "fhir:code": "trabalhador-contratado",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#empresa-terceirizada",
+      "name": "Empresa terceirizada",
+      "fhir:code": "empresa-terceirizada",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#outro",
+      "name": "Outro",
+      "fhir:code": "outro",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-1-2",
+      "name": "dias-mes-1-2",
+      "fhir:code": "dias-mes-1-2",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-3-5",
+      "name": "dias-mes-3-5",
+      "fhir:code": "dias-mes-3-5",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-6-10",
+      "name": "dias-mes-6-10",
+      "fhir:code": "dias-mes-6-10",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-dias-aplicacao-mes.jsonld#dias-mes-mais-10",
+      "name": "dias-mes-mais-10",
+      "fhir:code": "dias-mes-mais-10",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-exposicao"
+    }
+  ]
+}

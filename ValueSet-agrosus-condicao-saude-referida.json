@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-condicao-saude-referida",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-condicao-saude-referida</b></p><a name=\"agrosus-condicao-saude-referida\"> </a><a name=\"hcagrosus-condicao-saude-referida\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-agrosus-condicoes-sintomas.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-hipertensao\">condicao-hipertensao</a></td><td style=\"color: #cccccc\">Hipertensão</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-diabetes\">condicao-diabetes</a></td><td style=\"color: #cccccc\">Diabetes</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-doenca-hepatica\">condicao-doenca-hepatica</a></td><td style=\"color: #cccccc\">Doença hepática</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-doenca-renal\">condicao-doenca-renal</a></td><td style=\"color: #cccccc\">Doença renal</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-doenca-neurologica\">condicao-doenca-neurologica</a></td><td style=\"color: #cccccc\">Doença neurológica</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-cancer\">condicao-cancer</a></td><td style=\"color: #cccccc\">Câncer</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-gestante-lactante\">condicao-gestante-lactante</a></td><td style=\"color: #cccccc\">Gestante ou lactante</td></tr><tr><td><a href=\"CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-condicao-nenhuma\">condicao-nenhuma</a></td><td style=\"color: #cccccc\">Nenhuma condição referida</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-condicao-saude-referida",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCondicaoSaudeReferidaVS",
+  "title" : "Condições de saúde referidas",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Condições de saúde preexistentes declaradas pelo trabalhador durante a anamnese.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas",
+      "concept" : [{
+        "code" : "condicao-hipertensao"
+      },
+      {
+        "code" : "condicao-diabetes"
+      },
+      {
+        "code" : "condicao-doenca-hepatica"
+      },
+      {
+        "code" : "condicao-doenca-renal"
+      },
+      {
+        "code" : "condicao-doenca-neurologica"
+      },
+      {
+        "code" : "condicao-cancer"
+      },
+      {
+        "code" : "condicao-gestante-lactante"
+      },
+      {
+        "code" : "condicao-nenhuma"
+      }]
+    }]
+  }
+}

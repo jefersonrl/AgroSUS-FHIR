@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-sintoma-ultimos-30-dias"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-sintoma-ultimos-30-dias</b></p><a name="agrosus-sintoma-ultimos-30-dias"> </a><a name="hcagrosus-sintoma-ultimos-30-dias"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-agrosus-condicoes-sintomas.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-cefaleia-frequente">sintoma-cefaleia-frequente</a></td><td style="color: #cccccc">Dor de cabeça (cefaleia) frequente</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-tontura-vertigem">sintoma-tontura-vertigem</a></td><td style="color: #cccccc">Tontura ou vertigem</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-nauseas">sintoma-nauseas</a></td><td style="color: #cccccc">Náuseas</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-vomitos">sintoma-vomitos</a></td><td style="color: #cccccc">Vômitos</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-diarreia-colicas-abdominais">sintoma-diarreia-colicas-abdominais</a></td><td style="color: #cccccc">Diarreia ou cólicas abdominais</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-tremores-contracoes-involuntarias">sintoma-tremores-contracoes-involuntarias</a></td><td style="color: #cccccc">Tremores ou contrações musculares involuntárias</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-fraqueza-cansaco-extremo">sintoma-fraqueza-cansaco-extremo</a></td><td style="color: #cccccc">Fraqueza ou cansaço extremo</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-diaforese">sintoma-diaforese</a></td><td style="color: #cccccc">Suor excessivo (diaforese)</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-hipersalivacao">sintoma-hipersalivacao</a></td><td style="color: #cccccc">Salivação excessiva (hipersalivação)</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-irritacao-ocular">sintoma-irritacao-ocular</a></td><td style="color: #cccccc">Irritação nos olhos, lacrimejamento ou hiperemia</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-irritacao-dermatite-pele">sintoma-irritacao-dermatite-pele</a></td><td style="color: #cccccc">Irritação ou dermatite na pele</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-dispneia">sintoma-dispneia</a></td><td style="color: #cccccc">Falta de ar ou dispneia</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-tosse-frequente">sintoma-tosse-frequente</a></td><td style="color: #cccccc">Tosse seca ou produtiva frequente</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-palpitacoes">sintoma-palpitacoes</a></td><td style="color: #cccccc">Palpitações ou batimentos irregulares</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-alteracao-visual">sintoma-alteracao-visual</a></td><td style="color: #cccccc">Alteração visual ou visão turva</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-confusao-desorientacao">sintoma-confusao-desorientacao</a></td><td style="color: #cccccc">Confusão mental ou desorientação</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-dificuldade-memoria-concentracao">sintoma-dificuldade-memoria-concentracao</a></td><td style="color: #cccccc">Dificuldade de memória ou concentração</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-disturbios-sono">sintoma-disturbios-sono</a></td><td style="color: #cccccc">Distúrbios do sono, insônia ou hipersonia</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-formigamento-membros">sintoma-formigamento-membros</a></td><td style="color: #cccccc">Formigamento nos membros</td></tr><tr><td><a href="CodeSystem-agrosus-condicoes-sintomas.html#agrosus-condicoes-sintomas-sintoma-irritabilidade-alteracoes-humor">sintoma-irritabilidade-alteracoes-humor</a></td><td style="color: #cccccc">Irritabilidade ou alterações de humor</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-sintoma-ultimos-30-dias"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSSintomaUltimos30DiasVS"/>
+  <title value="Sinais e sintomas dos últimos 30 dias"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Sinais e sintomas investigados pelo formulário AgroSUS, sem significado diagnóstico isolado."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas"/>
+      <concept>
+        <code value="sintoma-cefaleia-frequente"/>
+      </concept>
+      <concept>
+        <code value="sintoma-tontura-vertigem"/>
+      </concept>
+      <concept>
+        <code value="sintoma-nauseas"/>
+      </concept>
+      <concept>
+        <code value="sintoma-vomitos"/>
+      </concept>
+      <concept>
+        <code value="sintoma-diarreia-colicas-abdominais"/>
+      </concept>
+      <concept>
+        <code value="sintoma-tremores-contracoes-involuntarias"/>
+      </concept>
+      <concept>
+        <code value="sintoma-fraqueza-cansaco-extremo"/>
+      </concept>
+      <concept>
+        <code value="sintoma-diaforese"/>
+      </concept>
+      <concept>
+        <code value="sintoma-hipersalivacao"/>
+      </concept>
+      <concept>
+        <code value="sintoma-irritacao-ocular"/>
+      </concept>
+      <concept>
+        <code value="sintoma-irritacao-dermatite-pele"/>
+      </concept>
+      <concept>
+        <code value="sintoma-dispneia"/>
+      </concept>
+      <concept>
+        <code value="sintoma-tosse-frequente"/>
+      </concept>
+      <concept>
+        <code value="sintoma-palpitacoes"/>
+      </concept>
+      <concept>
+        <code value="sintoma-alteracao-visual"/>
+      </concept>
+      <concept>
+        <code value="sintoma-confusao-desorientacao"/>
+      </concept>
+      <concept>
+        <code value="sintoma-dificuldade-memoria-concentracao"/>
+      </concept>
+      <concept>
+        <code value="sintoma-disturbios-sono"/>
+      </concept>
+      <concept>
+        <code value="sintoma-formigamento-membros"/>
+      </concept>
+      <concept>
+        <code value="sintoma-irritabilidade-alteracoes-humor"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

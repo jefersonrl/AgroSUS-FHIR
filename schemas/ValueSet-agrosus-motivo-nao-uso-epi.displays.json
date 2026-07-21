@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-motivo-nao-uso-epi.displays.json",
+  "title": "Motivos de não utilização de EPI Display Values",
+  "description": "Display values for Motivos de não utilização de EPI ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#uso-sempre": {
+      "en": "Sempre"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#uso-as-vezes": {
+      "en": "Às vezes"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#uso-nunca": {
+      "en": "Nunca"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#nao-possui": {
+      "en": "nao-possui"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#armazenamento-local-especific-separado": {
+      "en": "Local específico e separado"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#armazenamento-junto-roupas-pessoais": {
+      "en": "Junto de roupas pessoais"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#armazenamento-deposito-defensivos": {
+      "en": "Depósito de defensivos"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-desconforto": {
+      "en": "motivo-desconforto"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-descuido": {
+      "en": "motivo-descuido"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-considera-desnecessario": {
+      "en": "motivo-considera-desnecessario"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-custo-elevado": {
+      "en": "motivo-custo-elevado"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#outro": {
+      "en": "outro"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-motivo-nao-uso-epi",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.368753"
+}

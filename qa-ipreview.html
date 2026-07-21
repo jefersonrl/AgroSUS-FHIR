@@ -5,10 +5,65 @@
     <link rel="stylesheet" href="fhir.css"/>
   </head>
   <body>
-<div id="smart-ci-build-banner" style="background:#fff3cd;color:#664d03;border-bottom:1px solid #ffda6a;padding:.5rem 1rem;font-size:.9rem;"><p style="margin:0;">CI build for version <strong>0.1.0</strong>. <br/><span  style="font-size:.85em;">Built from commit <a href="https://github.com/jefersonrl/AgroSUS-FHIR/commit/5af3724933665b9000997ac69a0e4ddd255a3456"><code>5af37249</code></a>.</span></p></div>
-
     <h2>Unattributed Code Systems</h2>
-    <ul></ul>
+    <ul>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao</code>        </a>
+      </li>
+      <li>
+        <a href="CarePlan-agrosus-plano-acompanhamento-exemplo.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao</code>        </a>
+      </li>
+      <li>
+        <a href="Questionnaire-agrosus-anamnese.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar</code>        </a>
+      </li>
+      <li>
+        <a href="QuestionnaireResponse-agrosus-anamnese-response-example.html">
+<code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta</code>        </a>
+      </li>
+      <li>
+        <a href="PractitionerRole-agrosus-profissional-tecnico-enfermagem-role-exemplo.html">
+<code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO</code>        </a>
+      </li>
+      <li>
+        <a href="Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html">
+<code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRCID10</code>        </a>
+      </li>
+      <li>
+        <a href="Patient-agrosus-patient-example.html">
+<code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor</code>        </a>
+      </li>
+      <li>
+        <a href="StructureDefinition-agrosus-plano-acompanhamento.html">
+<code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRSubgrupoTabelaSUS</code>        </a>
+      </li>
+    </ul>
     <h2>Copyright Fragment</h2>
     <p>
 This fragment is available on       <a href="index.html">index.html</a>
@@ -19,8 +74,7 @@ This fragment is available on       <a href="index.html">index.html</a>
       <ul>
 
         <li>
-ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
-          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
+Classificação conforme a RDC Anvisa nº 294/2019.          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
              <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
           </div>
           <div style="display: none" id="ipp2_1">
@@ -28,8 +82,241 @@ ISO maintains the copyright on the country codes, and controls its use carefully
             <ul>
 
               <li>
+                <a href="CodeSystem-agrosus-classificacao-toxicologica.html">Classificação Toxicológica de Defensivos Agrícolas</a>
+:                 <a href="Questionnaire-agrosus-anamnese.html">AgroSUSAnamnese</a>
+ and                 <a href="ValueSet-agrosus-classificacao-toxicologica.html">AgroSUSClassificacaoToxicologicaVS</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+Este material contém conteúdo do           <a href="http://loinc.org">LOINC</a>
+. LOINC é copyright &copy; 1995-2020, Regenstrief Institute, Inc. e o Logical Observation Identifiers Names and Codes (LOINC) Committee e está disponível sem custo sob a           <a href="http://loinc.org/license">licença</a>
+. LOINC&reg; é uma marca registada dos Estados Unidos da América do Regenstrief Institute, Inc.          <div onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_2">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-loinc.html">LOINC</a>
+:                 <a href="ValueSet-agrosus-exames-laboratoriais.html">AgroSUSExamesLaboratoriaisVS</a>
+,                 <a href="StructureDefinition-agrosus-laudo-laboratorial.html">AgroSUSLaudoLaboratorial</a>
+                <span onClick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML" id="ips_2">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 9 more</span>                </span>
+                <span style="display: none" id="ips2_2">
+, <a href="StructureDefinition-agrosus-resultado-laboratorial.html">AgroSUSResultadoLaboratorial</a>, <a href="ValueSet-agrosus-resultados-laboratoriais.html">AgroSUSResultadosLaboratoriaisVS</a>, <a href="StructureDefinition-agrosus-solicitacao-exame.html">AgroSUSSolicitacaoExame</a>, <a href="DiagnosticReport-agrosus-laudo-hemograma-exemplo.html">DiagnosticReport/agrosus-laudo-hemograma-exemplo</a>, <a href="Observation-agrosus-resultado-hematocrito-exemplo.html">Observation/agrosus-resultado-hematocrito-exemplo</a>, <a href="Observation-agrosus-resultado-hemoglobina-exemplo.html">Observation/agrosus-resultado-hemoglobina-exemplo</a>, <a href="Observation-agrosus-resultado-leucocitos-exemplo.html">Observation/agrosus-resultado-leucocitos-exemplo</a>, <a href="Observation-agrosus-resultado-plaquetas-exemplo.html">Observation/agrosus-resultado-plaquetas-exemplo</a> and <a href="ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html">ServiceRequest/agrosus-solicitacao-hemograma-exemplo</a>                </span>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+Este material contém conteúdo que é copyright da SNOMED International. Os implementadores destas especificações devem ter a licença apropriada de afiliado da SNOMED CT - para mais informações contacte           <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a>
+ ou           <a href="mailto:info@snomed.org">info@snomed.org</a>
+.          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_3">
+
+            <ul>
+
+              <li>
+                <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">Termos clínicos SNOMED&amp;reg; (SNOMED CT&amp;reg;)</a>
+:                 <a href="ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html">ServiceRequest/agrosus-solicitacao-hemograma-exemplo</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
+          <div onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_4">
+
+            <ul>
+
+              <li>
                 <a href="http://terminology.hl7.org/6.1.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
-:                 <a href="index.html">AgroSUSFHIR</a>
+:                 <a href="StructureDefinition-agrosus-acs.html">AgroSUSACS</a>
+,                 <a href="StructureDefinition-agrosus-acs-role.html">AgroSUSACSRole</a>
+                <span onClick="document.getElementById('ips_4').innerHTML = document.getElementById('ips2_4').innerHTML" id="ips_4">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 68 more</span>                </span>
+                <span style="display: none" id="ips2_4">
+, <a href="Questionnaire-agrosus-anamnese.html">AgroSUSAnamnese</a>, <a href="StructureDefinition-agrosus-anamnese-response.html">AgroSUSAnamneseResponse</a>, <a href="CodeSystem-agrosus-armazenamento-defensivos.html">AgroSUSArmazenamentoDefensivosCS</a>, <a href="ValueSet-agrosus-armazenamento-epi.html">AgroSUSArmazenamentoEPIVS</a>, <a href="ValueSet-agrosus-armazenamento-registros.html">AgroSUSArmazenamentoRegistrosVS</a>, <a href="CodeSystem-agrosus-assistencia-tecnica.html">AgroSUSAssistenciaTecnicaCS</a>, <a href="StructureDefinition-agrosus-atendimento-ubs.html">AgroSUSAtendimentoUBS</a>, <a href="ValueSet-agrosus-atividade-agricola.html">AgroSUSAtividadeAgricolaVS</a>, <a href="StructureDefinition-agrosus-audit-event.html">AgroSUSAuditEvent</a>, <a href="CodeSystem-agrosus-avaliacao-boas-praticas.html">AgroSUSAvaliacaoBoasPraticasCS</a>, <a href="ValueSet-agrosus-avaliacao-boas-praticas.html">AgroSUSAvaliacaoBoasPraticasVS</a>, <a href="CodeSystem-agrosus-capacitacao.html">AgroSUSCapacitacaoCS</a>, <a href="CodeSystem-agrosus-categoria-plano-cuidado.html">AgroSUSCategoriaPlanoCuidadoCS</a>, <a href="ValueSet-agrosus-categoria-plano-cuidado.html">AgroSUSCategoriaPlanoCuidadoVS</a>, <a href="CodeSystem-agrosus-classificacao-toxicologica.html">AgroSUSClassificacaoToxicologicaCS</a>, <a href="ValueSet-agrosus-classificacao-toxicologica.html">AgroSUSClassificacaoToxicologicaVS</a>, <a href="ValueSet-agrosus-condicao-saude-referida.html">AgroSUSCondicaoSaudeReferidaVS</a>, <a href="CodeSystem-agrosus-condicoes-sintomas.html">AgroSUSCondicoesSintomasCS</a>, <a href="CodeSystem-agrosus-destinacao-embalagens.html">AgroSUSDestinacaoEmbalagensCS</a>, <a href="ValueSet-agrosus-destinacao-embalagens-nao-devolvidas.html">AgroSUSDestinacaoEmbalagensNaoDevolvidasVS</a>, <a href="ValueSet-agrosus-dias-aplicacao-mes.html">AgroSUSDiasAplicacaoMesVS</a>, <a href="CodeSystem-agrosus-epi.html">AgroSUSEPICS</a>, <a href="ValueSet-agrosus-equipamento-aplicacao.html">AgroSUSEquipamentoAplicacaoVS</a>, <a href="CodeSystem-agrosus-escolaridade.html">AgroSUSEscolaridadeCS</a>, <a href="ValueSet-agrosus-escolaridade.html">AgroSUSEscolaridadeVS</a>, <a href="ValueSet-agrosus-exames-laboratoriais.html">AgroSUSExamesLaboratoriaisVS</a>, <a href="CodeSystem-agrosus-exposicao.html">AgroSUSExposicaoCS</a>, <a href="CodeSystem-agrosus-exposicao-familiar.html">AgroSUSExposicaoFamiliarCS</a>, <a href="index.html">AgroSUSFHIR</a>, <a href="ValueSet-agrosus-familiares-auxiliam-aplicacao.html">AgroSUSFamiliaresAuxiliamAplicacaoVS</a>, <a href="ValueSet-agrosus-fonte-agua.html">AgroSUSFonteAguaVS</a>, <a href="ValueSet-agrosus-formacao-responsavel-tecnico.html">AgroSUSFormacaoResponsavelTecnicoVS</a>, <a href="ValueSet-agrosus-frequencia-uso-epi.html">AgroSUSFrequenciaUsoEPIVS</a>, <a href="CodeSystem-agrosus-historico-intoxicacao.html">AgroSUSHistoricoIntoxicacaoCS</a>, <a href="ValueSet-agrosus-horas-aplicacao-dia.html">AgroSUSHorasAplicacaoDiaVS</a>, <a href="ValueSet-agrosus-instituicao-assistencia.html">AgroSUSInstituicaoAssistenciaVS</a>, <a href="StructureDefinition-agrosus-intoxicacao-pesticida.html">AgroSUSIntoxicacaoPesticida</a>, <a href="ValueSet-agrosus-intoxicacao-pesticida.html">AgroSUSIntoxicacaoPesticidaVS</a>, <a href="StructureDefinition-agrosus-laboratorio.html">AgroSUSLaboratorio</a>, <a href="StructureDefinition-agrosus-laudo-laboratorial.html">AgroSUSLaudoLaboratorial</a>, <a href="ValueSet-agrosus-local-armazenamento-defensivos.html">AgroSUSLocalArmazenamentoDefensivosVS</a>, <a href="ValueSet-agrosus-mes-maior-intensidade.html">AgroSUSMesMaiorIntensidadeVS</a>, <a href="ValueSet-agrosus-motivo-nao-uso-epi.html">AgroSUSMotivoNaoUsoEPIVS</a>, <a href="ValueSet-agrosus-numero-intoxicacoes-agudas.html">AgroSUSNumeroIntoxicacoesAgudasVS</a>, <a href="ValueSet-agrosus-ocupacao-acs.html">AgroSUSOcupacaoACSVS</a>, <a href="ValueSet-agrosus-ocupacao-profissional-ubs.html">AgroSUSOcupacaoProfissionalUBSVS</a>, <a href="StructureDefinition-agrosus-patient.html">AgroSUSPatient</a>, <a href="StructureDefinition-agrosus-plano-acompanhamento.html">AgroSUSPlanoAcompanhamento</a>, <a href="StructureDefinition-agrosus-profissional-ubs.html">AgroSUSProfissionalUBS</a>, <a href="StructureDefinition-agrosus-profissional-ubs-role.html">AgroSUSProfissionalUBSRole</a>, <a href="CodeSystem-agrosus-propriedade.html">AgroSUSPropriedadeCS</a>, <a href="StructureDefinition-agrosus-provenance.html">AgroSUSProvenance</a>, <a href="CodeSystem-agrosus-rastreabilidade.html">AgroSUSRastreabilidadeCS</a>, <a href="ValueSet-agrosus-responsavel-aplicacao.html">AgroSUSResponsavelAplicacaoVS</a>, <a href="StructureDefinition-agrosus-resultado-laboratorial.html">AgroSUSResultadoLaboratorial</a>, <a href="ValueSet-agrosus-resultados-laboratoriais.html">AgroSUSResultadosLaboratoriaisVS</a>, <a href="CapabilityStatement-agrosus-server-capabilities.html">AgroSUSServerCapabilities</a>, <a href="ValueSet-agrosus-sintoma-ultimos-30-dias.html">AgroSUSSintomaUltimos30DiasVS</a>, <a href="ValueSet-agrosus-situacao-posse.html">AgroSUSSituacaoPosseVS</a>, <a href="StructureDefinition-agrosus-solicitacao-exame.html">AgroSUSSolicitacaoExame</a>, <a href="ValueSet-agrosus-temas-capacitacao.html">AgroSUSTemasCapacitacaoVS</a>, <a href="CodeSystem-agrosus-tipo-coleta.html">AgroSUSTipoColetaCS</a>, <a href="ValueSet-agrosus-tipo-coleta.html">AgroSUSTipoColetaVS</a>, <a href="ValueSet-agrosus-tipo-producao.html">AgroSUSTipoProducaoVS</a>, <a href="StructureDefinition-agrosus-transacao-visita.html">AgroSUSTransacaoVisita</a>, <a href="StructureDefinition-agrosus-ubs.html">AgroSUSUBS</a>, <a href="ValueSet-agrosus-via-exposicao.html">AgroSUSViaExposicaoVS</a> and <a href="StructureDefinition-agrosus-visita-acs.html">AgroSUSVisitaACS</a>                </span>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.           <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a>
+          <div onClick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}" id="ipp_5" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_5">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+:                 <a href="Observation-agrosus-resultado-hematocrito-exemplo.html">Observation/agrosus-resultado-hematocrito-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-hemoglobina-exemplo.html">Observation/agrosus-resultado-hemoglobina-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-leucocitos-exemplo.html">Observation/agrosus-resultado-leucocitos-exemplo</a>
+ and                 <a href="Observation-agrosus-resultado-plaquetas-exemplo.html">Observation/agrosus-resultado-plaquetas-exemplo</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright &copy; 2011 by the National Electrical Manufacturers Association.          <div onClick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}" id="ipp_6" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_6">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-audit-event-type.html">Audit Event ID</a>
+:                 <a href="AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo.html">AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
+          <div onClick="if (document.getElementById('ipp2_7').innerHTML != '') {document.getElementById('ipp_7').innerHTML = document.getElementById('ipp2_7').innerHTML; document.getElementById('ipp2_7').innerHTML = ''}" id="ipp_7" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_7">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-condition-category.html">Condition Category Codes</a>
+:                 <a href="Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html">Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>
+:                 <a href="Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html">Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>
+:                 <a href="Condition-agrosus-intoxicacao-pesticida-suspeita-exemplo.html">Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-diagnosis-role.html">Diagnosis Role</a>
+:                 <a href="Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.html">Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>
+:                 <a href="Observation-agrosus-resultado-hematocrito-exemplo.html">Observation/agrosus-resultado-hematocrito-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-hemoglobina-exemplo.html">Observation/agrosus-resultado-hemoglobina-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-leucocitos-exemplo.html">Observation/agrosus-resultado-leucocitos-exemplo</a>
+ and                 <a href="Observation-agrosus-resultado-plaquetas-exemplo.html">Observation/agrosus-resultado-plaquetas-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-provenance-participant-type.html">Provenance participant type</a>
+:                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Provenance-agrosus-provenance-anamnese-exemplo.html">Provenance/agrosus-provenance-anamnese-exemplo</a>
+ and                 <a href="Provenance-agrosus-provenance-plano-acompanhamento-exemplo.html">Provenance/agrosus-provenance-plano-acompanhamento-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>
+:                 <a href="DiagnosticReport-agrosus-laudo-hemograma-exemplo.html">DiagnosticReport/agrosus-laudo-hemograma-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html">identifierType</a>
+:                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Organization-agrosus-laboratorio-exemplo.html">Laboratório Municipal de Referência — Exemplo AgroSUS</a>
+                <span onClick="document.getElementById('ips_14').innerHTML = document.getElementById('ips2_14').innerHTML" id="ips_14">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 6 more</span>                </span>
+                <span style="display: none" id="ips2_14">
+, <a href="Patient-agrosus-patient-example.html">Patient/agrosus-patient-example</a>, <a href="Practitioner-agrosus-acs-exemplo.html">Practitioner/agrosus-acs-exemplo</a>, <a href="Practitioner-agrosus-profissional-enfermeiro-exemplo.html">Practitioner/agrosus-profissional-enfermeiro-exemplo</a>, <a href="Practitioner-agrosus-profissional-medico-exemplo.html">Practitioner/agrosus-profissional-medico-exemplo</a>, <a href="Practitioner-agrosus-profissional-tecnico-enfermagem-exemplo.html">Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo</a> and <a href="Organization-agrosus-ubs-exemplo.html">UBS Jardim Esperança — Exemplo AgroSUS</a>                </span>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html">ActCode</a>
+:                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.html">Encounter/agrosus-atendimento-ubs-avaliacao-exemplo</a>
+,                 <a href="Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.html">Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo</a>
+ and                 <a href="Encounter-agrosus-visita-acs-exemplo.html">Encounter/agrosus-visita-acs-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActPriority.html">ActPriority</a>
+:                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.html">Encounter/agrosus-atendimento-ubs-avaliacao-exemplo</a>
+,                 <a href="Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.html">Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo</a>
+ and                 <a href="Encounter-agrosus-visita-acs-exemplo.html">Encounter/agrosus-visita-acs-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActReason.html">ActReason</a>
+:                 <a href="AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo.html">AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo</a>
+,                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Provenance-agrosus-provenance-anamnese-exemplo.html">Provenance/agrosus-provenance-anamnese-exemplo</a>
+ and                 <a href="Provenance-agrosus-provenance-plano-acompanhamento-exemplo.html">Provenance/agrosus-provenance-plano-acompanhamento-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-DataOperation.html">DataOperation</a>
+:                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Provenance-agrosus-provenance-anamnese-exemplo.html">Provenance/agrosus-provenance-anamnese-exemplo</a>
+ and                 <a href="Provenance-agrosus-provenance-plano-acompanhamento-exemplo.html">Provenance/agrosus-provenance-plano-acompanhamento-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>
+:                 <a href="Observation-agrosus-resultado-hematocrito-exemplo.html">Observation/agrosus-resultado-hematocrito-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-hemoglobina-exemplo.html">Observation/agrosus-resultado-hemoglobina-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-leucocitos-exemplo.html">Observation/agrosus-resultado-leucocitos-exemplo</a>
+ and                 <a href="Observation-agrosus-resultado-plaquetas-exemplo.html">Observation/agrosus-resultado-plaquetas-exemplo</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>
+:                 <a href="Bundle-agrosus-transacao-visita-exemplo.html">Bundle/agrosus-transacao-visita-exemplo</a>
+,                 <a href="Encounter-agrosus-atendimento-ubs-avaliacao-exemplo.html">Encounter/agrosus-atendimento-ubs-avaliacao-exemplo</a>
+,                 <a href="Encounter-agrosus-atendimento-ubs-revisao-exames-exemplo.html">Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo</a>
+ and                 <a href="Encounter-agrosus-visita-acs-exemplo.html">Encounter/agrosus-visita-acs-exemplo</a>
               </li>
 
 
@@ -48,20 +335,6 @@ ISO maintains the copyright on the country codes, and controls its use carefully
     <ul>
       <li>
 
-    IG &copy; 2026+ Fatec Ferraz de Vasconcelos.  Package io.github.jefersonrl.agrosus#0.1.0 based on FHIR 4.0.1. Generated 2026-07-20
-    
-    
-                Links: Table of Contents |
-                 QA Report
-                 
-                
-| Version History | License
-    
-   (        <a href="dak-api.html">src</a>
-)
-      </li>
-      <li>
-
           hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide  &reg;&copy; HL7 |
              
                 CC0
@@ -70,7 +343,7 @@ ISO maintains the copyright on the country codes, and controls its use carefully
       </li>
       <li>
 
-    IG &copy; 2026+ Fatec Ferraz de Vasconcelos.  Package io.github.jefersonrl.agrosus#0.1.0 based on FHIR 4.0.1. Generated 2026-07-20
+    IG &copy; 2026+ Fatec Ferraz de Vasconcelos.  Package io.github.jefersonrl.agrosus#0.1.0 based on FHIR 4.0.1. Generated 2026-07-21
     
     
                 Links: Table of Contents |
@@ -91,7 +364,69 @@ Copyright(c) 2022 World Health Organization Some rights reserved. (        <a hr
 )
       </li>
       <li>
+Este material contém conteúdo do LOINC. LOINC é copyright &copy; 1995-2020, Regenstrief Institute, Inc. e o Logical Observation Identifiers Names and Codes (LOINC) Committee e está disponível sem custo sob a licença. LOINC&reg; é uma marca registada dos Estados Unidos da América do Regenstrief Institute, Inc. Show Usage
+
+
+* LOINC: AgroSUSExamesLaboratoriaisVS, AgroSUSLaudoLaboratorial... Show 9 more, AgroSUSResultadoLaboratorial, AgroSUSResultadosLaboratoriaisVS, AgroSUSSolicitacaoExame, DiagnosticReport/agrosus-laudo-hemograma-exemplo, Observation/agrosus-resultado-hematocrito-exemplo, Observation/agrosus-resultado-hemoglobina-exemplo, Observation/agrosus-resultado-leucocitos-exemplo, Observation/agrosus-resultado-plaquetas-exemplo and ServiceRequest/agrosus-solicitacao-hemograma-exemplo
+
+
+
+
+ (        <a href="index.html">src</a>
+)
+      </li>
+      <li>
 Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de https://github.com/jefersonrl/AgroSUS-FHIR/tree/main e muda regularmente. Veja o Diretório de versões publicadas (        <a href="trust_domain.html">src</a>
+)
+      </li>
+      <li>
+These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright &copy; 2011 by the National Electrical Manufacturers Association. Show Usage
+
+
+* Audit Event ID: AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo
+
+
+
+
+ (        <a href="index.html">src</a>
+)
+      </li>
+      <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html Show Usage
+
+
+* Condition Category Codes: Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo
+
+* Condition Clinical Status Codes: Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo
+
+* ConditionVerificationStatus: Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo
+
+* Diagnosis Role: Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo
+
+* Observation Category Codes: Observation/agrosus-resultado-hematocrito-exemplo, Observation/agrosus-resultado-hemoglobina-exemplo, Observation/agrosus-resultado-leucocitos-exemplo and Observation/agrosus-resultado-plaquetas-exemplo
+
+* Provenance participant type: Bundle/agrosus-transacao-visita-exemplo, Provenance/agrosus-provenance-anamnese-exemplo and Provenance/agrosus-provenance-plano-acompanhamento-exemplo
+
+* diagnosticServiceSectionId: DiagnosticReport/agrosus-laudo-hemograma-exemplo
+
+* identifierType: Bundle/agrosus-transacao-visita-exemplo, Laboratório Municipal de Referência — Exemplo AgroSUS... Show 6 more, Patient/agrosus-patient-example, Practitioner/agrosus-acs-exemplo, Practitioner/agrosus-profissional-enfermeiro-exemplo, Practitioner/agrosus-profissional-medico-exemplo, Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo and UBS Jardim Esperança — Exemplo AgroSUS
+
+* ActCode: Bundle/agrosus-transacao-visita-exemplo, Encounter/agrosus-atendimento-ubs-avaliacao-exemplo, Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo and Encounter/agrosus-visita-acs-exemplo
+
+* ActPriority: Bundle/agrosus-transacao-visita-exemplo, Encounter/agrosus-atendimento-ubs-avaliacao-exemplo, Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo and Encounter/agrosus-visita-acs-exemplo
+
+* ActReason: AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo, Bundle/agrosus-transacao-visita-exemplo, Provenance/agrosus-provenance-anamnese-exemplo and Provenance/agrosus-provenance-plano-acompanhamento-exemplo
+
+* DataOperation: Bundle/agrosus-transacao-visita-exemplo, Provenance/agrosus-provenance-anamnese-exemplo and Provenance/agrosus-provenance-plano-acompanhamento-exemplo
+
+* ObservationInterpretation: Observation/agrosus-resultado-hematocrito-exemplo, Observation/agrosus-resultado-hemoglobina-exemplo, Observation/agrosus-resultado-leucocitos-exemplo and Observation/agrosus-resultado-plaquetas-exemplo
+
+* ParticipationType: Bundle/agrosus-transacao-visita-exemplo, Encounter/agrosus-atendimento-ubs-avaliacao-exemplo, Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo and Encounter/agrosus-visita-acs-exemplo
+
+
+
+
+ (        <a href="index.html">src</a>
 )
       </li>
     </ul>
@@ -110,14 +445,77 @@ Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. E
       </tr>
       <tr>
         <td>
-          <a href="adapting.html">web</a>
+          <a href="CarePlan-agrosus-plano-acompanhamento-exemplo.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf">www.gov.br</a>
+        </td>
+        <td>
+          <b>instantiatesUri</b>
+:           <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf">https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-agrosus-patient-example.html">web</a>
+        </td>
+        <td>
+          <a href="tel:+551190000-0000">tel:+551190000-0000</a>
+        </td>
+        <td>
+          <a href="tel:+551190000-0000">+55 11 90000-0000</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo.change.history.html">web</a>
         </td>
         <td>
           <a href="https://github.com/jefersonrl/AgroSUS-FHIR/tree/main">github.com</a>
         </td>
         <td>
 Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de           <a href="https://github.com/jefersonrl/AgroSUS-FHIR/tree/main">https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a>
- e muda regularmente. Veja o           <a href="history.html">Diretório de versões publicadas</a>
+ e muda regularmente. Veja o           <a href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html">Diretório de versões publicadas</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="AuditEvent-agrosus-auditoria-consulta-dashboard-exemplo.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.fatecferraz.edu.br">www.fatecferraz.edu.br</a>
+        </td>
+        <td>
+
+    IG &copy; 2026+           <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>
+.  Package io.github.jefersonrl.agrosus#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jul 21, 2026 03:04+0000">2026-07-21</span>
+
+              <br/>
+
+              <span style="color: var(--footer-highlight-text-color)">
+
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+    
+          </span>
+
+  
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-agrosus-transacao-visita-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://en.wikipedia.org/wiki/HATEOAS">en.wikipedia.org</a>
+        </td>
+        <td>
+Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g.           <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>
+).
         </td>
       </tr>
       <tr>
@@ -144,62 +542,6 @@ For more on layers of knowledge representation and how they are used in WHO’s 
 For more on layers of knowledge representation and how they are used in WHO’s SMART Guidelines approach, see           <a href="https://www.who.int/teams/digital-health-and-innovation/smart-guidelines">WHO’s SMART Guidelines</a>
  and this           <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00038-8/fulltext">Lancet article</a>
 .
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="adapting.html">web</a>
-        </td>
-        <td>
-          <a href="https://www.fatecferraz.edu.br">www.fatecferraz.edu.br</a>
-        </td>
-        <td>
-
-    IG &copy; 2026+           <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>
-.  Package io.github.jefersonrl.agrosus#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Jul 20, 2026 19:33+0000">2026-07-20</span>
-
-              <br/>
-
-              <span style="color: var(--footer-highlight-text-color)">
-
-                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-| <a style="color: #81BEF7" href="history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-    
-          </span>
-
-  
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="dak-api.html">web</a>
-        </td>
-        <td>
-          <a href="https://www.fatecferraz.edu.br">www.fatecferraz.edu.br</a>
-        </td>
-        <td>
-
-    IG &copy; 2026+           <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>
-.  Package io.github.jefersonrl.agrosus#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
-. Generated           <span title="Mon, Jul 20, 2026 19:33+0000">2026-07-20</span>
-
-              <br/>
-
-              <span style="color: var(--footer-highlight-text-color)">
-
-                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-| <a style="color: #81BEF7" href="history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-    
-          </span>
-
-  
         </td>
       </tr>
       <tr>
@@ -324,16 +666,52 @@ The guide is part of the           <a href="https://www.who.int/teams/digital-he
         </td>
         <td>
 ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page:           <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a>
-          <div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated">
+          <div onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4" data-fhir="generated">
              <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
           </div>
-          <div style="display: none" id="ipp2_1">
+          <div style="display: none" id="ipp2_4">
 
             <ul>
 
               <li>
                 <a href="http://terminology.hl7.org/6.1.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
-:                 <a href="index.html">AgroSUSFHIR</a>
+:                 <a href="StructureDefinition-agrosus-acs.html">AgroSUSACS</a>
+,                 <a href="StructureDefinition-agrosus-acs-role.html">AgroSUSACSRole</a>
+                <span onclick="document.getElementById('ips_4').innerHTML = document.getElementById('ips2_4').innerHTML" id="ips_4">
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 68 more</span>                </span>
+                <span style="display: none" id="ips2_4">
+, <a href="Questionnaire-agrosus-anamnese.html">AgroSUSAnamnese</a>, <a href="StructureDefinition-agrosus-anamnese-response.html">AgroSUSAnamneseResponse</a>, <a href="CodeSystem-agrosus-armazenamento-defensivos.html">AgroSUSArmazenamentoDefensivosCS</a>, <a href="ValueSet-agrosus-armazenamento-epi.html">AgroSUSArmazenamentoEPIVS</a>, <a href="ValueSet-agrosus-armazenamento-registros.html">AgroSUSArmazenamentoRegistrosVS</a>, <a href="CodeSystem-agrosus-assistencia-tecnica.html">AgroSUSAssistenciaTecnicaCS</a>, <a href="StructureDefinition-agrosus-atendimento-ubs.html">AgroSUSAtendimentoUBS</a>, <a href="ValueSet-agrosus-atividade-agricola.html">AgroSUSAtividadeAgricolaVS</a>, <a href="StructureDefinition-agrosus-audit-event.html">AgroSUSAuditEvent</a>, <a href="CodeSystem-agrosus-avaliacao-boas-praticas.html">AgroSUSAvaliacaoBoasPraticasCS</a>, <a href="ValueSet-agrosus-avaliacao-boas-praticas.html">AgroSUSAvaliacaoBoasPraticasVS</a>, <a href="CodeSystem-agrosus-capacitacao.html">AgroSUSCapacitacaoCS</a>, <a href="CodeSystem-agrosus-categoria-plano-cuidado.html">AgroSUSCategoriaPlanoCuidadoCS</a>, <a href="ValueSet-agrosus-categoria-plano-cuidado.html">AgroSUSCategoriaPlanoCuidadoVS</a>, <a href="CodeSystem-agrosus-classificacao-toxicologica.html">AgroSUSClassificacaoToxicologicaCS</a>, <a href="ValueSet-agrosus-classificacao-toxicologica.html">AgroSUSClassificacaoToxicologicaVS</a>, <a href="ValueSet-agrosus-condicao-saude-referida.html">AgroSUSCondicaoSaudeReferidaVS</a>, <a href="CodeSystem-agrosus-condicoes-sintomas.html">AgroSUSCondicoesSintomasCS</a>, <a href="CodeSystem-agrosus-destinacao-embalagens.html">AgroSUSDestinacaoEmbalagensCS</a>, <a href="ValueSet-agrosus-destinacao-embalagens-nao-devolvidas.html">AgroSUSDestinacaoEmbalagensNaoDevolvidasVS</a>, <a href="ValueSet-agrosus-dias-aplicacao-mes.html">AgroSUSDiasAplicacaoMesVS</a>, <a href="CodeSystem-agrosus-epi.html">AgroSUSEPICS</a>, <a href="ValueSet-agrosus-equipamento-aplicacao.html">AgroSUSEquipamentoAplicacaoVS</a>, <a href="CodeSystem-agrosus-escolaridade.html">AgroSUSEscolaridadeCS</a>, <a href="ValueSet-agrosus-escolaridade.html">AgroSUSEscolaridadeVS</a>, <a href="ValueSet-agrosus-exames-laboratoriais.html">AgroSUSExamesLaboratoriaisVS</a>, <a href="CodeSystem-agrosus-exposicao.html">AgroSUSExposicaoCS</a>, <a href="CodeSystem-agrosus-exposicao-familiar.html">AgroSUSExposicaoFamiliarCS</a>, <a href="index.html">AgroSUSFHIR</a>, <a href="ValueSet-agrosus-familiares-auxiliam-aplicacao.html">AgroSUSFamiliaresAuxiliamAplicacaoVS</a>, <a href="ValueSet-agrosus-fonte-agua.html">AgroSUSFonteAguaVS</a>, <a href="ValueSet-agrosus-formacao-responsavel-tecnico.html">AgroSUSFormacaoResponsavelTecnicoVS</a>, <a href="ValueSet-agrosus-frequencia-uso-epi.html">AgroSUSFrequenciaUsoEPIVS</a>, <a href="CodeSystem-agrosus-historico-intoxicacao.html">AgroSUSHistoricoIntoxicacaoCS</a>, <a href="ValueSet-agrosus-horas-aplicacao-dia.html">AgroSUSHorasAplicacaoDiaVS</a>, <a href="ValueSet-agrosus-instituicao-assistencia.html">AgroSUSInstituicaoAssistenciaVS</a>, <a href="StructureDefinition-agrosus-intoxicacao-pesticida.html">AgroSUSIntoxicacaoPesticida</a>, <a href="ValueSet-agrosus-intoxicacao-pesticida.html">AgroSUSIntoxicacaoPesticidaVS</a>, <a href="StructureDefinition-agrosus-laboratorio.html">AgroSUSLaboratorio</a>, <a href="StructureDefinition-agrosus-laudo-laboratorial.html">AgroSUSLaudoLaboratorial</a>, <a href="ValueSet-agrosus-local-armazenamento-defensivos.html">AgroSUSLocalArmazenamentoDefensivosVS</a>, <a href="ValueSet-agrosus-mes-maior-intensidade.html">AgroSUSMesMaiorIntensidadeVS</a>, <a href="ValueSet-agrosus-motivo-nao-uso-epi.html">AgroSUSMotivoNaoUsoEPIVS</a>, <a href="ValueSet-agrosus-numero-intoxicacoes-agudas.html">AgroSUSNumeroIntoxicacoesAgudasVS</a>, <a href="ValueSet-agrosus-ocupacao-acs.html">AgroSUSOcupacaoACSVS</a>, <a href="ValueSet-agrosus-ocupacao-profissional-ubs.html">AgroSUSOcupacaoProfissionalUBSVS</a>, <a href="StructureDefinition-agrosus-patient.html">AgroSUSPatient</a>, <a href="StructureDefinition-agrosus-plano-acompanhamento.html">AgroSUSPlanoAcompanhamento</a>, <a href="StructureDefinition-agrosus-profissional-ubs.html">AgroSUSProfissionalUBS</a>, <a href="StructureDefinition-agrosus-profissional-ubs-role.html">AgroSUSProfissionalUBSRole</a>, <a href="CodeSystem-agrosus-propriedade.html">AgroSUSPropriedadeCS</a>, <a href="StructureDefinition-agrosus-provenance.html">AgroSUSProvenance</a>, <a href="CodeSystem-agrosus-rastreabilidade.html">AgroSUSRastreabilidadeCS</a>, <a href="ValueSet-agrosus-responsavel-aplicacao.html">AgroSUSResponsavelAplicacaoVS</a>, <a href="StructureDefinition-agrosus-resultado-laboratorial.html">AgroSUSResultadoLaboratorial</a>, <a href="ValueSet-agrosus-resultados-laboratoriais.html">AgroSUSResultadosLaboratoriaisVS</a>, <a href="CapabilityStatement-agrosus-server-capabilities.html">AgroSUSServerCapabilities</a>, <a href="ValueSet-agrosus-sintoma-ultimos-30-dias.html">AgroSUSSintomaUltimos30DiasVS</a>, <a href="ValueSet-agrosus-situacao-posse.html">AgroSUSSituacaoPosseVS</a>, <a href="StructureDefinition-agrosus-solicitacao-exame.html">AgroSUSSolicitacaoExame</a>, <a href="ValueSet-agrosus-temas-capacitacao.html">AgroSUSTemasCapacitacaoVS</a>, <a href="CodeSystem-agrosus-tipo-coleta.html">AgroSUSTipoColetaCS</a>, <a href="ValueSet-agrosus-tipo-coleta.html">AgroSUSTipoColetaVS</a>, <a href="ValueSet-agrosus-tipo-producao.html">AgroSUSTipoProducaoVS</a>, <a href="StructureDefinition-agrosus-transacao-visita.html">AgroSUSTransacaoVisita</a>, <a href="StructureDefinition-agrosus-ubs.html">AgroSUSUBS</a>, <a href="ValueSet-agrosus-via-exposicao.html">AgroSUSViaExposicaoVS</a> and <a href="StructureDefinition-agrosus-visita-acs.html">AgroSUSVisitaACS</a>                </span>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="https://ucum.org/trac/wiki/TermsOfUse">ucum.org</a>
+        </td>
+        <td>
+The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.           <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a>
+          <div onclick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}" id="ipp_5" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_5">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.1.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+:                 <a href="Observation-agrosus-resultado-hematocrito-exemplo.html">Observation/agrosus-resultado-hematocrito-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-hemoglobina-exemplo.html">Observation/agrosus-resultado-hemoglobina-exemplo</a>
+,                 <a href="Observation-agrosus-resultado-leucocitos-exemplo.html">Observation/agrosus-resultado-leucocitos-exemplo</a>
+ and                 <a href="Observation-agrosus-resultado-plaquetas-exemplo.html">Observation/agrosus-resultado-plaquetas-exemplo</a>
               </li>
 
 
@@ -622,6 +1000,13 @@ See the           <a href="https://worldhealthorganization.github.io/ddcc/transa
       </tr>
     </table>
     <h2>Internal Images</h2>
-    <table class="grid"></table>
+    <table class="grid">
+      <tr>
+        <td>
+tree-filter.png          <br/>
+          <img src="tree-filter.png" alt="tree-filter.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

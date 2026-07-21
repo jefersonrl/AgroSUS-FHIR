@@ -1,0 +1,74 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-assistencia-tecnica",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-assistencia-tecnica</b></p><a name=\"agrosus-assistencia-tecnica\"> </a><a name=\"hcagrosus-assistencia-tecnica\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">instituicao-cati<a name=\"agrosus-assistencia-tecnica-instituicao-cati\"> </a></td><td>CATI</td></tr><tr><td style=\"white-space:nowrap\">instituicao-senar<a name=\"agrosus-assistencia-tecnica-instituicao-senar\"> </a></td><td>SENAR</td></tr><tr><td style=\"white-space:nowrap\">instituicao-cooperativa<a name=\"agrosus-assistencia-tecnica-instituicao-cooperativa\"> </a></td><td>Cooperativa</td></tr><tr><td style=\"white-space:nowrap\">instituicao-empresa-privada<a name=\"agrosus-assistencia-tecnica-instituicao-empresa-privada\"> </a></td><td>Empresa privada</td></tr><tr><td style=\"white-space:nowrap\">instituicao-consultor-autonomo<a name=\"agrosus-assistencia-tecnica-instituicao-consultor-autonomo\"> </a></td><td>Consultor autônomo</td></tr><tr><td style=\"white-space:nowrap\">instituicao-prefeitura<a name=\"agrosus-assistencia-tecnica-instituicao-prefeitura\"> </a></td><td>Prefeitura</td></tr><tr><td style=\"white-space:nowrap\">instituicao-outra<a name=\"agrosus-assistencia-tecnica-instituicao-outra\"> </a></td><td>Outra instituição</td></tr><tr><td style=\"white-space:nowrap\">formacao-engenheiro-agronomo<a name=\"agrosus-assistencia-tecnica-formacao-engenheiro-agronomo\"> </a></td><td>Engenheiro agrônomo</td></tr><tr><td style=\"white-space:nowrap\">formacao-tecnico-agricola<a name=\"agrosus-assistencia-tecnica-formacao-tecnico-agricola\"> </a></td><td>Técnico agrícola</td></tr><tr><td style=\"white-space:nowrap\">formacao-outro-habilitado<a name=\"agrosus-assistencia-tecnica-formacao-outro-habilitado\"> </a></td><td>Outro profissional habilitado</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAssistenciaTecnicaCS",
+  "title" : "Assistência Técnica AgroSUS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Códigos relacionados à assistência e à responsabilidade técnica na produção rural.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "instituicao-cati",
+    "display" : "CATI"
+  },
+  {
+    "code" : "instituicao-senar",
+    "display" : "SENAR"
+  },
+  {
+    "code" : "instituicao-cooperativa",
+    "display" : "Cooperativa"
+  },
+  {
+    "code" : "instituicao-empresa-privada",
+    "display" : "Empresa privada"
+  },
+  {
+    "code" : "instituicao-consultor-autonomo",
+    "display" : "Consultor autônomo"
+  },
+  {
+    "code" : "instituicao-prefeitura",
+    "display" : "Prefeitura"
+  },
+  {
+    "code" : "instituicao-outra",
+    "display" : "Outra instituição"
+  },
+  {
+    "code" : "formacao-engenheiro-agronomo",
+    "display" : "Engenheiro agrônomo"
+  },
+  {
+    "code" : "formacao-tecnico-agricola",
+    "display" : "Técnico agrícola"
+  },
+  {
+    "code" : "formacao-outro-habilitado",
+    "display" : "Outro profissional habilitado"
+  }]
+}

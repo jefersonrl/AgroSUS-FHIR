@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-dias-aplicacao-mes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-dias-aplicacao-mes</b></p><a name="agrosus-dias-aplicacao-mes"> </a><a name="hcagrosus-dias-aplicacao-mes"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-agrosus-exposicao.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-dias-mes-1-2">dias-mes-1-2</a></td><td style="color: #cccccc">1–2 dias por mês</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-dias-mes-3-5">dias-mes-3-5</a></td><td style="color: #cccccc">3–5 dias por mês</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-dias-mes-6-10">dias-mes-6-10</a></td><td style="color: #cccccc">6–10 dias por mês</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-dias-mes-mais-10">dias-mes-mais-10</a></td><td style="color: #cccccc">Mais de 10 dias por mês</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-dias-aplicacao-mes"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSDiasAplicacaoMesVS"/>
+  <title value="Dias de aplicação por mês"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Faixas de frequência mensal de aplicação de defensivos agrícolas."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao"/>
+      <concept>
+        <code value="dias-mes-1-2"/>
+      </concept>
+      <concept>
+        <code value="dias-mes-3-5"/>
+      </concept>
+      <concept>
+        <code value="dias-mes-6-10"/>
+      </concept>
+      <concept>
+        <code value="dias-mes-mais-10"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,130 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-propriedade",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-propriedade</b></p><a name=\"agrosus-propriedade\"> </a><a name=\"hcagrosus-propriedade\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">posse-proprietario<a name=\"agrosus-propriedade-posse-proprietario\"> </a></td><td>Proprietário</td></tr><tr><td style=\"white-space:nowrap\">posse-arrendatario<a name=\"agrosus-propriedade-posse-arrendatario\"> </a></td><td>Arrendatário</td></tr><tr><td style=\"white-space:nowrap\">posse-meeiro<a name=\"agrosus-propriedade-posse-meeiro\"> </a></td><td>Meeiro</td></tr><tr><td style=\"white-space:nowrap\">posse-assentado<a name=\"agrosus-propriedade-posse-assentado\"> </a></td><td>Assentado</td></tr><tr><td style=\"white-space:nowrap\">posse-cedida<a name=\"agrosus-propriedade-posse-cedida\"> </a></td><td>Terra cedida</td></tr><tr><td style=\"white-space:nowrap\">posse-outra<a name=\"agrosus-propriedade-posse-outra\"> </a></td><td>Outra situação de posse</td></tr><tr><td style=\"white-space:nowrap\">atividade-lavoura-temporaria<a name=\"agrosus-propriedade-atividade-lavoura-temporaria\"> </a></td><td>Lavoura temporária</td></tr><tr><td style=\"white-space:nowrap\">atividade-lavoura-permanente<a name=\"agrosus-propriedade-atividade-lavoura-permanente\"> </a></td><td>Lavoura permanente</td></tr><tr><td style=\"white-space:nowrap\">atividade-horticultura<a name=\"agrosus-propriedade-atividade-horticultura\"> </a></td><td>Horticultura</td></tr><tr><td style=\"white-space:nowrap\">atividade-fruticultura<a name=\"agrosus-propriedade-atividade-fruticultura\"> </a></td><td>Fruticultura</td></tr><tr><td style=\"white-space:nowrap\">atividade-pecuaria<a name=\"agrosus-propriedade-atividade-pecuaria\"> </a></td><td>Pecuária</td></tr><tr><td style=\"white-space:nowrap\">atividade-outra<a name=\"agrosus-propriedade-atividade-outra\"> </a></td><td>Outra atividade agrícola</td></tr><tr><td style=\"white-space:nowrap\">producao-convencional<a name=\"agrosus-propriedade-producao-convencional\"> </a></td><td>Convencional</td></tr><tr><td style=\"white-space:nowrap\">producao-organica<a name=\"agrosus-propriedade-producao-organica\"> </a></td><td>Orgânica</td></tr><tr><td style=\"white-space:nowrap\">producao-agroecologica<a name=\"agrosus-propriedade-producao-agroecologica\"> </a></td><td>Agroecológica</td></tr><tr><td style=\"white-space:nowrap\">producao-integrada<a name=\"agrosus-propriedade-producao-integrada\"> </a></td><td>Integrada</td></tr><tr><td style=\"white-space:nowrap\">producao-outra<a name=\"agrosus-propriedade-producao-outra\"> </a></td><td>Outro tipo de produção</td></tr><tr><td style=\"white-space:nowrap\">agua-rede-publica<a name=\"agrosus-propriedade-agua-rede-publica\"> </a></td><td>Rede pública</td></tr><tr><td style=\"white-space:nowrap\">agua-poco-artesiano<a name=\"agrosus-propriedade-agua-poco-artesiano\"> </a></td><td>Poço artesiano</td></tr><tr><td style=\"white-space:nowrap\">agua-poco-comum<a name=\"agrosus-propriedade-agua-poco-comum\"> </a></td><td>Poço comum</td></tr><tr><td style=\"white-space:nowrap\">agua-rio-corrego<a name=\"agrosus-propriedade-agua-rio-corrego\"> </a></td><td>Rio ou córrego</td></tr><tr><td style=\"white-space:nowrap\">agua-acude-represa<a name=\"agrosus-propriedade-agua-acude-represa\"> </a></td><td>Açude ou represa</td></tr><tr><td style=\"white-space:nowrap\">agua-cisterna<a name=\"agrosus-propriedade-agua-cisterna\"> </a></td><td>Cisterna</td></tr><tr><td style=\"white-space:nowrap\">agua-outra<a name=\"agrosus-propriedade-agua-outra\"> </a></td><td>Outra fonte de água</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSPropriedadeCS",
+  "title" : "Terminologia da Propriedade Rural AgroSUS",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 24,
+  "concept" : [{
+    "code" : "posse-proprietario",
+    "display" : "Proprietário"
+  },
+  {
+    "code" : "posse-arrendatario",
+    "display" : "Arrendatário"
+  },
+  {
+    "code" : "posse-meeiro",
+    "display" : "Meeiro"
+  },
+  {
+    "code" : "posse-assentado",
+    "display" : "Assentado"
+  },
+  {
+    "code" : "posse-cedida",
+    "display" : "Terra cedida"
+  },
+  {
+    "code" : "posse-outra",
+    "display" : "Outra situação de posse"
+  },
+  {
+    "code" : "atividade-lavoura-temporaria",
+    "display" : "Lavoura temporária"
+  },
+  {
+    "code" : "atividade-lavoura-permanente",
+    "display" : "Lavoura permanente"
+  },
+  {
+    "code" : "atividade-horticultura",
+    "display" : "Horticultura"
+  },
+  {
+    "code" : "atividade-fruticultura",
+    "display" : "Fruticultura"
+  },
+  {
+    "code" : "atividade-pecuaria",
+    "display" : "Pecuária"
+  },
+  {
+    "code" : "atividade-outra",
+    "display" : "Outra atividade agrícola"
+  },
+  {
+    "code" : "producao-convencional",
+    "display" : "Convencional"
+  },
+  {
+    "code" : "producao-organica",
+    "display" : "Orgânica"
+  },
+  {
+    "code" : "producao-agroecologica",
+    "display" : "Agroecológica"
+  },
+  {
+    "code" : "producao-integrada",
+    "display" : "Integrada"
+  },
+  {
+    "code" : "producao-outra",
+    "display" : "Outro tipo de produção"
+  },
+  {
+    "code" : "agua-rede-publica",
+    "display" : "Rede pública"
+  },
+  {
+    "code" : "agua-poco-artesiano",
+    "display" : "Poço artesiano"
+  },
+  {
+    "code" : "agua-poco-comum",
+    "display" : "Poço comum"
+  },
+  {
+    "code" : "agua-rio-corrego",
+    "display" : "Rio ou córrego"
+  },
+  {
+    "code" : "agua-acude-represa",
+    "display" : "Açude ou represa"
+  },
+  {
+    "code" : "agua-cisterna",
+    "display" : "Cisterna"
+  },
+  {
+    "code" : "agua-outra",
+    "display" : "Outra fonte de água"
+  }]
+}

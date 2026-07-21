@@ -1,0 +1,93 @@
+{
+  "resourceType" : "AuditEvent",
+  "id" : "agrosus-auditoria-consulta-dashboard-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: AuditEvent agrosus-auditoria-consulta-dashboard-exemplo</b></p><a name=\"agrosus-auditoria-consulta-dashboard-exemplo\"> </a><a name=\"hcagrosus-auditoria-consulta-dashboard-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-audit-event.html\">Evento de Auditoria AgroSUS</a></p></div><p><b>type</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-audit-event-type.html#audit-event-type-rest\">Audit Event ID: rest</a> (RESTful Operation)</p><p><b>subtype</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-restful-interaction.html#restful-interaction-read\">FHIR Restful Interactions: read</a> (read)</p><p><b>action</b>: Read/View/Print</p><p><b>period</b>: 2026-07-26 09:59:58-0300 --&gt; 2026-07-26 10:00:02-0300</p><p><b>recorded</b>: 2026-07-26 10:00:03-0300</p><p><b>outcome</b>: Success</p><p><b>outcomeDesc</b>: Consulta realizada com sucesso</p><p><b>purposeOfEvent</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActReason TREAT}\">Avaliação e acompanhamento assistencial</span></p><blockquote><p><b>agent</b></p><p><b>who</b>: <a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></p><p><b>name</b>: Eduardo Henrique Almeida</p><p><b>requestor</b>: true</p><h3>Networks</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Address</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>192.0.2.10</td><td>IP Address</td></tr></table><p><b>purposeOfUse</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActReason TREAT}\">Continuidade do cuidado na UBS</span></p></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td></tr><tr><td style=\"display: none\">*</td><td>Dashboard AgroSUS — UBS Jardim Esperança</td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>description</b>: Cadastro do trabalhador consultado</p></blockquote><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p><b>description</b>: Anamnese consultada durante a avaliação</p></blockquote><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"DiagnosticReport-agrosus-laudo-hemograma-exemplo.html\">Laudo de hemograma completo</a></p><p><b>description</b>: Laudo laboratorial consultado durante a avaliação</p></blockquote><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"CarePlan-agrosus-plano-acompanhamento-exemplo.html\">Plano de acompanhamento AgroSUS</a></p><p><b>description</b>: Plano assistencial consultado no dashboard</p></blockquote></div>"
+  },
+  "type" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+    "code" : "rest",
+    "display" : "RESTful Operation"
+  },
+  "subtype" : [{
+    "system" : "http://hl7.org/fhir/restful-interaction",
+    "code" : "read",
+    "display" : "read"
+  }],
+  "action" : "R",
+  "period" : {
+    "start" : "2026-07-26T09:59:58-03:00",
+    "end" : "2026-07-26T10:00:02-03:00"
+  },
+  "recorded" : "2026-07-26T10:00:03-03:00",
+  "outcome" : "0",
+  "outcomeDesc" : "Consulta realizada com sucesso",
+  "purposeOfEvent" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "TREAT",
+      "display" : "treatment"
+    }],
+    "text" : "Avaliação e acompanhamento assistencial"
+  }],
+  "agent" : [{
+    "who" : {
+      "reference" : "PractitionerRole/agrosus-profissional-medico-role-exemplo",
+      "display" : "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família"
+    },
+    "name" : "Eduardo Henrique Almeida",
+    "requestor" : true,
+    "network" : {
+      "address" : "192.0.2.10",
+      "type" : "2"
+    },
+    "purposeOfUse" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "TREAT",
+        "display" : "treatment"
+      }],
+      "text" : "Continuidade do cuidado na UBS"
+    }]
+  }],
+  "source" : {
+    "site" : "Dashboard AgroSUS — UBS Jardim Esperança",
+    "observer" : {
+      "reference" : "Organization/agrosus-ubs-exemplo",
+      "display" : "UBS Jardim Esperança — Exemplo AgroSUS"
+    }
+  },
+  "entity" : [{
+    "what" : {
+      "reference" : "Patient/agrosus-patient-example",
+      "display" : "Maria Aparecida de Souza"
+    },
+    "description" : "Cadastro do trabalhador consultado"
+  },
+  {
+    "what" : {
+      "reference" : "QuestionnaireResponse/agrosus-anamnese-response-example",
+      "display" : "Resposta da anamnese AgroSUS"
+    },
+    "description" : "Anamnese consultada durante a avaliação"
+  },
+  {
+    "what" : {
+      "reference" : "DiagnosticReport/agrosus-laudo-hemograma-exemplo",
+      "display" : "Laudo de hemograma completo"
+    },
+    "description" : "Laudo laboratorial consultado durante a avaliação"
+  },
+  {
+    "what" : {
+      "reference" : "CarePlan/agrosus-plano-acompanhamento-exemplo",
+      "display" : "Plano de acompanhamento AgroSUS"
+    },
+    "description" : "Plano assistencial consultado no dashboard"
+  }]
+}

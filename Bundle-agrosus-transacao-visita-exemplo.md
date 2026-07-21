@@ -1,0 +1,332 @@
+# Exemplo de Transação da Visita do ACS - Módulo AgroSUS — Projeto mareIA v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **Exemplo de Transação da Visita do ACS**
+
+## Example Bundle: Exemplo de Transação da Visita do ACS
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "agrosus-transacao-visita-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita"]
+  },
+  "identifier" : {
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/transacao-visita",
+    "value" : "TRANSACAO-VISITA-2026-000001"
+  },
+  "type" : "transaction",
+  "timestamp" : "2026-07-20T09:32:00-03:00",
+  "entry" : [{
+    "fullUrl" : "https://fhir.agrosus.example/Patient/agrosus-patient-example",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "agrosus-patient-example",
+      "meta" : {
+        "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient"]
+      },
+      "language" : "pt-BR",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><a name=\"Patient_agrosus-patient-example\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Patient agrosus-patient-example</b></p><a name=\"agrosus-patient-example\"> </a><a name=\"hcagrosus-patient-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-patient.html\">Paciente AgroSUS</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number: NamingSystemCNS#987654321098765 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"O registo está ativo\">Ativo:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Tax ID number/12345678901 (utilização: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Formas de contactar o doente\">Detalhes do contacto</td><td colspan=\"3\"><ul><li><a href=\"tel:+551190000-0000\">+55 11 90000-0000</a></li><li>Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Elemento que define a raça do indivíduo\"><a href=\"file://C:\\Portfolio-Digital-HSL\\git\\ips-brasil-ig\\output/StructureDefinition-raca-br-ips.html\">Raça BR IPS</a></td><td colspan=\"3\"><span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor 01}\">Branca</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "https://ips.saude.gov.br/fhir/StructureDefinition/raca-br-ips",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRRacaCor",
+            "code" : "01",
+            "display" : "Branca"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "TAX",
+            "display" : "Tax ID number"
+          }]
+        },
+        "system" : "https://saude.gov.br/fhir/sid/cpf",
+        "value" : "12345678901"
+      },
+      {
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "HC",
+            "display" : "Health Card Number"
+          }]
+        },
+        "system" : "https://saude.gov.br/fhir/sid/cns",
+        "value" : "987654321098765"
+      }],
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "text" : "Maria Aparecida de Souza",
+        "family" : "Souza",
+        "given" : ["Maria", "Aparecida"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+55 11 90000-0000",
+        "use" : "mobile"
+      }],
+      "gender" : "female",
+      "birthDate" : "1978-05-14",
+      "address" : [{
+        "use" : "home",
+        "type" : "physical",
+        "text" : "Propriedade Rural Exemplo, Jundiapeba, Mogi das Cruzes, SP",
+        "line" : ["Propriedade Rural Exemplo, s/n"],
+        "city" : "Mogi das Cruzes",
+        "district" : "Jundiapeba",
+        "state" : "SP",
+        "country" : "Brasil"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/agrosus-patient-example"
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.agrosus.example/Encounter/agrosus-visita-acs-exemplo",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "agrosus-visita-acs-exemplo",
+      "meta" : {
+        "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs"]
+      },
+      "language" : "pt-BR",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><a name=\"Encounter_agrosus-visita-acs-exemplo\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Encounter agrosus-visita-acs-exemplo</b></p><a name=\"agrosus-visita-acs-exemplo\"> </a><a name=\"hcagrosus-visita-acs-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-visita-acs.html\">Visita do ACS AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita</code>/VISITA-2026-000001</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD\">ActCode: FLD</a> (field)</p><p><b>priority</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">Rotina</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">Executor principal</span></td><td><a href=\"PractitionerRole-agrosus-acs-role-exemplo.html\">Maria Clara Oliveira — ACS da UBS Jardim Esperança</a></td></tr></table><p><b>period</b>: 2026-07-20 09:00:00-0300 --&gt; 2026-07-20 10:00:00-0300</p><p><b>reasonCode</b>: <span title=\"Códigos:\">Aplicação inicial da anamnese ocupacional e ambiental AgroSUS</span></p><p><b>serviceProvider</b>: <a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/visita",
+        "value" : "VISITA-2026-000001"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "FLD",
+        "display" : "field"
+      },
+      "priority" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+          "code" : "R",
+          "display" : "routine"
+        }],
+        "text" : "Rotina"
+      },
+      "subject" : {
+        "reference" : "Patient/agrosus-patient-example",
+        "display" : "Maria Aparecida de Souza"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code" : "PPRF",
+            "display" : "primary performer"
+          }],
+          "text" : "Executor principal"
+        }],
+        "individual" : {
+          "reference" : "PractitionerRole/agrosus-acs-role-exemplo",
+          "display" : "Maria Clara Oliveira — ACS da UBS Jardim Esperança"
+        }
+      }],
+      "period" : {
+        "start" : "2026-07-20T09:00:00-03:00",
+        "end" : "2026-07-20T10:00:00-03:00"
+      },
+      "reasonCode" : [{
+        "text" : "Aplicação inicial da anamnese ocupacional e ambiental AgroSUS"
+      }],
+      "serviceProvider" : {
+        "reference" : "Organization/agrosus-ubs-exemplo",
+        "display" : "UBS Jardim Esperança — Exemplo AgroSUS"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/agrosus-visita-acs-exemplo"
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.agrosus.example/QuestionnaireResponse/agrosus-anamnese-response-example",
+    "resource" : {
+      "resourceType" : "QuestionnaireResponse",
+      "id" : "agrosus-anamnese-response-example",
+      "meta" : {
+        "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"QuestionnaireResponse_agrosus-anamnese-response-example\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: QuestionnaireResponse agrosus-anamnese-response-example</b></p><a name=\"agrosus-anamnese-response-example\"> </a><a name=\"hcagrosus-anamnese-response-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-anamnese-response.html\">Resposta da Anamnese AgroSUS</a></p></div><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"O linkID do item\">ID da ligação</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Texto para o item\">Texto</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Número mínimo e máximo de vezes que o item pode aparecer na instância\">Definição</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"O tipo do item\">Resposta</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> agrosus-anamnese-response-example</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionário:<a href=\"Questionnaire-agrosus-anamnese.html\">Formulário de Anamnese Ocupacional e Ambiental AgroSUS</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-group.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Grupo\" class=\"hierarchy\"/> identificacao-instrumento</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1. Identificação do instrumento</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> id-agrosus</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">AGROSUS-000001</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> numero-formulario</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">FORM-2026-000001</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> data-entrevista</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2026-07-20</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> tipo-coleta</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"CodeSystem-agrosus-tipo-coleta.html#agrosus-tipo-coleta-cadastro-inicial\">Tipos de Coleta AgroSUS: cadastro-inicial</a> (Cadastro inicial)</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> ubs-referencia</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">UBS Jardim Esperança — Exemplo AgroSUS</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> acs-responsavel</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Maria Clara Oliveira</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> cnes-ubs</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">7654321</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> municipio</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Ferraz de Vasconcelos</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> bairro-localidade</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Jardim Esperança</td></tr>\r\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legenda para este formato\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentação para este formato</a></td></tr></table></div>"
+      },
+      "identifier" : {
+        "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/anamnese",
+        "value" : "ANAMNESE-2026-000001"
+      },
+      "questionnaire" : "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese",
+      "status" : "in-progress",
+      "subject" : {
+        "reference" : "Patient/agrosus-patient-example",
+        "display" : "Maria Aparecida de Souza"
+      },
+      "encounter" : {
+        "reference" : "Encounter/agrosus-visita-acs-exemplo",
+        "display" : "Visita em campo para aplicação inicial da anamnese AgroSUS"
+      },
+      "authored" : "2026-07-20T09:30:00-03:00",
+      "author" : {
+        "reference" : "PractitionerRole/agrosus-acs-role-exemplo",
+        "display" : "Maria Clara Oliveira — ACS da UBS Jardim Esperança"
+      },
+      "source" : {
+        "reference" : "Patient/agrosus-patient-example",
+        "display" : "Maria Aparecida de Souza"
+      },
+      "item" : [{
+        "linkId" : "identificacao-instrumento",
+        "text" : "1. Identificação do instrumento",
+        "item" : [{
+          "linkId" : "id-agrosus",
+          "answer" : [{
+            "valueString" : "AGROSUS-000001"
+          }]
+        },
+        {
+          "linkId" : "numero-formulario",
+          "answer" : [{
+            "valueString" : "FORM-2026-000001"
+          }]
+        },
+        {
+          "linkId" : "data-entrevista",
+          "answer" : [{
+            "valueDate" : "2026-07-20"
+          }]
+        },
+        {
+          "linkId" : "tipo-coleta",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta",
+              "code" : "cadastro-inicial",
+              "display" : "Cadastro inicial"
+            }
+          }]
+        },
+        {
+          "linkId" : "ubs-referencia",
+          "answer" : [{
+            "valueString" : "UBS Jardim Esperança — Exemplo AgroSUS"
+          }]
+        },
+        {
+          "linkId" : "acs-responsavel",
+          "answer" : [{
+            "valueString" : "Maria Clara Oliveira"
+          }]
+        },
+        {
+          "linkId" : "cnes-ubs",
+          "answer" : [{
+            "valueString" : "7654321"
+          }]
+        },
+        {
+          "linkId" : "municipio",
+          "answer" : [{
+            "valueString" : "Ferraz de Vasconcelos"
+          }]
+        },
+        {
+          "linkId" : "bairro-localidade",
+          "answer" : [{
+            "valueString" : "Jardim Esperança"
+          }]
+        }]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "QuestionnaireResponse/agrosus-anamnese-response-example"
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.agrosus.example/Provenance/agrosus-provenance-anamnese-exemplo",
+    "resource" : {
+      "resourceType" : "Provenance",
+      "id" : "agrosus-provenance-anamnese-exemplo",
+      "meta" : {
+        "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance"]
+      },
+      "language" : "pt-BR",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><a name=\"Provenance_agrosus-provenance-anamnese-exemplo\"> </a><p class=\"res-header-id\"><b>Narrativa gerada: Provenance agrosus-provenance-anamnese-exemplo</b></p><a name=\"agrosus-provenance-anamnese-exemplo\"> </a><a name=\"hcagrosus-provenance-anamnese-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-provenance.html\">Proveniência dos Registros AgroSUS</a></p></div><p>Proveniência para <a href=\"QuestionnaireResponse-agrosus-anamnese-response-example.html\">Resposta da anamnese AgroSUS</a></p><p>Resumo</p><table class=\"grid\"><tr><td>Ocorrência</td><td>2026-07-20 09:30:00-0300</td></tr><tr><td>Gravado</td><td>2026-07-20 09:31:00-0300</td></tr><tr><td>Atividade</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agentes</b></p><table class=\"grid\"><tr><td><b>Tipo</b></td><td><b>que</b></td><td><b>Em nome de</b></td></tr><tr><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"PractitionerRole-agrosus-acs-role-exemplo.html\">Maria Clara Oliveira — ACS da UBS Jardim Esperança</a></td><td><a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table></div>"
+      },
+      "target" : [{
+        "reference" : "QuestionnaireResponse/agrosus-anamnese-response-example",
+        "display" : "Resposta da anamnese AgroSUS"
+      }],
+      "occurredDateTime" : "2026-07-20T09:30:00-03:00",
+      "recorded" : "2026-07-20T09:31:00-03:00",
+      "reason" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+          "code" : "TREAT",
+          "display" : "treatment"
+        }],
+        "text" : "Registro assistencial durante visita do ACS"
+      }],
+      "activity" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+          "code" : "CREATE",
+          "display" : "create"
+        }]
+      },
+      "agent" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code" : "author",
+            "display" : "Author"
+          }]
+        },
+        "who" : {
+          "reference" : "PractitionerRole/agrosus-acs-role-exemplo",
+          "display" : "Maria Clara Oliveira — ACS da UBS Jardim Esperança"
+        },
+        "onBehalfOf" : {
+          "reference" : "Organization/agrosus-ubs-exemplo",
+          "display" : "UBS Jardim Esperança — Exemplo AgroSUS"
+        }
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Provenance/agrosus-provenance-anamnese-exemplo"
+    }
+  }]
+}
+
+```

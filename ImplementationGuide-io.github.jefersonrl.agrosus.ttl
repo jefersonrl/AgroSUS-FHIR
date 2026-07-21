@@ -25,7 +25,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Módulo AgroSUS — Projeto mareIA"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-20T19:33:39+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -63,15 +63,33 @@
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.5.0" ]
   ], [
      fhir:index 1 ;
+     fhir:Element.id [ fhir:value "hl7_terminology_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.1.0" ]
+  ], [
+     fhir:index 2 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_extensions_r4" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.1.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
   ], [
-     fhir:index 2 ;
+     fhir:index 3 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_ips" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips" ;
+       fhir:link <http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
+  ], [
+     fhir:index 4 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_cql" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/cql/ImplementationGuide/hl7.fhir.uv.cql" ;
@@ -80,7 +98,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.cql" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
   ], [
-     fhir:index 3 ;
+     fhir:index 5 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_crmi" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi" ;
@@ -89,7 +107,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.crmi" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
   ], [
-     fhir:index 4 ;
+     fhir:index 6 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc" ;
@@ -98,7 +116,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ], [
-     fhir:index 5 ;
+     fhir:index 7 ;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_cpg" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg" ;
@@ -107,7 +125,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.cpg" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0" ]
   ], [
-     fhir:index 6 ;
+     fhir:index 8 ;
      fhir:Element.id [ fhir:value "hl7_fhir_us_cqfmeasures" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures" ;
@@ -116,7 +134,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.cqfmeasures" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
   ], [
-     fhir:index 7 ;
+     fhir:index 9 ;
      fhir:Element.id [ fhir:value "sb" ] ;
      fhir:Element.extension [
        fhir:index 0 ;
@@ -129,6 +147,33 @@
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "smart.who.int.base" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Element.id [ fhir:value "br_gov_saude_br_core_fhir" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir" ;
+       fhir:link <https://br-core.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.br-core.fhir>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "br.gov.saude.br-core.fhir" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Element.id [ fhir:value "br_gov_saude_terminologia_fhir" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir" ;
+       fhir:link <https://terminologia.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.terminologia.fhir>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "br.gov.saude.terminologia.fhir" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 12 ;
+     fhir:Element.id [ fhir:value "br_gov_saude_ips_fhir" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://ips.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.ips.fhir" ;
+       fhir:link <https://ips.saude.gov.br/fhir/ImplementationGuide/br.gov.saude.ips.fhir>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "br.gov.saude.ips.fhir" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
   ] ;
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -736,6 +781,1428 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ] ;
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Practitioner/agrosus-acs-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/agrosus-acs-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ACS AgroSUS de exemplo" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo sintético de Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs>
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-acs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agente Comunitário de Saúde AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde responsável pela aplicação da anamnese AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-armazenamento-defensivos" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Armazenamento de defensivos agrícolas AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia dos locais utilizados para armazenamento de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-assistencia-tecnica" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Assistência Técnica AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos relacionados à assistência e à responsabilidade técnica na produção rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-atendimento-ubs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atendimento Clínico da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Atendimento realizado na UBS para avaliação, investigação e acompanhamento assistencial do trabalhador rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-avaliacao-boas-praticas" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Avaliação de boas práticas agrícolas AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia utilizada para avaliar o atendimento aos indicadores de boas práticas agrícolas no formulário AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-categoria-plano-cuidado> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-categoria-plano-cuidado" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Categorias de Plano de Cuidado AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias permitidas para os planos de acompanhamento AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-categoria-plano-cuidado" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Categorias de Plano de Cuidado AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias utilizadas para classificar os planos longitudinais de acompanhamento do trabalhador rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-classificacao-toxicologica> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-classificacao-toxicologica" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Toxicológica de Defensivos Agrícolas" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias toxicológicas permitidas no formulário AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-classificacao-toxicologica> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-classificacao-toxicologica" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Toxicológica de Defensivos Agrícolas" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Representação FHIR das categorias de classificação toxicológica estabelecidas pela Anvisa." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-condicoes-sintomas" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condições de saúde e sintomas AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia dos itens de condições de saúde e sintomas referidos no formulário de anamnese AgroSUS. Os códigos representam respostas do instrumento e não diagnósticos clínicos confirmados." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-condicao-saude-referida> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-condicao-saude-referida" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condições de saúde referidas" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condições de saúde preexistentes declaradas pelo trabalhador durante a anamnese." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-destinacao-embalagens-nao-devolvidas> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-destinacao-embalagens-nao-devolvidas" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Destinação de embalagens não devolvidas" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formas de destinação das embalagens vazias quando não ocorre devolução em local autorizado." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-destinacao-embalagens" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Destinação de embalagens vazias AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia das formas de destinação de embalagens vazias de defensivos agrícolas quando não são devolvidas em local autorizado." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-dias-aplicacao-mes> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-dias-aplicacao-mes" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dias de aplicação por mês" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Faixas de frequência mensal de aplicação de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-equipamento-aplicacao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-equipamento-aplicacao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Equipamentos utilizados na aplicação" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos de equipamento utilizados na aplicação de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-escolaridade> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-escolaridade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Escolaridade AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias permitidas para escolaridade no formulário AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-escolaridade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Escolaridade AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorias de escolaridade utilizadas no formulário de anamnese AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-audit-event" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Evento de Auditoria AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro de segurança para rastrear consultas, alterações e outras operações realizadas sobre os dados do AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-exames-laboratoriais> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-exames-laboratoriais" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exames Laboratoriais AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos trabalhadores rurais no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-atendimento-ubs-avaliacao-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Encounter/agrosus-atendimento-ubs-avaliacao-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Atendimento Clínico da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Avaliação clínica fictícia realizada após a visita e anamnese do ACS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs>
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Encounter/agrosus-atendimento-ubs-revisao-exames-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Atendimento para Revisão dos Exames" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Atendimento fictício para avaliação dos resultados laboratoriais e definição do acompanhamento longitudinal." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs>
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "AuditEvent" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo> ;
+         fhir:Reference.reference [ fhir:value "AuditEvent/agrosus-auditoria-consulta-dashboard-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Auditoria de Consulta ao Dashboard" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Evento fictício de acesso aos dados do trabalhador por profissional da UBS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event>
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Practitioner/agrosus-profissional-enfermeiro-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/agrosus-profissional-enfermeiro-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Enfermeira da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Enfermeira fictícia responsável pelo acompanhamento dos trabalhadores rurais." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs>
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Organization/agrosus-laboratorio-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Laboratório AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laboratório municipal fictício responsável pela emissão dos resultados." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio>
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/DiagnosticReport/agrosus-laudo-hemograma-exemplo> ;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/agrosus-laudo-hemograma-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Laudo de Hemograma AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laudo fictício que agrupa os resultados individuais do hemograma." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial>
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Practitioner/agrosus-profissional-medico-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/agrosus-profissional-medico-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Médico da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Médico fictício da Estratégia de Saúde da Família." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs>
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+         fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Paciente AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Trabalhadora rural fictícia utilizada para validar o perfil Paciente AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient>
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CarePlan/agrosus-plano-acompanhamento-exemplo> ;
+         fhir:Reference.reference [ fhir:value "CarePlan/agrosus-plano-acompanhamento-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Plano de Acompanhamento AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Plano fictício para acompanhamento longitudinal de trabalhadora rural com suspeita de intoxicação por pesticida." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento>
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Provenance/agrosus-provenance-anamnese-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Provenance/agrosus-provenance-anamnese-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Proveniência da Anamnese AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro fictício da autoria da resposta da anamnese pelo ACS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Provenance/agrosus-provenance-plano-acompanhamento-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Provenance/agrosus-provenance-plano-acompanhamento-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Proveniência do Plano de Acompanhamento" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro fictício da autoria médica do plano longitudinal AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance>
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/QuestionnaireResponse/agrosus-anamnese-response-example> ;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/agrosus-anamnese-response-example" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Resposta da Anamnese AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resposta parcial fictícia da anamnese AgroSUS registrada durante uma visita do ACS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response>
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-hematocrito-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-hematocrito-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Resultado de Hematócrito" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
+       ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-hemoglobina-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-hemoglobina-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Resultado de Hemoglobina" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
+       ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-leucocitos-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-leucocitos-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Resultado de Leucócitos" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
+       ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-plaquetas-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-plaquetas-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Resultado de Plaquetas" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial>
+       ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-hemograma-exemplo> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/agrosus-solicitacao-hemograma-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Solicitação de Hemograma AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Solicitação fictícia de hemograma completo realizada pelo médico da UBS após avaliação clínica." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame>
+       ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Suspeita de Intoxicação por Pesticida" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suspeita clínica fictícia registrada pelo médico da UBS e mantida em investigação." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida>
+       ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Bundle/agrosus-transacao-visita-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Bundle/agrosus-transacao-visita-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Transação da Visita do ACS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sincronização atômica e idempotente do paciente, visita, anamnese e proveniência registrados pelo aplicativo do ACS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita>
+       ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/agrosus-profissional-tecnico-enfermagem-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Técnico de Enfermagem da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Técnico de enfermagem fictício da equipe assistencial da UBS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs>
+       ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-visita-acs-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Encounter/agrosus-visita-acs-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Visita do ACS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Visita fictícia em campo para aplicação inicial da anamnese AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs>
+       ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-enfermeiro-role-exemplo> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-enfermeiro-role-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Vínculo da Enfermeira com a UBS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vínculo fictício da enfermeira com a UBS responsável pelo acompanhamento AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role>
+       ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Vínculo do Médico com a UBS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vínculo fictício do médico da Estratégia de Saúde da Família com a UBS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role>
+       ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-tecnico-enfermagem-role-exemplo> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-tecnico-enfermagem-role-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemplo de Vínculo do Técnico de Enfermagem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vínculo fictício do técnico de enfermagem com a UBS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role>
+       ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-exposicao-familiar" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exposição familiar AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-familiares-auxiliam-aplicacao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-familiares-auxiliam-aplicacao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Familiares que auxiliam na aplicação" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Familiares que auxiliam o trabalhador rural na aplicação de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-fonte-agua> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-fonte-agua" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fonte de Água da Propriedade" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fontes de água utilizadas na propriedade rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-armazenamento-registros> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-armazenamento-registros" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Formas de armazenamento dos registros" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formas utilizadas para armazenar os registros das aplicações de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-formacao-responsavel-tecnico> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-formacao-responsavel-tecnico" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Formação do Responsável Técnico" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formações profissionais previstas para o responsável técnico da produção." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese> ;
+         fhir:Reference.reference [ fhir:value "Questionnaire/agrosus-anamnese" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Formulário de Anamnese AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formulário de anamnese ocupacional e ambiental aplicado pelo Agente Comunitário de Saúde aos pequenos produtores rurais." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-frequencia-uso-epi> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-frequencia-uso-epi" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Frequência de utilização de EPI" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Frequência declarada de utilização de cada equipamento de proteção individual." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-acs-role" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Função do ACS no AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil do vínculo do Agente Comunitário de Saúde ou Técnico em Agente Comunitário de Saúde com a organização responsável pelo atendimento no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-profissional-ubs-role" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Função do Profissional Assistencial da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vínculo funcional do profissional assistencial com a UBS responsável pelo acompanhamento do trabalhador rural no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-historico-intoxicacao> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-historico-intoxicacao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Histórico de intoxicação AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia para registrar a quantidade autorreferida de episódios anteriores de intoxicação aguda por defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-horas-aplicacao-dia> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-horas-aplicacao-dia" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Horas de aplicação por dia" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Faixas de duração diária da aplicação de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-instituicao-assistencia> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-instituicao-assistencia" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instituição de Assistência Técnica" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Instituições que podem prestar assistência técnica ao produtor rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-intoxicacao-pesticida> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-intoxicacao-pesticida" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intoxicação por pesticidas AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos CID-10 utilizados para representar suspeita ou confirmação clínica de efeito tóxico de pesticidas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-laboratorio" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratório AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organização responsável pela realização e emissão de resultados de exames laboratoriais utilizados no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-laudo-laboratorial" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laudo Laboratorial AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laudo que agrupa resultados laboratoriais emitidos para o acompanhamento do trabalhador rural no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-local-armazenamento-defensivos> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-local-armazenamento-defensivos" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local de armazenamento dos defensivos agrícolas" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locais onde os defensivos agrícolas são armazenados na propriedade." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-armazenamento-epi> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-armazenamento-epi" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local de armazenamento dos EPIs" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locais utilizados para o armazenamento dos equipamentos de proteção individual." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-mes-maior-intensidade> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-mes-maior-intensidade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Meses de maior intensidade de uso" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Meses do ano com maior intensidade de utilização de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-motivo-nao-uso-epi> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-motivo-nao-uso-epi" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Motivos de não utilização de EPI" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Motivos declarados para a não utilização dos equipamentos de proteção individual." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-numero-intoxicacoes-agudas> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-numero-intoxicacoes-agudas" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Número de intoxicações agudas anteriores" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Faixas para registro do número autorreferido de episódios anteriores de intoxicação aguda." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-profissional-ubs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-ocupacao-profissional-ubs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ocupações dos profissionais assistenciais da UBS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ocupações CBO permitidas para profissionais assistenciais que utilizam o dashboard AgroSUS na Unidade Básica de Saúde." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-acs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-ocupacao-acs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ocupações permitidas para o ACS no AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ocupações da Classificação Brasileira de Ocupações permitidas para o profissional que aplica a anamnese AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Paciente AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil do pequeno produtor rural acompanhado pelo módulo AgroSUS no âmbito da Atenção Primária à Saúde." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-plano-acompanhamento" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plano de Acompanhamento AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Plano longitudinal definido pela equipe assistencial da UBS para acompanhamento clínico e ocupacional do trabalhador rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-atividade-agricola> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-atividade-agricola" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Principal Atividade Agrícola" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Principais atividades desenvolvidas na propriedade rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-profissional-ubs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profissional Assistencial da UBS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profissional da Unidade Básica de Saúde responsável pela avaliação clínica, acompanhamento ou apoio assistencial ao trabalhador rural no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-provenance" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Proveniência dos Registros AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro de autoria, criação, atualização e origem dos recursos clínicos e assistenciais do AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-rastreabilidade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Rastreabilidade das aplicações AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia utilizada para identificar onde são armazenados os registros das aplicações de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CapabilityStatement/agrosus-server-capabilities> ;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/agrosus-server-capabilities" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Requisitos de capacidade do servidor AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contrato mínimo da API FHIR R4 do AgroSUS para o aplicativo do ACS, o dashboard da UBS e os sistemas laboratoriais." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-responsavel-aplicacao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-responsavel-aplicacao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Responsável pela aplicação" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pessoas ou organizações que realizam a aplicação dos defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-anamnese-response" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resposta da Anamnese AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil da resposta ao formulário de anamnese ocupacional e ambiental AgroSUS aplicado pelo Agente Comunitário de Saúde." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-avaliacao-boas-praticas> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-avaliacao-boas-praticas" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Respostas dos indicadores de boas práticas" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Respostas permitidas para cada indicador de boa prática agrícola." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-resultado-laboratorial" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado Laboratorial AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resultado individual de exame ou biomarcador laboratorial utilizado no acompanhamento do trabalhador rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-resultados-laboratoriais> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-resultados-laboratoriais" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultados Laboratoriais AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Biomarcadores laboratoriais utilizados no acompanhamento assistencial dos trabalhadores rurais no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-sintoma-ultimos-30-dias> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-sintoma-ultimos-30-dias" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sinais e sintomas dos últimos 30 dias" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sinais e sintomas investigados pelo formulário AgroSUS, sem significado diagnóstico isolado." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-situacao-posse> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-situacao-posse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Situação de Posse da Terra" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Situações de posse da propriedade rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-solicitacao-exame" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Solicitação de Exame AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Solicitação de exame laboratorial realizada por profissional assistencial da UBS para acompanhamento do trabalhador rural no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-intoxicacao-pesticida" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condição clínica registrada por profissional assistencial para representar suspeita, confirmação ou descarte de intoxicação por pesticidas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-temas-capacitacao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-temas-capacitacao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Temas de Capacitação AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temas que podem ser selecionados no registro de capacitação do trabalhador rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-capacitacao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Temas de Capacitação AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temas abordados em capacitações sobre o uso seguro de defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-propriedade" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia da Propriedade Rural AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos utilizados para caracterizar propriedades rurais no formulário AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-epi" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de equipamentos de proteção individual AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia para frequência de uso, armazenamento e motivos de não utilização dos equipamentos de proteção individual." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-exposicao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Terminologia de exposição ocupacional AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-tipo-producao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-tipo-producao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Produção Agrícola" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos de produção utilizados na propriedade rural." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-tipo-coleta> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-tipo-coleta" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Coleta AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modalidades permitidas para aplicação do formulário AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/agrosus-tipo-coleta" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de Coleta AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modalidades de aplicação do formulário de anamnese ocupacional e ambiental do AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-transacao-visita" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Transação da Visita do ACS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle transacional e idempotente utilizado pelo aplicativo do ACS para sincronizar o paciente, a visita, a resposta da anamnese e sua proveniência em uma única operação atômica." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+         fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UBS AgroSUS de exemplo" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo sintético de Unidade Básica de Saúde responsável pelo acompanhamento no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs>
+       ]
+     ], [
+       fhir:index 92 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-ubs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade Básica de Saúde AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Perfil da Unidade Básica de Saúde responsável pelo acompanhamento do trabalhador rural no AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-via-exposicao> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/agrosus-via-exposicao" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vias de exposição" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vias mais comuns de exposição aos defensivos agrícolas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 94 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/agrosus-visita-acs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Visita do ACS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Visita ou atendimento em campo no qual o Agente Comunitário de Saúde aplica ou atualiza a anamnese AgroSUS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-acs-role-exemplo> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-acs-role-exemplo" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vínculo profissional do ACS AgroSUS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemplo sintético do vínculo de um Agente Comunitário de Saúde com uma Unidade Básica de Saúde." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role" ;
+         fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role>
+       ]
+     ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
          fhir:index 0 ;
@@ -1070,16 +2537,6 @@
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Mappings" ] ;
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
-       ], [
-         fhir:index 5 ;
-         fhir:Element.extension [
-           fhir:index 0 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "dak-api.html" ]
-         ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dak-api.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "DAK API Documentation Hub" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ] ;
      fhir:ImplementationGuide.definition.parameter [

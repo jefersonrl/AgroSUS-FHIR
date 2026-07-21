@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-destinacao-embalagens-nao-devolvidas"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-destinacao-embalagens-nao-devolvidas</b></p><a name="agrosus-destinacao-embalagens-nao-devolvidas"> </a><a name="hcagrosus-destinacao-embalagens-nao-devolvidas"> </a><ul><li>Include todos os códigos definidos em <a href="CodeSystem-agrosus-destinacao-embalagens.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-destinacao-embalagens-nao-devolvidas"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSDestinacaoEmbalagensNaoDevolvidasVS"/>
+  <title value="Destinação de embalagens não devolvidas"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Formas de destinação das embalagens vazias quando não ocorre devolução em local autorizado."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens"/>
+    </include>
+  </compose>
+</ValueSet>

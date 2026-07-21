@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-responsavel-aplicacao"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-responsavel-aplicacao</b></p><a name="agrosus-responsavel-aplicacao"> </a><a name="hcagrosus-responsavel-aplicacao"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-agrosus-exposicao.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-proprio-produtor">proprio-produtor</a></td><td style="color: #cccccc">O próprio produtor</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-familiar">familiar</a></td><td style="color: #cccccc">Familiar</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-trabalhador-contratado">trabalhador-contratado</a></td><td style="color: #cccccc">Trabalhador contratado</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-empresa-terceirizada">empresa-terceirizada</a></td><td style="color: #cccccc">Empresa terceirizada</td></tr><tr><td><a href="CodeSystem-agrosus-exposicao.html#agrosus-exposicao-outro">outro</a></td><td style="color: #cccccc">Outro</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-responsavel-aplicacao"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSResponsavelAplicacaoVS"/>
+  <title value="Responsável pela aplicação"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Pessoas ou organizações que realizam a aplicação dos defensivos agrícolas."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao"/>
+      <concept>
+        <code value="proprio-produtor"/>
+      </concept>
+      <concept>
+        <code value="familiar"/>
+      </concept>
+      <concept>
+        <code value="trabalhador-contratado"/>
+      </concept>
+      <concept>
+        <code value="empresa-terceirizada"/>
+      </concept>
+      <concept>
+        <code value="outro"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

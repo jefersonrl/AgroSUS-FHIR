@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-mes-maior-intensidade",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-mes-maior-intensidade</b></p><a name=\"agrosus-mes-maior-intensidade\"> </a><a name=\"hcagrosus-mes-maior-intensidade\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-agrosus-exposicao.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-janeiro\">janeiro</a></td><td style=\"color: #cccccc\">Janeiro</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-fevereiro\">fevereiro</a></td><td style=\"color: #cccccc\">Fevereiro</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-marco\">marco</a></td><td style=\"color: #cccccc\">Março</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-abril\">abril</a></td><td style=\"color: #cccccc\">Abril</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-maio\">maio</a></td><td style=\"color: #cccccc\">Maio</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-junho\">junho</a></td><td style=\"color: #cccccc\">Junho</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-julho\">julho</a></td><td style=\"color: #cccccc\">Julho</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-agosto\">agosto</a></td><td style=\"color: #cccccc\">Agosto</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-setembro\">setembro</a></td><td style=\"color: #cccccc\">Setembro</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-outubro\">outubro</a></td><td style=\"color: #cccccc\">Outubro</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-novembro\">novembro</a></td><td style=\"color: #cccccc\">Novembro</td></tr><tr><td><a href=\"CodeSystem-agrosus-exposicao.html#agrosus-exposicao-dezembro\">dezembro</a></td><td style=\"color: #cccccc\">Dezembro</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-mes-maior-intensidade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMesMaiorIntensidadeVS",
+  "title" : "Meses de maior intensidade de uso",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Meses do ano com maior intensidade de utilização de defensivos agrícolas.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao",
+      "concept" : [{
+        "code" : "janeiro"
+      },
+      {
+        "code" : "fevereiro"
+      },
+      {
+        "code" : "marco"
+      },
+      {
+        "code" : "abril"
+      },
+      {
+        "code" : "maio"
+      },
+      {
+        "code" : "junho"
+      },
+      {
+        "code" : "julho"
+      },
+      {
+        "code" : "agosto"
+      },
+      {
+        "code" : "setembro"
+      },
+      {
+        "code" : "outubro"
+      },
+      {
+        "code" : "novembro"
+      },
+      {
+        "code" : "dezembro"
+      }]
+    }]
+  }
+}

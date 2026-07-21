@@ -1,0 +1,185 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-exposicao"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-exposicao</b></p><a name=\"agrosus-exposicao\"> </a><a name=\"hcagrosus-exposicao\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td style=\"white-space:nowrap\">dias-mes-1-2<a name=\"agrosus-exposicao-dias-mes-1-2\"> </a></td><td>1–2 dias por mês</td></tr><tr><td style=\"white-space:nowrap\">dias-mes-3-5<a name=\"agrosus-exposicao-dias-mes-3-5\"> </a></td><td>3–5 dias por mês</td></tr><tr><td style=\"white-space:nowrap\">dias-mes-6-10<a name=\"agrosus-exposicao-dias-mes-6-10\"> </a></td><td>6–10 dias por mês</td></tr><tr><td style=\"white-space:nowrap\">dias-mes-mais-10<a name=\"agrosus-exposicao-dias-mes-mais-10\"> </a></td><td>Mais de 10 dias por mês</td></tr><tr><td style=\"white-space:nowrap\">horas-dia-menos-2<a name=\"agrosus-exposicao-horas-dia-menos-2\"> </a></td><td>Menos de 2 horas por dia</td></tr><tr><td style=\"white-space:nowrap\">horas-dia-2-4<a name=\"agrosus-exposicao-horas-dia-2-4\"> </a></td><td>2–4 horas por dia</td></tr><tr><td style=\"white-space:nowrap\">horas-dia-4-6<a name=\"agrosus-exposicao-horas-dia-4-6\"> </a></td><td>4–6 horas por dia</td></tr><tr><td style=\"white-space:nowrap\">horas-dia-mais-6<a name=\"agrosus-exposicao-horas-dia-mais-6\"> </a></td><td>Mais de 6 horas por dia</td></tr><tr><td style=\"white-space:nowrap\">janeiro<a name=\"agrosus-exposicao-janeiro\"> </a></td><td>Janeiro</td></tr><tr><td style=\"white-space:nowrap\">fevereiro<a name=\"agrosus-exposicao-fevereiro\"> </a></td><td>Fevereiro</td></tr><tr><td style=\"white-space:nowrap\">marco<a name=\"agrosus-exposicao-marco\"> </a></td><td>Março</td></tr><tr><td style=\"white-space:nowrap\">abril<a name=\"agrosus-exposicao-abril\"> </a></td><td>Abril</td></tr><tr><td style=\"white-space:nowrap\">maio<a name=\"agrosus-exposicao-maio\"> </a></td><td>Maio</td></tr><tr><td style=\"white-space:nowrap\">junho<a name=\"agrosus-exposicao-junho\"> </a></td><td>Junho</td></tr><tr><td style=\"white-space:nowrap\">julho<a name=\"agrosus-exposicao-julho\"> </a></td><td>Julho</td></tr><tr><td style=\"white-space:nowrap\">agosto<a name=\"agrosus-exposicao-agosto\"> </a></td><td>Agosto</td></tr><tr><td style=\"white-space:nowrap\">setembro<a name=\"agrosus-exposicao-setembro\"> </a></td><td>Setembro</td></tr><tr><td style=\"white-space:nowrap\">outubro<a name=\"agrosus-exposicao-outubro\"> </a></td><td>Outubro</td></tr><tr><td style=\"white-space:nowrap\">novembro<a name=\"agrosus-exposicao-novembro\"> </a></td><td>Novembro</td></tr><tr><td style=\"white-space:nowrap\">dezembro<a name=\"agrosus-exposicao-dezembro\"> </a></td><td>Dezembro</td></tr><tr><td style=\"white-space:nowrap\">pulverizador-costal-manual<a name=\"agrosus-exposicao-pulverizador-costal-manual\"> </a></td><td>Pulverizador costal manual</td></tr><tr><td style=\"white-space:nowrap\">pulverizador-costal-motorizado<a name=\"agrosus-exposicao-pulverizador-costal-motorizado\"> </a></td><td>Pulverizador costal motorizado</td></tr><tr><td style=\"white-space:nowrap\">trator-com-barra<a name=\"agrosus-exposicao-trator-com-barra\"> </a></td><td>Trator com barra</td></tr><tr><td style=\"white-space:nowrap\">cutanea<a name=\"agrosus-exposicao-cutanea\"> </a></td><td>Cutânea (pele)</td></tr><tr><td style=\"white-space:nowrap\">respiratoria<a name=\"agrosus-exposicao-respiratoria\"> </a></td><td>Respiratória (inalação)</td></tr><tr><td style=\"white-space:nowrap\">ocular<a name=\"agrosus-exposicao-ocular\"> </a></td><td>Ocular</td></tr><tr><td style=\"white-space:nowrap\">digestiva-oral<a name=\"agrosus-exposicao-digestiva-oral\"> </a></td><td>Digestiva ou oral</td></tr><tr><td style=\"white-space:nowrap\">multiplas-vias<a name=\"agrosus-exposicao-multiplas-vias\"> </a></td><td>Múltiplas vias</td></tr><tr><td style=\"white-space:nowrap\">proprio-produtor<a name=\"agrosus-exposicao-proprio-produtor\"> </a></td><td>O próprio produtor</td></tr><tr><td style=\"white-space:nowrap\">familiar<a name=\"agrosus-exposicao-familiar\"> </a></td><td>Familiar</td></tr><tr><td style=\"white-space:nowrap\">trabalhador-contratado<a name=\"agrosus-exposicao-trabalhador-contratado\"> </a></td><td>Trabalhador contratado</td></tr><tr><td style=\"white-space:nowrap\">empresa-terceirizada<a name=\"agrosus-exposicao-empresa-terceirizada\"> </a></td><td>Empresa terceirizada</td></tr><tr><td style=\"white-space:nowrap\">outro<a name=\"agrosus-exposicao-outro\"> </a></td><td>Outro</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AgroSUSExposicaoCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Terminologia de exposição ocupacional AgroSUS"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-07-21T03:04:10+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Fatec Ferraz de Vasconcelos"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Fatec Ferraz de Vasconcelos" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fatecferraz.edu.br" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Terminologia das características de frequência e forma de exposição aos defensivos agrícolas."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BR" ] ;
+       fhir:Coding.display [ fhir:value "Brazil" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "33"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dias-mes-1-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "1–2 dias por mês" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dias-mes-3-5" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "3–5 dias por mês" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dias-mes-6-10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "6–10 dias por mês" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dias-mes-mais-10" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mais de 10 dias por mês" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "horas-dia-menos-2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Menos de 2 horas por dia" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "horas-dia-2-4" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "2–4 horas por dia" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "horas-dia-4-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "4–6 horas por dia" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "horas-dia-mais-6" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mais de 6 horas por dia" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "janeiro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Janeiro" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fevereiro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fevereiro" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "marco" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Março" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "abril" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abril" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "maio" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Maio" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "junho" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Junho" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "julho" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Julho" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "agosto" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Agosto" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "setembro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Setembro" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "outubro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outubro" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "novembro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Novembro" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dezembro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dezembro" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pulverizador-costal-manual" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pulverizador costal manual" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pulverizador-costal-motorizado" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pulverizador costal motorizado" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "trator-com-barra" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trator com barra" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cutanea" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cutânea (pele)" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "respiratoria" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratória (inalação)" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ocular" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ocular" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "digestiva-oral" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Digestiva ou oral" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "multiplas-vias" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Múltiplas vias" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "proprio-produtor" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "O próprio produtor" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "familiar" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Familiar" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "trabalhador-contratado" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Trabalhador contratado" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "empresa-terceirizada" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Empresa terceirizada" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "outro" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Outro" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

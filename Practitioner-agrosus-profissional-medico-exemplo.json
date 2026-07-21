@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "agrosus-profissional-medico-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Practitioner agrosus-profissional-medico-exemplo</b></p><a name=\"agrosus-profissional-medico-exemplo\"> </a><a name=\"hcagrosus-profissional-medico-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-profissional-ubs.html\">Profissional Assistencial da UBS AgroSUS</a></p></div><p><b>identifier</b>: Cartão Nacional de Saúde/200000000000003\u00a0(utilização:\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>name</b>: Eduardo Henrique Almeida(Official)</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "HC"
+      }],
+      "text" : "Cartão Nacional de Saúde"
+    },
+    "system" : "https://saude.gov.br/fhir/sid/cns",
+    "value" : "200000000000003"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "text" : "Eduardo Henrique Almeida",
+    "family" : "Almeida",
+    "given" : ["Eduardo",
+    "Henrique"]
+  }]
+}

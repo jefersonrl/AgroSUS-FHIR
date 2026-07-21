@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-destinacao-embalagens",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-destinacao-embalagens</b></p><a name=\"agrosus-destinacao-embalagens\"> </a><a name=\"hcagrosus-destinacao-embalagens\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">queima<a name=\"agrosus-destinacao-embalagens-queima\"> </a></td><td>Queima</td><td>As embalagens vazias são queimadas.</td></tr><tr><td style=\"white-space:nowrap\">enterra<a name=\"agrosus-destinacao-embalagens-enterra\"> </a></td><td>Enterra</td><td>As embalagens vazias são enterradas.</td></tr><tr><td style=\"white-space:nowrap\">lanca-rio-corrego<a name=\"agrosus-destinacao-embalagens-lanca-rio-corrego\"> </a></td><td>Lança em rio ou córrego</td><td>As embalagens vazias são descartadas em rio, córrego ou outro curso de água.</td></tr><tr><td style=\"white-space:nowrap\">lixo-comum<a name=\"agrosus-destinacao-embalagens-lixo-comum\"> </a></td><td>Lixo comum</td><td>As embalagens vazias são descartadas junto aos resíduos comuns.</td></tr><tr><td style=\"white-space:nowrap\">reutiliza<a name=\"agrosus-destinacao-embalagens-reutiliza\"> </a></td><td>Reutiliza</td><td>As embalagens vazias são reutilizadas para outra finalidade.</td></tr><tr><td style=\"white-space:nowrap\">outro<a name=\"agrosus-destinacao-embalagens-outro\"> </a></td><td>Outro</td><td>Outra forma de destinação não especificada.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens",
+  "version" : "0.1.0",
+  "name" : "AgroSUSDestinacaoEmbalagensCS",
+  "title" : "Destinação de embalagens vazias AgroSUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Terminologia das formas de destinação de embalagens vazias de defensivos agrícolas quando não são devolvidas em local autorizado.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "queima",
+    "display" : "Queima",
+    "definition" : "As embalagens vazias são queimadas."
+  },
+  {
+    "code" : "enterra",
+    "display" : "Enterra",
+    "definition" : "As embalagens vazias são enterradas."
+  },
+  {
+    "code" : "lanca-rio-corrego",
+    "display" : "Lança em rio ou córrego",
+    "definition" : "As embalagens vazias são descartadas em rio, córrego ou outro curso de água."
+  },
+  {
+    "code" : "lixo-comum",
+    "display" : "Lixo comum",
+    "definition" : "As embalagens vazias são descartadas junto aos resíduos comuns."
+  },
+  {
+    "code" : "reutiliza",
+    "display" : "Reutiliza",
+    "definition" : "As embalagens vazias são reutilizadas para outra finalidade."
+  },
+  {
+    "code" : "outro",
+    "display" : "Outro",
+    "definition" : "Outra forma de destinação não especificada."
+  }]
+}

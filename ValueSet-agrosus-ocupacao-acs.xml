@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-ocupacao-acs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-ocupacao-acs</b></p><a name="agrosus-ocupacao-acs"> </a><a name="hcagrosus-ocupacao-acs"> </a><ul><li>Include estes códigos, tal como definidos em <a href="https://terminologia.saude.gov.br/fhir/v1.0.0/CodeSystem-BRCBO.html"><code>https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td>515105</td><td>Agente comunitário de saúde</td></tr><tr><td>322255</td><td>Técnico em agente comunitário de saúde</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-acs"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSOcupacaoACSVS"/>
+  <title value="Ocupações permitidas para o ACS no AgroSUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Ocupações da Classificação Brasileira de Ocupações permitidas para o profissional que aplica a anamnese AgroSUS."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"/>
+      <concept>
+        <code value="515105"/>
+        <display value="Agente comunitário de saúde"/>
+      </concept>
+      <concept>
+        <code value="322255"/>
+        <display value="Técnico em agente comunitário de saúde"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

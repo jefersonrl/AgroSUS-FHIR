@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="agrosus-resultado-plaquetas-exemplo"/>
+  <meta>
+    <profile value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Observation agrosus-resultado-plaquetas-exemplo</b></p><a name="agrosus-resultado-plaquetas-exemplo"> </a><a name="hcagrosus-resultado-plaquetas-exemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-agrosus-resultado-laboratorial.html">Resultado Laboratorial AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial</code>/RES-LAB-2026-000001-PLAQ</p><p><b>basedOn</b>: <a href="ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html">ServiceRequest CBC panel - Blood by Automated count</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Códigos:{http://loinc.org 777-3}">Plaquetas</span></p><p><b>subject</b>: <a href="Patient-agrosus-patient-example.html">Maria Aparecida de Souza</a></p><p><b>effective</b>: 2026-07-25 08:15:00-0300</p><p><b>issued</b>: 2026-07-25 12:00:00-0300</p><p><b>performer</b>: <a href="Organization-agrosus-laboratorio-exemplo.html">Organization Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>value</b>: 250 10³/µL<span style="background: LightGoldenRodYellow"> (Detalhes: UCUM código10*3/uL = '10*3/uL')</span></p><p><b>interpretation</b>: <span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><p><b>note</b>: </p><blockquote><div><p>Faixa de referência informada pelo laboratório: 150 a 450 × 10³/µL.</p>
+</div></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial"/>
+    <value value="RES-LAB-2026-000001-PLAQ"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/agrosus-solicitacao-hemograma-exemplo"/>
+  </basedOn>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="777-3"/>
+      <display value="Platelets [#/volume] in Blood by Automated count"/>
+    </coding>
+    <text value="Plaquetas"/>
+  </code>
+  <subject>
+    <reference value="Patient/agrosus-patient-example"/>
+    <display value="Maria Aparecida de Souza"/>
+  </subject>
+  <effectiveDateTime value="2026-07-25T08:15:00-03:00"/>
+  <issued value="2026-07-25T12:00:00-03:00"/>
+  <performer>
+    <reference value="Organization/agrosus-laboratorio-exemplo"/>
+  </performer>
+  <valueQuantity>
+    <value value="250"/>
+    <unit value="10³/µL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="10*3/uL"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <note>
+    <text value="Faixa de referência informada pelo laboratório: 150 a 450 × 10³/µL."/>
+  </note>
+</Observation>

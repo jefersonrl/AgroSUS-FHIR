@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/DiagnosticReport/agrosus-laudo-hemograma-exemplo> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-laudo-hemograma-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: DiagnosticReport agrosus-laudo-hemograma-exemplo</b></p><a name=\"agrosus-laudo-hemograma-exemplo\"> </a><a name=\"hcagrosus-laudo-hemograma-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-laudo-laboratorial.html\">Laudo Laboratorial AgroSUS</a></p></div><h2><span title=\"Códigos:{http://loinc.org 58410-2}\">Hemograma completo</span> (<span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v2-0074 HM}\">Hematology</span>) </h2><table class=\"grid\"><tr><td>Assunto</td><td>Maria Aparecida de Souza(official) Female, DoB: 1978-05-14 ( Health Card Number: NamingSystemCNS#987654321098765 (use: official, ))</td></tr><tr><td>Quando Para</td><td>2026-07-25 08:15:00-0300</td></tr><tr><td>Comunicado</td><td>2026-07-25 12:10:00-0300</td></tr><tr><td>Intérprete</td><td> <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></td></tr><tr><td>Identificador</td><td> <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/laudo-laboratorial</code>/LAUDO-LAB-2026-000001</td></tr></table><p><b>Detalhes do relatório</b></p><table class=\"grid\"><tr><td><b>Código</b></td><td><b>Valor</b></td><td><b>Bandeiras</b></td><td><b>Nota</b></td><td><b>Comunicado</b></td></tr><tr><td><a href=\"Observation-agrosus-resultado-hemoglobina-exemplo.html\"><span title=\"Códigos:{http://loinc.org 718-7}\">Hemoglobina</span></a></td><td>13.2 g/dL<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigog/dL = 'g/dL')</span></td><td>Final, <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 12,0 a 16,0 g/dL.</p>\n</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr><tr><td><a href=\"Observation-agrosus-resultado-hematocrito-exemplo.html\"><span title=\"Códigos:{http://loinc.org 4544-3}\">Hematócrito</span></a></td><td>39.5 %<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código% = '%')</span></td><td>Final, <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 36,0% a 46,0%.</p>\n</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr><tr><td><a href=\"Observation-agrosus-resultado-leucocitos-exemplo.html\"><span title=\"Códigos:{http://loinc.org 6690-2}\">Leucócitos</span></a></td><td>6.8 10³/µL<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código10*3/uL = '10*3/uL')</span></td><td>Final, <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 4,0 a 10,0 × 10³/µL.</p>\n</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr><tr><td><a href=\"Observation-agrosus-resultado-plaquetas-exemplo.html\"><span title=\"Códigos:{http://loinc.org 777-3}\">Plaquetas</span></a></td><td>250 10³/µL<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM código10*3/uL = '10*3/uL')</span></td><td>Final, <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td><blockquote><div><p>Faixa de referência informada pelo laboratório: 150 a 450 × 10³/µL.</p>\n</div></blockquote></td><td>2026-07-25 12:00:00-0300</td></tr></table><p>Resultados apresentados dentro das faixas de referência informadas pelo laboratório neste exemplo fictício.</p></div>"
+  ] ;
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/laudo-laboratorial" ] ;
+     fhir:Identifier.value [ fhir:value "LAUDO-LAB-2026-000001" ]
+  ] ;
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/ServiceRequest/agrosus-solicitacao-hemograma-exemplo> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/agrosus-solicitacao-hemograma-exemplo" ]
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ] ;
+       fhir:Coding.code [ fhir:value "HM" ] ;
+       fhir:Coding.display [ fhir:value "Hematology" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:58410-2 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "58410-2" ] ;
+       fhir:Coding.display [ fhir:value "CBC panel - Blood by Automated count" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Hemograma completo" ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2026-07-25T08:15:00-03:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.issued [ fhir:value "2026-07-25T12:10:00-03:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.performer [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-laboratorio-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "Laboratório Municipal de Referência — Exemplo AgroSUS" ]
+  ] ;
+  fhir:DiagnosticReport.result [
+     fhir:index 0 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-hemoglobina-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-hemoglobina-exemplo" ]
+  ], [
+     fhir:index 1 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-hematocrito-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-hematocrito-exemplo" ]
+  ], [
+     fhir:index 2 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-leucocitos-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-leucocitos-exemplo" ]
+  ], [
+     fhir:index 3 ;
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Observation/agrosus-resultado-plaquetas-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Observation/agrosus-resultado-plaquetas-exemplo" ]
+  ] ;
+  fhir:DiagnosticReport.conclusion [ fhir:value "Resultados apresentados dentro das faixas de referência informadas pelo laboratório neste exemplo fictício."] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/DiagnosticReport/agrosus-laudo-hemograma-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

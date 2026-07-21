@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="agrosus-acs-role-exemplo"/>
+  <meta>
+    <profile value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: PractitionerRole agrosus-acs-role-exemplo</b></p><a name="agrosus-acs-role-exemplo"> </a><a name="hcagrosus-acs-role-exemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-agrosus-acs-role.html">Função do ACS no AgroSUS</a></p></div><p><b>active</b>: true</p><p><b>period</b>: 2025-01-01 --&gt; (em curso)</p><p><b>practitioner</b>: <a href="Practitioner-agrosus-acs-exemplo.html">Maria Clara Oliveira</a></p><p><b>organization</b>: <a href="Organization-agrosus-ubs-exemplo.html">UBS Jardim Esperança — Exemplo AgroSUS</a></p><p><b>code</b>: <span title="Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 515105}">Agente comunitário de saúde</span></p></div>
+  </text>
+  <active value="true"/>
+  <period>
+    <start value="2025-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/agrosus-acs-exemplo"/>
+    <display value="Maria Clara Oliveira"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/agrosus-ubs-exemplo"/>
+    <display value="UBS Jardim Esperança — Exemplo AgroSUS"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO"/>
+      <code value="515105"/>
+      <display value="Agente comunitário de saúde"/>
+    </coding>
+  </code>
+</PractitionerRole>

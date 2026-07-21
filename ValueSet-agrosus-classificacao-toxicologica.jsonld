@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.526919Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld#categoria-1",
+      "name": "Categoria 1 — Produto extremamente tóxico",
+      "fhir:code": "categoria-1",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-classificacao-toxicologica"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld#categoria-2",
+      "name": "Categoria 2 — Produto altamente tóxico",
+      "fhir:code": "categoria-2",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-classificacao-toxicologica"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld#categoria-3",
+      "name": "Categoria 3 — Produto moderadamente tóxico",
+      "fhir:code": "categoria-3",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-classificacao-toxicologica"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld#categoria-4",
+      "name": "Categoria 4 — Produto pouco tóxico",
+      "fhir:code": "categoria-4",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-classificacao-toxicologica"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld#categoria-5",
+      "name": "Categoria 5 — Produto improvável de causar dano agudo",
+      "fhir:code": "categoria-5",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-classificacao-toxicologica"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-classificacao-toxicologica.jsonld#nao-classificado",
+      "name": "Produto não classificado",
+      "fhir:code": "nao-classificado",
+      "fhir:CodeSystem": "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem-agrosus-classificacao-toxicologica"
+    }
+  ]
+}

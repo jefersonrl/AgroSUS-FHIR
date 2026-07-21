@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-atividade-agricola"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-atividade-agricola</b></p><a name="agrosus-atividade-agricola"> </a><a name="hcagrosus-atividade-agricola"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-agrosus-propriedade.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-atividade-lavoura-temporaria">atividade-lavoura-temporaria</a></td><td style="color: #cccccc">Lavoura temporária</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-atividade-lavoura-permanente">atividade-lavoura-permanente</a></td><td style="color: #cccccc">Lavoura permanente</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-atividade-horticultura">atividade-horticultura</a></td><td style="color: #cccccc">Horticultura</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-atividade-fruticultura">atividade-fruticultura</a></td><td style="color: #cccccc">Fruticultura</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-atividade-pecuaria">atividade-pecuaria</a></td><td style="color: #cccccc">Pecuária</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-atividade-outra">atividade-outra</a></td><td style="color: #cccccc">Outra atividade agrícola</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-atividade-agricola"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSAtividadeAgricolaVS"/>
+  <title value="Principal Atividade Agrícola"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Principais atividades desenvolvidas na propriedade rural."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade"/>
+      <concept>
+        <code value="atividade-lavoura-temporaria"/>
+      </concept>
+      <concept>
+        <code value="atividade-lavoura-permanente"/>
+      </concept>
+      <concept>
+        <code value="atividade-horticultura"/>
+      </concept>
+      <concept>
+        <code value="atividade-fruticultura"/>
+      </concept>
+      <concept>
+        <code value="atividade-pecuaria"/>
+      </concept>
+      <concept>
+        <code value="atividade-outra"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

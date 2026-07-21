@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-motivo-nao-uso-epi.schema.json",
+  "title": "Motivos de não utilização de EPI Schema",
+  "description": "JSON Schema for Motivos de não utilização de EPI ValueSet codes. Generated from FHIR expansions using IRI format.",
+  "type": "string",
+  "enum": [
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#uso-sempre",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#uso-as-vezes",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#uso-nunca",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#nao-possui",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#armazenamento-local-especific-separado",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#armazenamento-junto-roupas-pessoais",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#armazenamento-deposito-defensivos",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-desconforto",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-descuido",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-considera-desnecessario",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-custo-elevado",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#outro",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#nao-possui",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-desconforto",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-descuido",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-considera-desnecessario",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#motivo-custo-elevado",
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi#outro"
+  ],
+  "narrative": "This schema validates IRI-formatted codes for the Motivos de não utilização de EPI ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-motivo-nao-uso-epi.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-motivo-nao-uso-epi.displays.json",
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-motivo-nao-uso-epi",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.368753"
+}

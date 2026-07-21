@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.518488Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.0",
+      "name": "Efeito tóxico de inseticidas organofosforados e carbamatos",
+      "fhir:code": "T60.0",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.1",
+      "name": "Efeito tóxico de inseticidas halogenados",
+      "fhir:code": "T60.1",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.2",
+      "name": "Efeito tóxico de outros inseticidas",
+      "fhir:code": "T60.2",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.3",
+      "name": "Efeito tóxico de herbicidas e fungicidas",
+      "fhir:code": "T60.3",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.4",
+      "name": "Efeito tóxico de rodenticidas",
+      "fhir:code": "T60.4",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.8",
+      "name": "Efeito tóxico de outros pesticidas",
+      "fhir:code": "T60.8",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-intoxicacao-pesticida.jsonld#T60.9",
+      "name": "Efeito tóxico de pesticida não especificado",
+      "fhir:code": "T60.9",
+      "fhir:CodeSystem": "https://terminologia.saude.gov.br/fhir/CodeSystem-BRCID10"
+    }
+  ]
+}

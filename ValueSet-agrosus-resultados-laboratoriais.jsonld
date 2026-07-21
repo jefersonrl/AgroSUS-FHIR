@@ -1,0 +1,113 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-07-21T03:07:16.521810Z",
+  "@graph": [
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#718-7",
+      "name": "718-7",
+      "fhir:code": "718-7",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#4544-3",
+      "name": "4544-3",
+      "fhir:code": "4544-3",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#6690-2",
+      "name": "6690-2",
+      "fhir:code": "6690-2",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#777-3",
+      "name": "777-3",
+      "fhir:code": "777-3",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#1920-8",
+      "name": "1920-8",
+      "fhir:code": "1920-8",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#1742-6",
+      "name": "1742-6",
+      "fhir:code": "1742-6",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#2324-2",
+      "name": "2324-2",
+      "fhir:code": "2324-2",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#6768-6",
+      "name": "6768-6",
+      "fhir:code": "6768-6",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#1751-7",
+      "name": "1751-7",
+      "fhir:code": "1751-7",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#2160-0",
+      "name": "2160-0",
+      "fhir:code": "2160-0",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#3091-6",
+      "name": "3091-6",
+      "fhir:code": "3091-6",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#14959-1",
+      "name": "14959-1",
+      "fhir:code": "14959-1",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#1558-6",
+      "name": "1558-6",
+      "fhir:code": "1558-6",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#2099-0",
+      "name": "2099-0",
+      "fhir:code": "2099-0",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#2098-2",
+      "name": "2098-2",
+      "fhir:code": "2098-2",
+      "fhir:CodeSystem": "http://loinc.org"
+    },
+    {
+      "id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-resultados-laboratoriais.jsonld#6301-6",
+      "name": "6301-6",
+      "fhir:code": "6301-6",
+      "fhir:CodeSystem": "http://loinc.org"
+    }
+  ]
+}

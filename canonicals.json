@@ -1,7 +1,490 @@
 [{
+  "id" : "agrosus-server-capabilities",
+  "type" : "CapabilityStatement",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CapabilityStatement/agrosus-server-capabilities",
+  "version" : "0.1.0",
+  "name" : "AgroSUSServerCapabilities"
+},
+{
+  "id" : "agrosus-armazenamento-defensivos",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
+  "version" : "0.1.0",
+  "name" : "AgroSUSArmazenamentoDefensivosCS"
+},
+{
+  "id" : "agrosus-assistencia-tecnica",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAssistenciaTecnicaCS"
+},
+{
+  "id" : "agrosus-avaliacao-boas-praticas",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAvaliacaoBoasPraticasCS"
+},
+{
+  "id" : "agrosus-capacitacao",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-capacitacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCapacitacaoCS"
+},
+{
+  "id" : "agrosus-categoria-plano-cuidado",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-categoria-plano-cuidado",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCategoriaPlanoCuidadoCS"
+},
+{
+  "id" : "agrosus-classificacao-toxicologica",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-classificacao-toxicologica",
+  "version" : "0.1.0",
+  "name" : "AgroSUSClassificacaoToxicologicaCS"
+},
+{
+  "id" : "agrosus-condicoes-sintomas",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-condicoes-sintomas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCondicoesSintomasCS"
+},
+{
+  "id" : "agrosus-destinacao-embalagens",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-destinacao-embalagens",
+  "version" : "0.1.0",
+  "name" : "AgroSUSDestinacaoEmbalagensCS"
+},
+{
+  "id" : "agrosus-epi",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi",
+  "version" : "0.1.0",
+  "name" : "AgroSUSEPICS"
+},
+{
+  "id" : "agrosus-escolaridade",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-escolaridade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSEscolaridadeCS"
+},
+{
+  "id" : "agrosus-exposicao",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSExposicaoCS"
+},
+{
+  "id" : "agrosus-exposicao-familiar",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
+  "version" : "0.1.0",
+  "name" : "AgroSUSExposicaoFamiliarCS"
+},
+{
+  "id" : "agrosus-historico-intoxicacao",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-historico-intoxicacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSHistoricoIntoxicacaoCS"
+},
+{
+  "id" : "agrosus-propriedade",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSPropriedadeCS"
+},
+{
+  "id" : "agrosus-rastreabilidade",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-rastreabilidade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSRastreabilidadeCS"
+},
+{
+  "id" : "agrosus-tipo-coleta",
+  "type" : "CodeSystem",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-tipo-coleta",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTipoColetaCS"
+},
+{
   "id" : "io.github.jefersonrl.agrosus",
   "type" : "ImplementationGuide",
   "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus",
   "version" : "0.1.0",
   "name" : "AgroSUSFHIR"
+},
+{
+  "id" : "agrosus-anamnese",
+  "type" : "Questionnaire",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/Questionnaire/agrosus-anamnese",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAnamnese"
+},
+{
+  "id" : "agrosus-acs",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSACS"
+},
+{
+  "id" : "agrosus-acs-role",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-acs-role",
+  "version" : "0.1.0",
+  "name" : "AgroSUSACSRole"
+},
+{
+  "id" : "agrosus-anamnese-response",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAnamneseResponse"
+},
+{
+  "id" : "agrosus-atendimento-ubs",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAtendimentoUBS"
+},
+{
+  "id" : "agrosus-audit-event",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAuditEvent"
+},
+{
+  "id" : "agrosus-intoxicacao-pesticida",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida",
+  "version" : "0.1.0",
+  "name" : "AgroSUSIntoxicacaoPesticida"
+},
+{
+  "id" : "agrosus-laboratorio",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio",
+  "version" : "0.1.0",
+  "name" : "AgroSUSLaboratorio"
+},
+{
+  "id" : "agrosus-laudo-laboratorial",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial",
+  "version" : "0.1.0",
+  "name" : "AgroSUSLaudoLaboratorial"
+},
+{
+  "id" : "agrosus-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient",
+  "version" : "0.1.0",
+  "name" : "AgroSUSPatient"
+},
+{
+  "id" : "agrosus-plano-acompanhamento",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento",
+  "version" : "0.1.0",
+  "name" : "AgroSUSPlanoAcompanhamento"
+},
+{
+  "id" : "agrosus-profissional-ubs",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSProfissionalUBS"
+},
+{
+  "id" : "agrosus-profissional-ubs-role",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role",
+  "version" : "0.1.0",
+  "name" : "AgroSUSProfissionalUBSRole"
+},
+{
+  "id" : "agrosus-provenance",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance",
+  "version" : "0.1.0",
+  "name" : "AgroSUSProvenance"
+},
+{
+  "id" : "agrosus-resultado-laboratorial",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial",
+  "version" : "0.1.0",
+  "name" : "AgroSUSResultadoLaboratorial"
+},
+{
+  "id" : "agrosus-solicitacao-exame",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame",
+  "version" : "0.1.0",
+  "name" : "AgroSUSSolicitacaoExame"
+},
+{
+  "id" : "agrosus-transacao-visita",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-transacao-visita",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTransacaoVisita"
+},
+{
+  "id" : "agrosus-ubs",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-ubs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSUBS"
+},
+{
+  "id" : "agrosus-visita-acs",
+  "type" : "StructureDefinition",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-visita-acs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSVisitaACS"
+},
+{
+  "id" : "agrosus-armazenamento-epi",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-armazenamento-epi",
+  "version" : "0.1.0",
+  "name" : "AgroSUSArmazenamentoEPIVS"
+},
+{
+  "id" : "agrosus-armazenamento-registros",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-armazenamento-registros",
+  "version" : "0.1.0",
+  "name" : "AgroSUSArmazenamentoRegistrosVS"
+},
+{
+  "id" : "agrosus-atividade-agricola",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-atividade-agricola",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAtividadeAgricolaVS"
+},
+{
+  "id" : "agrosus-avaliacao-boas-praticas",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-avaliacao-boas-praticas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSAvaliacaoBoasPraticasVS"
+},
+{
+  "id" : "agrosus-categoria-plano-cuidado",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-categoria-plano-cuidado",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCategoriaPlanoCuidadoVS"
+},
+{
+  "id" : "agrosus-classificacao-toxicologica",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-classificacao-toxicologica",
+  "version" : "0.1.0",
+  "name" : "AgroSUSClassificacaoToxicologicaVS"
+},
+{
+  "id" : "agrosus-condicao-saude-referida",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-condicao-saude-referida",
+  "version" : "0.1.0",
+  "name" : "AgroSUSCondicaoSaudeReferidaVS"
+},
+{
+  "id" : "agrosus-destinacao-embalagens-nao-devolvidas",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-destinacao-embalagens-nao-devolvidas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSDestinacaoEmbalagensNaoDevolvidasVS"
+},
+{
+  "id" : "agrosus-dias-aplicacao-mes",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-dias-aplicacao-mes",
+  "version" : "0.1.0",
+  "name" : "AgroSUSDiasAplicacaoMesVS"
+},
+{
+  "id" : "agrosus-equipamento-aplicacao",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-equipamento-aplicacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSEquipamentoAplicacaoVS"
+},
+{
+  "id" : "agrosus-escolaridade",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-escolaridade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSEscolaridadeVS"
+},
+{
+  "id" : "agrosus-exames-laboratoriais",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-exames-laboratoriais",
+  "version" : "0.1.0",
+  "name" : "AgroSUSExamesLaboratoriaisVS"
+},
+{
+  "id" : "agrosus-familiares-auxiliam-aplicacao",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-familiares-auxiliam-aplicacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSFamiliaresAuxiliamAplicacaoVS"
+},
+{
+  "id" : "agrosus-fonte-agua",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-fonte-agua",
+  "version" : "0.1.0",
+  "name" : "AgroSUSFonteAguaVS"
+},
+{
+  "id" : "agrosus-formacao-responsavel-tecnico",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-formacao-responsavel-tecnico",
+  "version" : "0.1.0",
+  "name" : "AgroSUSFormacaoResponsavelTecnicoVS"
+},
+{
+  "id" : "agrosus-frequencia-uso-epi",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-frequencia-uso-epi",
+  "version" : "0.1.0",
+  "name" : "AgroSUSFrequenciaUsoEPIVS"
+},
+{
+  "id" : "agrosus-horas-aplicacao-dia",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-horas-aplicacao-dia",
+  "version" : "0.1.0",
+  "name" : "AgroSUSHorasAplicacaoDiaVS"
+},
+{
+  "id" : "agrosus-instituicao-assistencia",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-instituicao-assistencia",
+  "version" : "0.1.0",
+  "name" : "AgroSUSInstituicaoAssistenciaVS"
+},
+{
+  "id" : "agrosus-intoxicacao-pesticida",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-intoxicacao-pesticida",
+  "version" : "0.1.0",
+  "name" : "AgroSUSIntoxicacaoPesticidaVS"
+},
+{
+  "id" : "agrosus-local-armazenamento-defensivos",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-local-armazenamento-defensivos",
+  "version" : "0.1.0",
+  "name" : "AgroSUSLocalArmazenamentoDefensivosVS"
+},
+{
+  "id" : "agrosus-mes-maior-intensidade",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-mes-maior-intensidade",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMesMaiorIntensidadeVS"
+},
+{
+  "id" : "agrosus-motivo-nao-uso-epi",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-motivo-nao-uso-epi",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMotivoNaoUsoEPIVS"
+},
+{
+  "id" : "agrosus-numero-intoxicacoes-agudas",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-numero-intoxicacoes-agudas",
+  "version" : "0.1.0",
+  "name" : "AgroSUSNumeroIntoxicacoesAgudasVS"
+},
+{
+  "id" : "agrosus-ocupacao-acs",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-acs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSOcupacaoACSVS"
+},
+{
+  "id" : "agrosus-ocupacao-profissional-ubs",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-ocupacao-profissional-ubs",
+  "version" : "0.1.0",
+  "name" : "AgroSUSOcupacaoProfissionalUBSVS"
+},
+{
+  "id" : "agrosus-responsavel-aplicacao",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-responsavel-aplicacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSResponsavelAplicacaoVS"
+},
+{
+  "id" : "agrosus-resultados-laboratoriais",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-resultados-laboratoriais",
+  "version" : "0.1.0",
+  "name" : "AgroSUSResultadosLaboratoriaisVS"
+},
+{
+  "id" : "agrosus-sintoma-ultimos-30-dias",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-sintoma-ultimos-30-dias",
+  "version" : "0.1.0",
+  "name" : "AgroSUSSintomaUltimos30DiasVS"
+},
+{
+  "id" : "agrosus-situacao-posse",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-situacao-posse",
+  "version" : "0.1.0",
+  "name" : "AgroSUSSituacaoPosseVS"
+},
+{
+  "id" : "agrosus-temas-capacitacao",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-temas-capacitacao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTemasCapacitacaoVS"
+},
+{
+  "id" : "agrosus-tipo-coleta",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-tipo-coleta",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTipoColetaVS"
+},
+{
+  "id" : "agrosus-tipo-producao",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-tipo-producao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTipoProducaoVS"
+},
+{
+  "id" : "agrosus-via-exposicao",
+  "type" : "ValueSet",
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-via-exposicao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSViaExposicaoVS"
 }]

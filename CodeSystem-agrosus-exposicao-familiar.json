@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-exposicao-familiar",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-exposicao-familiar</b></p><a name=\"agrosus-exposicao-familiar\"> </a><a name=\"hcagrosus-exposicao-familiar\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">conjuge<a name=\"agrosus-exposicao-familiar-conjuge\"> </a></td><td>Cônjuge</td><td>Cônjuge ou companheiro do trabalhador rural.</td></tr><tr><td style=\"white-space:nowrap\">filhos<a name=\"agrosus-exposicao-familiar-filhos\"> </a></td><td>Filhos</td><td>Filhos ou filhas do trabalhador rural.</td></tr><tr><td style=\"white-space:nowrap\">pais-sogros<a name=\"agrosus-exposicao-familiar-pais-sogros\"> </a></td><td>Pais ou sogros</td><td>Pais, mães, sogros ou sogras do trabalhador rural.</td></tr><tr><td style=\"white-space:nowrap\">outros<a name=\"agrosus-exposicao-familiar-outros\"> </a></td><td>Outros familiares</td><td>Outros familiares que auxiliam na aplicação de defensivos agrícolas.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar",
+  "version" : "0.1.0",
+  "name" : "AgroSUSExposicaoFamiliarCS",
+  "title" : "Exposição familiar AgroSUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "conjuge",
+    "display" : "Cônjuge",
+    "definition" : "Cônjuge ou companheiro do trabalhador rural."
+  },
+  {
+    "code" : "filhos",
+    "display" : "Filhos",
+    "definition" : "Filhos ou filhas do trabalhador rural."
+  },
+  {
+    "code" : "pais-sogros",
+    "display" : "Pais ou sogros",
+    "definition" : "Pais, mães, sogros ou sogras do trabalhador rural."
+  },
+  {
+    "code" : "outros",
+    "display" : "Outros familiares",
+    "definition" : "Outros familiares que auxiliam na aplicação de defensivos agrícolas."
+  }]
+}

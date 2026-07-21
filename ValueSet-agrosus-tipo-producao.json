@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-tipo-producao",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-tipo-producao</b></p><a name=\"agrosus-tipo-producao\"> </a><a name=\"hcagrosus-tipo-producao\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-agrosus-propriedade.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href=\"CodeSystem-agrosus-propriedade.html#agrosus-propriedade-producao-convencional\">producao-convencional</a></td><td style=\"color: #cccccc\">Convencional</td></tr><tr><td><a href=\"CodeSystem-agrosus-propriedade.html#agrosus-propriedade-producao-organica\">producao-organica</a></td><td style=\"color: #cccccc\">Orgânica</td></tr><tr><td><a href=\"CodeSystem-agrosus-propriedade.html#agrosus-propriedade-producao-agroecologica\">producao-agroecologica</a></td><td style=\"color: #cccccc\">Agroecológica</td></tr><tr><td><a href=\"CodeSystem-agrosus-propriedade.html#agrosus-propriedade-producao-integrada\">producao-integrada</a></td><td style=\"color: #cccccc\">Integrada</td></tr><tr><td><a href=\"CodeSystem-agrosus-propriedade.html#agrosus-propriedade-producao-outra\">producao-outra</a></td><td style=\"color: #cccccc\">Outro tipo de produção</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-tipo-producao",
+  "version" : "0.1.0",
+  "name" : "AgroSUSTipoProducaoVS",
+  "title" : "Tipo de Produção Agrícola",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Tipos de produção utilizados na propriedade rural.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade",
+      "concept" : [{
+        "code" : "producao-convencional"
+      },
+      {
+        "code" : "producao-organica"
+      },
+      {
+        "code" : "producao-agroecologica"
+      },
+      {
+        "code" : "producao-integrada"
+      },
+      {
+        "code" : "producao-outra"
+      }]
+    }]
+  }
+}

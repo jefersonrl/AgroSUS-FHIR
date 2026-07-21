@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-laboratorio-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laboratorio>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Organization agrosus-laboratorio-exemplo</b></p><a name=\"agrosus-laboratorio-exemplo\"> </a><a name=\"hcagrosus-laboratorio-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-laboratorio.html\">Laboratório AgroSUS</a></p></div><p><b>identifier</b>: Provider number/1234567 (utilização: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Laboratório Municipal de Referência — Exemplo AgroSUS</p><p><b>alias</b>: Laboratório Municipal AgroSUS</p><p><b>address</b>: Rua das Acácias, 100 — Centro — Ferraz de Vasconcelos/SP(work)</p></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PRN" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://saude.gov.br/fhir/sid/cnes" ] ;
+     fhir:Identifier.value [ fhir:value "1234567" ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.name [ fhir:value "Laboratório Municipal de Referência — Exemplo AgroSUS"] ;
+  fhir:Organization.alias [
+     fhir:value "Laboratório Municipal AgroSUS" ;
+     fhir:index 0
+  ] ;
+  fhir:Organization.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.text [ fhir:value "Rua das Acácias, 100 — Centro — Ferraz de Vasconcelos/SP" ] ;
+     fhir:Address.line [
+       fhir:value "Rua das Acácias, 100" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Ferraz de Vasconcelos" ] ;
+     fhir:Address.district [ fhir:value "Centro" ] ;
+     fhir:Address.state [ fhir:value "SP" ] ;
+     fhir:Address.postalCode [ fhir:value "08500-000" ] ;
+     fhir:Address.country [ fhir:value "Brasil" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-laboratorio-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

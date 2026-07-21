@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet-agrosus-fonte-agua.displays.json",
+  "title": "Fonte de Água da Propriedade Display Values",
+  "description": "Display values for Fonte de Água da Propriedade ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#posse-proprietario": {
+      "en": "Proprietário"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#posse-arrendatario": {
+      "en": "Arrendatário"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#posse-meeiro": {
+      "en": "Meeiro"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#posse-assentado": {
+      "en": "Assentado"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#posse-cedida": {
+      "en": "Terra cedida"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#posse-outra": {
+      "en": "Outra situação de posse"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#atividade-lavoura-temporaria": {
+      "en": "Lavoura temporária"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#atividade-lavoura-permanente": {
+      "en": "Lavoura permanente"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#atividade-horticultura": {
+      "en": "Horticultura"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#atividade-fruticultura": {
+      "en": "Fruticultura"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#atividade-pecuaria": {
+      "en": "Pecuária"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#atividade-outra": {
+      "en": "Outra atividade agrícola"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#producao-convencional": {
+      "en": "Convencional"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#producao-organica": {
+      "en": "Orgânica"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#producao-agroecologica": {
+      "en": "Agroecológica"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#producao-integrada": {
+      "en": "Integrada"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#producao-outra": {
+      "en": "Outro tipo de produção"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-rede-publica": {
+      "en": "agua-rede-publica"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-poco-artesiano": {
+      "en": "agua-poco-artesiano"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-poco-comum": {
+      "en": "agua-poco-comum"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-rio-corrego": {
+      "en": "agua-rio-corrego"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-acude-represa": {
+      "en": "agua-acude-represa"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-cisterna": {
+      "en": "agua-cisterna"
+    },
+    "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade#agua-outra": {
+      "en": "agua-outra"
+    }
+  },
+  "fhir:valueSet": "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-fonte-agua",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-07-21T03:07:16.366470"
+}

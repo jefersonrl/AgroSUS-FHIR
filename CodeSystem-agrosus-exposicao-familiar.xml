@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-exposicao-familiar"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-exposicao-familiar</b></p><a name="agrosus-exposicao-familiar"> </a><a name="hcagrosus-exposicao-familiar"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">conjuge<a name="agrosus-exposicao-familiar-conjuge"> </a></td><td>Cônjuge</td><td>Cônjuge ou companheiro do trabalhador rural.</td></tr><tr><td style="white-space:nowrap">filhos<a name="agrosus-exposicao-familiar-filhos"> </a></td><td>Filhos</td><td>Filhos ou filhas do trabalhador rural.</td></tr><tr><td style="white-space:nowrap">pais-sogros<a name="agrosus-exposicao-familiar-pais-sogros"> </a></td><td>Pais ou sogros</td><td>Pais, mães, sogros ou sogras do trabalhador rural.</td></tr><tr><td style="white-space:nowrap">outros<a name="agrosus-exposicao-familiar-outros"> </a></td><td>Outros familiares</td><td>Outros familiares que auxiliam na aplicação de defensivos agrícolas.</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-exposicao-familiar"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSExposicaoFamiliarCS"/>
+  <title value="Exposição familiar AgroSUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Terminologia para identificar familiares que auxiliam na aplicação de defensivos agrícolas."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="conjuge"/>
+    <display value="Cônjuge"/>
+    <definition value="Cônjuge ou companheiro do trabalhador rural."/>
+  </concept>
+  <concept>
+    <code value="filhos"/>
+    <display value="Filhos"/>
+    <definition value="Filhos ou filhas do trabalhador rural."/>
+  </concept>
+  <concept>
+    <code value="pais-sogros"/>
+    <display value="Pais ou sogros"/>
+    <definition value="Pais, mães, sogros ou sogras do trabalhador rural."/>
+  </concept>
+  <concept>
+    <code value="outros"/>
+    <display value="Outros familiares"/>
+    <definition value="Outros familiares que auxiliam na aplicação de defensivos agrícolas."/>
+  </concept>
+</CodeSystem>

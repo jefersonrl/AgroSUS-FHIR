@@ -1,0 +1,30 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "agrosus-profissional-enfermeiro-role-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-profissional-ubs-role"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: PractitionerRole agrosus-profissional-enfermeiro-role-exemplo</b></p><a name=\"agrosus-profissional-enfermeiro-role-exemplo\"> </a><a name=\"hcagrosus-profissional-enfermeiro-role-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-profissional-ubs-role.html\">Função do Profissional Assistencial da UBS AgroSUS</a></p></div><p><b>active</b>: true</p><p><b>period</b>: 2025-01-01 --&gt; (em curso)</p><p><b>practitioner</b>: <a href=\"Practitioner-agrosus-profissional-enfermeiro-exemplo.html\">Juliana Martins Costa</a></p><p><b>organization</b>: <a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></p><p><b>code</b>: <span title=\"Códigos:{https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO 223505}\">Enfermeiro</span></p></div>"
+  },
+  "active" : true,
+  "period" : {
+    "start" : "2025-01-01"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/agrosus-profissional-enfermeiro-exemplo",
+    "display" : "Juliana Martins Costa"
+  },
+  "organization" : {
+    "reference" : "Organization/agrosus-ubs-exemplo",
+    "display" : "UBS Jardim Esperança — Exemplo AgroSUS"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "https://terminologia.saude.gov.br/fhir/CodeSystem/BRCBO",
+      "code" : "223505",
+      "display" : "Enfermeiro"
+    }]
+  }]
+}

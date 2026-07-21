@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Requisitos de capacidade do servidor AgroSUS - Módulo AgroSUS — Projeto mareIA v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">Módulo AgroSUS — Projeto mareIA</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Brazil flag" src="assets/images/bra.svg" height="16" title="Brazil"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>Requisitos de capacidade do servidor AgroSUS</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Módulo AgroSUS — Projeto mareIA, publicado por Fatec Ferraz de Vasconcelos. Este guia não é uma publicação autorizada; é a compilação contínua para a versão 0.1.0 construída pela FHIR (HL7&reg; FHIR&reg; Standard) CI Build. Esta versão é baseada no conteúdo atual de <a href='https://github.com/jefersonrl/AgroSUS-FHIR/tree/main'>https://github.com/jefersonrl/AgroSUS-FHIR/tree/main</a> e muda regularmente. Veja o <a href='https://jefersonrl.github.io/AgroSUS-FHIR/history.html'>Diretório de versões publicadas</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CapabilityStatement-agrosus-server-capabilities.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-agrosus-server-capabilities.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-agrosus-server-capabilities.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CapabilityStatement: Requisitos de capacidade do servidor AgroSUS
+(Experimental)
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://jefersonrl.github.io/AgroSUS-FHIR/CapabilityStatement/agrosus-server-capabilities<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://jefersonrl.github.io/AgroSUS-FHIR/CapabilityStatement/agrosus-server-capabilities"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://jefersonrl.github.io/AgroSUS-FHIR/CapabilityStatement/agrosus-server-capabilities|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-07-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">AgroSUSServerCapabilities</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Define os recursos, interações, pesquisas e transações que devem ser suportados por uma implementação de servidor compatível com o AgroSUS.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="CapabilityStatement-agrosus-server-capabilities.xml.html">XML</a>, <a href="CapabilityStatement-agrosus-server-capabilities.json.html">JSON</a>, <a href="CapabilityStatement-agrosus-server-capabilities.ttl.html">Turtle</a>
+  </p>-->
+
+  
+  <p>
+      <a href="agrosus-server-capabilities.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="agrosus-server-capabilities.openapi.json" download>Download</a>
+  </p>
+  
+
+
+  <div data-fhir="generated"><p class="res-header-id"/><a name="agrosus-server-capabilities"> </a><a name="hcagrosus-server-capabilities"> </a><h2 id="title">Requisitos de capacidade do servidor AgroSUS</h2><ul><li>Guia de implementação Versão: 0.1.0 </li><li>Versão FHIR: 4.0.1 </li><li>Formatos suportados: <code>json</code>, <code>xml</code></li><li>Publicado em: 2026-07-20 </li><li>Publicado por: Fatec Ferraz de Vasconcelos </li></ul><blockquote class="impl-note"><p><strong>Nota para os implementadores: Capacidades FHIR</strong></p><p>Qualquer capacidade FHIR pode ser &quot;permitida&quot; pelo sistema, exceto se for explicitamente assinalada como &quot;NÃO DEVE&quot;. Alguns itens são marcados como MAY no Guia de Implementação para destacar a sua potencial relevância para o caso de utilização.</p></blockquote><h3 id="shallIGs">DEVERÁ suportar os seguintes guias de implementação</h3><ul><li><a href="index.html">https://jefersonrl.github.io/AgroSUS-FHIR/ImplementationGuide/io.github.jefersonrl.agrosus</a></li></ul><h2 id="rest">Capacidades FHIR RESTful</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>server</code></h3></div><div class="panel-body"><div><p>API FHIR R4 para cadastro e acompanhamento longitudinal do trabalhador rural. O aplicativo do ACS deve enviar a visita por Bundle transaction; o dashboard da UBS consulta os dados pelos parâmetros declarados neste CapabilityStatement.</p>
+</div><div class="lead"><em>Security</em></div><div class="row"><div class="col-lg-6">Ativar CORS: sim</div><div class="col-lg-6">Security services supported: </div></div><blockquote><div><p>A implementação deve utilizar TLS, autenticação, autorização por função e registro de auditoria. CORS deve ser limitado às origens autorizadas em produção.</p>
+</div></blockquote><div class="lead"><em>Resumo das interações a nível do sistema</em></div><ul><li>Apoia o <code>transaction</code>interação descrita da seguinte forma:<div><p>Aceita a transação AgroSUS de sincronização da visita do ACS de forma atômica.</p>
+</div></li></ul></div></div><h3 id="resourcesCap1">Capacidades por recurso/perfil</h3><h4 id="resourcesSummary1">Resumo</h4><p>A tabela de resumo enumera os recursos que fazem parte desta configuração e, para cada recurso, enumera-os:</p><ul><li>Os perfis relevantes (se existirem)</li><li>As interações suportadas por cada recurso (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>só estão presentes se pelo menos um dos recursos os suportar.</li><li><span>Os parâmetros de pesquisa obrigatórios, recomendados e alguns opcionais (se existirem). </span></li><li>Os recursos ligados activados para <code>_include</code></li><li>Os outros recursos activados para <code>_revinclude</code></li><li>As operações sobre o recurso (se existirem)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Tipo de recurso</b></th><th><b>Perfil</b></th><th class="text-center"><b title="GET um recurso (interação de leitura)">R</b></th><th class="text-center"><b title="GET todo o conjunto de recursos do tipo (interação de pesquisa)">S</b></th><th class="text-center"><b title="PUT uma nova versão do recurso (interação de atualização)">U</b></th><th class="text-center"><b title="POST um novo recurso (criar interação)">C</b></th><th><b title="Parâmetros de pesquisa necessários e recomendados">Pesquisas</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operações</b></th></tr></thead><tbody><tr><td><a href="#Patient1-1">Patient</a></td><td><a href="StructureDefinition-agrosus-patient.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-patient</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>identifier, name</td><td/><td/><td/></tr><tr><td><a href="#Practitioner1-2">Practitioner</a></td><td>Perfis suportados<br/>  <a href="StructureDefinition-agrosus-acs.html">Agente Comunitário de Saúde AgroSUS</a><br/>  <a href="StructureDefinition-agrosus-profissional-ubs.html">Profissional Assistencial da UBS AgroSUS</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"/><td class="text-center"/><td>identifier, name</td><td/><td/><td/></tr><tr><td><a href="#PractitionerRole1-3">PractitionerRole</a></td><td>Perfis suportados<br/>  <a href="StructureDefinition-agrosus-acs-role.html">Função do ACS no AgroSUS</a><br/>  <a href="StructureDefinition-agrosus-profissional-ubs-role.html">Função do Profissional Assistencial da UBS AgroSUS</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"/><td class="text-center"/><td>practitioner, organization, role, active</td><td/><td/><td/></tr><tr><td><a href="#Organization1-4">Organization</a></td><td>Perfis suportados<br/>  <a href="StructureDefinition-agrosus-ubs.html">Unidade Básica de Saúde AgroSUS</a><br/>  <a href="StructureDefinition-agrosus-laboratorio.html">Laboratório AgroSUS</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"/><td class="text-center"/><td>identifier, name, active</td><td/><td/><td/></tr><tr><td><a href="#Questionnaire1-5">Questionnaire</a></td><td> </td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"/><td class="text-center"/><td>url, version, status</td><td/><td/><td/></tr><tr><td><a href="#QuestionnaireResponse1-6">QuestionnaireResponse</a></td><td><a href="StructureDefinition-agrosus-anamnese-response.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-anamnese-response</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>subject, encounter, author, authored, status</td><td/><td/><td/></tr><tr><td><a href="#Encounter1-7">Encounter</a></td><td>Perfis suportados<br/>  <a href="StructureDefinition-agrosus-visita-acs.html">Visita do ACS AgroSUS</a><br/>  <a href="StructureDefinition-agrosus-atendimento-ubs.html">Atendimento Clínico da UBS AgroSUS</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, date, status, participant</td><td/><td/><td/></tr><tr><td><a href="#ServiceRequest1-8">ServiceRequest</a></td><td><a href="StructureDefinition-agrosus-solicitacao-exame.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-solicitacao-exame</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, authored, requester, status, code</td><td/><td/><td/></tr><tr><td><a href="#Observation1-9">Observation</a></td><td><a href="StructureDefinition-agrosus-resultado-laboratorial.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, date, code, status, based-on</td><td/><td/><td/></tr><tr><td><a href="#DiagnosticReport1-10">DiagnosticReport</a></td><td><a href="StructureDefinition-agrosus-laudo-laboratorial.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-laudo-laboratorial</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, date, code, status, based-on</td><td/><td/><td/></tr><tr><td><a href="#Condition1-11">Condition</a></td><td><a href="StructureDefinition-agrosus-intoxicacao-pesticida.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-intoxicacao-pesticida</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, clinical-status, verification-status, code, onset-date</td><td/><td/><td/></tr><tr><td><a href="#CarePlan1-12">CarePlan</a></td><td><a href="StructureDefinition-agrosus-plano-acompanhamento.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-plano-acompanhamento</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, status, date, category</td><td/><td/><td/></tr><tr><td><a href="#Provenance1-13">Provenance</a></td><td><a href="StructureDefinition-agrosus-provenance.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>target, agent, recorded</td><td/><td/><td/></tr><tr><td><a href="#AuditEvent1-14">AuditEvent</a></td><td><a href="StructureDefinition-agrosus-audit-event.html">https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-audit-event</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"/><td class="text-center"/><td>agent, date, entity, action</td><td/><td/><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div role="tab" id="heading1-1" class="panel-heading"><h4 id="Patient1-1" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-1" aria-expanded="true" href="#collapse1-1"><span style="float: right;">Resource Conformance: unspecified</span>Patient</a></h4></div><div role="tabpanel" aria-labelledby="heading1-1" id="collapse1-1" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-patient.html">Paciente AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code>, <code>local</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div><p>Localiza o trabalhador por CPF ou CNS usando system|value.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-2" class="panel-heading"><h4 id="Practitioner1-2" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-2" aria-expanded="true" href="#collapse1-2"><span style="float: right;">Resource Conformance: unspecified</span>Practitioner</a></h4></div><div role="tabpanel" aria-labelledby="heading1-2" id="collapse1-2" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Recurso FHIR principal</span><br/><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></div><div class="col-lg-4"><span class="lead">Política de referência</span><br/><code>literal</code></div><div class="col-lg-4"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Perfis suportados</span><p><a href="StructureDefinition-agrosus-acs.html">Agente Comunitário de Saúde AgroSUS</a><br/><a href="StructureDefinition-agrosus-profissional-ubs.html">Profissional Assistencial da UBS AgroSUS</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-3" class="panel-heading"><h4 id="PractitionerRole1-3" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-3" aria-expanded="true" href="#collapse1-3"><span style="float: right;">Resource Conformance: unspecified</span>PractitionerRole</a></h4></div><div role="tabpanel" aria-labelledby="heading1-3" id="collapse1-3" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Recurso FHIR principal</span><br/><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></div><div class="col-lg-4"><span class="lead">Política de referência</span><br/><code>literal</code></div><div class="col-lg-4"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Perfis suportados</span><p><a href="StructureDefinition-agrosus-acs-role.html">Função do ACS no AgroSUS</a><br/><a href="StructureDefinition-agrosus-profissional-ubs-role.html">Função do Profissional Assistencial da UBS AgroSUS</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>practitioner</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>organization</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>role</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>active</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-4" class="panel-heading"><h4 id="Organization1-4" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-4" aria-expanded="true" href="#collapse1-4"><span style="float: right;">Resource Conformance: unspecified</span>Organization</a></h4></div><div role="tabpanel" aria-labelledby="heading1-4" id="collapse1-4" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Recurso FHIR principal</span><br/><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></div><div class="col-lg-4"><span class="lead">Política de referência</span><br/><code>literal</code></div><div class="col-lg-4"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Perfis suportados</span><p><a href="StructureDefinition-agrosus-ubs.html">Unidade Básica de Saúde AgroSUS</a><br/><a href="StructureDefinition-agrosus-laboratorio.html">Laboratório AgroSUS</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>active</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-5" class="panel-heading"><h4 id="Questionnaire1-5" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-5" aria-expanded="true" href="#collapse1-5"><span style="float: right;">Resource Conformance: unspecified</span>Questionnaire</a></h4></div><div role="tabpanel" aria-labelledby="heading1-5" id="collapse1-5" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Recurso FHIR principal</span><br/><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></div><div class="col-lg-4"><span class="lead">Política de referência</span><br/></div><div class="col-lg-4"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>url</td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>version</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-6" class="panel-heading"><h4 id="QuestionnaireResponse1-6" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-6" aria-expanded="true" href="#collapse1-6"><span style="float: right;">Resource Conformance: unspecified</span>QuestionnaireResponse</a></h4></div><div role="tabpanel" aria-labelledby="heading1-6" id="collapse1-6" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-anamnese-response.html">Resposta da Anamnese AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code>, <code>local</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>subject</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>encounter</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>author</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>authored</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-7" class="panel-heading"><h4 id="Encounter1-7" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-7" aria-expanded="true" href="#collapse1-7"><span style="float: right;">Resource Conformance: unspecified</span>Encounter</a></h4></div><div role="tabpanel" aria-labelledby="heading1-7" id="collapse1-7" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Recurso FHIR principal</span><br/><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></div><div class="col-lg-4"><span class="lead">Política de referência</span><br/><code>literal</code>, <code>local</code></div><div class="col-lg-4"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Perfis suportados</span><p><a href="StructureDefinition-agrosus-visita-acs.html">Visita do ACS AgroSUS</a><br/><a href="StructureDefinition-agrosus-atendimento-ubs.html">Atendimento Clínico da UBS AgroSUS</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>participant</td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-8" class="panel-heading"><h4 id="ServiceRequest1-8" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-8" aria-expanded="true" href="#collapse1-8"><span style="float: right;">Resource Conformance: unspecified</span>ServiceRequest</a></h4></div><div role="tabpanel" aria-labelledby="heading1-8" id="collapse1-8" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-solicitacao-exame.html">Solicitação de Exame AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>authored</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>requester</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-9" class="panel-heading"><h4 id="Observation1-9" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-9" aria-expanded="true" href="#collapse1-9"><span style="float: right;">Resource Conformance: unspecified</span>Observation</a></h4></div><div role="tabpanel" aria-labelledby="heading1-9" id="collapse1-9" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-resultado-laboratorial.html">Resultado Laboratorial AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>based-on</td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-10" class="panel-heading"><h4 id="DiagnosticReport1-10" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-10" aria-expanded="true" href="#collapse1-10"><span style="float: right;">Resource Conformance: unspecified</span>DiagnosticReport</a></h4></div><div role="tabpanel" aria-labelledby="heading1-10" id="collapse1-10" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-laudo-laboratorial.html">Laudo Laboratorial AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>based-on</td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-11" class="panel-heading"><h4 id="Condition1-11" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-11" aria-expanded="true" href="#collapse1-11"><span style="float: right;">Resource Conformance: unspecified</span>Condition</a></h4></div><div role="tabpanel" aria-labelledby="heading1-11" id="collapse1-11" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-intoxicacao-pesticida.html">Suspeita ou Confirmação de Intoxicação por Pesticida AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>clinical-status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>verification-status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>onset-date</td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-12" class="panel-heading"><h4 id="CarePlan1-12" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-12" aria-expanded="true" href="#collapse1-12"><span style="float: right;">Resource Conformance: unspecified</span>CarePlan</a></h4></div><div role="tabpanel" aria-labelledby="heading1-12" id="collapse1-12" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-plano-acompanhamento.html">Plano de Acompanhamento AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>category</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-13" class="panel-heading"><h4 id="Provenance1-13" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-13" aria-expanded="true" href="#collapse1-13"><span style="float: right;">Resource Conformance: unspecified</span>Provenance</a></h4></div><div role="tabpanel" aria-labelledby="heading1-13" id="collapse1-13" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-provenance.html">Proveniência dos Registros AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code>, <code>local</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>create</code>, <code>read</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>target</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>agent</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>recorded</td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div><div class="panel panel-default"><div role="tab" id="heading1-14" class="panel-heading"><h4 id="AuditEvent1-14" class="panel-title"><a data-toggle="collapse" role="button" aria-controls="collapse1-14" aria-expanded="true" href="#collapse1-14"><span style="float: right;">Resource Conformance: unspecified</span>AuditEvent</a></h4></div><div role="tabpanel" aria-labelledby="heading1-14" id="collapse1-14" class="panel-collapse in"><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Perfil do sistema de base</span><br/><a href="StructureDefinition-agrosus-audit-event.html">Evento de Auditoria AgroSUS</a></div><div class="col-lg-3"><span class="lead">Conformidade do perfil</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Política de referência</span><br/><code>literal</code></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Resumo da interação</span><br/><ul><li>Apoios <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Parâmetros de pesquisa</span><table class="table table-condensed table-hover"><thead><tr><th>Conformidade</th><th>Parâmetro</th><th>Tipo</th><th>Documentação</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>agent</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>entity</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>action</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.fatecferraz.edu.br">Fatec Ferraz de Vasconcelos</a>.  Package io.github.jefersonrl.agrosus#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2026 03:04+0000">2026-07-21</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="https://jefersonrl.github.io/AgroSUS-FHIR/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

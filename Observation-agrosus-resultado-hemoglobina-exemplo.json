@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Observation",
+  "id" : "agrosus-resultado-hemoglobina-exemplo",
+  "meta" : {
+    "profile" : ["https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-resultado-laboratorial"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Observation agrosus-resultado-hemoglobina-exemplo</b></p><a name=\"agrosus-resultado-hemoglobina-exemplo\"> </a><a name=\"hcagrosus-resultado-hemoglobina-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-resultado-laboratorial.html\">Resultado Laboratorial AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial</code>/RES-LAB-2026-000001-HB</p><p><b>basedOn</b>: <a href=\"ServiceRequest-agrosus-solicitacao-hemograma-exemplo.html\">ServiceRequest CBC panel - Blood by Automated count</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Códigos:{http://loinc.org 718-7}\">Hemoglobina</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><p><b>effective</b>: 2026-07-25 08:15:00-0300</p><p><b>issued</b>: 2026-07-25 12:00:00-0300</p><p><b>performer</b>: <a href=\"Organization-agrosus-laboratorio-exemplo.html\">Laboratório Municipal de Referência — Exemplo AgroSUS</a></p><p><b>value</b>: 13.2 g/dL<span style=\"background: LightGoldenRodYellow\"> (Detalhes: UCUM códigog/dL = 'g/dL')</span></p><p><b>interpretation</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><p><b>note</b>: </p><blockquote><div><p>Faixa de referência informada pelo laboratório: 12,0 a 16,0 g/dL.</p>\n</div></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/sid/resultado-laboratorial",
+    "value" : "RES-LAB-2026-000001-HB"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/agrosus-solicitacao-hemograma-exemplo"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "718-7",
+      "display" : "Hemoglobin [Mass/volume] in Blood"
+    }],
+    "text" : "Hemoglobina"
+  },
+  "subject" : {
+    "reference" : "Patient/agrosus-patient-example",
+    "display" : "Maria Aparecida de Souza"
+  },
+  "effectiveDateTime" : "2026-07-25T08:15:00-03:00",
+  "issued" : "2026-07-25T12:00:00-03:00",
+  "performer" : [{
+    "reference" : "Organization/agrosus-laboratorio-exemplo",
+    "display" : "Laboratório Municipal de Referência — Exemplo AgroSUS"
+  }],
+  "valueQuantity" : {
+    "value" : 13.2,
+    "unit" : "g/dL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "g/dL"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }],
+  "note" : [{
+    "text" : "Faixa de referência informada pelo laboratório: 12,0 a 16,0 g/dL."
+  }]
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-formacao-responsavel-tecnico"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-formacao-responsavel-tecnico</b></p><a name="agrosus-formacao-responsavel-tecnico"> </a><a name="hcagrosus-formacao-responsavel-tecnico"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-agrosus-assistencia-tecnica.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-agrosus-assistencia-tecnica.html#agrosus-assistencia-tecnica-formacao-engenheiro-agronomo">formacao-engenheiro-agronomo</a></td><td style="color: #cccccc">Engenheiro agrônomo</td></tr><tr><td><a href="CodeSystem-agrosus-assistencia-tecnica.html#agrosus-assistencia-tecnica-formacao-tecnico-agricola">formacao-tecnico-agricola</a></td><td style="color: #cccccc">Técnico agrícola</td></tr><tr><td><a href="CodeSystem-agrosus-assistencia-tecnica.html#agrosus-assistencia-tecnica-formacao-outro-habilitado">formacao-outro-habilitado</a></td><td style="color: #cccccc">Outro profissional habilitado</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-formacao-responsavel-tecnico"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSFormacaoResponsavelTecnicoVS"/>
+  <title value="Formação do Responsável Técnico"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Formações profissionais previstas para o responsável técnico da produção."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-assistencia-tecnica"/>
+      <concept>
+        <code value="formacao-engenheiro-agronomo"/>
+      </concept>
+      <concept>
+        <code value="formacao-tecnico-agricola"/>
+      </concept>
+      <concept>
+        <code value="formacao-outro-habilitado"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

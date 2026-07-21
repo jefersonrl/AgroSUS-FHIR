@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-fonte-agua"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-fonte-agua</b></p><a name="agrosus-fonte-agua"> </a><a name="hcagrosus-fonte-agua"> </a><ul><li>Include estes códigos, tal como definidos em <a href="CodeSystem-agrosus-propriedade.html"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> versão &#x1F4E6;0.1.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-rede-publica">agua-rede-publica</a></td><td style="color: #cccccc">Rede pública</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-poco-artesiano">agua-poco-artesiano</a></td><td style="color: #cccccc">Poço artesiano</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-poco-comum">agua-poco-comum</a></td><td style="color: #cccccc">Poço comum</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-rio-corrego">agua-rio-corrego</a></td><td style="color: #cccccc">Rio ou córrego</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-acude-represa">agua-acude-represa</a></td><td style="color: #cccccc">Açude ou represa</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-cisterna">agua-cisterna</a></td><td style="color: #cccccc">Cisterna</td></tr><tr><td><a href="CodeSystem-agrosus-propriedade.html#agrosus-propriedade-agua-outra">agua-outra</a></td><td style="color: #cccccc">Outra fonte de água</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-fonte-agua"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSFonteAguaVS"/>
+  <title value="Fonte de Água da Propriedade"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Fontes de água utilizadas na propriedade rural."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-propriedade"/>
+      <concept>
+        <code value="agua-rede-publica"/>
+      </concept>
+      <concept>
+        <code value="agua-poco-artesiano"/>
+      </concept>
+      <concept>
+        <code value="agua-poco-comum"/>
+      </concept>
+      <concept>
+        <code value="agua-rio-corrego"/>
+      </concept>
+      <concept>
+        <code value="agua-acude-represa"/>
+      </concept>
+      <concept>
+        <code value="agua-cisterna"/>
+      </concept>
+      <concept>
+        <code value="agua-outra"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

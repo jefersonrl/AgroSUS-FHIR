@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="agrosus-provenance-plano-acompanhamento-exemplo"/>
+  <meta>
+    <profile value="https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-provenance"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p class="res-header-id"><b>Narrativa gerada: Provenance agrosus-provenance-plano-acompanhamento-exemplo</b></p><a name="agrosus-provenance-plano-acompanhamento-exemplo"> </a><a name="hcagrosus-provenance-plano-acompanhamento-exemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Língua: pt-BR</p><p style="margin-bottom: 0px">Perfil: <a href="StructureDefinition-agrosus-provenance.html">Proveniência dos Registros AgroSUS</a></p></div><p>Proveniência para <a href="CarePlan-agrosus-plano-acompanhamento-exemplo.html">Plano de acompanhamento clínico e ocupacional AgroSUS</a></p><p>Resumo</p><table class="grid"><tr><td>Ocorrência</td><td>2026-07-26 10:35:00-0300</td></tr><tr><td>Gravado</td><td>2026-07-26 10:36:00-0300</td></tr><tr><td>Atividade</td><td><span title="Códigos:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}">create</span></td></tr></table><p><b>Agentes</b></p><table class="grid"><tr><td><b>Tipo</b></td><td><b>que</b></td><td><b>Em nome de</b></td></tr><tr><td><span title="Códigos:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="PractitionerRole-agrosus-profissional-medico-role-exemplo.html">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></td><td><a href="Organization-agrosus-ubs-exemplo.html">UBS Jardim Esperança — Exemplo AgroSUS</a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="CarePlan/agrosus-plano-acompanhamento-exemplo"/>
+    <display value="Plano de acompanhamento clínico e ocupacional AgroSUS"/>
+  </target>
+  <occurredDateTime value="2026-07-26T10:35:00-03:00"/>
+  <recorded value="2026-07-26T10:36:00-03:00"/>
+  <reason>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="TREAT"/>
+      <display value="treatment"/>
+    </coding>
+    <text value="Planejamento do acompanhamento assistencial"/>
+  </reason>
+  <activity>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+      <code value="CREATE"/>
+      <display value="create"/>
+    </coding>
+  </activity>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+        <display value="Author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="PractitionerRole/agrosus-profissional-medico-role-exemplo"/>
+      <display value="Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família"/>
+    </who>
+    <onBehalfOf>
+      <reference value="Organization/agrosus-ubs-exemplo"/>
+      <display value="UBS Jardim Esperança — Exemplo AgroSUS"/>
+    </onBehalfOf>
+  </agent>
+  <entity>
+    <role value="source"/>
+    <what>
+      <reference value="Condition/agrosus-intoxicacao-pesticida-suspeita-exemplo"/>
+      <display value="Suspeita de intoxicação por pesticida em investigação"/>
+    </what>
+  </entity>
+  <entity>
+    <role value="source"/>
+    <what>
+      <reference value="DiagnosticReport/agrosus-laudo-hemograma-exemplo"/>
+      <display value="Laudo de hemograma completo"/>
+    </what>
+  </entity>
+</Provenance>

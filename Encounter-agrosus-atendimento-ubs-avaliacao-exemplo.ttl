@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-atendimento-ubs-avaliacao-exemplo> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "agrosus-atendimento-ubs-avaliacao-exemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs" ;
+       fhir:index 0 ;
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/StructureDefinition/agrosus-atendimento-ubs>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "pt-BR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p class=\"res-header-id\"><b>Narrativa gerada: Encounter agrosus-atendimento-ubs-avaliacao-exemplo</b></p><a name=\"agrosus-atendimento-ubs-avaliacao-exemplo\"> </a><a name=\"hcagrosus-atendimento-ubs-avaliacao-exemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Língua: pt-BR</p><p style=\"margin-bottom: 0px\">Perfil: <a href=\"StructureDefinition-agrosus-atendimento-ubs.html\">Atendimento Clínico da UBS AgroSUS</a></p></div><p><b>identifier</b>: <code>https://jefersonrl.github.io/AgroSUS-FHIR/sid/atendimento-ubs</code>/ATEND-UBS-2026-000001</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>type</b>: <span title=\"Códigos:\">Avaliação clínica de trabalhador rural exposto a defensivos agrícolas</span></p><p><b>priority</b>: <span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\">routine</span></p><p><b>subject</b>: <a href=\"Patient-agrosus-patient-example.html\">Maria Aparecida de Souza</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Códigos:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">primary performer</span></td><td>2026-07-20 10:30:00-0300 --&gt; 2026-07-20 11:10:00-0300</td><td><a href=\"PractitionerRole-agrosus-profissional-medico-role-exemplo.html\">Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família</a></td></tr></table><p><b>period</b>: 2026-07-20 10:30:00-0300 --&gt; 2026-07-20 11:10:00-0300</p><p><b>reasonCode</b>: <span title=\"Códigos:\">Avaliação clínica após identificação de exposição ocupacional a defensivos agrícolas</span></p><p><b>serviceProvider</b>: <a href=\"Organization-agrosus-ubs-exemplo.html\">UBS Jardim Esperança — Exemplo AgroSUS</a></p></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://jefersonrl.github.io/AgroSUS-FHIR/sid/atendimento-ubs" ] ;
+     fhir:Identifier.value [ fhir:value "ATEND-UBS-2026-000001" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Avaliação clínica de trabalhador rural exposto a defensivos agrícolas" ]
+  ] ;
+  fhir:Encounter.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActPriority" ] ;
+       fhir:Coding.code [ fhir:value "R" ] ;
+       fhir:Coding.display [ fhir:value "routine" ]
+     ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Patient/agrosus-patient-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/agrosus-patient-example" ] ;
+     fhir:Reference.display [ fhir:value "Maria Aparecida de Souza" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index 0 ;
+     fhir:Encounter.participant.type [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+         fhir:Coding.code [ fhir:value "PPRF" ] ;
+         fhir:Coding.display [ fhir:value "primary performer" ]
+       ]
+     ] ;
+     fhir:Encounter.participant.period [
+       fhir:Period.start [ fhir:value "2026-07-20T10:30:00-03:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2026-07-20T11:10:00-03:00"^^xsd:dateTime ]
+     ] ;
+     fhir:Encounter.participant.individual [
+       fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/PractitionerRole/agrosus-profissional-medico-role-exemplo> ;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/agrosus-profissional-medico-role-exemplo" ] ;
+       fhir:Reference.display [ fhir:value "Eduardo Henrique Almeida — Médico da Estratégia de Saúde da Família" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-07-20T10:30:00-03:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-07-20T11:10:00-03:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.reasonCode [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Avaliação clínica após identificação de exposição ocupacional a defensivos agrícolas" ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <https://jefersonrl.github.io/AgroSUS-FHIR/Organization/agrosus-ubs-exemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/agrosus-ubs-exemplo" ] ;
+     fhir:Reference.display [ fhir:value "UBS Jardim Esperança — Exemplo AgroSUS" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://jefersonrl.github.io/AgroSUS-FHIR/Encounter/agrosus-atendimento-ubs-avaliacao-exemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

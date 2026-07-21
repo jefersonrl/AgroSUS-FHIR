@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "agrosus-motivo-nao-uso-epi",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: ValueSet agrosus-motivo-nao-uso-epi</b></p><a name=\"agrosus-motivo-nao-uso-epi\"> </a><a name=\"hcagrosus-motivo-nao-uso-epi\"> </a><ul><li>Include estes códigos, tal como definidos em <a href=\"CodeSystem-agrosus-epi.html\"><code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> versão &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-nao-possui\">nao-possui</a></td><td style=\"color: #cccccc\">Não possui</td><td>O trabalhador não possui o equipamento de proteção individual.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-motivo-desconforto\">motivo-desconforto</a></td><td style=\"color: #cccccc\">Desconforto</td><td>O equipamento não é utilizado devido ao desconforto.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-motivo-descuido\">motivo-descuido</a></td><td style=\"color: #cccccc\">Descuido</td><td>O equipamento não é utilizado por descuido.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-motivo-considera-desnecessario\">motivo-considera-desnecessario</a></td><td style=\"color: #cccccc\">Considera desnecessário</td><td>O trabalhador considera desnecessária a utilização do equipamento.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-motivo-custo-elevado\">motivo-custo-elevado</a></td><td style=\"color: #cccccc\">Custo elevado</td><td>O equipamento não é utilizado devido ao custo elevado.</td></tr><tr><td><a href=\"CodeSystem-agrosus-epi.html#agrosus-epi-outro\">outro</a></td><td style=\"color: #cccccc\">Outro</td><td>Outra forma de armazenamento ou outro motivo não especificado.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-motivo-nao-uso-epi",
+  "version" : "0.1.0",
+  "name" : "AgroSUSMotivoNaoUsoEPIVS",
+  "title" : "Motivos de não utilização de EPI",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Motivos declarados para a não utilização dos equipamentos de proteção individual.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-epi",
+      "concept" : [{
+        "code" : "nao-possui"
+      },
+      {
+        "code" : "motivo-desconforto"
+      },
+      {
+        "code" : "motivo-descuido"
+      },
+      {
+        "code" : "motivo-considera-desnecessario"
+      },
+      {
+        "code" : "motivo-custo-elevado"
+      },
+      {
+        "code" : "outro"
+      }]
+    }]
+  }
+}

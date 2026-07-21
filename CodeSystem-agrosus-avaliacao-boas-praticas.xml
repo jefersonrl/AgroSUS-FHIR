@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="agrosus-avaliacao-boas-praticas"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: CodeSystem agrosus-avaliacao-boas-praticas</b></p><a name="agrosus-avaliacao-boas-praticas"> </a><a name="hcagrosus-avaliacao-boas-praticas"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas</code> define o seguinte códigos:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style="white-space:nowrap">sim<a name="agrosus-avaliacao-boas-praticas-sim"> </a></td><td>Sim</td><td>A boa prática avaliada é realizada ou atendida.</td></tr><tr><td style="white-space:nowrap">nao<a name="agrosus-avaliacao-boas-praticas-nao"> </a></td><td>Não</td><td>A boa prática avaliada não é realizada ou não é atendida.</td></tr><tr><td style="white-space:nowrap">nao-se-aplica<a name="agrosus-avaliacao-boas-praticas-nao-se-aplica"> </a></td><td>Não se aplica</td><td>A boa prática avaliada não se aplica à situação do trabalhador ou da propriedade.</td></tr></table></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-avaliacao-boas-praticas"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSAvaliacaoBoasPraticasCS"/>
+  <title value="Avaliação de boas práticas agrícolas AgroSUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Terminologia utilizada para avaliar o atendimento aos indicadores de boas práticas agrícolas no formulário AgroSUS."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="sim"/>
+    <display value="Sim"/>
+    <definition value="A boa prática avaliada é realizada ou atendida."/>
+  </concept>
+  <concept>
+    <code value="nao"/>
+    <display value="Não"/>
+    <definition value="A boa prática avaliada não é realizada ou não é atendida."/>
+  </concept>
+  <concept>
+    <code value="nao-se-aplica"/>
+    <display value="Não se aplica"/>
+    <definition value="A boa prática avaliada não se aplica à situação do trabalhador ou da propriedade."/>
+  </concept>
+</CodeSystem>

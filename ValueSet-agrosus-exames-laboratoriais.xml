@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="agrosus-exames-laboratoriais"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrativa gerada: ValueSet agrosus-exames-laboratoriais</b></p><a name="agrosus-exames-laboratoriais"> </a><a name="hcagrosus-exames-laboratoriais"> </a><ul><li>Include estes códigos, tal como definidos em <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> versão Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Código</b></td><td><b>Ecrã</b></td></tr><tr><td><a href="https://loinc.org/58410-2/">58410-2</a></td><td/></tr><tr><td><a href="https://loinc.org/1920-8/">1920-8</a></td><td/></tr><tr><td><a href="https://loinc.org/1742-6/">1742-6</a></td><td/></tr><tr><td><a href="https://loinc.org/2324-2/">2324-2</a></td><td/></tr><tr><td><a href="https://loinc.org/6768-6/">6768-6</a></td><td/></tr><tr><td><a href="https://loinc.org/1751-7/">1751-7</a></td><td/></tr><tr><td><a href="https://loinc.org/2160-0/">2160-0</a></td><td/></tr><tr><td><a href="https://loinc.org/3091-6/">3091-6</a></td><td/></tr><tr><td><a href="https://loinc.org/34535-5/">34535-5</a></td><td style="color: #cccccc">Microalbumin/Creatinine panel in random Urine</td></tr><tr><td><a href="https://loinc.org/1558-6/">1558-6</a></td><td/></tr><tr><td><a href="https://loinc.org/35558-6/">35558-6</a></td><td/></tr><tr><td><a href="https://loinc.org/6301-6/">6301-6</a></td><td/></tr><tr><td><a href="https://loinc.org/35501-6/">35501-6</a></td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://jefersonrl.github.io/AgroSUS-FHIR/ValueSet/agrosus-exames-laboratoriais"/>
+  <version value="0.1.0"/>
+  <name value="AgroSUSExamesLaboratoriaisVS"/>
+  <title value="Exames Laboratoriais AgroSUS"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-07-21T03:04:10+00:00"/>
+  <publisher value="Fatec Ferraz de Vasconcelos"/>
+  <contact>
+    <name value="Fatec Ferraz de Vasconcelos"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fatecferraz.edu.br"/>
+    </telecom>
+  </contact>
+  <description value="Exames e painéis laboratoriais previstos para o acompanhamento assistencial dos trabalhadores rurais no AgroSUS."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BR"/>
+      <display value="Brazil"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="58410-2"/>
+      </concept>
+      <concept>
+        <code value="1920-8"/>
+      </concept>
+      <concept>
+        <code value="1742-6"/>
+      </concept>
+      <concept>
+        <code value="2324-2"/>
+      </concept>
+      <concept>
+        <code value="6768-6"/>
+      </concept>
+      <concept>
+        <code value="1751-7"/>
+      </concept>
+      <concept>
+        <code value="2160-0"/>
+      </concept>
+      <concept>
+        <code value="3091-6"/>
+      </concept>
+      <concept>
+        <code value="34535-5"/>
+      </concept>
+      <concept>
+        <code value="1558-6"/>
+      </concept>
+      <concept>
+        <code value="35558-6"/>
+      </concept>
+      <concept>
+        <code value="6301-6"/>
+      </concept>
+      <concept>
+        <code value="35501-6"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

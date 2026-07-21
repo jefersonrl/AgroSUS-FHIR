@@ -1,0 +1,59 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "agrosus-armazenamento-defensivos",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narrativa gerada: CodeSystem agrosus-armazenamento-defensivos</b></p><a name=\"agrosus-armazenamento-defensivos\"> </a><a name=\"hcagrosus-armazenamento-defensivos\"> </a><p>Este case-sensitive sistema de código <code>https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos</code> define o seguinte códigos:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Código</b></td><td><b>Ecrã</b></td><td><b>Definição</b></td></tr><tr><td style=\"white-space:nowrap\">deposito-isolado-especifico<a name=\"agrosus-armazenamento-defensivos-deposito-isolado-especifico\"> </a></td><td>Depósito isolado e específico</td><td>Os defensivos agrícolas são armazenados em depósito isolado e destinado especificamente a essa finalidade.</td></tr><tr><td style=\"white-space:nowrap\">galpao-geral<a name=\"agrosus-armazenamento-defensivos-galpao-geral\"> </a></td><td>Galpão geral</td><td>Os defensivos agrícolas são armazenados em galpão utilizado também para outras finalidades.</td></tr><tr><td style=\"white-space:nowrap\">dentro-residencia<a name=\"agrosus-armazenamento-defensivos-dentro-residencia\"> </a></td><td>Dentro da residência</td><td>Os defensivos agrícolas são armazenados no interior da residência.</td></tr><tr><td style=\"white-space:nowrap\">ao-ar-livre<a name=\"agrosus-armazenamento-defensivos-ao-ar-livre\"> </a></td><td>Ao ar livre</td><td>Os defensivos agrícolas são armazenados em área externa sem depósito fechado.</td></tr><tr><td style=\"white-space:nowrap\">outro<a name=\"agrosus-armazenamento-defensivos-outro\"> </a></td><td>Outro</td><td>Outro local de armazenamento não especificado.</td></tr></table></div>"
+  },
+  "url" : "https://jefersonrl.github.io/AgroSUS-FHIR/CodeSystem/agrosus-armazenamento-defensivos",
+  "version" : "0.1.0",
+  "name" : "AgroSUSArmazenamentoDefensivosCS",
+  "title" : "Armazenamento de defensivos agrícolas AgroSUS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-07-21T03:04:10+00:00",
+  "publisher" : "Fatec Ferraz de Vasconcelos",
+  "contact" : [{
+    "name" : "Fatec Ferraz de Vasconcelos",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fatecferraz.edu.br"
+    }]
+  }],
+  "description" : "Terminologia dos locais utilizados para armazenamento de defensivos agrícolas.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BR",
+      "display" : "Brazil"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "deposito-isolado-especifico",
+    "display" : "Depósito isolado e específico",
+    "definition" : "Os defensivos agrícolas são armazenados em depósito isolado e destinado especificamente a essa finalidade."
+  },
+  {
+    "code" : "galpao-geral",
+    "display" : "Galpão geral",
+    "definition" : "Os defensivos agrícolas são armazenados em galpão utilizado também para outras finalidades."
+  },
+  {
+    "code" : "dentro-residencia",
+    "display" : "Dentro da residência",
+    "definition" : "Os defensivos agrícolas são armazenados no interior da residência."
+  },
+  {
+    "code" : "ao-ar-livre",
+    "display" : "Ao ar livre",
+    "definition" : "Os defensivos agrícolas são armazenados em área externa sem depósito fechado."
+  },
+  {
+    "code" : "outro",
+    "display" : "Outro",
+    "definition" : "Outro local de armazenamento não especificado."
+  }]
+}
