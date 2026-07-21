@@ -49,6 +49,9 @@ agrícolas** em trabalhadores rurais, na Atenção Primária à Saúde, com vigi
 
 - **Escore de risco ocupacional** — não há, em NR-7/NR-31, um instrumento composto de risco
   validado (`docs/adr/0002-escore-risco-nao-definido.md`).
+- **`AgroSUSPlanoAcompanhamento.addresses` só aceita condição de intoxicação** — a categoria
+  "monitoramento de exposição, sem suspeita de intoxicação" não pode hoje ser usada em nenhuma
+  instância válida do perfil (`docs/adr/0005-plano-acompanhamento-addresses-so-intoxicacao.md`).
 
 #### Fora de escopo desta fase
 
